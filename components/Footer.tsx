@@ -7,7 +7,7 @@ export async function Footer() {
   const tNav = await getTranslations('nav')
 
   return (
-    <footer className="bg-surface/80 border-t border-border">
+    <footer className="bg-background border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
@@ -18,7 +18,7 @@ export async function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-primary mb-4 uppercase tracking-[0.18em]">{t('product')}</h4>
+            <h4 className="text-xs font-semibold text-primary mb-4 uppercase tracking-[0.22em]">{t('product')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/#product" className="text-secondary text-sm hover:text-primary transition-colors">
@@ -39,7 +39,7 @@ export async function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-primary mb-4 uppercase tracking-[0.18em]">{t('company')}</h4>
+            <h4 className="text-xs font-semibold text-primary mb-4 uppercase tracking-[0.22em]">{t('company')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/contact" className="text-secondary text-sm hover:text-primary transition-colors">
@@ -50,7 +50,7 @@ export async function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-primary mb-4 uppercase tracking-[0.18em]">{t('legal')}</h4>
+            <h4 className="text-xs font-semibold text-primary mb-4 uppercase tracking-[0.22em]">{t('legal')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/privacy" className="text-secondary text-sm hover:text-primary transition-colors">
@@ -66,7 +66,7 @@ export async function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-border">
+        <div className="mt-12 pt-8 border-t border-white/10">
           <p className="text-secondary text-sm text-center">
             © {new Date().getFullYear()} HŪBIA. {t('copyright')}
           </p>

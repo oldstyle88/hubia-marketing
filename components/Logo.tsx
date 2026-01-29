@@ -1,6 +1,7 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
+import { useId } from 'react'
 
 interface LogoProps {
   variant: 'header' | 'hero'
@@ -9,40 +10,55 @@ interface LogoProps {
 
 export function Logo({ variant, href = '/' }: LogoProps) {
   const isHero = variant === 'hero'
-  const iconSize = isHero ? 64 : 32
+  const iconSize = isHero ? 120 : 40
+  const id = useId().replace(/:/g, '')
+  const gradientId = `hubia-grad-${id}`
+  const glowId = `hubia-glow-${id}`
 
   const content = (
     <>
-      <svg
-        aria-hidden
-        className="flex-shrink-0 text-accent"
-        width={iconSize}
-        height={iconSize}
-        viewBox="0 0 42 42"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle cx="21" cy="21" r="19" fill="none" stroke="currentColor" strokeWidth="1.2" opacity="0.2" />
-        <path
-          d="M10 28 C15 18, 17 14, 21 14 C25 14, 27 18, 32 28"
+      <div className="relative flex items-center justify-center">
+        <svg
+          aria-hidden
+          width={iconSize}
+          height={iconSize}
+          viewBox="0 0 120 120"
           fill="none"
-          stroke="currentColor"
-          strokeWidth="2.4"
-          strokeLinecap="round"
-          className="logo-line"
-        />
-        <path
-          d="M10 14 C15 24, 17 28, 21 28 C25 28, 27 24, 32 14"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2.4"
-          strokeLinecap="round"
-          className="logo-line"
-        />
-        <circle cx="21" cy="21" r="4.2" fill="currentColor" className="logo-node" />
-      </svg>
+          xmlns="http://www.w3.org/2000/svg"
+          className="logo-orbit"
+        >
+          <defs>
+            <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#5CC8FF" />
+              <stop offset="52%" stopColor="#8B5BFF" />
+              <stop offset="100%" stopColor="#D26BFF" />
+            </linearGradient>
+            <filter id={glowId} x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="4" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <circle cx="60" cy="60" r="44" stroke={`url(#${gradientId})`} strokeWidth="3" opacity="0.6" />
+          <circle cx="60" cy="16" r="5.5" fill={`url(#${gradientId})`} className="logo-node" />
+          <circle cx="104" cy="60" r="5.5" fill={`url(#${gradientId})`} className="logo-node" />
+          <circle cx="60" cy="104" r="5.5" fill={`url(#${gradientId})`} className="logo-node" />
+          <circle cx="16" cy="60" r="5.5" fill={`url(#${gradientId})`} className="logo-node" />
+          <g filter={`url(#${glowId})`}>
+            <path
+              d="M 44 34 L 44 86 M 76 34 L 76 86 M 44 60 L 76 60"
+              stroke={`url(#${gradientId})`}
+              strokeWidth="7"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </g>
+        </svg>
+      </div>
       <span
-        className={`font-semibold tracking-logo text-primary ${
+        className={`font-semibold tracking-logo bg-gradient-accent bg-clip-text text-transparent ${
           isHero ? 'text-4xl sm:text-5xl md:text-6xl' : 'text-xl'
         }`}
       >
@@ -52,8 +68,8 @@ export function Logo({ variant, href = '/' }: LogoProps) {
   )
 
   const wrapperClass = isHero
-    ? 'inline-flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4'
-    : 'inline-flex items-center gap-2'
+    ? 'inline-flex flex-col items-center justify-center gap-4'
+    : 'inline-flex items-center gap-3'
 
   if (href) {
     return (

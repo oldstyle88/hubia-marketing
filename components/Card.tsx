@@ -10,13 +10,13 @@ export function Card({ children, className = '', variant = 'default' }: CardProp
   const base = 'rounded-2xl p-8 transition-all duration-200 shadow-soft'
   if (variant === 'dark') {
     return (
-      <div className={`${base} bg-ink text-white border border-border-strong ${className}`}>
+      <div className={`${base} bg-surface-elevated border border-border-strong ${className}`}>
         {children}
       </div>
     )
   }
   return (
-    <div className={`${base} glass-card ${className}`}>
+    <div className={`${base} glass-card neon-border ${className}`}>
       {children}
     </div>
   )

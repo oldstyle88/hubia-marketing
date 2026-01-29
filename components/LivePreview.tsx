@@ -12,9 +12,9 @@ const verticals: { id: Vertical; key: string }[] = [
 ]
 
 const tintMap: Record<Vertical, string> = {
-  barber: 'from-accent/15 via-champagne/60 to-transparent',
-  beauty: 'from-accent/12 via-champagne/70 to-transparent',
-  pizza: 'from-accent/10 via-champagne/60 to-transparent',
+  barber: 'from-accent-blue/25 via-accent-violet/10 to-transparent',
+  beauty: 'from-accent-violet/25 via-accent-pink/10 to-transparent',
+  pizza: 'from-accent-cyan/20 via-accent-violet/10 to-transparent',
 }
 
 export function LivePreview() {
@@ -36,7 +36,7 @@ export function LivePreview() {
         </div>
 
         <div
-          className="inline-flex p-1 rounded-2xl border border-border bg-surface/80 backdrop-blur-sm mx-auto mb-10 w-full max-w-md"
+          className="inline-flex p-1 rounded-2xl border border-white/15 bg-surface/70 backdrop-blur-sm mx-auto mb-10 w-full max-w-md"
           role="tablist"
           aria-label={t('subtitle')}
         >
@@ -49,8 +49,8 @@ export function LivePreview() {
               onClick={() => setVertical(v.id)}
               className={`flex-1 py-2.5 px-4 rounded-xl text-xs uppercase tracking-[0.2em] transition-all duration-200 ${
                 vertical === v.id
-                  ? 'bg-champagne/80 text-primary border border-border-strong shadow-soft'
-                  : 'text-secondary hover:text-primary hover:bg-champagne/40'
+                  ? 'bg-white/10 text-primary border border-white/20 shadow-glow'
+                  : 'text-secondary hover:text-primary hover:bg-white/5'
               }`}
             >
               {t(v.key as 'barber' | 'beauty' | 'pizza')}
@@ -59,30 +59,31 @@ export function LivePreview() {
         </div>
 
         <div
-          className="rounded-[28px] border border-border bg-surface/80 backdrop-blur-sm overflow-hidden shadow-soft"
+          className="rounded-[28px] border border-white/10 bg-surface/70 backdrop-blur-sm overflow-hidden shadow-soft"
           role="tabpanel"
         >
-          <div className="aspect-[4/3] sm:aspect-video relative flex flex-col p-6 sm:p-8 hero-grid">
+          <div className="aspect-[4/3] sm:aspect-video relative flex flex-col p-6 sm:p-8">
             <div className={`absolute inset-0 bg-gradient-to-br ${tintMap[vertical]} pointer-events-none`} aria-hidden />
+            <div className="absolute inset-0 grid-veil opacity-30" aria-hidden />
             <div className="grid grid-cols-3 gap-4 flex-1 relative z-10">
               {[1, 2, 3].map((i) => (
                 <div
                   key={i}
-                  className="rounded-2xl bg-white/70 border border-border flex items-center justify-center min-h-[80px] sm:min-h-[110px]"
+                  className="rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center min-h-[80px] sm:min-h-[110px]"
                 >
                   <span className="text-secondary text-xs">Preview {i}</span>
                 </div>
               ))}
             </div>
           </div>
-          <div className="p-6 sm:p-8 border-t border-border bg-surface/70">
+          <div className="p-6 sm:p-8 border-t border-white/10 bg-surface/80">
             <ul className="flex flex-wrap gap-3">
               {features.map((f, i) => (
                 <li
                   key={i}
                   className="flex items-center gap-2 text-sm text-secondary"
                 >
-                  <span className="text-accent">✓</span>
+                  <span className="text-accent-blue">✓</span>
                   <span>{f}</span>
                 </li>
               ))}

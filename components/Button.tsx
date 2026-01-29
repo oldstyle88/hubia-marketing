@@ -19,15 +19,15 @@ export function Button({
   type = 'button',
 }: ButtonProps) {
   const baseClasses =
-    'inline-flex items-center justify-center px-8 py-4 text-base font-medium transition-all duration-200 rounded-sm'
+    'inline-flex items-center justify-center px-8 py-4 text-base font-medium transition-all duration-200 rounded-xl'
 
   const variants = {
     primary:
-      'bg-gradient-accent text-white shadow-glow hover:brightness-105 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:ring-offset-2 focus:ring-offset-background',
+      'bg-gradient-accent text-white shadow-glow hover:brightness-110 hover:shadow-glow-strong focus:outline-none focus:ring-2 focus:ring-accent-violet/60 focus:ring-offset-2 focus:ring-offset-background',
     secondary:
-      'bg-ink text-white hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-ink/30 focus:ring-offset-2 focus:ring-offset-background',
+      'bg-surface-elevated border border-border-strong text-primary hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-accent-blue/50 focus:ring-offset-2 focus:ring-offset-background',
     outline:
-      'border border-border bg-surface text-primary hover:bg-champagne/70 focus:outline-none focus:ring-2 focus:ring-accent/30 focus:ring-offset-2 focus:ring-offset-background',
+      'border border-white/20 bg-transparent text-primary hover:bg-white/5 hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-accent-blue/40 focus:ring-offset-2 focus:ring-offset-background',
   }
 
   const classes = `${baseClasses} ${variants[variant]} ${className}`

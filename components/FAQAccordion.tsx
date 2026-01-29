@@ -10,10 +10,10 @@ export function FAQAccordion({ items }: FAQAccordionProps) {
   return (
     <div className="space-y-4">
       {items.map((item, index) => (
-        <div key={index} className="glass-card rounded-2xl">
+        <div key={index} className="glass-card rounded-2xl border border-white/10">
           <button
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
-            className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-champagne/40 transition-colors"
+            className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
           >
             <span className="text-lg font-medium text-primary pr-8">{item.question}</span>
             <span className="text-secondary text-2xl flex-shrink-0">{openIndex === index ? '−' : '+'}</span>

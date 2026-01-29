@@ -27,29 +27,57 @@
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
-/* Orbit rings — accent (blue/violet), subtle, max 2 glow levels */
+/* Orbit rings — background, more visible, varied speeds */
 .hero-orbit {
   position: absolute;
-  inset: -20%;
-  border: 1px solid rgba(139, 92, 246, 0.1);
   border-radius: 50%;
-  animation: orbit 25s linear infinite;
+  border: 1px solid rgba(139, 92, 246, 0.12);
+  animation: orbit 28s linear infinite;
+  pointer-events: none;
 }
+.hero-orbit:nth-child(1) { inset: -15%; }
 .hero-orbit:nth-child(2) {
-  inset: -25%;
-  border-color: rgba(96, 165, 250, 0.07);
-  animation-duration: 35s;
+  inset: -22%;
+  border-color: rgba(96, 165, 250, 0.1);
+  animation-duration: 34s;
   animation-direction: reverse;
 }
 .hero-orbit:nth-child(3) {
   inset: -30%;
-  border-color: rgba(167, 139, 250, 0.05);
-  animation-duration: 45s;
+  border-color: rgba(167, 139, 250, 0.08);
+  animation-duration: 42s;
+}
+.hero-orbit:nth-child(4) {
+  inset: -38%;
+  border-color: rgba(139, 92, 246, 0.06);
+  animation-duration: 50s;
+  animation-direction: reverse;
+}
+.hero-orbit:nth-child(5) {
+  inset: -46%;
+  border-color: rgba(96, 165, 250, 0.05);
+  animation-duration: 58s;
+}
+.hero-orbit:nth-child(6) {
+  inset: -54%;
+  border-color: rgba(167, 139, 250, 0.04);
+  animation-duration: 66s;
+  animation-direction: reverse;
 }
 
 @keyframes orbit {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+/* Aurora drift — gradient overlay slow shift */
+.hero-aurora-drift {
+  background-size: 120% 120%;
+  animation: aurora-drift 18s ease-in-out infinite;
+}
+@keyframes aurora-drift {
+  0%, 100% { background-position: 0% 50%; opacity: 0.7; }
+  50% { background-position: 100% 50%; opacity: 0.85; }
 }
 
 /* Logo glow — single level, subtle */
@@ -84,16 +112,16 @@
   50% { opacity: 0.85; }
 }
 
-/* Hero shimmer — gradient soft (blue/violet) */
+/* Hero shimmer — gradient soft, more movement */
 .hero-shimmer {
-  background: linear-gradient(135deg, transparent 0%, rgba(96, 165, 250, 0.03) 30%, rgba(139, 92, 246, 0.03) 60%, rgba(167, 139, 250, 0.02) 100%);
-  background-size: 200% 200%;
-  animation: shimmer-bg 10s ease-in-out infinite;
+  background: linear-gradient(135deg, transparent 0%, rgba(96, 165, 250, 0.05) 25%, rgba(139, 92, 246, 0.05) 50%, rgba(167, 139, 250, 0.03) 75%, transparent 100%);
+  background-size: 220% 220%;
+  animation: shimmer-bg 12s ease-in-out infinite;
 }
 
 @keyframes shimmer-bg {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%, 100% { background-position: 0% 50%; opacity: 1; }
+  50% { background-position: 100% 50%; opacity: 0.85; }
 }
 
 /* --- HubiaLogo (hero): on-load only, no loop --- */
@@ -146,13 +174,74 @@
   100% { opacity: 0; }
 }
 
-/* --- HubiaLogoHero (da Hubiaimg): icon + wordmark, WOW --- */
+/* --- Logo orbital rings (around icon) — union / spectacle --- */
+.logo-orbits {
+  position: absolute;
+  inset: -35%;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-orbit-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(139, 92, 246, 0.22);
+  animation: logo-orbit-spin 24s linear infinite;
+  animation-delay: 0.4s;
+}
+.logo-orbit-ring-1 {
+  width: 55%;
+  height: 55%;
+  border-color: rgba(139, 92, 246, 0.28);
+  animation-duration: 18s;
+}
+.logo-orbit-ring-2 {
+  width: 80%;
+  height: 80%;
+  border-color: rgba(96, 165, 250, 0.2);
+  animation-duration: 24s;
+  animation-direction: reverse;
+  animation-delay: 0.6s;
+}
+.logo-orbit-ring-3 {
+  width: 105%;
+  height: 105%;
+  border-color: rgba(167, 139, 250, 0.16);
+  animation-duration: 30s;
+  animation-delay: 0.8s;
+}
+@keyframes logo-orbit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Subtle spotlight behind logo */
+.hubia-logo-hero-wrap::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: min(85vw, 520px);
+  height: min(85vw, 520px);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse 65% 65% at 50% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: -1;
+  animation: logo-spotlight 10s ease-in-out infinite;
+}
+@keyframes logo-spotlight {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* --- HubiaLogoHero: icon + wordmark, WOW --- */
 .hubia-logo-hero-icon {
-  filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.3)) drop-shadow(0 0 40px rgba(96, 165, 250, 0.12));
+  filter: drop-shadow(0 0 24px rgba(139, 92, 246, 0.35)) drop-shadow(0 0 48px rgba(96, 165, 250, 0.15));
   transition: filter 0.35s ease, transform 0.35s ease;
 }
 .hubia-logo-hero-wrap:hover .hubia-logo-hero-icon {
-  filter: drop-shadow(0 0 28px rgba(139, 92, 246, 0.38)) drop-shadow(0 0 50px rgba(96, 165, 250, 0.15));
+  filter: drop-shadow(0 0 32px rgba(139, 92, 246, 0.42)) drop-shadow(0 0 56px rgba(96, 165, 250, 0.18));
 }
 .hubia-logo-hero-wordmark {
   background: linear-gradient(90deg, #60A5FA 0%, #8B5CF6 38%, #A78BFA 75%, #8B5CF6 100%);
@@ -161,42 +250,80 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: hubia-hero-shimmer 5s ease-in-out infinite;
-  filter: drop-shadow(0 0 18px rgba(139, 92, 246, 0.28));
+  filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.3));
   transition: filter 0.35s ease;
 }
 .hubia-logo-hero-wrap:hover .hubia-logo-hero-wordmark {
-  filter: drop-shadow(0 0 24px rgba(139, 92, 246, 0.35));
+  filter: drop-shadow(0 0 28px rgba(139, 92, 246, 0.38));
 }
 @keyframes hubia-hero-shimmer {
   0%, 100% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
 }
-/* One-time entrance */
-.hubia-logo-hero-entrance .hubia-logo-hero-icon {
-  opacity: 0;
-  transform-origin: center;
-  animation: hubia-icon-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+
+/* Union animations: ring draw → connectors → nodes → H */
+.hubia-logo-ring {
+  transform-origin: 50% 50%;
+  animation: hubia-ring-draw 1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
 }
-.hubia-logo-hero-entrance .hubia-logo-hero-wordmark {
-  opacity: 0;
-  animation: hubia-wordmark-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.25s forwards;
+.hubia-logo-connectors {
+  animation: hubia-connectors-draw 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.45s forwards;
 }
-@keyframes hubia-icon-in {
-  from { opacity: 0; transform: scale(0.92); }
+.hubia-logo-node {
+  opacity: 0;
+  animation: hubia-node-in 0.4s ease-out forwards;
+}
+.hubia-logo-node-0 { animation-delay: 0.7s; }
+.hubia-logo-node-1 { animation-delay: 0.85s; }
+.hubia-logo-node-2 { animation-delay: 1s; }
+.hubia-logo-node-3 { animation-delay: 1.15s; }
+.hubia-logo-h {
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation: hubia-h-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
+}
+@keyframes hubia-ring-draw {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes hubia-connectors-draw {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes hubia-node-in {
+  to { opacity: 1; }
+}
+@keyframes hubia-h-in {
+  from { opacity: 0; transform: scale(0.88); }
   to { opacity: 1; transform: scale(1); }
 }
+
+/* Entrance: wordmark only; icon "builds" via union anims */
+.hubia-logo-hero-entrance .hubia-logo-hero-wordmark {
+  opacity: 0;
+  animation: hubia-wordmark-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 1.4s forwards;
+}
 @keyframes hubia-wordmark-in {
-  from { opacity: 0; transform: translateY(8px); }
+  from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 @media (prefers-reduced-motion: reduce) {
-  .hubia-logo-hero-entrance .hubia-logo-hero-icon,
+  .logo-orbit-ring,
+  .logo-orbit-ring-1,
+  .logo-orbit-ring-2,
+  .logo-orbit-ring-3 { animation: none; }
+  .hubia-logo-ring { animation: none; stroke-dashoffset: 0; }
+  .hubia-logo-connectors { animation: none; stroke-dashoffset: 0; }
+  .hubia-logo-node { animation: none; opacity: 1; }
+  .hubia-logo-h { animation: none; opacity: 1; }
   .hubia-logo-hero-entrance .hubia-logo-hero-wordmark {
     animation: none;
     opacity: 1;
     transform: none;
   }
   .hubia-logo-hero-wordmark { animation: none; }
+  .hero-aurora-drift { animation: none; }
+  .hero-shimmer { animation: none; }
+  .hubia-logo-hero-wrap::before { animation: none; opacity: 0.7; }
 }
 
 /* Subtle noise overlay */

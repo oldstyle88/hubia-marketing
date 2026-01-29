@@ -17,7 +17,7 @@ export function FAQAccordion({ items }: FAQAccordionProps) {
   return (
     <div className="space-y-4">
       {items.map((item, index) => (
-        <div key={index} className="bg-surface border border-border-strong rounded-xl overflow-hidden">
+        <div key={index} className="bg-surface/80 border border-border-strong rounded-xl overflow-hidden backdrop-blur-sm hover:border-accent-violet/15 transition-colors">
           <button
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
             className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"

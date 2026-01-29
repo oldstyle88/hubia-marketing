@@ -5,6 +5,8 @@ import { Footer } from '@/components/Footer'
 import { Section } from '@/components/Section'
 import { PricingTable } from '@/components/PricingTable'
 import { PwaOnlyBlock } from '@/components/PwaOnlyBlock'
+import { FAQAccordion } from '@/components/FAQAccordion'
+import { Button } from '@/components/Button'
 
 export async function generateMetadata() {
   const t = await getTranslations('pricing')
@@ -17,6 +19,7 @@ export async function generateMetadata() {
 export default async function PricingPage() {
   const t = await getTranslations('pricing')
   const tPlans = await getTranslations('plans')
+  const tHome = await getTranslations('home')
 
   const plans = [
     {
@@ -39,6 +42,12 @@ export default async function PricingPage() {
     },
   ]
 
+  const faqItems = [
+    { question: t('faq.q1'), answer: t('faq.a1') },
+    { question: t('faq.q2'), answer: t('faq.a2') },
+    { question: t('faq.q3'), answer: t('faq.a3') },
+  ]
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -52,7 +61,7 @@ export default async function PricingPage() {
             <p className="text-xl text-secondary leading-relaxed mb-6">
               {t('subtitle')}
             </p>
-            <PwaOnlyBlock className="text-left" />
+            <PwaOnlyBlock className="text-left" title={tHome('pwaBlock.title')} body={tHome('pwaBlock.body')} />
           </div>
 
           <PricingTable
@@ -63,15 +72,30 @@ export default async function PricingPage() {
           />
 
           <div className="mt-16 text-center max-w-2xl mx-auto">
-            <p className="text-secondary mb-4">
+            <p className="text-secondary mb-2">
               {t('footer')}
             </p>
-            <Link
-              href="/contact"
-              className="text-accent-violet-soft hover:text-accent-blue transition-colors font-medium"
-            >
-              {t('contactCta')}
-            </Link>
+            <p className="text-secondary/80 text-sm mb-10">
+              {t('setupIncludes')}
+            </p>
+          </div>
+
+          <div className="mt-20 max-w-2xl mx-auto">
+            <h2 className="text-2xl font-semibold text-primary mb-8 text-center">
+              {t('faqTitle')}
+            </h2>
+            <FAQAccordion items={faqItems} />
+          </div>
+
+          <div className="mt-16 text-center">
+            <Button href="/contact" variant="primary" className="text-lg px-10 py-5">
+              {t('requestDemo')}
+            </Button>
+            <p className="mt-4 text-secondary text-sm">
+              <Link href="/contact" className="text-accent-violet-soft hover:text-accent-blue transition-colors">
+                {t('contactCta')}
+              </Link>
+            </p>
           </div>
         </Section>
       </main>

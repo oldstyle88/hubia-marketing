@@ -17,7 +17,7 @@ export function PwaOnlyBlock({
   const subClass = isDark ? 'text-secondary' : 'text-secondary'
 
   return (
-    <div className={`rounded-xl border ${borderClass} p-6 sm:p-8 bg-surface ${className}`}>
+    <div className={`rounded-xl border ${borderClass} p-6 sm:p-8 bg-surface/80 backdrop-blur-sm ${className}`}>
       <p className={`text-sm font-medium uppercase tracking-wider ${subClass} mb-2`}>
         {title}
       </p>

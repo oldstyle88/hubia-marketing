@@ -63,7 +63,9 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
       </head>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <div className="relative z-10 min-h-screen">{children}</div>
+      </body>
     </html>
   )
 }

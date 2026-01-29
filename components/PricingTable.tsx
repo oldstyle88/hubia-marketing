@@ -32,8 +32,8 @@ export function PricingTable({
           key={index}
           className={
             plan.highlight
-              ? 'relative border-2 border-accent-violet/40 shadow-glow-sm bg-surface-elevated'
-              : 'relative bg-surface'
+              ? 'relative border-2 border-accent-violet/35 bg-surface-elevated/90'
+              : 'relative'
           }
         >
           {plan.badge && (

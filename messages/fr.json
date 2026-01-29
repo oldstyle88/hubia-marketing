@@ -4,7 +4,9 @@
     "pricing": "Tarifs",
     "faq": "FAQ",
     "contact": "Contact",
-    "requestDemo": "Demander une démo"
+    "requestDemo": "Demander une démo",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "home": {
     "hero": {
@@ -18,12 +20,23 @@
       "clientPwaDesc": "App installable pour vos clients. Réservations et commandes sans quitter votre marque.",
       "staffDashboard": "Tableau de bord équipe",
       "staffDashboardDesc": "Calendrier, notifications, disponibilités. Tout dans une interface.",
-      "adminPanel": "Panneau d'administration",
-      "adminPanelDesc": "Provisioning des boutiques, vue multi-sites. Uniquement là où inclus dans votre offre."
+      "analytics": "Analytics et rapports",
+      "analyticsDesc": "Indicateurs clés : réservations, chiffre d'affaires, usage. Tableau de bord clair et à jour."
     },
     "pwaBlock": {
       "title": "PWA uniquement, pas d'apps natives",
       "body": "Nous ne publions pas d'apps sur les stores iOS/Android. Chaque client reçoit une PWA white-label : même UX sur tous les appareils, un seul code, mises à jour instantanées."
+    },
+    "livePreview": {
+      "title": "Aperçu",
+      "subtitle": "Choisissez un domaine : l’interface s’adapte.",
+      "barber": "Barbier",
+      "beauty": "Esthétique",
+      "pizza": "Pizzeria",
+      "barberFeatures": ["Réservations coupe", "Gestion des postes", "Consommations et abonnements"],
+      "beautyFeatures": ["Réservations multi-prestations", "Équipe et salles", "Promos et forfaits"],
+      "pizzaFeatures": ["Commandes sur place et à emporter", "Menu et variantes", "Notifications cuisine"],
+      "demoNote": "Aperçu démo · pas une démo en direct"
     },
     "forWho": {
       "title": "Pour qui est HŪBIA",
@@ -98,7 +111,7 @@
       "q5": "Y a-t-il une limite de réservations ?",
       "a5": "Non. Les offres diffèrent par le nombre d'équipe, de boutiques et de fonctionnalités avancées.",
       "q6": "Comment fonctionne le support ?",
-      "a6": "Support par email pour toutes les offres. MAX inclut support prioritaire et SLA.",
+      "a6": "Support par email pour toutes les offres. Avec MAX, priorité dans les demandes.",
       "q7": "Puis-je personnaliser la marque ?",
       "a7": "Oui, toutes les offres incluent couleurs, logo et icône app. Les offres supérieures incluent domaine personnalisé.",
       "q8": "Mes données sont-elles sécurisées ?",
@@ -111,24 +124,34 @@
   },
   "pricing": {
     "title": "Tarifs",
-    "subtitle": "Deux offres, zéro confusion. Nous ne vendons pas le minimum — si vous voulez qualité et contrôle par boutique, voici PRO et MAX.",
+    "subtitle": "Deux offres, zéro confusion. Qualité et contrôle : PRO pour un site, MAX pour multi-sites et setup assisté.",
     "footer": "Setup unique + abonnement mensuel. Pas de coûts cachés, pas d'engagement.",
+    "setupIncludes": "Le setup inclut : déploiement, branding PWA (manifest, icônes), config, seed de prestations, checklist go-live.",
     "contactCta": "Nous contacter pour une consultation →",
     "perMonth": "/mois",
     "setupOneTime": "setup (unique)",
     "requestDemo": "Demander une démo",
-    "mostChosen": "Plus choisi"
+    "mostChosen": "Plus choisi",
+    "faqTitle": "Questions sur les offres",
+    "faq": {
+      "q1": "Que comprend le setup unique ?",
+      "a1": "Déploiement, branding PWA (manifest, icônes, service worker), config initiale, prestations de base, checklist go-live. Pas de mauvaises surprises.",
+      "q2": "Puis-je passer de PRO à MAX ou l'inverse ?",
+      "a2": "Oui. Upgrade ou downgrade à tout moment ; les changements s'appliquent au prochain cycle de facturation.",
+      "q3": "Comment fonctionne le paiement ?",
+      "a3": "Setup unique à l'activation et abonnement mensuel facturé d'avance. Facturation claire, pas d'engagement."
+    }
   },
   "plans": {
     "pro": {
       "name": "PRO",
-      "description": "PWA Client + Tableau de bord équipe, branding par boutique, réservations/commandes/notifications, support standard.",
-      "features": ["PWA Client + Tableau de bord équipe", "Branding par boutique (manifest, icons, SW)", "Réservations / commandes / notifications", "Support standard"]
+      "description": "PWA Client, Tableau de bord équipe, branding par boutique. Réservations, commandes, notifications, analytics. Support standard.",
+      "features": ["PWA Client + Tableau de bord équipe", "Branding par boutique (manifest, icons, SW)", "Réservations, commandes, notifications", "Analytics incluses", "Support standard"]
     },
     "max": {
       "name": "MAX",
-      "description": "Tout PRO + multi-sites, priorité et setup avancé. Panneau d'administration, provisioning assisté, analytics avancées, SLA.",
-      "features": ["Tout PRO inclus", "Panneau d'administration + provisioning assisté", "Analytics avancées", "SLA support + priorité", "Audit sécurité pré-go-live (checklist)"]
+      "description": "Tout PRO + multi-sites, setup assisté unique et priorité support. Analytics avancées et audit pré-go-live.",
+      "features": ["Tout PRO inclus", "Setup assisté (deploy, branding PWA, config, seed, checklist go-live)", "Analytics avancées", "Priorité dans les demandes de support", "Audit pré-go-live (checklist)"]
     }
   },
   "contact": {
@@ -167,6 +190,7 @@
     "lastUpdate": "Dernière mise à jour"
   },
   "common": {
-    "required": "*"
+    "required": "*",
+    "chooseLanguage": "Choisir la langue"
   }
 }

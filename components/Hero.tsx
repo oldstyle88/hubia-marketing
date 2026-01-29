@@ -31,8 +31,8 @@ export function Hero({ title, subtitle, ctaDemo, ctaPrices, proofCards }: HeroPr
       <div className="hero-shimmer absolute inset-0 pointer-events-none" aria-hidden="true" />
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 text-center">
-        {/* Logo hero: due archi che si connettono + HŪBIA, oro/charcoal, loop morbido. */}
-        <div className="flex justify-center mb-10">
+        {/* Logo hero: micro-interaction on hover (scale once) */}
+        <div className="flex justify-center mb-10 transition-transform duration-300 hover:scale-[1.03] cursor-default">
           <HubiaLogoConnection variant="dark" />
         </div>
 
@@ -52,19 +52,19 @@ export function Hero({ title, subtitle, ctaDemo, ctaPrices, proofCards }: HeroPr
           </Button>
         </div>
 
-        {/* Product mock — device frame with subtle glow */}
-        <div className="max-w-2xl mx-auto mb-16 rounded-2xl overflow-hidden border border-border-strong bg-surface shadow-glow-sm">
+        {/* Product mock — device frame, no constant glow */}
+        <div className="max-w-2xl mx-auto mb-16 rounded-2xl overflow-hidden border border-border-strong bg-surface/80 backdrop-blur-sm hover:shadow-glow-hover hover:border-accent-violet/20 transition-all duration-200">
           <div className="aspect-[4/3] bg-gradient-accent-soft flex items-center justify-center">
             <div className="text-secondary/60 text-sm">App preview</div>
           </div>
         </div>
 
-        {/* Proof cards — dark surface */}
+        {/* Proof cards — glass, glow on hover only */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {proofCards.map((card, index) => (
             <div
               key={index}
-              className="bg-surface border border-border-strong rounded-xl p-6 text-left hover:border-accent-violet/20 hover:shadow-glow-sm transition-all duration-200"
+              className="bg-surface/80 border border-border-strong rounded-xl p-6 text-left backdrop-blur-sm hover:border-accent-violet/20 hover:shadow-glow-hover transition-all duration-200"
             >
               <div className="aspect-video bg-gradient-accent-soft rounded-lg mb-4 flex items-center justify-center text-secondary/50 text-sm">
                 Screenshot

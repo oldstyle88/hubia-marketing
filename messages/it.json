@@ -4,62 +4,75 @@
     "pricing": "Prezzi",
     "faq": "FAQ",
     "contact": "Contatti",
-    "requestDemo": "Richiedi demo"
+    "requestDemo": "Richiedi demo",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu"
   },
   "home": {
     "hero": {
-      "title": "La piattaforma PWA premium per le attività locali.",
-      "subtitle": "Prenotazioni, ordini, staff e analytics — un'app per shop, zero fughe di branding. Solo PWA, installabile su iOS e Android.",
+      "title": "La piattaforma PWA che fa la differenza.",
+      "subtitle": "Prenotazioni, ordini, dashboard staff e analytics. Un’app per il tuo shop, installabile ovunque. Zero compromessi sul branding.",
       "requestDemo": "Richiedi demo",
       "viewPrices": "Vedi prezzi"
     },
     "proof": {
       "clientPwa": "Client PWA",
       "clientPwaDesc": "App installabile per i tuoi clienti. Prenotazioni e ordini senza uscire dal brand.",
-      "staffDashboard": "Staff Dashboard",
+      "staffDashboard": "Dashboard Staff",
       "staffDashboardDesc": "Calendario, notifiche, gestione disponibilità. Tutto in un'unica interfaccia.",
-      "adminPanel": "Pannello amministrazione",
-      "adminPanelDesc": "Provisioning shop, overview multi-sede. Solo dove previsto dal piano."
+      "analytics": "Analytics & Report",
+      "analyticsDesc": "Metriche chiave: prenotazioni, ricavi, utilizzo servizi. Dashboard chiara e sempre aggiornata."
     },
     "pwaBlock": {
       "title": "Solo PWA, zero app native",
-      "body": "Non sviluppiamo app iOS/Android in negozio. Ogni cliente riceve una PWA bianco-label: stessa UX su tutti i dispositivi, un solo codice, aggiornamenti istantanei."
+      "body": "Niente App Store: la tua attività ha una PWA bianco-label installabile su iOS e Android. Stessa esperienza ovunque, un solo codice, aggiornamenti immediati."
+    },
+    "livePreview": {
+      "title": "Provalo in anteprima",
+      "subtitle": "Scegli un verticale: l’interfaccia si adatta al tuo business.",
+      "barber": "Barber",
+      "beauty": "Estetica",
+      "pizza": "Pizzeria",
+      "barberFeatures": ["Prenotazioni taglio", "Gestione posti", "Consumi e abbonamenti"],
+      "beautyFeatures": ["Prenotazioni multi-servizio", "Staff e room", "Promo e pacchetti"],
+      "pizzaFeatures": ["Ordini tavolo e takeaway", "Menu e varianti", "Notifiche cucina"],
+      "demoNote": "Anteprima demo · non è una demo reale"
     },
     "forWho": {
       "title": "Per chi è HŪBIA",
-      "subtitle": "Una soluzione pensata per professionisti che vogliono eccellere",
+      "subtitle": "Per chi non scende a compromessi su qualità e brand",
       "barber": "Barber",
-      "barberDesc": "Gestisci prenotazioni, staff e clienti con un sistema pensato per barberie moderne.",
+      "barberDesc": "Prenotazioni, staff e clienti in un unico posto. Pensato per barberie che puntano in alto.",
       "hairSalon": "Hair Salon",
-      "hairSalonDesc": "Ottimizza gli appuntamenti e migliora l'esperienza dei tuoi clienti con strumenti dedicati.",
+      "hairSalonDesc": "Appuntamenti ottimizzati, esperienza clienti curata. Strumenti che fanno risparmiare tempo.",
       "beautyCenter": "Beauty Center",
-      "beautyCenterDesc": "Prenotazioni multi-servizio, gestione staff e analytics per centri estetici."
+      "beautyCenterDesc": "Prenotazioni multi-servizio, gestione staff e analytics. Ideale per centri estetici."
     },
     "features": {
       "title": "Tutto quello che ti serve",
-      "subtitle": "Funzionalità complete per gestire la tua attività in modo professionale",
-      "booking": "Prenotazioni Online",
-      "bookingDesc": "Sistema di prenotazione intuitivo per i clienti, disponibile 24/7. Gestione slot, servizi multipli e ricorrenze.",
-      "staff": "Gestione Staff",
-      "staffDesc": "Dashboard dedicata per lo staff con calendario, notifiche push e gestione disponibilità in tempo reale.",
+      "subtitle": "Funzionalità complete per gestire la tua attività senza pensieri",
+      "booking": "Prenotazioni",
+      "bookingDesc": "Prenotazioni intuitive per i clienti, 24/7. Slot, servizi multipli, ricorrenze.",
+      "staff": "Dashboard Staff",
+      "staffDesc": "Calendario, notifiche push e disponibilità in tempo reale. Tutto in un’unica interfaccia.",
       "push": "Notifiche Push",
-      "pushDesc": "Notifiche automatiche per conferme, promemoria e aggiornamenti. Supporto web push e mobile.",
+      "pushDesc": "Conferme, promemoria e aggiornamenti automatici. Web push e mobile.",
       "crm": "Database Clienti",
-      "crmDesc": "Anagrafica clienti completa con storico prenotazioni, preferenze e programmi fedeltà integrati.",
-      "analytics": "Analytics & Report",
-      "analyticsDesc": "Dashboard con metriche chiave: prenotazioni, revenue, utilizzo servizi e performance staff.",
+      "crmDesc": "Anagrafica, storico prenotazioni, preferenze. Base solida per fedeltà e marketing.",
+      "analytics": "Analytics",
+      "analyticsDesc": "Metriche chiare: prenotazioni, ricavi, utilizzo servizi, performance staff.",
       "branding": "Branding PWA",
-      "brandingDesc": "App installabile (PWA) con branding personalizzato, icona e tema su misura per la tua attività."
+      "brandingDesc": "PWA con i tuoi colori, logo e icona. Installabile ovunque, sempre il tuo brand."
     },
     "howItWorks": {
       "title": "Come funziona",
-      "subtitle": "Setup rapido e configurazione guidata",
+      "subtitle": "Setup guidato, go-live senza sorprese",
       "setup": "Setup",
-      "setupDesc": "Configurazione iniziale guidata. Creiamo il tuo account e prepariamo l'ambiente in pochi minuti.",
+      "setupDesc": "Account e ambiente pronti in breve. Configurazione iniziale assistita.",
       "config": "Configurazione",
-      "configDesc": "Personalizza servizi, staff, orari e branding. Importa i tuoi dati esistenti se necessario.",
+      "configDesc": "Servizi, staff, orari e branding su misura. Import dati esistenti quando serve.",
       "golive": "Go-live",
-      "goliveDesc": "Attiva la tua app e inizia a ricevere prenotazioni. Supporto dedicato durante il lancio."
+      "goliveDesc": "Attivi l’app e parti. Supporto dedicato in fase di lancio."
     },
     "reliability": {
       "title": "Affidabilità by design",
@@ -79,7 +92,7 @@
     },
     "pricingTeaser": {
       "title": "Piani trasparenti",
-      "subtitle": "Non vendiamo piani cheap. Se cerchi il minimo sindacale, non siamo noi — ma se vuoi qualità e controllo, abbiamo due opzioni chiare.",
+      "subtitle": "Due opzioni chiare: PRO per un singolo locale, MAX per multi-sede e setup assistito. Qualità e controllo, niente sorprese.",
       "cta": "Vedi PRO e MAX"
     },
     "faq": {
@@ -98,7 +111,7 @@
       "q5": "C'è un limite al numero di prenotazioni?",
       "a5": "No. I piani differiscono per numero di staff, shop aggiuntivi e funzionalità avanzate.",
       "q6": "Come funziona il supporto?",
-      "a6": "Offriamo supporto via email per tutti i piani. MAX include supporto prioritario e SLA garantiti.",
+      "a6": "Supporto via email per tutti i piani. Con MAX hai priorità nelle richieste di supporto.",
       "q7": "Posso personalizzare il branding?",
       "a7": "Sì, tutti i piani includono personalizzazione di colori, logo e icona app. I piani superiori includono dominio personalizzato.",
       "q8": "I dati sono sicuri?",
@@ -111,24 +124,34 @@
   },
   "pricing": {
     "title": "Prezzi",
-    "subtitle": "Due piani, zero confusione. Non vendiamo il minimo sindacale — se cerchi solo quello, non siamo noi. Se vuoi qualità e controllo per shop, ecco PRO e MAX.",
+    "subtitle": "Due piani, zero confusione. Qualità e controllo per la tua attività: PRO per un singolo locale, MAX per multi-sede e setup assistito.",
     "footer": "Setup una tantum + canone mensile. Nessun costo nascosto, nessun vincolo di durata.",
+    "setupIncludes": "Il setup include: deploy, branding PWA (manifest, icone), configurazione iniziale, seed servizi e checklist go-live.",
     "contactCta": "Contattaci per una consulenza →",
     "perMonth": "/mese",
     "setupOneTime": "setup (una tantum)",
     "requestDemo": "Richiedi demo",
-    "mostChosen": "Più scelto"
+    "mostChosen": "Più scelto",
+    "faqTitle": "Domande sui piani",
+    "faq": {
+      "q1": "Cosa include il setup una tantum?",
+      "a1": "Deploy dell'app, branding PWA (manifest, icone, service worker), configurazione iniziale, creazione dei servizi di base e checklist per il go-live. Niente sorprese.",
+      "q2": "Posso passare da PRO a MAX o viceversa?",
+      "a2": "Sì. Puoi upgradare o downgrade in qualsiasi momento; le modifiche si applicano al ciclo di fatturazione successivo.",
+      "q3": "Come funziona il pagamento?",
+      "a3": "Setup una tantum all'attivazione e canone mensile fatturato in anticipo. Fatturazione chiara, nessun vincolo di durata."
+    }
   },
   "plans": {
     "pro": {
       "name": "PRO",
-      "description": "PWA Client + Staff Dashboard, branding per shop, prenotazioni/ordini/notifiche, supporto standard.",
-      "features": ["PWA Client + Dashboard Staff", "Branding per shop (manifest, icons, SW)", "Prenotazioni / ordini / notifiche", "Supporto standard"]
+      "description": "PWA Client, Dashboard Staff, branding per shop. Prenotazioni, ordini, notifiche e analytics. Supporto standard.",
+      "features": ["PWA Client + Dashboard Staff", "Branding per shop (manifest, icone, SW)", "Prenotazioni, ordini, notifiche", "Analytics incluse", "Supporto standard"]
     },
     "max": {
       "name": "MAX",
-      "description": "Tutto PRO + multi-locale, priorità e setup avanzato. Pannello amministrazione, provisioning assistito, analytics avanzate, SLA.",
-      "features": ["Tutto PRO incluso", "Pannello amministrazione + provisioning assistito", "Analytics avanzate", "SLA supporto + priorità", "Audit sicurezza pre-go-live (checklist)"]
+      "description": "Tutto PRO + multi-locale, setup assistito una tantum e priorità nel supporto. Analytics avanzate e audit pre-go-live.",
+      "features": ["Tutto PRO incluso", "Setup assistito (deploy, branding PWA, configurazione, seed servizi, checklist go-live)", "Analytics avanzate", "Priorità nelle richieste di supporto", "Audit pre-go-live (checklist)"]
     }
   },
   "contact": {
@@ -149,7 +172,7 @@
     "businessOther": "Altro"
   },
   "footer": {
-    "tagline": "Piattaforma prenotazioni premium per barber, hair salon e beauty center.",
+    "tagline": "Piattaforma PWA premium per barber, hair salon e beauty center. Prenotazioni, staff, analytics.",
     "product": "Prodotto",
     "company": "Azienda",
     "contactLink": "Contatti",
@@ -167,6 +190,7 @@
     "lastUpdate": "Ultimo aggiornamento"
   },
   "common": {
-    "required": "*"
+    "required": "*",
+    "chooseLanguage": "Scegli lingua"
   }
 }

@@ -4,7 +4,9 @@
     "pricing": "Pricing",
     "faq": "FAQ",
     "contact": "Contact",
-    "requestDemo": "Request demo"
+    "requestDemo": "Request demo",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "home": {
     "hero": {
@@ -18,12 +20,23 @@
       "clientPwaDesc": "Installable app for your customers. Bookings and orders without leaving your brand.",
       "staffDashboard": "Staff Dashboard",
       "staffDashboardDesc": "Calendar, notifications, availability management. All in one interface.",
-      "adminPanel": "Admin panel",
-      "adminPanelDesc": "Shop provisioning, multi-location overview. Only where included in your plan."
+      "analytics": "Analytics & Reports",
+      "analyticsDesc": "Key metrics: bookings, revenue, service usage. Clear, up-to-date dashboard."
     },
     "pwaBlock": {
       "title": "PWA only, no native apps",
       "body": "We don't ship iOS/Android store apps. Every client gets a white-label PWA: same UX on all devices, one codebase, instant updates."
+    },
+    "livePreview": {
+      "title": "Try it in preview",
+      "subtitle": "Pick a vertical: the interface adapts to your business.",
+      "barber": "Barber",
+      "beauty": "Beauty",
+      "pizza": "Pizzeria",
+      "barberFeatures": ["Cut bookings", "Chair management", "Consumptions & passes"],
+      "beautyFeatures": ["Multi-service bookings", "Staff & rooms", "Promos & packages"],
+      "pizzaFeatures": ["Dine-in & takeaway orders", "Menu & variants", "Kitchen notifications"],
+      "demoNote": "Demo preview · not a live demo"
     },
     "forWho": {
       "title": "Who HŪBIA is for",
@@ -98,7 +111,7 @@
       "q5": "Is there a limit on the number of bookings?",
       "a5": "No. Plans differ by number of staff, additional shops and advanced features.",
       "q6": "How does support work?",
-      "a6": "We offer email support for all plans. MAX includes priority support and guaranteed SLA.",
+      "a6": "Email support for all plans. MAX gives you priority when you get in touch.",
       "q7": "Can I customise branding?",
       "a7": "Yes, all plans include custom colours, logo and app icon. Higher plans include custom domain.",
       "q8": "Is my data secure?",
@@ -111,24 +124,34 @@
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "Two plans, zero confusion. We don't sell the bare minimum — if that's what you want, we're not it. If you want quality and control per shop, here are PRO and MAX.",
+    "subtitle": "Two plans, zero confusion. Quality and control for your business: PRO for a single location, MAX for multi-site and assisted setup.",
     "footer": "One-time setup + monthly fee. No hidden costs, no lock-in.",
+    "setupIncludes": "Setup includes: deploy, PWA branding (manifest, icons), initial config, service seed data, and go-live checklist.",
     "contactCta": "Contact us for a consultation →",
     "perMonth": "/month",
     "setupOneTime": "setup (one-time)",
     "requestDemo": "Request demo",
-    "mostChosen": "Most chosen"
+    "mostChosen": "Most chosen",
+    "faqTitle": "Questions about plans",
+    "faq": {
+      "q1": "What does the one-time setup include?",
+      "a1": "App deploy, PWA branding (manifest, icons, service worker), initial config, base services setup, and go-live checklist. No surprises.",
+      "q2": "Can I switch between PRO and MAX?",
+      "a2": "Yes. You can upgrade or downgrade any time; changes apply to the next billing cycle.",
+      "q3": "How does payment work?",
+      "a3": "One-time setup at activation and monthly fee billed in advance. Clear invoicing, no lock-in."
+    }
   },
   "plans": {
     "pro": {
       "name": "PRO",
-      "description": "PWA Client + Staff Dashboard, branding per shop, bookings/orders/notifications, standard support.",
-      "features": ["PWA Client + Staff Dashboard", "Branding per shop (manifest, icons, SW)", "Bookings / orders / notifications", "Standard support"]
+      "description": "PWA Client, Staff Dashboard, branding per shop. Bookings, orders, notifications, and analytics. Standard support.",
+      "features": ["PWA Client + Staff Dashboard", "Branding per shop (manifest, icons, SW)", "Bookings, orders, notifications", "Analytics included", "Standard support"]
     },
     "max": {
       "name": "MAX",
-      "description": "Everything in PRO + multi-location, priority and advanced setup. Admin panel, assisted provisioning, advanced analytics, SLA.",
-      "features": ["Everything in PRO", "Admin panel + assisted provisioning", "Advanced analytics", "Support SLA + priority", "Pre-go-live security audit (checklist)"]
+      "description": "Everything in PRO + multi-location, one-time assisted setup, and priority support. Advanced analytics and pre-go-live audit.",
+      "features": ["Everything in PRO", "Assisted setup (deploy, PWA branding, config, service seed, go-live checklist)", "Advanced analytics", "Priority support", "Pre-go-live audit (checklist)"]
     }
   },
   "contact": {
@@ -167,6 +190,7 @@
     "lastUpdate": "Last updated"
   },
   "common": {
-    "required": "*"
+    "required": "*",
+    "chooseLanguage": "Choose language"
   }
 }

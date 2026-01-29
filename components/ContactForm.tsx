@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
-import { usePathname } from 'next/navigation'
+import { usePathname } from '@/i18n/navigation'
 import { Section } from '@/components/Section'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'

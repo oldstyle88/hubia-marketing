@@ -8,6 +8,7 @@ import { Card } from '@/components/Card'
 import { FeatureGrid } from '@/components/FeatureGrid'
 import { FAQAccordion } from '@/components/FAQAccordion'
 import { PwaOnlyBlock } from '@/components/PwaOnlyBlock'
+import { LivePreview } from '@/components/LivePreview'
 import { ReliabilitySection } from '@/components/ReliabilitySection'
 import { PricingTable } from '@/components/PricingTable'
 
@@ -19,7 +20,7 @@ export default async function HomePage() {
   const proofCards = [
     { title: t('proof.clientPwa'), description: t('proof.clientPwaDesc'), placeholder: true },
     { title: t('proof.staffDashboard'), description: t('proof.staffDashboardDesc'), placeholder: true },
-    { title: t('proof.adminPanel'), description: t('proof.adminPanelDesc'), placeholder: true },
+    { title: t('proof.analytics'), description: t('proof.analyticsDesc'), placeholder: true },
   ]
 
   const targetAudience = [
@@ -95,6 +96,10 @@ export default async function HomePage() {
 
         <Section className="bg-background-alt pt-16 pb-8">
           <PwaOnlyBlock title={t('pwaBlock.title')} body={t('pwaBlock.body')} />
+        </Section>
+
+        <Section className="bg-background">
+          <LivePreview />
         </Section>
 
         <Section id="product" className="bg-surface">

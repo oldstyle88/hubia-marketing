@@ -44,7 +44,7 @@ export default async function TermsPage() {
                 <p>
                   HŪBIA è una piattaforma software-as-a-service (SaaS) che fornisce strumenti per la gestione di prenotazioni,
                   clienti, staff e operazioni per barber, hair salon e beauty center. Il Servizio include accesso a un&apos;applicazione
-                  web e mobile, dashboard di gestione e funzionalità di supporto.
+                  web e PWA, dashboard staff e funzionalità di supporto.
                 </p>
               </section>
 
@@ -108,8 +108,8 @@ export default async function TermsPage() {
                 <h2 className="text-2xl font-semibold text-primary mb-4">8. Disponibilità del servizio</h2>
                 <p>
                   Ci impegniamo a mantenere il Servizio disponibile, ma non garantiamo disponibilità ininterrotta. Il Servizio può
-                  essere temporaneamente non disponibile per manutenzione, aggiornamenti o cause di forza maggiore. I piani PRO e Elite
-                  includono SLA specifici come descritto nella pagina Prezzi.
+                  essere temporaneamente non disponibile per manutenzione, aggiornamenti o cause di forza maggiore. Livelli di supporto
+                  per i piani PRO e MAX sono descritti nella pagina Prezzi.
                 </p>
               </section>
 

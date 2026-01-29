@@ -18,7 +18,9 @@ import { useId } from 'react'
  * Solo SVG inline + CSS, nessuna immagine esterna.
  */
 
-const GOLD = '#C8A65A'
+const ACCENT_BLUE = '#60A5FA'
+const ACCENT_VIOLET = '#8B5CF6'
+const ACCENT_VIOLET_SOFT = '#A78BFA'
 const CHARCOAL = '#111111'
 
 /** Lunghezza approssimativa del path degli archi (per stroke-dasharray/offset). */
@@ -30,7 +32,7 @@ interface HubiaLogoConnectionProps {
 }
 
 export function HubiaLogoConnection({ variant = 'light' }: HubiaLogoConnectionProps) {
-  const gradientId = `hubia-conn-gold-${useId().replace(/:/g, '')}`
+  const gradientId = `hubia-conn-grad-${useId().replace(/:/g, '')}`
   const isDark = variant === 'dark'
 
   return (
@@ -38,7 +40,7 @@ export function HubiaLogoConnection({ variant = 'light' }: HubiaLogoConnectionPr
       className={`inline-flex flex-col items-center gap-4 ${isDark ? 'text-primary' : ''}`}
       style={isDark ? undefined : { color: CHARCOAL }}
     >
-      {/* Simbolo: due archi + nodo centrale */}
+      {/* Simbolo: due archi + nodo, gradient blu→viola */}
       <svg
         viewBox="0 0 100 100"
         className="h-16 w-16 sm:h-20 sm:w-20"
@@ -46,11 +48,11 @@ export function HubiaLogoConnection({ variant = 'light' }: HubiaLogoConnectionPr
       >
         <defs>
           <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor={GOLD} stopOpacity="0.95" />
-            <stop offset="100%" stopColor={GOLD} stopOpacity="0.75" />
+            <stop offset="0%" stopColor={ACCENT_BLUE} />
+            <stop offset="50%" stopColor={ACCENT_VIOLET} />
+            <stop offset="100%" stopColor={ACCENT_VIOLET_SOFT} />
           </linearGradient>
         </defs>
-        {/* Arco sinistro: si disegna e si dissolve (stroke-dashoffset) */}
         <path
           d="M 18 22 Q 18 78 50 78"
           fill="none"
@@ -60,7 +62,6 @@ export function HubiaLogoConnection({ variant = 'light' }: HubiaLogoConnectionPr
           strokeDasharray={ARC_PATH_LENGTH}
           className="hubia-arc hubia-arc-left"
         />
-        {/* Arco destro: stesso ritmo, leggermente in ritardo per sensazione di incontro */}
         <path
           d="M 82 22 Q 82 78 50 78"
           fill="none"
@@ -70,12 +71,11 @@ export function HubiaLogoConnection({ variant = 'light' }: HubiaLogoConnectionPr
           strokeDasharray={ARC_PATH_LENGTH}
           className="hubia-arc hubia-arc-right"
         />
-        {/* Nodo centrale: appare quando gli archi si congiungono, poi si dissolve */}
         <circle
           cx="50"
           cy="78"
           r="5"
-          fill={GOLD}
+          fill={ACCENT_VIOLET_SOFT}
           className="hubia-node"
         />
       </svg>

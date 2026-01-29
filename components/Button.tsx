@@ -23,18 +23,18 @@ export function Button({
 
   const variants = {
     primary:
-      'bg-gradient-to-r from-accent-blue to-accent-violet text-white border-0 hover:shadow-glow focus:outline-none focus:ring-2 focus:ring-accent-violet/50 focus:ring-offset-2 focus:ring-offset-background',
+      'bg-gradient-to-r from-accent-blue to-accent-violet text-white border-0 hover:shadow-glow-hover focus:outline-none focus:ring-2 focus:ring-accent-violet/50 focus:ring-offset-2 focus:ring-offset-background transition-shadow duration-200',
     secondary:
-      'bg-surface border border-border-strong text-primary hover:bg-surface-elevated focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-background',
+      'bg-surface/90 border border-border-strong text-primary hover:bg-surface-elevated hover:border-white/15 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-background',
     outline:
-      'border border-white/20 bg-transparent text-primary hover:bg-white/5 hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-2 focus:ring-offset-background',
+      'border border-white/20 bg-transparent text-primary hover:bg-white/5 hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-2 focus:ring-offset-background transition-all duration-200',
   }
 
   const classes = `${baseClasses} ${variants[variant]} ${className}`
 
   if (href) {
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} className={classes} onClick={onClick}>
         {children}
       </Link>
     )

@@ -10,7 +10,7 @@ interface LogoProps {
 
 export function Logo({ variant, href = '/' }: LogoProps) {
   const isHero = variant === 'hero'
-  const iconSize = isHero ? 120 : 40
+  const iconSize = isHero ? 140 : 44
   const id = useId().replace(/:/g, '')
   const gradientId = `hubia-grad-${id}`
   const glowId = `hubia-glow-${id}`
@@ -25,7 +25,6 @@ export function Logo({ variant, href = '/' }: LogoProps) {
           viewBox="0 0 120 120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="logo-orbit"
         >
           <defs>
             <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
@@ -33,20 +32,32 @@ export function Logo({ variant, href = '/' }: LogoProps) {
               <stop offset="52%" stopColor="#8B5BFF" />
               <stop offset="100%" stopColor="#D26BFF" />
             </linearGradient>
-            <filter id={glowId} x="-50%" y="-50%" width="200%" height="200%">
-              <feGaussianBlur stdDeviation="4" result="blur" />
+            <filter id={glowId} x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="5" result="blur" />
               <feMerge>
                 <feMergeNode in="blur" />
                 <feMergeNode in="SourceGraphic" />
               </feMerge>
             </filter>
           </defs>
-          <circle cx="60" cy="60" r="44" stroke={`url(#${gradientId})`} strokeWidth="3" opacity="0.6" />
-          <circle cx="60" cy="16" r="5.5" fill={`url(#${gradientId})`} className="logo-node" />
-          <circle cx="104" cy="60" r="5.5" fill={`url(#${gradientId})`} className="logo-node" />
-          <circle cx="60" cy="104" r="5.5" fill={`url(#${gradientId})`} className="logo-node" />
-          <circle cx="16" cy="60" r="5.5" fill={`url(#${gradientId})`} className="logo-node" />
-          <g filter={`url(#${glowId})`}>
+
+          {/* Orbit rings */}
+          <g className="logo-ring-group">
+            <circle cx="60" cy="60" r="44" stroke={`url(#${gradientId})`} strokeWidth="2.2" className="logo-ring" />
+            <circle cx="60" cy="60" r="34" stroke={`url(#${gradientId})`} strokeWidth="1.6" className="logo-ring logo-ring-inner" />
+            <circle cx="60" cy="60" r="52" stroke={`url(#${gradientId})`} strokeWidth="1.2" className="logo-ring logo-ring-outer" />
+          </g>
+
+          {/* Orbiting nodes */}
+          <g className="logo-orbit-nodes">
+            <circle cx="60" cy="8" r="5.2" fill={`url(#${gradientId})`} className="logo-node" />
+            <circle cx="112" cy="60" r="5.2" fill={`url(#${gradientId})`} className="logo-node" />
+            <circle cx="60" cy="112" r="5.2" fill={`url(#${gradientId})`} className="logo-node" />
+            <circle cx="8" cy="60" r="5.2" fill={`url(#${gradientId})`} className="logo-node" />
+          </g>
+
+          {/* H mark */}
+          <g filter={`url(#${glowId})`} className="logo-h">
             <path
               d="M 44 34 L 44 86 M 76 34 L 76 86 M 44 60 L 76 60"
               stroke={`url(#${gradientId})`}

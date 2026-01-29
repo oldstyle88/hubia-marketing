@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "product": "Produkt",
+    "pricing": "Preise",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "requestDemo": "Demo anfragen"
+  },
+  "home": {
+    "hero": {
+      "title": "Die Premium-PWA-Plattform für lokale Unternehmen.",
+      "subtitle": "Buchungen, Bestellungen, Team & Analytics — eine App pro Shop, kein Template-Branding. Nur PWA, installierbar auf iOS und Android.",
+      "requestDemo": "Demo anfragen",
+      "viewPrices": "Preise ansehen"
+    },
+    "proof": {
+      "clientPwa": "Client PWA",
+      "clientPwaDesc": "Installierbare App für Ihre Kunden. Buchungen und Bestellungen ohne Ihr Branding zu verlassen.",
+      "staffDashboard": "Team-Dashboard",
+      "staffDashboardDesc": "Kalender, Benachrichtigungen, Verfügbarkeit. Alles in einer Oberfläche.",
+      "adminPanel": "Verwaltungspanel",
+      "adminPanelDesc": "Shop-Provisioning, Multi-Standort-Übersicht. Nur dort, wo im Plan enthalten."
+    },
+    "pwaBlock": {
+      "title": "Nur PWA, keine nativen Apps",
+      "body": "Wir liefern keine iOS/Android-Store-Apps. Jeder Kunde erhält eine White-Label-PWA: gleiche UX auf allen Geräten, eine Codebasis, sofortige Updates."
+    },
+    "forWho": {
+      "title": "Für wen HŪBIA ist",
+      "subtitle": "Eine Lösung für Profis, die excellieren wollen",
+      "barber": "Barbier",
+      "barberDesc": "Buchungen, Team und Kunden verwalten mit einem System für moderne Barbiersalons.",
+      "hairSalon": "Friseursalon",
+      "hairSalonDesc": "Termine optimieren und das Kundenerlebnis mit dedizierten Tools verbessern.",
+      "beautyCenter": "Kosmetikstudio",
+      "beautyCenterDesc": "Multi-Service-Buchungen, Teamverwaltung und Analytics für Beauty-Center."
+    },
+    "features": {
+      "title": "Alles, was Sie brauchen",
+      "subtitle": "Vollständige Funktionen für Ihr Geschäft",
+      "booking": "Online-Buchung",
+      "bookingDesc": "Intuitive Buchung für Kunden, 24/7. Slots, mehrere Leistungen und Wiederholungen.",
+      "staff": "Teamverwaltung",
+      "staffDesc": "Dediziertes Team-Dashboard mit Kalender, Push-Benachrichtigungen und Echtzeit-Verfügbarkeit.",
+      "push": "Push-Benachrichtigungen",
+      "pushDesc": "Automatische Bestätigungen, Erinnerungen und Updates. Web Push und mobil.",
+      "crm": "Kundendatenbank",
+      "crmDesc": "Vollständige Kundendaten mit Buchungshistorie, Präferenzen und Treueprogrammen.",
+      "analytics": "Analytics & Berichte",
+      "analyticsDesc": "Dashboard mit Kennzahlen: Buchungen, Umsatz, Nutzung und Team-Performance.",
+      "branding": "PWA-Branding",
+      "brandingDesc": "Installierbare PWA mit Ihrem Branding, Icon und Theme für Ihr Geschäft."
+    },
+    "howItWorks": {
+      "title": "So funktioniert es",
+      "subtitle": "Schnelles Setup und geführte Konfiguration",
+      "setup": "Setup",
+      "setupDesc": "Geführte Einrichtung. Wir erstellen Ihr Konto und bereiten die Umgebung in Minuten vor.",
+      "config": "Konfiguration",
+      "configDesc": "Leistungen, Team, Öffnungszeiten und Branding anpassen. Bestehende Daten bei Bedarf importieren.",
+      "golive": "Go-live",
+      "goliveDesc": "Starten Sie Ihre App und nehmen Sie Buchungen entgegen. Dedizierter Support beim Launch."
+    },
+    "reliability": {
+      "title": "Zuverlässigkeit by design",
+      "subtitle": "Keine leeren Versprechen: nur überprüfbare Verhaltensweisen, bereits in Produktion.",
+      "b1title": "Idempotency",
+      "b1desc": "Bestellungen und Buchungen mit idempotentem Schlüssel gegen Duplikate bei Retry.",
+      "b2title": "Atomares Cron-Lock",
+      "b2desc": "Cron-Jobs mit Lock pro Shop gegen parallele Ausführung.",
+      "b3title": "Test-Modus",
+      "b3desc": "Keine echten Daten, Push unterdrückt, isolierte und bereinigbare Daten.",
+      "b4title": "Push invalid subscription",
+      "b4desc": "Handhabung abgelaufener/ungültiger Subscriptions ohne Kaskadenfehler.",
+      "b5title": "Tenant-Isolation",
+      "b5desc": "Deploy pro Shop mit isoliertem Branding, keine Datenvermischung.",
+      "b6title": "Gate checks & runbooks",
+      "b6desc": "Pre-Release-Checkliste und Runbooks für wiederholbare Prüfungen."
+    },
+    "pricingTeaser": {
+      "title": "Transparente Pläne",
+      "subtitle": "Wir verkaufen keine Billig-Pläne. Wenn Sie nur das Minimum wollen, sind wir es nicht — aber wenn Sie Qualität und Kontrolle wollen, haben wir zwei klare Optionen.",
+      "cta": "PRO und MAX ansehen"
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "subtitle": "Alle Antworten, die Sie brauchen"
+    },
+    "faqItems": {
+      "q1": "Wie lange dauert das Setup?",
+      "a1": "Das Basis-Setup dauert etwa 1–2 Arbeitstage. Die vollständige Konfiguration kann 3–5 Tage dauern.",
+      "q2": "Kann ich bestehende Daten importieren?",
+      "a2": "Ja, wir unterstützen den Import von Kunden, Leistungen und Buchungshistorie. Kontaktieren Sie uns für eine Migration.",
+      "q3": "Funktioniert es offline?",
+      "a3": "Die Client-App läuft als installierbare PWA und unterstützt Offline-Nutzung für Buchungen und Profil.",
+      "q4": "Welche Zahlungsmethoden werden unterstützt?",
+      "a4": "Wir unterstützen derzeit Satispay und andere Gateways. Individuelle Integrationen auf Anfrage.",
+      "q5": "Gibt es ein Limit bei Buchungen?",
+      "a5": "Nein. Die Pläne unterscheiden sich nach Anzahl der Mitarbeiter, Shops und erweiterten Funktionen.",
+      "q6": "Wie funktioniert der Support?",
+      "a6": "E-Mail-Support für alle Pläne. MAX beinhaltet Prioritäts-Support und SLA.",
+      "q7": "Kann ich das Branding anpassen?",
+      "a7": "Ja, alle Pläne beinhalten Farben, Logo und App-Icon. Höhere Pläne inkl. eigene Domain.",
+      "q8": "Sind meine Daten sicher?",
+      "a8": "Verschlüsselung, tägliche Backups, GDPR-konform. Daten in der EU gehostet.",
+      "q9": "Was passiert bei Planwechsel?",
+      "a9": "Upgrade oder Downgrade jederzeit möglich. Änderungen gelten ab dem nächsten Abrechnungszeitraum.",
+      "q10": "Bietet ihr Launch-Support?",
+      "a10": "Ja, alle neuen Kunden erhalten in den ersten Wochen dedizierten Support für einen reibungslosen Start."
+    }
+  },
+  "pricing": {
+    "title": "Preise",
+    "subtitle": "Zwei Pläne, keine Verwirrung. Wir verkaufen nicht das Minimum — wenn Sie Qualität und Kontrolle pro Shop wollen, hier sind PRO und MAX.",
+    "footer": "Einmaliges Setup + monatliche Gebühr. Keine versteckten Kosten, keine Bindung.",
+    "contactCta": "Kontaktieren Sie uns für eine Beratung →",
+    "perMonth": "/Monat",
+    "setupOneTime": "Setup (einmalig)",
+    "requestDemo": "Demo anfragen",
+    "mostChosen": "Am häufigsten gewählt"
+  },
+  "plans": {
+    "pro": {
+      "name": "PRO",
+      "description": "PWA Client + Team-Dashboard, Branding pro Shop, Buchungen/Bestellungen/Benachrichtigungen, Standard-Support.",
+      "features": ["PWA Client + Team-Dashboard", "Branding pro Shop (Manifest, Icons, SW)", "Buchungen / Bestellungen / Benachrichtigungen", "Standard-Support"]
+    },
+    "max": {
+      "name": "MAX",
+      "description": "Alles in PRO + Multi-Standort, Priorität und erweitertes Setup. Verwaltungspanel, betreutes Provisioning, erweiterte Analytics, SLA.",
+      "features": ["Alles in PRO", "Verwaltungspanel + betreutes Provisioning", "Erweiterte Analytics", "Support-SLA + Priorität", "Sicherheits-Audit vor Go-live (Checkliste)"]
+    }
+  },
+  "contact": {
+    "title": "Demo anfragen",
+    "subtitle": "Formular ausfüllen: Wir antworten innerhalb von 24 Stunden.",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon (optional)",
+    "business": "Geschäftsart",
+    "businessPlaceholder": "Auswählen...",
+    "message": "Nachricht",
+    "send": "Anfrage senden",
+    "sending": "Wird gesendet...",
+    "success": "Anfrage erfolgreich gesendet. Wir melden uns in Kürze.",
+    "businessBarber": "Barbier",
+    "businessHairSalon": "Friseursalon",
+    "businessBeauty": "Kosmetikstudio",
+    "businessOther": "Sonstiges"
+  },
+  "footer": {
+    "tagline": "Premium-Buchungsplattform für Barbiere, Friseursalons und Kosmetikstudios.",
+    "product": "Produkt",
+    "company": "Unternehmen",
+    "contactLink": "Kontakt",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "privacy": {
+    "title": "Datenschutz",
+    "lastUpdate": "Letzte Aktualisierung"
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdate": "Letzte Aktualisierung"
+  },
+  "common": {
+    "required": "*"
+  }
+}

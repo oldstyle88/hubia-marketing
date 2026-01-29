@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "product": "Prodotto",
+    "pricing": "Prezzi",
+    "faq": "FAQ",
+    "contact": "Contatti",
+    "requestDemo": "Richiedi demo"
+  },
+  "home": {
+    "hero": {
+      "title": "La piattaforma PWA premium per le attività locali.",
+      "subtitle": "Prenotazioni, ordini, staff e analytics — un'app per shop, zero fughe di branding. Solo PWA, installabile su iOS e Android.",
+      "requestDemo": "Richiedi demo",
+      "viewPrices": "Vedi prezzi"
+    },
+    "proof": {
+      "clientPwa": "Client PWA",
+      "clientPwaDesc": "App installabile per i tuoi clienti. Prenotazioni e ordini senza uscire dal brand.",
+      "staffDashboard": "Staff Dashboard",
+      "staffDashboardDesc": "Calendario, notifiche, gestione disponibilità. Tutto in un'unica interfaccia.",
+      "adminPanel": "Pannello amministrazione",
+      "adminPanelDesc": "Provisioning shop, overview multi-sede. Solo dove previsto dal piano."
+    },
+    "pwaBlock": {
+      "title": "Solo PWA, zero app native",
+      "body": "Non sviluppiamo app iOS/Android in negozio. Ogni cliente riceve una PWA bianco-label: stessa UX su tutti i dispositivi, un solo codice, aggiornamenti istantanei."
+    },
+    "forWho": {
+      "title": "Per chi è HŪBIA",
+      "subtitle": "Una soluzione pensata per professionisti che vogliono eccellere",
+      "barber": "Barber",
+      "barberDesc": "Gestisci prenotazioni, staff e clienti con un sistema pensato per barberie moderne.",
+      "hairSalon": "Hair Salon",
+      "hairSalonDesc": "Ottimizza gli appuntamenti e migliora l'esperienza dei tuoi clienti con strumenti dedicati.",
+      "beautyCenter": "Beauty Center",
+      "beautyCenterDesc": "Prenotazioni multi-servizio, gestione staff e analytics per centri estetici."
+    },
+    "features": {
+      "title": "Tutto quello che ti serve",
+      "subtitle": "Funzionalità complete per gestire la tua attività in modo professionale",
+      "booking": "Prenotazioni Online",
+      "bookingDesc": "Sistema di prenotazione intuitivo per i clienti, disponibile 24/7. Gestione slot, servizi multipli e ricorrenze.",
+      "staff": "Gestione Staff",
+      "staffDesc": "Dashboard dedicata per lo staff con calendario, notifiche push e gestione disponibilità in tempo reale.",
+      "push": "Notifiche Push",
+      "pushDesc": "Notifiche automatiche per conferme, promemoria e aggiornamenti. Supporto web push e mobile.",
+      "crm": "Database Clienti",
+      "crmDesc": "Anagrafica clienti completa con storico prenotazioni, preferenze e programmi fedeltà integrati.",
+      "analytics": "Analytics & Report",
+      "analyticsDesc": "Dashboard con metriche chiave: prenotazioni, revenue, utilizzo servizi e performance staff.",
+      "branding": "Branding PWA",
+      "brandingDesc": "App installabile (PWA) con branding personalizzato, icona e tema su misura per la tua attività."
+    },
+    "howItWorks": {
+      "title": "Come funziona",
+      "subtitle": "Setup rapido e configurazione guidata",
+      "setup": "Setup",
+      "setupDesc": "Configurazione iniziale guidata. Creiamo il tuo account e prepariamo l'ambiente in pochi minuti.",
+      "config": "Configurazione",
+      "configDesc": "Personalizza servizi, staff, orari e branding. Importa i tuoi dati esistenti se necessario.",
+      "golive": "Go-live",
+      "goliveDesc": "Attiva la tua app e inizia a ricevere prenotazioni. Supporto dedicato durante il lancio."
+    },
+    "reliability": {
+      "title": "Affidabilità by design",
+      "subtitle": "Nessun claim magico: solo comportamenti verificabili già in produzione.",
+      "b1title": "Idempotency",
+      "b1desc": "Ordini e prenotazioni con chiave idempotente per evitare duplicati su retry.",
+      "b2title": "Cron lock atomico",
+      "b2desc": "Job cron con lock per shop per evitare esecuzioni concorrenti.",
+      "b3title": "Test mode",
+      "b3desc": "Modalità test: nessun dato reale, push soppressi, dati isolati e pulibili.",
+      "b4title": "Push invalid subscription",
+      "b4desc": "Gestione subscription scadute o invalide senza errori a cascata.",
+      "b5title": "Tenant isolation",
+      "b5desc": "Deploy per shop con branding isolato, nessuna fuga dati tra tenant.",
+      "b6title": "Gate checks & runbooks",
+      "b6desc": "Checklist pre-release e runbook per verifiche ripetibili."
+    },
+    "pricingTeaser": {
+      "title": "Piani trasparenti",
+      "subtitle": "Non vendiamo piani cheap. Se cerchi il minimo sindacale, non siamo noi — ma se vuoi qualità e controllo, abbiamo due opzioni chiare.",
+      "cta": "Vedi PRO e MAX"
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "subtitle": "Tutte le risposte che cerchi"
+    },
+    "faqItems": {
+      "q1": "Quanto tempo serve per il setup?",
+      "a1": "Il setup base richiede circa 1-2 giorni lavorativi. La configurazione completa può richiedere 3-5 giorni a seconda della complessità.",
+      "q2": "Posso importare i dati esistenti?",
+      "a2": "Sì, supportiamo l'importazione di clienti, servizi e storico prenotazioni da sistemi esistenti. Contattaci per valutare la migrazione.",
+      "q3": "Funziona offline?",
+      "a3": "L'app client funziona come PWA installabile e supporta funzionalità offline per la consultazione di prenotazioni e profilo.",
+      "q4": "Quali metodi di pagamento sono supportati?",
+      "a4": "Attualmente supportiamo integrazioni con Satispay e altri gateway. Possiamo valutare integrazioni personalizzate su richiesta.",
+      "q5": "C'è un limite al numero di prenotazioni?",
+      "a5": "No. I piani differiscono per numero di staff, shop aggiuntivi e funzionalità avanzate.",
+      "q6": "Come funziona il supporto?",
+      "a6": "Offriamo supporto via email per tutti i piani. MAX include supporto prioritario e SLA garantiti.",
+      "q7": "Posso personalizzare il branding?",
+      "a7": "Sì, tutti i piani includono personalizzazione di colori, logo e icona app. I piani superiori includono dominio personalizzato.",
+      "q8": "I dati sono sicuri?",
+      "a8": "Utilizziamo crittografia, backup automatici giornalieri e conformità GDPR. I dati sono ospitati su infrastruttura EU.",
+      "q9": "Cosa succede se voglio cambiare piano?",
+      "a9": "Puoi aggiornare o downgrade il tuo piano in qualsiasi momento. Le modifiche si applicano al ciclo di fatturazione successivo.",
+      "q10": "Offrite assistenza durante il lancio?",
+      "a10": "Sì, tutti i nuovi clienti ricevono supporto dedicato durante le prime settimane per un lancio senza problemi."
+    }
+  },
+  "pricing": {
+    "title": "Prezzi",
+    "subtitle": "Due piani, zero confusione. Non vendiamo il minimo sindacale — se cerchi solo quello, non siamo noi. Se vuoi qualità e controllo per shop, ecco PRO e MAX.",
+    "footer": "Setup una tantum + canone mensile. Nessun costo nascosto, nessun vincolo di durata.",
+    "contactCta": "Contattaci per una consulenza →",
+    "perMonth": "/mese",
+    "setupOneTime": "setup (una tantum)",
+    "requestDemo": "Richiedi demo",
+    "mostChosen": "Più scelto"
+  },
+  "plans": {
+    "pro": {
+      "name": "PRO",
+      "description": "PWA Client + Staff Dashboard, branding per shop, prenotazioni/ordini/notifiche, supporto standard.",
+      "features": ["PWA Client + Dashboard Staff", "Branding per shop (manifest, icons, SW)", "Prenotazioni / ordini / notifiche", "Supporto standard"]
+    },
+    "max": {
+      "name": "MAX",
+      "description": "Tutto PRO + multi-locale, priorità e setup avanzato. Pannello amministrazione, provisioning assistito, analytics avanzate, SLA.",
+      "features": ["Tutto PRO incluso", "Pannello amministrazione + provisioning assistito", "Analytics avanzate", "SLA supporto + priorità", "Audit sicurezza pre-go-live (checklist)"]
+    }
+  },
+  "contact": {
+    "title": "Richiedi demo",
+    "subtitle": "Compila il form: ti rispondiamo entro 24 ore.",
+    "name": "Nome",
+    "email": "Email",
+    "phone": "Telefono (opzionale)",
+    "business": "Tipo di attività",
+    "businessPlaceholder": "Seleziona...",
+    "message": "Messaggio",
+    "send": "Invia richiesta",
+    "sending": "Invio in corso...",
+    "success": "Richiesta inviata con successo. Ti contatteremo a breve.",
+    "businessBarber": "Barber",
+    "businessHairSalon": "Hair Salon",
+    "businessBeauty": "Beauty Center",
+    "businessOther": "Altro"
+  },
+  "footer": {
+    "tagline": "Piattaforma prenotazioni premium per barber, hair salon e beauty center.",
+    "product": "Prodotto",
+    "company": "Azienda",
+    "contactLink": "Contatti",
+    "legal": "Legale",
+    "privacy": "Privacy Policy",
+    "terms": "Termini di Servizio",
+    "copyright": "Tutti i diritti riservati."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdate": "Ultimo aggiornamento"
+  },
+  "terms": {
+    "title": "Termini di Servizio",
+    "lastUpdate": "Ultimo aggiornamento"
+  },
+  "common": {
+    "required": "*"
+  }
+}

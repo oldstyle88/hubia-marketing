@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "product": "Product",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "requestDemo": "Request demo"
+  },
+  "home": {
+    "hero": {
+      "title": "The premium PWA platform for local businesses.",
+      "subtitle": "Booking, ordering, staff & analytics — one app per shop, zero template branding leaks. PWA-only, installable on iOS and Android.",
+      "requestDemo": "Request demo",
+      "viewPrices": "View prices"
+    },
+    "proof": {
+      "clientPwa": "Client PWA",
+      "clientPwaDesc": "Installable app for your customers. Bookings and orders without leaving your brand.",
+      "staffDashboard": "Staff Dashboard",
+      "staffDashboardDesc": "Calendar, notifications, availability management. All in one interface.",
+      "adminPanel": "Admin panel",
+      "adminPanelDesc": "Shop provisioning, multi-location overview. Only where included in your plan."
+    },
+    "pwaBlock": {
+      "title": "PWA only, no native apps",
+      "body": "We don't ship iOS/Android store apps. Every client gets a white-label PWA: same UX on all devices, one codebase, instant updates."
+    },
+    "forWho": {
+      "title": "Who HŪBIA is for",
+      "subtitle": "A solution for professionals who want to excel",
+      "barber": "Barber",
+      "barberDesc": "Manage bookings, staff and customers with a system built for modern barbershops.",
+      "hairSalon": "Hair Salon",
+      "hairSalonDesc": "Optimise appointments and improve your customers' experience with dedicated tools.",
+      "beautyCenter": "Beauty Center",
+      "beautyCenterDesc": "Multi-service bookings, staff management and analytics for beauty centres."
+    },
+    "features": {
+      "title": "Everything you need",
+      "subtitle": "Full features to run your business professionally",
+      "booking": "Online Booking",
+      "bookingDesc": "Intuitive booking for customers, 24/7. Slots, multiple services and recurrences.",
+      "staff": "Staff Management",
+      "staffDesc": "Dedicated staff dashboard with calendar, push notifications and real-time availability.",
+      "push": "Push Notifications",
+      "pushDesc": "Automatic confirmations, reminders and updates. Web push and mobile.",
+      "crm": "Customer Database",
+      "crmDesc": "Full customer records with booking history, preferences and loyalty programmes.",
+      "analytics": "Analytics & Reports",
+      "analyticsDesc": "Dashboard with key metrics: bookings, revenue, service usage and staff performance.",
+      "branding": "PWA Branding",
+      "brandingDesc": "Installable PWA with your branding, icon and theme tailored to your business."
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "subtitle": "Quick setup and guided configuration",
+      "setup": "Setup",
+      "setupDesc": "Guided initial setup. We create your account and prepare the environment in minutes.",
+      "config": "Configuration",
+      "configDesc": "Customise services, staff, hours and branding. Import existing data if needed.",
+      "golive": "Go-live",
+      "goliveDesc": "Launch your app and start taking bookings. Dedicated support during launch."
+    },
+    "reliability": {
+      "title": "Reliability by design",
+      "subtitle": "No magic claims: only verifiable behaviours already in production.",
+      "b1title": "Idempotency",
+      "b1desc": "Orders and bookings with idempotent key to avoid duplicates on retry.",
+      "b2title": "Atomic cron lock",
+      "b2desc": "Cron jobs with per-shop lock to avoid concurrent runs.",
+      "b3title": "Test mode",
+      "b3desc": "Test mode: no real data, push suppressed, isolated and cleanable data.",
+      "b4title": "Push invalid subscription",
+      "b4desc": "Handling expired or invalid subscriptions without cascade errors.",
+      "b5title": "Tenant isolation",
+      "b5desc": "Deploy per shop with isolated branding, no data leakage between tenants.",
+      "b6title": "Gate checks & runbooks",
+      "b6desc": "Pre-release checklist and runbooks for repeatable checks."
+    },
+    "pricingTeaser": {
+      "title": "Transparent plans",
+      "subtitle": "We don't sell cheap plans. If you want the bare minimum, we're not it — but if you want quality and control, we have two clear options.",
+      "cta": "View PRO and MAX"
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "All the answers you need"
+    },
+    "faqItems": {
+      "q1": "How long does setup take?",
+      "a1": "Base setup takes about 1–2 working days. Full configuration can take 3–5 days depending on complexity.",
+      "q2": "Can I import existing data?",
+      "a2": "Yes, we support importing customers, services and booking history from existing systems. Contact us to evaluate migration.",
+      "q3": "Does it work offline?",
+      "a3": "The client app runs as an installable PWA and supports offline use for viewing bookings and profile.",
+      "q4": "What payment methods are supported?",
+      "a4": "We currently support integrations with Satispay and other gateways. We can evaluate custom integrations on request.",
+      "q5": "Is there a limit on the number of bookings?",
+      "a5": "No. Plans differ by number of staff, additional shops and advanced features.",
+      "q6": "How does support work?",
+      "a6": "We offer email support for all plans. MAX includes priority support and guaranteed SLA.",
+      "q7": "Can I customise branding?",
+      "a7": "Yes, all plans include custom colours, logo and app icon. Higher plans include custom domain.",
+      "q8": "Is my data secure?",
+      "a8": "We use encryption, daily automated backups and GDPR compliance. Data is hosted on EU infrastructure.",
+      "q9": "What if I want to change plan?",
+      "a9": "You can upgrade or downgrade at any time. Changes apply to the next billing cycle.",
+      "q10": "Do you offer launch support?",
+      "a10": "Yes, all new customers get dedicated support during the first few weeks for a smooth launch."
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Two plans, zero confusion. We don't sell the bare minimum — if that's what you want, we're not it. If you want quality and control per shop, here are PRO and MAX.",
+    "footer": "One-time setup + monthly fee. No hidden costs, no lock-in.",
+    "contactCta": "Contact us for a consultation →",
+    "perMonth": "/month",
+    "setupOneTime": "setup (one-time)",
+    "requestDemo": "Request demo",
+    "mostChosen": "Most chosen"
+  },
+  "plans": {
+    "pro": {
+      "name": "PRO",
+      "description": "PWA Client + Staff Dashboard, branding per shop, bookings/orders/notifications, standard support.",
+      "features": ["PWA Client + Staff Dashboard", "Branding per shop (manifest, icons, SW)", "Bookings / orders / notifications", "Standard support"]
+    },
+    "max": {
+      "name": "MAX",
+      "description": "Everything in PRO + multi-location, priority and advanced setup. Admin panel, assisted provisioning, advanced analytics, SLA.",
+      "features": ["Everything in PRO", "Admin panel + assisted provisioning", "Advanced analytics", "Support SLA + priority", "Pre-go-live security audit (checklist)"]
+    }
+  },
+  "contact": {
+    "title": "Request demo",
+    "subtitle": "Fill in the form: we'll reply within 24 hours.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "business": "Business type",
+    "businessPlaceholder": "Select...",
+    "message": "Message",
+    "send": "Send request",
+    "sending": "Sending...",
+    "success": "Request sent successfully. We'll be in touch soon.",
+    "businessBarber": "Barber",
+    "businessHairSalon": "Hair Salon",
+    "businessBeauty": "Beauty Center",
+    "businessOther": "Other"
+  },
+  "footer": {
+    "tagline": "Premium booking platform for barbers, hair salons and beauty centres.",
+    "product": "Product",
+    "company": "Company",
+    "contactLink": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdate": "Last updated"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdate": "Last updated"
+  },
+  "common": {
+    "required": "*"
+  }
+}

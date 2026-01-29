@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "product": "Producto",
+    "pricing": "Precios",
+    "faq": "FAQ",
+    "contact": "Contacto",
+    "requestDemo": "Solicitar demo"
+  },
+  "home": {
+    "hero": {
+      "title": "La plataforma PWA premium para negocios locales.",
+      "subtitle": "Reservas, pedidos, equipo y analíticas — una app por tienda, cero fugas de marca. Solo PWA, instalable en iOS y Android.",
+      "requestDemo": "Solicitar demo",
+      "viewPrices": "Ver precios"
+    },
+    "proof": {
+      "clientPwa": "Client PWA",
+      "clientPwaDesc": "App instalable para tus clientes. Reservas y pedidos sin salir de tu marca.",
+      "staffDashboard": "Panel de equipo",
+      "staffDashboardDesc": "Calendario, notificaciones, disponibilidad. Todo en una interfaz.",
+      "adminPanel": "Panel de administración",
+      "adminPanelDesc": "Aprovisionamiento de tiendas, vista multi-sede. Solo donde esté incluido en tu plan."
+    },
+    "pwaBlock": {
+      "title": "Solo PWA, sin apps nativas",
+      "body": "No publicamos apps en tiendas iOS/Android. Cada cliente recibe una PWA white-label: misma UX en todos los dispositivos, un solo código, actualizaciones al instante."
+    },
+    "forWho": {
+      "title": "Para quién es HŪBIA",
+      "subtitle": "Una solución para profesionales que quieren destacar",
+      "barber": "Barbería",
+      "barberDesc": "Gestiona reservas, equipo y clientes con un sistema pensado para barberías modernas.",
+      "hairSalon": "Peluquería",
+      "hairSalonDesc": "Optimiza citas y mejora la experiencia de tus clientes con herramientas dedicadas.",
+      "beautyCenter": "Centro de belleza",
+      "beautyCenterDesc": "Reservas multi-servicio, gestión de equipo y analíticas para centros de belleza."
+    },
+    "features": {
+      "title": "Todo lo que necesitas",
+      "subtitle": "Funcionalidades completas para gestionar tu negocio de forma profesional",
+      "booking": "Reservas online",
+      "bookingDesc": "Sistema de reservas intuitivo para clientes, 24/7. Slots, servicios múltiples y recurrencias.",
+      "staff": "Gestión de equipo",
+      "staffDesc": "Panel dedicado para el equipo con calendario, notificaciones push y disponibilidad en tiempo real.",
+      "push": "Notificaciones push",
+      "pushDesc": "Confirmaciones, recordatorios y actualizaciones automáticas. Web push y móvil.",
+      "crm": "Base de datos de clientes",
+      "crmDesc": "Ficha completa del cliente con historial de reservas, preferencias y programas de fidelidad.",
+      "analytics": "Analíticas e informes",
+      "analyticsDesc": "Panel con métricas clave: reservas, ingresos, uso de servicios y rendimiento del equipo.",
+      "branding": "Branding PWA",
+      "brandingDesc": "PWA instalable con tu marca, icono y tema a medida para tu negocio."
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "subtitle": "Configuración rápida y guiada",
+      "setup": "Setup",
+      "setupDesc": "Configuración inicial guiada. Creamos tu cuenta y preparamos el entorno en minutos.",
+      "config": "Configuración",
+      "configDesc": "Personaliza servicios, equipo, horarios y marca. Importa datos existentes si hace falta.",
+      "golive": "Go-live",
+      "goliveDesc": "Activa tu app y empieza a recibir reservas. Soporte dedicado durante el lanzamiento."
+    },
+    "reliability": {
+      "title": "Fiabilidad by design",
+      "subtitle": "Sin promesas mágicas: solo comportamientos verificables ya en producción.",
+      "b1title": "Idempotencia",
+      "b1desc": "Pedidos y reservas con clave idempotente para evitar duplicados en reintentos.",
+      "b2title": "Bloqueo cron atómico",
+      "b2desc": "Jobs cron con bloqueo por tienda para evitar ejecuciones concurrentes.",
+      "b3title": "Modo test",
+      "b3desc": "Sin datos reales, push suprimido, datos aislados y limpiables.",
+      "b4title": "Push invalid subscription",
+      "b4desc": "Gestión de suscripciones caducadas o inválidas sin errores en cascada.",
+      "b5title": "Aislamiento por tenant",
+      "b5desc": "Deploy por tienda con branding aislado, sin fugas entre tenants.",
+      "b6title": "Gate checks y runbooks",
+      "b6desc": "Checklist pre-release y runbooks para comprobaciones repetibles."
+    },
+    "pricingTeaser": {
+      "title": "Planes transparentes",
+      "subtitle": "No vendemos planes baratos. Si buscas lo mínimo, no somos nosotros — pero si quieres calidad y control, tenemos dos opciones claras.",
+      "cta": "Ver PRO y MAX"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Todas las respuestas que buscas"
+    },
+    "faqItems": {
+      "q1": "¿Cuánto tarda el setup?",
+      "a1": "El setup base tarda 1–2 días laborables. La configuración completa puede tardar 3–5 días.",
+      "q2": "¿Puedo importar datos existentes?",
+      "a2": "Sí, soportamos importación de clientes, servicios e historial de reservas. Contáctanos para evaluar la migración.",
+      "q3": "¿Funciona sin conexión?",
+      "a3": "La app cliente funciona como PWA instalable y soporta uso offline para ver reservas y perfil.",
+      "q4": "¿Qué métodos de pago aceptáis?",
+      "a4": "Actualmente Satispay y otros gateways. Integraciones personalizadas a consultar.",
+      "q5": "¿Hay límite de reservas?",
+      "a5": "No. Los planes difieren en número de equipo, tiendas adicionales y funciones avanzadas.",
+      "q6": "¿Cómo funciona el soporte?",
+      "a6": "Soporte por email en todos los planes. MAX incluye soporte prioritario y SLA.",
+      "q7": "¿Puedo personalizar la marca?",
+      "a7": "Sí, todos los planes incluyen colores, logo e icono. Los planes superiores incluyen dominio propio.",
+      "q8": "¿Mis datos están seguros?",
+      "a8": "Cifrado, copias automáticas diarias y cumplimiento GDPR. Datos alojados en la UE.",
+      "q9": "¿Qué pasa si quiero cambiar de plan?",
+      "a9": "Puedes subir o bajar de plan cuando quieras. Los cambios se aplican al siguiente ciclo de facturación.",
+      "q10": "¿Ofrecéis soporte durante el lanzamiento?",
+      "a10": "Sí, todos los nuevos clientes reciben soporte dedicado las primeras semanas para un lanzamiento sin problemas."
+    }
+  },
+  "pricing": {
+    "title": "Precios",
+    "subtitle": "Dos planes, cero confusión. No vendemos el mínimo — si quieres calidad y control por tienda, aquí están PRO y MAX.",
+    "footer": "Setup único + cuota mensual. Sin costes ocultos, sin permanencia.",
+    "contactCta": "Contáctanos para una consulta →",
+    "perMonth": "/mes",
+    "setupOneTime": "setup (único)",
+    "requestDemo": "Solicitar demo",
+    "mostChosen": "Más elegido"
+  },
+  "plans": {
+    "pro": {
+      "name": "PRO",
+      "description": "PWA Client + Panel de equipo, branding por tienda, reservas/pedidos/notificaciones, soporte estándar.",
+      "features": ["PWA Client + Panel de equipo", "Branding por tienda (manifest, icons, SW)", "Reservas / pedidos / notificaciones", "Soporte estándar"]
+    },
+    "max": {
+      "name": "MAX",
+      "description": "Todo PRO + multi-sede, prioridad y setup avanzado. Panel de administración, aprovisionamiento asistido, analíticas avanzadas, SLA.",
+      "features": ["Todo PRO incluido", "Panel de administración + aprovisionamiento asistido", "Analíticas avanzadas", "SLA de soporte + prioridad", "Auditoría de seguridad pre-go-live (checklist)"]
+    }
+  },
+  "contact": {
+    "title": "Solicitar demo",
+    "subtitle": "Rellena el formulario: te respondemos en 24 horas.",
+    "name": "Nombre",
+    "email": "Email",
+    "phone": "Teléfono (opcional)",
+    "business": "Tipo de negocio",
+    "businessPlaceholder": "Selecciona...",
+    "message": "Mensaje",
+    "send": "Enviar solicitud",
+    "sending": "Enviando...",
+    "success": "Solicitud enviada correctamente. Te contactaremos pronto.",
+    "businessBarber": "Barbería",
+    "businessHairSalon": "Peluquería",
+    "businessBeauty": "Centro de belleza",
+    "businessOther": "Otro"
+  },
+  "footer": {
+    "tagline": "Plataforma de reservas premium para barberías, peluquerías y centros de belleza.",
+    "product": "Producto",
+    "company": "Empresa",
+    "contactLink": "Contacto",
+    "legal": "Legal",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio",
+    "copyright": "Todos los derechos reservados."
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "lastUpdate": "Última actualización"
+  },
+  "terms": {
+    "title": "Términos de servicio",
+    "lastUpdate": "Última actualización"
+  },
+  "common": {
+    "required": "*"
+  }
+}

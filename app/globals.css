@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-primary antialiased;
+  }
+}
+
+/* Hero: gradient mask for depth */
+.hero-gradient-mask {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+/* Orbit rings — accent (blue/violet), subtle */
+.hero-orbit {
+  position: absolute;
+  inset: -20%;
+  border: 1px solid rgba(139, 92, 246, 0.12);
+  border-radius: 50%;
+  animation: orbit 25s linear infinite;
+}
+.hero-orbit:nth-child(2) {
+  inset: -25%;
+  border-color: rgba(96, 165, 250, 0.08);
+  animation-duration: 35s;
+  animation-direction: reverse;
+}
+.hero-orbit:nth-child(3) {
+  inset: -30%;
+  border-color: rgba(244, 114, 182, 0.06);
+  animation-duration: 45s;
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Logo glow — accent (violet/blue), aligned with logo */
+.logo-glow {
+  filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.3)) drop-shadow(0 0 60px rgba(96, 165, 250, 0.15));
+}
+
+/* Logo in-code: wordmark gradient + shimmer */
+.logo-wordmark {
+  background: linear-gradient(90deg, #60A5FA 0%, #8B5CF6 35%, #F472B6 70%, #60A5FA 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: logo-shimmer 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.35)) drop-shadow(0 0 24px rgba(96, 165, 250, 0.2));
+}
+.logo-hero .logo-wordmark {
+  filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.4)) drop-shadow(0 0 40px rgba(244, 114, 182, 0.25));
+}
+@keyframes logo-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Logo mark (H) subtle pulse */
+.logo-mark-stroke {
+  animation: logo-mark-pulse 3s ease-in-out infinite;
+}
+@keyframes logo-mark-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+/* Hero shimmer — gradient soft (not gold) */
+.hero-shimmer {
+  background: linear-gradient(135deg, transparent 0%, rgba(96, 165, 250, 0.04) 30%, rgba(139, 92, 246, 0.04) 60%, rgba(244, 114, 182, 0.03) 100%);
+  background-size: 200% 200%;
+  animation: shimmer-bg 10s ease-in-out infinite;
+}
+
+@keyframes shimmer-bg {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* --- HubiaLogo (hero): on-load only, no loop --- */
+/* Reveal: testo HUBIA nascosto da clip (destra) e rivelato left-to-right in un unico gesto. */
+.hubia-reveal {
+  clip-path: inset(0 100% 0 0);
+  animation: hubia-reveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-iteration-count: 1;
+}
+@keyframes hubia-reveal {
+  to { clip-path: inset(0 0 0 0); }
+}
+/* Linea oro sotto la parola: si "disegna" dopo l’inizio del reveal per sensazione di precisione. */
+.hubia-line {
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: hubia-line 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.35s forwards;
+  animation-iteration-count: 1;
+}
+@keyframes hubia-line {
+  to { transform: scaleX(1); }
+}
+
+/* --- HubiaLogoConnection: due archi + nodo, loop morbido 3s --- */
+/* Archi: si disegnano (stroke-dashoffset 62→0), restano visibili, poi si dissolvono (0→62). */
+.hubia-arc {
+  stroke-dashoffset: 62;
+  animation: hubia-arc-draw 3s ease-in-out infinite;
+}
+.hubia-arc-right {
+  animation-delay: 0.08s;
+}
+@keyframes hubia-arc-draw {
+  0% { stroke-dashoffset: 62; }
+  32% { stroke-dashoffset: 0; }
+  50% { stroke-dashoffset: 0; }
+  82% { stroke-dashoffset: 62; }
+  100% { stroke-dashoffset: 62; }
+}
+/* Nodo centrale: appare quando gli archi si congiungono, poi si dissolve. */
+.hubia-node {
+  opacity: 0;
+  animation: hubia-node-pulse 3s ease-in-out infinite;
+}
+@keyframes hubia-node-pulse {
+  0% { opacity: 0; }
+  34% { opacity: 1; }
+  50% { opacity: 1; }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Subtle noise overlay */
+.hero-noise::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+}

@@ -87,12 +87,12 @@ body {
   position: absolute;
   border-radius: 999px;
   border: 1px solid rgba(139, 91, 255, 0.2);
-  animation: spin 26s linear infinite;
+  animation: spin 32s linear infinite;
   pointer-events: none;
 }
 .hero-orbit:nth-child(1) { inset: -10%; }
-.hero-orbit:nth-child(2) { inset: -20%; animation-duration: 34s; border-color: rgba(92, 200, 255, 0.2); }
-.hero-orbit:nth-child(3) { inset: -32%; animation-duration: 42s; border-color: rgba(210, 107, 255, 0.18); }
+.hero-orbit:nth-child(2) { inset: -20%; animation-duration: 44s; border-color: rgba(92, 200, 255, 0.2); }
+.hero-orbit:nth-child(3) { inset: -32%; animation-duration: 56s; border-color: rgba(210, 107, 255, 0.18); }
 
 .logo-warp {
   filter: drop-shadow(0 0 22px rgba(92, 200, 255, 0.35)) drop-shadow(0 0 36px rgba(139, 91, 255, 0.28));
@@ -100,12 +100,12 @@ body {
 
 .logo-ring-group {
   transform-origin: 50% 50%;
-  animation: ring-compose 6s ease-in-out infinite;
+  animation: ring-compose 9s ease-in-out infinite;
 }
 
 .logo-ring {
   stroke-dasharray: 40 22;
-  animation: ring-spin 5.5s linear infinite, ring-dash 3.6s ease-in-out infinite;
+  animation: ring-spin 9.5s linear infinite, ring-dash 6.8s ease-in-out infinite;
   opacity: 0.9;
 }
 
@@ -114,30 +114,30 @@ body {
 }
 
 .logo-ring-2 {
-  animation-duration: 4.2s, 2.8s;
-  animation-delay: 0.2s, 0.4s;
+  animation-duration: 7.4s, 5.2s;
+  animation-delay: 0.4s, 0.8s;
   opacity: 0.75;
 }
 
 .logo-ring-3 {
-  animation-duration: 7.2s, 4.4s;
-  animation-delay: 0.4s, 0.1s;
+  animation-duration: 12.4s, 9.4s;
+  animation-delay: 0.8s, 0.2s;
   opacity: 0.6;
 }
 
 .logo-orbit-nodes {
   transform-origin: 50% 50%;
-  animation: ring-spin 7s linear infinite reverse;
+  animation: ring-spin 12s linear infinite reverse;
 }
 
 .logo-node {
   transform-origin: center;
-  animation: pulseSoft 3s ease-in-out infinite;
+  animation: pulseSoft 3.6s ease-in-out infinite;
 }
 
 .logo-h {
   transform-origin: 50% 50%;
-  animation: pulseSoft 3.2s ease-in-out infinite;
+  animation: pulseSoft 3.6s ease-in-out infinite;
 }
 
 @keyframes ring-spin {

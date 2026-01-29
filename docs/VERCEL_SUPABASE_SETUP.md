@@ -121,7 +121,7 @@ Salva e **redeploy** il progetto (Deployments → ⋮ → Redeploy) così le var
 | **Project URL** | Supabase → Settings → API | Copia in `SUPABASE_URL` (e opz. `NEXT_PUBLIC_SUPABASE_URL`) |
 | **Service role key** | Supabase → Settings → API | Copia in `SUPABASE_SERVICE_ROLE_KEY` |
 | **Root directory** | Vercel | (vuoto — root del repo) |
-| **Install command** | Vercel | `npm install` (non `npm ci`) |
+| **Install command** | Vercel | `npm install` |
 | **Env in Vercel** | Settings → Environment Variables | `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` |
 
 ---

@@ -25,25 +25,25 @@ export function Header() {
 
   const navLinks = (
     <>
-      <Link href="/#product" className="text-secondary hover:text-primary transition-colors text-sm" onClick={() => setMobileOpen(false)}>
+      <Link href="/#product" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.24em]" onClick={() => setMobileOpen(false)}>
         {t('product')}
       </Link>
-      <Link href="/pricing" className="text-secondary hover:text-primary transition-colors text-sm" onClick={() => setMobileOpen(false)}>
+      <Link href="/pricing" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.24em]" onClick={() => setMobileOpen(false)}>
         {t('pricing')}
       </Link>
-      <Link href="/#faq" className="text-secondary hover:text-primary transition-colors text-sm" onClick={() => setMobileOpen(false)}>
+      <Link href="/#faq" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.24em]" onClick={() => setMobileOpen(false)}>
         {t('faq')}
       </Link>
-      <Link href="/contact" className="text-secondary hover:text-primary transition-colors text-sm" onClick={() => setMobileOpen(false)}>
+      <Link href="/contact" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.24em]" onClick={() => setMobileOpen(false)}>
         {t('contact')}
       </Link>
     </>
   )
 
   return (
-    <header className="sticky top-0 z-50 bg-surface border-b border-border-strong">
+    <header className="sticky top-0 z-50 bg-surface/80 backdrop-blur-md border-b border-border">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-        <div className="flex items-center justify-between h-18">
+        <div className="flex items-center justify-between h-20">
           <Logo variant="header" href="/" />
 
           <nav className="hidden md:flex items-center gap-8" aria-label="Main">
@@ -58,7 +58,7 @@ export function Header() {
             <button
               type="button"
               onClick={() => setMobileOpen((v) => !v)}
-              className="md:hidden p-2 rounded-lg text-secondary hover:text-primary hover:bg-white/5 transition-colors focus:outline-none focus:ring-2 focus:ring-accent-violet/50"
+              className="md:hidden p-2 rounded-lg text-secondary hover:text-primary hover:bg-champagne/50 transition-colors focus:outline-none focus:ring-2 focus:ring-accent/40"
               aria-expanded={mobileOpen}
               aria-label={mobileOpen ? t('closeMenu') : t('openMenu')}
             >
@@ -69,7 +69,7 @@ export function Header() {
 
         {mobileOpen && (
           <nav
-            className="md:hidden py-4 border-t border-border-strong flex flex-col gap-4"
+            className="md:hidden py-4 border-t border-border flex flex-col gap-4"
             aria-label="Mobile"
           >
             {navLinks}

@@ -1,23 +1,24 @@
 import { Link } from '@/i18n/navigation'
 import { getTranslations } from 'next-intl/server'
+import { Logo } from './Logo'
 
 export async function Footer() {
   const t = await getTranslations('footer')
   const tNav = await getTranslations('nav')
 
   return (
-    <footer className="bg-background border-t border-border-strong">
+    <footer className="bg-surface/80 border-t border-border">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-xl font-semibold tracking-logo text-primary mb-4">HŪBIA</h3>
-            <p className="text-secondary text-sm">
+            <Logo variant="header" href="/" />
+            <p className="text-secondary text-sm mt-4">
               {t('tagline')}
             </p>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-primary mb-4">{t('product')}</h4>
+            <h4 className="text-sm font-semibold text-primary mb-4 uppercase tracking-[0.18em]">{t('product')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/#product" className="text-secondary text-sm hover:text-primary transition-colors">
@@ -38,7 +39,7 @@ export async function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-primary mb-4">{t('company')}</h4>
+            <h4 className="text-sm font-semibold text-primary mb-4 uppercase tracking-[0.18em]">{t('company')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/contact" className="text-secondary text-sm hover:text-primary transition-colors">
@@ -49,7 +50,7 @@ export async function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-primary mb-4">{t('legal')}</h4>
+            <h4 className="text-sm font-semibold text-primary mb-4 uppercase tracking-[0.18em]">{t('legal')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/privacy" className="text-secondary text-sm hover:text-primary transition-colors">
@@ -65,7 +66,7 @@ export async function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-border-strong">
+        <div className="mt-12 pt-8 border-t border-border">
           <p className="text-secondary text-sm text-center">
             © {new Date().getFullYear()} HŪBIA. {t('copyright')}
           </p>

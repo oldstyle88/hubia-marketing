@@ -63,7 +63,7 @@ export function LanguageSwitcher() {
         aria-expanded={open}
         aria-haspopup="true"
         aria-label={t('chooseLanguage')}
-        className="flex items-center gap-2 px-3 py-2 rounded-xl border border-border-strong bg-surface/80 hover:bg-surface hover:border-white/15 text-secondary hover:text-primary transition-all focus:outline-none focus:ring-2 focus:ring-accent-violet/50 focus:ring-offset-2 focus:ring-offset-background"
+        className="flex items-center gap-2 px-3 py-2 rounded-xl border border-border bg-surface/80 hover:bg-champagne/40 text-secondary hover:text-primary transition-all focus:outline-none focus:ring-2 focus:ring-accent/40"
       >
         <GlobeIcon className="w-5 h-5 shrink-0" />
         <span className="text-sm font-medium hidden sm:inline">{current.code.toUpperCase()}</span>
@@ -76,30 +76,30 @@ export function LanguageSwitcher() {
         <nav
           ref={dropdownRef}
           aria-label={t('chooseLanguage')}
-          className="absolute right-0 top-full mt-2 min-w-[180px] py-2 rounded-xl border border-border-strong bg-surface-elevated shadow-xl shadow-black/20 z-50"
+          className="absolute right-0 top-full mt-2 min-w-[180px] py-2 rounded-xl border border-border bg-surface shadow-xl z-50"
         >
-            <ul className="space-y-0.5" role="list">
-              {locales.map((loc) => {
-                const isActive = loc.code === locale
-                return (
-                  <li key={loc.code} role="listitem">
-                    <Link
-                      href={pathname || '/'}
-                      locale={loc.code}
-                      onClick={() => setOpen(false)}
-                      className={`flex items-center gap-3 w-full px-4 py-2.5 text-left text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-accent-violet/50 focus:ring-inset rounded-lg mx-1 ${
-                        isActive
-                          ? 'text-accent-violet-soft bg-accent-violet/10'
-                          : 'text-secondary hover:text-primary hover:bg-white/5'
-                      }`}
-                    >
-                      <span className="text-lg leading-none" aria-hidden>{loc.flag}</span>
-                      <span>{loc.label}</span>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
+          <ul className="space-y-0.5" role="list">
+            {locales.map((loc) => {
+              const isActive = loc.code === locale
+              return (
+                <li key={loc.code} role="listitem">
+                  <Link
+                    href={pathname || '/'}
+                    locale={loc.code}
+                    onClick={() => setOpen(false)}
+                    className={`flex items-center gap-3 w-full px-4 py-2.5 text-left text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-accent/40 focus:ring-inset rounded-lg mx-1 ${
+                      isActive
+                        ? 'text-accent bg-champagne/60'
+                        : 'text-secondary hover:text-primary hover:bg-champagne/40'
+                    }`}
+                  >
+                    <span className="text-lg leading-none" aria-hidden>{loc.flag}</span>
+                    <span>{loc.label}</span>
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
         </nav>
       )}
     </div>

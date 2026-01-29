@@ -1,10 +1,18 @@
 import type { Metadata } from 'next'
-import { Plus_Jakarta_Sans } from 'next/font/google'
+import { Cormorant_Garamond, Manrope } from 'next/font/google'
 import './globals.css'
 
-const plusJakarta = Plus_Jakarta_Sans({
+const displayFont = Cormorant_Garamond({
   subsets: ['latin'],
-  variable: '--font-plus-jakarta',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-display',
+  display: 'swap',
+})
+
+const bodyFont = Manrope({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-body',
   display: 'swap',
 })
 
@@ -26,7 +34,6 @@ export const metadata: Metadata = {
     'staff dashboard',
   ],
   authors: [{ name: 'HŪBIA' }],
-  // Brand: prefer logo-mark-transparent + icon-192/512 + apple-touch + og-image (see public/brand/README.md). Fallback: hubia-logo.png
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -58,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="it" className={plusJakarta.variable}>
+    <html lang="it" className={`${displayFont.variable} ${bodyFont.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />

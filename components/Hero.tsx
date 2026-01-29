@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from './Button'
-import { HubiaLogoHero } from './HubiaLogoHero'
+import { Logo } from './Logo'
 
 export interface ProofCard {
   title: string
@@ -19,68 +19,50 @@ interface HeroProps {
 
 export function Hero({ title, subtitle, ctaDemo, ctaPrices, proofCards }: HeroProps) {
   return (
-    <section className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden bg-background hero-noise">
-      <div className="absolute inset-0 bg-transparent bg-gradient-accent-soft opacity-70 pointer-events-none hero-aurora-drift" aria-hidden="true" />
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none bg-transparent">
-        <div className="hero-orbit" aria-hidden="true" />
-        <div className="hero-orbit" aria-hidden="true" />
-        <div className="hero-orbit" aria-hidden="true" />
-        <div className="hero-orbit" aria-hidden="true" />
-        <div className="hero-orbit" aria-hidden="true" />
-        <div className="hero-orbit" aria-hidden="true" />
-      </div>
-      <div className="hero-shimmer absolute inset-0 pointer-events-none bg-transparent" aria-hidden="true" />
+    <section className="relative overflow-hidden">
+      <div className="hero-grid mx-auto max-w-6xl px-6 sm:px-8 lg:px-12 pt-28 pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <Logo variant="hero" href="/" />
+            <div className="space-y-6">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-primary leading-tight">
+                {title}
+              </h1>
+              <p className="text-xl sm:text-2xl text-secondary leading-relaxed">
+                {subtitle}
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button href="/contact" variant="primary" className="text-lg px-10 py-5">
+                {ctaDemo}
+              </Button>
+              <Button href="/pricing" variant="outline" className="text-lg px-10 py-5">
+                {ctaPrices}
+              </Button>
+            </div>          </div>
 
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 text-center">
-        {/* Logo da Hubiaimg: H + anelli orbitali + union, entrance + hover WOW */}
-        <div className="hubia-logo-hero-wrap hubia-logo-hero-entrance relative flex justify-center mb-12 transition-transform duration-300 hover:scale-[1.03] cursor-default">
-          <HubiaLogoHero />
-        </div>
-
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-primary mb-6 leading-tight tracking-tight max-w-3xl mx-auto">
-          {title}
-        </h1>
-        <p className="text-lg sm:text-xl text-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
-          {subtitle}
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button href="/contact" variant="primary" className="text-lg px-10 py-5">
-            {ctaDemo}
-          </Button>
-          <Button href="/pricing" variant="outline" className="text-lg px-10 py-5">
-            {ctaPrices}
-          </Button>
-        </div>
-
-        {/* Product mock — device frame, no constant glow */}
-        <div className="max-w-2xl mx-auto mb-16 rounded-2xl overflow-hidden border border-border-strong bg-surface/80 backdrop-blur-sm hover:shadow-glow-hover hover:border-accent-violet/20 transition-all duration-200">
-          <div className="aspect-[4/3] bg-gradient-accent-soft flex items-center justify-center">
-            <div className="text-secondary/60 text-sm">App preview</div>
+          <div className="relative">
+            <div className="glass-card rounded-[28px] p-10 shadow-soft animate-drift">
+              <div className="flex items-center justify-between mb-8">
+                <div className="h-2 w-24 rounded-full bg-champagne/80" />
+                <div className="w-10 h-10 rounded-full bg-accent/20 glow-ring" />
+              </div>
+              <div className="space-y-4">
+                {proofCards.map((card, index) => (
+                  <div key={index} className="flex items-center justify-between bg-champagne/60 rounded-xl px-4 py-3">
+                    <div>
+                      <p className="text-sm font-semibold text-primary">{card.title}</p>
+                      <p className="text-xs text-secondary">{card.description}</p>
+                    </div>
+                    <span className="text-accent font-semibold">●</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="absolute -right-6 -bottom-6 w-28 h-28 rounded-full border border-accent/30 glow-ring bg-surface/60 backdrop-blur-md" />
           </div>
         </div>
-
-        {/* Proof cards — glass, glow on hover only */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {proofCards.map((card, index) => (
-            <div
-              key={index}
-              className="bg-surface/80 border border-border-strong rounded-xl p-6 text-left backdrop-blur-sm hover:border-accent-violet/20 hover:shadow-glow-hover transition-all duration-200"
-            >
-              <div className="aspect-video bg-gradient-accent-soft rounded-lg mb-4 flex items-center justify-center text-secondary/50 text-sm">
-                Screenshot
-              </div>
-              <h3 className="text-lg font-semibold text-primary mb-2">{card.title}</h3>
-              <p className="text-secondary text-sm leading-relaxed">{card.description}</p>
-            </div>
-          ))}
-        </div>
       </div>
-
-      <div
-        className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent pointer-events-none"
-        aria-hidden="true"
-      />
     </section>
   )
 }

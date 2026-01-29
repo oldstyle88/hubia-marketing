@@ -92,7 +92,7 @@ export default async function PricingPage() {
               {t('requestDemo')}
             </Button>
             <p className="mt-4 text-secondary text-sm">
-              <Link href="/contact" className="text-accent-violet-soft hover:text-accent-blue transition-colors">
+              <Link href="/contact" className="text-accent hover:text-accent-deep transition-colors">
                 {t('contactCta')}
               </Link>
             </p>

@@ -18,7 +18,7 @@ function getUtmFromWindow(): { utm_source?: string; utm_medium?: string; utm_cam
 }
 
 const inputClass =
-  'w-full px-4 py-3 border border-border-strong bg-surface text-primary rounded-xl focus:outline-none focus:ring-2 focus:ring-accent-violet/50 focus:border-transparent placeholder:text-secondary/60'
+  'w-full px-4 py-3 border border-border bg-surface text-primary rounded-xl focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-transparent placeholder:text-secondary/60'
 
 export function ContactForm() {
   const t = useTranslations('contact')
@@ -187,13 +187,13 @@ export function ContactForm() {
             </div>
 
             {submitStatus === 'success' && (
-              <div className="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-emerald-400 text-sm">
+              <div className="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-emerald-600 text-sm">
                 {t('success')}
               </div>
             )}
 
             {submitStatus === 'error' && (
-              <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-xl text-red-400 text-sm">
+              <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-xl text-red-600 text-sm">
                 {errorMessage}
               </div>
             )}

@@ -1,6 +1,5 @@
 'use client'
 
-import { useId } from 'react'
 import { Link } from '@/i18n/navigation'
 
 interface LogoProps {
@@ -9,50 +8,42 @@ interface LogoProps {
 }
 
 export function Logo({ variant, href = '/' }: LogoProps) {
-  const id = useId().replace(/:/g, '')
-  const gradientId = `hubia-g-${id}`
-  const glowId = `hubia-glow-${id}`
   const isHero = variant === 'hero'
+  const iconSize = isHero ? 64 : 32
 
   const content = (
     <>
       <svg
         aria-hidden
-        className="flex-shrink-0"
-        width={isHero ? 56 : 28}
-        height={isHero ? 56 : 28}
-        viewBox="0 0 56 56"
+        className="flex-shrink-0 text-accent"
+        width={iconSize}
+        height={iconSize}
+        viewBox="0 0 42 42"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs>
-          <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#60A5FA" />
-            <stop offset="50%" stopColor="#8B5CF6" />
-            <stop offset="100%" stopColor="#F472B6" />
-          </linearGradient>
-          <filter id={glowId} x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="2" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
-        {/* Stylized H: two vertical bars + horizontal bar */}
+        <circle cx="21" cy="21" r="19" fill="none" stroke="currentColor" strokeWidth="1.2" opacity="0.2" />
         <path
-          d="M14 8v40M42 8v40M14 32h28"
-          stroke={`url(#${gradientId})`}
-          strokeWidth="5"
+          d="M10 28 C15 18, 17 14, 21 14 C25 14, 27 18, 32 28"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.4"
           strokeLinecap="round"
-          strokeLinejoin="round"
-          filter={`url(#${glowId})`}
-          className="logo-mark-stroke"
+          className="logo-line"
         />
+        <path
+          d="M10 14 C15 24, 17 28, 21 28 C25 28, 27 24, 32 14"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          className="logo-line"
+        />
+        <circle cx="21" cy="21" r="4.2" fill="currentColor" className="logo-node" />
       </svg>
       <span
-        className={`font-semibold tracking-tight tabular-nums logo-wordmark ${
-          isHero ? 'text-4xl sm:text-5xl' : 'text-xl'
+        className={`font-semibold tracking-logo text-primary ${
+          isHero ? 'text-4xl sm:text-5xl md:text-6xl' : 'text-xl'
         }`}
       >
         HŪBIA
@@ -61,8 +52,8 @@ export function Logo({ variant, href = '/' }: LogoProps) {
   )
 
   const wrapperClass = isHero
-    ? 'inline-flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 logo-hero'
-    : 'inline-flex items-center gap-2 logo-header'
+    ? 'inline-flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4'
+    : 'inline-flex items-center gap-2'
 
   if (href) {
     return (

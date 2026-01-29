@@ -9,57 +9,34 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Dark luxury — aligned with logo (navy / charcoal)
-        background: '#0B0F1A',
-        'background-alt': '#0E1324',
-        surface: '#111827',
-        'surface-elevated': '#141A2E',
-        border: 'rgba(255,255,255,0.06)',
-        'border-strong': 'rgba(255,255,255,0.1)',
-        primary: '#F5F7FA',
-        secondary: '#9CA3AF',
-        // Accent — logo gradient (blue → violet → pink)
-        accent: {
-          blue: '#60A5FA',
-          violet: '#8B5CF6',
-          'violet-soft': '#A78BFA',
-          pink: '#F472B6',
-        },
-        // Optional: champagne (cold premium), not warm gold
-        champagne: '#D4C5A9',
+        background: '#F6F1E8',
+        'background-alt': '#F2ECE1',
+        surface: '#FFFFFF',
+        'surface-elevated': '#FAF6EF',
+        border: '#E7E1D7',
+        'border-strong': '#D9D1C4',
+        primary: '#14120F',
+        secondary: '#5C564F',
+        accent: '#C8A65A',
+        'accent-deep': '#8E6A2C',
+        champagne: '#F1E8D6',
+        ink: '#1C1A18',
       },
       fontFamily: {
-        sans: ['var(--font-plus-jakarta)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-plus-jakarta)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-body)', 'ui-sans-serif', 'system-ui'],
+        display: ['var(--font-display)', 'ui-serif'],
       },
       backgroundImage: {
-        'gradient-accent': 'linear-gradient(135deg, #60A5FA 0%, #8B5CF6 50%, #A78BFA 100%)',
-        'gradient-accent-soft': 'linear-gradient(135deg, rgba(96,165,250,0.08) 0%, rgba(139,92,246,0.08) 50%, rgba(167,139,250,0.05) 100%)',
-        'gradient-accent-border': 'linear-gradient(135deg, rgba(96,165,250,0.5) 0%, rgba(139,92,246,0.5) 50%, rgba(167,139,250,0.4) 100%)',
-        'gradient-aurora': 'linear-gradient(ellipse 90% 55% at 50% -10%, rgba(96,165,250,0.06) 0%, transparent 55%), linear-gradient(ellipse 70% 45% at 85% 15%, rgba(139,92,246,0.04) 0%, transparent 45%), linear-gradient(ellipse 60% 35% at 15% 85%, rgba(139,92,246,0.03) 0%, transparent 40%)',
+        'gradient-accent': 'linear-gradient(135deg, #C8A65A 0%, #8E6A2C 100%)',
+        'gradient-accent-soft': 'linear-gradient(135deg, rgba(200,166,90,0.12) 0%, rgba(142,106,44,0.08) 100%)',
+        'gradient-aurora': 'radial-gradient(1200px 600px at 85% -10%, rgba(200, 166, 90, 0.18), transparent 60%), radial-gradient(900px 500px at -10% 15%, rgba(20, 18, 15, 0.08), transparent 55%)',
       },
       letterSpacing: {
-        logo: '0.02em',
+        logo: '0.08em',
       },
       boxShadow: {
-        glow: '0 0 50px rgba(139, 92, 246, 0.2)',
-        'glow-sm': '0 0 28px rgba(139, 92, 246, 0.15)',
-        'glow-hover': '0 0 32px rgba(139, 92, 246, 0.18)',
-        'glow-blue': '0 0 36px rgba(96, 165, 250, 0.15)',
-      },
-      animation: {
-        shimmer: 'shimmer 8s ease-in-out infinite',
-        orbit: 'orbit 20s linear infinite',
-      },
-      keyframes: {
-        shimmer: {
-          '0%, 100%': { opacity: '0.4' },
-          '50%': { opacity: '0.8' },
-        },
-        orbit: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        },
+        soft: '0 10px 30px rgba(20, 18, 15, 0.08)',
+        glow: '0 18px 60px rgba(200, 166, 90, 0.18)',
       },
     },
   },

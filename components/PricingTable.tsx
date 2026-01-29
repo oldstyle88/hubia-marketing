@@ -32,7 +32,7 @@ export function PricingTable({
           key={index}
           className={
             plan.highlight
-              ? 'relative border-2 border-accent-violet/35 bg-surface-elevated/90'
+              ? 'relative border-2 border-accent/40 bg-surface-elevated'
               : 'relative'
           }
         >
@@ -64,7 +64,7 @@ export function PricingTable({
           <ul className="space-y-3 mb-8">
             {plan.features.map((feature, featureIndex) => (
               <li key={featureIndex} className="flex items-start gap-3">
-                <span className="text-accent-violet-soft mt-1">✓</span>
+                <span className="text-accent mt-1">✓</span>
                 <span className="text-secondary text-sm">{feature}</span>
               </li>
             ))}

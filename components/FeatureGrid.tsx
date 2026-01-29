@@ -20,7 +20,7 @@ export function FeatureGrid({ features, columns = 3 }: FeatureGridProps) {
       {features.map((feature, index) => (
         <Card key={index}>
           {feature.icon && (
-            <div className="mb-4 text-accent-violet-soft">
+            <div className="mb-4 text-accent">
               {feature.icon}
             </div>
           )}

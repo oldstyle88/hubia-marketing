@@ -19,15 +19,15 @@ export function Button({
   type = 'button',
 }: ButtonProps) {
   const baseClasses =
-    'inline-flex items-center justify-center px-8 py-4 text-base font-medium transition-all duration-200 rounded-xl'
+    'inline-flex items-center justify-center px-8 py-4 text-base font-medium transition-all duration-200 rounded-sm'
 
   const variants = {
     primary:
-      'bg-gradient-to-r from-accent-blue to-accent-violet text-white border-0 hover:shadow-glow-hover focus:outline-none focus:ring-2 focus:ring-accent-violet/50 focus:ring-offset-2 focus:ring-offset-background transition-shadow duration-200',
+      'bg-gradient-accent text-white shadow-glow hover:brightness-105 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:ring-offset-2 focus:ring-offset-background',
     secondary:
-      'bg-surface/90 border border-border-strong text-primary hover:bg-surface-elevated hover:border-white/15 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-background',
+      'bg-ink text-white hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-ink/30 focus:ring-offset-2 focus:ring-offset-background',
     outline:
-      'border border-white/20 bg-transparent text-primary hover:bg-white/5 hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-2 focus:ring-offset-background transition-all duration-200',
+      'border border-border bg-surface text-primary hover:bg-champagne/70 focus:outline-none focus:ring-2 focus:ring-accent/30 focus:ring-offset-2 focus:ring-offset-background',
   }
 
   const classes = `${baseClasses} ${variants[variant]} ${className}`

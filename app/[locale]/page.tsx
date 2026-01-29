@@ -94,8 +94,17 @@ export default async function HomePage() {
           proofCards={proofCards}
         />
 
-        <Section className="bg-background pt-16 pb-8">
-          <PwaOnlyBlock title={t('pwaBlock.title')} body={t('pwaBlock.body')} />
+        <Section className="bg-background pt-8 pb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center">
+            <PwaOnlyBlock title={t('pwaBlock.title')} body={t('pwaBlock.body')} />
+            <div className="grid grid-cols-1 gap-4">
+              {proofCards.map((card, index) => (
+                <Card key={index} className="p-6"><h3 className="text-lg font-semibold text-primary mb-1">{card.title}</h3>
+                  <p className="text-sm text-secondary leading-relaxed">{card.description}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
         </Section>
 
         <Section className="bg-background">
@@ -125,7 +134,7 @@ export default async function HomePage() {
           </div>
         </Section>
 
-        <Section className="bg-background">
+        <Section className="bg-surface/70">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
               {t('features.title')}
@@ -148,8 +157,8 @@ export default async function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-accent-soft text-accent-violet-soft text-2xl font-semibold mb-6">
+              <div key={index} className="text-center glass-card rounded-2xl p-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/15 text-accent text-2xl font-semibold mb-6">
                   {index + 1}
                 </div>
                 <h3 className="text-2xl font-semibold text-primary mb-3">
@@ -189,7 +198,7 @@ export default async function HomePage() {
           />
         </Section>
 
-        <Section id="faq" className="bg-background">
+        <Section id="faq" className="bg-surface/70">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
               {t('faq.title')}

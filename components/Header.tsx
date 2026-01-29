@@ -43,16 +43,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/10">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center h-20">
+        <div className="flex items-center justify-between h-20 md:grid md:grid-cols-[1fr_auto_1fr]">
           <nav className="hidden md:flex items-center gap-8" aria-label="Main">
             {navLinks}
           </nav>
 
-          <div className="justify-self-center">
+          <div className="md:justify-self-center">
             <Logo variant="header" href="/" />
           </div>
 
-          <div className="flex items-center gap-2 sm:gap-4 justify-self-end">
+          <div className="flex items-center gap-2 sm:gap-4 md:justify-self-end">
             <LanguageSwitcher />
             <Button href="/contact" variant="primary" className="text-sm px-4 sm:px-6 py-3 hidden sm:inline-flex">
               {t('requestDemo')}

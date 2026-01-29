@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from './Button'
-import { HubiaLogoConnection } from './HubiaLogoConnection'
+import { HubiaLogoHero } from './HubiaLogoHero'
 
 export interface ProofCard {
   title: string
@@ -31,9 +31,9 @@ export function Hero({ title, subtitle, ctaDemo, ctaPrices, proofCards }: HeroPr
       <div className="hero-shimmer absolute inset-0 pointer-events-none" aria-hidden="true" />
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 text-center">
-        {/* Logo hero: micro-interaction on hover (scale once) */}
-        <div className="flex justify-center mb-10 transition-transform duration-300 hover:scale-[1.03] cursor-default">
-          <HubiaLogoConnection variant="dark" />
+        {/* Logo da Hubiaimg: H + anello + nodi + wordmark, entrance + hover WOW */}
+        <div className="hubia-logo-hero-wrap hubia-logo-hero-entrance flex justify-center mb-10 transition-transform duration-300 hover:scale-[1.03] cursor-default">
+          <HubiaLogoHero />
         </div>
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-primary mb-6 leading-tight tracking-tight max-w-3xl mx-auto">

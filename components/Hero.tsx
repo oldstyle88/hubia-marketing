@@ -20,10 +20,8 @@ interface HeroProps {
 export function Hero({ title, subtitle, ctaDemo, ctaPrices, proofCards }: HeroProps) {
   return (
     <section className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden bg-background hero-noise">
-      {/* Gradient + aurora drift */}
-      <div className="absolute inset-0 bg-gradient-accent-soft opacity-70 pointer-events-none hero-aurora-drift" aria-hidden="true" />
-      {/* Orbit rings — more, moving */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+      <div className="absolute inset-0 bg-transparent bg-gradient-accent-soft opacity-70 pointer-events-none hero-aurora-drift" aria-hidden="true" />
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none bg-transparent">
         <div className="hero-orbit" aria-hidden="true" />
         <div className="hero-orbit" aria-hidden="true" />
         <div className="hero-orbit" aria-hidden="true" />
@@ -31,7 +29,7 @@ export function Hero({ title, subtitle, ctaDemo, ctaPrices, proofCards }: HeroPr
         <div className="hero-orbit" aria-hidden="true" />
         <div className="hero-orbit" aria-hidden="true" />
       </div>
-      <div className="hero-shimmer absolute inset-0 pointer-events-none" aria-hidden="true" />
+      <div className="hero-shimmer absolute inset-0 pointer-events-none bg-transparent" aria-hidden="true" />
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 text-center">
         {/* Logo da Hubiaimg: H + anelli orbitali + union, entrance + hover WOW */}

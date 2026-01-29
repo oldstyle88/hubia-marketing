@@ -83,9 +83,9 @@ export default async function HomePage() {
   ]
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 bg-background">
         <Hero
           title={t('hero.title')}
           subtitle={t('hero.subtitle')}

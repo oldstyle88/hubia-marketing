@@ -49,10 +49,10 @@ export default async function PricingPage() {
   ]
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Header />
 
-      <main className="flex-1">
+      <main className="flex-1 bg-background">
         <Section className="pt-28 pb-16 bg-background-alt">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h1 className="text-4xl sm:text-5xl font-semibold text-primary mb-6">

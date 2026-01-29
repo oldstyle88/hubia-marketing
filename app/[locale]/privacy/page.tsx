@@ -15,10 +15,10 @@ export default async function PrivacyPage() {
   const t = await getTranslations('privacy')
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Header />
 
-      <main className="flex-1">
+      <main className="flex-1 bg-background">
         <Section className="pt-32 pb-16 bg-background">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-semibold text-primary mb-8">

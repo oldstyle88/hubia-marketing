@@ -10,7 +10,7 @@ interface LogoProps {
 
 export function Logo({ variant, href = '/' }: LogoProps) {
   const isHero = variant === 'hero'
-  const iconSize = isHero ? 140 : 44
+  const iconSize = isHero ? 150 : 44
   const id = useId().replace(/:/g, '')
   const gradientId = `hubia-grad-${id}`
   const glowId = `hubia-glow-${id}`
@@ -25,6 +25,7 @@ export function Logo({ variant, href = '/' }: LogoProps) {
           viewBox="0 0 120 120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="logo-warp"
         >
           <defs>
             <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
@@ -43,9 +44,9 @@ export function Logo({ variant, href = '/' }: LogoProps) {
 
           {/* Orbit rings */}
           <g className="logo-ring-group">
-            <circle cx="60" cy="60" r="44" stroke={`url(#${gradientId})`} strokeWidth="2.2" className="logo-ring" />
-            <circle cx="60" cy="60" r="34" stroke={`url(#${gradientId})`} strokeWidth="1.6" className="logo-ring logo-ring-inner" />
-            <circle cx="60" cy="60" r="52" stroke={`url(#${gradientId})`} strokeWidth="1.2" className="logo-ring logo-ring-outer" />
+            <circle cx="60" cy="60" r="44" stroke={`url(#${gradientId})`} strokeWidth="2.2" className="logo-ring logo-ring-1" />
+            <circle cx="60" cy="60" r="34" stroke={`url(#${gradientId})`} strokeWidth="1.6" className="logo-ring logo-ring-2" />
+            <circle cx="60" cy="60" r="52" stroke={`url(#${gradientId})`} strokeWidth="1.2" className="logo-ring logo-ring-3" />
           </g>
 
           {/* Orbiting nodes */}

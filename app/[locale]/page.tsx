@@ -94,7 +94,7 @@ export default async function HomePage() {
           proofCards={proofCards}
         />
 
-        <Section className="bg-background-alt pt-16 pb-8">
+        <Section className="bg-background pt-16 pb-8">
           <PwaOnlyBlock title={t('pwaBlock.title')} body={t('pwaBlock.body')} />
         </Section>
 
@@ -102,7 +102,7 @@ export default async function HomePage() {
           <LivePreview />
         </Section>
 
-        <Section id="product" className="bg-surface">
+        <Section id="product" className="bg-background">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
               {t('forWho.title')}
@@ -137,7 +137,7 @@ export default async function HomePage() {
           <FeatureGrid features={features} columns={3} />
         </Section>
 
-        <Section className="bg-background-alt">
+        <Section className="bg-background">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
               {t('howItWorks.title')}
@@ -189,7 +189,7 @@ export default async function HomePage() {
           />
         </Section>
 
-        <Section id="faq" className="bg-surface">
+        <Section id="faq" className="bg-background">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
               {t('faq.title')}

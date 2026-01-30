@@ -18,13 +18,15 @@
     "forWho": {
       "title": "Pensato per chi lavora con le persone, non con il caos.",
       "subtitle": "Il tuo locale. Il tuo brand. Zero confusione.",
-      "card1Title": "Barber & Hair salon",
-      "card1Desc": "Appuntamenti, staff e clienti in un unico posto. Meno no-show, più agenda piena.",
-      "card2Title": "Parrucchieri",
-      "card2Desc": "Gestione quotidiana semplice. Promemoria automatici, slot chiari, dati sempre aggiornati.",
-      "card3Title": "Beauty center",
-      "card3Desc": "Più servizi, più persone: un solo sistema che tiene tutto in ordine e cresce con te.",
-      "microText": "Costruiamo anche soluzioni dedicate per locali food e attività ad alta rotazione."
+      "card1Title": "Beauty & Hair",
+      "card1Desc": "Barber, parrucchieri, beauty center, studi estetici. Appuntamenti, staff e clienti in un unico sistema.",
+      "card2Title": "Food Locale",
+      "card2Desc": "Pizzerie, street food, locali con ordini e prenotazioni. Flussi chiari tra cucina, ritiro e tavoli.",
+      "card3Title": "Fitness & Attività",
+      "card3Desc": "Palestre, studi personal, centri con abbonamenti e slot. Gestione prenotazioni e abbonamenti senza caos.",
+      "card4Title": "Attività su misura",
+      "card4Desc": "Processi complessi, più sedi o logiche uniche. Soluzioni dedicate progettate sul tuo business.",
+      "microText": "Per attività con flussi articolati e voglia di ordine."
     },
     "benefits": {
       "title": "Cosa ti toglie dalla testa",

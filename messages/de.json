@@ -18,13 +18,15 @@
     "forWho": {
       "title": "Für alle, die mit Menschen arbeiten, nicht mit Chaos.",
       "subtitle": "Dein Betrieb. Dein Brand. Keine Verwirrung.",
-      "card1Title": "Barber & Hair salon",
-      "card1Desc": "Termine, Staff und Kunden an einem Ort. Weniger No-Shows, vollere Agenda.",
-      "card2Title": "Friseure",
-      "card2Desc": "Einfache tägliche Abläufe. Automatische Erinnerungen, klare Slots, Daten immer aktuell.",
-      "card3Title": "Beauty center",
-      "card3Desc": "Mehr Services, mehr Menschen: ein System, das alles in Ordnung hält und mit dir wächst.",
-      "microText": "Wir bauen auch maßgeschneiderte Lösungen für Food-Betriebe und Aktivitäten mit hoher Fluktuation."
+      "card1Title": "Beauty & Hair",
+      "card1Desc": "Barbiere, Friseure, Beauty-Center, Kosmetikstudios. Termine, Team und Kunden in einem System.",
+      "card2Title": "Food Locale",
+      "card2Desc": "Pizzerien, Street Food, Lokale mit Bestellungen und Reservierungen. Klare Abläufe zwischen Küche, Abholung und Tischen.",
+      "card3Title": "Fitness & Aktivität",
+      "card3Desc": "Fitnessstudios, Personal-Trainer-Studios, Zentren mit Abos und Slots. Buchungen und Abos ohne Chaos.",
+      "card4Title": "Aktivität auf Maß",
+      "card4Desc": "Komplexe Prozesse, mehrere Standorte oder eigene Logik. Maßgeschneiderte Lösungen für dein Business.",
+      "microText": "Für Betriebe mit anspruchsvollen Abläufen und dem Wunsch nach Ordnung."
     },
     "benefits": {
       "title": "Was wir dir abnehmen",

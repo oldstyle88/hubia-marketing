@@ -13,6 +13,7 @@ export default async function HomePage() {
     { title: t('forWho.card1Title'), description: t('forWho.card1Desc') },
     { title: t('forWho.card2Title'), description: t('forWho.card2Desc') },
     { title: t('forWho.card3Title'), description: t('forWho.card3Desc') },
+    { title: t('forWho.card4Title'), description: t('forWho.card4Desc') },
   ]
 
   const benefits = [
@@ -51,7 +52,7 @@ export default async function HomePage() {
               {t('forWho.subtitle')}
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {forWhoCards.map((item, index) => (
               <Card key={index} className="p-8">
                 <h3 className="text-2xl font-semibold text-primary mb-3">

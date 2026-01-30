@@ -38,13 +38,17 @@
       "analyticsDesc": "Ingresos, reservas y pedidos. Datos claros para decidir."
     },
     "forWho": {
-      "title": "Para quién es HUBIA",
-      "subtitle": "Dos verticales: Beauty y Restauración.",
-      "beauty": "Beauty",
-      "beautyDesc": "Barbería, peluquería, centro de belleza. Reservas, agenda y recordatorios automáticos: menos no-shows, más clientes bien gestionados.",
-      "food": "Restauración",
-      "foodDesc": "Pizzería, street food. Pedidos, cocina y recogida: flujo claro para sala y cocina.",
-      "advancedNote": "Bajo petición: multi-sede, lógicas complejas."
+      "title": "Para quien trabaja con personas, no con el caos.",
+      "subtitle": "Tu local. Tu marca. Cero confusión.",
+      "card1Title": "Beauty & Hair",
+      "card1Desc": "Barberías, peluquerías, centros de belleza, estudios de estética. Reservas, equipo y clientes en un solo sistema.",
+      "card2Title": "Food Locale",
+      "card2Desc": "Pizzerías, street food, locales con pedidos y reservas. Flujos claros entre cocina, recogida y mesas.",
+      "card3Title": "Fitness y actividad",
+      "card3Desc": "Gimnasios, estudios de personal, centros con abonos y franjas. Gestión de reservas y abonos sin caos.",
+      "card4Title": "Actividad a medida",
+      "card4Desc": "Procesos complejos, varias sedes o lógicas únicas. Soluciones dedicadas diseñadas para tu negocio.",
+      "microText": "Para negocios con flujos articulados y ganas de orden."
     },
     "features": {
       "title": "Funciones esenciales y medibles",

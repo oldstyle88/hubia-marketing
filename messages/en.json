@@ -18,13 +18,15 @@
     "forWho": {
       "title": "For those who work with people, not chaos.",
       "subtitle": "Your venue. Your brand. Zero confusion.",
-      "card1Title": "Barber & Hair salon",
-      "card1Desc": "Appointments, staff and clients in one place. Fewer no-shows, fuller agenda.",
-      "card2Title": "Hairdressers",
-      "card2Desc": "Simple daily management. Automatic reminders, clear slots, data always up to date.",
-      "card3Title": "Beauty centre",
-      "card3Desc": "More services, more people: one system that keeps everything in order and grows with you.",
-      "microText": "We also build dedicated solutions for food venues and high-turnover activities."
+      "card1Title": "Beauty & Hair",
+      "card1Desc": "Barbers, hairdressers, beauty centres, aesthetic studios. Appointments, staff and clients in one system.",
+      "card2Title": "Food venue",
+      "card2Desc": "Pizzerias, street food, venues with orders and bookings. Clear flows between kitchen, pickup and tables.",
+      "card3Title": "Fitness & Activity",
+      "card3Desc": "Gyms, personal studios, centres with memberships and slots. Bookings and memberships without chaos.",
+      "card4Title": "Custom activity",
+      "card4Desc": "Complex processes, multiple locations or unique logic. Dedicated solutions designed around your business.",
+      "microText": "For businesses with articulated flows and a need for order."
     },
     "benefits": {
       "title": "What it takes off your mind",

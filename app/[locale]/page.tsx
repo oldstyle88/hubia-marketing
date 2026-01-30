@@ -13,7 +13,6 @@ export default async function HomePage() {
     { title: t('forWho.card1Title'), description: t('forWho.card1Desc') },
     { title: t('forWho.card2Title'), description: t('forWho.card2Desc') },
     { title: t('forWho.card3Title'), description: t('forWho.card3Desc') },
-    { title: t('forWho.card4Title'), description: t('forWho.card4Desc') },
   ]
 
   const benefits = [

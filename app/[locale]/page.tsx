@@ -9,33 +9,26 @@ import { FeatureGrid } from '@/components/FeatureGrid'
 import { FAQAccordion } from '@/components/FAQAccordion'
 import { PwaOnlyBlock } from '@/components/PwaOnlyBlock'
 import { ReliabilitySection } from '@/components/ReliabilitySection'
-import { PricingTable } from '@/components/PricingTable'
 
 export default async function HomePage() {
   const t = await getTranslations('home')
-  const tPlans = await getTranslations('plans')
-  const tPricing = await getTranslations('pricing')
 
-  const proofCards = [
-    { title: t('proof.clientPwa'), description: t('proof.clientPwaDesc'), placeholder: true },
-    { title: t('proof.staffDashboard'), description: t('proof.staffDashboardDesc'), placeholder: true },
-    { title: t('proof.analytics'), description: t('proof.analyticsDesc'), placeholder: true },
+  const offerCards = [
+    { title: t('offer.clientPwa'), description: t('offer.clientPwaDesc') },
+    { title: t('offer.staffDashboard'), description: t('offer.staffDashboardDesc') },
+    { title: t('offer.analytics'), description: t('offer.analyticsDesc') },
   ]
 
-  const targetAudience = [
-    { title: t('forWho.barber'), description: t('forWho.barberDesc') },
+  const forWhoCards = [
+    { title: t('forWho.beauty'), description: t('forWho.beautyDesc') },
     { title: t('forWho.food'), description: t('forWho.foodDesc') },
-    { title: t('forWho.gym'), description: t('forWho.gymDesc') },
-    { title: t('forWho.tagline'), description: t('forWho.taglineDesc') },
   ]
 
   const features = [
     { title: t('features.booking'), description: t('features.bookingDesc') },
     { title: t('features.orders'), description: t('features.ordersDesc') },
-    { title: t('features.staffPanel'), description: t('features.staffPanelDesc') },
     { title: t('features.notifications'), description: t('features.notificationsDesc') },
     { title: t('features.branding'), description: t('features.brandingDesc') },
-    { title: t('features.analytics'), description: t('features.analyticsDesc') },
   ]
 
   const steps = [
@@ -45,7 +38,7 @@ export default async function HomePage() {
   ]
 
   const faqs = []
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 12; i++) {
     faqs.push({
       question: t(`faqItems.q${i}`),
       answer: t(`faqItems.a${i}`),
@@ -57,29 +50,6 @@ export default async function HomePage() {
     { title: t('reliability.b2title'), desc: t('reliability.b2desc') },
     { title: t('reliability.b3title'), desc: t('reliability.b3desc') },
     { title: t('reliability.b4title'), desc: t('reliability.b4desc') },
-    { title: t('reliability.b5title'), desc: t('reliability.b5desc') },
-    { title: t('reliability.b6title'), desc: t('reliability.b6desc') },
-  ]
-
-  const plans = [
-    {
-      name: tPlans('pro.name'),
-      description: tPlans('pro.description'),
-      setupFee: tPricing('prices.pro.setup'),
-      monthly: tPricing('prices.pro.monthly'),
-      features: tPlans.raw('pro.features') as string[],
-      highlight: true,
-      badge: tPricing('mostChosen'),
-    },
-    {
-      name: tPlans('max.name'),
-      description: tPlans('max.description'),
-      setupFee: tPricing('prices.max.setup'),
-      monthly: tPricing('prices.max.monthly'),
-      features: tPlans.raw('max.features') as string[],
-      highlight: false,
-      badge: null,
-    },
   ]
 
   return (
@@ -91,15 +61,23 @@ export default async function HomePage() {
           subtitle={t('hero.subtitle')}
           ctaDemo={t('hero.requestDemo')}
           ctaPrices={t('hero.viewPrices')}
-          proofCards={proofCards}
         />
 
-        <Section className="bg-background pt-8 pb-8">
+        <Section id="product" className="bg-background pt-8 pb-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
+              {t('offer.title')}
+            </h2>
+            <p className="text-xl text-secondary max-w-2xl mx-auto">
+              {t('offer.subtitle')}
+            </p>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center">
-            <PwaOnlyBlock title={t('pwaBlock.title')} body={t('pwaBlock.body')} />
+            <PwaOnlyBlock title={t('offer.pwaBlock.title')} body={t('offer.pwaBlock.body')} />
             <div className="grid grid-cols-1 gap-4">
-              {proofCards.map((card, index) => (
-                <Card key={index} className="p-6"><h3 className="text-lg font-semibold text-primary mb-1">{card.title}</h3>
+              {offerCards.map((card, index) => (
+                <Card key={index} className="p-6">
+                  <h3 className="text-lg font-semibold text-primary mb-1">{card.title}</h3>
                   <p className="text-sm text-secondary leading-relaxed">{card.description}</p>
                 </Card>
               ))}
@@ -107,8 +85,8 @@ export default async function HomePage() {
           </div>
         </Section>
 
-        <Section id="product" className="bg-background">
-          <div className="text-center mb-16">
+        <Section className="bg-surface/70">
+          <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
               {t('forWho.title')}
             </h2>
@@ -116,9 +94,9 @@ export default async function HomePage() {
               {t('forWho.subtitle')}
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {targetAudience.map((item, index) => (
-              <Card key={index}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {forWhoCards.map((item, index) => (
+              <Card key={index} className="p-8">
                 <h3 className="text-2xl font-semibold text-primary mb-3">
                   {item.title}
                 </h3>
@@ -128,10 +106,13 @@ export default async function HomePage() {
               </Card>
             ))}
           </div>
+          <p className="text-center text-secondary mt-6 text-sm">
+            {t('forWho.advancedNote')}
+          </p>
         </Section>
 
-        <Section className="bg-surface/70">
-          <div className="text-center mb-16">
+        <Section className="bg-background">
+          <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
               {t('features.title')}
             </h2>
@@ -139,11 +120,11 @@ export default async function HomePage() {
               {t('features.subtitle')}
             </p>
           </div>
-          <FeatureGrid features={features} columns={3} />
+          <FeatureGrid features={features} columns={2} />
         </Section>
 
-        <Section className="bg-background">
-          <div className="text-center mb-16">
+        <Section className="bg-surface/70">
+          <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
               {t('howItWorks.title')}
             </h2>
@@ -175,27 +156,21 @@ export default async function HomePage() {
         />
 
         <Section className="bg-background">
-          <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
               {t('pricingTeaser.title')}
             </h2>
-            <p className="text-xl text-secondary mb-4">
+            <p className="text-xl text-secondary mb-8">
               {t('pricingTeaser.subtitle')}
             </p>
             <Button href="/pricing" variant="primary" className="text-lg px-10 py-5">
               {t('pricingTeaser.cta')}
             </Button>
           </div>
-          <PricingTable
-            plans={plans}
-            perMonthLabel={tPricing('perMonth')}
-            setupLabel={tPricing('setupOneTime')}
-            requestDemoLabel={tPricing('requestDemo')}
-          />
         </Section>
 
         <Section id="faq" className="bg-surface/70">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
               {t('faq.title')}
             </h2>

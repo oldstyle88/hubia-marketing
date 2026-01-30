@@ -11,80 +11,71 @@
   "home": {
     "hero": {
       "title": "Riempi l'agenda. Riduci i no-show.",
-      "subtitle": "Software PWA premium per barbieri, parrucchieri e food. Prenotazioni e ordini in un'unica app con il tuo brand. Niente marketplace, niente template generici.",
+      "subtitle": "PWA premium per Beauty e Ristorazione. Prenotazioni e ordini in un'unica app con il tuo brand: nessun marketplace, nessun template.",
       "requestDemo": "Contattaci",
       "viewPrices": "Vedi prezzi"
     },
-    "proof": {
+    "offer": {
+      "title": "Cosa offre HUBIA",
+      "subtitle": "Un'unica piattaforma, il tuo brand.",
+      "pwaBlock": {
+        "title": "Solo PWA, zero app da store",
+        "body": "App installabile su smartphone (iOS e Android) con logo e colori della tua attività. Un solo software, aggiornamenti inclusi."
+      },
       "clientPwa": "PWA con il tuo brand",
-      "clientPwaDesc": "App per clienti e staff: prenotazioni o ordini in base al tuo tipo di attività.",
+      "clientPwaDesc": "App per clienti e staff: prenotazioni o ordini in base al verticale.",
       "staffDashboard": "Staff e disponibilità",
       "staffDashboardDesc": "Calendario, servizi, clienti e notifiche automatiche.",
       "analytics": "Analytics",
-      "analyticsDesc": "Ricavi, prenotazioni, ordini. Dati chiari per decidere."
-    },
-    "pwaBlock": {
-      "title": "Solo PWA, zero app da store",
-      "body": "La tua attività ha una PWA installabile su smartphone (iOS e Android) con il tuo logo e i tuoi colori. Un solo software, aggiornamenti inclusi."
+      "analyticsDesc": "Ricavi, prenotazioni e ordini. Dati chiari per decidere."
     },
     "forWho": {
       "title": "Per chi è HUBIA",
-      "subtitle": "Due verticali attivi: barbiere e parrucchiere. Food (pizzeria, street food). Soluzioni avanzate solo su richiesta.",
-      "barber": "Barbiere e parrucchiere",
-      "barberDesc": "Prenotazioni, agenda, promemoria automatici. Meno no-show, più clienti gestiti bene.",
-      "food": "Food",
-      "foodDesc": "Pizzeria, street food, locali con ordini e ritiro. Ordini chiari, cucina e staff allineati.",
-      "gym": "Soluzioni avanzate",
-      "gymDesc": "Per esigenze specifiche (palestra, multi-sede, logiche complesse) valutiamo su richiesta.",
-      "tagline": "Premium e su misura",
-      "taglineDesc": "PWA costruite per attività reali. Niente SaaS generico da supermercato."
+      "subtitle": "Due verticali: Beauty e Ristorazione.",
+      "beauty": "Beauty",
+      "beautyDesc": "Barbiere, parrucchiere, beauty center. Prenotazioni, agenda e promemoria automatici: meno no-show, più clienti gestiti bene.",
+      "food": "Ristorazione",
+      "foodDesc": "Pizzeria, street food. Ordini, cucina e ritiro: flusso chiaro per sala e cucina.",
+      "advancedNote": "Su richiesta: multi-sede, logiche complesse."
     },
     "features": {
       "title": "Cosa include",
-      "subtitle": "Funzionalità concrete, niente buzzword.",
+      "subtitle": "Funzionalità concrete.",
       "booking": "Prenotazioni",
-      "bookingDesc": "Slot, ricorrenze, modifiche. Agenda ordinata per staff.",
+      "bookingDesc": "Slot, ricorrenze e modifiche. Agenda ordinata per staff.",
       "orders": "Ordini",
-      "ordersDesc": "Ordine, cucina, ritiro. Per il verticale Food.",
-      "staffPanel": "Staff e disponibilità",
-      "staffPanelDesc": "Calendario, servizi, clienti, notifiche.",
+      "ordersDesc": "Ordine, cucina e ritiro per il verticale Ristorazione.",
       "notifications": "Notifiche automatiche",
-      "notificationsDesc": "Promemoria e reminder per ridurre i no-show.",
+      "notificationsDesc": "Promemoria per ridurre i no-show.",
       "branding": "Branding",
-      "brandingDesc": "Logo, colori e nome della tua attività nell'app.",
-      "analytics": "Analytics",
-      "analyticsDesc": "Ricavi, prenotazioni, ordini. Report essenziali."
+      "brandingDesc": "Logo, colori e nome della tua attività nell'app."
     },
     "howItWorks": {
       "title": "Come funziona",
-      "subtitle": "Setup chiaro. Rateizzazione 6 o 12 mesi disponibile.",
+      "subtitle": "Setup chiaro. Ogni progetto parte da una call conoscitiva.",
       "setup": "Setup iniziale",
-      "setupDesc": "Progettazione, configurazione, branding, test e messa online. Il costo del setup può essere rateizzato in 6 o 12 mesi.",
+      "setupDesc": "Progettazione, configurazione, branding, test e messa online.",
       "config": "Configurazione",
       "configDesc": "Servizi, staff, orari e impostazioni su misura.",
       "golive": "Messa online",
-      "goliveDesc": "Verifica finale e lancio. Ogni progetto parte da una call conoscitiva."
+      "goliveDesc": "Verifica finale e lancio."
     },
     "reliability": {
       "title": "Affidabilità",
-      "subtitle": "Sistemi verificabili, niente promesse magiche.",
-      "b1title": "Idempotenza",
-      "b1desc": "Ordini e prenotazioni senza duplicati anche in caso di ritentativi.",
-      "b2title": "Lock cron",
-      "b2desc": "Job in background con lock per evitare esecuzioni doppie.",
-      "b3title": "Test mode",
-      "b3desc": "Modalità test senza dati reali e senza invio notifiche.",
-      "b4title": "Push e subscription",
-      "b4desc": "Gestione corretta di notifiche e abbonamenti scaduti.",
-      "b5title": "Isolamento dati",
-      "b5desc": "Ogni attività ha i propri dati separati.",
-      "b6title": "Checklist e go-live",
-      "b6desc": "Verifiche ripetibili prima del lancio."
+      "subtitle": "Risultati verificabili in produzione.",
+      "b1title": "Zero duplicati",
+      "b1desc": "Ordini e prenotazioni univoci anche in caso di ritentativi o connessione instabile.",
+      "b2title": "Job affidabili",
+      "b2desc": "Processi in background eseguiti una sola volta, senza sovrapposizioni.",
+      "b3title": "Test sicuri",
+      "b3desc": "Ambiente di prova senza dati reali e senza invio di notifiche ai clienti.",
+      "b4title": "Notifiche robuste",
+      "b4desc": "Gestione corretta di abbonamenti scaduti e dispositivi disconnessi."
     },
     "pricingTeaser": {
-      "title": "Due piani: Essenziale e Avanzato",
-      "subtitle": "Prezzi differenziati per barbiere/parrucchiere e per food. Setup rateizzabile in 6 o 12 mesi.",
-      "cta": "Vedi prezzi"
+      "title": "Prezzi",
+      "subtitle": "Da €69/mese per Beauty. Da €149/mese per Ristorazione. Setup da €900, rateizzabile in 6 o 12 mesi.",
+      "cta": "Vedi dettagli prezzi"
     },
     "faq": {
       "title": "Domande frequenti",
@@ -96,27 +87,31 @@
       "q2": "Posso importare i dati esistenti?",
       "a2": "Sì. Clienti, servizi e storico prenotazioni: contattaci per valutare la migrazione.",
       "q3": "Funziona offline?",
-      "a3": "La PWA client si installa sullo smartphone e permette di consultare prenotazioni e profilo anche offline.",
+      "a3": "La PWA si installa sullo smartphone e permette di consultare prenotazioni e profilo anche offline.",
       "q4": "Quali pagamenti accettate?",
-      "a4": "Le modalità di pagamento (setup e abbonamento) vengono concordate. Rateizzazione 6 o 12 mesi per il setup.",
+      "a4": "Modalità di pagamento concordate in fase di attivazione.",
       "q5": "C'è un limite di prenotazioni?",
-      "a5": "No. I piani differiscono per tipo di attività (Essenziale vs Avanzato) e per verticale.",
+      "a5": "No. I piani differiscono per verticale: Studio (Beauty) e Operativo (Ristorazione).",
       "q6": "Come funziona il supporto?",
-      "a6": "Supporto via email per tutti. Con il piano Avanzato hai priorità e supporto dedicato in fase di avvio.",
+      "a6": "Supporto via email per tutti. Con Operativo: priorità e supporto dedicato in fase di avvio.",
       "q7": "Posso usare il mio logo e i miei colori?",
       "a7": "Sì. Tutti i piani includono branding: logo, colori e nome della tua attività nell'app.",
       "q8": "I dati sono sicuri?",
       "a8": "Crittografia, backup automatici e conformità GDPR. Dati in Europa.",
       "q9": "Posso cambiare piano?",
-      "a9": "Sì. Il passaggio al piano superiore o inferiore si applica dal ciclo di fatturazione successivo.",
+      "a9": "Sì. Il passaggio si applica dal ciclo di fatturazione successivo.",
       "q10": "Come si avvia un progetto?",
-      "a10": "Sempre con una call conoscitiva. Niente demo pubblica: ci racconti la tua attività e ti proponiamo la soluzione adatta."
+      "a10": "Sempre con una call conoscitiva. Ci racconti la tua attività e ti proponiamo la soluzione adatta.",
+      "q11": "Come garantite assenza di duplicati su ordini e prenotazioni?",
+      "a11": "Usiamo chiavi idempotenti: ogni operazione è identificata in modo univoco, così i ritentativi non generano doppie prenotazioni o doppi ordini.",
+      "q12": "Cosa significa \"job affidabili\" e \"notifiche robuste\"?",
+      "a12": "I job in background (promemoria, sync) usano lock per evitare esecuzioni doppie. Le notifiche gestiscono correttamente abbonamenti scaduti e dispositivi disconnessi, senza errori a cascata."
     }
   },
   "pricing": {
     "title": "Prezzi",
-    "subtitle": "Due piani: Essenziale e Avanzato. Prezzi chiari per barbiere/parrucchiere e per food. Setup rateizzabile in 6 o 12 mesi.",
-    "footer": "Setup una tantum + abbonamento mensile. Il setup può essere rateizzato in 6 o 12 mesi senza aggravio.",
+    "subtitle": "Due piani: Studio (Beauty) e Operativo (Ristorazione). Setup rateizzabile in 6 o 12 mesi.",
+    "footer": "Setup una tantum + abbonamento mensile. Setup rateizzabile in 6 o 12 mesi senza aggravio.",
     "setupIncludes": "Il setup include: progettazione, configurazione, branding (logo, colori, icona), test e messa online.",
     "setupMaxNote": "Supporto dedicato in fase di avvio e configurazione guidata fino al go-live.",
     "contactCta": "Parla con noi →",
@@ -127,8 +122,8 @@
     "faqTitle": "Domande sui piani",
     "faq": {
       "q1": "Cosa include il setup?",
-      "a1": "Progettazione, configurazione, branding (logo, colori, icona app), test e messa online. Puoi rateizzare il costo in 6 o 12 mesi.",
-      "q2": "Posso passare da Essenziale ad Avanzato?",
+      "a1": "Progettazione, configurazione, branding (logo, colori, icona app), test e messa online. Setup rateizzabile in 6 o 12 mesi.",
+      "q2": "Posso passare da Studio a Operativo?",
       "a2": "Sì. Il passaggio si applica dal ciclo di fatturazione successivo.",
       "q3": "Come funziona il pagamento?",
       "a3": "Setup una tantum all'attivazione (rateizzabile in 6 o 12 mesi) e abbonamento mensile. Nessun vincolo di durata."
@@ -145,20 +140,20 @@
     },
     "verticalPricing": {
       "title": "Prezzi per verticale",
-      "note": "Barber/Parrucchieri: prenotazioni e gestione agenda. Food: ordini, cucina, ritiro. Il setup è rateizzabile in 6 o 12 mesi.",
+      "note": "Beauty: prenotazioni e agenda. Ristorazione: ordini, cucina, ritiro. Setup rateizzabile in 6 o 12 mesi.",
       "columns": {
         "vertical": "Verticale",
-        "pro": "Essenziale",
-        "max": "Avanzato"
+        "pro": "Studio",
+        "max": "Operativo"
       },
       "rows": [
         {
-          "label": "Barbiere / Parrucchieri",
+          "label": "Beauty (barbiere, parrucchiere, beauty center)",
           "pro": "Setup €900 – €1.500 + €69 – €129/mese",
           "max": "Su richiesta"
         },
         {
-          "label": "Food (pizzeria, street food)",
+          "label": "Ristorazione (pizzeria, street food)",
           "pro": "Su richiesta",
           "max": "Setup €1.800 – €3.500 + €149 – €249/mese"
         }
@@ -167,8 +162,8 @@
   },
   "plans": {
     "pro": {
-      "name": "Essenziale",
-      "description": "Per barbieri e parrucchieri. Una sede, prenotazioni, staff, notifiche e analytics.",
+      "name": "Studio",
+      "description": "Beauty: barbiere, parrucchiere, beauty center. Una sede, prenotazioni, staff, notifiche e analytics.",
       "features": [
         "PWA con il tuo brand (cliente + staff)",
         "Prenotazioni e gestione agenda",
@@ -180,10 +175,10 @@
       ]
     },
     "max": {
-      "name": "Avanzato",
-      "description": "Per food (pizzeria, street food) e soluzioni avanzate. Ordini, cucina, ritiro e logiche complesse.",
+      "name": "Operativo",
+      "description": "Ristorazione: pizzeria, street food. Ordini, cucina, ritiro e logiche avanzate.",
       "features": [
-        "Tutto ciò che include Essenziale",
+        "Tutto ciò che include Studio",
         "Ordini, flusso cucina e ritiro",
         "Logiche avanzate su misura",
         "Analytics avanzate",
@@ -205,13 +200,13 @@
     "send": "Invia richiesta",
     "sending": "Invio in corso...",
     "success": "Richiesta inviata. Ti contatteremo a breve.",
-    "businessBarber": "Barbiere / Parrucchiere",
+    "businessBarber": "Beauty (barbiere, parrucchiere, beauty center)",
     "businessOther": "Altro",
-    "businessFood": "Food (pizzeria, street food)",
+    "businessFood": "Ristorazione (pizzeria, street food)",
     "businessGym": "Soluzioni avanzate (su richiesta)"
   },
   "footer": {
-    "tagline": "Software PWA premium per barbieri, parrucchieri e food. Niente template, niente app generiche.",
+    "tagline": "PWA premium per Beauty e Ristorazione. Nessun template, nessuna app generica.",
     "product": "Prodotto",
     "company": "Azienda",
     "contactLink": "Contatti",

@@ -23,21 +23,28 @@
       "analytics": "Analítica",
       "analyticsDesc": "Ingresos, reservas/pedidos, clientes. Métricas claras, sin promesas genéricas."
     },
-    "pwaBlock": {
-      "title": "Solo PWA, sin apps nativas",
-      "body": "No publicamos apps en tiendas iOS/Android. Cada cliente recibe una PWA white-label: misma UX en todos los dispositivos, un solo código, actualizaciones al instante."
+    "offer": {
+      "title": "Qué ofrece HUBIA",
+      "subtitle": "Una plataforma, tu marca.",
+      "pwaBlock": {
+        "title": "Solo PWA, sin apps de tienda",
+        "body": "App instalable en smartphone (iOS y Android) con tu logo y colores. Un solo software, actualizaciones incluidas."
+      },
+      "clientPwa": "PWA con tu marca",
+      "clientPwaDesc": "App para clientes y staff: reservas o pedidos según el vertical.",
+      "staffDashboard": "Staff y disponibilidad",
+      "staffDashboardDesc": "Calendario, servicios, clientes y notificaciones automáticas.",
+      "analytics": "Analítica",
+      "analyticsDesc": "Ingresos, reservas y pedidos. Datos claros para decidir."
     },
     "forWho": {
       "title": "Para quién es HUBIA",
-      "subtitle": "Dos verticales activos: barbería y peluquería. Food (pizzería, street food). Soluciones avanzadas solo bajo petición.",
-      "barber": "Barbería y peluquería",
-      "barberDesc": "Reservas, agenda, recordatorios automáticos. Menos no‑shows, más clientes bien gestionados.",
-      "food": "Food",
-      "foodDesc": "Pizzería, street food, locales con pedidos y recogida. Pedidos claros, cocina y staff alineados.",
-      "gym": "Soluciones avanzadas",
-      "gymDesc": "Para necesidades específicas (gimnasio, multi-sede) evaluamos bajo petición.",
-      "tagline": "Premium y a medida",
-      "taglineDesc": "PWA para negocios reales. Sin SaaS genérico."
+      "subtitle": "Dos verticales: Beauty y Restauración.",
+      "beauty": "Beauty",
+      "beautyDesc": "Barbería, peluquería, centro de belleza. Reservas, agenda y recordatorios automáticos: menos no-shows, más clientes bien gestionados.",
+      "food": "Restauración",
+      "foodDesc": "Pizzería, street food. Pedidos, cocina y recogida: flujo claro para sala y cocina.",
+      "advancedNote": "Bajo petición: multi-sede, lógicas complejas."
     },
     "features": {
       "title": "Funciones esenciales y medibles",
@@ -46,14 +53,10 @@
       "bookingDesc": "Slots, recurrencias, cambios rápidos. Agenda ordenada.",
       "orders": "Pedidos para pizzería",
       "ordersDesc": "Flujo pedido → cocina → retiro sin caos.",
-      "staffPanel": "Panel de administración",
-      "staffPanelDesc": "Calendario del staff, disponibilidad, servicios y clientes.",
       "notifications": "Recordatorios automáticos",
-      "notificationsDesc": "Reduce no‑shows con notificaciones push.",
-      "branding": "Branding PWA",
-      "brandingDesc": "Iconos, colores y nombre de tu marca.",
-      "analytics": "Analítica operativa",
-      "analyticsDesc": "Ingresos, reservas/pedidos, clientes y tendencias."
+      "notificationsDesc": "Recordatorios para reducir no-shows.",
+      "branding": "Branding",
+      "brandingDesc": "Logo, colores y nombre de tu negocio en la app."
     },
     "howItWorks": {
       "title": "Cómo funciona",
@@ -66,25 +69,21 @@
       "goliveDesc": "Verificación final y lanzamiento. Cada proyecto empieza tras una llamada de conocimiento."
     },
     "reliability": {
-      "title": "Fiabilidad by design",
-      "subtitle": "Sin promesas mágicas: solo comportamientos verificables ya en producción.",
-      "b1title": "Idempotencia",
-      "b1desc": "Pedidos y reservas con clave idempotente para evitar duplicados en reintentos.",
-      "b2title": "Bloqueo cron atómico",
-      "b2desc": "Jobs cron con bloqueo por tienda para evitar ejecuciones concurrentes.",
-      "b3title": "Modo test",
-      "b3desc": "Sin datos reales, push suprimido, datos aislados y limpiables.",
-      "b4title": "Push invalid subscription",
-      "b4desc": "Gestión de suscripciones caducadas o inválidas sin errores en cascada.",
-      "b5title": "Aislamiento por tenant",
-      "b5desc": "Deploy por tienda con branding aislado, sin fugas entre tenants.",
-      "b6title": "Gate checks y runbooks",
-      "b6desc": "Checklist pre-release y runbooks para comprobaciones repetibles."
+      "title": "Fiabilidad",
+      "subtitle": "Resultados verificables en producción.",
+      "b1title": "Cero duplicados",
+      "b1desc": "Pedidos y reservas únicos incluso con reintentos o conexión inestable.",
+      "b2title": "Jobs fiables",
+      "b2desc": "Procesos en background ejecutados una sola vez, sin solapamientos.",
+      "b3title": "Pruebas seguras",
+      "b3desc": "Entorno de prueba sin datos reales y sin envío de notificaciones a clientes.",
+      "b4title": "Notificaciones robustas",
+      "b4desc": "Gestión correcta de suscripciones caducadas y dispositivos desconectados."
     },
     "pricingTeaser": {
-      "title": "Dos planes: Essenziale y Avanzato",
-      "subtitle": "Precios para barbería/peluquería y para food. Setup fraccionable en 6 o 12 meses.",
-      "cta": "Ver precios"
+      "title": "Precios",
+      "subtitle": "Desde €69/mes para Beauty. Desde €149/mes para Restauración. Setup desde €900, fraccionable en 6 o 12 meses.",
+      "cta": "Ver detalle de precios"
     },
     "faq": {
       "title": "Preguntas frecuentes",
@@ -102,7 +101,7 @@
       "q5": "¿Hay límite de reservas?",
       "a5": "No. Los planes difieren en número de equipo, tiendas adicionales y funciones avanzadas.",
       "q6": "¿Cómo funciona el soporte?",
-      "a6": "Soporte por email en todos. Con Avanzato tienes prioridad y soporte dedicado en la fase de arranque.",
+      "a6": "Soporte por email en todos. Con Operativo: prioridad y soporte dedicado en la fase de arranque.",
       "q7": "¿Puedo personalizar la marca?",
       "a7": "Sí, todos los planes incluyen colores, logo e icono. Los planes superiores incluyen dominio propio.",
       "q8": "¿Mis datos están seguros?",
@@ -110,12 +109,16 @@
       "q9": "¿Qué pasa si quiero cambiar de plan?",
       "a9": "Puedes subir o bajar de plan cuando quieras. Los cambios se aplican al siguiente ciclo de facturación.",
       "q10": "¿Cómo se inicia un proyecto?",
-      "a10": "Cada proyecto empieza tras una llamada de conocimiento. Sin demo pública: hablamos de tu negocio y te proponemos la solución adecuada."
+      "a10": "Siempre con una llamada de conocimiento. Nos cuentas tu negocio y te proponemos la solución adecuada.",
+      "q11": "¿Cómo garantizáis que no haya pedidos o reservas duplicados?",
+      "a11": "Usamos claves idempotentes: cada operación se identifica de forma única, así los reintentos no generan dobles reservas ni dobles pedidos.",
+      "q12": "¿Qué significan \"jobs fiables\" y \"notificaciones robustas\"?",
+      "a12": "Los jobs en background (recordatorios, sincronización) usan bloqueos para evitar ejecuciones dobles. Las notificaciones gestionan correctamente suscripciones caducadas y dispositivos desconectados, sin errores en cascada."
     }
   },
   "pricing": {
     "title": "Precios",
-    "subtitle": "Dos planes: Essenziale y Avanzato. Precios claros para barbería/peluquería y para food. Setup fraccionable en 6 o 12 meses.",
+    "subtitle": "Dos planes: Studio (Beauty) y Operativo (Restauración). Setup fraccionable en 6 o 12 meses.",
     "footer": "Setup único + mensualidad. El setup se puede fraccionar en 6 o 12 meses sin recargo.",
     "setupIncludes": "El setup incluye: diseño, configuración, branding (logo, colores, icono), pruebas y puesta en marcha.",
     "setupMaxNote": "Soporte dedicado en la fase de arranque y configuración guiada hasta el go-live.",
@@ -128,7 +131,7 @@
     "faq": {
       "q1": "¿Qué incluye el setup?",
       "a1": "El setup cubre diseño, configuración, branding, pruebas y puesta en marcha. Se puede fraccionar en 6 o 12 meses.",
-      "q2": "¿Puedo pasar de Essenziale a Avanzato?",
+      "q2": "¿Puedo pasar de Studio a Operativo?",
       "a2": "Sí, el cambio aplica en el siguiente ciclo de facturación.",
       "q3": "¿Cómo funciona el pago?",
       "a3": "Setup único al activar (fraccionable 6–12 meses) y pago mensual recurrente. Sin permanencias."
@@ -167,7 +170,7 @@
   },
   "plans": {
     "pro": {
-      "name": "Essenziale",
+      "name": "Studio",
       "description": "Per barbieri e parrucchieri. Una sede, prenotazioni, staff, notifiche e analytics.",
       "features": [
         "PWA de marca (cliente + staff)",
@@ -180,10 +183,10 @@
       ]
     },
     "max": {
-      "name": "Avanzato",
+      "name": "Operativo",
       "description": "Per food (pizzeria, street food) e soluzioni avanzate. Ordini, cucina, ritiro e logiche complesse.",
       "features": [
-        "Todo lo de Essenziale incluido",
+        "Todo lo de Studio incluido",
         "Lógica avanzada (membresías, clases, pedidos complejos, roles)",
         "Analítica avanzada",
         "Soporte prioritario",

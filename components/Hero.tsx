@@ -14,10 +14,10 @@ interface HeroProps {
   subtitle: string
   ctaDemo: string
   ctaPrices: string
-  proofCards: ProofCard[]
+  proofCards?: ProofCard[]
 }
 
-export function Hero({ title, subtitle, ctaDemo, ctaPrices, proofCards }: HeroProps) {
+export function Hero({ title, subtitle, ctaDemo, ctaPrices, proofCards = [] }: HeroProps) {
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 hero-aurora pointer-events-none" aria-hidden />
@@ -69,14 +69,16 @@ export function Hero({ title, subtitle, ctaDemo, ctaPrices, proofCards }: HeroPr
             <span>Supporto umano</span>
           </div>
 
+          {(proofCards?.length ?? 0) > 0 && (
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            {proofCards.map((card, index) => (
+            {(proofCards ?? []).map((card, index) => (
               <div key={index} className="glass-card rounded-2xl border border-white/10 p-6 text-left">
                 <p className="text-sm font-semibold text-primary mb-2">{card.title}</p>
                 <p className="text-xs text-secondary">{card.description}</p>
               </div>
             ))}
           </div>
+          )}
         </div>
       </div>
     </section>

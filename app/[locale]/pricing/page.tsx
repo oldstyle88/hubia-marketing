@@ -12,7 +12,7 @@ export async function generateMetadata() {
   const t = await getTranslations('pricing')
   return {
     title: `${t('title')} — HŪBIA`,
-    description: 'Essenziale e Avanzato. Barbiere/parrucchiere e Food. Setup rateizzabile 6 o 12 mesi + abbonamento mensile. Ogni progetto parte da una call conoscitiva.',
+    description: 'Studio (Beauty) e Operativo (Ristorazione). Setup rateizzabile 6 o 12 mesi + abbonamento mensile. Ogni progetto parte da una call conoscitiva.',
   }
 }
 

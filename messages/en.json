@@ -11,111 +11,106 @@
   "home": {
     "hero": {
       "title": "Fill your agenda. Cut no-shows.",
-      "subtitle": "Premium PWA software for barbers, hairdressers and food. Bookings and orders in one app with your brand. No marketplace, no generic templates.",
+      "subtitle": "Premium PWA for Beauty and Restaurant. Bookings and orders in one app with your brand: no marketplace, no templates.",
       "requestDemo": "Contact us",
       "viewPrices": "View prices"
     },
-    "proof": {
-      "clientPwa": "Branded PWA",
-      "clientPwaDesc": "Client and staff app with your brand. Bookings or orders depending on your business.",
+    "offer": {
+      "title": "What HUBIA offers",
+      "subtitle": "One platform, your brand.",
+      "pwaBlock": {
+        "title": "PWA only, no app store",
+        "body": "Installable app on smartphone (iOS and Android) with your logo and colours. One software, updates included."
+      },
+      "clientPwa": "PWA with your brand",
+      "clientPwaDesc": "App for clients and staff: bookings or orders by vertical.",
       "staffDashboard": "Staff and availability",
-      "staffDashboardDesc": "Staff management, calendar, availability and automatic notifications.",
+      "staffDashboardDesc": "Calendar, services, clients and automatic notifications.",
       "analytics": "Analytics",
-      "analyticsDesc": "Revenue, bookings/orders, customers. Clear metrics, no generic claims."
-    },
-    "pwaBlock": {
-      "title": "PWA only, no native apps",
-      "body": "No App Store: your business gets a white-label PWA installable on iOS and Android. Same experience everywhere, one codebase, instant updates."
+      "analyticsDesc": "Revenue, bookings and orders. Clear data to decide."
     },
     "forWho": {
       "title": "Who HUBIA is for",
-      "subtitle": "Two active verticals: barber and hairdresser. Food (pizzeria, street food). Advanced solutions on request only.",
-      "barber": "Barber and hairdresser",
-      "barberDesc": "Bookings, agenda, automatic reminders. Fewer no-shows, more clients managed well.",
-      "food": "Food",
-      "foodDesc": "Pizzeria, street food, venues with orders and pickup. Clear orders, kitchen and staff aligned.",
-      "gym": "Advanced solutions",
-      "gymDesc": "For specific needs (gym, multi-location, complex logic) we evaluate on request.",
-      "tagline": "Premium and custom",
-      "taglineDesc": "PWA built for real businesses. No generic off-the-shelf SaaS."
+      "subtitle": "Two verticals: Beauty and Restaurant.",
+      "beauty": "Beauty",
+      "beautyDesc": "Barber, hairdresser, beauty centre. Bookings, agenda and automatic reminders: fewer no-shows, more clients managed well.",
+      "food": "Restaurant",
+      "foodDesc": "Pizzeria, street food. Orders, kitchen and pickup: clear flow for front and back of house.",
+      "advancedNote": "On request: multi-site, complex logic."
     },
     "features": {
       "title": "What's included",
-      "subtitle": "Clear features, results-oriented.",
+      "subtitle": "Concrete features.",
       "booking": "Bookings",
-      "bookingDesc": "Slots, recurring, quick edits. Staff calendar stays clean.",
+      "bookingDesc": "Slots, recurring and changes. Agenda organised by staff.",
       "orders": "Orders",
-      "ordersDesc": "Order → kitchen → pickup flow. Depending on vertical (local food).",
-      "staffPanel": "Staff and availability",
-      "staffPanelDesc": "Calendar, services, customers and notifications.",
+      "ordersDesc": "Order, kitchen and pickup for the Restaurant vertical.",
       "notifications": "Automatic notifications",
-      "notificationsDesc": "Cut no-shows with reminders.",
-      "branding": "PWA branding",
-      "brandingDesc": "Icons, colors and your brand name. Consistent experience.",
-      "analytics": "Analytics",
-      "analyticsDesc": "Revenue, bookings/orders, customers. Base or advanced depending on plan."
+      "notificationsDesc": "Reminders to cut no-shows.",
+      "branding": "Branding",
+      "brandingDesc": "Logo, colours and your business name in the app."
     },
     "howItWorks": {
       "title": "How it works",
-      "subtitle": "Guided configuration and direct support until go-live.",
-      "setup": "Setup",
-      "setupDesc": "Design, configuration, branding, testing and launch. Spread over 6–12 months if needed.",
+      "subtitle": "Clear setup. Every project starts with a discovery call.",
+      "setup": "Initial setup",
+      "setupDesc": "Design, configuration, branding, testing and go-live. Setup can be spread over 6 or 12 months.",
       "config": "Configuration",
-      "configDesc": "Services, staff, hours and settings tailored to your business.",
+      "configDesc": "Services, staff, hours and settings tailored to you.",
       "golive": "Go-live",
-      "goliveDesc": "Final check and launch. Every project starts after a discovery call."
+      "goliveDesc": "Final check and launch."
     },
     "reliability": {
-      "title": "Reliability by design",
-      "subtitle": "No magic claims: only verifiable behaviours already in production.",
-      "b1title": "Idempotency",
-      "b1desc": "Orders and bookings with idempotent key to avoid duplicates on retry.",
-      "b2title": "Atomic cron lock",
-      "b2desc": "Cron jobs with per-shop lock to avoid concurrent runs.",
-      "b3title": "Test mode",
-      "b3desc": "Test mode: no real data, push suppressed, isolated and cleanable data.",
-      "b4title": "Push invalid subscription",
-      "b4desc": "Handling expired or invalid subscriptions without cascade errors.",
-      "b5title": "Tenant isolation",
-      "b5desc": "Deploy per shop with isolated branding, no data leakage between tenants.",
-      "b6title": "Gate checks & runbooks",
-      "b6desc": "Pre-release checklist and runbooks for repeatable checks."
+      "title": "Reliability",
+      "subtitle": "Verifiable results in production.",
+      "b1title": "Zero duplicates",
+      "b1desc": "Orders and bookings stay unique even on retries or unstable connection.",
+      "b2title": "Reliable jobs",
+      "b2desc": "Background processes run once, no overlaps.",
+      "b3title": "Safe testing",
+      "b3desc": "Test environment with no real data and no notifications sent to clients.",
+      "b4title": "Robust notifications",
+      "b4desc": "Correct handling of expired subscriptions and disconnected devices."
     },
     "pricingTeaser": {
-      "title": "Two plans: Essential and Advanced",
-      "subtitle": "Prices differ for barber/hairdresser and for food. Setup can be spread over 6 or 12 months.",
-      "cta": "View prices"
+      "title": "Pricing",
+      "subtitle": "From €69/month for Beauty. From €149/month for Restaurant. Setup from €900, spread over 6 or 12 months.",
+      "cta": "View pricing details"
     },
     "faq": {
       "title": "FAQ",
-      "subtitle": "All the answers you need"
+      "subtitle": "Clear answers"
     },
     "faqItems": {
       "q1": "How long does setup take?",
-      "a1": "Depends on complexity. Every project starts after a discovery call to define timeline and scope.",
+      "a1": "Depends on complexity. Every project starts with a discovery call to define timeline and scope.",
       "q2": "Can I import existing data?",
-      "a2": "Yes, we support importing customers, services and booking history. Contact us to evaluate migration.",
+      "a2": "Yes. Clients, services and booking history: contact us to evaluate migration.",
       "q3": "Does it work offline?",
-      "a3": "The client app runs as an installable PWA and supports offline use for viewing bookings and profile.",
+      "a3": "The PWA installs on your smartphone and lets you view bookings and profile offline.",
       "q4": "What payment methods are supported?",
-      "a4": "Payment integrations depend on the vertical and agreements; we evaluate them on request.",
-      "q5": "Is there a limit on the number of bookings?",
-      "a5": "No. Plans differ by type of business (Essential vs Advanced) and vertical.",
+      "a4": "Payment terms agreed at activation. Setup can be spread over 6 or 12 months.",
+      "q5": "Is there a limit on bookings?",
+      "a5": "No. Plans differ by vertical: Studio (Beauty) and Operativo (Restaurant).",
       "q6": "How does support work?",
-      "a6": "Email support for all plans. With Advanced you get priority and dedicated support at launch.",
-      "q7": "Can I customise branding?",
-      "a7": "Yes, all plans include branded PWA: colours, logo and app icon.",
+      "a6": "Email support for all. With Operativo: priority and dedicated support at launch.",
+      "q7": "Can I use my logo and colours?",
+      "a7": "Yes. All plans include branding: logo, colours and your business name in the app.",
       "q8": "Is my data secure?",
-      "a8": "We use encryption, daily automated backups and GDPR compliance. Data is hosted on EU infrastructure.",
-      "q9": "What if I want to change plan?",
-      "a9": "Yes. Moving to a different plan applies from the next billing cycle.",
+      "a8": "Encryption, automated backups and GDPR. Data in Europe.",
+      "q9": "Can I change plan?",
+      "a9": "Yes. The change applies from the next billing cycle.",
       "q10": "How does a project start?",
-      "a10": "Every project starts after a discovery call. No public demo: we discuss your business and propose the right solution."
+      "a10": "Always with a discovery call. You tell us your business and we propose the right solution.",
+      "q11": "How do you guarantee no duplicate orders or bookings?",
+      "a11": "We use idempotent keys: each operation is uniquely identified, so retries do not create double bookings or double orders.",
+      "q12": "What do \"reliable jobs\" and \"robust notifications\" mean?",
+      "a12": "Background jobs (reminders, sync) use locks to avoid double execution. Notifications correctly handle expired subscriptions and disconnected devices, without cascade errors."
     }
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "Two plans: Essential and Advanced. Clear prices for barber/hairdresser and for food. Setup can be spread over 6 or 12 months.",
+    "subtitle": "Two plans: Studio (Beauty) and Operativo (Restaurant). Setup can be spread over 6 or 12 months.",
     "footer": "One-time setup + monthly subscription. Setup can be spread over 6 or 12 months at no extra cost.",
     "setupIncludes": "Setup includes: design, configuration, branding (logo, colours, app icon), testing and go-live.",
     "setupMaxNote": "Guided configuration and direct support until go-live.",
@@ -128,7 +123,7 @@
     "faq": {
       "q1": "What does setup include?",
       "a1": "Design, configuration, branding (logo, colours, app icon), testing and go-live. You can spread the cost over 6 or 12 months.",
-      "q2": "Can I move from Essential to Advanced?",
+      "q2": "Can I move from Studio to Operativo?",
       "a2": "Yes, the upgrade applies from the next billing cycle.",
       "q3": "How does billing work?",
       "a3": "One-time setup at activation (spread over 6–12 months if needed) and monthly recurring fee. No long-term lock-in."
@@ -148,17 +143,17 @@
       "note": "Barber/Hairdresser: bookings and agenda. Food: orders, kitchen, pickup. Setup can be spread over 6 or 12 months.",
       "columns": {
         "vertical": "Vertical",
-        "pro": "Essential",
-        "max": "Advanced"
+        "pro": "Studio",
+        "max": "Operativo"
       },
       "rows": [
         {
-          "label": "Barber / Hairdresser",
+          "label": "Beauty (barber, hairdresser, beauty centre)",
           "pro": "Setup €900 – €1,500 + €69 – €129/month",
           "max": "On request"
         },
         {
-          "label": "Food (pizzeria, street food)",
+          "label": "Restaurant (pizzeria, street food)",
           "pro": "On request",
           "max": "Setup €1,800 – €3,500 + €149 – €249/month"
         }
@@ -167,8 +162,8 @@
   },
   "plans": {
     "pro": {
-      "name": "Essential",
-      "description": "For barbers and hairdressers. One location, bookings, staff, notifications and analytics.",
+      "name": "Studio",
+      "description": "Beauty: barber, hairdresser, beauty centre. One site, bookings, staff, notifications and analytics.",
       "features": [
         "Branded PWA (client + staff)",
         "Bookings or orders (depending on business)",
@@ -180,10 +175,10 @@
       ]
     },
     "max": {
-      "name": "Advanced",
-      "description": "For food (pizzeria, street food) and advanced solutions. Orders, kitchen, pickup and complex logic.",
+      "name": "Operativo",
+      "description": "Restaurant: pizzeria, street food. Orders, kitchen, pickup and advanced logic.",
       "features": [
-        "Everything in Essential",
+        "Everything in Studio",
         "Orders, kitchen and pickup flow",
         "Advanced analytics",
         "Priority support",
@@ -205,13 +200,13 @@
     "send": "Send request",
     "sending": "Sending...",
     "success": "Request sent successfully. We'll be in touch soon.",
-    "businessBarber": "Barber / Hairdresser",
+    "businessBarber": "Beauty (barber, hairdresser, beauty centre)",
     "businessOther": "Other",
-    "businessFood": "Food (pizzeria, street food)",
+    "businessFood": "Restaurant (pizzeria, street food)",
     "businessGym": "Advanced solutions (on request)"
   },
   "footer": {
-    "tagline": "Premium PWA software for barbers, hairdressers and food. No templates, no generic apps.",
+    "tagline": "Premium PWA for Beauty and Restaurant. No templates, no generic apps.",
     "product": "Product",
     "company": "Company",
     "contactLink": "Contact",

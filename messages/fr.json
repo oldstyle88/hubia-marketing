@@ -23,21 +23,28 @@
       "analytics": "Analytics opérationnelles",
       "analyticsDesc": "Revenus, réservations/commandes, clients, tendances. Métriques mesurables, pas de promesses vagues."
     },
-    "pwaBlock": {
-      "title": "PWA uniquement, pas d'apps natives",
-      "body": "Nous ne publions pas d'apps sur les stores iOS/Android. Chaque client reçoit une PWA white-label : même UX sur tous les appareils, un seul code, mises à jour instantanées."
+    "offer": {
+      "title": "Ce que propose HUBIA",
+      "subtitle": "Une plateforme, votre marque.",
+      "pwaBlock": {
+        "title": "PWA uniquement, pas d'apps store",
+        "body": "App installable sur smartphone (iOS et Android) avec votre logo et couleurs. Un seul logiciel, mises à jour incluses."
+      },
+      "clientPwa": "PWA avec votre marque",
+      "clientPwaDesc": "App clients et équipe : réservations ou commandes selon le vertical.",
+      "staffDashboard": "Équipe et disponibilités",
+      "staffDashboardDesc": "Calendrier, services, clients et notifications automatiques.",
+      "analytics": "Analytics",
+      "analyticsDesc": "Revenus, réservations et commandes. Données claires pour décider."
     },
     "forWho": {
       "title": "Pour qui est HUBIA",
-      "subtitle": "Deux verticales actives : barbier et coiffeur. Food (pizzeria, street food). Solutions avancées sur demande uniquement.",
-      "barber": "Barbier et coiffeur",
-      "barberDesc": "Réservations, agenda, rappels automatiques. Moins de no‑shows, plus de clients bien gérés.",
-      "food": "Food",
-      "foodDesc": "Pizzeria, street food, lieux avec commandes et retrait. Commandes claires, cuisine et équipe alignées.",
-      "gym": "Solutions avancées",
-      "gymDesc": "Pour des besoins spécifiques (salle de sport, multi-sites, logique complexe) nous évaluons sur demande.",
-      "tagline": "Premium et sur mesure",
-      "taglineDesc": "PWA construites pour des activités réelles. Pas de SaaS générique."
+      "subtitle": "Deux verticales : Beauty et Restauration.",
+      "beauty": "Beauty",
+      "beautyDesc": "Barbier, coiffeur, centre de beauté. Réservations, agenda et rappels automatiques : moins de no-shows, plus de clients bien gérés.",
+      "food": "Restauration",
+      "foodDesc": "Pizzeria, street food. Commandes, cuisine et retrait : flux clair pour salle et cuisine.",
+      "advancedNote": "Sur demande : multi-sites, logiques complexes."
     },
     "features": {
       "title": "Fonctionnalités essentielles et mesurables",
@@ -66,25 +73,21 @@
       "goliveDesc": "Vérification finale et lancement. Chaque projet démarre après un appel de découverte."
     },
     "reliability": {
-      "title": "Fiabilité by design",
-      "subtitle": "Aucune promesse magique : uniquement des comportements vérifiables déjà en production.",
-      "b1title": "Idempotence",
-      "b1desc": "Commandes et réservations avec clé idempotente pour éviter les doublons en retry.",
-      "b2title": "Lock cron atomique",
-      "b2desc": "Jobs cron avec lock par boutique pour éviter les exécutions concurrentes.",
-      "b3title": "Mode test",
-      "b3desc": "Aucune donnée réelle, push supprimé, données isolées et nettoyables.",
-      "b4title": "Push invalid subscription",
-      "b4desc": "Gestion des abonnements expirés ou invalides sans erreurs en cascade.",
-      "b5title": "Isolation tenant",
-      "b5desc": "Déploiement par boutique avec branding isolé, aucune fuite entre tenants.",
-      "b6title": "Gate checks & runbooks",
-      "b6desc": "Checklist pré-release et runbooks pour des vérifications reproductibles."
+      "title": "Fiabilité",
+      "subtitle": "Résultats vérifiables en production.",
+      "b1title": "Zéro doublon",
+      "b1desc": "Commandes et réservations uniques même en cas de retry ou connexion instable.",
+      "b2title": "Jobs fiables",
+      "b2desc": "Processus en arrière-plan exécutés une seule fois, sans chevauchement.",
+      "b3title": "Tests sûrs",
+      "b3desc": "Environnement de test sans données réelles et sans envoi de notifications aux clients.",
+      "b4title": "Notifications robustes",
+      "b4desc": "Gestion correcte des abonnements expirés et des appareils déconnectés."
     },
     "pricingTeaser": {
-      "title": "Deux plans : Essentiel et Avancé",
-      "subtitle": "Tarifs différenciés pour barbier/coiffeur et pour food. Setup échelonnable sur 6 ou 12 mois.",
-      "cta": "Voir les tarifs"
+      "title": "Tarifs",
+      "subtitle": "À partir de 69 €/mois pour Beauty. À partir de 149 €/mois pour Restauration. Setup à partir de 900 €, échelonnable sur 6 ou 12 mois.",
+      "cta": "Voir le détail des tarifs"
     },
     "faq": {
       "title": "FAQ",
@@ -110,7 +113,11 @@
       "q9": "Que se passe-t-il si je change d'offre ?",
       "a9": "Vous pouvez upgrader ou downgrader à tout moment. Les changements s'appliquent au prochain cycle de facturation.",
       "q10": "Comment démarre un projet ?",
-      "a10": "Chaque projet démarre après un appel de découverte. Pas de demo publique : nous parlons de votre activité et proposons la solution adaptée."
+      "a10": "Toujours par un appel de découverte. Vous nous parlez de votre activité, nous proposons la solution adaptée.",
+      "q11": "Comment garantissez-vous l'absence de doublons sur les commandes et réservations ?",
+      "a11": "Nous utilisons des clés idempotentes : chaque opération est identifiée de façon unique, les retries ne génèrent pas de doubles réservations ni de doubles commandes.",
+      "q12": "Que signifient \"jobs fiables\" et \"notifications robustes\" ?",
+      "a12": "Les jobs en arrière-plan (rappels, sync) utilisent des verrous pour éviter les exécutions doubles. Les notifications gèrent correctement les abonnements expirés et les appareils déconnectés, sans erreurs en cascade."
     }
   },
   "pricing": {
@@ -148,8 +155,8 @@
       "note": "Barbier/Coiffeur : réservations et agenda. Food : commandes, cuisine, retrait. Le setup est échelonnable sur 6 ou 12 mois.",
       "columns": {
         "vertical": "Verticale",
-        "pro": "Essentiel",
-        "max": "Avancé"
+        "pro": "Studio",
+        "max": "Operativo"
       },
       "rows": [
         {
@@ -167,7 +174,7 @@
   },
   "plans": {
     "pro": {
-      "name": "Essentiel",
+      "name": "Studio",
       "description": "Pour barbiers et coiffeurs. Un site, réservations, équipe, notifications et analytique.",
       "features": [
         "PWA de marque (client + équipe)",
@@ -180,10 +187,10 @@
       ]
     },
     "max": {
-      "name": "Avancé",
+      "name": "Operativo",
       "description": "Pour food (pizzeria, street food) et solutions avancées. Commandes, cuisine, retrait et logique complexe.",
       "features": [
-        "Tout Essentiel inclus",
+        "Tout Studio inclus",
         "Commandes, flux cuisine et retrait",
         "Logique avancée sur mesure",
         "Analytique avancée",

@@ -165,9 +165,8 @@ export function ContactForm() {
               >
                 <option value="">{t('businessPlaceholder')}</option>
                 <option value="barber">{t('businessBarber')}</option>
-                <option value="pizzeria">{t('businessPizzeria')}</option>
-                <option value="gym">{t('businessGym')}</option>
                 <option value="food">{t('businessFood')}</option>
+                <option value="gym">{t('businessGym')}</option>
                 <option value="other">{t('businessOther')}</option>
               </select>
             </div>

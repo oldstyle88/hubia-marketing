@@ -12,7 +12,7 @@ export async function generateMetadata() {
   const t = await getTranslations('pricing')
   return {
     title: `${t('title')} — HŪBIA`,
-    description: 'PRO e MAX. Prezzi a partire da per verticale (Barbiere, Pizzeria, Palestra). Setup una tantum + canone mensile.',
+    description: 'PRO e MAX. Barbiere, Food locale, Palestra. Setup rateizzabile 6–12 mesi + canone mensile. Ogni progetto parte da una call conoscitiva.',
   }
 }
 

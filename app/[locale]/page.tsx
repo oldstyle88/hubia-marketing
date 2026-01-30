@@ -24,9 +24,9 @@ export default async function HomePage() {
 
   const targetAudience = [
     { title: t('forWho.barber'), description: t('forWho.barberDesc') },
-    { title: t('forWho.pizzeria'), description: t('forWho.pizzeriaDesc') },
-    { title: t('forWho.gym'), description: t('forWho.gymDesc') },
     { title: t('forWho.food'), description: t('forWho.foodDesc') },
+    { title: t('forWho.gym'), description: t('forWho.gymDesc') },
+    { title: t('forWho.tagline'), description: t('forWho.taglineDesc') },
   ]
 
   const features = [

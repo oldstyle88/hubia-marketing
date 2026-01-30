@@ -4,40 +4,40 @@
     "pricing": "Preise",
     "faq": "FAQ",
     "contact": "Kontakt",
-    "requestDemo": "Demo anfragen",
+    "requestDemo": "Kontakt",
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schließen"
   },
   "home": {
     "hero": {
-      "title": "Verbindungen, die den Kalender füllen.",
-      "subtitle": "PWA für Barber und Pizzeria: Buchungen und Bestellungen in einer gebrandeten Erfahrung. Weniger No‑Shows, schnellere Orders, Staff im Takt.",
-      "requestDemo": "Demo anfragen",
+      "title": "Kalender füllen. No‑Shows reduzieren.",
+      "subtitle": "Bestellungen, Staff und Kunden aus einer PWA. Kein Marketplace, keine Standard-Apps. Wir bauen maßgeschneiderte PWA für reale Betriebe, keine Templates.",
+      "requestDemo": "Kontakt",
       "viewPrices": "Preise ansehen"
     },
     "proof": {
-      "clientPwa": "Client PWA",
-      "clientPwaDesc": "Installierbare Kunden‑App mit deinem Brand. Buchungen und Bestellungen ohne Reibung.",
-      "staffDashboard": "Staff-Dashboard",
-      "staffDashboardDesc": "Admin‑Panel (Dashboard) fürs Team: Agenda, Services, Verfügbarkeit, Kunden und Benachrichtigungen.",
-      "analytics": "Operative Analytics",
-      "analyticsDesc": "Umsatz, Buchungen/Bestellungen, Kunden, Trends. Messbare Kennzahlen, keine leeren Versprechen."
+      "clientPwa": "Gebrandete PWA",
+      "clientPwaDesc": "Kunden- und Staff-App mit deinem Brand. Buchungen oder Bestellungen je nach Business.",
+      "staffDashboard": "Staff und Verfügbarkeit",
+      "staffDashboardDesc": "Staff-Verwaltung, Kalender, Verfügbarkeit und automatische Benachrichtigungen.",
+      "analytics": "Analytics",
+      "analyticsDesc": "Umsatz, Buchungen/Bestellungen, Kunden. Klare Kennzahlen, keine leeren Versprechen."
     },
     "pwaBlock": {
       "title": "Nur PWA, keine nativen Apps",
       "body": "Wir liefern keine iOS/Android-Store-Apps. Jeder Kunde erhält eine White-Label-PWA: gleiche UX auf allen Geräten, eine Codebasis, sofortige Updates."
     },
     "forWho": {
-      "title": "Verticals",
-      "subtitle": "Aktiv: Barber und Pizzeria. Als Nächstes: Gym und Food.",
-      "barber": "Barber (core)",
+      "title": "Für wen wir bauen",
+      "subtitle": "PWA maßgeschneidert für physische Betriebe. Barber, Friseur, Kosmetik. Lokales Food. Gym und Fitness.",
+      "barber": "Barber, Friseur, Kosmetik",
       "barberDesc": "Weniger No‑Shows, vollere Agenda. Auto‑Reminder und stets aktuelle Slots.",
-      "pizzeria": "Pizzeria",
-      "pizzeriaDesc": "Schnellere Bestellungen, weniger Fehler. Küche und Team in Echtzeit synchron.",
-      "gym": "Gym (nächste)",
-      "gymDesc": "Kommt: Mitgliedschaften, Kurse und Zutritt.",
-      "food": "Food (nächste)",
-      "foodDesc": "Kommt: schnelle Bestellungen und eigenes PWA‑Branding."
+      "food": "Lokales Food",
+      "foodDesc": "Pizzerien, Street Food, Lokale mit Bestellung und Abholung. Schnellere Bestellungen, Team synchron.",
+      "gym": "Gym / Fitness-Studio",
+      "gymDesc": "Abos, Kurse, Zugangskontrolle. Erweiterte Logik für strukturierte Betriebe.",
+      "tagline": "Maßgeschneidert, kein Template",
+      "taglineDesc": "Jede PWA wird für dein reales Business gebaut. Kein generisches SaaS."
     },
     "features": {
       "title": "Essentielle, messbare Features",
@@ -57,13 +57,13 @@
     },
     "howItWorks": {
       "title": "So funktioniert es",
-      "subtitle": "Manuelles Setup, Go‑Live mit Checklist",
+      "subtitle": "Geführte Konfiguration und direkter Support bis zum Go‑Live.",
       "setup": "Setup",
-      "setupDesc": "Assisted Provisioning: Supabase + Vercel + env + PWA‑Branding + Seed + Go‑Live‑Gate.",
+      "setupDesc": "Konzeption, Konfiguration, Branding, Test und Go‑Live. Ratenzahlung 6–12 Monate möglich.",
       "config": "Konfiguration",
-      "configDesc": "Services, Staff, Zeiten und Initial‑Seed.",
+      "configDesc": "Services, Staff, Zeiten und Einstellungen für dein Business.",
       "golive": "Go‑live",
-      "goliveDesc": "Gate‑Checklist und finale Verifikation vor dem Start."
+      "goliveDesc": "Finale Prüfung und Start. Jedes Projekt startet nach einem Kennenlerngespräch."
     },
     "reliability": {
       "title": "Zuverlässigkeit by design",
@@ -82,8 +82,8 @@
       "b6desc": "Pre-Release-Checkliste und Runbooks für wiederholbare Prüfungen."
     },
     "pricingTeaser": {
-      "title": "Zwei Pläne, Preise ab",
-      "subtitle": "PRO für eine Location, MAX für Multi‑Location. Preise ab je Vertical (Barber, Pizzeria, Gym).",
+      "title": "Zwei Pläne, keine Verwirrung",
+      "subtitle": "PRO für eine Location. MAX für strukturierte Betriebe (Gym, komplexes Food, erweiterte Logik).",
       "cta": "PRO und MAX ansehen"
     },
     "faq": {
@@ -92,7 +92,7 @@
     },
     "faqItems": {
       "q1": "Wie lange dauert das Setup?",
-      "a1": "Das Basis-Setup dauert etwa 1–2 Arbeitstage. Die vollständige Konfiguration kann 3–5 Tage dauern.",
+      "a1": "Abhängig von der Komplexität. Jedes Projekt startet nach einem Kennenlerngespräch zur Definition von Zeitrahmen und Umfang.",
       "q2": "Kann ich bestehende Daten importieren?",
       "a2": "Ja, wir unterstützen den Import von Kunden, Leistungen und Buchungshistorie. Kontaktieren Sie uns für eine Migration.",
       "q3": "Funktioniert es offline?",
@@ -109,62 +109,62 @@
       "a8": "Verschlüsselung, tägliche Backups, GDPR-konform. Daten in der EU gehostet.",
       "q9": "Was passiert bei Planwechsel?",
       "a9": "Upgrade oder Downgrade jederzeit möglich. Änderungen gelten ab dem nächsten Abrechnungszeitraum.",
-      "q10": "Bietet ihr Launch-Support?",
-      "a10": "Support in den ersten Tagen nach Bedarf und je nach Verfügbarkeit."
+      "q10": "Wie startet ein Projekt?",
+      "a10": "Jedes Projekt startet nach einem Kennenlerngespräch. Keine öffentliche Demo: wir besprechen dein Business und schlagen die passende Lösung vor."
     }
   },
   "pricing": {
-    "title": "Preise ab",
-    "subtitle": "Zwei Pläne: PRO (eine Location) und MAX (Multi‑Location). Preise ab je Vertical.",
-    "footer": "Einmaliges Setup + monatliche Gebühr. Siehe Vertical‑Preise unten (Barber, Pizzeria, Gym).",
-    "setupIncludes": "Assisted Provisioning: Supabase + Vercel + env + PWA‑Branding + Seed + Go‑Live‑Gate.",
+    "title": "Preise",
+    "subtitle": "Zwei Pläne: PRO für eine Location, MAX für strukturierte Betriebe. Klare Preise, keine erfundenen Zahlen.",
+    "footer": "Einmaliges Setup + monatliche Gebühr. Setup kann auf 6 oder 12 Monate verteilt werden.",
+    "setupIncludes": "Das Setup umfasst Konzeption, Konfiguration, Branding, Test und Go‑Live.",
     "contactCta": "Sprich mit uns →",
     "perMonth": "/Monat",
     "setupOneTime": "Setup (einmalig)",
-    "requestDemo": "Demo anfragen",
+    "requestDemo": "Kontakt",
     "mostChosen": "Am häufigsten gewählt",
     "faqTitle": "Fragen zu den Plänen",
     "faq": {
-      "q1": "Was ist Assisted Provisioning?",
-      "a1": "Manuelles Setup: Supabase + Vercel + env + PWA‑Branding + Seed + Go‑Live‑Gate. Nicht automatisiert.",
+      "q1": "Was umfasst das Setup?",
+      "a1": "Das Setup umfasst Konzeption, Konfiguration, Branding, Test und Go‑Live. Es kann auf 6 oder 12 Monate verteilt werden.",
       "q2": "Kann ich von PRO zu MAX wechseln?",
       "a2": "Ja, der Wechsel gilt ab dem nächsten Abrechnungszyklus.",
       "q3": "Wie funktioniert die Abrechnung?",
-      "a3": "Einmaliges Setup bei Aktivierung und monatliche Gebühr. Keine Laufzeitbindung."
+      "a3": "Einmaliges Setup bei Aktivierung (Ratenzahlung 6–12 Monate möglich) und monatliche Gebühr. Keine Laufzeitbindung."
     },
     "prices": {
       "pro": {
-        "setup": "ab €499",
-        "monthly": "ab €149"
+        "setup": "€1.200 bis €1.800",
+        "monthly": "€79 bis €129"
       },
       "max": {
-        "setup": "ab €899",
-        "monthly": "ab €249"
+        "setup": "€2.500 bis €4.500",
+        "monthly": "€199 bis €349"
       }
     },
     "verticalPricing": {
-      "title": "Preise je Vertical (ab)",
-      "note": "Pizzeria und Gym = isoliertes Projekt mit eigener Datenbank.",
+      "title": "Für wen",
+      "note": "PRO: Barber, Friseur, Kosmetik, einfaches lokales Food. MAX: Gym, komplexes Food, Betriebe mit mehreren Flows.",
       "columns": {
         "vertical": "Vertical",
-        "pro": "PRO (ab)",
-        "max": "MAX (ab)"
+        "pro": "PRO",
+        "max": "MAX"
       },
       "rows": [
         {
-          "label": "Barber (core)",
-          "pro": "ab €499 Setup + €149/Monat",
-          "max": "ab €899 Setup + €249/Monat"
+          "label": "Barber, Friseur, Kosmetik",
+          "pro": "€1.200–€1.800 Setup + €79–€129/Monat",
+          "max": "€2.500–€4.500 Setup + €199–€349/Monat"
         },
         {
-          "label": "Pizzeria",
-          "pro": "ab €699 Setup + €199/Monat",
-          "max": "ab €1190 Setup + €349/Monat"
+          "label": "Lokales Food",
+          "pro": "€1.200–€1.800 Setup + €79–€129/Monat",
+          "max": "€2.500–€4.500 Setup + €199–€349/Monat"
         },
         {
-          "label": "Gym (nächste)",
-          "pro": "ab €899 Setup + €249/Monat",
-          "max": "ab €1390 Setup + €399/Monat"
+          "label": "Gym / Fitness",
+          "pro": "—",
+          "max": "€2.500–€4.500 Setup + €199–€349/Monat"
         }
       ]
     }
@@ -172,31 +172,34 @@
   "plans": {
     "pro": {
       "name": "PRO",
-      "description": "Eine Location. Client‑PWA + Staff‑Dashboard, Buchungen/Bestellungen, Push, Branding. Standard‑E‑Mail‑Support.",
+      "description": "Eine Location: Barber, Friseur, Kosmetik, einfaches lokales Food.",
       "features": [
-        "Client‑PWA + Staff‑Dashboard (Admin‑Panel)",
-        "Buchungen (Barber) oder Bestellungen+Buchungen (Pizzeria)",
-        "Push‑Benachrichtigungen und Reminder",
-        "PWA‑Branding (Icons, Theme, Manifest)",
-        "Basis operative Analytics",
-        "Standard‑E‑Mail‑Support"
+        "Gebrandete PWA (Kunde + Staff)",
+        "Buchungen oder Bestellungen (je nach Business)",
+        "Staff- und Verfügbarkeitsverwaltung",
+        "Automatische Benachrichtigungen",
+        "Basis-Analytics",
+        "Standard-Support",
+        "Setup umfasst Konzeption, Konfiguration, Branding, Test und Go‑Live."
       ]
     },
     "max": {
       "name": "MAX",
-      "description": "Mehrere Locations. Alles PRO + Assisted Provisioning pro Standort + Priority‑Support.",
+      "description": "Strukturierte Betriebe: Gym, komplexes Food, mehrere Flows.",
       "features": [
         "Alles aus PRO",
-        "Multi‑Location (mehrere Shops)",
-        "Assisted Provisioning pro Standort (Supabase+Vercel+env+Branding+Seed+Gate)",
-        "Priorisierte Support‑Anfragen",
-        "Koordiniertes Setup neuer Standorte"
+        "Erweiterte Logik (Abos, Kurse, komplexe Bestellungen, Rollen)",
+        "Erweiterte Analytics",
+        "Prioritäts-Support",
+        "Assistiertes Onboarding",
+        "Audit vor Go‑Live",
+        "Geführte Konfiguration und direkter Support bis zum Go‑Live."
       ]
     }
   },
   "contact": {
-    "title": "Demo anfragen",
-    "subtitle": "Formular ausfüllen, wir melden uns so schnell wie möglich.",
+    "title": "Kontakt",
+    "subtitle": "Jedes Projekt startet nach einem Kennenlerngespräch. Formular ausfüllen, wir melden uns so schnell wie möglich.",
     "name": "Name",
     "email": "E-Mail",
     "phone": "Telefon (optional)",
@@ -206,14 +209,13 @@
     "send": "Anfrage senden",
     "sending": "Wird gesendet...",
     "success": "Anfrage erfolgreich gesendet. Wir melden uns in Kürze.",
-    "businessBarber": "Barber",
+    "businessBarber": "Barber / Friseur / Kosmetik",
     "businessOther": "Sonstiges",
-    "businessPizzeria": "Pizzeria",
-    "businessGym": "Gym (nächste)",
-    "businessFood": "Food (nächste)"
+    "businessFood": "Lokales Food",
+    "businessGym": "Gym / Fitness"
   },
   "footer": {
-    "tagline": "PWA für Barber und Pizzeria. Weniger No‑Shows, schnellere Bestellungen, vollere Agenda.",
+    "tagline": "Maßgeschneiderte PWA für reale Betriebe. Barber, lokales Food, Gym. Keine Templates, keine Standard-Apps.",
     "product": "Produkt",
     "company": "Unternehmen",
     "contactLink": "Kontakt",

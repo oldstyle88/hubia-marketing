@@ -4,66 +4,66 @@
     "pricing": "Prezzi",
     "faq": "FAQ",
     "contact": "Contatti",
-    "requestDemo": "Richiedi demo",
+    "requestDemo": "Contattaci",
     "openMenu": "Apri menu",
     "closeMenu": "Chiudi menu"
   },
   "home": {
     "hero": {
-      "title": "Connessioni che riempiono l’agenda.",
-      "subtitle": "PWA per barbiere e pizzeria: prenotazioni e ordini in un’unica esperienza brandizzata. Riduci no‑show, velocizza gli ordini, controlla lo staff.",
-      "requestDemo": "Richiedi demo",
+      "title": "Riempi l'agenda. Riduci i no-show.",
+      "subtitle": "Gestisci ordini, staff e clienti da un'unica PWA. Niente marketplace, niente app generiche. Costruiamo PWA operative su misura per attività reali, non template.",
+      "requestDemo": "Contattaci",
       "viewPrices": "Vedi prezzi"
     },
     "proof": {
-      "clientPwa": "Client PWA",
-      "clientPwaDesc": "App clienti installabile con il tuo brand. Prenotazioni e ordini senza attrito.",
-      "staffDashboard": "Dashboard staff",
-      "staffDashboardDesc": "Pannello amministrazione per lo staff: agenda, servizi, disponibilità, clienti e notifiche.",
-      "analytics": "Analytics operative",
-      "analyticsDesc": "Ricavi, prenotazioni/ordini, clienti e trend. Metriche misurabili, niente claim generici."
+      "clientPwa": "PWA brandizzata",
+      "clientPwaDesc": "App clienti e staff con il tuo brand. Prenotazioni o ordini in base al business.",
+      "staffDashboard": "Staff e disponibilità",
+      "staffDashboardDesc": "Gestione staff, calendario, disponibilità e notifiche automatiche.",
+      "analytics": "Analytics",
+      "analyticsDesc": "Ricavi, prenotazioni/ordini, clienti. Metriche chiare, niente claim generici."
     },
     "pwaBlock": {
       "title": "Solo PWA, zero app native",
       "body": "Niente App Store: la tua attività ha una PWA bianco-label installabile su iOS e Android. Stessa esperienza ovunque, un solo codice, aggiornamenti immediati."
     },
     "forWho": {
-      "title": "Verticali",
-      "subtitle": "Attivi: Barbiere e Pizzeria. Prossimi: Palestra e Food.",
-      "barber": "Barbiere (core)",
-      "barberDesc": "Riduci no‑show, riempi l’agenda. Promemoria automatici e slot sempre aggiornati.",
-      "pizzeria": "Pizzeria",
-      "pizzeriaDesc": "Ordini più veloci, meno errori. Cucina e staff sincronizzati in tempo reale.",
-      "gym": "Palestra (prossimo)",
-      "gymDesc": "In arrivo: abbonamenti, classi e gestione accessi.",
-      "food": "Food (prossimo)",
-      "foodDesc": "In arrivo: ordini rapidi e brand PWA dedicato."
+      "title": "Per chi costruiamo",
+      "subtitle": "PWA su misura per business fisici. Barbiere, Parrucchiere, Estetista. Food locale. Palestra e Fitness.",
+      "barber": "Barbiere, Parrucchiere, Estetista",
+      "barberDesc": "Riduci no-show, riempi l'agenda. Promemoria automatici e slot sempre aggiornati.",
+      "food": "Food locale",
+      "foodDesc": "Pizzerie, street food, locali con ordini e ritiro. Ordini più veloci, staff sincronizzato.",
+      "gym": "Palestra / Fitness studio",
+      "gymDesc": "Abbonamenti, classi, gestione accessi. Logiche avanzate per business strutturati.",
+      "tagline": "Su misura, non template",
+      "taglineDesc": "Ogni PWA è costruita per il tuo business reale. Niente SaaS generico."
     },
     "features": {
-      "title": "Funzionalità essenziali, misurabili",
-      "subtitle": "Meno attrito operativo, più controllo quotidiano.",
-      "booking": "Prenotazioni smart",
+      "title": "Cosa include",
+      "subtitle": "Funzionalità chiare, orientate ai risultati.",
+      "booking": "Prenotazioni",
       "bookingDesc": "Slot, ricorrenze, modifiche rapide. Agenda ordinata per staff.",
-      "orders": "Ordini per pizzeria",
-      "ordersDesc": "Flusso ordine → cucina → ritiro senza confusione.",
-      "staffPanel": "Pannello amministrazione",
-      "staffPanelDesc": "Calendario staff, disponibilità, servizi e clienti.",
-      "notifications": "Promemoria automatici",
-      "notificationsDesc": "Riduci no‑show con notifiche push e reminder mirati.",
+      "orders": "Ordini",
+      "ordersDesc": "Flusso ordine → cucina → ritiro. In base al verticale (Food locale).",
+      "staffPanel": "Gestione staff e disponibilità",
+      "staffPanelDesc": "Calendario, servizi, clienti e notifiche.",
+      "notifications": "Notifiche automatiche",
+      "notificationsDesc": "Riduci no-show con promemoria e reminder.",
       "branding": "Branding PWA",
       "brandingDesc": "Icone, colori e nome del tuo brand. Esperienza coerente.",
-      "analytics": "Analytics operative",
-      "analyticsDesc": "Ricavi, prenotazioni/ordini, clienti e trend essenziali."
+      "analytics": "Analytics",
+      "analyticsDesc": "Ricavi, prenotazioni/ordini, clienti. Base o avanzate a seconda del piano."
     },
     "howItWorks": {
       "title": "Come funziona",
-      "subtitle": "Setup manuale, go‑live con checklist",
+      "subtitle": "Configurazione guidata e supporto diretto fino al go-live.",
       "setup": "Setup",
-      "setupDesc": "Provisioning assistito: Supabase + Vercel + env + branding PWA + seed + gate go‑live.",
+      "setupDesc": "Progettazione, configurazione, branding, test e messa online. Rateizzabile 6–12 mesi.",
       "config": "Configurazione",
-      "configDesc": "Servizi, staff, orari e seed iniziale su misura.",
-      "golive": "Go‑live",
-      "goliveDesc": "Checklist gate e verifica finale prima del lancio."
+      "configDesc": "Servizi, staff, orari e impostazioni su misura per il tuo business.",
+      "golive": "Go-live",
+      "goliveDesc": "Verifica finale e lancio. Ogni progetto parte dopo una call conoscitiva."
     },
     "reliability": {
       "title": "Affidabilità by design",
@@ -82,8 +82,8 @@
       "b6desc": "Checklist pre-release e runbook per verifiche ripetibili."
     },
     "pricingTeaser": {
-      "title": "Due piani, prezzi a partire da",
-      "subtitle": "PRO per una sede, MAX per multi‑sede. Prezzi a partire da in base al verticale (Barbiere, Pizzeria, Palestra).",
+      "title": "Due piani, zero confusione",
+      "subtitle": "PRO per singola sede. MAX per business strutturati (Palestra, Food complesso, logiche avanzate).",
       "cta": "Vedi PRO e MAX"
     },
     "faq": {
@@ -92,79 +92,80 @@
     },
     "faqItems": {
       "q1": "Quanto tempo serve per il setup?",
-      "a1": "Il setup base richiede circa 1-2 giorni lavorativi. La configurazione completa può richiedere 3-5 giorni a seconda della complessità.",
+      "a1": "Dipende dalla complessità. Ogni progetto viene avviato dopo una call conoscitiva per definire tempi e scope.",
       "q2": "Posso importare i dati esistenti?",
-      "a2": "Sì, supportiamo l'importazione di clienti, servizi e storico prenotazioni da sistemi esistenti. Contattaci per valutare la migrazione.",
+      "a2": "Sì, supportiamo l'importazione di clienti, servizi e storico prenotazioni. Contattaci per valutare la migrazione.",
       "q3": "Funziona offline?",
       "a3": "L'app client funziona come PWA installabile e supporta funzionalità offline per la consultazione di prenotazioni e profilo.",
       "q4": "Quali metodi di pagamento sono supportati?",
       "a4": "Le integrazioni pagamento dipendono dal verticale e dagli accordi; se servono, le valutiamo su richiesta.",
       "q5": "C'è un limite al numero di prenotazioni?",
-      "a5": "No. I piani differiscono per numero di staff, shop aggiuntivi e funzionalità avanzate.",
+      "a5": "No. I piani differiscono per complessità (PRO vs MAX) e tipo di business.",
       "q6": "Come funziona il supporto?",
-      "a6": "Supporto via email per tutti i piani. Con MAX hai priorità nelle richieste di supporto.",
+      "a6": "Supporto via email per tutti i piani. Con MAX hai priorità e onboarding assistito.",
       "q7": "Posso personalizzare il branding?",
-      "a7": "Sì, tutti i piani includono personalizzazione di colori, logo e icona app. I piani superiori includono dominio personalizzato.",
+      "a7": "Sì, tutti i piani includono PWA brandizzata: colori, logo e icona app.",
       "q8": "I dati sono sicuri?",
       "a8": "Utilizziamo crittografia, backup automatici giornalieri e conformità GDPR. I dati sono ospitati su infrastruttura EU.",
       "q9": "Cosa succede se voglio cambiare piano?",
-      "a9": "Puoi aggiornare o downgrade il tuo piano in qualsiasi momento. Le modifiche si applicano al ciclo di fatturazione successivo.",
-      "q10": "Offrite assistenza durante il lancio?",
-      "a10": "Supporto operativo nei primi giorni su richiesta e in base alla disponibilità."
+      "a9": "Puoi passare da PRO a MAX (o viceversa). Le modifiche si applicano al ciclo di fatturazione successivo.",
+      "q10": "Come si avvia un progetto?",
+      "a10": "Ogni progetto viene avviato dopo una call conoscitiva. Niente demo pubblica: parliamo del tuo business e ti proponiamo la soluzione adatta."
     }
   },
   "pricing": {
-    "title": "Prezzi a partire da",
-    "subtitle": "Due piani: PRO (una sede) e MAX (multi‑sede). Prezzi a partire da in base al verticale.",
-    "footer": "Setup una tantum + canone mensile. Vedi sotto i prezzi per verticale (Barbiere, Pizzeria, Palestra).",
-    "setupIncludes": "Provisioning assistito: Supabase + Vercel + env + branding PWA + seed servizi/staff + gate go‑live.",
+    "title": "Prezzi",
+    "subtitle": "Due piani: PRO per singola sede, MAX per business strutturati. Prezzi chiari, niente numeri inventati.",
+    "footer": "Setup una tantum + canone mensile. Il setup è rateizzabile in 6 o 12 mesi.",
+    "setupIncludes": "Il setup copre progettazione, configurazione, branding, test e messa online.",
+    "setupMaxNote": "Configurazione guidata e supporto diretto fino al go-live.",
     "contactCta": "Parla con noi →",
     "perMonth": "/mese",
     "setupOneTime": "setup (una tantum)",
-    "requestDemo": "Richiedi demo",
+    "requestDemo": "Contattaci",
     "mostChosen": "Più scelto",
     "faqTitle": "Domande sui piani",
     "faq": {
-      "q1": "Cos’è il provisioning assistito?",
-      "a1": "Setup manuale: Supabase + Vercel + env + branding PWA + seed servizi/staff + gate go‑live. Non è automatizzato.",
+      "q1": "Cosa include il setup?",
+      "a1": "Il setup copre progettazione, configurazione, branding, test e messa online. È rateizzabile in 6 o 12 mesi.",
       "q2": "Posso passare da PRO a MAX?",
-      "a2": "Sì, l’upgrade si applica dal ciclo di fatturazione successivo.",
+      "a2": "Sì, l'upgrade si applica dal ciclo di fatturazione successivo.",
       "q3": "Come funziona il pagamento?",
-      "a3": "Setup una tantum all’attivazione e canone mensile ricorrente. Nessun vincolo di durata."
+      "a3": "Setup una tantum all'attivazione (rateizzabile 6–12 mesi) e canone mensile ricorrente. Nessun vincolo di durata."
     },
     "prices": {
       "pro": {
-        "setup": "da €499",
-        "monthly": "da €149"
+        "setup": "da €1.200 a €1.800",
+        "monthly": "da €79 a €129"
       },
       "max": {
-        "setup": "da €899",
-        "monthly": "da €249"
+        "setup": "da €2.500 a €4.500",
+        "monthly": "da €199 a €349"
       }
     },
     "verticalPricing": {
-      "title": "Prezzi per verticale (a partire da)",
-      "note": "Pizzeria e Palestra = progetto isolato con database dedicato.",
+      "title": "A chi è rivolto",
+      "note": "PRO: Barbiere, Parrucchiere, Estetista, Food locale semplice. MAX: Palestra, Food complesso, attività con più flussi.",
       "columns": {
         "vertical": "Verticale",
-        "pro": "PRO (da)",
-        "max": "MAX (da)"
+        "pro": "PRO",
+        "max": "MAX"
       },
       "rows": [
         {
-          "label": "Barbiere (core)",
-          "pro": "da €499 setup + €149/mese",
-          "max": "da €899 setup + €249/mese"
+          "label": "Barbiere, Parrucchiere, Estetista",
+          "pro": "da €1.200 a €1.800 setup + da €79 a €129/mese",
+          "max": "da €2.500 a €4.500 setup + da €199 a €349/mese"
         },
         {
-          "label": "Pizzeria",
-          "pro": "da €699 setup + €199/mese",
-          "max": "da €1190 setup + €349/mese"
+          "label": "Food locale",
+          "pro": "da €1.200 a €1.800 setup + da €79 a €129/mese",
+          "max": "da €2.500 a €4.500 setup + da €199 a €349/mese"
         },
         {
-          "label": "Palestra (prossimo)",
-          "pro": "da €899 setup + €249/mese",
-          "max": "da €1390 setup + €399/mese"
+          "label": "Palestra / Fitness",
+          "pro": "—",
+          "max": "da €2.500 a €4.500 setup + da €199 a €349/mese"
         }
       ]
     }
@@ -172,31 +173,34 @@
   "plans": {
     "pro": {
       "name": "PRO",
-      "description": "Una sede. PWA client + Dashboard staff, prenotazioni/ordini, push, branding. Supporto email standard.",
+      "description": "Per singola sede: Barbiere, Parrucchiere, Estetista, Food locale semplice.",
       "features": [
-        "PWA client + Dashboard staff (pannello amministrazione)",
-        "Prenotazioni (barbiere) o ordini+prenotazioni (pizzeria)",
-        "Notifiche push e promemoria",
-        "Branding PWA (icone, tema, manifest)",
-        "Analytics operative base",
-        "Supporto email standard"
+        "PWA brandizzata (cliente + staff)",
+        "Prenotazioni o ordini (in base al business)",
+        "Gestione staff e disponibilità",
+        "Notifiche automatiche",
+        "Analytics base",
+        "Supporto standard",
+        "Il setup copre progettazione, configurazione, branding, test e messa online."
       ]
     },
     "max": {
       "name": "MAX",
-      "description": "Più sedi. Tutto PRO + provisioning assistito per sede + priorità supporto.",
+      "description": "Per business strutturati: Palestra, Food complesso, attività con più flussi.",
       "features": [
-        "Tutto PRO incluso",
-        "Multi‑sede (più shop)",
-        "Provisioning assistito per sede (Supabase+Vercel+env+branding+seed+gate)",
-        "Priorità nelle richieste di supporto",
-        "Setup coordinato per nuove sedi"
+        "Tutto il PRO incluso",
+        "Logiche avanzate (abbonamenti, classi, ordini complessi, ruoli)",
+        "Analytics avanzate",
+        "Supporto prioritario",
+        "Onboarding assistito",
+        "Audit pre go-live",
+        "Configurazione guidata e supporto diretto fino al go-live."
       ]
     }
   },
   "contact": {
-    "title": "Richiedi demo",
-    "subtitle": "Compila il form: ti rispondiamo appena possibile.",
+    "title": "Contattaci",
+    "subtitle": "Ogni progetto viene avviato dopo una call conoscitiva. Compila il form: ti rispondiamo appena possibile.",
     "name": "Nome",
     "email": "Email",
     "phone": "Telefono (opzionale)",
@@ -206,14 +210,13 @@
     "send": "Invia richiesta",
     "sending": "Invio in corso...",
     "success": "Richiesta inviata con successo. Ti contatteremo a breve.",
-    "businessBarber": "Barbiere",
+    "businessBarber": "Barbiere / Parrucchiere / Estetista",
     "businessOther": "Altro",
-    "businessPizzeria": "Pizzeria",
-    "businessGym": "Palestra (prossimo)",
-    "businessFood": "Food (prossimo)"
+    "businessFood": "Food locale",
+    "businessGym": "Palestra / Fitness"
   },
   "footer": {
-    "tagline": "PWA per barbiere e pizzeria. Riduci no‑show, ordini più veloci, agenda piena.",
+    "tagline": "PWA operative su misura per attività reali. Barbiere, Food locale, Palestra. Niente template, niente app generiche.",
     "product": "Prodotto",
     "company": "Azienda",
     "contactLink": "Contatti",

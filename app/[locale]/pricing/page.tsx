@@ -8,13 +8,17 @@ import { PwaOnlyBlock } from '@/components/PwaOnlyBlock'
 import { FAQAccordion } from '@/components/FAQAccordion'
 import { Button } from '@/components/Button'
 
-/** In dev: se il valore sembra una chiave i18n non risolta (es. "home.pwaBlock.title"), log e fallback. */
+/** Evita di mostrare chiavi i18n in UI: se il valore sembra una chiave non risolta (es. home.pwaBlock.title), usa il fallback (sempre, anche in prod). */
 function safeTranslation(value: string, key: string, fallback: string): string {
-  if (process.env.NODE_ENV !== 'development') return value
+  const v = value.trim()
   const looksLikeKey =
-    value === key || value.includes('pwaBlock.') || value.startsWith('home.')
+    v === key ||
+    v.toLowerCase().includes('pwablock') ||
+    v.toLowerCase().includes('home.pwa')
   if (looksLikeKey) {
-    console.warn(`[i18n] Chiave non risolta su pricing: "${key}" → mostrato fallback. Verificare messages/*.json.`)
+    if (process.env.NODE_ENV === 'development') {
+      console.warn(`[i18n] Chiave non risolta su pricing: "${key}" (valore: "${value}") → mostrato fallback. Verificare messages/*.json.`)
+    }
     return fallback
   }
   return value
@@ -31,7 +35,6 @@ export async function generateMetadata() {
 export default async function PricingPage() {
   const t = await getTranslations('pricing')
   const tPlans = await getTranslations('plans')
-  const tHome = await getTranslations('home')
 
   const plans = [
     {

@@ -10,102 +10,94 @@
   },
   "home": {
     "hero": {
-      "title": "Riempi l'agenda. Riduci i no-show.",
-      "subtitle": "PWA premium per Beauty e Ristorazione. Prenotazioni e ordini in un'unica app con il tuo brand: nessun marketplace, nessun template.",
-      "requestDemo": "Contattaci",
-      "viewPrices": "Vedi prezzi"
-    },
-    "offer": {
-      "title": "Cosa offre HUBIA",
-      "subtitle": "Un'unica piattaforma, il tuo brand.",
-      "pwaBlock": {
-        "title": "Solo PWA, zero app da store",
-        "body": "App installabile su smartphone (iOS e Android) con logo e colori della tua attività. Un solo software, aggiornamenti inclusi."
-      },
-      "clientPwa": "PWA con il tuo brand",
-      "clientPwaDesc": "App per clienti e staff: prenotazioni o ordini in base al verticale.",
-      "staffDashboard": "Staff e disponibilità",
-      "staffDashboardDesc": "Calendario, servizi, clienti e notifiche automatiche.",
-      "analytics": "Analytics",
-      "analyticsDesc": "Ricavi, prenotazioni e ordini. Dati chiari per decidere."
+      "title": "Il sistema che semplifica il tuo locale. E cresce con te.",
+      "subtitle": "Gestione appuntamenti, staff, clienti e incassi in un'unica PWA elegante, veloce e senza compromessi.",
+      "ctaPrimary": "Richiedi una consulenza",
+      "ctaSecondary": "Scopri come funziona"
     },
     "forWho": {
-      "title": "Per chi è HUBIA",
-      "subtitle": "Due verticali: Beauty e Ristorazione.",
-      "beauty": "Beauty",
-      "beautyDesc": "Barbiere, parrucchiere, beauty center. Prenotazioni, agenda e promemoria automatici: meno no-show, più clienti gestiti bene.",
-      "food": "Ristorazione",
-      "foodDesc": "Pizzeria, street food. Ordini, cucina e ritiro: flusso chiaro per sala e cucina.",
-      "advancedNote": "Su richiesta: multi-sede, logiche complesse."
+      "title": "Pensato per chi lavora con le persone, non con il caos.",
+      "subtitle": "Il tuo locale. Il tuo brand. Zero confusione.",
+      "card1Title": "Barber & Hair salon",
+      "card1Desc": "Appuntamenti, staff e clienti in un unico posto. Meno no-show, più agenda piena.",
+      "card2Title": "Parrucchieri",
+      "card2Desc": "Gestione quotidiana semplice. Promemoria automatici, slot chiari, dati sempre aggiornati.",
+      "card3Title": "Beauty center",
+      "card3Desc": "Più servizi, più persone: un solo sistema che tiene tutto in ordine e cresce con te.",
+      "microText": "Costruiamo anche soluzioni dedicate per locali food e attività ad alta rotazione."
     },
-    "features": {
-      "title": "Cosa include",
-      "subtitle": "Funzionalità concrete.",
-      "booking": "Prenotazioni",
-      "bookingDesc": "Slot, ricorrenze e modifiche. Agenda ordinata per staff.",
-      "orders": "Ordini",
-      "ordersDesc": "Ordine, cucina e ritiro per il verticale Ristorazione.",
-      "notifications": "Notifiche automatiche",
-      "notificationsDesc": "Promemoria per ridurre i no-show.",
-      "branding": "Branding",
-      "brandingDesc": "Logo, colori e nome della tua attività nell'app."
+    "benefits": {
+      "title": "Cosa ti toglie dalla testa",
+      "subtitle": "Meno stress. Più controllo.",
+      "b1Title": "Appuntamenti che si incastrano da soli",
+      "b1Desc": "Slot chiari, modifiche facili. Niente doppi appuntamenti, niente buchi in agenda.",
+      "b2Title": "Staff sempre allineato",
+      "b2Desc": "Calendario condiviso, servizi e orari chiari. Tutti sanno cosa fare e quando.",
+      "b3Title": "Clienti che tornano",
+      "b3Desc": "Promemoria automatici, meno no-show. I clienti si presentano e l'agenda resta credibile.",
+      "b4Title": "Zero confusione, zero improvvisazioni",
+      "b4Desc": "Un solo posto per appuntamenti, incassi e dati. Decisioni basate sui numeri, non sul sentito dire."
     },
     "howItWorks": {
-      "title": "Come funziona",
-      "subtitle": "Setup chiaro. Ogni progetto parte da una call conoscitiva.",
-      "setup": "Setup iniziale",
-      "setupDesc": "Progettazione, configurazione, branding, test e messa online.",
-      "config": "Configurazione",
-      "configDesc": "Servizi, staff, orari e impostazioni su misura.",
-      "golive": "Messa online",
-      "goliveDesc": "Verifica finale e lancio."
+      "title": "Un sistema chiaro, senza sorprese.",
+      "subtitle": "Setup guidato, canone trasparente. Niente sorprese.",
+      "step1Title": "Setup guidato sul tuo locale",
+      "step1Desc": "Configuriamo insieme servizi, orari e branding. La tua attività nell'app, con il tuo logo e i tuoi colori.",
+      "step2Title": "Canone mensile chiaro",
+      "step2Desc": "Un costo fisso al mese. Aggiornamenti e supporto inclusi. Nessun costo nascosto.",
+      "step3Title": "Cresce con il tuo business",
+      "step3Desc": "Più staff, più servizi, più clienti: il sistema si adatta. Senza cambiare strumenti.",
+      "setupNote": "Il costo di setup può essere suddiviso in 6 o 12 mesi."
     },
-    "reliability": {
-      "title": "Affidabilità",
-      "subtitle": "Risultati verificabili in produzione.",
-      "b1title": "Zero duplicati",
-      "b1desc": "Ordini e prenotazioni univoci anche in caso di ritentativi o connessione instabile.",
-      "b2title": "Job affidabili",
-      "b2desc": "Processi in background eseguiti una sola volta, senza sovrapposizioni.",
-      "b3title": "Test sicuri",
-      "b3desc": "Ambiente di prova senza dati reali e senza invio di notifiche ai clienti.",
-      "b4title": "Notifiche robuste",
-      "b4desc": "Gestione corretta di abbonamenti scaduti e dispositivi disconnessi."
+    "plansHome": {
+      "title": "I piani",
+      "subtitle": "Scegli quello che fa per il tuo locale. Solo Beauty: barbiere, parrucchiere, beauty center.",
+      "studioName": "Studio",
+      "studioForWho": "Barbiere, parrucchiere, beauty center con una sede. Chi vuole ordine senza complicarsi la vita.",
+      "studioIncludes": [
+        "App con il tuo brand (clienti e staff)",
+        "Appuntamenti, calendario e promemoria automatici",
+        "Gestione staff e disponibilità",
+        "Dati su incassi e prenotazioni",
+        "Supporto via email",
+        "Setup iniziale rateizzabile in 6 o 12 mesi"
+      ],
+      "studioSetup": "€900 – €1.500",
+      "studioSetupNote": "suddivisibile in 6 o 12 mesi",
+      "studioCanone": "€69 – €129 / mese",
+      "signatureName": "Signature",
+      "signatureForWho": "Beauty center e locali con più servizi, più staff o esigenze più articolate. Chi vuole il massimo controllo senza rinunciare alla semplicità.",
+      "signatureIncludes": [
+        "Tutto ciò che include Studio",
+        "Configurazione più articolata e supporto dedicato in fase di avvio",
+        "Priorità nel supporto",
+        "Dati e report più approfonditi"
+      ],
+      "signatureSetup": "€1.200 – €1.800",
+      "signatureSetupNote": "suddivisibile in 6 o 12 mesi",
+      "signatureCanone": "€99 – €149 / mese"
     },
-    "pricingTeaser": {
-      "title": "Prezzi",
-      "subtitle": "Da €69/mese per Beauty. Da €149/mese per Ristorazione. Setup da €900, rateizzabile in 6 o 12 mesi.",
-      "cta": "Vedi dettagli prezzi"
+    "projectsCustom": {
+      "title": "Progetti su misura",
+      "text": "Progetti su misura per attività con logiche più complesse: locali food, pizzeria, street food, alta rotazione. Senza prezzi in lista: ogni progetto è diverso. Parliamone in consulenza."
     },
-    "faq": {
-      "title": "Domande frequenti",
-      "subtitle": "Risposte chiare"
+    "notAnyApp": {
+      "title": "Perché non è un'app qualsiasi",
+      "subtitle": "Nessun compromesso sull'esperienza.",
+      "point1": "Nessun marketplace: i clienti sono tuoi, i dati sono tuoi.",
+      "point2": "Nessuna app standard: costruita per chi gestisce appuntamenti e persone, non per chi vende \"un po' di tutto\".",
+      "point3": "Nessun compromesso sull'esperienza: un'unica PWA elegante, veloce, con il tuo brand.",
+      "closing": "HUBIA non è per tutti. È per chi prende sul serio il proprio locale.",
+      "positioning": [
+        "HUBIA non è pensata per tutti.",
+        "È pensata per chi vuole un sistema stabile e su misura, non una semplice app da installare e dimenticare.",
+        "Se stai cercando solo l'opzione più economica, probabilmente esistono soluzioni più adatte. HUBIA è per chi prende sul serio il proprio locale."
+      ]
     },
-    "faqItems": {
-      "q1": "Quanto tempo serve per il setup?",
-      "a1": "Dipende dalla complessità. Ogni progetto parte da una call conoscitiva per definire tempi e modalità.",
-      "q2": "Posso importare i dati esistenti?",
-      "a2": "Sì. Clienti, servizi e storico prenotazioni: contattaci per valutare la migrazione.",
-      "q3": "Funziona offline?",
-      "a3": "La PWA si installa sullo smartphone e permette di consultare prenotazioni e profilo anche offline.",
-      "q4": "Quali pagamenti accettate?",
-      "a4": "Modalità di pagamento concordate in fase di attivazione.",
-      "q5": "C'è un limite di prenotazioni?",
-      "a5": "No. I piani differiscono per verticale: Studio (Beauty) e Operativo (Ristorazione).",
-      "q6": "Come funziona il supporto?",
-      "a6": "Supporto via email per tutti. Con Operativo: priorità e supporto dedicato in fase di avvio.",
-      "q7": "Posso usare il mio logo e i miei colori?",
-      "a7": "Sì. Tutti i piani includono branding: logo, colori e nome della tua attività nell'app.",
-      "q8": "I dati sono sicuri?",
-      "a8": "Crittografia, backup automatici e conformità GDPR. Dati in Europa.",
-      "q9": "Posso cambiare piano?",
-      "a9": "Sì. Il passaggio si applica dal ciclo di fatturazione successivo.",
-      "q10": "Come si avvia un progetto?",
-      "a10": "Sempre con una call conoscitiva. Ci racconti la tua attività e ti proponiamo la soluzione adatta.",
-      "q11": "Come garantite assenza di duplicati su ordini e prenotazioni?",
-      "a11": "Usiamo chiavi idempotenti: ogni operazione è identificata in modo univoco, così i ritentativi non generano doppie prenotazioni o doppi ordini.",
-      "q12": "Cosa significa \"job affidabili\" e \"notifiche robuste\"?",
-      "a12": "I job in background (promemoria, sync) usano lock per evitare esecuzioni doppie. Le notifiche gestiscono correttamente abbonamenti scaduti e dispositivi disconnessi, senza errori a cascata."
+    "ctaFinal": {
+      "title": "Parliamone insieme",
+      "subtitle": "Senza impegno, senza call commerciali aggressive.",
+      "cta": "Richiedi una consulenza"
     }
   },
   "pricing": {

@@ -58,7 +58,7 @@ export function Hero({ title, subtitle, ctaDemo, ctaPrices, proofCards = [] }: H
             <Button href="/contact" variant="primary" className="text-lg px-10 py-5">
               {ctaDemo}
             </Button>
-            <Button href="/pricing" variant="outline" className="text-lg px-10 py-5">
+            <Button href="#come-funziona" variant="outline" className="text-lg px-10 py-5">
               {ctaPrices}
             </Button>
           </div>

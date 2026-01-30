@@ -10,102 +10,89 @@
   },
   "home": {
     "hero": {
-      "title": "Fill your agenda. Cut no-shows.",
-      "subtitle": "Premium PWA for Beauty and Restaurant. Bookings and orders in one app with your brand: no marketplace, no templates.",
-      "requestDemo": "Contact us",
-      "viewPrices": "View prices"
-    },
-    "offer": {
-      "title": "What HUBIA offers",
-      "subtitle": "One platform, your brand.",
-      "pwaBlock": {
-        "title": "PWA only, no app store",
-        "body": "Installable app on smartphone (iOS and Android) with your logo and colours. One software, updates included."
-      },
-      "clientPwa": "PWA with your brand",
-      "clientPwaDesc": "App for clients and staff: bookings or orders by vertical.",
-      "staffDashboard": "Staff and availability",
-      "staffDashboardDesc": "Calendar, services, clients and automatic notifications.",
-      "analytics": "Analytics",
-      "analyticsDesc": "Revenue, bookings and orders. Clear data to decide."
+      "title": "The system that simplifies your venue. And grows with you.",
+      "subtitle": "Appointments, staff, clients and revenue in one elegant, fast PWA. No compromises.",
+      "ctaPrimary": "Request a consultation",
+      "ctaSecondary": "See how it works"
     },
     "forWho": {
-      "title": "Who HUBIA is for",
-      "subtitle": "Two verticals: Beauty and Restaurant.",
-      "beauty": "Beauty",
-      "beautyDesc": "Barber, hairdresser, beauty centre. Bookings, agenda and automatic reminders: fewer no-shows, more clients managed well.",
-      "food": "Restaurant",
-      "foodDesc": "Pizzeria, street food. Orders, kitchen and pickup: clear flow for front and back of house.",
-      "advancedNote": "On request: multi-site, complex logic."
+      "title": "For those who work with people, not chaos.",
+      "subtitle": "Your venue. Your brand. Zero confusion.",
+      "card1Title": "Barber & Hair salon",
+      "card1Desc": "Appointments, staff and clients in one place. Fewer no-shows, fuller agenda.",
+      "card2Title": "Hairdressers",
+      "card2Desc": "Simple daily management. Automatic reminders, clear slots, data always up to date.",
+      "card3Title": "Beauty centre",
+      "card3Desc": "More services, more people: one system that keeps everything in order and grows with you.",
+      "microText": "We also build dedicated solutions for food venues and high-turnover activities."
     },
-    "features": {
-      "title": "What's included",
-      "subtitle": "Concrete features.",
-      "booking": "Bookings",
-      "bookingDesc": "Slots, recurring and changes. Agenda organised by staff.",
-      "orders": "Orders",
-      "ordersDesc": "Order, kitchen and pickup for the Restaurant vertical.",
-      "notifications": "Automatic notifications",
-      "notificationsDesc": "Reminders to cut no-shows.",
-      "branding": "Branding",
-      "brandingDesc": "Logo, colours and your business name in the app."
+    "benefits": {
+      "title": "What it takes off your mind",
+      "subtitle": "Less stress. More control.",
+      "b1Title": "Appointments that slot in by themselves",
+      "b1Desc": "Clear slots, easy changes. No double bookings, no gaps in the agenda.",
+      "b2Title": "Staff always aligned",
+      "b2Desc": "Shared calendar, clear services and hours. Everyone knows what to do and when.",
+      "b3Title": "Clients who come back",
+      "b3Desc": "Automatic reminders, fewer no-shows. Clients show up and the agenda stays credible.",
+      "b4Title": "Zero confusion, zero improvising",
+      "b4Desc": "One place for appointments, revenue and data. Decisions based on numbers, not hearsay."
     },
     "howItWorks": {
-      "title": "How it works",
-      "subtitle": "Clear setup. Every project starts with a discovery call.",
-      "setup": "Initial setup",
-      "setupDesc": "Design, configuration, branding, testing and go-live. Setup can be spread over 6 or 12 months.",
-      "config": "Configuration",
-      "configDesc": "Services, staff, hours and settings tailored to you.",
-      "golive": "Go-live",
-      "goliveDesc": "Final check and launch."
+      "title": "A clear system, no surprises.",
+      "subtitle": "Guided setup, transparent fee. No surprises.",
+      "step1Title": "Guided setup for your venue",
+      "step1Desc": "We configure together services, hours and branding. Your business in the app, with your logo and colours.",
+      "step2Title": "Clear monthly fee",
+      "step2Desc": "One fixed cost per month. Infrastructure, updates and support included. No hidden costs.",
+      "step3Title": "Grows with your business",
+      "step3Desc": "More staff, more services, more clients: the system adapts. Without changing tools.",
+      "setupNote": "Setup cost can be spread over 6 or 12 months."
     },
-    "reliability": {
-      "title": "Reliability",
-      "subtitle": "Verifiable results in production.",
-      "b1title": "Zero duplicates",
-      "b1desc": "Orders and bookings stay unique even on retries or unstable connection.",
-      "b2title": "Reliable jobs",
-      "b2desc": "Background processes run once, no overlaps.",
-      "b3title": "Safe testing",
-      "b3desc": "Test environment with no real data and no notifications sent to clients.",
-      "b4title": "Robust notifications",
-      "b4desc": "Correct handling of expired subscriptions and disconnected devices."
+    "plansHome": {
+      "title": "Plans",
+      "subtitle": "Choose what fits your venue. Beauty only: barber, hairdresser, beauty centre.",
+      "studioName": "Studio",
+      "studioForWho": "Barber, hairdresser, beauty centre with one venue. For those who want order without complication.",
+      "studioIncludes": [
+        "App with your brand (clients and staff)",
+        "Appointments, calendar and automatic reminders",
+        "Staff and availability management",
+        "Data on revenue and bookings",
+        "Email support",
+        "Initial setup spread over 6 or 12 months"
+      ],
+      "studioSetup": "€900 – €1,500",
+      "studioSetupNote": "spread over 6 or 12 months",
+      "studioCanone": "€69 – €129 / month",
+      "signatureName": "Signature",
+      "signatureForWho": "Beauty centres and venues with more services, more staff or more complex needs. For those who want full control without losing simplicity.",
+      "signatureIncludes": [
+        "Everything in Studio",
+        "More detailed configuration and dedicated support at launch",
+        "Priority support",
+        "Deeper data and reports"
+      ],
+      "signatureSetup": "€1,200 – €1,800",
+      "signatureSetupNote": "spread over 6 or 12 months",
+      "signatureCanone": "€99 – €149 / month"
     },
-    "pricingTeaser": {
-      "title": "Pricing",
-      "subtitle": "From €69/month for Beauty. From €149/month for Restaurant. Setup from €900, spread over 6 or 12 months.",
-      "cta": "View pricing details"
+    "projectsCustom": {
+      "title": "Custom projects",
+      "text": "Custom projects for activities with more complex logic: food venues, pizzeria, street food, high turnover. No listed prices: every project is different. Let's talk in a consultation."
     },
-    "faq": {
-      "title": "FAQ",
-      "subtitle": "Clear answers"
+    "notAnyApp": {
+      "title": "Why it's not just any app",
+      "subtitle": "No compromise on experience.",
+      "point1": "No marketplace: clients are yours, data is yours.",
+      "point2": "No generic app: built for those who manage appointments and people, not for those who sell \"a bit of everything\".",
+      "point3": "No compromise on experience: one elegant, fast PWA with your brand.",
+      "closing": "HUBIA is not for everyone. It's for those who take their venue seriously."
     },
-    "faqItems": {
-      "q1": "How long does setup take?",
-      "a1": "Depends on complexity. Every project starts with a discovery call to define timeline and scope.",
-      "q2": "Can I import existing data?",
-      "a2": "Yes. Clients, services and booking history: contact us to evaluate migration.",
-      "q3": "Does it work offline?",
-      "a3": "The PWA installs on your smartphone and lets you view bookings and profile offline.",
-      "q4": "What payment methods are supported?",
-      "a4": "Payment terms agreed at activation. Setup can be spread over 6 or 12 months.",
-      "q5": "Is there a limit on bookings?",
-      "a5": "No. Plans differ by vertical: Studio (Beauty) and Operativo (Restaurant).",
-      "q6": "How does support work?",
-      "a6": "Email support for all. With Operativo: priority and dedicated support at launch.",
-      "q7": "Can I use my logo and colours?",
-      "a7": "Yes. All plans include branding: logo, colours and your business name in the app.",
-      "q8": "Is my data secure?",
-      "a8": "Encryption, automated backups and GDPR. Data in Europe.",
-      "q9": "Can I change plan?",
-      "a9": "Yes. The change applies from the next billing cycle.",
-      "q10": "How does a project start?",
-      "a10": "Always with a discovery call. You tell us your business and we propose the right solution.",
-      "q11": "How do you guarantee no duplicate orders or bookings?",
-      "a11": "We use idempotent keys: each operation is uniquely identified, so retries do not create double bookings or double orders.",
-      "q12": "What do \"reliable jobs\" and \"robust notifications\" mean?",
-      "a12": "Background jobs (reminders, sync) use locks to avoid double execution. Notifications correctly handle expired subscriptions and disconnected devices, without cascade errors."
+    "ctaFinal": {
+      "title": "Let's talk",
+      "subtitle": "No commitment, no aggressive sales calls.",
+      "cta": "Request a consultation"
     }
   },
   "pricing": {

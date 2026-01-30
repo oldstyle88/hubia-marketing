@@ -10,110 +10,89 @@
   },
   "home": {
     "hero": {
-      "title": "Kalender füllen. No‑Shows reduzieren.",
-      "subtitle": "Bestellungen, Staff und Kunden aus einer PWA. Kein Marketplace, keine Standard-Apps. Wir bauen maßgeschneiderte PWA für reale Betriebe, keine Templates.",
-      "requestDemo": "Kontakt",
-      "viewPrices": "Preise ansehen"
-    },
-    "proof": {
-      "clientPwa": "Gebrandete PWA",
-      "clientPwaDesc": "Kunden- und Staff-App mit deinem Brand. Buchungen oder Bestellungen je nach Business.",
-      "staffDashboard": "Staff und Verfügbarkeit",
-      "staffDashboardDesc": "Staff-Verwaltung, Kalender, Verfügbarkeit und automatische Benachrichtigungen.",
-      "analytics": "Analytics",
-      "analyticsDesc": "Umsatz, Buchungen/Bestellungen, Kunden. Klare Kennzahlen, keine leeren Versprechen."
-    },
-    "offer": {
-      "title": "Was HUBIA bietet",
-      "subtitle": "Eine Plattform, dein Brand.",
-      "pwaBlock": {
-        "title": "Nur PWA, keine Store-Apps",
-        "body": "Installierbare App auf dem Smartphone (iOS und Android) mit deinem Logo und deinen Farben. Eine Software, Updates inklusive."
-      },
-      "clientPwa": "PWA mit deinem Brand",
-      "clientPwaDesc": "App für Kunden und Staff: Buchungen oder Bestellungen je nach Vertical.",
-      "staffDashboard": "Staff und Verfügbarkeit",
-      "staffDashboardDesc": "Kalender, Services, Kunden und automatische Benachrichtigungen.",
-      "analytics": "Analytics",
-      "analyticsDesc": "Umsatz, Buchungen und Bestellungen. Klare Daten für Entscheidungen."
+      "title": "Das System, das deinen Betrieb vereinfacht. Und mit dir wächst.",
+      "subtitle": "Termine, Staff, Kunden und Umsatz in einer eleganten, schnellen PWA. Ohne Kompromisse.",
+      "ctaPrimary": "Beratung anfragen",
+      "ctaSecondary": "So funktioniert es"
     },
     "forWho": {
-      "title": "Für wen HUBIA ist",
-      "subtitle": "Zwei Verticals: Beauty und Gastronomie.",
-      "beauty": "Beauty",
-      "beautyDesc": "Barbier, Friseur, Beauty-Center. Buchungen, Agenda und automatische Erinnerungen: weniger No-Shows, mehr Kunden gut verwaltet.",
-      "food": "Gastronomie",
-      "foodDesc": "Pizzeria, Street Food. Bestellungen, Küche und Abholung: klarer Ablauf für Service und Küche.",
-      "advancedNote": "Auf Anfrage: Multi-Standort, komplexe Logik."
+      "title": "Für alle, die mit Menschen arbeiten, nicht mit Chaos.",
+      "subtitle": "Dein Betrieb. Dein Brand. Keine Verwirrung.",
+      "card1Title": "Barber & Hair salon",
+      "card1Desc": "Termine, Staff und Kunden an einem Ort. Weniger No-Shows, vollere Agenda.",
+      "card2Title": "Friseure",
+      "card2Desc": "Einfache tägliche Abläufe. Automatische Erinnerungen, klare Slots, Daten immer aktuell.",
+      "card3Title": "Beauty center",
+      "card3Desc": "Mehr Services, mehr Menschen: ein System, das alles in Ordnung hält und mit dir wächst.",
+      "microText": "Wir bauen auch maßgeschneiderte Lösungen für Food-Betriebe und Aktivitäten mit hoher Fluktuation."
     },
-    "features": {
-      "title": "Essentielle, messbare Features",
-      "subtitle": "Weniger operativer Aufwand, mehr Kontrolle.",
-      "booking": "Smartes Buchen",
-      "bookingDesc": "Slots, Wiederholungen, schnelle Änderungen. Klare Agenda.",
-      "orders": "Bestellungen für Pizzeria",
-      "ordersDesc": "Bestellung → Küche → Abholung ohne Chaos.",
-      "notifications": "Automatische Erinnerungen",
-      "notificationsDesc": "Erinnerungen zur Reduzierung von No-Shows.",
-      "branding": "Branding",
-      "brandingDesc": "Logo, Farben und Name deiner Aktivität in der App."
+    "benefits": {
+      "title": "Was wir dir abnehmen",
+      "subtitle": "Weniger Stress. Mehr Kontrolle.",
+      "b1Title": "Termine, die von selbst passen",
+      "b1Desc": "Klare Slots, einfache Änderungen. Keine Doppelbuchungen, keine Lücken in der Agenda.",
+      "b2Title": "Staff immer auf dem gleichen Stand",
+      "b2Desc": "Gemeinsamer Kalender, klare Services und Zeiten. Alle wissen, was wann zu tun ist.",
+      "b3Title": "Kunden, die wiederkommen",
+      "b3Desc": "Automatische Erinnerungen, weniger No-Shows. Kunden erscheinen, die Agenda bleibt glaubwürdig.",
+      "b4Title": "Keine Verwirrung, keine Improvisation",
+      "b4Desc": "Ein Ort für Termine, Umsatz und Daten. Entscheidungen basierend auf Zahlen, nicht auf Hörensagen."
     },
     "howItWorks": {
-      "title": "So funktioniert es",
-      "subtitle": "Geführte Konfiguration und direkter Support bis zum Go‑Live.",
-      "setup": "Setup",
-      "setupDesc": "Konzeption, Konfiguration, Branding, Test und Go‑Live. Ratenzahlung 6–12 Monate möglich.",
-      "config": "Konfiguration",
-      "configDesc": "Services, Staff, Zeiten und Einstellungen für dein Business.",
-      "golive": "Go‑live",
-      "goliveDesc": "Finale Prüfung und Start. Jedes Projekt startet nach einem Kennenlerngespräch."
+      "title": "Ein klares System, ohne Überraschungen.",
+      "subtitle": "Geführtes Setup, transparenter Beitrag. Keine Überraschungen.",
+      "step1Title": "Geführtes Setup für deinen Betrieb",
+      "step1Desc": "Wir konfigurieren gemeinsam Services, Zeiten und Branding. Dein Betrieb in der App, mit deinem Logo und deinen Farben.",
+      "step2Title": "Klarer monatlicher Beitrag",
+      "step2Desc": "Ein fester Betrag pro Monat. Infrastruktur, Updates und Support inklusive. Keine versteckten Kosten.",
+      "step3Title": "Wächst mit deinem Business",
+      "step3Desc": "Mehr Staff, mehr Services, mehr Kunden: das System passt sich an. Ohne Werkzeuge zu wechseln.",
+      "setupNote": "Die Setup-Kosten können auf 6 oder 12 Monate verteilt werden."
     },
-    "reliability": {
-      "title": "Zuverlässigkeit",
-      "subtitle": "Überprüfbare Ergebnisse in Produktion.",
-      "b1title": "Keine Duplikate",
-      "b1desc": "Bestellungen und Buchungen eindeutig auch bei Retries oder instabiler Verbindung.",
-      "b2title": "Zuverlässige Jobs",
-      "b2desc": "Hintergrundprozesse laufen einmal, ohne Überlappungen.",
-      "b3title": "Sichere Tests",
-      "b3desc": "Testumgebung ohne echte Daten und ohne Versand von Benachrichtigungen an Kunden.",
-      "b4title": "Robuste Benachrichtigungen",
-      "b4desc": "Korrekte Handhabung abgelaufener Abos und getrennter Geräte."
+    "plansHome": {
+      "title": "Die Pläne",
+      "subtitle": "Wähle, was zu deinem Betrieb passt. Nur Beauty: Barbier, Friseur, Beauty center.",
+      "studioName": "Studio",
+      "studioForWho": "Barbier, Friseur, Beauty center mit einem Standort. Für alle, die Ordnung ohne Komplikation wollen.",
+      "studioIncludes": [
+        "App mit deinem Brand (Kunden und Staff)",
+        "Termine, Kalender und automatische Erinnerungen",
+        "Staff- und Verfügbarkeitsverwaltung",
+        "Daten zu Umsatz und Buchungen",
+        "E-Mail-Support",
+        "Setup-Anfang auf 6 oder 12 Monate verteilbar"
+      ],
+      "studioSetup": "€900 – €1.500",
+      "studioSetupNote": "auf 6 oder 12 Monate verteilbar",
+      "studioCanone": "€69 – €129 / Monat",
+      "signatureName": "Signature",
+      "signatureForWho": "Beauty center und Betriebe mit mehr Services, mehr Staff oder komplexeren Anforderungen. Für alle, die maximale Kontrolle ohne Verzicht auf Einfachheit wollen.",
+      "signatureIncludes": [
+        "Alles aus Studio",
+        "Detailliertere Konfiguration und dedizierter Support beim Start",
+        "Prioritäts-Support",
+        "Tiefere Daten und Auswertungen"
+      ],
+      "signatureSetup": "€1.200 – €1.800",
+      "signatureSetupNote": "auf 6 oder 12 Monate verteilbar",
+      "signatureCanone": "€99 – €149 / Monat"
     },
-    "pricingTeaser": {
-      "title": "Preise",
-      "subtitle": "Ab €69/Monat für Beauty. Ab €149/Monat für Gastronomie. Setup ab €900, auf 6 oder 12 Monate verteilbar.",
-      "cta": "Preisdetails ansehen"
+    "projectsCustom": {
+      "title": "Maßgeschneiderte Projekte",
+      "text": "Maßgeschneiderte Projekte für Aktivitäten mit komplexerer Logik: Food-Betriebe, Pizzeria, Street Food, hohe Fluktuation. Keine Listenpreise: jedes Projekt ist anders. Darüber sprechen wir in der Beratung."
     },
-    "faq": {
-      "title": "Häufige Fragen",
-      "subtitle": "Alle Antworten, die Sie brauchen"
+    "notAnyApp": {
+      "title": "Warum es keine x-beliebige App ist",
+      "subtitle": "Kein Kompromiss beim Erlebnis.",
+      "point1": "Kein Marketplace: Kunden und Daten gehören dir.",
+      "point2": "Keine Standard-App: gebaut für alle, die Termine und Menschen verwalten, nicht für alle, die \"ein bisschen von allem\" verkaufen.",
+      "point3": "Kein Kompromiss beim Erlebnis: eine elegante, schnelle PWA mit deinem Brand.",
+      "closing": "HUBIA ist nicht für alle. Es ist für alle, die ihren Betrieb ernst nehmen."
     },
-    "faqItems": {
-      "q1": "Wie lange dauert das Setup?",
-      "a1": "Abhängig von der Komplexität. Jedes Projekt startet nach einem Kennenlerngespräch zur Definition von Zeitrahmen und Umfang.",
-      "q2": "Kann ich bestehende Daten importieren?",
-      "a2": "Ja, wir unterstützen den Import von Kunden, Leistungen und Buchungshistorie. Kontaktieren Sie uns für eine Migration.",
-      "q3": "Funktioniert es offline?",
-      "a3": "Die Client-App läuft als installierbare PWA und unterstützt Offline-Nutzung für Buchungen und Profil.",
-      "q4": "Welche Zahlungsmethoden werden unterstützt?",
-      "a4": "Zahlungsintegrationen hängen vom Vertical und den Vereinbarungen ab; wir prüfen sie auf Anfrage.",
-      "q5": "Gibt es ein Limit bei Buchungen?",
-      "a5": "Nein. Die Pläne unterscheiden sich nach Anzahl der Mitarbeiter, Shops und erweiterten Funktionen.",
-      "q6": "Wie funktioniert der Support?",
-      "a6": "E-Mail-Support für alle. Mit Operativo: Priorität und dedizierter Support in der Startphase.",
-      "q7": "Kann ich das Branding anpassen?",
-      "a7": "Ja, alle Pläne beinhalten Farben, Logo und App-Icon. Höhere Pläne inkl. eigene Domain.",
-      "q8": "Sind meine Daten sicher?",
-      "a8": "Verschlüsselung, tägliche Backups, GDPR-konform. Daten in der EU gehostet.",
-      "q9": "Was passiert bei Planwechsel?",
-      "a9": "Upgrade oder Downgrade jederzeit möglich. Änderungen gelten ab dem nächsten Abrechnungszeitraum.",
-      "q10": "Wie startet ein Projekt?",
-      "a10": "Immer mit einem Kennenlerngespräch. Du erzählst uns von deinem Business, wir schlagen die passende Lösung vor.",
-      "q11": "Wie garantieren Sie keine doppelten Bestellungen oder Buchungen?",
-      "a11": "Wir nutzen idempotente Schlüssel: Jede Operation ist eindeutig identifiziert, Retries erzeugen keine Doppelbuchungen oder Doppelbestellungen.",
-      "q12": "Was bedeuten \"zuverlässige Jobs\" und \"robuste Benachrichtigungen\"?",
-      "a12": "Hintergrund-Jobs (Erinnerungen, Sync) nutzen Locks gegen Doppelausführung. Benachrichtigungen handhaben abgelaufene Abos und getrennte Geräte korrekt, ohne Kaskadenfehler."
+    "ctaFinal": {
+      "title": "Lass uns reden",
+      "subtitle": "Unverbindlich, ohne aggressive Verkaufsgespräche.",
+      "cta": "Beratung anfragen"
     }
   },
   "pricing": {

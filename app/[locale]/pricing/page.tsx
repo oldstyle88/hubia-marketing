@@ -25,8 +25,8 @@ export default async function PricingPage() {
     {
       name: tPlans('pro.name'),
       description: tPlans('pro.description'),
-      setupFee: 499,
-      monthly: 149,
+      setupFee: t('prices.pro.setup'),
+      monthly: t('prices.pro.monthly'),
       features: tPlans.raw('pro.features') as string[],
       highlight: true,
       badge: t('mostChosen'),
@@ -34,8 +34,8 @@ export default async function PricingPage() {
     {
       name: tPlans('max.name'),
       description: tPlans('max.description'),
-      setupFee: 799,
-      monthly: 249,
+      setupFee: t('prices.max.setup'),
+      monthly: t('prices.max.monthly'),
       features: tPlans.raw('max.features') as string[],
       highlight: false,
       badge: null,
@@ -78,6 +78,30 @@ export default async function PricingPage() {
             <p className="text-secondary/80 text-sm mb-10">
               {t('setupIncludes')}
             </p>
+          </div>
+
+
+          <div className="mt-16 max-w-4xl mx-auto">
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">
+              {t('verticalPricing.title')}
+            </h2>
+            <p className="text-secondary text-sm text-center mb-6">
+              {t('verticalPricing.note')}
+            </p>
+            <div className="overflow-hidden rounded-2xl border border-white/10 bg-surface/70">
+              <div className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 px-6 py-4 text-xs uppercase tracking-[0.18em] text-secondary border-b border-white/10">
+                <span>{t('verticalPricing.columns.vertical')}</span>
+                <span>{t('verticalPricing.columns.pro')}</span>
+                <span>{t('verticalPricing.columns.max')}</span>
+              </div>
+              {(t.raw('verticalPricing.rows') as Array<any>).map((row, index) => (
+                <div key={index} className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 px-6 py-4 text-sm text-secondary border-b border-white/5 last:border-b-0">
+                  <span className="text-primary font-medium">{row.label}</span>
+                  <span>{row.pro}</span>
+                  <span>{row.max}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="mt-20 max-w-2xl mx-auto">

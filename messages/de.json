@@ -10,69 +10,60 @@
   },
   "home": {
     "hero": {
-      "title": "Die Premium-PWA-Plattform für lokale Unternehmen.",
-      "subtitle": "Buchungen, Bestellungen, Team & Analytics — eine App pro Shop, kein Template-Branding. Nur PWA, installierbar auf iOS und Android.",
+      "title": "Verbindungen, die den Kalender füllen.",
+      "subtitle": "PWA für Barber und Pizzeria: Buchungen und Bestellungen in einer gebrandeten Erfahrung. Weniger No‑Shows, schnellere Orders, Staff im Takt.",
       "requestDemo": "Demo anfragen",
       "viewPrices": "Preise ansehen"
     },
     "proof": {
       "clientPwa": "Client PWA",
-      "clientPwaDesc": "Installierbare App für Ihre Kunden. Buchungen und Bestellungen ohne Ihr Branding zu verlassen.",
+      "clientPwaDesc": "Installierbare Kunden‑App mit deinem Brand. Buchungen und Bestellungen ohne Reibung.",
       "staffDashboard": "Team-Dashboard",
-      "staffDashboardDesc": "Kalender, Benachrichtigungen, Verfügbarkeit. Alles in einer Oberfläche.",
+      "staffDashboardDesc": "Admin‑Panel fürs Team: Agenda, Services, Verfügbarkeit und Kunden.",
       "analytics": "Analytics & Berichte",
-      "analyticsDesc": "Kennzahlen: Buchungen, Umsatz, Nutzung. Klares, aktuelles Dashboard."
+      "analyticsDesc": "Operative Kennzahlen: Umsatz, Buchungen/Bestellungen, Kunden, Trends."
     },
     "pwaBlock": {
       "title": "Nur PWA, keine nativen Apps",
       "body": "Wir liefern keine iOS/Android-Store-Apps. Jeder Kunde erhält eine White-Label-PWA: gleiche UX auf allen Geräten, eine Codebasis, sofortige Updates."
     },
-    "livePreview": {
-      "title": "Vorschau",
-      "subtitle": "Wählen Sie einen Bereich: Die Oberfläche passt sich an.",
-      "barber": "Barbier",
-      "beauty": "Kosmetik",
-      "pizza": "Pizzeria",
-      "barberFeatures": ["Schnitt-Buchungen", "Platzverwaltung", "Verbrauch & Abos"],
-      "beautyFeatures": ["Multi-Service-Buchungen", "Team & Räume", "Aktionen & Pakete"],
-      "pizzaFeatures": ["Bestellungen vor Ort & Mitnahme", "Menü & Varianten", "Küchen-Benachrichtigungen"],
-      "demoNote": "Demo-Vorschau · keine Live-Demo"
-    },
     "forWho": {
-      "title": "Für wen HŪBIA ist",
-      "subtitle": "Eine Lösung für Profis, die excellieren wollen",
-      "barber": "Barbier",
-      "barberDesc": "Buchungen, Team und Kunden verwalten mit einem System für moderne Barbiersalons.",
-      "hairSalon": "Friseursalon",
-      "hairSalonDesc": "Termine optimieren und das Kundenerlebnis mit dedizierten Tools verbessern.",
-      "beautyCenter": "Kosmetikstudio",
-      "beautyCenterDesc": "Multi-Service-Buchungen, Teamverwaltung und Analytics für Beauty-Center."
+      "title": "Aktive Verticals",
+      "subtitle": "Jetzt: Barber und Pizzeria. Als Nächstes: Gym und Food.",
+      "barber": "Barber (core)",
+      "barberDesc": "No‑Shows reduzieren mit Erinnerungen und stets aktueller Agenda.",
+      "pizzeria": "Pizzeria",
+      "pizzeriaDesc": "Schnellere Bestellungen, weniger Fehler, synchrones Team.",
+      "gym": "Gym (nächste)",
+      "gymDesc": "Kommt: Mitgliedschaften, Kurse und Zutritt.",
+      "food": "Food (nächste)",
+      "foodDesc": "Kommt: schnelle Bestellungen und eigenes PWA‑Branding."
     },
     "features": {
-      "title": "Alles, was Sie brauchen",
-      "subtitle": "Vollständige Funktionen für Ihr Geschäft",
-      "booking": "Online-Buchung",
-      "bookingDesc": "Intuitive Buchung für Kunden, 24/7. Slots, mehrere Leistungen und Wiederholungen.",
-      "staff": "Teamverwaltung",
-      "staffDesc": "Dediziertes Team-Dashboard mit Kalender, Push-Benachrichtigungen und Echtzeit-Verfügbarkeit.",
-      "push": "Push-Benachrichtigungen",
-      "pushDesc": "Automatische Bestätigungen, Erinnerungen und Updates. Web Push und mobil.",
-      "crm": "Kundendatenbank",
-      "crmDesc": "Vollständige Kundendaten mit Buchungshistorie, Präferenzen und Treueprogrammen.",
-      "analytics": "Analytics & Berichte",
-      "analyticsDesc": "Dashboard mit Kennzahlen: Buchungen, Umsatz, Nutzung und Team-Performance.",
-      "branding": "PWA-Branding",
-      "brandingDesc": "Installierbare PWA mit Ihrem Branding, Icon und Theme für Ihr Geschäft."
+      "title": "Essentielle, messbare Features",
+      "subtitle": "Weniger operativer Aufwand, mehr Kontrolle.",
+      "booking": "Smartes Buchen",
+      "bookingDesc": "Slots, Wiederholungen, schnelle Änderungen. Klare Agenda.",
+      "orders": "Bestellungen für Pizzeria",
+      "ordersDesc": "Bestellung → Küche → Abholung ohne Chaos.",
+      "staffPanel": "Admin‑Panel",
+      "staffPanelDesc": "Team‑Kalender, Verfügbarkeit, Services und Kunden.",
+      "notifications": "Automatische Erinnerungen",
+      "notificationsDesc": "No‑Shows senken mit Push‑Hinweisen und Remindern.",
+      "branding": "PWA‑Branding",
+      "brandingDesc": "Icons, Farben und dein Brand‑Name. Konsistente Erfahrung.",
+      "analytics": "Operative Analysen",
+      "analyticsDesc": "Umsatz, Buchungen/Bestellungen, Kunden, Trends."
     },
     "howItWorks": {
       "title": "So funktioniert es",
       "subtitle": "Schnelles Setup und geführte Konfiguration",
       "setup": "Setup",
-      "setupDesc": "Geführte Einrichtung. Wir erstellen Ihr Konto und bereiten die Umgebung in Minuten vor.",
+      "setupDesc": "Assisted Provisioning: Supabase, Vercel, env und PWA‑Branding.",
       "config": "Konfiguration",
-      "configDesc": "Leistungen, Team, Öffnungszeiten und Branding anpassen. Bestehende Daten bei Bedarf importieren.",
+      "configDesc": "Services, Staff, Zeiten und Initial‑Seed.",
       "golive": "Go-live",
-      "goliveDesc": "Starten Sie Ihre App und nehmen Sie Buchungen entgegen. Dedizierter Support beim Launch."
+      "goliveDesc": "Gate‑Checklist und finale Go‑Live‑Checks."
     },
     "reliability": {
       "title": "Zuverlässigkeit by design",
@@ -91,8 +82,8 @@
       "b6desc": "Pre-Release-Checkliste und Runbooks für wiederholbare Prüfungen."
     },
     "pricingTeaser": {
-      "title": "Transparente Pläne",
-      "subtitle": "Wir verkaufen keine Billig-Pläne. Wenn Sie nur das Minimum wollen, sind wir es nicht — aber wenn Sie Qualität und Kontrolle wollen, haben wir zwei klare Optionen.",
+      "title": "Zwei Pläne, Preise ab",
+      "subtitle": "PRO für eine Location, MAX für Multi‑Location. Preise ab je Vertical.",
       "cta": "PRO und MAX ansehen"
     },
     "faq": {
@@ -107,7 +98,7 @@
       "q3": "Funktioniert es offline?",
       "a3": "Die Client-App läuft als installierbare PWA und unterstützt Offline-Nutzung für Buchungen und Profil.",
       "q4": "Welche Zahlungsmethoden werden unterstützt?",
-      "a4": "Wir unterstützen derzeit Satispay und andere Gateways. Individuelle Integrationen auf Anfrage.",
+      "a4": "Zahlungsintegrationen hängen vom Vertical und den Vereinbarungen ab; wir prüfen sie auf Anfrage.",
       "q5": "Gibt es ein Limit bei Buchungen?",
       "a5": "Nein. Die Pläne unterscheiden sich nach Anzahl der Mitarbeiter, Shops und erweiterten Funktionen.",
       "q6": "Wie funktioniert der Support?",
@@ -119,44 +110,93 @@
       "q9": "Was passiert bei Planwechsel?",
       "a9": "Upgrade oder Downgrade jederzeit möglich. Änderungen gelten ab dem nächsten Abrechnungszeitraum.",
       "q10": "Bietet ihr Launch-Support?",
-      "a10": "Ja, alle neuen Kunden erhalten in den ersten Wochen dedizierten Support für einen reibungslosen Start."
+      "a10": "Support in den ersten Tagen nach Bedarf und je nach Verfügbarkeit."
     }
   },
   "pricing": {
-    "title": "Preise",
-    "subtitle": "Zwei Pläne, keine Verwirrung. Qualität und Kontrolle: PRO für einen Standort, MAX für mehrere und betreutes Setup.",
-    "footer": "Einmaliges Setup + monatliche Gebühr. Keine versteckten Kosten, keine Bindung.",
-    "setupIncludes": "Setup inkl.: Deploy, PWA-Branding (Manifest, Icons), Konfiguration, Service-Seed, Go-live-Checkliste.",
-    "contactCta": "Kontaktieren Sie uns für eine Beratung →",
+    "title": "Preise ab",
+    "subtitle": "Zwei Pläne, keine Verwirrung. PRO für eine Location, MAX für Multi‑Location und Assisted Provisioning.",
+    "footer": "Einmaliges Setup + monatliche Gebühr, ab je Vertical.",
+    "setupIncludes": "Assisted Provisioning: Supabase + Vercel + env + PWA‑Branding + Seed + Go‑Live‑Gate.",
+    "contactCta": "Sprich mit uns →",
     "perMonth": "/Monat",
     "setupOneTime": "Setup (einmalig)",
     "requestDemo": "Demo anfragen",
     "mostChosen": "Am häufigsten gewählt",
     "faqTitle": "Fragen zu den Plänen",
     "faq": {
-      "q1": "Was ist im einmaligen Setup enthalten?",
-      "a1": "Deploy, PWA-Branding (Manifest, Icons, Service Worker), Konfiguration, Basis-Services, Go-live-Checkliste. Keine Überraschungen.",
-      "q2": "Kann ich zwischen PRO und MAX wechseln?",
-      "a2": "Ja. Upgrade oder Downgrade jederzeit; Änderungen gelten ab dem nächsten Abrechnungszeitraum.",
-      "q3": "Wie funktioniert die Bezahlung?",
-      "a3": "Einmaliges Setup bei Aktivierung, monatliche Gebühr im Voraus. Klare Rechnungsstellung, keine Bindung."
+      "q1": "Was ist Assisted Provisioning?",
+      "a1": "Manuelles Setup: Supabase, Vercel, Umgebungsvariablen, PWA‑Branding, Seed und Go‑Live‑Checklist.",
+      "q2": "Kann ich von PRO zu MAX wechseln?",
+      "a2": "Ja, der Wechsel gilt ab dem nächsten Abrechnungszyklus.",
+      "q3": "Wie funktioniert die Abrechnung?",
+      "a3": "Einmaliges Setup bei Aktivierung und monatliche Gebühr. Keine Laufzeitbindung."
+    },
+    "prices": {
+      "pro": {
+        "setup": "ab €499",
+        "monthly": "ab €149"
+      },
+      "max": {
+        "setup": "ab €899",
+        "monthly": "ab €249"
+      }
+    },
+    "verticalPricing": {
+      "title": "Preise je Vertical (ab)",
+      "note": "Pizzeria und Gym = isoliertes Projekt mit eigener Datenbank.",
+      "columns": {
+        "vertical": "Vertical",
+        "pro": "PRO (ab)",
+        "max": "MAX (ab)"
+      },
+      "rows": [
+        {
+          "label": "Barber (core)",
+          "pro": "ab €499 Setup + €149/Monat",
+          "max": "ab €899 Setup + €249/Monat"
+        },
+        {
+          "label": "Pizzeria",
+          "pro": "ab €699 Setup + €199/Monat",
+          "max": "ab €1190 Setup + €349/Monat"
+        },
+        {
+          "label": "Gym (nächste)",
+          "pro": "ab €899 Setup + €249/Monat",
+          "max": "ab €1390 Setup + €399/Monat"
+        }
+      ]
     }
   },
   "plans": {
     "pro": {
       "name": "PRO",
-      "description": "PWA Client, Team-Dashboard, Branding pro Shop. Buchungen, Bestellungen, Benachrichtigungen, Analytics. Standard-Support.",
-      "features": ["PWA Client + Team-Dashboard", "Branding pro Shop (Manifest, Icons, SW)", "Buchungen, Bestellungen, Benachrichtigungen", "Analytics inklusive", "Standard-Support"]
+      "description": "Client‑PWA + Admin‑Panel. Buchungen/Bestellungen, Push, Branding. Standard‑Support.",
+      "features": [
+        "Client‑PWA + Admin‑Panel",
+        "Buchungen (Barber) oder Bestellungen+Buchungen (Pizzeria)",
+        "Push‑Benachrichtigungen und Reminder",
+        "PWA‑Branding (Icons, Theme, Manifest)",
+        "Operative Kern‑Analytics",
+        "Standard‑E‑Mail‑Support"
+      ]
     },
     "max": {
       "name": "MAX",
-      "description": "Alles in PRO + Multi-Standort, betreutes Setup einmalig, Priorität im Support. Erweiterte Analytics, Audit vor Go-live.",
-      "features": ["Alles in PRO", "Betreutes Setup (Deploy, PWA-Branding, Config, Seed, Go-live-Checkliste)", "Erweiterte Analytics", "Priorität bei Support-Anfragen", "Audit vor Go-live (Checkliste)"]
+      "description": "Alles aus PRO für mehrere Standorte + Assisted Provisioning pro Standort + Priority‑Support.",
+      "features": [
+        "Alles aus PRO",
+        "Multi‑Location (mehrere Shops)",
+        "Assisted Provisioning pro Standort (Supabase+Vercel+env+Branding+Seed+Gate)",
+        "Priorisierte Support‑Anfragen",
+        "Koordiniertes Setup neuer Standorte"
+      ]
     }
   },
   "contact": {
     "title": "Demo anfragen",
-    "subtitle": "Formular ausfüllen: Wir antworten innerhalb von 24 Stunden.",
+    "subtitle": "Formular ausfüllen, wir melden uns so schnell wie möglich.",
     "name": "Name",
     "email": "E-Mail",
     "phone": "Telefon (optional)",
@@ -166,13 +206,14 @@
     "send": "Anfrage senden",
     "sending": "Wird gesendet...",
     "success": "Anfrage erfolgreich gesendet. Wir melden uns in Kürze.",
-    "businessBarber": "Barbier",
-    "businessHairSalon": "Friseursalon",
-    "businessBeauty": "Kosmetikstudio",
-    "businessOther": "Sonstiges"
+    "businessBarber": "Barber",
+    "businessOther": "Sonstiges",
+    "businessPizzeria": "Pizzeria",
+    "businessGym": "Gym (nächste)",
+    "businessFood": "Food (nächste)"
   },
   "footer": {
-    "tagline": "Premium-Buchungsplattform für Barbiere, Friseursalons und Kosmetikstudios.",
+    "tagline": "PWA für Barber und Pizzeria. Buchungen, Bestellungen, Team und operative Analytics.",
     "product": "Produkt",
     "company": "Unternehmen",
     "contactLink": "Kontakt",

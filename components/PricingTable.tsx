@@ -5,8 +5,8 @@ import { Badge } from './Badge'
 interface Plan {
   name: string
   description: string
-  setupFee: number
-  monthly: number
+  setupFee: string
+  monthly: string
   features: string[]
   highlight?: boolean
   badge?: string | null
@@ -50,13 +50,13 @@ export function PricingTable({
 
             <div className="mb-6">
               <div className="flex items-baseline gap-2 mb-2">
-                <span className="text-4xl font-semibold text-primary">
-                  €{plan.monthly}
+                <span className="text-3xl sm:text-4xl font-semibold text-primary">
+                  {plan.monthly}
                 </span>
                 <span className="text-secondary">{perMonthLabel}</span>
               </div>
               <div className="text-sm text-secondary">
-                + €{plan.setupFee} {setupLabel}
+                {plan.setupFee} {setupLabel}
               </div>
             </div>
           </div>

@@ -8,7 +8,6 @@ import { Card } from '@/components/Card'
 import { FeatureGrid } from '@/components/FeatureGrid'
 import { FAQAccordion } from '@/components/FAQAccordion'
 import { PwaOnlyBlock } from '@/components/PwaOnlyBlock'
-import { LivePreview } from '@/components/LivePreview'
 import { ReliabilitySection } from '@/components/ReliabilitySection'
 import { PricingTable } from '@/components/PricingTable'
 
@@ -25,17 +24,18 @@ export default async function HomePage() {
 
   const targetAudience = [
     { title: t('forWho.barber'), description: t('forWho.barberDesc') },
-    { title: t('forWho.hairSalon'), description: t('forWho.hairSalonDesc') },
-    { title: t('forWho.beautyCenter'), description: t('forWho.beautyCenterDesc') },
+    { title: t('forWho.pizzeria'), description: t('forWho.pizzeriaDesc') },
+    { title: t('forWho.gym'), description: t('forWho.gymDesc') },
+    { title: t('forWho.food'), description: t('forWho.foodDesc') },
   ]
 
   const features = [
     { title: t('features.booking'), description: t('features.bookingDesc') },
-    { title: t('features.staff'), description: t('features.staffDesc') },
-    { title: t('features.push'), description: t('features.pushDesc') },
-    { title: t('features.crm'), description: t('features.crmDesc') },
-    { title: t('features.analytics'), description: t('features.analyticsDesc') },
+    { title: t('features.orders'), description: t('features.ordersDesc') },
+    { title: t('features.staffPanel'), description: t('features.staffPanelDesc') },
+    { title: t('features.notifications'), description: t('features.notificationsDesc') },
     { title: t('features.branding'), description: t('features.brandingDesc') },
+    { title: t('features.analytics'), description: t('features.analyticsDesc') },
   ]
 
   const steps = [
@@ -65,8 +65,8 @@ export default async function HomePage() {
     {
       name: tPlans('pro.name'),
       description: tPlans('pro.description'),
-      setupFee: 499,
-      monthly: 149,
+      setupFee: tPricing('prices.pro.setup'),
+      monthly: tPricing('prices.pro.monthly'),
       features: tPlans.raw('pro.features') as string[],
       highlight: true,
       badge: tPricing('mostChosen'),
@@ -74,8 +74,8 @@ export default async function HomePage() {
     {
       name: tPlans('max.name'),
       description: tPlans('max.description'),
-      setupFee: 799,
-      monthly: 249,
+      setupFee: tPricing('prices.max.setup'),
+      monthly: tPricing('prices.max.monthly'),
       features: tPlans.raw('max.features') as string[],
       highlight: false,
       badge: null,
@@ -107,10 +107,6 @@ export default async function HomePage() {
           </div>
         </Section>
 
-        <Section className="bg-background">
-          <LivePreview />
-        </Section>
-
         <Section id="product" className="bg-background">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-semibold text-primary mb-4">
@@ -120,7 +116,7 @@ export default async function HomePage() {
               {t('forWho.subtitle')}
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {targetAudience.map((item, index) => (
               <Card key={index}>
                 <h3 className="text-2xl font-semibold text-primary mb-3">

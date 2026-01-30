@@ -45,7 +45,7 @@ const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const MAX_NAME = 200
 const MAX_MESSAGE = 2000
 const MAX_PHONE = 50
-const BUSINESS_VALUES = ['barber', 'hair-salon', 'beauty-center', 'other']
+const BUSINESS_VALUES = ['barber', 'pizzeria', 'gym', 'food', 'other']
 
 export async function POST(request: NextRequest) {
   const ip = getClientIp(request)

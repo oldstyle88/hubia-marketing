@@ -43,8 +43,8 @@ export default async function TermsPage() {
                 <h2 className="text-2xl font-semibold text-primary mb-4">2. Descrizione del servizio</h2>
                 <p>
                   HŪBIA è una piattaforma software-as-a-service (SaaS) che fornisce strumenti per la gestione di prenotazioni,
-                  clienti, staff e operazioni per barber, hair salon e beauty center. Il Servizio include accesso a un&apos;applicazione
-                  web e PWA, dashboard staff e funzionalità di supporto.
+                  clienti, staff e operazioni per barbiere e pizzeria. Il Servizio include accesso a un&apos;applicazione
+                  web e PWA, pannello amministrazione staff e funzionalità di supporto.
                 </p>
               </section>
 

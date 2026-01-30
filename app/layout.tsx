@@ -26,9 +26,10 @@ export const metadata: Metadata = {
   keywords: [
     'PWA',
     'prenotazioni',
-    'barber',
-    'hair salon',
-    'beauty',
+    'barbiere',
+    'pizzeria',
+    'palestra',
+    'food',
     'booking',
     'local business',
     'staff dashboard',

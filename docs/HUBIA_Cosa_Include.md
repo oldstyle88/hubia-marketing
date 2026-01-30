@@ -271,7 +271,7 @@ Documento tecnico delle funzionalità realmente presenti nella piattaforma HŪBI
 
 **Supporto**
 
-- Email: risposta standard (PRO) o priorità (MAX). Nessun SLA contrattuale.
+- Email: risposta standard (Essenziale) o priorità (Avanzato). Nessun SLA contrattuale.
 - Documentazione completa sempre disponibile.
 - **Roadmap:** chat support e “aggiornamenti in anteprima” non sono inclusi oggi; nessun claim sul sito.
 

@@ -1,7 +1,7 @@
 # HŪBIA — Allineamento offerta e sito (output)
 
 **Data:** 2026-01-30  
-**Scope:** Prezzi e contenuti allineati a offerta reale (solo PRO e MAX), verticali Barbiere/Pizzeria attivi, Palestra/Food prossimi, Estetista rimosso.
+**Scope:** Prezzi e contenuti allineati a offerta reale: due piani **Essenziale** e **Avanzato**; verticali attivi Barbiere/Parrucchiere e Food (pizzeria, street food); soluzioni avanzate (es. palestra) solo su richiesta; Estetista rimosso.
 
 ---
 
@@ -24,7 +24,7 @@
 | `components/LanguageSwitcher.tsx` | Dropdown compatto: label **IT / EN / DE / ES / FR** (no “Italiano”, “English”, …). Bandiere + label, `min-w` ridotta. |
 | `components/LivePreview.tsx` | Rimosso verticale **Estetista (beauty)**. Solo **Barbiere** e **Pizzeria**. (LivePreview non usato in homepage.) |
 | `app/[locale]/pricing/page.tsx` | Metadata description aggiornata: “Prezzi a partire da per verticale (Barbiere, Pizzeria, Palestra)”. |
-| `messages/it.json` | Copy aggiornato: proof (Dashboard staff, analytics), forWho, howItWorks (provisioning completo), pricingTeaser, pricing (subtitle, footer, faq a1), **plans** (PRO/MAX, feature da docs), footer tagline. |
+| `messages/it.json` | Copy aggiornato: proof (Staff e disponibilità, analytics), forWho, howItWorks (setup rateizzabile, call conoscitiva), pricingTeaser, pricing (Essenziale/Avanzato, prezzi Barber vs Food), **plans** (Essenziale/Avanzato, feature), footer tagline. |
 | `messages/en.json` | Allineato a `it.json` (proof, forWho, howItWorks, pricing, plans, footer). |
 | `messages/de.json` | Idem. |
 | `messages/es.json` | Idem. |
@@ -45,16 +45,16 @@
 - **Matrice prezzi (tabella “Prezzi per verticale”):**
   - `docs/HUBIA_COMMERCIAL_OFFER.md` (§6) e `docs/HUBIA_Prezzi_e_Abbonamenti.md`: già allineati (Barbiere, Pizzeria, Palestra “prossimo”).
   - Sito: `messages/*.json` → `pricing.verticalPricing.rows` e `pricing.prices` (pro/max setup + monthly).  
-- **Valori (a partire da):**
-  - **Barbiere:** PRO €499 setup + €149/mese, MAX €899 + €249/mese.
-  - **Pizzeria:** PRO €699 + €199/mese, MAX €1190 + €349/mese.
-  - **Palestra (prossimo):** PRO €899 + €249/mese, MAX €1390 + €399/mese.
+- **Valori applicati:**
+  - **Barbiere / Parrucchieri (Essenziale):** Setup €900 – €1.500 (rateizzabile 6/12 mesi) + €69 – €129/mese.
+  - **Food (pizzeria, street food) (Avanzato):** Setup €1.800 – €3.500 (rateizzabile 6/12 mesi) + €149 – €249/mese.
+  - Palestra/Fitness: solo “soluzioni avanzate su richiesta”, non presentata come pronta.
 
 ### Matrice “piano → feature”
 
 - **Docs:** `docs/HUBIA_COMMERCIAL_OFFER.md` **§7** (nuova sezione).
 - **Sito:** `messages/*.json` → `plans.pro` e `plans.max` (name, description, features).  
-  Le feature rispecchiano la matrice: PWA client + Dashboard staff, prenotazioni/ordini, push, branding, analytics, supporto; MAX = tutto PRO + multi‑sede, provisioning assistito per sede, priorità supporto.
+  Le feature rispecchiano la matrice: PWA client + staff, prenotazioni/ordini, push, branding, analytics, supporto; Avanzato = tutto Essenziale + ordini/cucina/ritiro, logiche avanzate, supporto prioritario e configurazione guidata.
 
 ---
 
@@ -69,21 +69,21 @@
   - Cambio lingua su home, pricing, contact: URL passa a `/[locale]/...` e testi nella lingua scelta.
 
 - [ ] **Pricing corretto**  
-  - Pagina Prezzi: **solo 2 card** (PRO, MAX).  
-  - Sotto: “Prezzi per verticale (a partire da)” con tabella Barbiere, Pizzeria, Palestra (prossimo).  
-  - Nessun piano “Basic” o “VIP”.  
-  - Prezzi “da €…” coerenti con i numeri sopra.
+  - Pagina Prezzi: **solo 2 piani** (Essenziale, Avanzato).  
+  - Tabella “Prezzi per verticale”: Barbiere/Parrucchieri (Essenziale), Food (Avanzato). Setup rateizzabile 6/12 mesi evidenziato.  
+  - Nessun piano “Basic”, “PRO”, “MAX” o “VIP”.  
+  - Prezzi coerenti: Barber €900–1500 setup + €69–129/mese; Food €1800–3500 setup + €149–249/mese.
 
 - [ ] **Niente “Provalo in anteprima”**  
   - Ricerca in tutto il sito: nessuna CTA o frase “Provalo in anteprima”.
 
 - [ ] **Verticali**  
-  - Copy e sezioni verticali: **Barbiere** e **Pizzeria** attivi; **Palestra** e **Food** “prossimi”.  
+  - Copy e sezioni verticali: **Barbiere/Parrucchiere** e **Food** (pizzeria, street food) attivi; **Soluzioni avanzate** (es. palestra) solo su richiesta.  
   - **Estetista** non compare.
 
-- [ ] **Provisioning e Dashboard**  
-  - FAQ / howItWorks: “Provisioning assistito” = Supabase + Vercel + env + branding PWA + seed + gate go‑live.  
-  - “Pannello amministrazione” / “Dashboard staff” usati in modo coerente con i docs.
+- [ ] **Setup e supporto**  
+  - FAQ / howItWorks: setup include progettazione, configurazione, branding, test e go‑live; rateizzazione 6/12 mesi; “Ogni progetto parte da una call conoscitiva”, niente demo pubblica.  
+  - Termini di servizio: piani “Essenziale e Avanzato”; descrizione servizio senza “pannello amministrazione” (area staff e gestione disponibilità).
 
 - [ ] **Build**  
   - `npm run build` completa senza errori.

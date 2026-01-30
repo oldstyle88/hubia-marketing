@@ -11,7 +11,7 @@
   "home": {
     "hero": {
       "title": "Fill your agenda. Cut no-shows.",
-      "subtitle": "Manage orders, staff and customers from one PWA. No marketplace, no generic apps. We build custom PWA for real businesses, not templates.",
+      "subtitle": "Premium PWA software for barbers, hairdressers and food. Bookings and orders in one app with your brand. No marketplace, no generic templates.",
       "requestDemo": "Contact us",
       "viewPrices": "View prices"
     },
@@ -28,16 +28,16 @@
       "body": "No App Store: your business gets a white-label PWA installable on iOS and Android. Same experience everywhere, one codebase, instant updates."
     },
     "forWho": {
-      "title": "Who we build for",
-      "subtitle": "Custom PWA for physical businesses. Barber, Hairdresser, Esthetician. Local food. Gym and Fitness.",
-      "barber": "Barber, Hairdresser, Esthetician",
-      "barberDesc": "Cut no-shows, fill your agenda. Auto reminders and slots always up to date.",
-      "food": "Local food",
-      "foodDesc": "Pizzerias, street food, venues with orders and pickup. Faster orders, staff in sync.",
-      "gym": "Gym / Fitness studio",
-      "gymDesc": "Memberships, classes, access control. Advanced logic for structured businesses.",
-      "tagline": "Custom, not template",
-      "taglineDesc": "Every PWA is built for your real business. No generic SaaS."
+      "title": "Who HUBIA is for",
+      "subtitle": "Two active verticals: barber and hairdresser. Food (pizzeria, street food). Advanced solutions on request only.",
+      "barber": "Barber and hairdresser",
+      "barberDesc": "Bookings, agenda, automatic reminders. Fewer no-shows, more clients managed well.",
+      "food": "Food",
+      "foodDesc": "Pizzeria, street food, venues with orders and pickup. Clear orders, kitchen and staff aligned.",
+      "gym": "Advanced solutions",
+      "gymDesc": "For specific needs (gym, multi-location, complex logic) we evaluate on request.",
+      "tagline": "Premium and custom",
+      "taglineDesc": "PWA built for real businesses. No generic off-the-shelf SaaS."
     },
     "features": {
       "title": "What's included",
@@ -82,9 +82,9 @@
       "b6desc": "Pre-release checklist and runbooks for repeatable checks."
     },
     "pricingTeaser": {
-      "title": "Two plans, zero confusion",
-      "subtitle": "PRO for single location. MAX for structured businesses (Gym, complex food, advanced logic).",
-      "cta": "See PRO and MAX"
+      "title": "Two plans: Essential and Advanced",
+      "subtitle": "Prices differ for barber/hairdresser and for food. Setup can be spread over 6 or 12 months.",
+      "cta": "View prices"
     },
     "faq": {
       "title": "FAQ",
@@ -100,24 +100,24 @@
       "q4": "What payment methods are supported?",
       "a4": "Payment integrations depend on the vertical and agreements; we evaluate them on request.",
       "q5": "Is there a limit on the number of bookings?",
-      "a5": "No. Plans differ by complexity (PRO vs MAX) and type of business.",
+      "a5": "No. Plans differ by type of business (Essential vs Advanced) and vertical.",
       "q6": "How does support work?",
-      "a6": "Email support for all plans. MAX gives you priority and assisted onboarding.",
+      "a6": "Email support for all plans. With Advanced you get priority and dedicated support at launch.",
       "q7": "Can I customise branding?",
       "a7": "Yes, all plans include branded PWA: colours, logo and app icon.",
       "q8": "Is my data secure?",
       "a8": "We use encryption, daily automated backups and GDPR compliance. Data is hosted on EU infrastructure.",
       "q9": "What if I want to change plan?",
-      "a9": "You can move from PRO to MAX (or vice versa). Changes apply to the next billing cycle.",
+      "a9": "Yes. Moving to a different plan applies from the next billing cycle.",
       "q10": "How does a project start?",
       "a10": "Every project starts after a discovery call. No public demo: we discuss your business and propose the right solution."
     }
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "Two plans: PRO for single location, MAX for structured businesses. Clear prices, no invented numbers.",
-    "footer": "One-time setup + monthly fee. Setup can be spread over 6 or 12 months.",
-    "setupIncludes": "Setup covers design, configuration, branding, testing and launch.",
+    "subtitle": "Two plans: Essential and Advanced. Clear prices for barber/hairdresser and for food. Setup can be spread over 6 or 12 months.",
+    "footer": "One-time setup + monthly subscription. Setup can be spread over 6 or 12 months at no extra cost.",
+    "setupIncludes": "Setup includes: design, configuration, branding (logo, colours, app icon), testing and go-live.",
     "setupMaxNote": "Guided configuration and direct support until go-live.",
     "contactCta": "Talk to us →",
     "perMonth": "/month",
@@ -127,53 +127,48 @@
     "faqTitle": "Questions about plans",
     "faq": {
       "q1": "What does setup include?",
-      "a1": "Setup covers design, configuration, branding, testing and launch. It can be spread over 6 or 12 months.",
-      "q2": "Can I move from PRO to MAX?",
+      "a1": "Design, configuration, branding (logo, colours, app icon), testing and go-live. You can spread the cost over 6 or 12 months.",
+      "q2": "Can I move from Essential to Advanced?",
       "a2": "Yes, the upgrade applies from the next billing cycle.",
       "q3": "How does billing work?",
       "a3": "One-time setup at activation (spread over 6–12 months if needed) and monthly recurring fee. No long-term lock-in."
     },
     "prices": {
       "pro": {
-        "setup": "€1,200 to €1,800",
-        "monthly": "€79 to €129"
+        "setup": "€900 – €1,500",
+        "monthly": "€69 – €129"
       },
       "max": {
-        "setup": "€2,500 to €4,500",
-        "monthly": "€199 to €349"
+        "setup": "€1,800 – €3,500",
+        "monthly": "€149 – €249"
       }
     },
     "verticalPricing": {
-      "title": "Who it's for",
-      "note": "PRO: Barber, Hairdresser, Esthetician, simple local food. MAX: Gym, complex food, multi-flow businesses.",
+      "title": "Prices by vertical",
+      "note": "Barber/Hairdresser: bookings and agenda. Food: orders, kitchen, pickup. Setup can be spread over 6 or 12 months.",
       "columns": {
         "vertical": "Vertical",
-        "pro": "PRO",
-        "max": "MAX"
+        "pro": "Essential",
+        "max": "Advanced"
       },
       "rows": [
         {
-          "label": "Barber, Hairdresser, Esthetician",
-          "pro": "€1,200–€1,800 setup + €79–€129/month",
-          "max": "€2,500–€4,500 setup + €199–€349/month"
+          "label": "Barber / Hairdresser",
+          "pro": "Setup €900 – €1,500 + €69 – €129/month",
+          "max": "On request"
         },
         {
-          "label": "Local food",
-          "pro": "€1,200–€1,800 setup + €79–€129/month",
-          "max": "€2,500–€4,500 setup + €199–€349/month"
-        },
-        {
-          "label": "Gym / Fitness",
-          "pro": "—",
-          "max": "€2,500–€4,500 setup + €199–€349/month"
+          "label": "Food (pizzeria, street food)",
+          "pro": "On request",
+          "max": "Setup €1,800 – €3,500 + €149 – €249/month"
         }
       ]
     }
   },
   "plans": {
     "pro": {
-      "name": "PRO",
-      "description": "Single location: Barber, Hairdresser, Esthetician, simple local food.",
+      "name": "Essential",
+      "description": "For barbers and hairdressers. One location, bookings, staff, notifications and analytics.",
       "features": [
         "Branded PWA (client + staff)",
         "Bookings or orders (depending on business)",
@@ -185,11 +180,11 @@
       ]
     },
     "max": {
-      "name": "MAX",
-      "description": "Structured businesses: Gym, complex food, multi-flow activities.",
+      "name": "Advanced",
+      "description": "For food (pizzeria, street food) and advanced solutions. Orders, kitchen, pickup and complex logic.",
       "features": [
-        "Everything in PRO",
-        "Advanced logic (memberships, classes, complex orders, roles)",
+        "Everything in Essential",
+        "Orders, kitchen and pickup flow",
         "Advanced analytics",
         "Priority support",
         "Assisted onboarding",
@@ -210,13 +205,13 @@
     "send": "Send request",
     "sending": "Sending...",
     "success": "Request sent successfully. We'll be in touch soon.",
-    "businessBarber": "Barber / Hairdresser / Esthetician",
+    "businessBarber": "Barber / Hairdresser",
     "businessOther": "Other",
-    "businessFood": "Local food",
-    "businessGym": "Gym / Fitness"
+    "businessFood": "Food (pizzeria, street food)",
+    "businessGym": "Advanced solutions (on request)"
   },
   "footer": {
-    "tagline": "Custom PWA for real businesses. Barber, local food, gym. No templates, no generic apps.",
+    "tagline": "Premium PWA software for barbers, hairdressers and food. No templates, no generic apps.",
     "product": "Product",
     "company": "Company",
     "contactLink": "Contact",

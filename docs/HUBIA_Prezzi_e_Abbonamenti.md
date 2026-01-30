@@ -1,50 +1,52 @@
-# HŪBIA — Prezzi e abbonamenti (allineati all’offerta reale)
+# HŪBIA — Prezzi e abbonamenti (allineati alla strategia commerciale)
 
 ## Posizionamento
 
-HŪBIA è una PWA premium per attività locali che vogliono **ridurre no‑show**, **riempire l’agenda** e **far scorrere gli ordini** senza attrito. Nessun software “da 15€/mese”: è un sistema operativo leggero, con setup manuale e branding completo.
+HŪBIA vende software PWA premium per verticali. Due verticali **attivi**: Barbiere/Parrucchieri e Food (Pizzeria, Street food). Soluzioni avanzate (es. palestra, multi-sede) solo su richiesta. Niente demo pubblica: ogni progetto parte da una call conoscitiva.
 
 ---
 
 ## Definizioni
 
-- **Pannello amministrazione (Dashboard staff):** interfaccia web per lo staff: agenda, disponibilità, servizi, clienti, notifiche e metriche operative base. È il “Dashboard staff” citato nel sito.
-- **Provisioning assistito:** setup manuale del fondatore: Supabase + Vercel + env + branding PWA + seed servizi/staff + gate go‑live.
+- **Setup:** progettazione, configurazione, branding (logo, colori, icona app), test e messa online. Può essere **rateizzato in 6 o 12 mesi** senza aggravio.
+- **Abbonamento:** canone mensile ricorrente. Nessun vincolo di durata.
 
 ---
 
-## Piani disponibili (solo 2)
+## Piani (solo 2)
 
-### PRO — singola sede
-- PWA client + pannello amministrazione
-- Prenotazioni (barbiere) o ordini+prenotazioni (pizzeria)
-- Notifiche push e promemoria
-- Branding PWA (icone, tema, manifest)
-- Analytics operative base
+Non si usano i nomi PRO / MAX. Solo:
 
-### MAX — multi‑sede
-- Tutto PRO su più sedi
-- Provisioning assistito per sede
-- Priorità nelle richieste email
+### Essenziale
+- Per **barbieri e parrucchieri**.
+- Una sede, prenotazioni, gestione staff e disponibilità, notifiche automatiche, analytics base.
+- PWA con il brand del cliente (app clienti + app staff).
+- Supporto email standard.
+- Setup rateizzabile 6 o 12 mesi.
+
+### Avanzato
+- Per **food** (pizzeria, street food) e soluzioni avanzate su richiesta.
+- Ordini, flusso cucina e ritiro, logiche complesse.
+- Tutto ciò che include Essenziale, più supporto prioritario e configurazione guidata in fase di avvio.
+- Setup rateizzabile 6 o 12 mesi.
 
 ---
 
-## Prezzi per verticale (a partire da)
+## Prezzi per verticale
 
-**Nota:** Pizzeria e Palestra = progetto isolato con database dedicato.
-
-| Verticale | PRO (setup + mensile) | MAX (setup + mensile) |
+| Verticale | Essenziale | Avanzato |
 | --- | --- | --- |
-| **Barbiere (core)** | da €499 setup + €149/mese | da €899 setup + €249/mese |
-| **Pizzeria** | da €699 setup + €199/mese | da €1190 setup + €349/mese |
-| **Palestra (prossimo)** | da €899 setup + €249/mese | da €1390 setup + €399/mese |
+| **Barbiere / Parrucchieri** | Setup €900 – €1.500 + €69 – €129/mese | Su richiesta |
+| **Food (pizzeria, street food)** | Su richiesta | Setup €1.800 – €3.500 + €149 – €249/mese |
 
-Prezzi **a partire da**. Variazione in base a complessità, numero sedi e richieste specifiche.
+- Il setup è **rateizzabile in 6 o 12 mesi**.
+- Nessun riferimento a “Estetista” come verticale commerciale (era solo test).
+- Palestra/Fitness e altre soluzioni avanzate: **solo su richiesta**, non presentate come pronte.
 
 ---
 
 ## Verticali
 
-- **Attivi:** Barbiere (core), Pizzeria.
-- **Prossimi:** Palestra, Food.
-- **Estetista:** solo test; non è verticale commerciale né compare nel sito.
+- **Attivi:** Barbiere e Parrucchieri. Food (Pizzeria, Street food).
+- **Estetista:** era solo un test; **non** compare come verticale nel sito.
+- **Palestra / Fitness:** non presentata come pronta; solo “soluzioni avanzate su richiesta”.

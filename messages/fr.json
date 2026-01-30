@@ -28,16 +28,16 @@
       "body": "Nous ne publions pas d'apps sur les stores iOS/Android. Chaque client reçoit une PWA white-label : même UX sur tous les appareils, un seul code, mises à jour instantanées."
     },
     "forWho": {
-      "title": "Pour qui nous construisons",
-      "subtitle": "PWA sur mesure pour activités physiques. Barbier, Coiffeur, Esthéticien. Food local. Salle de sport et Fitness.",
-      "barber": "Barbier, Coiffeur, Esthéticien",
-      "barberDesc": "Moins de no‑shows, agenda rempli. Rappels auto et créneaux à jour.",
-      "food": "Food local",
-      "foodDesc": "Pizzerias, street food, lieux avec commandes et retrait. Commandes plus rapides, équipe synchronisée.",
-      "gym": "Salle de sport / Fitness",
-      "gymDesc": "Abonnements, cours, gestion des accès. Logique avancée pour activités structurées.",
-      "tagline": "Sur mesure, pas de template",
-      "taglineDesc": "Chaque PWA est construite pour votre activité réelle. Pas de SaaS générique."
+      "title": "Pour qui est HUBIA",
+      "subtitle": "Deux verticales actives : barbier et coiffeur. Food (pizzeria, street food). Solutions avancées sur demande uniquement.",
+      "barber": "Barbier et coiffeur",
+      "barberDesc": "Réservations, agenda, rappels automatiques. Moins de no‑shows, plus de clients bien gérés.",
+      "food": "Food",
+      "foodDesc": "Pizzeria, street food, lieux avec commandes et retrait. Commandes claires, cuisine et équipe alignées.",
+      "gym": "Solutions avancées",
+      "gymDesc": "Pour des besoins spécifiques (salle de sport, multi-sites, logique complexe) nous évaluons sur demande.",
+      "tagline": "Premium et sur mesure",
+      "taglineDesc": "PWA construites pour des activités réelles. Pas de SaaS générique."
     },
     "features": {
       "title": "Fonctionnalités essentielles et mesurables",
@@ -82,9 +82,9 @@
       "b6desc": "Checklist pré-release et runbooks pour des vérifications reproductibles."
     },
     "pricingTeaser": {
-      "title": "Deux plans, zéro confusion",
-      "subtitle": "PRO pour un site. MAX pour activités structurées (Salle de sport, food complexe, logique avancée).",
-      "cta": "Voir PRO et MAX"
+      "title": "Deux plans : Essentiel et Avancé",
+      "subtitle": "Tarifs différenciés pour barbier/coiffeur et pour food. Setup échelonnable sur 6 ou 12 mois.",
+      "cta": "Voir les tarifs"
     },
     "faq": {
       "title": "FAQ",
@@ -102,7 +102,7 @@
       "q5": "Y a-t-il une limite de réservations ?",
       "a5": "Non. Les offres diffèrent par le nombre d'équipe, de boutiques et de fonctionnalités avancées.",
       "q6": "Comment fonctionne le support ?",
-      "a6": "Support par email pour toutes les offres. Avec MAX, priorité dans les demandes.",
+      "a6": "Support par email pour tous. Avec Avancé : priorité et support dédié en phase de lancement.",
       "q7": "Puis-je personnaliser la marque ?",
       "a7": "Oui, toutes les offres incluent couleurs, logo et icône app. Les offres supérieures incluent domaine personnalisé.",
       "q8": "Mes données sont-elles sécurisées ?",
@@ -115,9 +115,10 @@
   },
   "pricing": {
     "title": "Tarifs",
-    "subtitle": "Deux plans : PRO pour un site, MAX pour activités structurées. Prix clairs, pas de chiffres inventés.",
-    "footer": "Setup unique + mensuel. Le setup peut être échelonné sur 6 ou 12 mois.",
-    "setupIncludes": "Le setup couvre conception, configuration, branding, tests et mise en ligne.",
+    "subtitle": "Deux plans : Essentiel et Avancé. Prix clairs pour barbier/coiffeur et pour food. Setup échelonnable sur 6 ou 12 mois.",
+    "footer": "Setup unique + abonnement mensuel. Le setup peut être échelonné sur 6 ou 12 mois sans surcoût.",
+    "setupIncludes": "Le setup inclut : conception, configuration, branding (logo, couleurs, icône), tests et mise en ligne.",
+    "setupMaxNote": "Support dédié en phase de lancement et configuration guidée jusqu'au go-live.",
     "contactCta": "Parlons‑en →",
     "perMonth": "/mois",
     "setupOneTime": "setup (unique)",
@@ -126,74 +127,69 @@
     "faqTitle": "Questions sur les offres",
     "faq": {
       "q1": "Que comprend le setup ?",
-      "a1": "Le setup couvre conception, configuration, branding, tests et mise en ligne. Il peut être échelonné sur 6 ou 12 mois.",
-      "q2": "Puis‑je passer de PRO à MAX ?",
+      "a1": "Conception, configuration, branding (logo, couleurs, icône app), tests et mise en ligne. Vous pouvez échelonner le coût sur 6 ou 12 mois.",
+      "q2": "Puis‑je passer d'Essentiel à Avancé ?",
       "a2": "Oui, le changement s’applique au prochain cycle de facturation.",
       "q3": "Comment fonctionne la facturation ?",
-      "a3": "Setup unique à l’activation et mensualité récurrente. Pas d’engagement long terme."
+      "a3": "Setup unique à l'activation (échelonnable sur 6 ou 12 mois) et abonnement mensuel. Aucun engagement de durée."
     },
     "prices": {
       "pro": {
-        "setup": "de 1 200 € à 1 800 €",
-        "monthly": "de 79 € à 129 €"
+        "setup": "900 € – 1 500 €",
+        "monthly": "69 € – 129 €"
       },
       "max": {
-        "setup": "de 2 500 € à 4 500 €",
-        "monthly": "de 199 € à 349 €"
+        "setup": "1 800 € – 3 500 €",
+        "monthly": "149 € – 249 €"
       }
     },
     "verticalPricing": {
-      "title": "Pour qui",
-      "note": "PRO : Barbier, Coiffeur, Esthéticien, food local simple. MAX : Salle de sport, food complexe, activités à plusieurs flux.",
+      "title": "Tarifs par verticale",
+      "note": "Barbier/Coiffeur : réservations et agenda. Food : commandes, cuisine, retrait. Le setup est échelonnable sur 6 ou 12 mois.",
       "columns": {
         "vertical": "Verticale",
-        "pro": "PRO",
-        "max": "MAX"
+        "pro": "Essentiel",
+        "max": "Avancé"
       },
       "rows": [
         {
-          "label": "Barbier, Coiffeur, Esthéticien",
-          "pro": "1 200–1 800 € setup + 79–129 €/mois",
-          "max": "2 500–4 500 € setup + 199–349 €/mois"
+          "label": "Barbier / Coiffeur",
+          "pro": "Setup 900 € – 1 500 € + 69 € – 129 €/mois",
+          "max": "Sur demande"
         },
         {
-          "label": "Food local",
-          "pro": "1 200–1 800 € setup + 79–129 €/mois",
-          "max": "2 500–4 500 € setup + 199–349 €/mois"
-        },
-        {
-          "label": "Salle de sport / Fitness",
-          "pro": "—",
-          "max": "2 500–4 500 € setup + 199–349 €/mois"
+          "label": "Food (pizzeria, street food)",
+          "pro": "Sur demande",
+          "max": "Setup 1 800 € – 3 500 € + 149 € – 249 €/mois"
         }
       ]
     }
   },
   "plans": {
     "pro": {
-      "name": "PRO",
-      "description": "Un site : Barbier, Coiffeur, Esthéticien, food local simple.",
+      "name": "Essentiel",
+      "description": "Pour barbiers et coiffeurs. Un site, réservations, équipe, notifications et analytique.",
       "features": [
         "PWA de marque (client + équipe)",
-        "Réservations ou commandes (selon l'activité)",
+        "Réservations et gestion d'agenda",
         "Gestion équipe et disponibilités",
         "Notifications automatiques",
         "Analytique de base",
-        "Support standard",
-        "Le setup couvre conception, configuration, branding, tests et mise en ligne."
+        "Support email",
+        "Setup échelonnable sur 6 ou 12 mois. Inclut : conception, configuration, branding, tests et mise en ligne."
       ]
     },
     "max": {
-      "name": "MAX",
-      "description": "Activités structurées : Salle de sport, food complexe, plusieurs flux.",
+      "name": "Avancé",
+      "description": "Pour food (pizzeria, street food) et solutions avancées. Commandes, cuisine, retrait et logique complexe.",
       "features": [
-        "Tout PRO inclus",
-        "Logique avancée (abonnements, cours, commandes complexes, rôles)",
+        "Tout Essentiel inclus",
+        "Commandes, flux cuisine et retrait",
+        "Logique avancée sur mesure",
         "Analytique avancée",
         "Support prioritaire",
-        "Onboarding assisté",
-        "Audit pré go‑live",
-        "Configuration guidée et support direct jusqu'au go‑live."
+        "Configuration guidée et support en phase de lancement",
+        "Setup échelonnable sur 6 ou 12 mois."
       ]
     }
   },
@@ -209,13 +205,13 @@
     "send": "Envoyer la demande",
     "sending": "Envoi en cours...",
     "success": "Demande envoyée avec succès. Nous vous recontacterons rapidement.",
-    "businessBarber": "Barbier / Coiffeur / Esthéticien",
+    "businessBarber": "Barbier / Coiffeur",
     "businessOther": "Autre",
-    "businessFood": "Food local",
-    "businessGym": "Salle de sport / Fitness"
+    "businessFood": "Food (pizzeria, street food)",
+    "businessGym": "Solutions avancées (sur demande)"
   },
   "footer": {
-    "tagline": "PWA sur mesure pour activités réelles. Barbier, food local, salle de sport. Pas de templates, pas d'apps génériques.",
+    "tagline": "Logiciel PWA premium pour barbiers, coiffeurs et food. Pas de templates, pas d'apps génériques.",
     "product": "Produit",
     "company": "Entreprise",
     "contactLink": "Contact",

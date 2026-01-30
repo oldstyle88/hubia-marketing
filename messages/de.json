@@ -28,16 +28,16 @@
       "body": "Wir liefern keine iOS/Android-Store-Apps. Jeder Kunde erhält eine White-Label-PWA: gleiche UX auf allen Geräten, eine Codebasis, sofortige Updates."
     },
     "forWho": {
-      "title": "Für wen wir bauen",
-      "subtitle": "PWA maßgeschneidert für physische Betriebe. Barber, Friseur, Kosmetik. Lokales Food. Gym und Fitness.",
-      "barber": "Barber, Friseur, Kosmetik",
-      "barberDesc": "Weniger No‑Shows, vollere Agenda. Auto‑Reminder und stets aktuelle Slots.",
-      "food": "Lokales Food",
-      "foodDesc": "Pizzerien, Street Food, Lokale mit Bestellung und Abholung. Schnellere Bestellungen, Team synchron.",
-      "gym": "Gym / Fitness-Studio",
-      "gymDesc": "Abos, Kurse, Zugangskontrolle. Erweiterte Logik für strukturierte Betriebe.",
-      "tagline": "Maßgeschneidert, kein Template",
-      "taglineDesc": "Jede PWA wird für dein reales Business gebaut. Kein generisches SaaS."
+      "title": "Für wen HUBIA ist",
+      "subtitle": "Zwei aktive Verticals: Barbiere und Friseur. Food (Pizzeria, Street food). Erweiterte Lösungen nur auf Anfrage.",
+      "barber": "Barbiere und Friseur",
+      "barberDesc": "Buchungen, Agenda, automatische Erinnerungen. Weniger No‑Shows, mehr Kunden gut verwaltet.",
+      "food": "Food",
+      "foodDesc": "Pizzeria, Street food, Lokale mit Bestellung und Abholung. Klare Bestellungen, Küche und Team abgestimmt.",
+      "gym": "Erweiterte Lösungen",
+      "gymDesc": "Für spezifische Anforderungen (Gym, Multi-Standort) bewerten wir auf Anfrage.",
+      "tagline": "Premium und maßgeschneidert",
+      "taglineDesc": "PWA für reale Betriebe. Kein generisches SaaS."
     },
     "features": {
       "title": "Essentielle, messbare Features",
@@ -82,9 +82,9 @@
       "b6desc": "Pre-Release-Checkliste und Runbooks für wiederholbare Prüfungen."
     },
     "pricingTeaser": {
-      "title": "Zwei Pläne, keine Verwirrung",
-      "subtitle": "PRO für eine Location. MAX für strukturierte Betriebe (Gym, komplexes Food, erweiterte Logik).",
-      "cta": "PRO und MAX ansehen"
+      "title": "Zwei Pläne: Essenziale und Avanzato",
+      "subtitle": "Preise für Barbiere/Friseur und für Food. Setup auf 6 oder 12 Monate verteilbar.",
+      "cta": "Preise ansehen"
     },
     "faq": {
       "title": "Häufige Fragen",
@@ -102,7 +102,7 @@
       "q5": "Gibt es ein Limit bei Buchungen?",
       "a5": "Nein. Die Pläne unterscheiden sich nach Anzahl der Mitarbeiter, Shops und erweiterten Funktionen.",
       "q6": "Wie funktioniert der Support?",
-      "a6": "E-Mail-Support für alle Pläne. Bei MAX haben Sie Priorität bei Anfragen.",
+      "a6": "E-Mail-Support für alle. Mit Avanzato haben Sie Priorität und dedizierten Support in der Startphase.",
       "q7": "Kann ich das Branding anpassen?",
       "a7": "Ja, alle Pläne beinhalten Farben, Logo und App-Icon. Höhere Pläne inkl. eigene Domain.",
       "q8": "Sind meine Daten sicher?",
@@ -115,9 +115,10 @@
   },
   "pricing": {
     "title": "Preise",
-    "subtitle": "Zwei Pläne: PRO für eine Location, MAX für strukturierte Betriebe. Klare Preise, keine erfundenen Zahlen.",
-    "footer": "Einmaliges Setup + monatliche Gebühr. Setup kann auf 6 oder 12 Monate verteilt werden.",
-    "setupIncludes": "Das Setup umfasst Konzeption, Konfiguration, Branding, Test und Go‑Live.",
+    "subtitle": "Zwei Pläne: Essenziale und Avanzato. Klare Preise für Barbiere/Friseur und für Food. Setup auf 6 oder 12 Monate verteilbar.",
+    "footer": "Einmaliges Setup + monatliche Gebühr. Setup kann auf 6 oder 12 Monate verteilt werden, ohne Aufschlag.",
+    "setupIncludes": "Das Setup umfasst Konzeption, Konfiguration, Branding (Logo, Farben, Icon), Test und Go‑Live.",
+    "setupMaxNote": "Dedizierter Support in der Startphase und geführte Konfiguration bis zum Go‑Live.",
     "contactCta": "Sprich mit uns →",
     "perMonth": "/Monat",
     "setupOneTime": "Setup (einmalig)",
@@ -127,52 +128,47 @@
     "faq": {
       "q1": "Was umfasst das Setup?",
       "a1": "Das Setup umfasst Konzeption, Konfiguration, Branding, Test und Go‑Live. Es kann auf 6 oder 12 Monate verteilt werden.",
-      "q2": "Kann ich von PRO zu MAX wechseln?",
+      "q2": "Kann ich von Essenziale zu Avanzato wechseln?",
       "a2": "Ja, der Wechsel gilt ab dem nächsten Abrechnungszyklus.",
       "q3": "Wie funktioniert die Abrechnung?",
       "a3": "Einmaliges Setup bei Aktivierung (Ratenzahlung 6–12 Monate möglich) und monatliche Gebühr. Keine Laufzeitbindung."
     },
     "prices": {
       "pro": {
-        "setup": "€1.200 bis €1.800",
-        "monthly": "€79 bis €129"
+        "setup": "€900 – €1.500",
+        "monthly": "€69 – €129"
       },
       "max": {
-        "setup": "€2.500 bis €4.500",
-        "monthly": "€199 bis €349"
+        "setup": "€1.800 – €3.500",
+        "monthly": "€149 – €249"
       }
     },
     "verticalPricing": {
       "title": "Für wen",
-      "note": "PRO: Barber, Friseur, Kosmetik, einfaches lokales Food. MAX: Gym, komplexes Food, Betriebe mit mehreren Flows.",
+      "note": "Barbiere/Friseur: Buchungen und Agenda. Food: Bestellungen, Küche, Abholung. Setup auf 6 oder 12 Monate verteilbar.",
       "columns": {
         "vertical": "Vertical",
-        "pro": "PRO",
-        "max": "MAX"
+        "pro": "Essenziale",
+        "max": "Avanzato"
       },
       "rows": [
         {
-          "label": "Barber, Friseur, Kosmetik",
-          "pro": "€1.200–€1.800 Setup + €79–€129/Monat",
-          "max": "€2.500–€4.500 Setup + €199–€349/Monat"
+          "label": "Barbiere / Friseur",
+          "pro": "Setup €900 – €1.500 + €69 – €129/Monat",
+          "max": "Su richiesta"
         },
         {
-          "label": "Lokales Food",
-          "pro": "€1.200–€1.800 Setup + €79–€129/Monat",
-          "max": "€2.500–€4.500 Setup + €199–€349/Monat"
-        },
-        {
-          "label": "Gym / Fitness",
-          "pro": "—",
-          "max": "€2.500–€4.500 Setup + €199–€349/Monat"
+          "label": "Food (Pizzeria, Street food)",
+          "pro": "Su richiesta",
+          "max": "Setup €1.800 – €3.500 + €149 – €249/Monat"
         }
       ]
     }
   },
   "plans": {
     "pro": {
-      "name": "PRO",
-      "description": "Eine Location: Barber, Friseur, Kosmetik, einfaches lokales Food.",
+      "name": "Essenziale",
+      "description": "Per barbieri e parrucchieri. Una sede, prenotazioni, staff, notifiche e analytics.",
       "features": [
         "Gebrandete PWA (Kunde + Staff)",
         "Buchungen oder Bestellungen (je nach Business)",
@@ -184,10 +180,10 @@
       ]
     },
     "max": {
-      "name": "MAX",
-      "description": "Strukturierte Betriebe: Gym, komplexes Food, mehrere Flows.",
+      "name": "Avanzato",
+      "description": "Per food (pizzeria, street food) e soluzioni avanzate. Ordini, cucina, ritiro e logiche complesse.",
       "features": [
-        "Alles aus PRO",
+        "Alles aus Essenziale",
         "Erweiterte Logik (Abos, Kurse, komplexe Bestellungen, Rollen)",
         "Erweiterte Analytics",
         "Prioritäts-Support",
@@ -209,13 +205,13 @@
     "send": "Anfrage senden",
     "sending": "Wird gesendet...",
     "success": "Anfrage erfolgreich gesendet. Wir melden uns in Kürze.",
-    "businessBarber": "Barber / Friseur / Kosmetik",
+    "businessBarber": "Barbiere / Parrucchiere",
     "businessOther": "Sonstiges",
-    "businessFood": "Lokales Food",
-    "businessGym": "Gym / Fitness"
+    "businessFood": "Food (Pizzeria, Street food)",
+    "businessGym": "Soluzioni avanzate (su richiesta)"
   },
   "footer": {
-    "tagline": "Maßgeschneiderte PWA für reale Betriebe. Barber, lokales Food, Gym. Keine Templates, keine Standard-Apps.",
+    "tagline": "Software PWA premium per barbieri, parrucchieri e food. Niente template, niente app generiche.",
     "product": "Produkt",
     "company": "Unternehmen",
     "contactLink": "Kontakt",

@@ -6,11 +6,11 @@ import { useTranslations } from 'next-intl'
 import { useRef, useState, useEffect } from 'react'
 
 const locales: { code: 'it' | 'en' | 'de' | 'es' | 'fr'; label: string; flag: string }[] = [
-  { code: 'it', label: 'Italiano', flag: '🇮🇹' },
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
-  { code: 'es', label: 'Español', flag: '🇪🇸' },
-  { code: 'fr', label: 'Français', flag: '🇫🇷' },
+  { code: 'it', label: 'IT', flag: '🇮🇹' },
+  { code: 'en', label: 'EN', flag: '🇬🇧' },
+  { code: 'de', label: 'DE', flag: '🇩🇪' },
+  { code: 'es', label: 'ES', flag: '🇪🇸' },
+  { code: 'fr', label: 'FR', flag: '🇫🇷' },
 ]
 
 function GlobeIcon({ className }: { className?: string }) {
@@ -76,7 +76,7 @@ export function LanguageSwitcher() {
         <nav
           ref={dropdownRef}
           aria-label={t('chooseLanguage')}
-          className="absolute right-0 top-full mt-2 min-w-[180px] py-2 rounded-xl border border-white/15 bg-surface-elevated shadow-xl z-50"
+          className="absolute right-0 top-full mt-2 min-w-[140px] py-1.5 rounded-xl border border-white/15 bg-surface-elevated shadow-xl z-50"
         >
           <ul className="space-y-0.5" role="list">
             {locales.map((loc) => {
@@ -87,13 +87,13 @@ export function LanguageSwitcher() {
                     href={pathname || '/'}
                     locale={loc.code}
                     onClick={() => setOpen(false)}
-                    className={`flex items-center gap-3 w-full px-4 py-2.5 text-left text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-accent-blue/40 focus:ring-inset rounded-lg mx-1 ${
+                    className={`flex items-center gap-2 w-full px-3 py-2 text-left text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-accent-blue/40 focus:ring-inset rounded-lg mx-1 ${
                       isActive
                         ? 'text-accent-blue bg-white/5'
                         : 'text-secondary hover:text-primary hover:bg-white/5'
                     }`}
                   >
-                    <span className="text-lg leading-none" aria-hidden>{loc.flag}</span>
+                    <span className="text-base leading-none" aria-hidden>{loc.flag}</span>
                     <span>{loc.label}</span>
                   </Link>
                 </li>

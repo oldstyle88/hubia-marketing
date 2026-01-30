@@ -269,17 +269,11 @@ Documento tecnico delle funzionalità realmente presenti nella piattaforma HŪBI
 
 ## Supporto
 
-**Supporto Prioritario**
+**Supporto**
 
-- Email: risposta entro 24h lavorative (PRO) o 4h (VIP)
-- Chat: supporto via chat per questioni urgenti (VIP)
-- Documentazione completa sempre disponibile
-
-**Aggiornamenti**
-
-- Accesso a tutti gli aggiornamenti della piattaforma
-- Aggiornamenti in anteprima per VIP
-- Changelog dettagliato per ogni aggiornamento
+- Email: risposta standard (PRO) o priorità (MAX). Nessun SLA contrattuale.
+- Documentazione completa sempre disponibile.
+- **Roadmap:** chat support e “aggiornamenti in anteprima” non sono inclusi oggi; nessun claim sul sito.
 
 **Formazione**
 

@@ -8,8 +8,8 @@ HŪBIA è una PWA premium per attività locali che vogliono **ridurre no‑show*
 
 ## Definizioni
 
-- **Pannello amministrazione (Dashboard staff):** agenda, disponibilità, servizi, clienti, notifiche e metriche operative base.
-- **Provisioning assistito:** setup manuale (Supabase + Vercel + env + branding PWA + seed + gate go‑live).
+- **Pannello amministrazione (Dashboard staff):** interfaccia web per lo staff: agenda, disponibilità, servizi, clienti, notifiche e metriche operative base. È il “Dashboard staff” citato nel sito.
+- **Provisioning assistito:** setup manuale del fondatore: Supabase + Vercel + env + branding PWA + seed servizi/staff + gate go‑live.
 
 ---
 
@@ -47,4 +47,4 @@ Prezzi **a partire da**. Variazione in base a complessità, numero sedi e richie
 
 - **Attivi:** Barbiere (core), Pizzeria.
 - **Prossimi:** Palestra, Food.
-- **Estetista:** era un test, non è un verticale commerciale.
+- **Estetista:** solo test; non è verticale commerciale né compare nel sito.

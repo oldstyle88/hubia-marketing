@@ -14,8 +14,8 @@ HŪBIA è una piattaforma PWA per attività locali: prenotazioni, ordini (dove p
 
 ## 2. Definizioni (termini usati nel sito)
 
-- **Pannello amministrazione (Dashboard staff):** interfaccia web per lo staff con agenda, disponibilità, servizi, clienti, notifiche e metriche operative di base. **Non** è un pannello “Founder” o multi‑tenant venduto al cliente.
-- **Provisioning assistito:** setup **manuale** eseguito dal fondatore: progetto Supabase, schema/seed, progetto Vercel, variabili d’ambiente, branding PWA (manifest, icone, tema), seed servizi/staff, checklist gate go‑live.
+- **Pannello amministrazione (Dashboard staff):** interfaccia web per lo staff (agenda, disponibilità, servizi, clienti, notifiche, metriche operative di base). È il “Dashboard staff” usato nel sito. **Non** è un pannello Founder né un multi‑tenant venduto al cliente.
+- **Provisioning assistito:** setup **manuale** eseguito dal fondatore: progetto Supabase, schema/seed, progetto Vercel, variabili d’ambiente, branding PWA (manifest, icone, tema), seed servizi/staff, checklist gate go‑live. In sintesi: **Supabase + Vercel + env + branding PWA + seed + gate**.
 
 ---
 
@@ -31,7 +31,7 @@ HŪBIA è una piattaforma PWA per attività locali: prenotazioni, ordini (dove p
 
 - **Attivi:** Barbiere (core), Pizzeria.
 - **Prossimi (Roadmap):** Palestra, Food.
-- **Estetista:** era un test, **non** è un verticale commerciale.
+- **Estetista:** solo test interno; **non** compare come verticale nel sito né nell’offerta.
 
 ---
 
@@ -67,6 +67,23 @@ I prezzi sono **a partire da** e variano in base a complessità, numero sedi e r
 
 ---
 
-## 7. Disclaimer provisioning manuale
+## 7. Matrice piano → feature (cosa include esattamente)
+
+| Elemento | PRO | MAX |
+| --- | --- | --- |
+| PWA client + Dashboard staff | ✓ | ✓ |
+| Prenotazioni (barbiere) o ordini+prenotazioni (pizzeria) | ✓ | ✓ |
+| Notifiche push e promemoria | ✓ | ✓ |
+| Branding PWA (icone, tema, manifest) | ✓ | ✓ |
+| Analytics operative base | ✓ | ✓ |
+| Numero sedi | 1 | più sedi |
+| Provisioning assistito | setup iniziale | per ogni sede |
+| Supporto | email standard | priorità email |
+
+**Roadmap (non incluso oggi):** Coach Incassi, segmentazione avanzata (churn risk, VIP), insight predittivi, automazioni avanzate, chat support, aggiornamenti in anteprima. Nessun claim su queste funzionalità nel sito.
+
+---
+
+## 8. Disclaimer provisioning manuale
 
 **Il provisioning dei clienti non è automatizzato.** Ogni nuovo shop richiede intervento manuale del fondatore (script, database, Vercel, branding). I tempi di attivazione dipendono dalla disponibilità e dalla coda di lavoro. Non esiste impegno contrattuale su tempi di go‑live se non esplicitamente concordato per iscritto.

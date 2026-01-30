@@ -12,7 +12,7 @@ export async function generateMetadata() {
   const t = await getTranslations('pricing')
   return {
     title: `${t('title')} — HŪBIA`,
-    description: 'PRO e MAX. Setup una tantum e canone mensile. PWA-only, no app nativa.',
+    description: 'PRO e MAX. Prezzi a partire da per verticale (Barbiere, Pizzeria, Palestra). Setup una tantum + canone mensile.',
   }
 }
 

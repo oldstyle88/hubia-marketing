@@ -18,22 +18,22 @@
     "proof": {
       "clientPwa": "Client PWA",
       "clientPwaDesc": "App instalable para clientes con tu marca. Reservas y pedidos sin fricción.",
-      "staffDashboard": "Panel de equipo",
-      "staffDashboardDesc": "Panel de administración para el equipo: agenda, servicios, disponibilidad y clientes.",
-      "analytics": "Analíticas e informes",
-      "analyticsDesc": "Métricas operativas: ingresos, reservas/pedidos, clientes y tendencias."
+      "staffDashboard": "Panel staff",
+      "staffDashboardDesc": "Panel de administración para el equipo: agenda, servicios, disponibilidad, clientes y notificaciones.",
+      "analytics": "Analítica operativa",
+      "analyticsDesc": "Ingresos, reservas/pedidos, clientes y tendencias. Métricas medibles, sin promesas genéricas."
     },
     "pwaBlock": {
       "title": "Solo PWA, sin apps nativas",
       "body": "No publicamos apps en tiendas iOS/Android. Cada cliente recibe una PWA white-label: misma UX en todos los dispositivos, un solo código, actualizaciones al instante."
     },
     "forWho": {
-      "title": "Verticales activas",
-      "subtitle": "Hoy: Barbería y Pizzería. Próximas: Gimnasio y Food.",
+      "title": "Verticales",
+      "subtitle": "Activas: Barbería y Pizzería. Próximas: Gimnasio y Food.",
       "barber": "Barbería (core)",
-      "barberDesc": "Reduce no‑shows con recordatorios y agenda siempre actualizada.",
+      "barberDesc": "Reduce no‑shows, llena la agenda. Recordatorios automáticos y slots siempre actualizados.",
       "pizzeria": "Pizzería",
-      "pizzeriaDesc": "Pedidos más rápidos, menos errores, staff sincronizado.",
+      "pizzeriaDesc": "Pedidos más rápidos, menos errores. Cocina y staff sincronizados en tiempo real.",
       "gym": "Gimnasio (próximo)",
       "gymDesc": "En camino: membresías, clases y accesos.",
       "food": "Food (próximo)",
@@ -57,13 +57,13 @@
     },
     "howItWorks": {
       "title": "Cómo funciona",
-      "subtitle": "Configuración rápida y guiada",
+      "subtitle": "Setup manual, go‑live con checklist",
       "setup": "Setup",
-      "setupDesc": "Provisioning asistido: Supabase, Vercel, env y branding PWA.",
+      "setupDesc": "Provisioning asistido: Supabase + Vercel + env + branding PWA + seed + gate go‑live.",
       "config": "Configuración",
       "configDesc": "Servicios, staff, horarios y seed inicial.",
-      "golive": "Go-live",
-      "goliveDesc": "Checklist gate y verificación final."
+      "golive": "Go‑live",
+      "goliveDesc": "Checklist gate y verificación final antes del lanzamiento."
     },
     "reliability": {
       "title": "Fiabilidad by design",
@@ -83,7 +83,7 @@
     },
     "pricingTeaser": {
       "title": "Dos planes, precios desde",
-      "subtitle": "PRO para una sede, MAX para multi‑sede. Precios desde según vertical.",
+      "subtitle": "PRO para una sede, MAX para multi‑sede. Precios desde según vertical (Barbería, Pizzería, Gimnasio).",
       "cta": "Ver PRO y MAX"
     },
     "faq": {
@@ -115,8 +115,8 @@
   },
   "pricing": {
     "title": "Precios desde",
-    "subtitle": "Dos planes, sin confusión. PRO para una sede, MAX para multi‑sede y provisioning asistido.",
-    "footer": "Setup único + mensualidad, desde según vertical.",
+    "subtitle": "Dos planes: PRO (una sede) y MAX (multi‑sede). Precios desde según vertical.",
+    "footer": "Setup único + mensualidad. Ver precios por vertical abajo (Barbería, Pizzería, Gimnasio).",
     "setupIncludes": "Provisioning asistido: Supabase + Vercel + env + branding PWA + seed + gate go‑live.",
     "contactCta": "Habla con nosotros →",
     "perMonth": "/mes",
@@ -126,7 +126,7 @@
     "faqTitle": "Preguntas sobre los planes",
     "faq": {
       "q1": "¿Qué es el provisioning asistido?",
-      "a1": "Setup manual: Supabase, Vercel, variables de entorno, branding PWA, seed y checklist go‑live.",
+      "a1": "Setup manual: Supabase + Vercel + env + branding PWA + seed + gate go‑live. No está automatizado.",
       "q2": "¿Puedo pasar de PRO a MAX?",
       "a2": "Sí, el cambio aplica en el siguiente ciclo de facturación.",
       "q3": "¿Cómo funciona el pago?",
@@ -172,19 +172,19 @@
   "plans": {
     "pro": {
       "name": "PRO",
-      "description": "PWA cliente + panel admin. Reservas/pedidos, push, branding. Soporte estándar.",
+      "description": "Una sede. PWA cliente + panel staff, reservas/pedidos, push, branding. Soporte email estándar.",
       "features": [
-        "PWA cliente + panel admin",
+        "PWA cliente + panel staff (panel administración)",
         "Reservas (barbería) o pedidos+reservas (pizzería)",
         "Notificaciones push y recordatorios",
         "Branding PWA (iconos, tema, manifest)",
-        "Analítica operativa básica",
+        "Analítica operativa base",
         "Soporte email estándar"
       ]
     },
     "max": {
       "name": "MAX",
-      "description": "Todo PRO en varias sedes + provisioning asistido por sede + soporte prioritario.",
+      "description": "Varias sedes. Todo PRO + provisioning asistido por sede + soporte prioritario.",
       "features": [
         "Todo PRO incluido",
         "Multi‑sede (varios locales)",
@@ -213,7 +213,7 @@
     "businessFood": "Food (próximo)"
   },
   "footer": {
-    "tagline": "PWA para barbería y pizzería. Reservas, pedidos, staff y analítica operativa.",
+    "tagline": "PWA para barbería y pizzería. Menos no‑shows, pedidos más rápidos, agenda llena.",
     "product": "Producto",
     "company": "Empresa",
     "contactLink": "Contacto",

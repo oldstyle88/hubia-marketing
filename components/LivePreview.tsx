@@ -3,17 +3,15 @@
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 
-type Vertical = 'barber' | 'beauty' | 'pizza'
+type Vertical = 'barber' | 'pizza'
 
 const verticals: { id: Vertical; key: string }[] = [
   { id: 'barber', key: 'barber' },
-  { id: 'beauty', key: 'beauty' },
   { id: 'pizza', key: 'pizza' },
 ]
 
 const tintMap: Record<Vertical, string> = {
   barber: 'from-accent-blue/25 via-accent-violet/10 to-transparent',
-  beauty: 'from-accent-violet/25 via-accent-pink/10 to-transparent',
   pizza: 'from-accent-cyan/20 via-accent-violet/10 to-transparent',
 }
 
@@ -53,7 +51,7 @@ export function LivePreview() {
                   : 'text-secondary hover:text-primary hover:bg-white/5'
               }`}
             >
-              {t(v.key as 'barber' | 'beauty' | 'pizza')}
+              {t(v.key as 'barber' | 'pizza')}
             </button>
           ))}
         </div>

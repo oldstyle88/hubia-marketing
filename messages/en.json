@@ -18,22 +18,22 @@
     "proof": {
       "clientPwa": "Client PWA",
       "clientPwaDesc": "Installable client app with your brand. Bookings and orders without friction.",
-      "staffDashboard": "Staff Dashboard",
-      "staffDashboardDesc": "Admin panel for staff: agenda, services, availability and customers.",
-      "analytics": "Analytics & Reports",
-      "analyticsDesc": "Operational metrics: revenue, bookings/orders, customers, trends."
+      "staffDashboard": "Staff dashboard",
+      "staffDashboardDesc": "Admin panel (dashboard) for staff: agenda, services, availability, customers and notifications.",
+      "analytics": "Operational analytics",
+      "analyticsDesc": "Revenue, bookings/orders, customers, trends. Measurable metrics, no generic claims."
     },
     "pwaBlock": {
       "title": "PWA only, no native apps",
       "body": "We don't ship iOS/Android store apps. Every client gets a white-label PWA: same UX on all devices, one codebase, instant updates."
     },
     "forWho": {
-      "title": "Active verticals",
-      "subtitle": "Now: Barber and Pizzeria. Next: Gym and Food.",
+      "title": "Verticals",
+      "subtitle": "Active: Barber and Pizzeria. Next: Gym and Food.",
       "barber": "Barber (core)",
-      "barberDesc": "Reduce no‑shows with reminders and a constantly updated agenda.",
+      "barberDesc": "Reduce no‑shows, fill your agenda. Auto reminders and slots always up to date.",
       "pizzeria": "Pizzeria",
-      "pizzeriaDesc": "Faster orders, fewer mistakes, staff in sync.",
+      "pizzeriaDesc": "Faster orders, fewer mistakes. Kitchen and staff in sync in real time.",
       "gym": "Gym (next)",
       "gymDesc": "Coming: memberships, classes and access control.",
       "food": "Food (next)",
@@ -57,13 +57,13 @@
     },
     "howItWorks": {
       "title": "How it works",
-      "subtitle": "Quick setup and guided configuration",
+      "subtitle": "Manual setup, go‑live with checklist",
       "setup": "Setup",
-      "setupDesc": "Assisted provisioning: Supabase, Vercel, env and PWA branding.",
+      "setupDesc": "Assisted provisioning: Supabase + Vercel + env + PWA branding + seed + go‑live gate.",
       "config": "Configuration",
       "configDesc": "Services, staff, hours and initial seed tailored to you.",
-      "golive": "Go-live",
-      "goliveDesc": "Gate checklist and final go‑live checks."
+      "golive": "Go‑live",
+      "goliveDesc": "Gate checklist and final verification before launch."
     },
     "reliability": {
       "title": "Reliability by design",
@@ -82,8 +82,8 @@
       "b6desc": "Pre-release checklist and runbooks for repeatable checks."
     },
     "pricingTeaser": {
-      "title": "Two plans, starting from",
-      "subtitle": "PRO for one location, MAX for multi‑location. Pricing starts from and depends on vertical.",
+      "title": "Two plans, pricing from",
+      "subtitle": "PRO for one location, MAX for multi‑location. Pricing from depending on vertical (Barber, Pizzeria, Gym).",
       "cta": "See PRO and MAX"
     },
     "faq": {
@@ -115,8 +115,8 @@
   },
   "pricing": {
     "title": "Pricing from",
-    "subtitle": "Two plans, no confusion. PRO for one location, MAX for multi‑location and assisted provisioning.",
-    "footer": "One‑time setup + monthly fee, starting from by vertical.",
+    "subtitle": "Two plans: PRO (one location) and MAX (multi‑location). Pricing from by vertical.",
+    "footer": "One‑time setup + monthly fee. See vertical pricing below (Barber, Pizzeria, Gym).",
     "setupIncludes": "Assisted provisioning: Supabase + Vercel + env + PWA branding + seed services/staff + go‑live gate.",
     "contactCta": "Talk to us →",
     "perMonth": "/month",
@@ -126,7 +126,7 @@
     "faqTitle": "Questions about plans",
     "faq": {
       "q1": "What is assisted provisioning?",
-      "a1": "Manual setup: Supabase, Vercel, environment variables, PWA branding, seed and go‑live checklist.",
+      "a1": "Manual setup: Supabase + Vercel + env + PWA branding + seed services/staff + go‑live gate. Not automated.",
       "q2": "Can I move from PRO to MAX?",
       "a2": "Yes, the upgrade applies from the next billing cycle.",
       "q3": "How does billing work?",
@@ -172,19 +172,19 @@
   "plans": {
     "pro": {
       "name": "PRO",
-      "description": "Client PWA + admin panel. Bookings/orders, push, branding. Standard support.",
+      "description": "One location. Client PWA + staff dashboard, bookings/orders, push, branding. Standard email support.",
       "features": [
-        "Client PWA + admin panel",
+        "Client PWA + staff dashboard (admin panel)",
         "Bookings (barber) or orders+bookings (pizzeria)",
         "Push notifications and reminders",
         "PWA branding (icons, theme, manifest)",
-        "Core operational analytics",
+        "Base operational analytics",
         "Standard email support"
       ]
     },
     "max": {
       "name": "MAX",
-      "description": "All PRO across multiple locations + assisted provisioning per site + priority support.",
+      "description": "Multiple locations. All PRO + assisted provisioning per site + priority support.",
       "features": [
         "Everything in PRO",
         "Multi‑location (multiple shops)",
@@ -213,7 +213,7 @@
     "businessFood": "Food (next)"
   },
   "footer": {
-    "tagline": "PWA for barber and pizzeria. Bookings, orders, staff and operational analytics.",
+    "tagline": "PWA for barber and pizzeria. Fewer no‑shows, faster orders, fuller agenda.",
     "product": "Product",
     "company": "Company",
     "contactLink": "Contact",

@@ -8,6 +8,18 @@ import { PwaOnlyBlock } from '@/components/PwaOnlyBlock'
 import { FAQAccordion } from '@/components/FAQAccordion'
 import { Button } from '@/components/Button'
 
+/** In dev: se il valore sembra una chiave i18n non risolta (es. "home.pwaBlock.title"), log e fallback. */
+function safeTranslation(value: string, key: string, fallback: string): string {
+  if (process.env.NODE_ENV !== 'development') return value
+  const looksLikeKey =
+    value === key || value.includes('pwaBlock.') || value.startsWith('home.')
+  if (looksLikeKey) {
+    console.warn(`[i18n] Chiave non risolta su pricing: "${key}" → mostrato fallback. Verificare messages/*.json.`)
+    return fallback
+  }
+  return value
+}
+
 export async function generateMetadata() {
   const t = await getTranslations('pricing')
   return {
@@ -61,7 +73,11 @@ export default async function PricingPage() {
             <p className="text-xl text-secondary leading-relaxed mb-6">
               {t('subtitle')}
             </p>
-            <PwaOnlyBlock className="text-left" title={tHome('pwaBlock.title')} body={tHome('pwaBlock.body')} />
+            <PwaOnlyBlock
+            className="text-left"
+            title={safeTranslation(t('pwaBlock.title'), 'pwaBlock.title', 'Solo PWA, zero app da store')}
+            body={safeTranslation(t('pwaBlock.body'), 'pwaBlock.body', 'App installabile su smartphone (iOS e Android) con logo e colori della tua attività. Un solo software, aggiornamenti inclusi.')}
+          />
           </div>
 
           <PricingTable

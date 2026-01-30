@@ -40,15 +40,13 @@
     "forWho": {
       "title": "Pour ceux qui travaillent avec les gens, pas avec le chaos.",
       "subtitle": "Votre établissement. Votre marque. Zéro confusion.",
-      "card1Title": "Beauty & Hair",
-      "card1Desc": "Barbiers, coiffeurs, centres de beauté, instituts. Réservations, équipe et clients dans un seul système.",
-      "card2Title": "Food Locale",
-      "card2Desc": "Pizzerias, street food, établissements avec commandes et réservations. Flux clairs entre cuisine, retrait et tables.",
-      "card3Title": "Fitness & Activité",
-      "card3Desc": "Salles de sport, studios personnels, centres avec abonnements et créneaux. Gestion des réservations et abonnements sans chaos.",
-      "card4Title": "Activité sur mesure",
-      "card4Desc": "Processus complexes, plusieurs sites ou logiques uniques. Solutions dédiées conçues pour votre activité.",
-      "microText": "Pour les établissements aux flux articulés et l’envie d’ordre."
+      "card1Title": "Barber & Hair",
+      "card1Desc": "Barbiers, hair salon, coiffeurs. Réservations, équipe et clients dans un seul système.",
+      "card2Title": "Beauty",
+      "card2Desc": "Centres de beauté et instituts. Plus de prestations, plus de monde : un seul système qui garde tout en ordre.",
+      "card3Title": "Food (pizzeria / street food)",
+      "card3Desc": "Établissements avec commandes et réservations. Flux clairs entre cuisine, retrait et tables.",
+      "microText": "Pour les établissements aux flux plus complexes, nous construisons des solutions sur mesure."
     },
     "features": {
       "title": "Fonctionnalités essentielles et mesurables",
@@ -127,6 +125,10 @@
   "pricing": {
     "title": "Tarifs",
     "subtitle": "Deux plans : Essentiel et Avancé. Prix clairs pour barbier/coiffeur et pour food. Setup échelonnable sur 6 ou 12 mois.",
+    "pwaBlock": {
+      "title": "PWA uniquement, pas d'apps store",
+      "body": "App installable sur smartphone (iOS et Android) avec votre logo et couleurs. Un seul logiciel, mises à jour incluses."
+    },
     "footer": "Setup unique + abonnement mensuel. Le setup peut être échelonné sur 6 ou 12 mois sans surcoût.",
     "setupIncludes": "Le setup inclut : conception, configuration, branding (logo, couleurs, icône), tests et mise en ligne.",
     "setupMaxNote": "Support dédié en phase de lancement et configuration guidée jusqu'au go-live.",

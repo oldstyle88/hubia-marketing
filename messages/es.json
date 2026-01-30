@@ -40,15 +40,13 @@
     "forWho": {
       "title": "Para quien trabaja con personas, no con el caos.",
       "subtitle": "Tu local. Tu marca. Cero confusión.",
-      "card1Title": "Beauty & Hair",
-      "card1Desc": "Barberías, peluquerías, centros de belleza, estudios de estética. Reservas, equipo y clientes en un solo sistema.",
-      "card2Title": "Food Locale",
-      "card2Desc": "Pizzerías, street food, locales con pedidos y reservas. Flujos claros entre cocina, recogida y mesas.",
-      "card3Title": "Fitness y actividad",
-      "card3Desc": "Gimnasios, estudios de personal, centros con abonos y franjas. Gestión de reservas y abonos sin caos.",
-      "card4Title": "Actividad a medida",
-      "card4Desc": "Procesos complejos, varias sedes o lógicas únicas. Soluciones dedicadas diseñadas para tu negocio.",
-      "microText": "Para negocios con flujos articulados y ganas de orden."
+      "card1Title": "Barber & Hair",
+      "card1Desc": "Barberías, hair salon, peluquerías. Reservas, equipo y clientes en un solo sistema.",
+      "card2Title": "Beauty",
+      "card2Desc": "Centros de belleza y estudios de estética. Más servicios, más personas: un solo sistema que mantiene todo en orden.",
+      "card3Title": "Food (pizzeria / street food)",
+      "card3Desc": "Locales con pedidos y reservas. Flujos claros entre cocina, recogida y mesas.",
+      "microText": "Para negocios con flujos más complejos construimos soluciones a medida."
     },
     "features": {
       "title": "Funciones esenciales y medibles",
@@ -123,6 +121,10 @@
   "pricing": {
     "title": "Precios",
     "subtitle": "Dos planes: Studio (Beauty) y Operativo (Restauración). Setup fraccionable en 6 o 12 meses.",
+    "pwaBlock": {
+      "title": "Solo PWA, sin apps de tienda",
+      "body": "App instalable en smartphone (iOS y Android) con tu logo y colores. Un solo software, actualizaciones incluidas."
+    },
     "footer": "Setup único + mensualidad. El setup se puede fraccionar en 6 o 12 meses sin recargo.",
     "setupIncludes": "El setup incluye: diseño, configuración, branding (logo, colores, icono), pruebas y puesta en marcha.",
     "setupMaxNote": "Soporte dedicado en la fase de arranque y configuración guiada hasta el go-live.",

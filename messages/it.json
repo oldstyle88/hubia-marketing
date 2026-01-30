@@ -18,15 +18,13 @@
     "forWho": {
       "title": "Pensato per chi lavora con le persone, non con il caos.",
       "subtitle": "Il tuo locale. Il tuo brand. Zero confusione.",
-      "card1Title": "Beauty & Hair",
-      "card1Desc": "Barber, parrucchieri, beauty center, studi estetici. Appuntamenti, staff e clienti in un unico sistema.",
-      "card2Title": "Food Locale",
-      "card2Desc": "Pizzerie, street food, locali con ordini e prenotazioni. Flussi chiari tra cucina, ritiro e tavoli.",
-      "card3Title": "Fitness & Attività",
-      "card3Desc": "Palestre, studi personal, centri con abbonamenti e slot. Gestione prenotazioni e abbonamenti senza caos.",
-      "card4Title": "Attività su misura",
-      "card4Desc": "Processi complessi, più sedi o logiche uniche. Soluzioni dedicate progettate sul tuo business.",
-      "microText": "Per attività con flussi articolati e voglia di ordine."
+      "card1Title": "Barber & Hair",
+      "card1Desc": "Barbieri, hair salon, parrucchieri. Appuntamenti, staff e clienti in un unico sistema.",
+      "card2Title": "Beauty",
+      "card2Desc": "Beauty center e studi estetici. Più servizi, più persone: un solo sistema che tiene tutto in ordine.",
+      "card3Title": "Food (pizzeria / street food)",
+      "card3Desc": "Locali con ordini e prenotazioni. Flussi chiari tra cucina, ritiro e tavoli.",
+      "microText": "Per attività con flussi più complessi costruiamo soluzioni su misura."
     },
     "benefits": {
       "title": "Cosa ti toglie dalla testa",
@@ -105,6 +103,10 @@
   "pricing": {
     "title": "Prezzi",
     "subtitle": "Due piani: Studio (Beauty) e Operativo (Ristorazione). Setup rateizzabile in 6 o 12 mesi.",
+    "pwaBlock": {
+      "title": "Solo PWA, zero app da store",
+      "body": "App installabile su smartphone (iOS e Android) con logo e colori della tua attività. Un solo software, aggiornamenti inclusi."
+    },
     "footer": "Setup una tantum + abbonamento mensile. Setup rateizzabile in 6 o 12 mesi senza aggravio.",
     "setupIncludes": "Il setup include: progettazione, configurazione, branding (logo, colori, icona), test e messa online.",
     "setupMaxNote": "Supporto dedicato in fase di avvio e configurazione guidata fino al go-live.",

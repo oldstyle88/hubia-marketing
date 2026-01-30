@@ -18,15 +18,13 @@
     "forWho": {
       "title": "For those who work with people, not chaos.",
       "subtitle": "Your venue. Your brand. Zero confusion.",
-      "card1Title": "Beauty & Hair",
-      "card1Desc": "Barbers, hairdressers, beauty centres, aesthetic studios. Appointments, staff and clients in one system.",
-      "card2Title": "Food venue",
-      "card2Desc": "Pizzerias, street food, venues with orders and bookings. Clear flows between kitchen, pickup and tables.",
-      "card3Title": "Fitness & Activity",
-      "card3Desc": "Gyms, personal studios, centres with memberships and slots. Bookings and memberships without chaos.",
-      "card4Title": "Custom activity",
-      "card4Desc": "Complex processes, multiple locations or unique logic. Dedicated solutions designed around your business.",
-      "microText": "For businesses with articulated flows and a need for order."
+      "card1Title": "Barber & Hair",
+      "card1Desc": "Barbers, hair salon, hairdressers. Appointments, staff and clients in one system.",
+      "card2Title": "Beauty",
+      "card2Desc": "Beauty centres and aesthetic studios. More services, more people: one system that keeps everything in order.",
+      "card3Title": "Food (pizzeria / street food)",
+      "card3Desc": "Venues with orders and bookings. Clear flows between kitchen, pickup and tables.",
+      "microText": "For businesses with more complex flows we build custom solutions."
     },
     "benefits": {
       "title": "What it takes off your mind",
@@ -100,6 +98,10 @@
   "pricing": {
     "title": "Pricing",
     "subtitle": "Two plans: Studio (Beauty) and Operativo (Restaurant). Setup can be spread over 6 or 12 months.",
+    "pwaBlock": {
+      "title": "PWA only, no store apps",
+      "body": "App installable on smartphone (iOS and Android) with your logo and colours. One piece of software, updates included."
+    },
     "footer": "One-time setup + monthly subscription. Setup can be spread over 6 or 12 months at no extra cost.",
     "setupIncludes": "Setup includes: design, configuration, branding (logo, colours, app icon), testing and go-live.",
     "setupMaxNote": "Guided configuration and direct support until go-live.",

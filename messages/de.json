@@ -18,15 +18,13 @@
     "forWho": {
       "title": "Für alle, die mit Menschen arbeiten, nicht mit Chaos.",
       "subtitle": "Dein Betrieb. Dein Brand. Keine Verwirrung.",
-      "card1Title": "Beauty & Hair",
-      "card1Desc": "Barbiere, Friseure, Beauty-Center, Kosmetikstudios. Termine, Team und Kunden in einem System.",
-      "card2Title": "Food Locale",
-      "card2Desc": "Pizzerien, Street Food, Lokale mit Bestellungen und Reservierungen. Klare Abläufe zwischen Küche, Abholung und Tischen.",
-      "card3Title": "Fitness & Aktivität",
-      "card3Desc": "Fitnessstudios, Personal-Trainer-Studios, Zentren mit Abos und Slots. Buchungen und Abos ohne Chaos.",
-      "card4Title": "Aktivität auf Maß",
-      "card4Desc": "Komplexe Prozesse, mehrere Standorte oder eigene Logik. Maßgeschneiderte Lösungen für dein Business.",
-      "microText": "Für Betriebe mit anspruchsvollen Abläufen und dem Wunsch nach Ordnung."
+      "card1Title": "Barber & Hair",
+      "card1Desc": "Barbiere, Hair Salon, Friseure. Termine, Team und Kunden in einem System.",
+      "card2Title": "Beauty",
+      "card2Desc": "Beauty-Center und Kosmetikstudios. Mehr Services, mehr Menschen: ein System, das alles in Ordnung hält.",
+      "card3Title": "Food (Pizzeria / Street Food)",
+      "card3Desc": "Lokale mit Bestellungen und Reservierungen. Klare Abläufe zwischen Küche, Abholung und Tischen.",
+      "microText": "Für Betriebe mit komplexeren Abläufen bauen wir maßgeschneiderte Lösungen."
     },
     "benefits": {
       "title": "Was wir dir abnehmen",
@@ -100,6 +98,10 @@
   "pricing": {
     "title": "Preise",
     "subtitle": "Zwei Pläne: Studio (Beauty) und Operativo (Gastronomie). Setup auf 6 oder 12 Monate verteilbar.",
+    "pwaBlock": {
+      "title": "Nur PWA, keine Store-Apps",
+      "body": "App installierbar auf Smartphone (iOS und Android) mit deinem Logo und deinen Farben. Eine Software, Updates inklusive."
+    },
     "footer": "Einmaliges Setup + monatliche Gebühr. Setup kann auf 6 oder 12 Monate verteilt werden, ohne Aufschlag.",
     "setupIncludes": "Das Setup umfasst Konzeption, Konfiguration, Branding (Logo, Farben, Icon), Test und Go‑Live.",
     "setupMaxNote": "Dedizierter Support in der Startphase und geführte Konfiguration bis zum Go‑Live.",

@@ -123,7 +123,7 @@ export default async function PricingPage() {
             </div>
           </div>
 
-          <div className="mt-20 max-w-2xl mx-auto">
+          <div id="faq" className="mt-20 max-w-2xl mx-auto scroll-mt-28">
             <h2 className="text-2xl font-semibold text-primary mb-8 text-center">
               {t('faqTitle')}
             </h2>

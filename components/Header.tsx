@@ -31,7 +31,7 @@ export function Header() {
       <Link href="/pricing" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>
         {t('pricing')}
       </Link>
-      <Link href="/#faq" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>
+      <Link href="/pricing#faq" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>
         {t('faq')}
       </Link>
       <Link href="/contact" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>

@@ -31,7 +31,7 @@ export async function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#faq" className="text-secondary text-sm hover:text-primary transition-colors">
+                <Link href="/pricing#faq" className="text-secondary text-sm hover:text-primary transition-colors">
                   {tNav('faq')}
                 </Link>
               </li>

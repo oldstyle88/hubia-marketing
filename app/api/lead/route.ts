@@ -1,10 +1,20 @@
 import { createHash } from 'crypto'
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
+import { Resend } from 'resend'
 
 function hashForLead(input: string): string {
   return createHash('sha256').update(input, 'utf8').digest('hex').slice(0, 64)
 }
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
+
 
 const RATE_LIMIT_WINDOW_MS = 60 * 1000 // 1 minute
 const RATE_LIMIT_MAX_REQUESTS = 5
@@ -159,6 +169,45 @@ export async function POST(request: NextRequest) {
         { error: 'Errore nel salvataggio. Riprova più tardi.' },
         { status: 500 }
       )
+    }
+
+    // Notifica email opzionale a indirizzo dedicato (es. contatti@hubiasystem.com)
+    const resendKey = process.env.RESEND_API_KEY
+    const toEmail = process.env.LEAD_NOTIFICATION_EMAIL
+    if (resendKey && toEmail) {
+      const fromEmail = process.env.RESEND_FROM_EMAIL || 'HUBIA Sito <onboarding@resend.dev>'
+      const resend = new Resend(resendKey)
+      const businessLabel: Record<string, string> = {
+        barber: 'Barbiere / Parrucchiere',
+        pizzeria: 'Pizzeria',
+        gym: 'Palestra',
+        food: 'Food / Street food',
+        other: 'Altro',
+      }
+      const html = [
+        '<h2>Nuova richiesta da Contattaci</h2>',
+        `<p><strong>Nome:</strong> ${escapeHtml(rawName)}</p>`,
+        `<p><strong>Email:</strong> ${escapeHtml(rawEmail)}</p>`,
+        rawPhone ? `<p><strong>Telefono:</strong> ${escapeHtml(rawPhone)}</p>` : '',
+        `<p><strong>Tipo attività:</strong> ${escapeHtml(businessLabel[rawBusiness] ?? rawBusiness)}</p>`,
+        `<p><strong>Messaggio:</strong></p><pre style="white-space:pre-wrap;font-family:inherit;">${escapeHtml(rawMessage)}</pre>`,
+        rawLocale ? `<p><strong>Lingua:</strong> ${escapeHtml(rawLocale)}</p>` : '',
+        rawPagePath ? `<p><strong>Pagina:</strong> ${escapeHtml(rawPagePath)}</p>` : '',
+        [rawUtmSource, rawUtmMedium, rawUtmCampaign].some(Boolean)
+          ? `<p><strong>UTM:</strong> source=${escapeHtml(rawUtmSource || '')} | medium=${escapeHtml(rawUtmMedium || '')} | campaign=${escapeHtml(rawUtmCampaign || '')}</p>`
+          : '',
+      ].filter(Boolean).join('')
+      try {
+        await resend.emails.send({
+          from: fromEmail,
+          to: [toEmail],
+          subject: `[HUBIA] Nuova richiesta da ${rawName}`,
+          html,
+        })
+      } catch (emailErr) {
+        console.error('Lead notification email failed:', emailErr)
+        // Non blocchiamo la risposta: il lead è già salvato in Supabase
+      }
     }
 
     ipLastSuccess.set(ip, Date.now())

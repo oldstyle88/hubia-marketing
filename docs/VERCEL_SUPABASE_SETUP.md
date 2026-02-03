@@ -7,6 +7,7 @@ Guida per deploy del sito marketing HŪBIA su Vercel con lead salvati su Supabas
 ## 1. Supabase (nuovo progetto HŪBIA)
 
 ### 1.1 Hai già creato il progetto
+
 - Vai su [Supabase Dashboard](https://supabase.com/dashboard) e apri il progetto **HŪBIA** (non barbiere/pizzeria).
 
 ### 1.2 Esegui UNA sola migration: la tabella `leads`
@@ -92,17 +93,27 @@ Non usare la chiave `anon` per i lead: l’API scrive solo con **service_role** 
 
 In **Project** → **Settings** → **Environment Variables** aggiungi:
 
-| Nome | Valore | Note |
-|------|--------|------|
-| `SUPABASE_URL` | `https://xxxxx.supabase.co` | Project URL del progetto Supabase HŪBIA |
+| Nome                        | Valore                            | Note                                    |
+| --------------------------- | --------------------------------- | --------------------------------------- |
+| `SUPABASE_URL`              | `https://xxxxx.supabase.co`       | Project URL del progetto Supabase HŪBIA |
 | `SUPABASE_SERVICE_ROLE_KEY` | `eyJhbG...` (chiave service_role) | Solo server-side, non esporre al client |
 
 Opzionali:
 
-| Nome | Valore | Note |
-|------|--------|------|
-| `NEXT_PUBLIC_BASE_URL` | `https://tuodominio.com` | Per metadata / canonical URL |
-| `NEXT_PUBLIC_SUPABASE_URL` | come `SUPABASE_URL` | Solo se in futuro usi Supabase dal client |
+| Nome                       | Valore                   | Note                                      |
+| -------------------------- | ------------------------ | ----------------------------------------- |
+| `NEXT_PUBLIC_BASE_URL`     | `https://tuodominio.com` | Per metadata / canonical URL              |
+| `NEXT_PUBLIC_SUPABASE_URL` | come `SUPABASE_URL`      | Solo se in futuro usi Supabase dal client |
+
+**Email dedicata (notifica lead):** per ricevere una copia di ogni richiesta su un’email del sito (es. `contatti@hubiasystem.com`):
+
+| Nome                      | Valore                                 | Note                                                                                                                                    |
+| ------------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `RESEND_API_KEY`          | `re_xxxx`                              | API key da [Resend](https://resend.com/api-keys)                                                                                        |
+| `LEAD_NOTIFICATION_EMAIL` | `contatti@hubiasystem.com`             | Indirizzo a cui inviare la notifica                                                                                                     |
+| `RESEND_FROM_EMAIL`       | `HUBIA Sito <noreply@hubiasystem.com>` | Mittente (opzionale). Devi verificare il dominio in Resend per usare @hubiasystem.com; altrimenti l’app usa un mittente di test Resend. |
+
+Se queste variabili non sono impostate, i lead vengono comunque salvati in Supabase; non viene inviata nessuna email.
 
 Salva e **redeploy** il progetto (Deployments → ⋮ → Redeploy) così le variabili vengono applicate.
 
@@ -115,14 +126,14 @@ Salva e **redeploy** il progetto (Deployments → ⋮ → Redeploy) così le var
 
 ## 3. Riepilogo
 
-| Cosa | Dove | Cosa fare |
-|------|------|-----------|
-| **Tabella lead** | Supabase progetto HŪBIA | Esegui solo `20260129100000_leads_table.sql` (tabella `leads`) |
-| **Project URL** | Supabase → Settings → API | Copia in `SUPABASE_URL` (e opz. `NEXT_PUBLIC_SUPABASE_URL`) |
-| **Service role key** | Supabase → Settings → API | Copia in `SUPABASE_SERVICE_ROLE_KEY` |
-| **Root directory** | Vercel | (vuoto — root del repo) |
-| **Install command** | Vercel | `npm install` |
-| **Env in Vercel** | Settings → Environment Variables | `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` |
+| Cosa                 | Dove                             | Cosa fare                                                      |
+| -------------------- | -------------------------------- | -------------------------------------------------------------- |
+| **Tabella lead**     | Supabase progetto HŪBIA          | Esegui solo `20260129100000_leads_table.sql` (tabella `leads`) |
+| **Project URL**      | Supabase → Settings → API        | Copia in `SUPABASE_URL` (e opz. `NEXT_PUBLIC_SUPABASE_URL`)    |
+| **Service role key** | Supabase → Settings → API        | Copia in `SUPABASE_SERVICE_ROLE_KEY`                           |
+| **Root directory**   | Vercel                           | (vuoto — root del repo)                                        |
+| **Install command**  | Vercel                           | `npm install`                                                  |
+| **Env in Vercel**    | Settings → Environment Variables | `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`                    |
 
 ---
 
@@ -132,5 +143,6 @@ Salva e **redeploy** il progetto (Deployments → ⋮ → Redeploy) così le var
 2. **Sito:** Apri il form contatti (es. `/it/contact` o `/en/contact?utm_source=test`), invia un messaggio di test.
 3. **Supabase:** Ricarica `leads`: deve comparire la nuova riga con `name`, `email`, `phone`, `message`, `locale`, `source_page`, `page_path`, e se hai eseguito la migration UTM: `utm_source`, `utm_medium`, `utm_campaign`, `user_agent_hash`.
 4. **Query di verifica:** In SQL Editor: `select id, created_at, name, email, locale, page_path, utm_source from public.leads order by created_at desc limit 10;`
+5. Se hai configurato **Resend** e `LEAD_NOTIFICATION_EMAIL`, controlla anche la casella di posta dedicata: deve arrivare un’email con oggetto tipo `[HUBIA] Nuova richiesta da …` e il riepilogo del lead.
 
 Se i lead non compaiono: controlla che in Vercel siano impostate `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY` del **progetto Supabase HŪBIA** (non barbiere/pizzeria) e che la migration `leads` sia stata eseguita in quel progetto.

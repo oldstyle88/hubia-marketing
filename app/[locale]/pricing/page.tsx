@@ -1,5 +1,4 @@
 import { getTranslations } from 'next-intl/server'
-import { Link } from '@/i18n/navigation'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Section } from '@/components/Section'
@@ -134,11 +133,6 @@ export default async function PricingPage() {
             <Button href="/contact" variant="primary" className="text-lg px-10 py-5">
               {t('requestDemo')}
             </Button>
-            <p className="mt-4 text-secondary text-sm">
-              <Link href="/contact" className="text-accent hover:text-accent-deep transition-colors">
-                {t('contactCta')}
-              </Link>
-            </p>
           </div>
         </Section>
       </main>

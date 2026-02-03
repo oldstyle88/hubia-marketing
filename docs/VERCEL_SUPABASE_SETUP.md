@@ -146,3 +146,13 @@ Salva e **redeploy** il progetto (Deployments → ⋮ → Redeploy) così le var
 5. Se hai configurato **Resend** e `LEAD_NOTIFICATION_EMAIL`, controlla anche la casella di posta dedicata: deve arrivare un’email con oggetto tipo `[HUBIA] Nuova richiesta da …` e il riepilogo del lead.
 
 Se i lead non compaiono: controlla che in Vercel siano impostate `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY` del **progetto Supabase HŪBIA** (non barbiere/pizzeria) e che la migration `leads` sia stata eseguita in quel progetto.
+
+---
+
+## 5. Le email di notifica non arrivano
+
+1. **Controlla spam / posta indesiderata** (anche la cartella “Promozioni” in Gmail).
+2. **Variabili in Vercel:** in **Settings → Environment Variables** devono esserci `RESEND_API_KEY` e `LEAD_NOTIFICATION_EMAIL` (es. la tua Gmail). Dopo averle aggiunte o modificate, fai **Redeploy**.
+3. **Log di Resend:** in [Resend Dashboard](https://resend.com/emails) → **Emails** vedi se le email risultano inviate, in coda o fallite (e il motivo).
+4. **Log di Vercel:** dopo aver inviato un messaggio dal form, vai in Vercel → progetto → **Logs** (o **Deployments** → ultimo deploy → **Functions** → log). Cerca `[Lead email] Resend error` o `[Lead email] Exception`: lì compare l’errore restituito da Resend (es. dominio non verificato, “from” non valido).
+5. **Mittente di test:** se non hai impostato `RESEND_FROM_EMAIL`, l’app usa `onboarding@resend.dev`. In quel caso alcune caselle potrebbero bloccare o mettere in spam. Aggiungi in Resend il dominio **hubiasystem.com**, verifica con i record DNS e in Vercel imposta ad es. `RESEND_FROM_EMAIL=HUBIA Sito <noreply@hubiasystem.com>`.

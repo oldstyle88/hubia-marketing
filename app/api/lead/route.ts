@@ -198,15 +198,18 @@ export async function POST(request: NextRequest) {
           : '',
       ].filter(Boolean).join('')
       try {
-        await resend.emails.send({
+        const { data: emailData, error: emailError } = await resend.emails.send({
           from: fromEmail,
           to: [toEmail],
           subject: `[HUBIA] Nuova richiesta da ${rawName}`,
           html,
         })
+        if (emailError) {
+          console.error('[Lead email] Resend error:', JSON.stringify(emailError))
+          // 403 = dominio non verificato o from non consentito; 422 = parametri non validi
+        }
       } catch (emailErr) {
-        console.error('Lead notification email failed:', emailErr)
-        // Non blocchiamo la risposta: il lead è già salvato in Supabase
+        console.error('[Lead email] Exception:', emailErr)
       }
     }
 

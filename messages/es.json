@@ -103,7 +103,7 @@
       "q5": "¿Hay límite de reservas?",
       "a5": "No. Los planes difieren en número de equipo, tiendas adicionales y funciones avanzadas.",
       "q6": "¿Cómo funciona el soporte?",
-      "a6": "Soporte por email en todos. Con Operativo: prioridad y soporte dedicado en la fase de arranque.",
+      "a6": "Soporte por email en todos. Con Signature: prioridad y soporte dedicado en la fase de arranque.",
       "q7": "¿Puedo personalizar la marca?",
       "a7": "Sí, todos los planes incluyen colores, logo e icono. Los planes superiores incluyen dominio propio.",
       "q8": "¿Mis datos están seguros?",
@@ -177,26 +177,28 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Barbería, peluquería, centro de belleza. Un local, reservas, equipo y notificaciones.",
+      "description": "Barbería, peluquería, centro de belleza. Un local: reservas, equipo, calendario y soporte estándar.",
       "features": [
-        "PWA con tu marca (cliente + staff)",
-        "Reservas y gestión de agenda",
-        "Gestión de staff y disponibilidad",
+        "Reservas online para clientes",
+        "Gestión de equipo y servicios",
+        "Calendario profesional",
         "Notificaciones automáticas",
-        "Datos de ingresos y reservas",
-        "Soporte email",
-        "Setup fraccionable 6–12 meses. Incluye diseño, configuración, branding, pruebas y puesta en marcha."
+        "Branding base",
+        "Gestión de clientes",
+        "Historial de citas",
+        "Soporte estándar",
+        "Setup fraccionable en 6 o 12 meses"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Centros de belleza y locales con más servicios o equipo. Todo Studio incluido, con soporte dedicado e informes avanzados.",
+      "description": "Para estudios estructurados. Todo Studio, más recurrencias avanzadas, analytics y soporte prioritario.",
       "features": [
         "Todo lo de Studio incluido",
-        "Configuración más detallada y soporte dedicado en el arranque",
+        "Recurrencias automáticas avanzadas",
+        "Analytics operativos",
         "Soporte prioritario",
-        "Datos e informes más detallados",
-        "Setup fraccionable en 6 o 12 meses."
+        "Setup fraccionable en 6 o 12 meses"
       ]
     }
   },

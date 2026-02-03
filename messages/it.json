@@ -55,23 +55,25 @@
       "studioName": "Studio",
       "studioForWho": "Barbiere, parrucchiere, beauty center con una sede. Chi vuole ordine senza complicarsi la vita.",
       "studioIncludes": [
-        "App con il tuo brand (clienti e staff)",
-        "Appuntamenti, calendario e promemoria automatici",
-        "Gestione staff e disponibilità",
-        "Dati su incassi e prenotazioni",
-        "Supporto via email",
-        "Setup iniziale rateizzabile in 6 o 12 mesi"
+        "Prenotazioni online clienti",
+        "Gestione staff e servizi",
+        "Calendario professionale",
+        "Notifiche automatiche",
+        "Branding base",
+        "Gestione clienti",
+        "Storico appuntamenti",
+        "Supporto standard"
       ],
       "studioSetup": "€900 una tantum",
       "studioSetupNote": "rateizzabile in 6 o 12 mesi",
       "studioCanone": "€89 / mese",
       "signatureName": "Signature",
-      "signatureForWho": "Beauty center e locali con più servizi, più staff o esigenze più articolate. Chi vuole il massimo controllo senza rinunciare alla semplicità.",
+      "signatureForWho": "Pensato per studi strutturati: più servizi, più staff, più controllo.",
       "signatureIncludes": [
         "Tutto ciò che include Studio",
-        "Configurazione più articolata e supporto dedicato in fase di avvio",
-        "Priorità nel supporto",
-        "Dati e report più approfonditi"
+        "Ricorrenze automatiche avanzate",
+        "Analytics operative",
+        "Priorità di supporto"
       ],
       "signatureSetup": "€1.400 una tantum",
       "signatureSetupNote": "rateizzabile in 6 o 12 mesi",
@@ -79,7 +81,7 @@
     },
     "projectsCustom": {
       "title": "Progetti su misura",
-      "text": "Progetti su misura per attività con logiche più complesse: locali food, pizzeria, street food, alta rotazione. Senza prezzi in lista: ogni progetto è diverso. Parliamone in consulenza."
+      "text": "Attività con logiche più complesse (food, multi-sede, altro): preventivo su richiesta. Ogni progetto è diverso. Parliamone in consulenza."
     },
     "notAnyApp": {
       "title": "Perché non è un'app qualsiasi",
@@ -109,7 +111,7 @@
     },
     "footer": "Setup una tantum + abbonamento mensile. Setup rateizzabile in 6 o 12 mesi senza aggravio.",
     "setupIncludes": "Il setup include: progettazione, configurazione, branding (logo, colori, icona), test e messa online.",
-    "setupMaxNote": "Supporto dedicato in fase di avvio e configurazione guidata fino al go-live.",
+    "setupMaxNote": "Supporto dedicato in fase di avvio e configurazione guidata al go-live.",
     "contactCta": "Parla con noi →",
     "perMonth": "/mese",
     "setupOneTime": "setup (una tantum)",
@@ -159,26 +161,28 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Barbiere, parrucchiere, beauty center. Una sede, prenotazioni, staff e notifiche.",
+      "description": "Barbiere, parrucchiere, beauty center. Una sede: prenotazioni, staff, calendario e supporto standard.",
       "features": [
-        "PWA con il tuo brand (cliente + staff)",
-        "Prenotazioni e gestione agenda",
-        "Gestione staff e disponibilità",
+        "Prenotazioni online clienti",
+        "Gestione staff e servizi",
+        "Calendario professionale",
         "Notifiche automatiche",
-        "Dati su incassi e prenotazioni",
-        "Supporto email",
-        "Setup rateizzabile in 6 o 12 mesi. Include: progettazione, configurazione, branding, test e messa online."
+        "Branding base",
+        "Gestione clienti",
+        "Storico appuntamenti",
+        "Supporto standard",
+        "Setup rateizzabile in 6 o 12 mesi"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Beauty center e locali con più servizi o più staff. Tutto ciò che include Studio, con supporto dedicato e report avanzati.",
+      "description": "Pensato per studi strutturati. Tutto Studio, più ricorrenze avanzate, analytics e supporto prioritario.",
       "features": [
         "Tutto ciò che include Studio",
-        "Configurazione più articolata e supporto dedicato in fase di avvio",
-        "Priorità nel supporto",
-        "Dati e report più approfonditi",
-        "Setup rateizzabile in 6 o 12 mesi."
+        "Ricorrenze automatiche avanzate",
+        "Analytics operative",
+        "Priorità di supporto",
+        "Setup rateizzabile in 6 o 12 mesi"
       ]
     }
   },

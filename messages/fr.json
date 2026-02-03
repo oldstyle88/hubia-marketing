@@ -181,26 +181,28 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Barbier, coiffeur, centre de beauté. Un site, réservations, équipe et notifications.",
+      "description": "Barbier, coiffeur, centre de beauté. Un site : réservations, équipe, calendrier et support standard.",
       "features": [
-        "PWA à votre marque (client + équipe)",
-        "Réservations et gestion d'agenda",
-        "Gestion équipe et disponibilités",
+        "Réservations en ligne clients",
+        "Gestion équipe et prestations",
+        "Calendrier professionnel",
         "Notifications automatiques",
-        "Données sur chiffre d'affaires et réservations",
-        "Support email",
-        "Setup échelonnable sur 6 ou 12 mois. Inclut : conception, configuration, branding, tests et mise en ligne."
+        "Branding de base",
+        "Gestion clients",
+        "Historique des rendez-vous",
+        "Support standard",
+        "Setup échelonnable sur 6 ou 12 mois"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Centres de beauté et établissements avec plus de prestations ou d'équipe. Tout Studio inclus, avec support dédié et rapports avancés.",
+      "description": "Pour les studios structurés. Tout Studio, plus récurrences avancées, analytics et support prioritaire.",
       "features": [
         "Tout Studio inclus",
-        "Configuration plus détaillée et support dédié au lancement",
+        "Récurrences automatiques avancées",
+        "Analytics opérationnels",
         "Support prioritaire",
-        "Données et rapports plus détaillés",
-        "Setup échelonnable sur 6 ou 12 mois."
+        "Setup échelonnable sur 6 ou 12 mois"
       ]
     }
   },

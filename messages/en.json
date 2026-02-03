@@ -55,23 +55,25 @@
       "studioName": "Studio",
       "studioForWho": "Barber, hairdresser, beauty centre with one venue. For those who want order without complication.",
       "studioIncludes": [
-        "App with your brand (clients and staff)",
-        "Appointments, calendar and automatic reminders",
-        "Staff and availability management",
-        "Data on revenue and bookings",
-        "Email support",
-        "Initial setup spread over 6 or 12 months"
+        "Online client bookings",
+        "Staff and services management",
+        "Professional calendar",
+        "Automatic notifications",
+        "Base branding",
+        "Client management",
+        "Appointment history",
+        "Standard support"
       ],
-      "studioSetup": "€900 – €1,500",
+      "studioSetup": "€900 one-time",
       "studioSetupNote": "spread over 6 or 12 months",
-      "studioCanone": "€69 – €129 / month",
+      "studioCanone": "€89 / month",
       "signatureName": "Signature",
-      "signatureForWho": "Beauty centres and venues with more services, more staff or more complex needs. For those who want full control without losing simplicity.",
+      "signatureForWho": "For structured studios: more services, more staff, more control.",
       "signatureIncludes": [
         "Everything in Studio",
-        "More detailed configuration and dedicated support at launch",
-        "Priority support",
-        "Deeper data and reports"
+        "Advanced automatic recurrences",
+        "Operational analytics",
+        "Priority support"
       ],
       "signatureSetup": "€1,400 one-time",
       "signatureSetupNote": "spread over 6 or 12 months",
@@ -154,26 +156,28 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Barber, hairdresser, beauty centre. One venue, bookings, staff and notifications.",
+      "description": "Barber, hairdresser, beauty centre. One venue: bookings, staff, calendar and standard support.",
       "features": [
-        "Branded PWA (client + staff)",
-        "Bookings and agenda management",
-        "Staff and availability management",
+        "Online client bookings",
+        "Staff and services management",
+        "Professional calendar",
         "Automatic notifications",
-        "Data on revenue and bookings",
-        "Email support",
-        "Setup spread over 6 or 12 months. Includes design, configuration, branding, testing and launch."
+        "Base branding",
+        "Client management",
+        "Appointment history",
+        "Standard support",
+        "Setup spread over 6 or 12 months"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Beauty centres and venues with more services or staff. Everything in Studio, with dedicated support and advanced reports.",
+      "description": "For structured studios. Everything in Studio, plus advanced recurrences, analytics and priority support.",
       "features": [
         "Everything in Studio",
-        "More detailed configuration and dedicated support at launch",
+        "Advanced automatic recurrences",
+        "Operational analytics",
         "Priority support",
-        "Deeper data and reports",
-        "Setup spread over 6 or 12 months."
+        "Setup spread over 6 or 12 months"
       ]
     }
   },

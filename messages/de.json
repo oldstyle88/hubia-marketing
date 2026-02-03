@@ -55,23 +55,25 @@
       "studioName": "Studio",
       "studioForWho": "Barbier, Friseur, Beauty center mit einem Standort. Für alle, die Ordnung ohne Komplikation wollen.",
       "studioIncludes": [
-        "App mit deinem Brand (Kunden und Staff)",
-        "Termine, Kalender und automatische Erinnerungen",
-        "Staff- und Verfügbarkeitsverwaltung",
-        "Daten zu Umsatz und Buchungen",
-        "E-Mail-Support",
-        "Setup-Anfang auf 6 oder 12 Monate verteilbar"
+        "Online-Buchungen für Kunden",
+        "Staff- und Serviceverwaltung",
+        "Professioneller Kalender",
+        "Automatische Benachrichtigungen",
+        "Basis-Branding",
+        "Kundenverwaltung",
+        "Terminhistorie",
+        "Standard-Support"
       ],
-      "studioSetup": "€900 – €1.500",
+      "studioSetup": "€900 einmalig",
       "studioSetupNote": "auf 6 oder 12 Monate verteilbar",
-      "studioCanone": "€69 – €129 / Monat",
+      "studioCanone": "€89 / Monat",
       "signatureName": "Signature",
-      "signatureForWho": "Beauty center und Betriebe mit mehr Services, mehr Staff oder komplexeren Anforderungen. Für alle, die maximale Kontrolle ohne Verzicht auf Einfachheit wollen.",
+      "signatureForWho": "Für strukturierte Studios: mehr Services, mehr Staff, mehr Kontrolle.",
       "signatureIncludes": [
         "Alles aus Studio",
-        "Detailliertere Konfiguration und dedizierter Support beim Start",
-        "Prioritäts-Support",
-        "Tiefere Daten und Auswertungen"
+        "Erweiterte automatische Wiederholungen",
+        "Operative Analytics",
+        "Prioritäts-Support"
       ],
       "signatureSetup": "€1.400 einmalig",
       "signatureSetupNote": "auf 6 oder 12 Monate verteilbar",
@@ -104,7 +106,7 @@
     },
     "footer": "Einmaliges Setup + monatliche Gebühr. Setup kann auf 6 oder 12 Monate verteilt werden, ohne Aufschlag.",
     "setupIncludes": "Das Setup umfasst Konzeption, Konfiguration, Branding (Logo, Farben, Icon), Test und Go‑Live.",
-    "setupMaxNote": "Dedizierter Support in der Startphase und geführte Konfiguration bis zum Go‑Live.",
+    "setupMaxNote": "Dedizierter Support in der Startphase und geführte Konfiguration zum Go‑Live.",
     "contactCta": "Sprich mit uns →",
     "perMonth": "/Monat",
     "setupOneTime": "Setup (einmalig)",
@@ -154,26 +156,28 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Barbier, Friseur, Beauty center. Ein Standort, Buchungen, Staff und Benachrichtigungen.",
+      "description": "Barbier, Friseur, Beauty center. Ein Standort: Buchungen, Staff, Kalender und Standard-Support.",
       "features": [
-        "PWA mit deinem Brand (Kunde + Staff)",
-        "Buchungen und Agenda",
-        "Staff- und Verfügbarkeitsverwaltung",
+        "Online-Buchungen für Kunden",
+        "Staff- und Serviceverwaltung",
+        "Professioneller Kalender",
         "Automatische Benachrichtigungen",
-        "Daten zu Umsatz und Buchungen",
-        "E-Mail-Support",
-        "Setup auf 6 oder 12 Monate verteilbar. Inkl. Konzeption, Konfiguration, Branding, Test und Go‑Live."
+        "Basis-Branding",
+        "Kundenverwaltung",
+        "Terminhistorie",
+        "Standard-Support",
+        "Setup auf 6 oder 12 Monate verteilbar"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Beauty center und Betriebe mit mehr Services oder Staff. Alles aus Studio, mit dediziertem Support und erweiterten Auswertungen.",
+      "description": "Für strukturierte Studios. Alles aus Studio, plus erweiterte Wiederholungen, Analytics und Prioritäts-Support.",
       "features": [
         "Alles aus Studio",
-        "Detailliertere Konfiguration und dedizierter Support beim Start",
+        "Erweiterte automatische Wiederholungen",
+        "Operative Analytics",
         "Prioritäts-Support",
-        "Tiefere Daten und Auswertungen",
-        "Setup auf 6 oder 12 Monate verteilbar."
+        "Setup auf 6 oder 12 Monate verteilbar"
       ]
     }
   },

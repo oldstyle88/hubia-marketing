@@ -73,9 +73,9 @@
         "Prioritäts-Support",
         "Tiefere Daten und Auswertungen"
       ],
-      "signatureSetup": "€1.200 – €1.800",
+      "signatureSetup": "€1.400 einmalig",
       "signatureSetupNote": "auf 6 oder 12 Monate verteilbar",
-      "signatureCanone": "€99 – €149 / Monat"
+      "signatureCanone": "€120 / Monat"
     },
     "projectsCustom": {
       "title": "Maßgeschneiderte Projekte",
@@ -97,7 +97,7 @@
   },
   "pricing": {
     "title": "Preise",
-    "subtitle": "Zwei Pläne: Studio (Beauty) und Operativo (Gastronomie). Setup auf 6 oder 12 Monate verteilbar.",
+    "subtitle": "Zwei Pläne: Studio und Signature. Setup einmalig, auf 6 oder 12 Monate verteilbar.",
     "pwaBlock": {
       "title": "Nur PWA, keine Store-Apps",
       "body": "App installierbar auf Smartphone (iOS und Android) mit deinem Logo und deinen Farben. Eine Software, Updates inklusive."
@@ -114,39 +114,39 @@
     "faq": {
       "q1": "Was umfasst das Setup?",
       "a1": "Das Setup umfasst Konzeption, Konfiguration, Branding, Test und Go‑Live. Es kann auf 6 oder 12 Monate verteilt werden.",
-      "q2": "Kann ich von Essenziale zu Avanzato wechseln?",
+      "q2": "Kann ich von Studio zu Signature wechseln?",
       "a2": "Ja, der Wechsel gilt ab dem nächsten Abrechnungszyklus.",
       "q3": "Wie funktioniert die Abrechnung?",
       "a3": "Einmaliges Setup bei Aktivierung (Ratenzahlung 6–12 Monate möglich) und monatliche Gebühr. Keine Laufzeitbindung."
     },
     "prices": {
       "pro": {
-        "setup": "€900 – €1.500",
-        "monthly": "€69 – €129"
+        "setup": "€900",
+        "monthly": "€89"
       },
       "max": {
-        "setup": "€1.800 – €3.500",
-        "monthly": "€149 – €249"
+        "setup": "€1.400",
+        "monthly": "€120"
       }
     },
     "verticalPricing": {
-      "title": "Für wen",
-      "note": "Barbiere/Friseur: Buchungen und Agenda. Food: Bestellungen, Küche, Abholung. Setup auf 6 oder 12 Monate verteilbar.",
+      "title": "Preise nach Plan",
+      "note": "Beauty: Barbier, Friseur, Beauty center. Setup auf 6 oder 12 Monate verteilbar.",
       "columns": {
-        "vertical": "Vertical",
+        "vertical": "Plan",
         "pro": "Studio",
-        "max": "Operativo"
+        "max": "Signature"
       },
       "rows": [
         {
-          "label": "Barbiere / Friseur",
-          "pro": "Setup €900 – €1.500 + €69 – €129/Monat",
-          "max": "Su richiesta"
+          "label": "Beauty (Barbier, Friseur, Beauty center)",
+          "pro": "€900 Setup + €89/Monat",
+          "max": "€1.400 Setup + €120/Monat"
         },
         {
-          "label": "Food (Pizzeria, Street food)",
-          "pro": "Su richiesta",
-          "max": "Setup €1.800 – €3.500 + €149 – €249/Monat"
+          "label": "Auf Maß (Food, mehrere Standorte, Sonstiges)",
+          "pro": "Angebot",
+          "max": "Angebot"
         }
       ]
     }
@@ -154,28 +154,26 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Per barbieri e parrucchieri. Una sede, prenotazioni, staff, notifiche e analytics.",
+      "description": "Barbier, Friseur, Beauty center. Ein Standort, Buchungen, Staff und Benachrichtigungen.",
       "features": [
-        "Gebrandete PWA (Kunde + Staff)",
-        "Buchungen oder Bestellungen (je nach Business)",
+        "PWA mit deinem Brand (Kunde + Staff)",
+        "Buchungen und Agenda",
         "Staff- und Verfügbarkeitsverwaltung",
         "Automatische Benachrichtigungen",
-        "Basis-Analytics",
-        "Standard-Support",
-        "Setup umfasst Konzeption, Konfiguration, Branding, Test und Go‑Live."
+        "Daten zu Umsatz und Buchungen",
+        "E-Mail-Support",
+        "Setup auf 6 oder 12 Monate verteilbar. Inkl. Konzeption, Konfiguration, Branding, Test und Go‑Live."
       ]
     },
     "max": {
-      "name": "Operativo",
-      "description": "Per food (pizzeria, street food) e soluzioni avanzate. Ordini, cucina, ritiro e logiche complesse.",
+      "name": "Signature",
+      "description": "Beauty center und Betriebe mit mehr Services oder Staff. Alles aus Studio, mit dediziertem Support und erweiterten Auswertungen.",
       "features": [
         "Alles aus Studio",
-        "Erweiterte Logik (Abos, Kurse, komplexe Bestellungen, Rollen)",
-        "Erweiterte Analytics",
+        "Detailliertere Konfiguration und dedizierter Support beim Start",
         "Prioritäts-Support",
-        "Assistiertes Onboarding",
-        "Audit vor Go‑Live",
-        "Geführte Konfiguration und direkter Support bis zum Go‑Live."
+        "Tiefere Daten und Auswertungen",
+        "Setup auf 6 oder 12 Monate verteilbar."
       ]
     }
   },

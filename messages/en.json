@@ -73,9 +73,9 @@
         "Priority support",
         "Deeper data and reports"
       ],
-      "signatureSetup": "€1,200 – €1,800",
+      "signatureSetup": "€1,400 one-time",
       "signatureSetupNote": "spread over 6 or 12 months",
-      "signatureCanone": "€99 – €149 / month"
+      "signatureCanone": "€120 / month"
     },
     "projectsCustom": {
       "title": "Custom projects",
@@ -97,7 +97,7 @@
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "Two plans: Studio (Beauty) and Operativo (Restaurant). Setup can be spread over 6 or 12 months.",
+    "subtitle": "Two plans: Studio and Signature. One-time setup, spread over 6 or 12 months.",
     "pwaBlock": {
       "title": "PWA only, no store apps",
       "body": "App installable on smartphone (iOS and Android) with your logo and colours. One piece of software, updates included."
@@ -114,39 +114,39 @@
     "faq": {
       "q1": "What does setup include?",
       "a1": "Design, configuration, branding (logo, colours, app icon), testing and go-live. You can spread the cost over 6 or 12 months.",
-      "q2": "Can I move from Studio to Operativo?",
-      "a2": "Yes, the upgrade applies from the next billing cycle.",
+      "q2": "Can I move from Studio to Signature?",
+      "a2": "Yes, the change applies from the next billing cycle.",
       "q3": "How does billing work?",
       "a3": "One-time setup at activation (spread over 6–12 months if needed) and monthly recurring fee. No long-term lock-in."
     },
     "prices": {
       "pro": {
-        "setup": "€900 – €1,500",
-        "monthly": "€69 – €129"
+        "setup": "€900",
+        "monthly": "€89"
       },
       "max": {
-        "setup": "€1,800 – €3,500",
-        "monthly": "€149 – €249"
+        "setup": "€1,400",
+        "monthly": "€120"
       }
     },
     "verticalPricing": {
-      "title": "Prices by vertical",
-      "note": "Barber/Hairdresser: bookings and agenda. Food: orders, kitchen, pickup. Setup can be spread over 6 or 12 months.",
+      "title": "Prices by plan",
+      "note": "Beauty: barber, hairdresser, beauty centre. Setup can be spread over 6 or 12 months.",
       "columns": {
-        "vertical": "Vertical",
+        "vertical": "Plan",
         "pro": "Studio",
-        "max": "Operativo"
+        "max": "Signature"
       },
       "rows": [
         {
           "label": "Beauty (barber, hairdresser, beauty centre)",
-          "pro": "Setup €900 – €1,500 + €69 – €129/month",
-          "max": "On request"
+          "pro": "€900 setup + €89/month",
+          "max": "€1,400 setup + €120/month"
         },
         {
-          "label": "Restaurant (pizzeria, street food)",
-          "pro": "On request",
-          "max": "Setup €1,800 – €3,500 + €149 – €249/month"
+          "label": "Custom (food, multi-site, other)",
+          "pro": "Quote",
+          "max": "Quote"
         }
       ]
     }
@@ -154,28 +154,26 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Beauty: barber, hairdresser, beauty centre. One site, bookings, staff, notifications and analytics.",
+      "description": "Barber, hairdresser, beauty centre. One venue, bookings, staff and notifications.",
       "features": [
         "Branded PWA (client + staff)",
-        "Bookings or orders (depending on business)",
+        "Bookings and agenda management",
         "Staff and availability management",
         "Automatic notifications",
-        "Base analytics",
-        "Standard support",
-        "Setup covers design, configuration, branding, testing and launch."
+        "Data on revenue and bookings",
+        "Email support",
+        "Setup spread over 6 or 12 months. Includes design, configuration, branding, testing and launch."
       ]
     },
     "max": {
-      "name": "Operativo",
-      "description": "Restaurant: pizzeria, street food. Orders, kitchen, pickup and advanced logic.",
+      "name": "Signature",
+      "description": "Beauty centres and venues with more services or staff. Everything in Studio, with dedicated support and advanced reports.",
       "features": [
         "Everything in Studio",
-        "Orders, kitchen and pickup flow",
-        "Advanced analytics",
+        "More detailed configuration and dedicated support at launch",
         "Priority support",
-        "Assisted onboarding",
-        "Pre go-live audit",
-        "Guided configuration and direct support until go-live."
+        "Deeper data and reports",
+        "Setup spread over 6 or 12 months."
       ]
     }
   },

@@ -120,7 +120,7 @@
   },
   "pricing": {
     "title": "Precios",
-    "subtitle": "Dos planes: Studio (Beauty) y Operativo (Restauración). Setup fraccionable en 6 o 12 meses.",
+    "subtitle": "Dos planes: Studio y Signature. Setup único, fraccionable en 6 o 12 meses.",
     "pwaBlock": {
       "title": "Solo PWA, sin apps de tienda",
       "body": "App instalable en smartphone (iOS y Android) con tu logo y colores. Un solo software, actualizaciones incluidas."
@@ -137,39 +137,39 @@
     "faq": {
       "q1": "¿Qué incluye el setup?",
       "a1": "El setup cubre diseño, configuración, branding, pruebas y puesta en marcha. Se puede fraccionar en 6 o 12 meses.",
-      "q2": "¿Puedo pasar de Studio a Operativo?",
+      "q2": "¿Puedo pasar de Studio a Signature?",
       "a2": "Sí, el cambio aplica en el siguiente ciclo de facturación.",
       "q3": "¿Cómo funciona el pago?",
       "a3": "Setup único al activar (fraccionable 6–12 meses) y pago mensual recurrente. Sin permanencias."
     },
     "prices": {
       "pro": {
-        "setup": "€900 – €1.500",
-        "monthly": "€69 – €129"
+        "setup": "€900",
+        "monthly": "€89"
       },
       "max": {
-        "setup": "€1.800 – €3.500",
-        "monthly": "€149 – €249"
+        "setup": "€1.400",
+        "monthly": "€120"
       }
     },
     "verticalPricing": {
-      "title": "Para quién",
-      "note": "Barbería/Peluquería: reservas y agenda. Food: pedidos, cocina, recogida. El setup es fraccionable en 6 o 12 meses.",
+      "title": "Precios por plan",
+      "note": "Beauty: barbería, peluquería, centro de belleza. Setup fraccionable en 6 o 12 meses.",
       "columns": {
-        "vertical": "Vertical",
-        "pro": "Essenziale",
-        "max": "Avanzato"
+        "vertical": "Plan",
+        "pro": "Studio",
+        "max": "Signature"
       },
       "rows": [
         {
-          "label": "Barbería / Peluquería",
-          "pro": "Setup €900 – €1.500 + €69 – €129/mes",
-          "max": "Bajo petición"
+          "label": "Beauty (barbería, peluquería, centro de belleza)",
+          "pro": "€900 setup + €89/mes",
+          "max": "€1.400 setup + €120/mes"
         },
         {
-          "label": "Food (pizzería, street food)",
-          "pro": "Bajo petición",
-          "max": "Setup €1.800 – €3.500 + €149 – €249/mes"
+          "label": "A medida (food, multisede, otro)",
+          "pro": "Presupuesto",
+          "max": "Presupuesto"
         }
       ]
     }
@@ -177,28 +177,26 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Per barbieri e parrucchieri. Una sede, prenotazioni, staff, notifiche e analytics.",
+      "description": "Barbería, peluquería, centro de belleza. Un local, reservas, equipo y notificaciones.",
       "features": [
-        "PWA de marca (cliente + staff)",
-        "Reservas o pedidos (según el negocio)",
+        "PWA con tu marca (cliente + staff)",
+        "Reservas y gestión de agenda",
         "Gestión de staff y disponibilidad",
         "Notificaciones automáticas",
-        "Analítica base",
-        "Soporte estándar",
-        "El setup cubre diseño, configuración, branding, pruebas y puesta en marcha."
+        "Datos de ingresos y reservas",
+        "Soporte email",
+        "Setup fraccionable 6–12 meses. Incluye diseño, configuración, branding, pruebas y puesta en marcha."
       ]
     },
     "max": {
-      "name": "Operativo",
-      "description": "Per food (pizzeria, street food) e soluzioni avanzate. Ordini, cucina, ritiro e logiche complesse.",
+      "name": "Signature",
+      "description": "Centros de belleza y locales con más servicios o equipo. Todo Studio incluido, con soporte dedicado e informes avanzados.",
       "features": [
         "Todo lo de Studio incluido",
-        "Lógica avanzada (membresías, clases, pedidos complejos, roles)",
-        "Analítica avanzada",
+        "Configuración más detallada y soporte dedicado en el arranque",
         "Soporte prioritario",
-        "Onboarding asistido",
-        "Auditoría pre go‑live",
-        "Configuración guiada y soporte directo hasta el go‑live."
+        "Datos e informes más detallados",
+        "Setup fraccionable en 6 o 12 meses."
       ]
     }
   },

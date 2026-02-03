@@ -28,7 +28,7 @@ export async function generateMetadata() {
   const t = await getTranslations('pricing')
   return {
     title: `${t('title')} — HŪBIA`,
-    description: 'Studio (Beauty) e Operativo (Ristorazione). Setup rateizzabile 6 o 12 mesi + abbonamento mensile. Ogni progetto parte da una call conoscitiva.',
+    description: 'Studio €900 + €89/mese. Signature €1.400 + €120/mese. Setup rateizzabile 6 o 12 mesi. Ogni progetto parte da una call conoscitiva.',
   }
 }
 

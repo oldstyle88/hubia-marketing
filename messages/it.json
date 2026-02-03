@@ -62,9 +62,9 @@
         "Supporto via email",
         "Setup iniziale rateizzabile in 6 o 12 mesi"
       ],
-      "studioSetup": "€900 – €1.500",
-      "studioSetupNote": "suddivisibile in 6 o 12 mesi",
-      "studioCanone": "€69 – €129 / mese",
+      "studioSetup": "€900 una tantum",
+      "studioSetupNote": "rateizzabile in 6 o 12 mesi",
+      "studioCanone": "€89 / mese",
       "signatureName": "Signature",
       "signatureForWho": "Beauty center e locali con più servizi, più staff o esigenze più articolate. Chi vuole il massimo controllo senza rinunciare alla semplicità.",
       "signatureIncludes": [
@@ -73,9 +73,9 @@
         "Priorità nel supporto",
         "Dati e report più approfonditi"
       ],
-      "signatureSetup": "€1.200 – €1.800",
-      "signatureSetupNote": "suddivisibile in 6 o 12 mesi",
-      "signatureCanone": "€99 – €149 / mese"
+      "signatureSetup": "€1.400 una tantum",
+      "signatureSetupNote": "rateizzabile in 6 o 12 mesi",
+      "signatureCanone": "€120 / mese"
     },
     "projectsCustom": {
       "title": "Progetti su misura",
@@ -102,7 +102,7 @@
   },
   "pricing": {
     "title": "Prezzi",
-    "subtitle": "Due piani: Studio (Beauty) e Operativo (Ristorazione). Setup rateizzabile in 6 o 12 mesi.",
+    "subtitle": "Due piani: Studio e Signature. Setup una tantum, rateizzabile in 6 o 12 mesi.",
     "pwaBlock": {
       "title": "Solo PWA, zero app da store",
       "body": "App installabile su smartphone (iOS e Android) con logo e colori della tua attività. Un solo software, aggiornamenti inclusi."
@@ -119,39 +119,39 @@
     "faq": {
       "q1": "Cosa include il setup?",
       "a1": "Progettazione, configurazione, branding (logo, colori, icona app), test e messa online. Setup rateizzabile in 6 o 12 mesi.",
-      "q2": "Posso passare da Studio a Operativo?",
+      "q2": "Posso passare da Studio a Signature?",
       "a2": "Sì. Il passaggio si applica dal ciclo di fatturazione successivo.",
       "q3": "Come funziona il pagamento?",
       "a3": "Setup una tantum all'attivazione (rateizzabile in 6 o 12 mesi) e abbonamento mensile. Nessun vincolo di durata."
     },
     "prices": {
       "pro": {
-        "setup": "€900 – €1.500",
-        "monthly": "€69 – €129"
+        "setup": "€900",
+        "monthly": "€89"
       },
       "max": {
-        "setup": "€1.800 – €3.500",
-        "monthly": "€149 – €249"
+        "setup": "€1.400",
+        "monthly": "€120"
       }
     },
     "verticalPricing": {
-      "title": "Prezzi per verticale",
-      "note": "Beauty: prenotazioni e agenda. Ristorazione: ordini, cucina, ritiro. Setup rateizzabile in 6 o 12 mesi.",
+      "title": "Prezzi per piano",
+      "note": "Beauty: barbiere, parrucchiere, beauty center. Setup rateizzabile in 6 o 12 mesi.",
       "columns": {
-        "vertical": "Verticale",
+        "vertical": "Piano",
         "pro": "Studio",
-        "max": "Operativo"
+        "max": "Signature"
       },
       "rows": [
         {
           "label": "Beauty (barbiere, parrucchiere, beauty center)",
-          "pro": "Setup €900 – €1.500 + €69 – €129/mese",
-          "max": "Su richiesta"
+          "pro": "€900 setup + €89/mese",
+          "max": "€1.400 setup + €120/mese"
         },
         {
-          "label": "Ristorazione (pizzeria, street food)",
-          "pro": "Su richiesta",
-          "max": "Setup €1.800 – €3.500 + €149 – €249/mese"
+          "label": "Su misura (food, multi-sede, altro)",
+          "pro": "Preventivo",
+          "max": "Preventivo"
         }
       ]
     }
@@ -159,27 +159,25 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Beauty: barbiere, parrucchiere, beauty center. Una sede, prenotazioni, staff, notifiche e analytics.",
+      "description": "Barbiere, parrucchiere, beauty center. Una sede, prenotazioni, staff e notifiche.",
       "features": [
         "PWA con il tuo brand (cliente + staff)",
         "Prenotazioni e gestione agenda",
         "Gestione staff e disponibilità",
         "Notifiche automatiche",
-        "Analytics base",
+        "Dati su incassi e prenotazioni",
         "Supporto email",
         "Setup rateizzabile in 6 o 12 mesi. Include: progettazione, configurazione, branding, test e messa online."
       ]
     },
     "max": {
-      "name": "Operativo",
-      "description": "Ristorazione: pizzeria, street food. Ordini, cucina, ritiro e logiche avanzate.",
+      "name": "Signature",
+      "description": "Beauty center e locali con più servizi o più staff. Tutto ciò che include Studio, con supporto dedicato e report avanzati.",
       "features": [
         "Tutto ciò che include Studio",
-        "Ordini, flusso cucina e ritiro",
-        "Logiche avanzate su misura",
-        "Analytics avanzate",
-        "Supporto prioritario",
-        "Configurazione guidata e supporto in fase di avvio",
+        "Configurazione più articolata e supporto dedicato in fase di avvio",
+        "Priorità nel supporto",
+        "Dati e report più approfonditi",
         "Setup rateizzabile in 6 o 12 mesi."
       ]
     }

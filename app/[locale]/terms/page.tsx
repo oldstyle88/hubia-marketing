@@ -109,7 +109,7 @@ export default async function TermsPage() {
                 <p>
                   Ci impegniamo a mantenere il Servizio disponibile, ma non garantiamo disponibilità ininterrotta. Il Servizio può
                   essere temporaneamente non disponibile per manutenzione, aggiornamenti o cause di forza maggiore. Livelli di supporto
-                  per i piani Studio e Operativo sono descritti nella pagina Prezzi.
+                  per i piani Studio e Signature sono descritti nella pagina Prezzi.
                 </p>
               </section>
 

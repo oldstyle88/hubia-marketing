@@ -124,7 +124,7 @@
   },
   "pricing": {
     "title": "Tarifs",
-    "subtitle": "Deux plans : Essentiel et Avancé. Prix clairs pour barbier/coiffeur et pour food. Setup échelonnable sur 6 ou 12 mois.",
+    "subtitle": "Deux plans : Studio et Signature. Setup unique, échelonnable sur 6 ou 12 mois.",
     "pwaBlock": {
       "title": "PWA uniquement, pas d'apps store",
       "body": "App installable sur smartphone (iOS et Android) avec votre logo et couleurs. Un seul logiciel, mises à jour incluses."
@@ -141,39 +141,39 @@
     "faq": {
       "q1": "Que comprend le setup ?",
       "a1": "Conception, configuration, branding (logo, couleurs, icône app), tests et mise en ligne. Vous pouvez échelonner le coût sur 6 ou 12 mois.",
-      "q2": "Puis‑je passer d'Essentiel à Avancé ?",
+      "q2": "Puis‑je passer de Studio à Signature ?",
       "a2": "Oui, le changement s’applique au prochain cycle de facturation.",
       "q3": "Comment fonctionne la facturation ?",
       "a3": "Setup unique à l'activation (échelonnable sur 6 ou 12 mois) et abonnement mensuel. Aucun engagement de durée."
     },
     "prices": {
       "pro": {
-        "setup": "900 € – 1 500 €",
-        "monthly": "69 € – 129 €"
+        "setup": "900 €",
+        "monthly": "89 €"
       },
       "max": {
-        "setup": "1 800 € – 3 500 €",
-        "monthly": "149 € – 249 €"
+        "setup": "1 400 €",
+        "monthly": "120 €"
       }
     },
     "verticalPricing": {
-      "title": "Tarifs par verticale",
-      "note": "Barbier/Coiffeur : réservations et agenda. Food : commandes, cuisine, retrait. Le setup est échelonnable sur 6 ou 12 mois.",
+      "title": "Tarifs par plan",
+      "note": "Beauty : barbier, coiffeur, centre de beauté. Setup échelonnable sur 6 ou 12 mois.",
       "columns": {
-        "vertical": "Verticale",
+        "vertical": "Plan",
         "pro": "Studio",
-        "max": "Operativo"
+        "max": "Signature"
       },
       "rows": [
         {
-          "label": "Barbier / Coiffeur",
-          "pro": "Setup 900 € – 1 500 € + 69 € – 129 €/mois",
-          "max": "Sur demande"
+          "label": "Beauty (barbier, coiffeur, centre de beauté)",
+          "pro": "900 € setup + 89 €/mois",
+          "max": "1 400 € setup + 120 €/mois"
         },
         {
-          "label": "Food (pizzeria, street food)",
-          "pro": "Sur demande",
-          "max": "Setup 1 800 € – 3 500 € + 149 € – 249 €/mois"
+          "label": "Sur mesure (food, multisite, autre)",
+          "pro": "Devis",
+          "max": "Devis"
         }
       ]
     }
@@ -181,27 +181,25 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Pour barbiers et coiffeurs. Un site, réservations, équipe, notifications et analytique.",
+      "description": "Barbier, coiffeur, centre de beauté. Un site, réservations, équipe et notifications.",
       "features": [
-        "PWA de marque (client + équipe)",
+        "PWA à votre marque (client + équipe)",
         "Réservations et gestion d'agenda",
         "Gestion équipe et disponibilités",
         "Notifications automatiques",
-        "Analytique de base",
+        "Données sur chiffre d'affaires et réservations",
         "Support email",
         "Setup échelonnable sur 6 ou 12 mois. Inclut : conception, configuration, branding, tests et mise en ligne."
       ]
     },
     "max": {
-      "name": "Operativo",
-      "description": "Pour food (pizzeria, street food) et solutions avancées. Commandes, cuisine, retrait et logique complexe.",
+      "name": "Signature",
+      "description": "Centres de beauté et établissements avec plus de prestations ou d'équipe. Tout Studio inclus, avec support dédié et rapports avancés.",
       "features": [
         "Tout Studio inclus",
-        "Commandes, flux cuisine et retrait",
-        "Logique avancée sur mesure",
-        "Analytique avancée",
+        "Configuration plus détaillée et support dédié au lancement",
         "Support prioritaire",
-        "Configuration guidée et support en phase de lancement",
+        "Données et rapports plus détaillés",
         "Setup échelonnable sur 6 ou 12 mois."
       ]
     }

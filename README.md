@@ -37,6 +37,11 @@ cp .env.example .env.local
 npm run dev
 ```
 
+**Nessun warning npm:** se compare `npm warn Unknown env config 'devdir'`:
+
+- nel terminale: `source scripts/clean-env.sh` (o aggiungi `unset NPM_CONFIG_DEVDIR` in `~/.zshrc`);
+- oppure controlla `~/.npmrc` e rimuovi eventuali righe che contengono `devdir`.
+
 Apri [http://localhost:3000](http://localhost:3000); rotte con locale (es. `/it`, `/en`).
 
 ## Deploy

@@ -18,6 +18,9 @@ const bodyFont = Manrope({
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://hubia.com'
 
+// Cache-bust per favicon: dopo deploy il browser carica il logo invece del vecchio globo
+const faviconVersion = 'v=2'
+
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: 'HŪBIA — The premium PWA platform for local businesses',
@@ -37,11 +40,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'HŪBIA' }],
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
+      { url: `/favicon.ico?${faviconVersion}`, sizes: 'any' },
       { url: '/brand/icon-192.png', sizes: '192x192', type: 'image/png' },
       { url: '/brand/icon-512.png', sizes: '512x512', type: 'image/png' },
     ],
-    apple: [{ url: '/brand/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+    apple: [{ url: `/brand/apple-touch-icon.png?${faviconVersion}`, sizes: '180x180', type: 'image/png' }],
   },
   openGraph: {
     title: 'HŪBIA — The premium PWA platform for local businesses',
@@ -68,8 +71,8 @@ export default function RootLayout({
   return (
     <html lang="it" className={`${displayFont.variable} ${bodyFont.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
+        <link rel="icon" href={`/favicon.ico?${faviconVersion}`} sizes="any" />
+        <link rel="apple-touch-icon" href={`/brand/apple-touch-icon.png?${faviconVersion}`} />
       </head>
       <body className="font-sans bg-background">
         <div className="relative z-10 min-h-screen bg-background">{children}</div>

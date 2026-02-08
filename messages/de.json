@@ -89,7 +89,12 @@
       "point1": "Kein Marketplace: Kunden und Daten gehören dir.",
       "point2": "Keine Standard-App: gebaut für alle, die Termine und Menschen verwalten, nicht für alle, die \"ein bisschen von allem\" verkaufen.",
       "point3": "Kein Kompromiss beim Erlebnis: eine elegante, schnelle PWA mit deinem Brand.",
-      "closing": "HUBIA ist nicht für alle. Es ist für alle, die ihren Betrieb ernst nehmen."
+      "closing": "HUBIA ist nicht für alle. Es ist für alle, die ihren Betrieb ernst nehmen.",
+      "positioning": [
+        "HUBIA ist nicht für alle gedacht.",
+        "Es ist gedacht für alle, die ein stabiles, maßgeschneidertes System wollen, nicht nur eine App zum Installieren und Vergessen.",
+        "Wenn du nur die günstigste Option suchst, gibt es wahrscheinlich bessere Lösungen. HUBIA ist für alle, die ihren Betrieb ernst nehmen."
+      ]
     },
     "ctaFinal": {
       "title": "Lass uns reden",

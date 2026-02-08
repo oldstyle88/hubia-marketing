@@ -89,7 +89,12 @@
       "point1": "No marketplace: clients are yours, data is yours.",
       "point2": "No generic app: built for those who manage appointments and people, not for those who sell \"a bit of everything\".",
       "point3": "No compromise on experience: one elegant, fast PWA with your brand.",
-      "closing": "HUBIA is not for everyone. It's for those who take their venue seriously."
+      "closing": "HUBIA is not for everyone. It's for those who take their venue seriously.",
+      "positioning": [
+        "HUBIA is not for everyone.",
+        "It's for those who want a stable, tailored system, not just an app to install and forget.",
+        "If you're only looking for the cheapest option, there are probably better fits. HUBIA is for those who take their venue seriously."
+      ]
     },
     "ctaFinal": {
       "title": "Let's talk",

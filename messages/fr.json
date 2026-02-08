@@ -13,7 +13,9 @@
       "title": "Remplissez l'agenda. Réduisez les no‑show.",
       "subtitle": "Gérez commandes, équipe et clients depuis une seule PWA. Pas de marketplace, pas d'apps génériques. Nous construisons des PWA sur mesure pour des activités réelles, pas des templates.",
       "requestDemo": "Nous contacter",
-      "viewPrices": "Voir les tarifs"
+      "viewPrices": "Voir les tarifs",
+      "ctaPrimary": "Demander une consultation",
+      "ctaSecondary": "Voir comment ça marche"
     },
     "proof": {
       "clientPwa": "PWA de marque",
@@ -48,6 +50,18 @@
       "card3Desc": "Établissements avec commandes et réservations. Flux clairs entre cuisine, retrait et tables.",
       "microText": "Pour les établissements aux flux plus complexes, nous construisons des solutions sur mesure."
     },
+    "benefits": {
+      "title": "Ce que nous vous enlevons de la tête",
+      "subtitle": "Moins de stress. Plus de contrôle.",
+      "b1Title": "Rendez-vous qui s'organisent tout seuls",
+      "b1Desc": "Créneaux clairs, modifications faciles. Pas de doubles réservations, pas de trous dans l'agenda.",
+      "b2Title": "Équipe toujours alignée",
+      "b2Desc": "Calendrier partagé, services et horaires clairs. Chacun sait quoi faire et quand.",
+      "b3Title": "Clients qui reviennent",
+      "b3Desc": "Rappels automatiques, moins de no-show. Les clients viennent et l'agenda reste crédible.",
+      "b4Title": "Zéro confusion, zéro improvisation",
+      "b4Desc": "Un seul endroit pour réservations, revenus et données. Décisions basées sur les chiffres, pas sur les on-dit."
+    },
     "features": {
       "title": "Fonctionnalités essentielles et mesurables",
       "subtitle": "Moins de friction opérationnelle, plus de contrôle.",
@@ -72,7 +86,48 @@
       "config": "Configuration",
       "configDesc": "Services, équipe, horaires et réglages sur mesure pour votre activité.",
       "golive": "Go‑live",
-      "goliveDesc": "Vérification finale et lancement. Chaque projet démarre après un appel de découverte."
+      "goliveDesc": "Vérification finale et lancement. Chaque projet démarre après un appel de découverte.",
+      "step1Title": "Setup guidé pour votre établissement",
+      "step1Desc": "Nous configurons ensemble services, horaires et branding. Votre activité dans l'app, avec votre logo et vos couleurs.",
+      "step2Title": "Frais mensuels clairs",
+      "step2Desc": "Un coût fixe par mois. Mises à jour et support inclus. Aucun coût caché.",
+      "step3Title": "Évolue avec votre activité",
+      "step3Desc": "Plus d'équipe, plus de services, plus de clients : le système s'adapte. Sans changer d'outils.",
+      "setupNote": "Le coût du setup peut être étalé sur 6 ou 12 mois."
+    },
+    "plansHome": {
+      "title": "Les offres",
+      "subtitle": "Choisissez ce qui correspond à votre établissement. Beauty uniquement : barbier, coiffeur, centre de beauté.",
+      "studioName": "Studio",
+      "studioForWho": "Barbier, coiffeur, centre de beauté avec un site. Pour ceux qui veulent de l'ordre sans complication.",
+      "studioIncludes": ["Réservations en ligne clients", "Gestion équipe et prestations", "Calendrier professionnel", "Notifications automatiques", "Branding de base", "Gestion clients", "Historique des rendez-vous", "Support standard"],
+      "studioSetup": "900 € une fois",
+      "studioSetupNote": "échelonnable sur 6 ou 12 mois",
+      "studioCanone": "89 € / mois",
+      "signatureName": "Signature",
+      "signatureForWho": "Pour les studios structurés : plus de prestations, plus d'équipe, plus de contrôle.",
+      "signatureIncludes": ["Tout Studio inclus", "Récurrences automatiques avancées", "Analytics opérationnelles", "Support prioritaire"],
+      "signatureSetup": "1 400 € une fois",
+      "signatureSetupNote": "échelonnable sur 6 ou 12 mois",
+      "signatureCanone": "120 € / mois"
+    },
+    "projectsCustom": {
+      "title": "Projets sur mesure",
+      "text": "Activités avec logiques plus complexes (food, multi-site, autre) : devis sur demande. Chaque projet est différent. Parlons-en en consultation."
+    },
+    "notAnyApp": {
+      "title": "Pourquoi ce n'est pas une app quelconque",
+      "subtitle": "Aucun compromis sur l'expérience.",
+      "point1": "Pas de marketplace : les clients et les données sont à vous.",
+      "point2": "Pas d'app générique : conçue pour ceux qui gèrent rendez-vous et personnes, pas pour ceux qui vendent \"un peu de tout\".",
+      "point3": "Aucun compromis sur l'expérience : une PWA élégante, rapide, avec votre marque.",
+      "closing": "HUBIA n'est pas pour tout le monde. C'est pour ceux qui prennent leur établissement au sérieux.",
+      "positioning": ["HUBIA n'est pas pensée pour tout le monde.", "Elle est pensée pour ceux qui veulent un système stable et sur mesure, pas une simple app à installer et oublier.", "Si vous cherchez uniquement l'option la moins chère, il existe probablement de meilleures solutions. HUBIA est pour ceux qui prennent leur établissement au sérieux."]
+    },
+    "ctaFinal": {
+      "title": "Parlons-en",
+      "subtitle": "Sans engagement, sans appels commerciaux agressifs.",
+      "cta": "Demander une consultation"
     },
     "reliability": {
       "title": "Fiabilité",

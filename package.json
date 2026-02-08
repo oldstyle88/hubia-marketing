@@ -7,22 +7,25 @@
     "build": "node scripts/run-next.js build",
     "start": "node scripts/run-next.js start",
     "lint": "node scripts/run-next.js lint",
-    "clean": "rm -rf .next"
+    "clean": "rm -rf .next",
+    "generate-brand-icons": "node scripts/generate-brand-icons.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
-    "resend": "^4.0.0",
     "next": "^16.1.6",
     "next-intl": "^4.8.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "resend": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "autoprefixer": "^10.4.19",
+    "png-to-ico": "^2.1.8",
     "postcss": "^8.4.38",
+    "sharp": "^0.33.5",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.5.0"
   }

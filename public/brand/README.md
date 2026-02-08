@@ -18,8 +18,23 @@ Asset richiesti per favicon, PWA, e social. Tutti in **`public/brand/`**.
 - Header/Hero usano **solo** `logo-mark-transparent.png` (solo interno + scritta). Se il file manca o fallisce: viene mostrata la scritta «HŪBIA» in gradient (nessuna immagine rettangolare).
 - Build e runtime non falliscono: i path sono gestiti con fallback in `app/layout.tsx` e nei componenti.
 
-## Una sola volta
+## Generazione icone (script)
+
+Da **hubia-logo.png** (o da un altro PNG con `--source`) puoi rigenerare favicon e icone PWA:
+
+```bash
+npm run generate-brand-icons
+```
+
+Oppure con un logo diverso:
+
+```bash
+node scripts/generate-brand-icons.js --source public/brand/logoMark.png
+```
+
+Lo script scrive: `public/favicon.ico`, `public/brand/icon-192.png`, `public/brand/icon-512.png`, `public/brand/apple-touch-icon.png`.
+
+## Una sola volta (asset aggiuntivi)
 
 1. Aggiungi **logo-mark-transparent.png**: solo il logo interno (simbolo + scritta HŪBIA), sfondo trasparente, **nessun rettangolo o cornice**.
-2. Genera **icon-192.png**, **icon-512.png**, **apple-touch-icon.png** (e opzionale **og-image.png**) dallo stesso asset.
-3. Aggiorna `app/layout.tsx` metadata.icons e openGraph.images per usare questi file (vedi commenti TODO nel layout).
+2. Per **og-image.png** (Open Graph / social 1200×630): crealo a mano o estendi lo script se serve.

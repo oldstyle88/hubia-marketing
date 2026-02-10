@@ -43,7 +43,7 @@ export default async function PricingPage() {
       monthly: t('prices.pro.monthly'),
       features: tPlans.raw('pro.features') as string[],
       highlight: true,
-      badge: t('mostChosen'),
+      badge: null,
     },
     {
       name: tPlans('max.name'),

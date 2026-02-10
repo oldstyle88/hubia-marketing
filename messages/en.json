@@ -104,27 +104,35 @@
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "Two plans: Studio and Signature. One-time setup, spread over 6 or 12 months.",
+    "subtitle": "HŪBIA is the management system for local businesses that want to organise bookings, clients and staff professionally. A modern experience for clients and team, accessible from web and app, designed to grow with your business. Two clear plans: Studio and Signature.",
     "pwaBlock": {
       "title": "PWA only, no store apps",
-      "body": "App installable on smartphone (iOS and Android) with your logo and colours. One piece of software, updates included."
+      "body": "The app installs on smartphone (iOS and Android) with your logo and colours. No store required: clients and staff add it from the web page. One piece of software, updates included."
     },
-    "footer": "One-time setup + monthly subscription. Setup can be spread over 6 or 12 months at no extra cost.",
-    "setupIncludes": "Setup includes: design, configuration, branding (logo, colours, app icon), testing and go-live.",
+    "footer": "One-time setup + monthly fee. Setup can be spread over 6 or 12 months at no extra cost.",
+    "setupSectionTitle": "What the setup includes",
+    "setupSectionBody": "The setup is one-time and includes: initial system configuration, visual customisation (logo and colours for your business), setup of services and staff, testing and go-live. You can spread it over 6 or 12 months at no extra cost. No hidden fees.",
+    "setupIncludes": "Initial configuration, visual customisation, services and staff setup, testing and go-live. One-time, spread over 6 or 12 months.",
     "setupMaxNote": "Guided configuration and direct support until go-live.",
     "contactCta": "Talk to us →",
     "perMonth": "/month",
     "setupOneTime": "setup (one-time)",
-    "requestDemo": "Contact us",
+    "requestDemo": "Request a consultation",
     "mostChosen": "Most chosen",
-    "faqTitle": "Questions about plans",
+    "faqTitle": "Frequently asked questions",
     "faq": {
-      "q1": "What does setup include?",
-      "a1": "Design, configuration, branding (logo, colours, app icon), testing and go-live. You can spread the cost over 6 or 12 months.",
-      "q2": "Can I move from Studio to Signature?",
-      "a2": "Yes, the change applies from the next billing cycle.",
-      "q3": "How does billing work?",
-      "a3": "One-time setup at activation (spread over 6–12 months if needed) and monthly recurring fee. No long-term lock-in."
+      "q1": "Can I move from Studio to Signature?",
+      "a1": "Yes, upgrade is possible at any time. The change applies from the next billing cycle.",
+      "q2": "What happens if I choose Studio?",
+      "a2": "You get all the essentials to manage bookings, calendar, staff, clients and notifications. Advanced features (analytics, automatic recurrences, advanced branding) are available on the Signature plan.",
+      "q3": "Are advanced features removed or locked?",
+      "a3": "They are only available on the Signature plan. With Studio they are not active; when you move to Signature you enable them without changing system.",
+      "q4": "Do I need to install an app from the store?",
+      "a4": "No. HŪBIA works as a modern web app (PWA): clients and staff can add it to their phone home screen from the browser, without using the stores. Same experience as an app, no store install.",
+      "q5": "What does the setup include?",
+      "a5": "Initial configuration, visual customisation (logo and colours), services and staff setup, testing and go-live. It is one-time and can be spread over 6 or 12 months.",
+      "q6": "How does billing work?",
+      "a6": "One-time setup at activation (spread over 6 or 12 months) and monthly fee. No long-term commitment."
     },
     "prices": {
       "pro": {
@@ -161,28 +169,27 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Barber, hairdresser, beauty centre. One venue: bookings, staff, calendar and standard support.",
+      "description": "Everything you need to manage bookings, calendar, staff and clients. Some advanced features are available on the Signature plan.",
       "features": [
-        "Online client bookings",
+        "Online bookings",
+        "Appointment calendar",
         "Staff and services management",
-        "Professional calendar",
-        "Automatic notifications",
-        "Base branding",
+        "Automatic client notifications",
         "Client management",
         "Appointment history",
-        "Standard support",
-        "Setup spread over 6 or 12 months"
+        "Base PWA branding",
+        "Standard support"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "For structured studios. Everything in Studio, plus advanced recurrences, analytics and priority support.",
+      "description": "Everything in Studio plus analytics to see how the business is doing, automatic recurrences for repeat appointments, advanced branding for a more custom app, and priority support.",
       "features": [
         "Everything in Studio",
+        "Operational analytics (bookings trend, service usage)",
         "Advanced automatic recurrences",
-        "Operational analytics",
-        "Priority support",
-        "Setup spread over 6 or 12 months"
+        "Advanced PWA branding",
+        "Priority support"
       ]
     }
   },

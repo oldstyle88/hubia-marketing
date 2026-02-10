@@ -27,7 +27,7 @@ export async function generateMetadata() {
   const t = await getTranslations('pricing')
   return {
     title: `${t('title')} — HŪBIA`,
-    description: 'Studio €900 + €89/mese. Signature €1.400 + €120/mese. Setup rateizzabile 6 o 12 mesi. Ogni progetto parte da una call conoscitiva.',
+    description: 'Due piani: Studio (€900 setup + €89/mese) e Signature (€1.400 setup + €120/mese). Setup una tantum rateizzabile. Gestionale per attività locali.',
   }
 }
 
@@ -60,6 +60,9 @@ export default async function PricingPage() {
     { question: t('faq.q1'), answer: t('faq.a1') },
     { question: t('faq.q2'), answer: t('faq.a2') },
     { question: t('faq.q3'), answer: t('faq.a3') },
+    { question: t('faq.q4'), answer: t('faq.a4') },
+    { question: t('faq.q5'), answer: t('faq.a5') },
+    { question: t('faq.q6'), answer: t('faq.a6') },
   ]
 
   return (
@@ -95,6 +98,15 @@ export default async function PricingPage() {
             </p>
             <p className="text-secondary/80 text-sm mb-10">
               {t('setupIncludes')}
+            </p>
+          </div>
+
+          <div className="mt-16 max-w-2xl mx-auto">
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">
+              {t('setupSectionTitle')}
+            </h2>
+            <p className="text-secondary leading-relaxed text-center">
+              {t('setupSectionBody')}
             </p>
           </div>
 

@@ -104,27 +104,35 @@
   },
   "pricing": {
     "title": "Prezzi",
-    "subtitle": "Due piani: Studio e Signature. Setup una tantum, rateizzabile in 6 o 12 mesi.",
+    "subtitle": "HŪBIA è il sistema di gestione pensato per attività locali che vogliono organizzare prenotazioni, clienti e staff in modo professionale. Un’esperienza moderna per clienti e team, accessibile da web e da app, pensata per crescere con il tuo business. Due piani chiari: Studio e Signature.",
     "pwaBlock": {
       "title": "Solo PWA, zero app da store",
-      "body": "App installabile su smartphone (iOS e Android) con logo e colori della tua attività. Un solo software, aggiornamenti inclusi."
+      "body": "L’app si installa su smartphone (iOS e Android) con il logo e i colori della tua attività. Nessun passaggio dagli store: i clienti e lo staff la aggiungono dalla pagina web. Un solo software, aggiornamenti inclusi."
     },
-    "footer": "Setup una tantum + abbonamento mensile. Setup rateizzabile in 6 o 12 mesi senza aggravio.",
-    "setupIncludes": "Il setup include: progettazione, configurazione, branding (logo, colori, icona), test e messa online.",
+    "footer": "Setup una tantum + canone mensile. Lo setup può essere rateizzato in 6 o 12 mesi senza aggravio.",
+    "setupSectionTitle": "Cosa include il setup",
+    "setupSectionBody": "Il setup è una tantum e include: configurazione iniziale del sistema, personalizzazione grafica (logo e colori della tua attività), impostazione di servizi e staff, test e messa online. Puoi rateizzarlo in 6 o 12 mesi senza costi aggiuntivi. Non ci sono costi nascosti.",
+    "setupIncludes": "Configurazione iniziale, personalizzazione grafica, impostazione servizi e staff, test e messa online. Una tantum, rateizzabile in 6 o 12 mesi.",
     "setupMaxNote": "Supporto dedicato in fase di avvio e configurazione guidata al go-live.",
     "contactCta": "Parla con noi →",
     "perMonth": "/mese",
     "setupOneTime": "setup (una tantum)",
-    "requestDemo": "Contattaci",
+    "requestDemo": "Richiedi una consulenza",
     "mostChosen": "Più scelto",
-    "faqTitle": "Domande sui piani",
+    "faqTitle": "Domande frequenti",
     "faq": {
-      "q1": "Cosa include il setup?",
-      "a1": "Progettazione, configurazione, branding (logo, colori, icona app), test e messa online. Setup rateizzabile in 6 o 12 mesi.",
-      "q2": "Posso passare da Studio a Signature?",
-      "a2": "Sì. Il passaggio si applica dal ciclo di fatturazione successivo.",
-      "q3": "Come funziona il pagamento?",
-      "a3": "Setup una tantum all'attivazione (rateizzabile in 6 o 12 mesi) e abbonamento mensile. Nessun vincolo di durata."
+      "q1": "Posso passare da Studio a Signature?",
+      "a1": "Sì, l’upgrade è possibile in qualsiasi momento. Il passaggio si applica dal ciclo di fatturazione successivo.",
+      "q2": "Cosa succede se scelgo Studio?",
+      "a2": "Hai tutte le funzionalità essenziali per gestire prenotazioni, calendario, staff, clienti e notifiche. Le funzionalità avanzate (analytics, ricorrenze automatiche, branding avanzato) sono disponibili nel piano Signature.",
+      "q3": "Le funzionalità avanzate spariscono o sono bloccate?",
+      "a3": "Sono disponibili solo nel piano Signature. Con Studio non sono attive; passando a Signature le attivi senza cambiare sistema.",
+      "q4": "Serve installare un’app dallo store?",
+      "a4": "No. HŪBIA funziona come web app moderna (PWA): clienti e staff possono aggiungerla alla home del telefono dal browser, senza passare dagli store. Stessa esperienza di un’app, nessuna installazione da store.",
+      "q5": "Cosa include il setup?",
+      "a5": "Configurazione iniziale, personalizzazione grafica (logo e colori), impostazione servizi e staff, test e messa online. È una tantum e rateizzabile in 6 o 12 mesi.",
+      "q6": "Come funziona il pagamento?",
+      "a6": "Setup una tantum all’attivazione (rateizzabile in 6 o 12 mesi) e canone mensile. Nessun vincolo di durata."
     },
     "prices": {
       "pro": {
@@ -161,28 +169,27 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Barbiere, parrucchiere, beauty center. Una sede: prenotazioni, staff, calendario e supporto standard.",
+      "description": "Tutto l’essenziale per gestire prenotazioni, calendario, staff e clienti. Alcune funzionalità avanzate sono disponibili nel piano Signature.",
       "features": [
-        "Prenotazioni online clienti",
+        "Prenotazioni online",
+        "Calendario appuntamenti",
         "Gestione staff e servizi",
-        "Calendario professionale",
-        "Notifiche automatiche",
-        "Branding base",
+        "Notifiche automatiche ai clienti",
         "Gestione clienti",
         "Storico appuntamenti",
-        "Supporto standard",
-        "Setup rateizzabile in 6 o 12 mesi"
+        "Branding base della PWA",
+        "Supporto standard"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Pensato per studi strutturati. Tutto Studio, più ricorrenze avanzate, analytics e supporto prioritario.",
+      "description": "Tutto Studio più analytics per capire come va il business, ricorrenze automatiche per gli appuntamenti ripetuti, branding avanzato per un’app più personalizzata e supporto prioritario.",
       "features": [
         "Tutto ciò che include Studio",
+        "Analytics operative (andamento prenotazioni, utilizzo servizi)",
         "Ricorrenze automatiche avanzate",
-        "Analytics operative",
-        "Priorità di supporto",
-        "Setup rateizzabile in 6 o 12 mesi"
+        "Branding PWA avanzato",
+        "Supporto prioritario"
       ]
     }
   },

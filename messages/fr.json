@@ -100,13 +100,27 @@
       "subtitle": "Choisissez ce qui correspond à votre établissement. Beauty uniquement : barbier, coiffeur, centre de beauté.",
       "studioName": "Studio",
       "studioForWho": "Barbier, coiffeur, centre de beauté avec un site. Pour ceux qui veulent de l'ordre sans complication.",
-      "studioIncludes": ["Réservations en ligne clients", "Gestion équipe et prestations", "Calendrier professionnel", "Notifications automatiques", "Branding de base", "Gestion clients", "Historique des rendez-vous", "Support standard"],
+      "studioIncludes": [
+        "Réservations en ligne clients",
+        "Gestion équipe et prestations",
+        "Calendrier professionnel",
+        "Notifications automatiques",
+        "Branding de base",
+        "Gestion clients",
+        "Historique des rendez-vous",
+        "Support standard"
+      ],
       "studioSetup": "900 € une fois",
       "studioSetupNote": "échelonnable sur 6 ou 12 mois",
       "studioCanone": "89 € / mois",
       "signatureName": "Signature",
       "signatureForWho": "Pour les studios structurés : plus de prestations, plus d'équipe, plus de contrôle.",
-      "signatureIncludes": ["Tout Studio inclus", "Récurrences automatiques avancées", "Analytics opérationnelles", "Support prioritaire"],
+      "signatureIncludes": [
+        "Tout Studio inclus",
+        "Récurrences automatiques avancées",
+        "Analytics opérationnelles",
+        "Support prioritaire"
+      ],
       "signatureSetup": "1 400 € une fois",
       "signatureSetupNote": "échelonnable sur 6 ou 12 mois",
       "signatureCanone": "120 € / mois"
@@ -122,7 +136,11 @@
       "point2": "Pas d'app générique : conçue pour ceux qui gèrent rendez-vous et personnes, pas pour ceux qui vendent \"un peu de tout\".",
       "point3": "Aucun compromis sur l'expérience : une PWA élégante, rapide, avec votre marque.",
       "closing": "HUBIA n'est pas pour tout le monde. C'est pour ceux qui prennent leur établissement au sérieux.",
-      "positioning": ["HUBIA n'est pas pensée pour tout le monde.", "Elle est pensée pour ceux qui veulent un système stable et sur mesure, pas une simple app à installer et oublier.", "Si vous cherchez uniquement l'option la moins chère, il existe probablement de meilleures solutions. HUBIA est pour ceux qui prennent leur établissement au sérieux."]
+      "positioning": [
+        "HUBIA n'est pas pensée pour tout le monde.",
+        "Elle est pensée pour ceux qui veulent un système stable et sur mesure, pas une simple app à installer et oublier.",
+        "Si vous cherchez uniquement l'option la moins chère, il existe probablement de meilleures solutions. HUBIA est pour ceux qui prennent leur établissement au sérieux."
+      ]
     },
     "ctaFinal": {
       "title": "Parlons-en",
@@ -179,27 +197,35 @@
   },
   "pricing": {
     "title": "Tarifs",
-    "subtitle": "Deux plans : Studio et Signature. Setup unique, échelonnable sur 6 ou 12 mois.",
+    "subtitle": "HŪBIA est le système de gestion pensé pour les établissements locaux qui veulent organiser réservations, clients et équipe de façon professionnelle. Une expérience moderne pour clients et équipe, accessible par web et app, pensée pour grandir avec votre activité. Deux plans clairs : Studio et Signature.",
     "pwaBlock": {
       "title": "PWA uniquement, pas d'apps store",
-      "body": "App installable sur smartphone (iOS et Android) avec votre logo et couleurs. Un seul logiciel, mises à jour incluses."
+      "body": "L'app s'installe sur smartphone (iOS et Android) avec votre logo et couleurs. Sans store : clients et équipe l'ajoutent depuis la page web. Un seul logiciel, mises à jour incluses."
     },
+    "setupSectionTitle": "Que comprend le setup",
+    "setupSectionBody": "Le setup est unique et comprend : configuration initiale du système, personnalisation graphique (logo et couleurs de votre établissement), paramétrage des prestations et de l'équipe, tests et mise en ligne. Vous pouvez l'échelonner sur 6 ou 12 mois sans frais supplémentaires. Aucun coût caché.",
     "footer": "Setup unique + abonnement mensuel. Le setup peut être échelonné sur 6 ou 12 mois sans surcoût.",
-    "setupIncludes": "Le setup inclut : conception, configuration, branding (logo, couleurs, icône), tests et mise en ligne.",
+    "setupIncludes": "Configuration initiale, personnalisation graphique, paramétrage prestations et équipe, tests et mise en ligne. Unique, échelonnable sur 6 ou 12 mois.",
     "setupMaxNote": "Support dédié en phase de lancement et configuration guidée jusqu'au go-live.",
     "contactCta": "Parlons‑en →",
     "perMonth": "/mois",
     "setupOneTime": "setup (unique)",
-    "requestDemo": "Nous contacter",
+    "requestDemo": "Demander une consultation",
     "mostChosen": "Plus choisi",
-    "faqTitle": "Questions sur les offres",
+    "faqTitle": "Questions fréquentes",
     "faq": {
-      "q1": "Que comprend le setup ?",
-      "a1": "Conception, configuration, branding (logo, couleurs, icône app), tests et mise en ligne. Vous pouvez échelonner le coût sur 6 ou 12 mois.",
-      "q2": "Puis‑je passer de Studio à Signature ?",
-      "a2": "Oui, le changement s’applique au prochain cycle de facturation.",
-      "q3": "Comment fonctionne la facturation ?",
-      "a3": "Setup unique à l'activation (échelonnable sur 6 ou 12 mois) et abonnement mensuel. Aucun engagement de durée."
+      "q1": "Puis-je passer de Studio à Signature ?",
+      "a1": "Oui, le passage au plan supérieur est possible à tout moment. Il s'applique au prochain cycle de facturation.",
+      "q2": "Que se passe-t-il si je choisis Studio ?",
+      "a2": "Vous avez l'essentiel pour gérer réservations, calendrier, équipe et clients. Les fonctions avancées (analytics, récurrences automatiques, branding avancé) sont disponibles sur le plan Signature.",
+      "q3": "Les fonctions avancées disparaissent ou sont bloquées ?",
+      "a3": "Elles sont uniquement sur le plan Signature. Avec Studio elles ne sont pas actives ; en passant à Signature vous les activez sans changer de système.",
+      "q4": "Faut-il installer une app depuis le store ?",
+      "a4": "Non. HŪBIA fonctionne comme une web app moderne (PWA) : clients et équipe peuvent l'ajouter à l'écran d'accueil depuis le navigateur, sans passer par les stores. Même expérience qu'une app, aucune installation depuis le store.",
+      "q5": "Que comprend le setup ?",
+      "a5": "Configuration initiale, personnalisation graphique (logo et couleurs), paramétrage des prestations et de l'équipe, tests et mise en ligne. C'est unique et échelonnable sur 6 ou 12 mois.",
+      "q6": "Comment fonctionne la facturation ?",
+      "a6": "Setup unique à l'activation (échelonnable sur 6 ou 12 mois) et abonnement mensuel. Aucun engagement de durée."
     },
     "prices": {
       "pro": {
@@ -236,28 +262,27 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Barbier, coiffeur, centre de beauté. Un site : réservations, équipe, calendrier et support standard.",
+      "description": "L'essentiel pour gérer réservations, calendrier, équipe et clients. Les fonctions avancées sont disponibles sur le plan Signature.",
       "features": [
-        "Réservations en ligne clients",
+        "Réservations en ligne",
+        "Calendrier des rendez-vous",
         "Gestion équipe et prestations",
-        "Calendrier professionnel",
-        "Notifications automatiques",
-        "Branding de base",
+        "Notifications automatiques aux clients",
         "Gestion clients",
         "Historique des rendez-vous",
-        "Support standard",
-        "Setup échelonnable sur 6 ou 12 mois"
+        "Branding de base de la PWA",
+        "Support standard"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Pour les studios structurés. Tout Studio, plus récurrences avancées, analytics et support prioritaire.",
+      "description": "Tout Studio plus les analytics pour suivre l'activité, les récurrences automatiques pour les rendez-vous répétés, le branding avancé et le support prioritaire.",
       "features": [
-        "Tout Studio inclus",
+        "Tout ce qui est inclus dans Studio",
+        "Analytics opérationnelles (évolution des réservations, utilisation des prestations)",
         "Récurrences automatiques avancées",
-        "Analytics opérationnels",
-        "Support prioritaire",
-        "Setup échelonnable sur 6 ou 12 mois"
+        "Branding PWA avancé",
+        "Support prioritaire"
       ]
     }
   },

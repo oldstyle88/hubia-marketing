@@ -19,7 +19,7 @@
       "title": "Für alle, die mit Menschen arbeiten, nicht mit Chaos.",
       "subtitle": "Dein Betrieb. Dein Brand. Keine Verwirrung.",
       "card1Title": "Barber & Hair",
-      "card1Desc": "Barbiere, Hair Salon, Friseure. Termine, Team und Kunden in einem System.",
+      "card1Desc": "Barbiere, Friseure und Haarsalons. Termine, Team und Kunden in einem System.",
       "card2Title": "Beauty",
       "card2Desc": "Beauty-Center und Kosmetikstudios. Mehr Services, mehr Menschen: ein System, das alles in Ordnung hält.",
       "card3Title": "Food (Pizzeria / Street Food)",
@@ -51,9 +51,9 @@
     },
     "plansHome": {
       "title": "Die Pläne",
-      "subtitle": "Wähle, was zu deinem Betrieb passt. Nur Beauty: Barbier, Friseur, Beauty center.",
+      "subtitle": "Wähle, was zu deinem Betrieb passt. Nur Beauty: Barbier, Friseur, Beauty-Center.",
       "studioName": "Studio",
-      "studioForWho": "Barbier, Friseur, Beauty center mit einem Standort. Für alle, die Ordnung ohne Komplikation wollen.",
+      "studioForWho": "Barbier, Friseur, Beauty-Center mit einem Standort. Für alle, die Ordnung ohne Komplikation wollen.",
       "studioIncludes": [
         "Online-Buchungen für Kunden",
         "Staff- und Serviceverwaltung",
@@ -205,13 +205,13 @@
     "send": "Anfrage senden",
     "sending": "Wird gesendet...",
     "success": "Anfrage erfolgreich gesendet. Wir melden uns in Kürze.",
-    "businessBarber": "Barbiere / Parrucchiere",
+    "businessBarber": "Beauty (Barbier, Friseur, Beauty-Center)",
     "businessOther": "Sonstiges",
     "businessFood": "Food (Pizzeria, Street food)",
-    "businessGym": "Soluzioni avanzate (su richiesta)"
+    "businessGym": "Erweiterte Lösungen (auf Anfrage)"
   },
   "footer": {
-    "tagline": "Software PWA premium per barbieri, parrucchieri e food. Niente template, niente app generiche.",
+    "tagline": "Premium-PWA für Beauty und Gastronomie. Keine Vorlagen, keine Standard-Apps.",
     "product": "Produkt",
     "company": "Unternehmen",
     "contactLink": "Kontakt",

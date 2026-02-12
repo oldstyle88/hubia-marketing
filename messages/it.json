@@ -19,7 +19,7 @@
       "title": "Pensato per chi lavora con le persone, non con il caos.",
       "subtitle": "Il tuo locale. Il tuo brand. Zero confusione.",
       "card1Title": "Barber & Hair",
-      "card1Desc": "Barbieri, hair salon, parrucchieri. Appuntamenti, staff e clienti in un unico sistema.",
+      "card1Desc": "Barbieri, parrucchieri e saloni. Appuntamenti, staff e clienti in un unico sistema.",
       "card2Title": "Beauty",
       "card2Desc": "Beauty center e studi estetici. Più servizi, più persone: un solo sistema che tiene tutto in ordine.",
       "card3Title": "Food (pizzeria / street food)",
@@ -55,7 +55,7 @@
       "studioName": "Studio",
       "studioForWho": "Barbiere, parrucchiere, beauty center con una sede. Chi vuole ordine senza complicarsi la vita.",
       "studioIncludes": [
-        "Prenotazioni online clienti",
+        "Prenotazioni online per i clienti",
         "Gestione staff e servizi",
         "Calendario professionale",
         "Notifiche automatiche",
@@ -109,7 +109,7 @@
       "title": "Solo PWA, zero app da store",
       "body": "L’app si installa su smartphone (iOS e Android) con il logo e i colori della tua attività. Nessun passaggio dagli store: i clienti e lo staff la aggiungono dalla pagina web. Un solo software, aggiornamenti inclusi."
     },
-    "footer": "Setup una tantum + canone mensile. Lo setup può essere rateizzato in 6 o 12 mesi senza aggravio.",
+    "footer": "Setup una tantum + canone mensile. Il setup può essere rateizzato in 6 o 12 mesi senza costi aggiuntivi.",
     "setupSectionTitle": "Cosa include il setup",
     "setupSectionBody": "Il setup è una tantum e include: configurazione iniziale del sistema, personalizzazione grafica (logo e colori della tua attività), impostazione di servizi e staff, test e messa online. Puoi rateizzarlo in 6 o 12 mesi senza costi aggiuntivi. Non ci sono costi nascosti.",
     "setupIncludes": "Configurazione iniziale, personalizzazione grafica, impostazione servizi e staff, test e messa online. Una tantum, rateizzabile in 6 o 12 mesi.",

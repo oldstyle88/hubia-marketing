@@ -79,7 +79,7 @@ export default async function TermsPage() {
                   <li>Utilizzare il Servizio per scopi illegali o non autorizzati</li>
                   <li>Violare leggi o regolamenti applicabili</li>
                   <li>Interferire con il funzionamento del Servizio</li>
-                  <li>Tentare di accedere non autorizzato a sistemi o dati</li>
+                  <li>Accedere senza autorizzazione a sistemi o dati</li>
                   <li>Trasmettere virus, malware o codice dannoso</li>
                   <li>Utilizzare il Servizio per spam o comunicazioni non autorizzate</li>
                   <li>Copiare, modificare o distribuire il software senza autorizzazione</li>

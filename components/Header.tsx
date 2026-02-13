@@ -48,7 +48,7 @@ export function Header() {
             {navLinks}
           </nav>
 
-          <div className="md:justify-self-center">
+          <div className="md:justify-self-center flex items-center min-h-[2.5rem]">
             <Logo variant="header" href="/" />
           </div>
 
@@ -60,7 +60,7 @@ export function Header() {
             <button
               type="button"
               onClick={() => setMobileOpen((v) => !v)}
-              className="md:hidden p-2 rounded-lg text-secondary hover:text-primary hover:bg-white/5 transition-colors focus:outline-none focus:ring-2 focus:ring-accent-blue/40"
+              className="md:hidden p-2 rounded-lg text-secondary hover:text-primary hover:bg-white/5 transition-colors focus:outline-none focus:ring-2 focus:ring-accent-cobalt/50"
               aria-expanded={mobileOpen}
               aria-label={mobileOpen ? t('closeMenu') : t('openMenu')}
             >

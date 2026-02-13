@@ -19,6 +19,7 @@ const config: Config = {
         secondary: '#A7B0C8',
         accent: '#5CC8FF',
         'accent-blue': '#5CC8FF',
+        'accent-cobalt': '#2563EB',
         'accent-violet': '#8B5BFF',
         'accent-pink': '#D26BFF',
         'accent-cyan': '#42E6FF',
@@ -30,8 +31,8 @@ const config: Config = {
         display: ['var(--font-display)', 'ui-sans-serif'],
       },
       backgroundImage: {
-        'gradient-accent': 'linear-gradient(135deg, #5CC8FF 0%, #8B5BFF 52%, #D26BFF 100%)',
-        'gradient-accent-soft': 'linear-gradient(135deg, rgba(92,200,255,0.12) 0%, rgba(139,91,255,0.12) 52%, rgba(210,107,255,0.08) 100%)',
+        'gradient-accent': 'linear-gradient(135deg, #7BA8F0 0%, #2563EB 100%)',
+        'gradient-accent-soft': 'linear-gradient(135deg, rgba(123,168,240,0.14) 0%, rgba(37,99,235,0.1) 100%)',
         'gradient-aurora': 'radial-gradient(1200px 600px at 85% -10%, rgba(92, 200, 255, 0.16), transparent 60%), radial-gradient(900px 500px at -10% 15%, rgba(139, 91, 255, 0.12), transparent 55%)',
       },
       letterSpacing: {

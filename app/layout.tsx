@@ -18,8 +18,8 @@ const bodyFont = Manrope({
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://hubia.com'
 
-// Cache-bust per favicon: dopo deploy il browser carica il logo invece del vecchio globo
-const faviconVersion = 'v=2'
+// Cache-bust per favicon: dopo deploy il browser carica il mark (H) invece del vecchio
+const faviconVersion = 'v=3'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'HŪBIA — The premium PWA platform for local businesses',
     description: 'Booking, ordering, staff & analytics. PWA-only.',
-    images: ['/brand/hubia-logo.png'],
+    images: ['/brand/icon-512.png'],
   },
   robots: { index: true, follow: true },
 }

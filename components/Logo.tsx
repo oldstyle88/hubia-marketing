@@ -14,9 +14,9 @@ export function Logo({ variant, href = '/' }: LogoProps) {
     const content = (
       <>
         <img
-          src="/brand/hubia-logo-extracted.png?v=3"
+          src="/brand/hubia-logo-extracted.png?v=4"
           alt="HUBIA"
-          className="h-8 flex-shrink-0 md:h-10 w-auto object-contain"
+          className="h-10 flex-shrink-0 md:h-12 w-auto object-contain animate-logo-header"
           aria-hidden
         />
         <span className="sr-only">HUBIA</span>

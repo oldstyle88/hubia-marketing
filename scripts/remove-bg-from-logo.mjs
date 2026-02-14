@@ -19,7 +19,7 @@ const inputPath = process.argv[2] || path.join(brandDir, 'hubia-logo-source.png'
 const outputPath = process.argv[3] || path.join(brandDir, 'hubia-logo-extracted.png')
 
 // Soglia: pixel sotto questa luminosità media → trasparente (sfondo)
-const LUMINANCE_THRESHOLD = 65
+const LUMINANCE_THRESHOLD = 78
 
 async function main() {
   if (!fs.existsSync(inputPath)) {
@@ -45,8 +45,8 @@ async function main() {
     if (lum < LUMINANCE_THRESHOLD) {
       data[i + 3] = 0
     } else {
-      // Feathering leggero ai bordi: riduci alpha dove siamo vicini alla soglia
-      const t = LUMINANCE_THRESHOLD + 25
+      // Feathering stretto: transizione breve per evitare sfumature residue
+      const t = LUMINANCE_THRESHOLD + 12
       if (lum < t) {
         const factor = (lum - LUMINANCE_THRESHOLD) / (t - LUMINANCE_THRESHOLD)
         data[i + 3] = Math.round(255 * factor)

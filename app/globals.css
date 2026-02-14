@@ -76,41 +76,13 @@ body {
 
 .hubia-logo-animated__icon {
   opacity: 0;
+  animation: hubiaLogoFadeIn 0.8s ease-out 0.1s forwards, hubiaLogoGlow 4s ease-in-out 1.5s infinite;
 }
 
 .hubia-logo-animated__wordmark {
   opacity: 0;
-  animation: hubiaLogoFadeIn 0.6s ease-out 0.6s forwards;
+  animation: hubiaLogoFadeIn 0.6s ease-out 0.5s forwards;
 }
-
-/* Tratti H: connessione (stroke si “disegna”) */
-.hubia-logo-line--left {
-  animation: hubiaLogoDrawLine 0.55s ease-out 0.25s forwards;
-}
-
-.hubia-logo-line--right {
-  animation: hubiaLogoDrawLine 0.55s ease-out 0.35s forwards;
-}
-
-.hubia-logo-line--bar {
-  animation: hubiaLogoDrawBar 0.45s ease-out 0.7s forwards;
-}
-
-/* Nodi: fade-in + pulsazione leggera in loop */
-.hubia-logo-node {
-  opacity: 0;
-  transform: scale(0.6);
-  transform-origin: center;
-  animation:
-    hubiaLogoNodeIn 0.5s ease-out 1s forwards,
-    hubiaLogoNodePulse 3.5s ease-in-out 2s infinite;
-}
-
-/* Glow pulsante sull’icona (dopo la connessione) */
-.hubia-logo-animated__icon {
-  animation: hubiaLogoFadeIn 0.8s ease-out 0.1s forwards, hubiaLogoGlow 4s ease-in-out 1.8s infinite;
-}
-
 @keyframes hubiaLogoFadeIn {
   from {
     opacity: 0;
@@ -119,43 +91,6 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes hubiaLogoDrawLine {
-  from {
-    stroke-dashoffset: 100;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes hubiaLogoDrawBar {
-  from {
-    stroke-dashoffset: 50;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes hubiaLogoNodeIn {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes hubiaLogoNodePulse {
-  0%,
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.85;
-    transform: scale(1.15);
   }
 }
 
@@ -176,19 +111,5 @@ body {
     animation: none;
     opacity: 1;
     transform: none;
-  }
-  .hubia-logo-line--left,
-  .hubia-logo-line--right {
-    animation: hubiaLogoDrawLine 0.01s forwards;
-    stroke-dashoffset: 0;
-  }
-  .hubia-logo-line--bar {
-    animation: hubiaLogoDrawBar 0.01s forwards;
-    stroke-dashoffset: 0;
-  }
-  .hubia-logo-node {
-    animation: hubiaLogoNodeIn 0.01s forwards;
-    opacity: 1;
-    transform: scale(1);
   }
 }

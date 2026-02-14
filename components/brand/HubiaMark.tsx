@@ -5,7 +5,7 @@ import { useId } from 'react'
 export interface HubiaMarkProps {
   /** Altezza (e larghezza) in px. Crisp su retina grazie a viewBox. */
   size?: number
-  /** solid = colore unico (--hubia-blue-1), gradient = gradiente blu premium. */
+  /** solid = teal unico, gradient = navy → teal come riferimento brand. */
   variant?: 'solid' | 'gradient'
   className?: string
   /** Per accessibilità: lasciare vuoto se decorativo (aria-hidden sul wrapper). */
@@ -15,8 +15,8 @@ export interface HubiaMarkProps {
 const VIEWBOX_SIZE = 100
 
 /**
- * H minimal premium: due pannelli verticali (leggermente trapezoidali) + barra orizzontale.
- * Solo vettoriale SVG inline, nessuna immagine. Colori via CSS variables.
+ * H premium come riferimento immagine: due barre verticali + barra diagonale
+ * (dall’interno alto-sinistra all’interno basso-destra). Navy → teal.
  */
 export function HubiaMark({
   size = 40,
@@ -26,6 +26,7 @@ export function HubiaMark({
 }: HubiaMarkProps) {
   const id = useId().replace(/:/g, '')
   const gradId = `hubia-mark-grad-${id}`
+  const shadowId = `hubia-mark-shadow-${id}`
 
   return (
     <svg
@@ -38,28 +39,21 @@ export function HubiaMark({
       aria-hidden={ariaHidden}
     >
       <defs>
-        {/* Verticale: ceruleo in alto, indaco in basso (come riferimento) */}
-        <linearGradient id={gradId} x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="var(--hubia-blue-1, #8BB8F5)" />
-          <stop offset="50%" stopColor="var(--hubia-blue-mid, #4A7FD9)" />
-          <stop offset="100%" stopColor="var(--hubia-blue-2, #1E4A9E)" />
+        <linearGradient id={gradId} x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#00D4FF" />
+          <stop offset="35%" stopColor="#0EA5E9" />
+          <stop offset="70%" stopColor="#1E3A5F" />
+          <stop offset="100%" stopColor="#0F172A" />
         </linearGradient>
+        <filter id={shadowId} x="-20%" y="-10%" width="140%" height="120%">
+          <feDropShadow dx="0" dy="2" stdDeviation="2" floodColor="#0F172A" floodOpacity="0.5" />
+        </filter>
       </defs>
-      {/* Left panel: bordo interno diagonale verso il basso (più largo in alto) */}
-      <path
-        d="M 18 0 L 36 0 L 30 100 L 18 100 Z"
-        fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #8BB8F5)'}
-      />
-      {/* Right panel: bordo interno diagonale verso il basso (simmetrico) */}
-      <path
-        d="M 64 0 L 82 0 L 82 100 L 70 100 L 64 0 Z"
-        fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #8BB8F5)'}
-      />
-      {/* Barra orizzontale centrale */}
-      <path
-        d="M 33 42 L 67 42 L 67 58 L 33 58 Z"
-        fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #8BB8F5)'}
-      />
+      <g filter={`url(#${shadowId})`}>
+        <path d="M 15 0 L 35 0 L 35 100 L 15 100 Z" fill={variant === 'gradient' ? `url(#${gradId})` : '#00D4FF'} />
+        <path d="M 65 0 L 85 0 L 85 100 L 65 100 Z" fill={variant === 'gradient' ? `url(#${gradId})` : '#00D4FF'} />
+        <path d="M 28 8 L 42 2 L 72 92 L 58 98 Z" fill={variant === 'gradient' ? `url(#${gradId})` : '#00D4FF'} />
+      </g>
     </svg>
   )
 }

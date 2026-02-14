@@ -19,7 +19,7 @@ const inputPath = process.argv[2] || path.join(brandDir, 'hubia-logo-source.png'
 const outputPath = process.argv[3] || path.join(brandDir, 'hubia-logo-extracted.png')
 
 // Soglia: pixel sotto questa luminosità media → trasparente (sfondo)
-const LUMINANCE_THRESHOLD = 52
+const LUMINANCE_THRESHOLD = 65
 
 async function main() {
   if (!fs.existsSync(inputPath)) {

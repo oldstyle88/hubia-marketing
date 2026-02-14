@@ -113,3 +113,30 @@ body {
     transform: none;
   }
 }
+
+/* Logo hero: fade-in + scale + glow pulse */
+.animate-logo-hero {
+  animation: logoHeroIn 1s ease-out forwards, logoHeroGlow 4s ease-in-out 2s infinite;
+}
+@keyframes logoHeroIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes logoHeroGlow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(0, 212, 255, 0.25)); }
+  50% { filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.4)) drop-shadow(0 0 24px rgba(0, 212, 255, 0.15)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-logo-hero {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}

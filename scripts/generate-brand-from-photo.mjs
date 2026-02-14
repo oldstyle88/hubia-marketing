@@ -43,8 +43,8 @@ async function main() {
   const w = meta.width || 800
   const h = meta.height || 600
 
-  // Ritaglio solo la H: quadrato dalla parte alta (~44% altezza = H completa, senza testo)
-  const cropHeight = Math.round(h * 0.44)
+  // Ritaglio solo la H: quadrato dalla parte alta (~52% = H completa, poco testo)
+  const cropHeight = Math.round(h * 0.52)
   const squareSize = Math.min(w, cropHeight)
   const left = Math.round((w - squareSize) / 2)
   const top = 0
@@ -54,7 +54,7 @@ async function main() {
     .png()
     .toBuffer()
 
-  console.log('Sorgente:', src, `(${w}x${h}) → H ritagliata ${squareSize}x${squareSize} (top 44%)`)
+  console.log('Sorgente:', src, `(${w}x${h}) → H ritagliata ${squareSize}x${squareSize} (top 52%)`)
 
   // Mark H per header/logo (128px)
   const markPath = path.join(brandDir, 'hubia-mark.png')

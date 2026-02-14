@@ -38,27 +38,27 @@ export function HubiaMark({
       aria-hidden={ariaHidden}
     >
       <defs>
-        {/* Verticale: chiaro in alto, più scuro in basso (come riferimento visivo) */}
+        {/* Verticale: ceruleo in alto, indaco in basso (come riferimento) */}
         <linearGradient id={gradId} x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="var(--hubia-blue-1, #7BA8F0)" />
+          <stop offset="0%" stopColor="var(--hubia-blue-1, #8BB8F5)" />
           <stop offset="50%" stopColor="var(--hubia-blue-mid, #4A7FD9)" />
-          <stop offset="100%" stopColor="var(--hubia-blue-2, #2563EB)" />
+          <stop offset="100%" stopColor="var(--hubia-blue-2, #1E4A9E)" />
         </linearGradient>
       </defs>
-      {/* Left vertical bar: bordo interno a V (restringimento in centro) */}
+      {/* Left panel: bordo interno diagonale verso il basso (più largo in alto) */}
       <path
-        d="M 18 0 L 36 0 L 32 50 L 36 100 L 18 100 Z"
-        fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #7BA8F0)'}
+        d="M 18 0 L 36 0 L 30 100 L 18 100 Z"
+        fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #8BB8F5)'}
       />
-      {/* Right vertical bar */}
+      {/* Right panel: bordo interno diagonale verso il basso (simmetrico) */}
       <path
-        d="M 64 0 L 82 0 L 82 100 L 64 100 L 68 50 Z"
-        fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #7BA8F0)'}
+        d="M 64 0 L 82 0 L 82 100 L 70 100 L 64 0 Z"
+        fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #8BB8F5)'}
       />
-      {/* Barra orizzontale centrale (~1/5 altezza pannelli) */}
+      {/* Barra orizzontale centrale */}
       <path
-        d="M 32 42 L 68 42 L 68 58 L 32 58 Z"
-        fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #7BA8F0)'}
+        d="M 33 42 L 67 42 L 67 58 L 33 58 Z"
+        fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #8BB8F5)'}
       />
     </svg>
   )

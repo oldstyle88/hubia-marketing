@@ -38,13 +38,14 @@ export function HubiaMark({
       aria-hidden={ariaHidden}
     >
       <defs>
-        <linearGradient id={gradId} x1="0%" y1="0%" x2="100%" y2="0%">
+        {/* Verticale: chiaro in alto, più scuro in basso (come riferimento visivo) */}
+        <linearGradient id={gradId} x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" stopColor="var(--hubia-blue-1, #7BA8F0)" />
           <stop offset="50%" stopColor="var(--hubia-blue-mid, #4A7FD9)" />
           <stop offset="100%" stopColor="var(--hubia-blue-2, #2563EB)" />
         </linearGradient>
       </defs>
-      {/* Left vertical bar (trapezoid, inner edge tapered) */}
+      {/* Left vertical bar: bordo interno a V (restringimento in centro) */}
       <path
         d="M 18 0 L 36 0 L 32 50 L 36 100 L 18 100 Z"
         fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #7BA8F0)'}
@@ -54,9 +55,9 @@ export function HubiaMark({
         d="M 64 0 L 82 0 L 82 100 L 64 100 L 68 50 Z"
         fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #7BA8F0)'}
       />
-      {/* Horizontal crossbar */}
+      {/* Barra orizzontale centrale (~1/5 altezza pannelli) */}
       <path
-        d="M 32 44 L 68 44 L 68 56 L 32 56 Z"
+        d="M 32 42 L 68 42 L 68 58 L 32 58 Z"
         fill={variant === 'gradient' ? `url(#${gradId})` : 'var(--hubia-blue-1, #7BA8F0)'}
       />
     </svg>

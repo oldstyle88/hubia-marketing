@@ -21,7 +21,7 @@ const pngToIco = require('png-to-ico')
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const projectRoot = path.resolve(__dirname, '..')
 const brandDir = path.join(projectRoot, 'public', 'brand')
-const sourcePng = path.join(brandDir, 'hubia-logo-hero.png')
+const sourcePng = path.join(brandDir, 'hubia-logo-extracted.png')
 
 const layoutIcons = [
   { name: 'icon-192.png', size: 192 },
@@ -31,12 +31,15 @@ const layoutIcons = [
 const faviconSizes = [16, 32]
 
 async function main() {
-  if (!fs.existsSync(sourcePng)) {
-    console.error('Errore: file non trovato:', sourcePng)
+  const src = fs.existsSync(path.join(brandDir, 'hubia-logo-extracted.png'))
+    ? path.join(brandDir, 'hubia-logo-extracted.png')
+    : path.join(brandDir, 'hubia-logo-hero.png')
+  if (!fs.existsSync(src)) {
+    console.error('Errore: file non trovato (hubia-logo-extracted.png o hubia-logo-hero.png)')
     process.exit(1)
   }
 
-  const meta = await sharp(sourcePng).metadata()
+  const meta = await sharp(src).metadata()
   const w = meta.width || 800
   const h = meta.height || 600
 
@@ -46,12 +49,12 @@ async function main() {
   const left = Math.round((w - squareSize) / 2)
   const top = 0
 
-  const squareBuffer = await sharp(sourcePng)
+  const squareBuffer = await sharp(src)
     .extract({ left, top, width: squareSize, height: squareSize })
     .png()
     .toBuffer()
 
-  console.log('Sorgente:', sourcePng, `(${w}x${h}) → H ritagliata ${squareSize}x${squareSize}`)
+  console.log('Sorgente:', src, `(${w}x${h}) → H ritagliata ${squareSize}x${squareSize}`)
 
   // Mark H per header/logo (128px)
   const markPath = path.join(brandDir, 'hubia-mark.png')

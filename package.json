@@ -10,7 +10,8 @@
     "clean": "rm -rf .next",
     "generate-brand-icons": "node scripts/generate-brand-icons.js",
     "generate-brand-assets": "node scripts/generate-brand-assets.mjs",
-    "generate-brand-from-photo": "node scripts/generate-brand-from-photo.mjs"
+    "generate-brand-from-photo": "node scripts/generate-brand-from-photo.mjs",
+    "remove-bg-logo": "node scripts/remove-bg-from-logo.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",

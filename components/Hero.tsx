@@ -23,7 +23,7 @@ export function Hero({ title, subtitle, ctaDemo, ctaPrices }: HeroProps) {
         <div className="flex flex-col items-center gap-10">
           <Link href="/" className="inline-flex flex-col items-center" aria-label="HUBIA Home">
             <img
-              src="/brand/hubia-logo-hero.svg"
+              src="/brand/hubia-logo-extracted.png"
               alt="HUBIA"
               className="w-48 sm:w-56 md:w-64 h-auto object-contain"
               loading="eager"

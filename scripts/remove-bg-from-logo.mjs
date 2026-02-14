@@ -15,11 +15,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const projectRoot = path.resolve(__dirname, '..')
 const brandDir = path.join(projectRoot, 'public', 'brand')
 
-const inputPath = process.argv[2] || path.join(brandDir, 'hubia-logo-hero.png')
+const inputPath = process.argv[2] || path.join(brandDir, 'hubia-logo-source.png')
 const outputPath = process.argv[3] || path.join(brandDir, 'hubia-logo-extracted.png')
 
 // Soglia: pixel sotto questa luminosità media → trasparente (sfondo)
-const LUMINANCE_THRESHOLD = 35
+const LUMINANCE_THRESHOLD = 52
 
 async function main() {
   if (!fs.existsSync(inputPath)) {

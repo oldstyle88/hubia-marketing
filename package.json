@@ -9,7 +9,8 @@
     "lint": "node scripts/run-next.js lint",
     "clean": "rm -rf .next",
     "generate-brand-icons": "node scripts/generate-brand-icons.js",
-    "generate-brand-assets": "node scripts/generate-brand-assets.mjs"
+    "generate-brand-assets": "node scripts/generate-brand-assets.mjs",
+    "generate-brand-from-photo": "node scripts/generate-brand-from-photo.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",

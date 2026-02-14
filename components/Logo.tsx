@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 import { HubiaMark } from '@/components/brand/HubiaMark'
 import { HubiaWordmark } from '@/components/brand/HubiaWordmark'
@@ -13,10 +14,12 @@ export function Logo({ variant, href = '/' }: LogoProps) {
   if (variant === 'header') {
     const content = (
       <>
-        <HubiaMark
-          size={28}
-          variant="gradient"
-          className="h-6 w-6 flex-shrink-0 md:h-8 md:w-8"
+        <Image
+          src="/brand/hubia-mark.png"
+          alt=""
+          width={32}
+          height={32}
+          className="h-6 w-6 flex-shrink-0 md:h-8 md:w-8 object-contain"
           aria-hidden
         />
         <span className="sr-only">HUBIA</span>

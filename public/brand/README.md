@@ -2,11 +2,20 @@
 
 Asset richiesti per favicon, PWA e social. Tutti in **`public/brand/`**.
 
+## Logo dalla foto (H + HUBIA)
+
+| File | Uso |
+|------|-----|
+| **hubia-logo-hero.png** | Logo completo dalla foto di riferimento (H metallica + wordmark HUBIA con riflesso). Usato in hero home. |
+| **hubia-mark.png** | H ritagliata dalla foto. Generata da `npm run generate-brand-from-photo`. Usata in header e per favicon/icone. |
+
+Per rigenerare favicon e icone dalla foto: **`npm run generate-brand-from-photo`** (legge `hubia-logo-hero.png`, ritaglia la H, scrive favicon.ico, icon-192/512, apple-touch-icon, hubia-mark.png).
+
 ## Simbolo H (mark) — sorgente vettoriale
 
 | File | Uso |
 |------|-----|
-| **hubia-mark.svg** | Simbolo «H» minimal premium, sfondo trasparente, gradiente blu/cobalto. Sorgente per tutti i PNG. |
+| **hubia-mark.svg** | Simbolo «H» minimal premium, sfondo trasparente, gradiente blu/cobalto. Sorgente per `generate-brand-assets`. |
 
 ## PNG generati da `hubia-mark.svg`
 

@@ -1,8 +1,8 @@
 'use client'
 
+import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 import { Button } from './Button'
-import { HubiaLogoAnimated } from './brand/HubiaLogoAnimated'
 
 interface HeroProps {
   title: string
@@ -23,7 +23,14 @@ export function Hero({ title, subtitle, ctaDemo, ctaPrices }: HeroProps) {
       <div className="relative mx-auto max-w-4xl px-6 sm:px-8 lg:px-12 text-center">
         <div className="flex flex-col items-center gap-10">
           <Link href="/" className="inline-flex flex-col items-center" aria-label="HUBIA Home">
-            <HubiaLogoAnimated />
+            <Image
+              src="/brand/hubia-logo-hero.png"
+              alt="HUBIA"
+              width={320}
+              height={240}
+              className="w-48 sm:w-56 md:w-64 h-auto object-contain"
+              priority
+            />
           </Link>
 
           <div className="space-y-6">

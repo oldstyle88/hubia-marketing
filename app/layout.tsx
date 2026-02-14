@@ -19,7 +19,7 @@ const bodyFont = Inter({
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://hubia.com'
 
 // Cache-bust per favicon: dopo deploy il browser carica il mark (H) invece del vecchio
-const faviconVersion = 'v=7'
+const faviconVersion = 'v=8'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: `/favicon.ico?${faviconVersion}`, sizes: 'any' },
-      { url: '/brand/icon-192.png', sizes: '192x192', type: 'image/png' },
-      { url: '/brand/icon-512.png', sizes: '512x512', type: 'image/png' },
+      { url: `/brand/icon-192.png?${faviconVersion}`, sizes: '192x192', type: 'image/png' },
+      { url: `/brand/icon-512.png?${faviconVersion}`, sizes: '512x512', type: 'image/png' },
     ],
     apple: [{ url: `/brand/apple-touch-icon.png?${faviconVersion}`, sizes: '180x180', type: 'image/png' }],
   },

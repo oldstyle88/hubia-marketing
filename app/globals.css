@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --hubia-blue-1: #7BA8F0;
+  --hubia-blue-mid: #4A7FD9;
+  --hubia-blue-2: #2563EB;
+}
+
 @layer base {
   * { @apply border-border; }
   html {

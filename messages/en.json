@@ -77,7 +77,12 @@
       ],
       "signatureSetup": "€1,400 one-time",
       "signatureSetupNote": "spread over 6 or 12 months",
-      "signatureCanone": "€120 / month"
+      "signatureCanone": "€120 / month",
+      "customName": "Custom",
+      "customForWho": "Food, multi-site, complex logic. Personalized quote.",
+      "customIncludes": ["Everything custom", "Multi-site", "Food & orders", "Dedicated support"],
+      "customSetup": "Quote",
+      "customMonthly": "On request"
     },
     "projectsCustom": {
       "title": "Custom projects",

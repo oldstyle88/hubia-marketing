@@ -105,7 +105,12 @@
       "signatureIncludes": ["Todo lo de Studio incluido", "Recurrencias automáticas avanzadas", "Analytics operativos", "Soporte prioritario"],
       "signatureSetup": "1.400 € una vez",
       "signatureSetupNote": "fraccionable en 6 o 12 meses",
-      "signatureCanone": "120 € / mes"
+      "signatureCanone": "120 € / mes",
+      "customName": "A medida",
+      "customForWho": "Food, multisede, lógicas complejas. Presupuesto personalizado.",
+      "customIncludes": ["Todo a medida", "Multisede", "Food y pedidos", "Soporte dedicado"],
+      "customSetup": "Presupuesto",
+      "customMonthly": "Bajo petición"
     },
     "projectsCustom": {
       "title": "Proyectos a medida",

@@ -12,8 +12,8 @@
     "hero": {
       "title": "Il sistema che semplifica il tuo locale. E cresce con te.",
       "subtitle": "Gestione appuntamenti, staff, clienti e incassi in un'unica PWA elegante, veloce e senza compromessi.",
-      "ctaPrimary": "Richiedi una consulenza",
-      "ctaSecondary": "Scopri come funziona"
+      "ctaPrimary": "Parliamone insieme",
+      "ctaSecondary": "Vedi come funziona"
     },
     "forWho": {
       "title": "Pensato per chi lavora con le persone, non con il caos.",
@@ -77,7 +77,12 @@
       ],
       "signatureSetup": "€1.400 una tantum",
       "signatureSetupNote": "rateizzabile in 6 o 12 mesi",
-      "signatureCanone": "€120 / mese"
+      "signatureCanone": "€120 / mese",
+      "customName": "Su misura",
+      "customForWho": "Food, multi-sede, logiche complesse. Preventivo personalizzato.",
+      "customIncludes": ["Tutto su misura", "Multi-sede", "Food & ordini", "Supporto dedicato"],
+      "customSetup": "Preventivo",
+      "customMonthly": "Su richiesta"
     },
     "projectsCustom": {
       "title": "Progetti su misura",

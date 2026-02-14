@@ -77,7 +77,12 @@
       ],
       "signatureSetup": "€1.400 einmalig",
       "signatureSetupNote": "auf 6 oder 12 Monate verteilbar",
-      "signatureCanone": "€120 / Monat"
+      "signatureCanone": "€120 / Monat",
+      "customName": "Auf Maß",
+      "customForWho": "Food, mehrere Standorte, komplexe Logik. Individuelles Angebot.",
+      "customIncludes": ["Alles maßgeschneidert", "Multi-Standort", "Food & Bestellungen", "Dedizierter Support"],
+      "customSetup": "Angebot",
+      "customMonthly": "Auf Anfrage"
     },
     "projectsCustom": {
       "title": "Maßgeschneiderte Projekte",

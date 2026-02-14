@@ -123,7 +123,12 @@
       ],
       "signatureSetup": "1 400 € une fois",
       "signatureSetupNote": "échelonnable sur 6 ou 12 mois",
-      "signatureCanone": "120 € / mois"
+      "signatureCanone": "120 € / mois",
+      "customName": "Sur mesure",
+      "customForWho": "Food, multi-site, logiques complexes. Devis personnalisé.",
+      "customIncludes": ["Tout sur mesure", "Multi-site", "Food et commandes", "Support dédié"],
+      "customSetup": "Devis",
+      "customMonthly": "Sur demande"
     },
     "projectsCustom": {
       "title": "Projets sur mesure",

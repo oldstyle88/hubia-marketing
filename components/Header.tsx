@@ -25,16 +25,16 @@ export function Header() {
 
   const navLinks = (
     <>
-      <Link href="/#product" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>
+      <Link href="/#benefici" className="text-secondary hover:text-teal transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>
         {t('product')}
       </Link>
-      <Link href="/pricing" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>
+      <Link href="/pricing" className="text-secondary hover:text-teal transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>
         {t('pricing')}
       </Link>
-      <Link href="/pricing#faq" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>
+      <Link href="/pricing#faq" className="text-secondary hover:text-teal transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>
         {t('faq')}
       </Link>
-      <Link href="/contact" className="text-secondary hover:text-primary transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>
+      <Link href="/contact" className="text-secondary hover:text-teal transition-colors text-xs uppercase tracking-[0.26em]" onClick={() => setMobileOpen(false)}>
         {t('contact')}
       </Link>
     </>
@@ -60,7 +60,7 @@ export function Header() {
             <button
               type="button"
               onClick={() => setMobileOpen((v) => !v)}
-              className="md:hidden p-2 rounded-lg text-secondary hover:text-primary hover:bg-white/5 transition-colors focus:outline-none focus:ring-2 focus:ring-accent-cobalt/50"
+              className="md:hidden p-2 rounded-lg text-secondary hover:text-primary hover:bg-white/5 transition-colors focus:outline-none focus:ring-2 focus:ring-teal/50"
               aria-expanded={mobileOpen}
               aria-label={mobileOpen ? t('closeMenu') : t('openMenu')}
             >

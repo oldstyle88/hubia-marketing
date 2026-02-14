@@ -23,11 +23,11 @@ export function Button({
 
   const variants = {
     primary:
-      'bg-gradient-accent text-white shadow-glow hover:brightness-110 hover:shadow-glow-strong focus:outline-none focus:ring-2 focus:ring-accent-violet/60 focus:ring-offset-2 focus:ring-offset-background',
+      'bg-gradient-accent text-navy font-semibold shadow-card hover:scale-[1.02] hover:shadow-card-hover focus:outline-none focus:ring-2 focus:ring-teal/60 focus:ring-offset-2 focus:ring-offset-navy transition-transform',
     secondary:
-      'bg-surface-elevated border border-border-strong text-primary hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-accent-blue/50 focus:ring-offset-2 focus:ring-offset-background',
+      'bg-surface border border-white/20 text-primary hover:border-teal/50 hover:bg-surface-elevated focus:outline-none focus:ring-2 focus:ring-teal/50 focus:ring-offset-2 focus:ring-offset-navy',
     outline:
-      'border border-white/20 bg-transparent text-primary hover:bg-white/5 hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-accent-blue/40 focus:ring-offset-2 focus:ring-offset-background',
+      'border border-white/30 bg-transparent text-primary hover:bg-white/5 hover:border-teal/50 focus:outline-none focus:ring-2 focus:ring-teal/40 focus:ring-offset-2 focus:ring-offset-navy',
   }
 
   const classes = `${baseClasses} ${variants[variant]} ${className}`

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 50" fill="none">
+  <defs>
+    <linearGradient id="hlg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="30%" stop-color="#0EA5E9"/>
+      <stop offset="65%" stop-color="#1E3A5F"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="ht" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+  </defs>
+  <g transform="scale(0.4) translate(0,0)">
+    <path d="M15 0h20v100H15z" fill="url(#hlg)"/>
+    <path d="M65 0h20v100H65z" fill="url(#hlg)"/>
+    <path d="M28 8L42 2 72 92 58 98z" fill="url(#hlg)"/>
+  </g>
+  <text x="55" y="35" font-family="system-ui,-apple-system,sans-serif" font-weight="700" font-size="28" letter-spacing="0.14em" fill="url(#ht)">HUBIA</text>
+</svg>

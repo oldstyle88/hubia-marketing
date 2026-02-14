@@ -1,20 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
   <defs>
-    <!-- Navy → Teal, stile metallico come riferimento immagine -->
-    <linearGradient id="hubia-mark-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="hg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00D4FF"/>
-      <stop offset="35%" stop-color="#0EA5E9"/>
-      <stop offset="70%" stop-color="#1E3A5F"/>
+      <stop offset="30%" stop-color="#0EA5E9"/>
+      <stop offset="65%" stop-color="#1E3A5F"/>
       <stop offset="100%" stop-color="#0F172A"/>
     </linearGradient>
-    <filter id="hubia-mark-shadow" x="-20%" y="-10%" width="140%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.5"/>
-    </filter>
   </defs>
-  <!-- H: due barre verticali + barra diagonale (top-left → bottom-right) -->
-  <g filter="url(#hubia-mark-shadow)">
-    <path d="M 15 0 L 35 0 L 35 100 L 15 100 Z" fill="url(#hubia-mark-grad)"/>
-    <path d="M 65 0 L 85 0 L 85 100 L 65 100 Z" fill="url(#hubia-mark-grad)"/>
-    <path d="M 28 8 L 42 2 L 72 92 L 58 98 Z" fill="url(#hubia-mark-grad)"/>
-  </g>
+  <path d="M15 0h20v100H15z" fill="url(#hg)"/>
+  <path d="M65 0h20v100H65z" fill="url(#hg)"/>
+  <path d="M28 8L42 2 72 92 58 98z" fill="url(#hg)"/>
 </svg>

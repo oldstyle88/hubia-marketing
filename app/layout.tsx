@@ -36,9 +36,6 @@ export const metadata: Metadata = {
     'gestione staff',
   ],
   authors: [{ name: 'HŪBIA' }],
-  alternates: {
-    canonical: '/',
-  },
   icons: {
     icon: [
       { url: `/favicon.ico?${faviconVersion}`, sizes: 'any' },

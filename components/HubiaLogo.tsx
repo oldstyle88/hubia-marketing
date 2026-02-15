@@ -1,5 +1,3 @@
-'use client'
-
 import { Link } from '@/i18n/navigation'
 
 type Variant = 'header' | 'hero'
@@ -24,13 +22,13 @@ export function HubiaLogo({ variant = 'hero' }: HubiaLogoProps) {
   }
 
   return (
-    <div className="relative mb-8 mt-2 w-full max-w-[520px]">
-      <div className="pointer-events-none absolute inset-x-0 -top-20 mx-auto h-[260px] w-[260px] sm:h-[340px] sm:w-[340px]">
-        <img src="/logo.png" alt="" width={340} height={340} className="hero-brand-watermark h-full w-full object-contain" />
-      </div>
-      <div className="relative z-10 text-center md:text-left">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--secondary)]">Operating System</p>
-        <p className="text-2xl font-semibold tracking-[0.3em] text-[var(--primary)] sm:text-3xl">HŪBIA</p>
+    <div className="mb-6 flex items-center justify-center gap-3 md:justify-start">
+      <span className="relative h-12 w-12 overflow-hidden rounded-full bg-white ring-1 ring-[var(--line)] shadow-sm sm:h-14 sm:w-14">
+        <img src="/logo.png" alt="" width={56} height={56} className="h-full w-full object-contain p-1.5" />
+      </span>
+      <div>
+        <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--secondary)]">Operating System</p>
+        <p className="text-xl font-semibold tracking-[0.28em] text-[var(--primary)] sm:text-2xl">HŪBIA</p>
       </div>
     </div>
   )

@@ -14,12 +14,32 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
 }
 
-export async function generateMetadata() {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
   const tHome = await getTranslations('home')
   const tMeta = await getTranslations('meta')
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.hubiasystem.com'
+  const languages = Object.fromEntries(
+    routing.locales.map((l) => [l, `${baseUrl}/${l}`])
+  )
+
   return {
     title: `${tHome('hero.title')} — HŪBIA`,
     description: tMeta('desc'),
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: {
+        ...languages,
+        'x-default': `${baseUrl}/`,
+      },
+    },
+    openGraph: {
+      url: `${baseUrl}/${locale}`,
+    },
   }
 }
 

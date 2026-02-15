@@ -10,8 +10,6 @@ const valuePills = ['Brand proprietario', 'Processi operativi chiari', 'Esperien
 
 export async function Hero({ variant = 'A' }: HeroProps) {
   const t = await getTranslations('home.hero')
-  const title = t('title')
-  const words = title.split(/\s+/).filter(Boolean)
 
   const ctaText = variant === 'B' ? 'Inizia gratis trial' : t('ctaPrimary')
   const ctaClass =
@@ -30,22 +28,14 @@ export async function Hero({ variant = 'A' }: HeroProps) {
       />
 
       <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-[1.15fr_0.85fr] md:gap-16">
-        <div className="relative text-center md:text-left">
+        <div className="text-center md:text-left">
           <HubiaLogo variant="hero" />
 
           <h1
             className="mb-6 text-4xl font-bold leading-tight tracking-[0.01em] text-[var(--primary)] sm:text-5xl md:text-[58px]"
             style={{ fontFamily: 'var(--font-title)' }}
           >
-            {words.map((word: string, i: number) => (
-              <span
-                key={`${word}-${i}`}
-                className="hero-word mr-[0.23em] inline-block"
-                style={{ animation: `fadeInWord 0.55s ease-out ${i * 0.07}s forwards` }}
-              >
-                {word}
-              </span>
-            ))}
+            {t('title')}
           </h1>
 
           <p className="mx-auto mb-8 max-w-xl text-base leading-relaxed text-[var(--gray)] sm:text-lg md:mx-0">
@@ -64,7 +54,7 @@ export async function Hero({ variant = 'A' }: HeroProps) {
           </div>
 
           <div className="mb-10 flex flex-wrap items-center justify-center gap-3 md:justify-start">
-            <Link href="/#cta" className={ctaClass}>
+            <Link href="/contact" className={ctaClass}>
               {ctaText}
             </Link>
             <Link
@@ -84,17 +74,22 @@ export async function Hero({ variant = 'A' }: HeroProps) {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[340px] overflow-hidden rounded-[28px] border border-[var(--secondary)]/35 bg-[var(--bg-alt)] p-2 shadow-[0_30px_80px_rgba(16,24,40,0.18)]">
-          <div className="pointer-events-none absolute inset-0 z-10 rounded-[24px] bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-          <video
-            src="/demo-pwa.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="metadata"
-            className="aspect-[9/16] w-full rounded-[24px] object-cover"
-          />
+        <div className="card-deep relative mx-auto w-full max-w-[360px] overflow-hidden rounded-[28px] bg-[var(--bg-alt)] p-6">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(184,133,67,0.20),transparent_55%)]" />
+          <div className="relative space-y-4">
+            <div className="rounded-2xl border border-[var(--line)] bg-white/85 p-4">
+              <p className="text-xs uppercase tracking-[0.18em] text-[var(--gray)]">Agenda</p>
+              <p className="mt-2 text-sm font-semibold text-[var(--primary)]">96 prenotazioni confermate questa settimana</p>
+            </div>
+            <div className="rounded-2xl border border-[var(--line)] bg-white/85 p-4">
+              <p className="text-xs uppercase tracking-[0.18em] text-[var(--gray)]">Team</p>
+              <p className="mt-2 text-sm font-semibold text-[var(--primary)]">Staff allineato su turni, servizi e disponibilita in tempo reale</p>
+            </div>
+            <div className="rounded-2xl border border-[var(--line)] bg-white/85 p-4">
+              <p className="text-xs uppercase tracking-[0.18em] text-[var(--gray)]">Performance</p>
+              <p className="mt-2 text-sm font-semibold text-[var(--primary)]">+23% ritorno clienti in 90 giorni con flusso operativo stabile</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

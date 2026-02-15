@@ -5,22 +5,26 @@ export async function FooterMinimal() {
   const t = await getTranslations('footer')
 
   return (
-    <footer className="border-t border-white/12 bg-[#071429]/60 px-4 py-10 sm:px-6">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
-        <p className="text-sm text-slate-300">{t('tagline')}</p>
+    <footer className="py-10 px-4 sm:px-6 border-t border-[var(--gray)]/20 bg-[var(--bg)]">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-sm text-[var(--gray)]">
+          {t('tagline')}
+        </p>
         <nav className="flex flex-wrap items-center justify-center gap-6" aria-label="Footer">
-          <Link href="/privacy" className="text-sm text-slate-300 transition-colors hover:text-cyan-200">
+          <Link href="/privacy" className="text-sm text-[var(--text)] hover:text-[var(--primary)] transition-colors">
             {t('privacy')}
           </Link>
-          <Link href="/terms" className="text-sm text-slate-300 transition-colors hover:text-cyan-200">
+          <Link href="/terms" className="text-sm text-[var(--text)] hover:text-[var(--primary)] transition-colors">
             {t('terms')}
           </Link>
-          <Link href="/contact" className="text-sm text-slate-300 transition-colors hover:text-cyan-200">
+          <Link href="/contact" className="text-sm text-[var(--text)] hover:text-[var(--primary)] transition-colors">
             {t('contactLink')}
           </Link>
         </nav>
       </div>
-      <p className="mt-6 text-center text-xs text-slate-500">© {new Date().getFullYear()} HŪBIA. {t('copyright')}</p>
+      <p className="text-center text-xs text-[var(--gray)] mt-6">
+        © {new Date().getFullYear()} HŪBIA. {t('copyright')}
+      </p>
     </footer>
   )
 }

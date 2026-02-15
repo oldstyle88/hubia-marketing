@@ -2,44 +2,29 @@
 
 import { useState } from 'react'
 
-interface FAQItem {
-  question: string
-  answer: string
-}
-interface FAQAccordionProps {
-  items: FAQItem[]
-}
+interface FAQItem { question: string; answer: string }
+interface FAQAccordionProps { items: FAQItem[] }
 
 export function FAQAccordion({ items }: FAQAccordionProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(0)
-
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
   return (
-    <div className="space-y-3">
-      {items.map((item, index) => {
-        const open = openIndex === index
-        return (
-          <article
-            key={index}
-            className="overflow-hidden rounded-2xl border border-white/12 bg-white/5 shadow-[0_16px_40px_rgba(2,10,26,0.42)] backdrop-blur-sm"
+    <div className="space-y-4">
+      {items.map((item, index) => (
+        <div key={index} className="glass-card rounded-2xl border border-white/10">
+          <button
+            onClick={() => setOpenIndex(openIndex === index ? null : index)}
+            className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
           >
-            <button
-              type="button"
-              onClick={() => setOpenIndex(open ? null : index)}
-              className="flex w-full items-center justify-between px-6 py-5 text-left transition-colors hover:bg-white/5"
-              aria-expanded={open}
-            >
-              <span className="pr-6 text-base font-medium text-slate-100 sm:text-lg">{item.question}</span>
-              <span className="text-2xl text-cyan-200">{open ? '−' : '+'}</span>
-            </button>
-
-            {open && (
-              <div className="px-6 pb-5">
-                <p className="leading-relaxed text-slate-300">{item.answer}</p>
-              </div>
-            )}
-          </article>
-        )
-      })}
+            <span className="text-lg font-medium text-primary pr-8">{item.question}</span>
+            <span className="text-secondary text-2xl flex-shrink-0">{openIndex === index ? '−' : '+'}</span>
+          </button>
+          {openIndex === index && (
+            <div className="px-8 pb-6">
+              <p className="text-secondary leading-relaxed">{item.answer}</p>
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   )
 }

@@ -23,9 +23,6 @@ const config: Config = {
         gold: '#EAB308',
         'accent-teal': '#00D4FF',
         'accent-gold': '#EAB308',
-        'accent-blue': '#7EC0FF',
-        'accent-violet': '#6E8FFF',
-        'accent-cyan': '#88E8FF',
         ink: '#020617',
       },
       fontFamily: {

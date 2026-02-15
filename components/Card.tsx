@@ -7,11 +7,17 @@ interface CardProps {
 }
 
 export function Card({ children, className = '', variant = 'default' }: CardProps) {
-  const base = 'rounded-2xl border p-8 shadow-[0_18px_44px_rgba(2,10,26,0.45)] backdrop-blur-sm transition-all duration-200'
-
+  const base = 'rounded-2xl p-8 transition-all duration-200 shadow-soft'
   if (variant === 'dark') {
-    return <div className={`${base} border-white/20 bg-white/10 ${className}`}>{children}</div>
+    return (
+      <div className={`${base} bg-surface-elevated border border-border-strong ${className}`}>
+        {children}
+      </div>
+    )
   }
-
-  return <div className={`${base} border-white/12 bg-white/5 ${className}`}>{children}</div>
+  return (
+    <div className={`${base} glass-card neon-border ${className}`}>
+      {children}
+    </div>
+  )
 }

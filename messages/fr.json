@@ -2,16 +2,20 @@
   "nav": {
     "product": "Produit",
     "pricing": "Tarifs",
+    "plans": "Offres",
+    "custom": "Sur mesure",
+    "consulting": "Conseil",
     "faq": "FAQ",
     "contact": "Contact",
-    "requestDemo": "Nous contacter",
+    "requestDemo": "Demander",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu"
   },
   "home": {
     "hero": {
-      "title": "Remplissez l'agenda. Réduisez les no‑show.",
-      "subtitle": "Gérez commandes, équipe et clients depuis une seule PWA. Pas de marketplace, pas d'apps génériques. Nous construisons des PWA sur mesure pour des activités réelles, pas des templates.",
+      "title": "Le système qui simplifie votre établissement. Et grandit avec vous.",
+      "subtitle": "Rendez-vous, équipe, clients et chiffre d'affaires dans une PWA élégante et rapide. Sans compromis.",
+      "badges": ["GDPR Ready", "PWA", "White-label", "Support humain"],
       "requestDemo": "Nous contacter",
       "viewPrices": "Voir les tarifs",
       "ctaPrimary": "Demander une consultation",

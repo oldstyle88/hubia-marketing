@@ -2,9 +2,12 @@
   "nav": {
     "product": "Prodotto",
     "pricing": "Prezzi",
+    "plans": "Piani",
+    "custom": "Su Misura",
+    "consulting": "Consulenza",
     "faq": "FAQ",
     "contact": "Contatti",
-    "requestDemo": "Contattaci",
+    "requestDemo": "Richiedi",
     "openMenu": "Apri menu",
     "closeMenu": "Chiudi menu"
   },
@@ -12,6 +15,7 @@
     "hero": {
       "title": "Il sistema che semplifica il tuo locale. E cresce con te.",
       "subtitle": "Gestione appuntamenti, staff, clienti e incassi in un'unica PWA elegante, veloce e senza compromessi.",
+      "badges": ["GDPR Ready", "PWA", "White-label", "Supporto umano"],
       "ctaPrimary": "Parliamone insieme",
       "ctaSecondary": "Vedi come funziona"
     },

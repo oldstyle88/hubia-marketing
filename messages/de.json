@@ -2,9 +2,12 @@
   "nav": {
     "product": "Produkt",
     "pricing": "Preise",
+    "plans": "Pläne",
+    "custom": "Individuell",
+    "consulting": "Beratung",
     "faq": "FAQ",
     "contact": "Kontakt",
-    "requestDemo": "Kontakt",
+    "requestDemo": "Anfragen",
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schließen"
   },
@@ -12,6 +15,7 @@
     "hero": {
       "title": "Das System, das deinen Betrieb vereinfacht. Und mit dir wächst.",
       "subtitle": "Termine, Staff, Kunden und Umsatz in einer eleganten, schnellen PWA. Ohne Kompromisse.",
+      "badges": ["GDPR Ready", "PWA", "White-label", "Menschlicher Support"],
       "ctaPrimary": "Beratung anfragen",
       "ctaSecondary": "So funktioniert es"
     },

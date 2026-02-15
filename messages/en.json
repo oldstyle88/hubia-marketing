@@ -2,9 +2,12 @@
   "nav": {
     "product": "Product",
     "pricing": "Pricing",
+    "plans": "Plans",
+    "custom": "Custom",
+    "consulting": "Consulting",
     "faq": "FAQ",
     "contact": "Contact",
-    "requestDemo": "Contact us",
+    "requestDemo": "Request",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
@@ -12,6 +15,7 @@
     "hero": {
       "title": "The system that simplifies your venue. And grows with you.",
       "subtitle": "Appointments, staff, clients and revenue in one elegant, fast PWA. No compromises.",
+      "badges": ["GDPR Ready", "PWA", "White-label", "Human support"],
       "ctaPrimary": "Request a consultation",
       "ctaSecondary": "See how it works"
     },

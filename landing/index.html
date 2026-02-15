@@ -60,11 +60,11 @@
     }
     .logo-link { display: block; text-decoration: none; background: none !important; }
     .logo {
-      width: 122px; height: 122px; display: block;
+      width: 122px; height: 122px; display: block; object-fit: contain;
       background: none !important; background-color: transparent !important;
+      mix-blend-mode: lighten; /* sfondo nero del PNG si fonde con header bianco = invisibile */
       filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1)); transition: transform 0.3s ease;
     }
-    .logo.logo-svg { object-fit: contain; }
     .logo:hover { transform: scale(1.02); filter: drop-shadow(0 2px 12px rgba(212,165,116,0.3)); }
     @media (max-width: 768px) { .logo { width: 100px; height: 100px; } }
 
@@ -311,14 +311,7 @@
   <!-- FIXED SECTION: Header (logo img: carica logo.png reale in public/) -->
   <header class="header" role="banner">
     <div class="header-inner">
-      <a href="#" class="logo-link" aria-label="HŪBIA home">
-        <!-- SVG senza sfondo: solo H + HŪBIA (sostituisce PNG con sfondo nero) -->
-        <svg class="logo logo-svg" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
-          <path d="M12 8v36M12 8h14l-7 18M12 26h14" stroke="#2C1B5A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M42 44V20c0-4 3-8 8-8s8 4 8 8v24M58 44V24c0-4 3-6 6-6s6 2 6 6v20" stroke="#D4A574" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <text x="82" y="38" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="700" fill="#2C1B5A" letter-spacing="0.06em">HŪBIA</text>
-        </svg>
-      </a>
+      <a href="#" class="logo-link" aria-label="HŪBIA home"><img src="/logo.png" alt="HŪBIA Logo" class="logo"></a>
       <button type="button" class="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav-menu">
         <span class="hamburger"></span>
       </button>

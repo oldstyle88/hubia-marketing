@@ -18,16 +18,13 @@ export function Button({
   className = '',
   type = 'button',
 }: ButtonProps) {
-  const baseClasses =
-    'inline-flex items-center justify-center px-8 py-4 text-base font-medium transition-all duration-200 rounded-xl'
+  const baseClasses = 'inline-flex items-center justify-center rounded-xl px-8 py-4 text-base font-medium transition-all duration-200'
 
   const variants = {
-    primary:
-      'bg-gradient-accent text-navy font-semibold shadow-card hover:scale-[1.02] hover:shadow-card-hover focus:outline-none focus:ring-2 focus:ring-teal/60 focus:ring-offset-2 focus:ring-offset-navy transition-transform',
-    secondary:
-      'bg-surface border border-white/20 text-primary hover:border-teal/50 hover:bg-surface-elevated focus:outline-none focus:ring-2 focus:ring-teal/50 focus:ring-offset-2 focus:ring-offset-navy',
+    primary: 'hubia-btn-primary',
+    secondary: 'hubia-btn-secondary text-slate-100',
     outline:
-      'border border-white/30 bg-transparent text-primary hover:bg-white/5 hover:border-teal/50 focus:outline-none focus:ring-2 focus:ring-teal/40 focus:ring-offset-2 focus:ring-offset-navy',
+      'rounded-xl border border-cyan-200/35 bg-white/5 text-slate-100 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-300/40',
   }
 
   const classes = `${baseClasses} ${variants[variant]} ${className}`

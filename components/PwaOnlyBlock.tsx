@@ -12,18 +12,16 @@ export function PwaOnlyBlock({
   body = 'Runs as an installable PWA on iOS and Android. No App Store required. Native app: not part of current offering.',
 }: PwaOnlyBlockProps) {
   const isDark = variant === 'dark'
-  const borderClass = isDark ? 'border-white/15' : 'border-white/10'
-  const textClass = isDark ? 'text-primary' : 'text-primary'
-  const subClass = isDark ? 'text-secondary' : 'text-secondary'
 
   return (
-    <div className={`glass-card rounded-2xl border ${borderClass} p-6 sm:p-8 ${className}`}>
-      <p className={`text-xs font-medium uppercase tracking-[0.26em] ${subClass} mb-3`}>
-        {title}
-      </p>
-      <p className={`text-base sm:text-lg ${textClass} leading-relaxed`}>
-        {body}
-      </p>
+    <div
+      className={`rounded-2xl border p-6 sm:p-8 ${
+        isDark ? 'border-white/20 bg-white/10' : 'border-white/12 bg-white/5'
+      } ${className}`}
+      style={{ boxShadow: '0 16px 40px rgba(2, 10, 26, 0.42)' }}
+    >
+      <p className="mb-3 text-xs font-medium uppercase tracking-[0.26em] text-cyan-200">{title}</p>
+      <p className="text-base leading-relaxed text-slate-100 sm:text-lg">{body}</p>
     </div>
   )
 }

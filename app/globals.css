@@ -158,89 +158,22 @@ body {
   gap: 0.35rem;
 }
 
-.hubia-investor-wordmark {
-  font-family: var(--font-title);
-  letter-spacing: 0.16em;
-  font-weight: 600;
-  text-transform: uppercase;
-  background: linear-gradient(180deg, #f6fbff 0%, #8cc8ff 38%, #4a85e4 65%, #e4f3ff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0 10px 24px rgba(41, 112, 215, 0.35);
+
+.hubia-metal-core {
+  animation: hubiaMetalPulse 5.8s ease-in-out infinite;
 }
 
-.hubia-mark-orbit {
-  transform-origin: 110px 110px;
+.hubia-metal-word {
+  filter: drop-shadow(0 10px 18px rgba(7, 28, 67, 0.42));
 }
 
-.hubia-mark-orbit-1 {
-  animation: hubiaOrbitA 26s linear infinite;
-}
-
-.hubia-mark-orbit-2 {
-  animation: hubiaOrbitB 32s linear infinite;
-}
-
-.hubia-mark-orbit-3 {
-  animation: hubiaOrbitC 38s linear infinite;
-}
-
-.hubia-mark-core {
-  animation: hubiaCorePulse 5.2s ease-in-out infinite;
-}
-
-.hubia-mark-nodes {
-  animation: hubiaNodePulse 4.8s ease-in-out infinite;
-}
-
-@keyframes hubiaOrbitA {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes hubiaOrbitB {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes hubiaOrbitC {
-  from {
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate(180deg) scale(1.01);
-  }
-  to {
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-@keyframes hubiaCorePulse {
+@keyframes hubiaMetalPulse {
   0%,
   100% {
-    filter: drop-shadow(0 0 0 rgba(138, 198, 255, 0.2));
+    filter: drop-shadow(0 0 0 rgba(138, 198, 255, 0.12));
   }
   50% {
-    filter: drop-shadow(0 0 10px rgba(138, 198, 255, 0.55));
-  }
-}
-
-@keyframes hubiaNodePulse {
-  0%,
-  100% {
-    opacity: 0.78;
-  }
-  50% {
-    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(138, 198, 255, 0.36));
   }
 }
 
@@ -266,12 +199,20 @@ body {
 
   .hubia-btn-primary,
   .card-modern,
-  .hubia-mark-orbit,
-  .hubia-mark-core,
-  .hubia-mark-nodes,
+  .hubia-metal-core,
   .animate-fade-in-up {
     animation: none;
     transition: none;
     transform: none;
   }
+}
+
+.glass-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.neon-border {
+  box-shadow: 0 0 0 1px rgba(126, 192, 255, 0.22), 0 18px 44px rgba(2, 10, 26, 0.45);
 }

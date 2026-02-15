@@ -18,51 +18,65 @@ function HubiaInvestorMark({ className = '' }: { className?: string }) {
       className={className}
     >
       <defs>
-        <linearGradient id="hubia-steel" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#e6f2ff" />
-          <stop offset="28%" stopColor="#8ec5ff" />
-          <stop offset="55%" stopColor="#2f74d7" />
-          <stop offset="82%" stopColor="#133f87" />
-          <stop offset="100%" stopColor="#091d43" />
+        <linearGradient id="hubia-metal-main" x1="8%" y1="0%" x2="92%" y2="100%">
+          <stop offset="0%" stopColor="#dff1ff" />
+          <stop offset="22%" stopColor="#95cafb" />
+          <stop offset="48%" stopColor="#2f74d2" />
+          <stop offset="76%" stopColor="#103d82" />
+          <stop offset="100%" stopColor="#061b43" />
         </linearGradient>
-        <linearGradient id="hubia-edge" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#ffffff" stopOpacity="0.95" />
-          <stop offset="100%" stopColor="#9cc9ff" stopOpacity="0.35" />
+        <linearGradient id="hubia-metal-gloss" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#f8fcff" stopOpacity="0.95" />
+          <stop offset="35%" stopColor="#b8dcff" stopOpacity="0.58" />
+          <stop offset="100%" stopColor="#83bbff" stopOpacity="0.12" />
         </linearGradient>
-        <filter id="hubia-soft-glow" x="-40%" y="-40%" width="180%" height="180%">
-          <feGaussianBlur stdDeviation="5" result="blur" />
-          <feColorMatrix
-            in="blur"
-            type="matrix"
-            values="0 0 0 0 0.49 0 0 0 0 0.74 0 0 0 0 1 0 0 0 0.45 0"
-          />
+        <filter id="hubia-metal-shadow" x="-25%" y="-20%" width="170%" height="170%">
+          <feDropShadow dx="0" dy="5" stdDeviation="5" floodColor="#03102a" floodOpacity="0.6" />
         </filter>
       </defs>
 
-      <g className="hubia-mark-orbit hubia-mark-orbit-1">
-        <circle cx="110" cy="110" r="84" fill="none" stroke="url(#hubia-steel)" strokeWidth="4" strokeLinecap="round" strokeDasharray="360 178" />
-      </g>
-      <g className="hubia-mark-orbit hubia-mark-orbit-2">
-        <circle cx="110" cy="110" r="66" fill="none" stroke="url(#hubia-steel)" strokeWidth="3.2" strokeLinecap="round" strokeDasharray="220 194" />
-      </g>
-      <g className="hubia-mark-orbit hubia-mark-orbit-3">
-        <ellipse cx="110" cy="110" rx="90" ry="58" fill="none" stroke="url(#hubia-edge)" strokeWidth="2.6" transform="rotate(-26 110 110)" strokeDasharray="210 170" />
-      </g>
+      <g filter="url(#hubia-metal-shadow)" className="hubia-metal-core">
+        <path d="M52 26H94V196H52Z" fill="url(#hubia-metal-main)" stroke="#beddff" strokeOpacity="0.55" strokeWidth="1.6" />
+        <path d="M126 26H168V196H126Z" fill="url(#hubia-metal-main)" stroke="#beddff" strokeOpacity="0.55" strokeWidth="1.6" />
 
-      <g className="hubia-mark-nodes" filter="url(#hubia-soft-glow)">
-        <circle cx="110" cy="25" r="5.8" fill="#7ec0ff" />
-        <circle cx="188" cy="110" r="5.8" fill="#7ec0ff" />
-        <circle cx="110" cy="195" r="5.8" fill="#7ec0ff" />
-        <circle cx="32" cy="110" r="5.8" fill="#7ec0ff" />
-      </g>
+        <path d="M91 112L127 95V128L91 146Z" fill="url(#hubia-metal-main)" stroke="#beddff" strokeOpacity="0.42" strokeWidth="1.2" />
+        <path d="M86 102L130 78L130 94L86 118Z" fill="url(#hubia-metal-main)" stroke="#beddff" strokeOpacity="0.5" strokeWidth="1.2" />
 
-      <g className="hubia-mark-core">
-        <path d="M66 45H92V175H66z" fill="url(#hubia-steel)" />
-        <path d="M128 45H154V175H128z" fill="url(#hubia-steel)" />
-        <path d="M90 121L132 95V120L90 146Z" fill="url(#hubia-steel)" />
-        <path d="M84 52H91V168H84z" fill="url(#hubia-edge)" fillOpacity="0.34" />
-        <path d="M146 52H153V168H146z" fill="url(#hubia-edge)" fillOpacity="0.3" />
+        <path d="M58 34H67V186H58Z" fill="url(#hubia-metal-gloss)" />
+        <path d="M132 34H141V186H132Z" fill="url(#hubia-metal-gloss)" />
       </g>
+    </svg>
+  )
+}
+
+function HubiaInvestorWordmark({ className = '' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 560 128" xmlns="http://www.w3.org/2000/svg" aria-hidden className={className}>
+      <defs>
+        <linearGradient id="hubia-word-metal" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#f4f9ff" />
+          <stop offset="22%" stopColor="#d3e8ff" />
+          <stop offset="48%" stopColor="#6ca6ec" />
+          <stop offset="78%" stopColor="#133f83" />
+          <stop offset="100%" stopColor="#061d44" />
+        </linearGradient>
+      </defs>
+      <text
+        x="280"
+        y="95"
+        textAnchor="middle"
+        fontFamily="Space Grotesk, Sora, sans-serif"
+        fontWeight="700"
+        fontSize="92"
+        letterSpacing="8"
+        fill="url(#hubia-word-metal)"
+        stroke="#d8edff"
+        strokeOpacity="0.55"
+        strokeWidth="1.6"
+        className="hubia-metal-word"
+      >
+        HUBIA
+      </text>
     </svg>
   )
 }
@@ -76,12 +90,13 @@ export function HubiaInvestorLogo({
   const isHero = variant === 'hero'
 
   const block = (
-    <div className={`hubia-investor-logo ${isHero ? 'hubia-investor-logo--hero' : 'hubia-investor-logo--header'} ${className}`.trim()}>
-      <HubiaInvestorMark className={isHero ? 'h-[170px] w-[170px] sm:h-[196px] sm:w-[196px]' : 'h-[58px] w-[58px]'} />
+    <div
+      className={`hubia-investor-logo ${isHero ? 'hubia-investor-logo--hero' : 'hubia-investor-logo--header'} ${className}`.trim()}
+      aria-label="HUBIA"
+    >
+      <HubiaInvestorMark className={isHero ? 'h-[166px] w-[166px] sm:h-[192px] sm:w-[192px]' : 'h-[56px] w-[56px]'} />
       {showWordmark && (
-        <span className={isHero ? 'hubia-investor-wordmark text-4xl sm:text-5xl md:text-6xl' : 'hubia-investor-wordmark text-xl sm:text-2xl'}>
-          HUBIA
-        </span>
+        <HubiaInvestorWordmark className={isHero ? 'w-[260px] sm:w-[340px]' : 'w-[110px] sm:w-[130px]'} />
       )}
     </div>
   )

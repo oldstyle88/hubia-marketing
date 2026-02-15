@@ -12,7 +12,7 @@ const benefits = [
 
 function CheckIcon() {
   return (
-    <svg className="w-5 h-5 flex-shrink-0 text-[var(--primary)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg className="h-5 w-5 shrink-0 text-cyan-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
       <path d="M20 6L9 17l-5-5" />
     </svg>
   )
@@ -43,39 +43,29 @@ export function BenefitsSection() {
   }, [visible])
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8" id="benefits">
-      <div className="max-w-6xl mx-auto" ref={ref}>
-        <h2
-          className="text-3xl sm:text-4xl font-bold text-[var(--primary)] text-center mb-4"
-          style={{ fontFamily: 'var(--font-title)' }}
-        >
-          {t('title')}
-        </h2>
-        <p className="text-[var(--secondary)] font-medium text-center mb-14">
-          {t('subtitle')}
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <section className="px-4 py-20 sm:px-6 lg:px-8" id="benefits">
+      <div className="mx-auto max-w-6xl" ref={ref}>
+        <h2 className="mb-4 text-center text-3xl font-semibold text-slate-50 sm:text-4xl">{t('title')}</h2>
+        <p className="mb-14 text-center font-medium text-cyan-200">{t('subtitle')}</p>
+
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {benefits.map(({ titleKey, descKey }, index) => (
-            <div
+            <article
               key={titleKey}
               data-benefit-index={index}
-              className="card rounded-[20px] p-8 bg-[var(--bg)] border border-[var(--gray)]/10 transition-all duration-300 hover:scale-[1.02]"
+              className="rounded-2xl border border-white/12 bg-white/5 p-7 shadow-[0_18px_44px_rgba(2,10,26,0.45)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5"
               style={{
                 opacity: visible.includes(index) ? 1 : 0,
-                transform: visible.includes(index) ? 'translateY(0)' : 'translateY(-30px)',
-                transition: `opacity 0.5s ease ${index * 0.2}s, transform 0.5s ease ${index * 0.2}s`,
+                transform: visible.includes(index) ? 'translateY(0)' : 'translateY(18px)',
+                transition: `opacity 0.5s ease ${index * 0.12}s, transform 0.5s ease ${index * 0.12}s`,
               }}
             >
-              <div className="flex gap-3 mb-3">
+              <div className="mb-3 flex items-start gap-3">
                 <CheckIcon />
-                <h3 className="text-lg font-semibold text-[var(--secondary)]" style={{ fontFamily: 'var(--font-title)' }}>
-                  {t(titleKey)}
-                </h3>
+                <h3 className="text-lg font-semibold text-slate-50">{t(titleKey)}</h3>
               </div>
-              <p className="text-[var(--gray)] text-sm leading-relaxed pl-8">
-                {t(descKey)}
-              </p>
-            </div>
+              <p className="pl-8 text-sm leading-relaxed text-slate-300">{t(descKey)}</p>
+            </article>
           ))}
         </div>
       </div>

@@ -7,27 +7,21 @@ import { PwaOnlyBlock } from '@/components/PwaOnlyBlock'
 import { FAQAccordion } from '@/components/FAQAccordion'
 import { Button } from '@/components/Button'
 
-/** Evita di mostrare chiavi i18n in UI: se il valore sembra una chiave non risolta (es. home.pwaBlock.title), usa il fallback (sempre, anche in prod). */
 function safeTranslation(value: string, key: string, fallback: string): string {
   const v = value.trim()
   const looksLikeKey =
     v === key ||
     v.toLowerCase().includes('pwablock') ||
     v.toLowerCase().includes('home.pwa')
-  if (looksLikeKey) {
-    if (process.env.NODE_ENV === 'development') {
-      console.warn(`[i18n] Chiave non risolta su pricing: "${key}" (valore: "${value}") → mostrato fallback. Verificare messages/*.json.`)
-    }
-    return fallback
-  }
-  return value
+  return looksLikeKey ? fallback : value
 }
 
 export async function generateMetadata() {
   const t = await getTranslations('pricing')
   return {
-    title: `${t('title')} — HŪBIA`,
-    description: 'Due piani: Studio (€900 setup + €89/mese) e Signature (€1.400 setup + €120/mese). Setup una tantum rateizzabile. Gestionale per attività locali.',
+    title: `${t('title')} - HŪBIA`,
+    description:
+      'Due piani: Studio (€900 setup + €89/mese) e Signature (€1.400 setup + €120/mese). Setup una tantum rateizzabile. Gestionale per attività locali.',
   }
 }
 
@@ -65,84 +59,88 @@ export default async function PricingPage() {
     { question: t('faq.q6'), answer: t('faq.a6') },
   ]
 
+  const verticalRows = t.raw('verticalPricing.rows') as Array<{ label: string; pro: string; max: string }>
+
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="flex min-h-screen flex-col bg-background">
       <Header />
 
       <main className="flex-1 bg-background">
-        <Section className="pt-28 pb-16 bg-background-alt">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h1 className="text-4xl sm:text-5xl font-semibold text-primary mb-6">
-              {t('title')}
-            </h1>
-            <p className="text-xl text-secondary leading-relaxed mb-6">
-              {t('subtitle')}
-            </p>
+        <Section className="bg-transparent pb-16 pt-28">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <h1 className="mb-6 text-4xl font-semibold text-slate-50 sm:text-5xl">{t('title')}</h1>
+            <p className="mb-6 text-lg leading-relaxed text-slate-300 sm:text-xl">{t('subtitle')}</p>
             <PwaOnlyBlock
-            className="text-left"
-            title={safeTranslation(t('pwaBlock.title'), 'pwaBlock.title', 'Solo PWA, zero app da store')}
-            body={safeTranslation(t('pwaBlock.body'), 'pwaBlock.body', 'App installabile su smartphone (iOS e Android) con logo e colori della tua attività. Un solo software, aggiornamenti inclusi.')}
-          />
+              className="text-left"
+              title={safeTranslation(t('pwaBlock.title'), 'pwaBlock.title', 'Solo PWA, zero app da store')}
+              body={safeTranslation(
+                t('pwaBlock.body'),
+                'pwaBlock.body',
+                'App installabile su smartphone (iOS e Android) con logo e colori della tua attività. Un solo software, aggiornamenti inclusi.'
+              )}
+            />
           </div>
 
-          <PricingTable
-            plans={plans}
-            perMonthLabel={t('perMonth')}
-            setupLabel={t('setupOneTime')}
-            requestDemoLabel={t('requestDemo')}
-          />
+          <PricingTable plans={plans} perMonthLabel={t('perMonth')} setupLabel={t('setupOneTime')} requestDemoLabel={t('requestDemo')} />
 
-          <div className="mt-16 text-center max-w-2xl mx-auto">
-            <p className="text-secondary mb-2">
-              {t('footer')}
-            </p>
-            <p className="text-secondary/80 text-sm mb-10">
-              {t('setupIncludes')}
-            </p>
+          <div className="mx-auto mt-16 max-w-2xl text-center">
+            <p className="mb-2 text-slate-300">{t('footer')}</p>
+            <p className="mb-10 text-sm text-slate-400">{t('setupIncludes')}</p>
           </div>
 
-          <div className="mt-16 max-w-2xl mx-auto">
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">
-              {t('setupSectionTitle')}
-            </h2>
-            <p className="text-secondary leading-relaxed text-center">
-              {t('setupSectionBody')}
-            </p>
+          <div className="mx-auto mt-14 max-w-2xl rounded-2xl border border-white/12 bg-white/5 p-7 text-center shadow-[0_18px_44px_rgba(2,10,26,0.45)]">
+            <h2 className="mb-4 text-2xl font-semibold text-slate-50">{t('setupSectionTitle')}</h2>
+            <p className="leading-relaxed text-slate-300">{t('setupSectionBody')}</p>
           </div>
 
+          <div className="mx-auto mt-16 max-w-4xl">
+            <h2 className="mb-4 text-center text-2xl font-semibold text-slate-50">{t('verticalPricing.title')}</h2>
+            <p className="mb-6 text-center text-sm text-slate-400">{t('verticalPricing.note')}</p>
 
-          <div className="mt-16 max-w-4xl mx-auto">
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">
-              {t('verticalPricing.title')}
-            </h2>
-            <p className="text-secondary text-sm text-center mb-6">
-              {t('verticalPricing.note')}
-            </p>
-            <div className="overflow-hidden rounded-2xl border border-white/10 bg-surface/70">
-              <div className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 px-6 py-4 text-xs uppercase tracking-[0.18em] text-secondary border-b border-white/10">
+            <div className="hidden overflow-hidden rounded-2xl border border-white/12 bg-white/5 md:block">
+              <div className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 border-b border-white/10 px-6 py-4 text-xs uppercase tracking-[0.18em] text-cyan-200">
                 <span>{t('verticalPricing.columns.vertical')}</span>
                 <span>{t('verticalPricing.columns.pro')}</span>
                 <span>{t('verticalPricing.columns.max')}</span>
               </div>
-              {(t.raw('verticalPricing.rows') as Array<any>).map((row, index) => (
-                <div key={index} className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 px-6 py-4 text-sm text-secondary border-b border-white/5 last:border-b-0">
-                  <span className="text-primary font-medium">{row.label}</span>
+              {verticalRows.map((row, index) => (
+                <div
+                  key={index}
+                  className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 border-b border-white/5 px-6 py-4 text-sm text-slate-300 last:border-b-0"
+                >
+                  <span className="font-medium text-slate-100">{row.label}</span>
                   <span>{row.pro}</span>
                   <span>{row.max}</span>
                 </div>
               ))}
             </div>
+
+            <div className="space-y-3 md:hidden">
+              {verticalRows.map((row, index) => (
+                <article key={index} className="rounded-2xl border border-white/12 bg-white/5 p-5">
+                  <p className="mb-3 text-sm font-semibold text-slate-100">{row.label}</p>
+                  <div className="space-y-1 text-sm text-slate-300">
+                    <p>
+                      <span className="text-cyan-200">{t('verticalPricing.columns.pro')}: </span>
+                      {row.pro}
+                    </p>
+                    <p>
+                      <span className="text-cyan-200">{t('verticalPricing.columns.max')}: </span>
+                      {row.max}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
 
-          <div id="faq" className="mt-20 max-w-2xl mx-auto scroll-mt-28">
-            <h2 className="text-2xl font-semibold text-primary mb-8 text-center">
-              {t('faqTitle')}
-            </h2>
+          <div id="faq" className="mx-auto mt-20 max-w-3xl scroll-mt-28">
+            <h2 className="mb-8 text-center text-2xl font-semibold text-slate-50">{t('faqTitle')}</h2>
             <FAQAccordion items={faqItems} />
           </div>
 
           <div className="mt-16 text-center">
-            <Button href="/contact" variant="primary" className="text-lg px-10 py-5">
+            <Button href="/contact" variant="primary" className="px-10 py-4 text-lg">
               {t('requestDemo')}
             </Button>
           </div>

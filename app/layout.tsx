@@ -72,8 +72,8 @@ export default function RootLayout({
         <link rel="icon" href={`/favicon.ico?${faviconVersion}`} sizes="any" />
         <link rel="apple-touch-icon" href={`/brand/apple-touch-icon.png?${faviconVersion}`} />
       </head>
-      <body className="font-sans bg-background">
-        <div className="relative z-10 min-h-screen bg-background">{children}</div>
+      <body className="font-sans bg-[var(--bg)]">
+        <div className="relative z-10 min-h-screen bg-[var(--bg)]">{children}</div>
       </body>
     </html>
   )

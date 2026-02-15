@@ -4,9 +4,9 @@ import { ContactForm } from '@/components/ContactForm'
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-[var(--bg)]">
       <Header />
-      <main className="flex-1 bg-background">
+      <main className="flex-1 bg-[var(--bg)]">
         <ContactForm />
       </main>
       <Footer />

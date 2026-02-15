@@ -18,7 +18,7 @@ function getUtmFromWindow(): { utm_source?: string; utm_medium?: string; utm_cam
 }
 
 const inputClass =
-  'w-full px-4 py-3 border border-white/15 bg-surface text-primary rounded-xl focus:outline-none focus:ring-2 focus:ring-accent-blue/50 focus:border-transparent placeholder:text-secondary/60'
+  'w-full rounded-xl border border-[var(--line)] bg-white px-4 py-3 text-[var(--text)] focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/50 placeholder:text-[var(--gray)]'
 
 export function ContactForm() {
   const t = useTranslations('contact')
@@ -71,7 +71,7 @@ export function ContactForm() {
         setSubmitStatus('error')
         setErrorMessage(typeof data.error === 'string' ? data.error : 'Si è verificato un errore. Riprova più tardi.')
       }
-    } catch (_error) {
+    } catch {
       setSubmitStatus('error')
       setErrorMessage('Errore di connessione. Riprova più tardi.')
     } finally {
@@ -84,17 +84,13 @@ export function ContactForm() {
   }
 
   return (
-    <Section className="pt-28 pb-16">
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h1 className="text-4xl sm:text-5xl font-semibold text-primary mb-6">
-          {t('title')}
-        </h1>
-        <p className="text-xl text-secondary leading-relaxed">
-          {t('subtitle')}
-        </p>
+    <Section className="bg-[var(--bg)] pt-24 pb-16">
+      <div className="mx-auto mb-12 max-w-3xl text-center">
+        <h1 className="mb-6 text-4xl font-semibold text-[var(--primary)] sm:text-5xl">{t('title')}</h1>
+        <p className="text-xl leading-relaxed text-[var(--gray)]">{t('subtitle')}</p>
       </div>
 
-      <div className="max-w-2xl mx-auto">
+      <div className="mx-auto max-w-2xl">
         <Card>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="hidden" aria-hidden="true">
@@ -110,59 +106,20 @@ export function ContactForm() {
               />
             </div>
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">
-                {t('name')} *
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                maxLength={200}
-                value={formData.name}
-                onChange={handleChange}
-                className={inputClass}
-              />
+              <label htmlFor="name" className="mb-2 block text-sm font-medium text-[var(--text)]">{t('name')} *</label>
+              <input type="text" id="name" name="name" required maxLength={200} value={formData.name} onChange={handleChange} className={inputClass} />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-primary mb-2">
-                {t('email')} *
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                value={formData.email}
-                onChange={handleChange}
-                className={inputClass}
-              />
+              <label htmlFor="email" className="mb-2 block text-sm font-medium text-[var(--text)]">{t('email')} *</label>
+              <input type="email" id="email" name="email" required value={formData.email} onChange={handleChange} className={inputClass} />
             </div>
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-primary mb-2">
-                {t('phone')}
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className={inputClass}
-              />
+              <label htmlFor="phone" className="mb-2 block text-sm font-medium text-[var(--text)]">{t('phone')}</label>
+              <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className={inputClass} />
             </div>
             <div>
-              <label htmlFor="business" className="block text-sm font-medium text-primary mb-2">
-                {t('business')} *
-              </label>
-              <select
-                id="business"
-                name="business"
-                required
-                value={formData.business}
-                onChange={handleChange}
-                className={inputClass}
-              >
+              <label htmlFor="business" className="mb-2 block text-sm font-medium text-[var(--text)]">{t('business')} *</label>
+              <select id="business" name="business" required value={formData.business} onChange={handleChange} className={inputClass}>
                 <option value="">{t('businessPlaceholder')}</option>
                 <option value="barber">{t('businessBarber')}</option>
                 <option value="food">{t('businessFood')}</option>
@@ -171,36 +128,14 @@ export function ContactForm() {
               </select>
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-primary mb-2">
-                {t('message')} *
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                rows={6}
-                maxLength={2000}
-                value={formData.message}
-                onChange={handleChange}
-                className={`${inputClass} resize-none`}
-              />
+              <label htmlFor="message" className="mb-2 block text-sm font-medium text-[var(--text)]">{t('message')} *</label>
+              <textarea id="message" name="message" required rows={6} maxLength={2000} value={formData.message} onChange={handleChange} className={`${inputClass} resize-none`} />
             </div>
 
-            {submitStatus === 'success' && (
-              <div className="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-emerald-300 text-sm">
-                {t('success')}
-              </div>
-            )}
+            {submitStatus === 'success' && <div className="rounded-xl border border-emerald-300 bg-emerald-50 p-4 text-sm text-emerald-700">{t('success')}</div>}
+            {submitStatus === 'error' && <div className="rounded-xl border border-red-300 bg-red-50 p-4 text-sm text-red-700">{errorMessage}</div>}
 
-            {submitStatus === 'error' && (
-              <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-xl text-red-300 text-sm">
-                {errorMessage}
-              </div>
-            )}
-
-            <Button type="submit" variant="primary" className="w-full">
-              {isSubmitting ? t('sending') : t('send')}
-            </Button>
+            <Button type="submit" variant="primary" className="w-full">{isSubmitting ? t('sending') : t('send')}</Button>
           </form>
         </Card>
       </div>

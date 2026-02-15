@@ -15,22 +15,22 @@ export default async function PrivacyPage() {
   const t = await getTranslations('privacy')
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-[var(--bg)]">
       <Header />
 
-      <main className="flex-1 bg-background">
-        <Section className="pt-32 pb-16 bg-background">
+      <main className="flex-1 bg-[var(--bg)]">
+        <Section className="pt-32 pb-16 bg-[var(--bg)]">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-semibold text-primary mb-8">
               {t('title')}
             </h1>
 
-            <p className="text-secondary mb-4">
+            <p className="text-[var(--gray)] mb-4">
               <strong>{t('lastUpdate')}:</strong>{' '}
               {new Date().toLocaleDateString('it-IT', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
 
-            <div className="space-y-8 text-secondary leading-relaxed">
+            <div className="space-y-8 text-[var(--gray)] leading-relaxed">
               <section>
                 <h2 className="text-2xl font-semibold text-primary mb-4">1. Introduzione</h2>
                 <p>

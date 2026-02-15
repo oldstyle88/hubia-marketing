@@ -66,16 +66,16 @@ export default async function PricingPage() {
   ]
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-[var(--bg)]">
       <Header />
 
-      <main className="flex-1 bg-background">
-        <Section className="pt-28 pb-16 bg-background-alt">
+      <main className="flex-1 bg-[var(--bg)]">
+        <Section className="pt-28 pb-16 bg-[var(--bg-alt)]">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h1 className="text-4xl sm:text-5xl font-semibold text-primary mb-6">
               {t('title')}
             </h1>
-            <p className="text-xl text-secondary leading-relaxed mb-6">
+            <p className="text-xl text-[var(--gray)] leading-relaxed mb-6">
               {t('subtitle')}
             </p>
             <PwaOnlyBlock
@@ -93,10 +93,10 @@ export default async function PricingPage() {
           />
 
           <div className="mt-16 text-center max-w-2xl mx-auto">
-            <p className="text-secondary mb-2">
+            <p className="text-[var(--gray)] mb-2">
               {t('footer')}
             </p>
-            <p className="text-secondary/80 text-sm mb-10">
+            <p className="text-[var(--gray)]/80 text-sm mb-10">
               {t('setupIncludes')}
             </p>
           </div>
@@ -105,7 +105,7 @@ export default async function PricingPage() {
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">
               {t('setupSectionTitle')}
             </h2>
-            <p className="text-secondary leading-relaxed text-center">
+            <p className="text-[var(--gray)] leading-relaxed text-center">
               {t('setupSectionBody')}
             </p>
           </div>
@@ -115,17 +115,17 @@ export default async function PricingPage() {
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">
               {t('verticalPricing.title')}
             </h2>
-            <p className="text-secondary text-sm text-center mb-6">
+            <p className="text-[var(--gray)] text-sm text-center mb-6">
               {t('verticalPricing.note')}
             </p>
-            <div className="overflow-hidden rounded-2xl border border-white/10 bg-surface/70">
-              <div className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 px-6 py-4 text-xs uppercase tracking-[0.18em] text-secondary border-b border-white/10">
+            <div className="overflow-hidden rounded-2xl border border-[var(--line)]/70 bg-white/85">
+              <div className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 px-6 py-4 text-xs uppercase tracking-[0.18em] text-[var(--gray)] border-b border-[var(--line)]/70">
                 <span>{t('verticalPricing.columns.vertical')}</span>
                 <span>{t('verticalPricing.columns.pro')}</span>
                 <span>{t('verticalPricing.columns.max')}</span>
               </div>
               {(t.raw('verticalPricing.rows') as Array<any>).map((row, index) => (
-                <div key={index} className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 px-6 py-4 text-sm text-secondary border-b border-white/5 last:border-b-0">
+                <div key={index} className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 px-6 py-4 text-sm text-[var(--gray)] border-b border-[var(--line)]/50 last:border-b-0">
                   <span className="text-primary font-medium">{row.label}</span>
                   <span>{row.pro}</span>
                   <span>{row.max}</span>

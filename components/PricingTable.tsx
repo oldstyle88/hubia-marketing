@@ -26,16 +26,9 @@ export function PricingTable({
   requestDemoLabel = 'Richiedi demo',
 }: PricingTableProps) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
       {plans.map((plan, index) => (
-        <Card
-          key={index}
-          className={
-            plan.highlight
-              ? 'relative border-2 border-accent-violet/60'
-              : 'relative'
-          }
-        >
+        <Card key={index} className={plan.highlight ? 'relative ring-2 ring-[var(--secondary)]/55' : 'relative'}>
           {plan.badge && (
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
               <Badge>{plan.badge}</Badge>
@@ -43,38 +36,30 @@ export function PricingTable({
           )}
 
           <div className="mb-6">
-            <h3 className="text-2xl font-semibold text-primary mb-2">
-              {plan.name}
-            </h3>
-            <p className="text-secondary text-sm mb-6">{plan.description}</p>
+            <h3 className="mb-2 text-2xl font-semibold text-[var(--primary)]">{plan.name}</h3>
+            <p className="mb-6 text-sm text-[var(--gray)]">{plan.description}</p>
 
             <div className="mb-6">
-              <div className="flex items-baseline gap-2 mb-2">
-                <span className="text-3xl sm:text-4xl font-semibold text-primary">
-                  {plan.monthly}
-                </span>
-                <span className="text-secondary">{perMonthLabel}</span>
+              <div className="mb-2 flex items-baseline gap-2">
+                <span className="text-3xl font-semibold text-[var(--primary)] sm:text-4xl">{plan.monthly}</span>
+                <span className="text-[var(--gray)]">{perMonthLabel}</span>
               </div>
-              <div className="text-sm text-secondary">
+              <div className="text-sm text-[var(--gray)]">
                 {plan.setupFee} {setupLabel}
               </div>
             </div>
           </div>
 
-          <ul className="space-y-3 mb-8">
+          <ul className="mb-8 space-y-3">
             {plan.features.map((feature, featureIndex) => (
               <li key={featureIndex} className="flex items-start gap-3">
-                <span className="text-accent-blue mt-1">✓</span>
-                <span className="text-secondary text-sm">{feature}</span>
+                <span className="mt-1 text-[var(--secondary)]">✓</span>
+                <span className="text-sm text-[var(--text)]">{feature}</span>
               </li>
             ))}
           </ul>
 
-          <Button
-            href="/contact"
-            variant={plan.highlight ? 'primary' : 'outline'}
-            className="w-full"
-          >
+          <Button href="/contact" variant={plan.highlight ? 'primary' : 'outline'} className="w-full">
             {requestDemoLabel}
           </Button>
         </Card>

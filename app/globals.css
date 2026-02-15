@@ -1,253 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --primary: #f7fbff;
-  --secondary: #7ec0ff;
-  --bg: #071328;
-  --bg-alt: #0d1f3d;
-  --text: #e6effc;
-  --gray: #9fb0c8;
-  --font-title: 'Space Grotesk', sans-serif;
+  --hubia-blue-1: #8BB8F5;
+  --hubia-blue-mid: #4A7FD9;
+  --hubia-blue-2: #1E4A9E;
+  /* Luxury landing (indigo / rose gold) */
+  --primary: #2C1B5A;
+  --secondary: #D4A574;
+  --bg: #FFFFFF;
+  --bg-alt: #F9FAFB;
+  --text: #1F2937;
+  --gray: #9CA3AF;
+  --font-title: 'Playfair Display', serif;
 }
 
-html {
-  scroll-behavior: smooth;
-  background-color: #050d1c;
+html { scroll-behavior: smooth; }
+
+/* Luxury card: deep shadow */
+.card {
+  box-shadow: 0 10px 30px rgba(44, 27, 90, 0.1);
+}
+.card-deep {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+.card-deep:hover {
+  box-shadow: 0 20px 50px rgba(44, 27, 90, 0.12);
 }
 
-body {
-  min-height: 100vh;
-  color: var(--text);
-  background:
-    radial-gradient(80% 40% at 50% 0%, rgba(84, 166, 255, 0.2) 0%, rgba(84, 166, 255, 0) 70%),
-    radial-gradient(55% 35% at 20% 15%, rgba(170, 225, 255, 0.16) 0%, rgba(170, 225, 255, 0) 65%),
-    linear-gradient(180deg, #040c1a 0%, #071328 42%, #0a1d3c 100%);
-  font-family: 'Sora', var(--font-body), sans-serif;
-}
+.backdrop-blur { backdrop-filter: blur(12px); }
+.glow-gold { filter: drop-shadow(0 0 20px #D4A574); }
+.glow-gold-hover:hover { filter: drop-shadow(0 0 20px #D4A574); transition: filter 0.4s ease; }
+
+.hero-word { opacity: 0; transform: translateY(50px); }
+.hero-word.revealed { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease; }
 
 @layer base {
-  * {
-    @apply border-border;
+  * { @apply border-border; }
+  html {
+    background-color: #0F172A;
   }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: var(--font-title);
+  body {
+    @apply bg-background text-primary antialiased font-sans;
+    min-height: 100vh;
+    background-color: #0F172A;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display font-semibold;
   }
 }
 
-.hubia-nav-link {
-  color: #d8e7ff;
-  font-size: 0.84rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: color 0.25s ease;
-}
-
-.hubia-nav-link:hover {
-  color: #92cbff;
-}
-
-.hubia-mobile-link {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 0.8rem;
-  padding: 0.75rem 0.85rem;
-  color: #dbeafe;
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.hubia-btn-primary {
-  border-radius: 0.9rem;
-  font-weight: 600;
-  color: #041225;
-  background: linear-gradient(120deg, #d9f2ff 0%, #7dc0ff 34%, #4f93ee 100%);
-  box-shadow:
-    0 12px 32px rgba(48, 116, 209, 0.36),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
-}
-
-.hubia-btn-primary:hover {
-  transform: translateY(-1px);
-  box-shadow:
-    0 16px 36px rgba(67, 140, 255, 0.42),
-    inset 0 1px 0 rgba(255, 255, 255, 0.62);
-}
-
-.hubia-btn-secondary {
-  border-radius: 0.9rem;
-  font-weight: 600;
-  color: #d7e8ff;
-  border: 1px solid rgba(158, 203, 255, 0.35);
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(8px);
-}
-
-.hubia-btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.hubia-pill {
-  border-radius: 999px;
-  padding: 0.45rem 0.85rem;
-  font-size: 0.78rem;
-  color: #d6e9ff;
-  border: 1px solid rgba(145, 196, 255, 0.36);
-  background: rgba(130, 188, 255, 0.11);
-}
-
-.hubia-grid-glow {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
+/* Sfondo navy con gradiente teal sottile */
+body {
   background-image:
-    linear-gradient(rgba(146, 207, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(146, 207, 255, 0.06) 1px, transparent 1px);
-  background-size: 42px 42px;
-  mask-image: radial-gradient(circle at center, black 30%, transparent 85%);
+    linear-gradient(180deg, rgba(0,212,255,0.04) 0%, transparent 40%),
+    linear-gradient(180deg, #0F172A 0%, #1E293B 100%);
 }
 
-.hubia-metric-card {
-  border: 1px solid rgba(159, 206, 255, 0.26);
-  border-radius: 1rem;
-  padding: 1.1rem 1rem;
-  text-align: center;
-  background: linear-gradient(155deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-  backdrop-filter: blur(8px);
-  box-shadow: 0 14px 30px rgba(4, 15, 34, 0.44);
-}
-
-.card {
-  box-shadow: 0 10px 30px rgba(2, 8, 22, 0.4);
-}
-
-.card-deep {
-  box-shadow: 0 20px 48px rgba(2, 8, 22, 0.5);
-}
-
-.card-deep:hover {
-  box-shadow: 0 24px 56px rgba(3, 12, 30, 0.58);
-}
-
+/* Card: ombra leggera, hover scale */
 .card-modern {
   @apply rounded-2xl border border-white/10 bg-surface/80 backdrop-blur-sm;
-  box-shadow: 0 8px 30px rgba(3, 11, 25, 0.4);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .card-modern:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 36px rgba(4, 16, 36, 0.5);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
 }
 
-.hubia-investor-logo {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.hubia-investor-logo--header {
-  gap: 0.35rem;
-}
-
-.hubia-investor-wordmark {
-  font-family: var(--font-title);
-  letter-spacing: 0.16em;
-  font-weight: 600;
-  text-transform: uppercase;
-  background: linear-gradient(180deg, #f6fbff 0%, #8cc8ff 38%, #4a85e4 65%, #e4f3ff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0 10px 24px rgba(41, 112, 215, 0.35);
-}
-
-.hubia-mark-orbit {
-  transform-origin: 110px 110px;
-}
-
-.hubia-mark-orbit-1 {
-  animation: hubiaOrbitA 26s linear infinite;
-}
-
-.hubia-mark-orbit-2 {
-  animation: hubiaOrbitB 32s linear infinite;
-}
-
-.hubia-mark-orbit-3 {
-  animation: hubiaOrbitC 38s linear infinite;
-}
-
-.hubia-mark-core {
-  animation: hubiaCorePulse 5.2s ease-in-out infinite;
-}
-
-.hubia-mark-nodes {
-  animation: hubiaNodePulse 4.8s ease-in-out infinite;
-}
-
-@keyframes hubiaOrbitA {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes hubiaOrbitB {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes hubiaOrbitC {
-  from {
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate(180deg) scale(1.01);
-  }
-  to {
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-@keyframes hubiaCorePulse {
-  0%,
-  100% {
-    filter: drop-shadow(0 0 0 rgba(138, 198, 255, 0.2));
-  }
-  50% {
-    filter: drop-shadow(0 0 10px rgba(138, 198, 255, 0.55));
-  }
-}
-
-@keyframes hubiaNodePulse {
-  0%,
-  100% {
-    opacity: 0.78;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
+/* Fade-in on scroll (usa con data-animate) */
 @keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Check verde per feature list */
+.check-teal {
+  color: #22C55E;
+}
+.check-teal svg {
+  flex-shrink: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-modern:hover {
+    transform: none;
+  }
+  .animate-fade-in-up {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* --- Logo animato HUBIA (hero) --- */
+.hubia-logo-animated {
+  animation: hubiaLogoFadeIn 1s ease-out forwards;
+}
+
+.hubia-logo-animated__icon {
+  opacity: 0;
+  animation: hubiaLogoFadeIn 0.8s ease-out 0.1s forwards, hubiaLogoGlow 4s ease-in-out 1.5s infinite;
+}
+
+.hubia-logo-animated__wordmark {
+  opacity: 0;
+  animation: hubiaLogoFadeIn 0.6s ease-out 0.5s forwards;
+}
+@keyframes hubiaLogoFadeIn {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
@@ -255,23 +124,73 @@ body {
   }
 }
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
+@keyframes hubiaLogoGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(0, 212, 255, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.6)) drop-shadow(0 0 16px rgba(234, 179, 8, 0.2));
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
+  .hubia-logo-animated,
+  .hubia-logo-animated__icon,
+  .hubia-logo-animated__wordmark {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
+}
 
-  .hubia-btn-primary,
-  .card-modern,
-  .hubia-mark-orbit,
-  .hubia-mark-core,
-  .hubia-mark-nodes,
-  .animate-fade-in-up {
+/* Logo hero: fade-in + scale + glow pulse */
+.animate-logo-hero {
+  animation: logoHeroIn 1s ease-out forwards, logoHeroGlow 4s ease-in-out 2s infinite;
+}
+@keyframes logoHeroIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes logoHeroGlow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(0, 212, 255, 0.25)); }
+  50% { filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.4)) drop-shadow(0 0 24px rgba(0, 212, 255, 0.15)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-logo-hero {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+/* Logo header: fade-in + sottile glow al hover */
+.animate-logo-header {
+  animation: logoHeaderIn 0.6s ease-out forwards;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.animate-logo-header:hover {
+  filter: drop-shadow(0 0 6px rgba(0, 212, 255, 0.35));
+  transform: scale(1.05);
+}
+@keyframes logoHeaderIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-logo-header {
     animation: none;
     transition: none;
+  }
+  .animate-logo-header:hover {
+    filter: none;
     transform: none;
   }
 }

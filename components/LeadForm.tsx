@@ -6,8 +6,9 @@ import { usePathname } from '@/i18n/navigation'
 
 const BUSINESS_OPTIONS = [
   { value: 'barber', labelKey: 'businessBarber' },
-  { value: 'gym', labelKey: 'businessGym' },
   { value: 'pizzeria', labelKey: 'businessFood' },
+  { value: 'gym', labelKey: 'businessGym' },
+  { value: 'food', labelKey: 'businessFood' },
   { value: 'other', labelKey: 'businessOther' },
 ] as const
 
@@ -216,7 +217,7 @@ export function LeadForm({ onSuccess, className = '', compact = false }: LeadFor
       <button
         type="submit"
         disabled={isSubmitting}
-        className="hubia-btn-primary w-full px-6 py-4 text-sm font-semibold disabled:opacity-60"
+        className="w-full py-4 px-6 rounded-xl font-medium text-[var(--primary)] bg-[var(--secondary)] hover:opacity-95 transition-opacity disabled:opacity-60"
       >
         {isSubmitting ? t('sending') : t('send')}
       </button>

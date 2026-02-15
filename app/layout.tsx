@@ -1,29 +1,31 @@
 import type { Metadata } from 'next'
-import { Sora, Space_Grotesk } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
-const displayFont = Space_Grotesk({
+const displayFont = Inter({
   subsets: ['latin'],
-  weight: ['500', '600', '700'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-display',
   display: 'swap',
 })
 
-const bodyFont = Sora({
+const bodyFont = Inter({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-body',
   display: 'swap',
 })
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://hubiasystem.com'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://hubia.com'
+
+// Cache-bust per favicon: dopo deploy il browser carica il mark (H) invece del vecchio
 const faviconVersion = 'v=8'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: 'HŪBIA - The premium PWA platform for local businesses',
+  title: 'HŪBIA — The premium PWA platform for local businesses',
   description:
-    'Booking, ordering, staff and analytics deployed per business. PWA-only, installable on iOS and Android.',
+    'Booking, ordering, staff & analytics — deployed per shop, zero template branding leaks. PWA-only, installable on iOS and Android.',
   keywords: [
     'PWA',
     'prenotazioni',
@@ -45,16 +47,17 @@ export const metadata: Metadata = {
     apple: [{ url: `/brand/apple-touch-icon.png?${faviconVersion}`, sizes: '180x180', type: 'image/png' }],
   },
   openGraph: {
-    title: 'HŪBIA - Premium PWA platform for local business operations',
-    description: 'Booking, ordering, staff and analytics. Deploy per shop, no template leaks.',
+    title: 'HŪBIA — The premium PWA platform for local businesses',
+    description:
+      'Booking, ordering, staff & analytics. PWA-only, deploy per shop.',
     type: 'website',
     locale: 'en_US',
     images: [{ url: '/brand/og-image.png', width: 1200, height: 630, alt: 'HŪBIA' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'HŪBIA - Premium PWA platform for local business operations',
-    description: 'Booking, ordering, staff and analytics. PWA-only.',
+    title: 'HŪBIA — The premium PWA platform for local businesses',
+    description: 'Booking, ordering, staff & analytics. PWA-only.',
     images: ['/brand/icon-512.png'],
   },
   robots: { index: true, follow: true },

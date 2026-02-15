@@ -20,19 +20,19 @@ export default async function PrivacyPage() {
 
       <main className="flex-1 bg-[var(--bg)]">
         <Section className="pt-32 pb-16 bg-[var(--bg)]">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl font-semibold text-primary mb-8">
+          <div className="mx-auto max-w-5xl rounded-[28px] border border-[var(--line)]/80 bg-white/82 p-8 shadow-[0_24px_70px_rgba(16,24,40,0.09)] sm:p-12">
+            <h1 className="mb-8 text-4xl font-semibold text-[var(--primary)] sm:text-5xl">
               {t('title')}
             </h1>
 
-            <p className="text-[var(--gray)] mb-4">
+            <p className="mb-6 text-[var(--text)]">
               <strong>{t('lastUpdate')}:</strong>{' '}
               {new Date().toLocaleDateString('it-IT', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
 
-            <div className="space-y-8 text-[var(--gray)] leading-relaxed">
+            <div className="space-y-8 text-[var(--text)] leading-relaxed">
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">1. Introduzione</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">1. Introduzione</h2>
                 <p>
                   HŪBIA (&quot;noi&quot;, &quot;nostro&quot;, &quot;nostra&quot;) rispetta la tua privacy e si impegna a proteggere i tuoi dati personali.
                   Questa informativa sulla privacy spiega come raccogliamo, utilizziamo, conserviamo e proteggiamo le tue informazioni
@@ -41,7 +41,7 @@ export default async function PrivacyPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">2. Dati che raccogliamo</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">2. Dati che raccogliamo</h2>
                 <p className="mb-3">Raccogliamo i seguenti tipi di dati personali:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Dati di contatto:</strong> nome, indirizzo email, numero di telefono</li>
@@ -52,7 +52,7 @@ export default async function PrivacyPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">3. Come utilizziamo i tuoi dati</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">3. Come utilizziamo i tuoi dati</h2>
                 <p className="mb-3">Utilizziamo i tuoi dati personali per:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Fornire e migliorare il nostro servizio</li>
@@ -64,7 +64,7 @@ export default async function PrivacyPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">4. Base giuridica del trattamento</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">4. Base giuridica del trattamento</h2>
                 <p>Trattiamo i tuoi dati personali sulla base di:</p>
                 <ul className="list-disc pl-6 space-y-2 mt-3">
                   <li><strong>Esecuzione del contratto:</strong> per fornire il servizio richiesto</li>
@@ -75,7 +75,7 @@ export default async function PrivacyPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">5. Condivisione dei dati</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">5. Condivisione dei dati</h2>
                 <p>Non vendiamo i tuoi dati personali. Possiamo condividere i tuoi dati solo con:</p>
                 <ul className="list-disc pl-6 space-y-2 mt-3">
                   <li><strong>Fornitori di servizi:</strong> provider di hosting, servizi di pagamento, servizi di email (solo per fornire il servizio)</li>
@@ -85,7 +85,7 @@ export default async function PrivacyPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">6. Conservazione dei dati</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">6. Conservazione dei dati</h2>
                 <p>
                   Conserviamo i tuoi dati personali solo per il tempo necessario a fornire il servizio e rispettare obblighi legali.
                   Quando elimini il tuo account, i dati vengono cancellati entro 30 giorni, salvo obblighi di conservazione legale.
@@ -93,7 +93,7 @@ export default async function PrivacyPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">7. I tuoi diritti</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">7. I tuoi diritti</h2>
                 <p className="mb-3">Hai il diritto di:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Accedere ai tuoi dati personali</li>
@@ -107,7 +107,7 @@ export default async function PrivacyPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">8. Sicurezza</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">8. Sicurezza</h2>
                 <p>
                   Implementiamo misure di sicurezza tecniche e organizzative appropriate per proteggere i tuoi dati personali,
                   inclusi crittografia, accesso limitato, backup regolari e monitoraggio continuo.
@@ -115,7 +115,7 @@ export default async function PrivacyPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">9. Trasferimenti internazionali</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">9. Trasferimenti internazionali</h2>
                 <p>
                   I tuoi dati sono principalmente ospitati nell&apos;Unione Europea. Qualsiasi trasferimento al di fuori dell&apos;UE
                   avviene solo con garanzie appropriate ai sensi del GDPR.
@@ -123,7 +123,7 @@ export default async function PrivacyPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">10. Modifiche a questa policy</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">10. Modifiche a questa policy</h2>
                 <p>
                   Possiamo aggiornare questa informativa sulla privacy periodicamente. Ti notificheremo eventuali modifiche
                   significative via email o tramite notifica nel servizio.
@@ -131,7 +131,7 @@ export default async function PrivacyPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">11. Contatti</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">11. Contatti</h2>
                 <p>Per esercitare i tuoi diritti o per domande sulla privacy, contattaci a:</p>
                 <p className="mt-3">
                   <strong>Email:</strong> privacy@hubia.com<br />

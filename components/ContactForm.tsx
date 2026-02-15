@@ -22,6 +22,7 @@ const inputClass =
 
 export function ContactForm() {
   const t = useTranslations('contact')
+  const tHero = useTranslations('home.hero')
   const locale = useLocale()
   const pathname = usePathname()
   const [formData, setFormData] = useState({
@@ -83,6 +84,9 @@ export function ContactForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
+  const heroBadges = tHero.raw('badges') as string[] | undefined
+  const badgeList = Array.isArray(heroBadges) ? heroBadges : []
+
   return (
     <Section className="bg-[var(--bg)] pt-24 pb-16">
       <div className="mx-auto mb-12 max-w-3xl text-center">
@@ -90,8 +94,8 @@ export function ContactForm() {
         <p className="text-xl leading-relaxed text-[var(--gray)]">{t('subtitle')}</p>
       </div>
 
-      <div className="mx-auto max-w-2xl">
-        <Card>
+      <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <Card className="bg-white/92">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="hidden" aria-hidden="true">
               <label htmlFor="website">Website</label>
@@ -139,6 +143,33 @@ export function ContactForm() {
             <Button type="submit" variant="primary" className="w-full">{isSubmitting ? t('sending') : t('send')}</Button>
           </form>
         </Card>
+
+        <div className="space-y-6">
+          <div className="card-deep rounded-[24px] border border-[var(--line)] bg-[var(--bg-alt)] p-7">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--secondary)]">Processo</p>
+            <div className="mt-4 space-y-3 text-[var(--text)]">
+              <p className="rounded-xl border border-[var(--line)] bg-white/70 px-4 py-3 text-sm">1. Call di allineamento operativo</p>
+              <p className="rounded-xl border border-[var(--line)] bg-white/70 px-4 py-3 text-sm">2. Setup e configurazione guidata</p>
+              <p className="rounded-xl border border-[var(--line)] bg-white/70 px-4 py-3 text-sm">3. Go-live con supporto dedicato</p>
+            </div>
+          </div>
+
+          {badgeList.length > 0 && (
+            <div className="card rounded-[24px] border border-[var(--line)] bg-white/82 p-6">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--secondary)]">Standard</p>
+              <div className="flex flex-wrap gap-2">
+                {badgeList.map((badge) => (
+                  <span
+                    key={badge}
+                    className="inline-flex min-h-9 items-center rounded-full border border-[var(--line)] bg-white px-3 text-xs font-semibold text-[var(--primary)]"
+                  >
+                    {badge}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </Section>
   )

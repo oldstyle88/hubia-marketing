@@ -20,19 +20,19 @@ export default async function TermsPage() {
 
       <main className="flex-1 bg-[var(--bg)]">
         <Section className="pt-32 pb-16 bg-[var(--bg)]">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl font-semibold text-primary mb-8">
+          <div className="mx-auto max-w-5xl rounded-[28px] border border-[var(--line)]/80 bg-white/82 p-8 shadow-[0_24px_70px_rgba(16,24,40,0.09)] sm:p-12">
+            <h1 className="mb-8 text-4xl font-semibold text-[var(--primary)] sm:text-5xl">
               {t('title')}
             </h1>
 
-            <p className="text-[var(--gray)] mb-4">
+            <p className="mb-6 text-[var(--text)]">
               <strong>{t('lastUpdate')}:</strong>{' '}
               {new Date().toLocaleDateString('it-IT', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
 
-            <div className="space-y-8 text-[var(--gray)] leading-relaxed">
+            <div className="space-y-8 text-[var(--text)] leading-relaxed">
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">1. Accettazione dei termini</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">1. Accettazione dei termini</h2>
                 <p>
                   Accedendo e utilizzando il servizio HŪBIA (&quot;Servizio&quot;), accetti di essere vincolato da questi Termini di Servizio
                   (&quot;Termini&quot;). Se non accetti questi Termini, non utilizzare il Servizio.
@@ -40,7 +40,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">2. Descrizione del servizio</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">2. Descrizione del servizio</h2>
                 <p>
                   HŪBIA è una piattaforma software-as-a-service (SaaS) che fornisce strumenti per la gestione di prenotazioni,
                   clienti, staff e operazioni per attività locali (beauty, studi medici, pet grooming e altri verticali). Il Servizio include accesso a un&apos;applicazione
@@ -49,7 +49,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">3. Registrazione e account</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">3. Registrazione e account</h2>
                 <p className="mb-3">Per utilizzare il Servizio, devi:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Essere maggiorenne o avere il consenso di un genitore/tutore</li>
@@ -61,7 +61,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">4. Pagamenti e fatturazione</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">4. Pagamenti e fatturazione</h2>
                 <p className="mb-3">I termini di pagamento includono:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Setup fee:</strong> Pagamento una tantum all&apos;attivazione del servizio</li>
@@ -73,7 +73,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">5. Uso accettabile</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">5. Uso accettabile</h2>
                 <p className="mb-3">Ti impegni a non:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Utilizzare il Servizio per scopi illegali o non autorizzati</li>
@@ -87,7 +87,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">6. Proprietà intellettuale</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">6. Proprietà intellettuale</h2>
                 <p>
                   Tutti i diritti di proprietà intellettuale sul Servizio, inclusi ma non limitati a software, design, loghi,
                   marchi e contenuti, sono di proprietà di HŪBIA o dei suoi licenzianti. Ti viene concessa una licenza limitata,
@@ -96,7 +96,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">7. Dati e privacy</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">7. Dati e privacy</h2>
                 <p>
                   Rispettiamo la tua privacy e trattiamo i tuoi dati secondo la nostra Privacy Policy. Mantieni la proprietà dei
                   tuoi dati e puoi esportarli in qualsiasi momento. Non utilizziamo i tuoi dati per scopi diversi da quelli necessari
@@ -105,7 +105,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">8. Disponibilità del servizio</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">8. Disponibilità del servizio</h2>
                 <p>
                   Ci impegniamo a mantenere il Servizio disponibile, ma non garantiamo disponibilità ininterrotta. Il Servizio può
                   essere temporaneamente non disponibile per manutenzione, aggiornamenti o cause di forza maggiore. Livelli di supporto
@@ -114,7 +114,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">9. Disdetta</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">9. Disdetta</h2>
                 <p className="mb-3">Puoi disdire il Servizio in qualsiasi momento:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Da parte tua:</strong> Contattaci con almeno 7 giorni di anticipo prima della fine del periodo di fatturazione</li>
@@ -124,7 +124,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">10. Limitazione di responsabilità</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">10. Limitazione di responsabilità</h2>
                 <p>
                   Il Servizio è fornito &quot;così com&apos;è&quot; senza garanzie di alcun tipo. Non siamo responsabili per perdite di dati,
                   interruzioni di business o danni indiretti derivanti dall&apos;utilizzo del Servizio. La nostra responsabilità totale
@@ -133,7 +133,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">11. Modifiche ai termini</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">11. Modifiche ai termini</h2>
                 <p>
                   Possiamo modificare questi Termini periodicamente. Le modifiche significative ti saranno notificate via email
                   o tramite notifica nel Servizio. Il continuo utilizzo del Servizio dopo le modifiche costituisce accettazione
@@ -142,7 +142,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">12. Legge applicabile</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">12. Legge applicabile</h2>
                 <p>
                   Questi Termini sono governati dalle leggi italiane. Qualsiasi controversia sarà risolta dai tribunali competenti
                   in Italia.
@@ -150,7 +150,7 @@ export default async function TermsPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-primary mb-4">13. Contatti</h2>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">13. Contatti</h2>
                 <p>Per domande su questi Termini, contattaci a:</p>
                 <p className="mt-3">
                   <strong>Email:</strong> legal@hubia.com<br />

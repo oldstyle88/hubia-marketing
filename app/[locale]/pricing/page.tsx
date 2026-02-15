@@ -70,19 +70,25 @@ export default async function PricingPage() {
       <Header />
 
       <main className="flex-1 bg-[var(--bg)]">
-        <Section className="pt-28 pb-16 bg-[var(--bg-alt)]">
+        <Section className="relative overflow-hidden pt-28 pb-16 bg-[var(--bg-alt)]">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute -top-24 right-8 h-64 w-64 rounded-full"
+            style={{ background: 'radial-gradient(circle, rgba(184,133,67,0.16) 0%, rgba(184,133,67,0) 68%)' }}
+          />
+
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h1 className="text-4xl sm:text-5xl font-semibold text-primary mb-6">
+            <h1 className="mb-6 text-4xl font-semibold text-[var(--primary)] sm:text-5xl">
               {t('title')}
             </h1>
-            <p className="text-xl text-[var(--gray)] leading-relaxed mb-6">
+            <p className="mb-6 text-lg leading-relaxed text-[var(--text)] sm:text-xl">
               {t('subtitle')}
             </p>
             <PwaOnlyBlock
-            className="text-left"
-            title={safeTranslation(t('pwaBlock.title'), 'pwaBlock.title', 'Solo PWA, zero app da store')}
-            body={safeTranslation(t('pwaBlock.body'), 'pwaBlock.body', 'App installabile su smartphone (iOS e Android) con logo e colori della tua attività. Un solo software, aggiornamenti inclusi.')}
-          />
+              className="text-left"
+              title={safeTranslation(t('pwaBlock.title'), 'pwaBlock.title', 'Solo PWA, zero app da store')}
+              body={safeTranslation(t('pwaBlock.body'), 'pwaBlock.body', 'App installabile su smartphone (iOS e Android) con logo e colori della tua attività. Un solo software, aggiornamenti inclusi.')}
+            />
           </div>
 
           <PricingTable
@@ -93,40 +99,40 @@ export default async function PricingPage() {
           />
 
           <div className="mt-16 text-center max-w-2xl mx-auto">
-            <p className="text-[var(--gray)] mb-2">
+            <p className="mb-2 text-[var(--text)]">
               {t('footer')}
             </p>
-            <p className="text-[var(--gray)]/80 text-sm mb-10">
+            <p className="mb-10 text-sm text-[var(--gray)]">
               {t('setupIncludes')}
             </p>
           </div>
 
           <div className="mt-16 max-w-2xl mx-auto">
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">
+            <h2 className="mb-4 text-center text-2xl font-semibold text-[var(--primary)]">
               {t('setupSectionTitle')}
             </h2>
-            <p className="text-[var(--gray)] leading-relaxed text-center">
+            <p className="text-center leading-relaxed text-[var(--text)]">
               {t('setupSectionBody')}
             </p>
           </div>
 
 
           <div className="mt-16 max-w-4xl mx-auto">
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">
+            <h2 className="mb-4 text-center text-2xl font-semibold text-[var(--primary)]">
               {t('verticalPricing.title')}
             </h2>
-            <p className="text-[var(--gray)] text-sm text-center mb-6">
+            <p className="mb-6 text-center text-sm text-[var(--gray)]">
               {t('verticalPricing.note')}
             </p>
-            <div className="overflow-hidden rounded-2xl border border-[var(--line)]/70 bg-white/85">
-              <div className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 px-6 py-4 text-xs uppercase tracking-[0.18em] text-[var(--gray)] border-b border-[var(--line)]/70">
+            <div className="overflow-hidden rounded-2xl border border-[var(--line)]/75 bg-white/88 shadow-[0_18px_52px_rgba(16,24,40,0.08)]">
+              <div className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 border-b border-[var(--line)]/70 px-6 py-4 text-xs uppercase tracking-[0.18em] text-[var(--gray)]">
                 <span>{t('verticalPricing.columns.vertical')}</span>
                 <span>{t('verticalPricing.columns.pro')}</span>
                 <span>{t('verticalPricing.columns.max')}</span>
               </div>
               {(t.raw('verticalPricing.rows') as Array<any>).map((row, index) => (
-                <div key={index} className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 px-6 py-4 text-sm text-[var(--gray)] border-b border-[var(--line)]/50 last:border-b-0">
-                  <span className="text-primary font-medium">{row.label}</span>
+                <div key={index} className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 border-b border-[var(--line)]/50 px-6 py-4 text-sm text-[var(--text)] last:border-b-0">
+                  <span className="font-medium text-[var(--primary)]">{row.label}</span>
                   <span>{row.pro}</span>
                   <span>{row.max}</span>
                 </div>
@@ -135,7 +141,7 @@ export default async function PricingPage() {
           </div>
 
           <div id="faq" className="mt-20 max-w-2xl mx-auto scroll-mt-28">
-            <h2 className="text-2xl font-semibold text-primary mb-8 text-center">
+            <h2 className="mb-8 text-center text-2xl font-semibold text-[var(--primary)]">
               {t('faqTitle')}
             </h2>
             <FAQAccordion items={faqItems} />

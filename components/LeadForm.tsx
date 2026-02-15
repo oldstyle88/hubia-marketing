@@ -6,9 +6,9 @@ import { usePathname } from '@/i18n/navigation'
 
 const BUSINESS_OPTIONS = [
   { value: 'barber', labelKey: 'businessBarber' },
-  { value: 'pizzeria', labelKey: 'businessFood' },
+  { value: 'medical', labelKey: 'businessMedical' },
+  { value: 'pet', labelKey: 'businessPet' },
   { value: 'gym', labelKey: 'businessGym' },
-  { value: 'food', labelKey: 'businessFood' },
   { value: 'other', labelKey: 'businessOther' },
 ] as const
 

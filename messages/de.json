@@ -18,7 +18,12 @@
     "hero": {
       "title": "Das System, das deinen Betrieb vereinfacht. Und mit dir wächst.",
       "subtitle": "Termine, Staff, Kunden und Umsatz in einer eleganten, schnellen PWA. Ohne Kompromisse.",
-      "badges": ["GDPR Ready", "PWA", "White-label", "Menschlicher Support"],
+      "badges": [
+        "GDPR Ready",
+        "PWA",
+        "White-label",
+        "Menschlicher Support"
+      ],
       "ctaPrimary": "Beratung anfragen",
       "ctaSecondary": "So funktioniert es"
     },
@@ -29,8 +34,8 @@
       "card1Desc": "Barbiere, Friseure und Haarsalons. Termine, Team und Kunden in einem System.",
       "card2Title": "Beauty",
       "card2Desc": "Beauty-Center und Kosmetikstudios. Mehr Services, mehr Menschen: ein System, das alles in Ordnung hält.",
-      "card3Title": "Food (Pizzeria / Street Food)",
-      "card3Desc": "Lokale mit Bestellungen und Reservierungen. Klare Abläufe zwischen Küche, Abholung und Tischen.",
+      "card3Title": "Medizinische Praxen",
+      "card3Desc": "Termine, Team-Verfugbarkeit und Patientenfluss in einem stabilen Betriebssystem.",
       "microText": "Für Betriebe mit komplexeren Abläufen bauen wir maßgeschneiderte Lösungen."
     },
     "benefits": {
@@ -58,7 +63,7 @@
     },
     "plansHome": {
       "title": "Die Pläne",
-      "subtitle": "Wähle, was zu deinem Betrieb passt. Nur Beauty: Barbier, Friseur, Beauty-Center.",
+      "subtitle": "Wahle den Plan passend zu deinem Betrieb: Beauty, medizinische Praxen und Pet Grooming.",
       "studioName": "Studio",
       "studioForWho": "Barbier, Friseur, Beauty-Center mit einem Standort. Für alle, die Ordnung ohne Komplikation wollen.",
       "studioIncludes": [
@@ -87,13 +92,18 @@
       "signatureCanone": "€120 / Monat",
       "customName": "Auf Maß",
       "customForWho": "Food, mehrere Standorte, komplexe Logik. Individuelles Angebot.",
-      "customIncludes": ["Alles maßgeschneidert", "Multi-Standort", "Food & Bestellungen", "Dedizierter Support"],
+      "customIncludes": [
+        "Alles maßgeschneidert",
+        "Multi-Standort",
+        "Food & Bestellungen",
+        "Dedizierter Support"
+      ],
       "customSetup": "Angebot",
       "customMonthly": "Auf Anfrage"
     },
     "projectsCustom": {
       "title": "Maßgeschneiderte Projekte",
-      "text": "Maßgeschneiderte Projekte für Aktivitäten mit komplexerer Logik: Food-Betriebe, Pizzeria, Street Food, hohe Fluktuation. Keine Listenpreise: jedes Projekt ist anders. Darüber sprechen wir in der Beratung."
+      "text": "Individuelle Projekte fur Multi-Standorte oder komplexe Betriebslogik. Angebot nach Beratung."
     },
     "notAnyApp": {
       "title": "Warum es keine x-beliebige App ist",
@@ -158,7 +168,7 @@
     },
     "verticalPricing": {
       "title": "Preise nach Plan",
-      "note": "Beauty: Barbier, Friseur, Beauty center. Setup auf 6 oder 12 Monate verteilbar.",
+      "note": "Beauty, medizinische Praxen und Pet Grooming. Setup in 6 oder 12 Monaten zahlbar.",
       "columns": {
         "vertical": "Plan",
         "pro": "Studio",
@@ -166,12 +176,12 @@
       },
       "rows": [
         {
-          "label": "Beauty (Barbier, Friseur, Beauty center)",
+          "label": "Beauty, medizinische Praxen, Pet Grooming",
           "pro": "€900 Setup + €89/Monat",
           "max": "€1.400 Setup + €120/Monat"
         },
         {
-          "label": "Auf Maß (Food, mehrere Standorte, Sonstiges)",
+          "label": "Individuell (Multi-Standort, komplexe Logik, Sonstiges)",
           "pro": "Angebot",
           "max": "Angebot"
         }
@@ -220,7 +230,9 @@
     "businessBarber": "Beauty (Barbier, Friseur, Beauty-Center)",
     "businessOther": "Sonstiges",
     "businessFood": "Food (Pizzeria, Street food)",
-    "businessGym": "Erweiterte Lösungen (auf Anfrage)"
+    "businessGym": "Andere lokale Betriebe (auf Anfrage)",
+    "businessMedical": "Medizinische Praxen",
+    "businessPet": "Pet Grooming"
   },
   "footer": {
     "tagline": "Premium-PWA für Beauty und Gastronomie. Keine Vorlagen, keine Standard-Apps.",

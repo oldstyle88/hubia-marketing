@@ -18,7 +18,12 @@
     "hero": {
       "title": "The system that simplifies your venue. And grows with you.",
       "subtitle": "Appointments, staff, clients and revenue in one elegant, fast PWA. No compromises.",
-      "badges": ["GDPR Ready", "PWA", "White-label", "Human support"],
+      "badges": [
+        "GDPR Ready",
+        "PWA",
+        "White-label",
+        "Human support"
+      ],
       "ctaPrimary": "Request a consultation",
       "ctaSecondary": "See how it works"
     },
@@ -29,8 +34,8 @@
       "card1Desc": "Barbers, hair salons, hairdressers. Appointments, staff and clients in one system.",
       "card2Title": "Beauty",
       "card2Desc": "Beauty centres and aesthetic studios. More services, more people: one system that keeps everything in order.",
-      "card3Title": "Food (pizzeria / street food)",
-      "card3Desc": "Venues with orders and bookings. Clear flows between kitchen, pickup and tables.",
+      "card3Title": "Medical Practices",
+      "card3Desc": "Appointments, team availability and patient flow in one reliable operating system.",
       "microText": "For businesses with more complex flows we build custom solutions."
     },
     "benefits": {
@@ -58,7 +63,7 @@
     },
     "plansHome": {
       "title": "Plans",
-      "subtitle": "Choose what fits your venue. Beauty only: barber, hairdresser, beauty centre.",
+      "subtitle": "Choose the plan that matches your operations: Beauty, medical practices and pet grooming.",
       "studioName": "Studio",
       "studioForWho": "Barber, hairdresser, beauty centre with one venue. For those who want order without complication.",
       "studioIncludes": [
@@ -87,13 +92,18 @@
       "signatureCanone": "€120 / month",
       "customName": "Custom",
       "customForWho": "Food, multi-site, complex logic. Personalized quote.",
-      "customIncludes": ["Everything custom", "Multi-site", "Food & orders", "Dedicated support"],
+      "customIncludes": [
+        "Everything custom",
+        "Multi-site",
+        "Food & orders",
+        "Dedicated support"
+      ],
       "customSetup": "Quote",
       "customMonthly": "On request"
     },
     "projectsCustom": {
       "title": "Custom projects",
-      "text": "Custom projects for activities with more complex logic: food venues, pizzeria, street food, high turnover. No listed prices: every project is different. Let's talk in a consultation."
+      "text": "Custom projects for multi-site businesses or advanced operational workflows. Quote after consultation."
     },
     "notAnyApp": {
       "title": "Why it's not just any app",
@@ -158,7 +168,7 @@
     },
     "verticalPricing": {
       "title": "Prices by plan",
-      "note": "Beauty: barber, hairdresser, beauty centre. Setup can be spread over 6 or 12 months.",
+      "note": "Beauty, medical practices and pet grooming. Setup can be spread over 6 or 12 months.",
       "columns": {
         "vertical": "Plan",
         "pro": "Studio",
@@ -166,12 +176,12 @@
       },
       "rows": [
         {
-          "label": "Beauty (barber, hairdresser, beauty centre)",
+          "label": "Beauty, medical practices, pet grooming",
           "pro": "€900 setup + €89/month",
           "max": "€1,400 setup + €120/month"
         },
         {
-          "label": "Custom (food, multi-site, other)",
+          "label": "Custom (multi-site, advanced workflows, other)",
           "pro": "Quote",
           "max": "Quote"
         }
@@ -220,7 +230,9 @@
     "businessBarber": "Beauty (barber, hairdresser, beauty centre)",
     "businessOther": "Other",
     "businessFood": "Restaurant (pizzeria, street food)",
-    "businessGym": "Advanced solutions (on request)"
+    "businessGym": "Other local businesses (on request)",
+    "businessMedical": "Medical practices",
+    "businessPet": "Pet grooming"
   },
   "footer": {
     "tagline": "Premium PWA for Beauty and Restaurant. No templates, no generic apps.",

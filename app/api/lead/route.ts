@@ -55,7 +55,7 @@ const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const MAX_NAME = 200
 const MAX_MESSAGE = 2000
 const MAX_PHONE = 50
-const BUSINESS_VALUES = ['barber', 'pizzeria', 'gym', 'food', 'other']
+const BUSINESS_VALUES = ['barber', 'medical', 'pet', 'gym', 'other', 'pizzeria', 'food']
 
 export async function POST(request: NextRequest) {
   const ip = getClientIp(request)
@@ -179,6 +179,8 @@ export async function POST(request: NextRequest) {
       const resend = new Resend(resendKey)
       const businessLabel: Record<string, string> = {
         barber: 'Barbiere / Parrucchiere',
+        medical: 'Studio medico',
+        pet: 'Pet grooming',
         pizzeria: 'Pizzeria',
         gym: 'Palestra',
         food: 'Food / Street food',

@@ -122,7 +122,8 @@ export function ContactForm() {
               <select id="business" name="business" required value={formData.business} onChange={handleChange} className={inputClass}>
                 <option value="">{t('businessPlaceholder')}</option>
                 <option value="barber">{t('businessBarber')}</option>
-                <option value="food">{t('businessFood')}</option>
+                <option value="medical">{t('businessMedical')}</option>
+                <option value="pet">{t('businessPet')}</option>
                 <option value="gym">{t('businessGym')}</option>
                 <option value="other">{t('businessOther')}</option>
               </select>

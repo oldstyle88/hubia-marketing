@@ -18,7 +18,12 @@
     "hero": {
       "title": "El sistema que simplifica tu local. Y crece contigo.",
       "subtitle": "Gestión de citas, equipo, clientes e ingresos en una PWA elegante y rápida. Sin compromisos.",
-      "badges": ["GDPR Ready", "PWA", "White-label", "Soporte humano"],
+      "badges": [
+        "GDPR Ready",
+        "PWA",
+        "White-label",
+        "Soporte humano"
+      ],
       "requestDemo": "Contactar",
       "viewPrices": "Ver precios",
       "ctaPrimary": "Solicitar consulta",
@@ -53,8 +58,8 @@
       "card1Desc": "Barberías, peluquerías y salones. Reservas, equipo y clientes en un solo sistema.",
       "card2Title": "Beauty",
       "card2Desc": "Centros de belleza y estudios de estética. Más servicios, más personas: un solo sistema que mantiene todo en orden.",
-      "card3Title": "Food (pizzeria / street food)",
-      "card3Desc": "Locales con pedidos y reservas. Flujos claros entre cocina, recogida y mesas.",
+      "card3Title": "Clínicas y estudios médicos",
+      "card3Desc": "Citas, disponibilidad del equipo y flujo de pacientes en un sistema operativo fiable.",
       "microText": "Para negocios con flujos más complejos construimos soluciones a medida."
     },
     "benefits": {
@@ -100,28 +105,47 @@
     },
     "plansHome": {
       "title": "Los planes",
-      "subtitle": "Elige lo que encaja con tu local. Solo Beauty: barbería, peluquería, centro de belleza.",
+      "subtitle": "Elige el plan que encaja con tu operativa: Beauty, clínicas/estudios médicos y pet grooming.",
       "studioName": "Studio",
       "studioForWho": "Barbería, peluquería, centro de belleza con un local. Para quien quiere orden sin complicaciones.",
-      "studioIncludes": ["Reservas online para clientes", "Gestión de equipo y servicios", "Calendario profesional", "Notificaciones automáticas", "Branding base", "Gestión de clientes", "Historial de citas", "Soporte estándar"],
+      "studioIncludes": [
+        "Reservas online para clientes",
+        "Gestión de equipo y servicios",
+        "Calendario profesional",
+        "Notificaciones automáticas",
+        "Branding base",
+        "Gestión de clientes",
+        "Historial de citas",
+        "Soporte estándar"
+      ],
       "studioSetup": "900 € una vez",
       "studioSetupNote": "fraccionable en 6 o 12 meses",
       "studioCanone": "89 € / mes",
       "signatureName": "Signature",
       "signatureForWho": "Para estudios estructurados: más servicios, más equipo, más control.",
-      "signatureIncludes": ["Todo lo de Studio incluido", "Recurrencias automáticas avanzadas", "Analytics operativos", "Soporte prioritario"],
+      "signatureIncludes": [
+        "Todo lo de Studio incluido",
+        "Recurrencias automáticas avanzadas",
+        "Analytics operativos",
+        "Soporte prioritario"
+      ],
       "signatureSetup": "1.400 € una vez",
       "signatureSetupNote": "fraccionable en 6 o 12 meses",
       "signatureCanone": "120 € / mes",
       "customName": "A medida",
       "customForWho": "Food, multisede, lógicas complejas. Presupuesto personalizado.",
-      "customIncludes": ["Todo a medida", "Multisede", "Food y pedidos", "Soporte dedicado"],
+      "customIncludes": [
+        "Todo a medida",
+        "Multisede",
+        "Food y pedidos",
+        "Soporte dedicado"
+      ],
       "customSetup": "Presupuesto",
       "customMonthly": "Bajo petición"
     },
     "projectsCustom": {
       "title": "Proyectos a medida",
-      "text": "Actividades con lógicas más complejas (food, multi-sede, otro): presupuesto bajo demanda. Cada proyecto es distinto. Hablamos en consulta."
+      "text": "Proyectos a medida para negocios multi-sede o con flujos operativos avanzados. Presupuesto tras consultoría."
     },
     "notAnyApp": {
       "title": "Por qué no es una app cualquiera",
@@ -130,7 +154,11 @@
       "point2": "Sin app genérica: hecha para quien gestiona citas y personas, no para quien vende \"un poco de todo\".",
       "point3": "Sin compromisos con la experiencia: una PWA elegante, rápida, con tu marca.",
       "closing": "HUBIA no es para todos. Es para quien se toma su local en serio.",
-      "positioning": ["HUBIA no está pensada para todos.", "Está pensada para quien quiere un sistema estable y a medida, no una simple app para instalar y olvidar.", "Si solo buscas la opción más barata, probablemente hay soluciones más adecuadas. HUBIA es para quien se toma su local en serio."]
+      "positioning": [
+        "HUBIA no está pensada para todos.",
+        "Está pensada para quien quiere un sistema estable y a medida, no una simple app para instalar y olvidar.",
+        "Si solo buscas la opción más barata, probablemente hay soluciones más adecuadas. HUBIA es para quien se toma su local en serio."
+      ]
     },
     "ctaFinal": {
       "title": "Hablemos",
@@ -229,7 +257,7 @@
     },
     "verticalPricing": {
       "title": "Precios por plan",
-      "note": "Beauty: barbería, peluquería, centro de belleza. Setup fraccionable en 6 o 12 meses.",
+      "note": "Beauty, clínicas/estudios médicos y pet grooming. Setup fraccionable en 6 o 12 meses.",
       "columns": {
         "vertical": "Plan",
         "pro": "Studio",
@@ -237,12 +265,12 @@
       },
       "rows": [
         {
-          "label": "Beauty (barbería, peluquería, centro de belleza)",
+          "label": "Beauty, clínicas/estudios médicos, pet grooming",
           "pro": "€900 setup + €89/mes",
           "max": "€1.400 setup + €120/mes"
         },
         {
-          "label": "A medida (food, multisede, otro)",
+          "label": "A medida (multi-sede, flujos avanzados, otro)",
           "pro": "Presupuesto",
           "max": "Presupuesto"
         }
@@ -291,7 +319,9 @@
     "businessBarber": "Barbería / Peluquería",
     "businessOther": "Otro",
     "businessFood": "Food (pizzería, street food)",
-    "businessGym": "Soluciones avanzadas (bajo petición)"
+    "businessGym": "Otros negocios locales (bajo petición)",
+    "businessMedical": "Clínicas / estudios médicos",
+    "businessPet": "Pet grooming"
   },
   "footer": {
     "tagline": "Software PWA premium para barberos, peluqueros y food. Sin plantillas, sin apps genéricas.",

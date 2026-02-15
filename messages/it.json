@@ -18,7 +18,12 @@
     "hero": {
       "title": "Il sistema operativo che fa crescere il tuo locale.",
       "subtitle": "Operazioni, agenda, staff e clienti in una piattaforma premium progettata per performance, controllo e crescita.",
-      "badges": ["GDPR Ready", "PWA", "White-label", "Supporto umano"],
+      "badges": [
+        "GDPR Ready",
+        "PWA",
+        "White-label",
+        "Supporto umano"
+      ],
       "ctaPrimary": "Richiedi una consulenza",
       "ctaSecondary": "Guarda il metodo"
     },
@@ -29,8 +34,8 @@
       "card1Desc": "Barbieri, parrucchieri e saloni. Appuntamenti, staff e clienti in un unico sistema.",
       "card2Title": "Beauty",
       "card2Desc": "Beauty center e studi estetici. Più servizi, più persone: un solo sistema che tiene tutto in ordine.",
-      "card3Title": "Food (pizzeria / street food)",
-      "card3Desc": "Locali con ordini e prenotazioni. Flussi chiari tra cucina, ritiro e tavoli.",
+      "card3Title": "Studi medici",
+      "card3Desc": "Agenda visite, disponibilita del team e gestione pazienti in un flusso ordinato e affidabile.",
       "microText": "Per attività con flussi più complessi costruiamo soluzioni su misura."
     },
     "benefits": {
@@ -58,7 +63,7 @@
     },
     "plansHome": {
       "title": "I piani",
-      "subtitle": "Scegli quello che fa per il tuo locale. Solo Beauty: barbiere, parrucchiere, beauty center.",
+      "subtitle": "Scegli il piano piu adatto al tuo modello operativo: Beauty, studi medici e pet grooming.",
       "studioName": "Studio",
       "studioForWho": "Barbiere, parrucchiere, beauty center con una sede. Chi vuole ordine senza complicarsi la vita.",
       "studioIncludes": [
@@ -87,13 +92,18 @@
       "signatureCanone": "€120 / mese",
       "customName": "Su misura",
       "customForWho": "Food, multi-sede, logiche complesse. Preventivo personalizzato.",
-      "customIncludes": ["Tutto su misura", "Multi-sede", "Food & ordini", "Supporto dedicato"],
+      "customIncludes": [
+        "Tutto su misura",
+        "Multi-sede",
+        "Food & ordini",
+        "Supporto dedicato"
+      ],
       "customSetup": "Preventivo",
       "customMonthly": "Su richiesta"
     },
     "projectsCustom": {
       "title": "Progetti su misura",
-      "text": "Attività con logiche più complesse (food, multi-sede, altro): preventivo su richiesta. Ogni progetto è diverso. Parliamone in consulenza."
+      "text": "Progetti su misura per realta multi-sede o con logiche operative avanzate. Preventivo su richiesta dopo consulenza."
     },
     "notAnyApp": {
       "title": "Perché non è un'app qualsiasi",
@@ -158,7 +168,7 @@
     },
     "verticalPricing": {
       "title": "Prezzi per piano",
-      "note": "Beauty: barbiere, parrucchiere, beauty center. Setup rateizzabile in 6 o 12 mesi.",
+      "note": "Beauty, studi medici e pet grooming. Setup rateizzabile in 6 o 12 mesi.",
       "columns": {
         "vertical": "Piano",
         "pro": "Studio",
@@ -166,12 +176,12 @@
       },
       "rows": [
         {
-          "label": "Beauty (barbiere, parrucchiere, beauty center)",
+          "label": "Beauty, studi medici, pet grooming",
           "pro": "€900 setup + €89/mese",
           "max": "€1.400 setup + €120/mese"
         },
         {
-          "label": "Su misura (food, multi-sede, altro)",
+          "label": "Su misura (multi-sede, logiche avanzate, altro)",
           "pro": "Preventivo",
           "max": "Preventivo"
         }
@@ -220,7 +230,9 @@
     "businessBarber": "Beauty (barbiere, parrucchiere, beauty center)",
     "businessOther": "Altro",
     "businessFood": "Ristorazione (pizzeria, street food)",
-    "businessGym": "Soluzioni avanzate (su richiesta)"
+    "businessGym": "Altre attivita locali (su richiesta)",
+    "businessMedical": "Studi medici",
+    "businessPet": "Pet grooming"
   },
   "footer": {
     "tagline": "PWA premium per Beauty e Ristorazione. Nessun template, nessuna app generica.",

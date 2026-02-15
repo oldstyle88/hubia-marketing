@@ -18,7 +18,12 @@
     "hero": {
       "title": "Le système qui simplifie votre établissement. Et grandit avec vous.",
       "subtitle": "Rendez-vous, équipe, clients et chiffre d'affaires dans une PWA élégante et rapide. Sans compromis.",
-      "badges": ["GDPR Ready", "PWA", "White-label", "Support humain"],
+      "badges": [
+        "GDPR Ready",
+        "PWA",
+        "White-label",
+        "Support humain"
+      ],
       "requestDemo": "Nous contacter",
       "viewPrices": "Voir les tarifs",
       "ctaPrimary": "Demander une consultation",
@@ -53,8 +58,8 @@
       "card1Desc": "Barbiers, coiffeurs et salons. Réservations, équipe et clients dans un seul système.",
       "card2Title": "Beauty",
       "card2Desc": "Centres de beauté et instituts. Plus de prestations, plus de monde : un seul système qui garde tout en ordre.",
-      "card3Title": "Food (pizzeria / street food)",
-      "card3Desc": "Établissements avec commandes et réservations. Flux clairs entre cuisine, retrait et tables.",
+      "card3Title": "Cabinets médicaux",
+      "card3Desc": "Rendez-vous, disponibilites equipe et flux patients dans un systeme fiable.",
       "microText": "Pour les établissements aux flux plus complexes, nous construisons des solutions sur mesure."
     },
     "benefits": {
@@ -104,7 +109,7 @@
     },
     "plansHome": {
       "title": "Les offres",
-      "subtitle": "Choisissez ce qui correspond à votre établissement. Beauty uniquement : barbier, coiffeur, centre de beauté.",
+      "subtitle": "Choisissez le plan adapte a votre operationnel : Beauty, cabinets medicaux et pet grooming.",
       "studioName": "Studio",
       "studioForWho": "Barbier, coiffeur, centre de beauté avec un seul établissement. Pour ceux qui veulent de l'ordre sans complication.",
       "studioIncludes": [
@@ -133,13 +138,18 @@
       "signatureCanone": "120 € / mois",
       "customName": "Sur mesure",
       "customForWho": "Food, multi-site, logiques complexes. Devis personnalisé.",
-      "customIncludes": ["Tout sur mesure", "Multi-site", "Food et commandes", "Support dédié"],
+      "customIncludes": [
+        "Tout sur mesure",
+        "Multi-site",
+        "Food et commandes",
+        "Support dédié"
+      ],
       "customSetup": "Devis",
       "customMonthly": "Sur demande"
     },
     "projectsCustom": {
       "title": "Projets sur mesure",
-      "text": "Activités avec logiques plus complexes (food, multi-site, autre) : devis sur demande. Chaque projet est différent. Parlons-en en consultation."
+      "text": "Projets sur mesure pour structures multi-sites ou flux operationnels avances. Devis apres consultation."
     },
     "notAnyApp": {
       "title": "Pourquoi ce n'est pas une app quelconque",
@@ -251,7 +261,7 @@
     },
     "verticalPricing": {
       "title": "Tarifs par plan",
-      "note": "Beauty : barbier, coiffeur, centre de beauté. Setup échelonnable sur 6 ou 12 mois.",
+      "note": "Beauty, cabinets medicaux et pet grooming. Setup etalable sur 6 ou 12 mois.",
       "columns": {
         "vertical": "Plan",
         "pro": "Studio",
@@ -259,12 +269,12 @@
       },
       "rows": [
         {
-          "label": "Beauty (barbier, coiffeur, centre de beauté)",
+          "label": "Beauty, cabinets medicaux, pet grooming",
           "pro": "900 € setup + 89 €/mois",
           "max": "1 400 € setup + 120 €/mois"
         },
         {
-          "label": "Sur mesure (food, multisite, autre)",
+          "label": "Sur mesure (multi-sites, flux avances, autre)",
           "pro": "Devis",
           "max": "Devis"
         }
@@ -313,7 +323,9 @@
     "businessBarber": "Barbier / Coiffeur",
     "businessOther": "Autre",
     "businessFood": "Food (pizzeria, street food)",
-    "businessGym": "Solutions avancées (sur demande)"
+    "businessGym": "Autres activites locales (sur demande)",
+    "businessMedical": "Cabinets medicaux",
+    "businessPet": "Pet grooming"
   },
   "footer": {
     "tagline": "Logiciel PWA premium pour barbiers, coiffeurs et food. Pas de templates, pas d'apps génériques.",

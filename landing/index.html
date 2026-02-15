@@ -58,13 +58,14 @@
       max-width: 1200px; margin: 0 auto; padding: 14px 24px;
       display: flex; align-items: center; justify-content: space-between; gap: 16px;
     }
-    .logo-link { display: block; text-decoration: none; }
+    .logo-link { display: block; text-decoration: none; background: none !important; }
     .logo {
-      max-width: 180px; height: auto; background: transparent !important; display: block;
+      width: 143px; height: 143px; display: block; object-fit: contain;
+      background: none !important; background-color: transparent !important;
       filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1)); transition: transform 0.3s ease;
     }
     .logo:hover { transform: scale(1.02); filter: drop-shadow(0 2px 12px rgba(212,165,116,0.3)); }
-    @media (max-width: 768px) { .logo { max-width: 140px; } }
+    @media (max-width: 768px) { .logo { width: 120px; height: 120px; } }
     /* Carica logo.png reale in public/ (path /logo.png) se non presente */
 
     .nav-toggle {

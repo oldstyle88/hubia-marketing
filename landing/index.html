@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HŪBIA – Il sistema che semplifica il tuo locale. Gestione appuntamenti, staff, clienti e incassi in un'unica PWA." />
+  <title>HŪBIA – Sistema per barber, beauty e food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Vai al contenuto principale</a>
+
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="HŪBIA home">HŪBIA</a>
+      <button type="button" class="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="nav-menu" class="nav" role="navigation" aria-label="Menu principale">
+        <ul class="nav-list">
+          <li><a href="#piani">Piani</a></li>
+          <li><a href="#su-misura">Su misura</a></li>
+          <li><a href="#consulenza">Consulenza</a></li>
+        </ul>
+        <a href="#consulenza" class="btn btn-cta-header">Richiedi consulenza</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1 id="hero-title" class="hero-title"># Il sistema che semplifica il tuo locale. E cresce con te.</h1>
+          <p class="hero-subtitle">Gestione appuntamenti, staff, clienti e incassi in un'unica PWA elegante, veloce e senza compromessi.</p>
+          <div class="hero-badges" role="list">
+            <span class="badge" role="listitem">GDPR Ready</span>
+            <span class="badge" role="listitem">PWA</span>
+            <span class="badge" role="listitem">White-label</span>
+            <span class="badge" role="listitem">Supporto umano</span>
+          </div>
+          <a href="#consulenza" class="btn btn-hero">Parliamone insieme</a>
+        </div>
+        <div class="hero-mockup">
+          <div class="mockup-box" aria-hidden="true">[HERO MOCKUP: Inserire immagine PWA su device qui]</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="piani" class="section section-alt" aria-labelledby="pensato-title">
+      <div class="container">
+        <h2 id="pensato-title" class="section-title">Pensato per chi lavora con le persone, non con il caos.</h2>
+        <div class="cards-grid">
+          <article class="card" data-animate>
+            <div class="card-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="8" r="2.5"/><circle cx="17" cy="16" r="2.5"/><path d="M9.5 9.5l5 5M9.5 14.5l5-5"/></svg>
+            </div>
+            <h3 class="card-title">Barber & Hair</h3>
+            <p class="card-desc">Gestione prenotazioni, turni e clienti per barbieri e parrucchieri. Tutto in un unico posto.</p>
+          </article>
+          <article class="card" data-animate>
+            <div class="card-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="card-title">Beauty</h3>
+            <p class="card-desc">Centri estetici, nail bar e spa: appuntamenti, trattamenti e incassi sempre sotto controllo.</p>
+          </article>
+          <article class="card" data-animate>
+            <div class="card-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+            </div>
+            <h3 class="card-title">Food (pizzeria / street food)</h3>
+            <p class="card-desc">Ordini, tavoli e asporto. Per pizzerie e street food con flussi rapidi e chiari.</p>
+          </article>
+        </div>
+        <p class="section-footnote">Per attività con flussi più complessi costruiamo soluzioni su misura.</p>
+      </div>
+    </section>
+
+    <section id="su-misura" class="section" aria-labelledby="stress-title">
+      <div class="container">
+        <h2 id="stress-title" class="section-title section-title-primary">Meno stress. Più controllo.</h2>
+        <div class="stress-content">
+          <p class="stress-intro">Una sola piattaforma per appuntamenti, team e incassi. Niente più caos, niente più sprechi.</p>
+          <div class="placeholder-row">
+            <div class="mockup-placeholder">[MOCKUP PLACEHOLDER: Inserire screenshot PWA qui]</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="consulenza" class="section section-alt" aria-labelledby="cta-title">
+      <div class="container container-narrow">
+        <h2 id="cta-title" class="section-title">Pronto a semplificare?</h2>
+        <p class="cta-text">Prenota una consulenza gratuita. Ti mostriamo il sistema e costruiamo insieme il piano giusto per te.</p>
+        <a href="#" class="btn btn-hero">Richiedi consulenza</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-brand">HŪBIA</p>
+      <p class="footer-legal">© HŪBIA. Tutti i diritti riservati.</p>
+      <a href="#main" class="footer-link">Torna su</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

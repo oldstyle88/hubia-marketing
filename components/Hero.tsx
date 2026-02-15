@@ -28,7 +28,7 @@ export async function Hero({ variant = 'A' }: HeroProps) {
         <div className="hero-ring hero-ring-3" />
         <div className="hero-orbit hero-orbit-1" />
         <div className="hero-orbit hero-orbit-2" />
-        <img src="/brand/hubia-mark.png" alt="" className="hero-bg-logo" />
+        <img src="/brand/hubia-logo-clean.png" alt="" className="hero-bg-logo" />
       </div>
 
       <div

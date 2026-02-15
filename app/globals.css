@@ -109,24 +109,24 @@ h4 {
 
 .hero-brand-bg {
   position: absolute;
-  left: 52%;
-  top: 18px;
+  left: 68%;
+  top: 28px;
   width: 560px;
   height: 560px;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.62;
+  opacity: 0.5;
   transform: translateX(-50%);
 }
 
 .hero-bg-logo {
   position: absolute;
-  left: 56%;
-  top: 47%;
-  width: 280px;
-  transform: translate(-50%, -50%) rotate(-6deg);
+  left: 60%;
+  top: 50%;
+  width: 290px;
+  transform: translate(-50%, -50%);
   object-fit: contain;
-  opacity: 0.24;
+  opacity: 0.15;
   filter: drop-shadow(0 24px 40px rgba(0, 18, 39, 0.28)) saturate(106%);
   animation: logoBreath 5.2s ease-in-out infinite;
 }
@@ -239,12 +239,12 @@ h4 {
 @keyframes logoBreath {
   0%,
   100% {
-    transform: translate(-50%, -50%) rotate(-6deg) scale(1);
-    opacity: 0.2;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.12;
   }
   50% {
-    transform: translate(-50%, -50%) rotate(-4deg) scale(1.025);
-    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1.02);
+    opacity: 0.18;
   }
 }
 
@@ -308,7 +308,7 @@ h4 {
     width: 430px;
     height: 430px;
     transform: translateX(-50%);
-    opacity: 0.22;
+    opacity: 0.2;
   }
 
   .hero-bg-logo {

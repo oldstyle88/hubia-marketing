@@ -7,18 +7,23 @@ export function FooterCTA() {
   const t = useTranslations('home.ctaFinal')
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[var(--primary)]" id="cta">
-      <div className="max-w-2xl mx-auto text-center">
+    <section
+      className="py-20 px-4 sm:px-6 lg:px-8"
+      id="cta"
+      style={{
+        background:
+          'radial-gradient(70% 50% at 50% 0%, rgba(108, 180, 255, 0.25) 0%, rgba(108, 180, 255, 0) 70%), linear-gradient(180deg, #061127 0%, #0a1d3a 100%)',
+      }}
+    >
+      <div className="mx-auto max-w-2xl text-center">
         <h2
-          className="text-3xl sm:text-4xl font-bold text-white mb-4"
+          className="mb-4 text-3xl font-bold text-white sm:text-4xl"
           style={{ fontFamily: 'var(--font-title)' }}
         >
           {t('title')}
         </h2>
-        <p className="text-white/90 mb-10">
-          {t('subtitle')}
-        </p>
-        <div className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm">
+        <p className="mb-10 text-slate-300">{t('subtitle')}</p>
+        <div className="rounded-2xl border border-white/15 bg-white/5 p-8 shadow-2xl backdrop-blur-sm">
           <LeadForm />
         </div>
       </div>

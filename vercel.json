@@ -3,6 +3,10 @@
   "outputDirectory": ".next",
   "framework": "nextjs",
   "installCommand": "npm install",
+  "redirects": [
+    { "source": "/", "destination": "/it", "permanent": false },
+    { "source": "/landing.html", "destination": "/it", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/it", "destination": "/landing.html" },
     { "source": "/it/", "destination": "/landing.html" }

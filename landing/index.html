@@ -323,8 +323,8 @@
   <header class="header" role="banner">
     <div class="header-inner">
       <a href="#" class="logo-link" aria-label="HŪBIA home">
-        <img src="/logo.png?v=3" alt="HŪBIA Logo" class="logo" onerror="this.style.display='none';document.getElementById('logo-fallback').style.display='block'">
-        <span id="logo-fallback" class="logo-fallback" style="display:none">HŪBIA</span>
+        <span id="logo-fallback" class="logo-fallback">HŪBIA</span>
+        <img src="/logo.png?v=5" alt="HŪBIA Logo" class="logo logo-img" style="display:none" onload="this.style.display='block';var f=document.getElementById('logo-fallback');if(f)f.style.display='none'" onerror="var f=document.getElementById('logo-fallback');if(f)f.style.display='block'">
       </a>
       <button type="button" class="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav-menu">
         <span class="hamburger"></span>

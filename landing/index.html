@@ -59,10 +59,10 @@
       display: flex; align-items: center; justify-content: space-between; gap: 16px;
     }
     .logo {
-      display: flex; align-items: center; text-decoration: none; color: var(--indigo);
+      font-family: var(--font-title); font-size: 24px; font-weight: 700; letter-spacing: 0.05em;
+      text-decoration: none; color: var(--indigo);
     }
-    .logo svg { height: 36px; width: auto; }
-    @media (min-width: 768px) { .logo svg { height: 42px; } }
+    @media (min-width: 768px) { .logo { font-size: 28px; } }
     .logo:hover { color: var(--indigo); }
 
     .nav-toggle {
@@ -307,13 +307,7 @@
   <!-- SEZIONE: Header -->
   <header class="header" role="banner">
     <div class="header-inner">
-      <a href="#" class="logo" aria-label="HŪBIA home">
-        <svg viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M10 8v34M10 8h12M10 25h12M22 8v34" stroke="#2C1B5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M38 42c0-10 6-18 14-18s14 8 14 18" stroke="#D4A574" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-          <text x="72" y="34" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="700" fill="#2C1B5A" letter-spacing="0.06em">HŪBIA</text>
-        </svg>
-      </a>
+      <a href="#" class="logo" aria-label="HŪBIA home">HŪBIA</a>
       <button type="button" class="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav-menu">
         <span class="hamburger"></span>
       </button>

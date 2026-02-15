@@ -58,12 +58,13 @@
       max-width: 1200px; margin: 0 auto; padding: 14px 24px;
       display: flex; align-items: center; justify-content: space-between; gap: 16px;
     }
+    .logo-link { display: block; text-decoration: none; }
     .logo {
-      font-family: var(--font-title); font-size: 24px; font-weight: 700; letter-spacing: 0.05em;
-      text-decoration: none; color: var(--indigo);
+      max-width: 180px; height: auto; background: transparent !important; display: block;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1)); transition: transform 0.3s ease;
     }
-    @media (min-width: 768px) { .logo { font-size: 28px; } }
-    .logo:hover { color: var(--indigo); }
+    .logo:hover { transform: scale(1.02); filter: drop-shadow(0 2px 12px rgba(212,165,116,0.3)); }
+    @media (max-width: 768px) { .logo { max-width: 140px; } }
 
     .nav-toggle {
       display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0;
@@ -304,10 +305,12 @@
 <body>
   <a href="#main" class="skip-link">Vai al contenuto principale</a>
 
+  <!-- HEADER WITH LOGO -->
   <!-- SEZIONE: Header -->
   <header class="header" role="banner">
     <div class="header-inner">
-      <a href="#" class="logo" aria-label="HŪBIA home">HŪBIA</a>
+      <!-- Sostituisci src con logo.png reale (path /logo.png se file in public/) -->
+      <a href="#" class="logo-link" aria-label="HŪBIA home"><img src="/logo.png" alt="HŪBIA Logo" class="logo"></a>
       <button type="button" class="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav-menu">
         <span class="hamburger"></span>
       </button>
@@ -621,7 +624,7 @@
       });
       var footerForm = document.querySelector('.footer-form');
       if (footerForm) footerForm.addEventListener('submit', function(e){ e.preventDefault(); });
-      // Deploy & aggiungi mockup reali.
+      // Logo inserito: trasparente, scalabile. Deploy e verifica transparency su bg white.
     })();
   </script>
 </body>

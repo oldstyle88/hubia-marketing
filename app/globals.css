@@ -85,23 +85,6 @@ h4 {
   filter: blur(0.1px) saturate(120%);
 }
 
-.logo-shell {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(160, 213, 255, 0.75);
-  background: radial-gradient(circle at 35% 15%, rgba(138, 204, 247, 0.62), rgba(5, 35, 68, 0.96) 64%);
-  box-shadow: 0 20px 44px rgba(0, 21, 44, 0.42), inset 0 0 0 1px rgba(216, 241, 255, 0.28);
-}
-
-.logo-shell::after {
-  content: '';
-  position: absolute;
-  inset: -120% -40%;
-  transform: rotate(20deg);
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
-  animation: shimmerSweep 5.6s ease-in-out infinite;
-}
-
 .hero-panel {
   position: relative;
   overflow: hidden;
@@ -126,23 +109,25 @@ h4 {
 
 .hero-brand-bg {
   position: absolute;
-  right: -60px;
-  top: 24px;
+  left: 52%;
+  top: 18px;
   width: 560px;
   height: 560px;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.86;
+  opacity: 0.62;
+  transform: translateX(-50%);
 }
 
 .hero-bg-logo {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 320px;
-  transform: translate(-50%, -50%);
+  left: 56%;
+  top: 47%;
+  width: 280px;
+  transform: translate(-50%, -50%) rotate(-6deg);
   object-fit: contain;
-  filter: drop-shadow(0 24px 40px rgba(0, 18, 39, 0.35)) saturate(112%);
+  opacity: 0.24;
+  filter: drop-shadow(0 24px 40px rgba(0, 18, 39, 0.28)) saturate(106%);
   animation: logoBreath 5.2s ease-in-out infinite;
 }
 
@@ -151,7 +136,7 @@ h4 {
   left: 50%;
   top: 50%;
   border-radius: 9999px;
-  border: 1px solid rgba(140, 205, 246, 0.38);
+  border: 1px solid rgba(140, 205, 246, 0.26);
   transform: translate(-50%, -50%);
 }
 
@@ -226,7 +211,6 @@ h4 {
     transform: none;
   }
 
-  .logo-shell::after,
   .animate-logo-float,
   .reveal-up,
   .hero-bg-logo,
@@ -252,27 +236,15 @@ h4 {
   }
 }
 
-@keyframes shimmerSweep {
-  0% {
-    transform: translateX(-20%) rotate(20deg);
-  }
-  60% {
-    transform: translateX(130%) rotate(20deg);
-  }
-  100% {
-    transform: translateX(130%) rotate(20deg);
-  }
-}
-
 @keyframes logoBreath {
   0%,
   100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0.72;
+    transform: translate(-50%, -50%) rotate(-6deg) scale(1);
+    opacity: 0.2;
   }
   50% {
-    transform: translate(-50%, -50%) scale(1.03);
-    opacity: 0.9;
+    transform: translate(-50%, -50%) rotate(-4deg) scale(1.025);
+    opacity: 0.3;
   }
 }
 
@@ -331,16 +303,16 @@ h4 {
 
 @media (max-width: 980px) {
   .hero-brand-bg {
-    right: 50%;
+    left: 50%;
     top: -20px;
     width: 430px;
     height: 430px;
-    transform: translateX(50%);
-    opacity: 0.3;
+    transform: translateX(-50%);
+    opacity: 0.22;
   }
 
   .hero-bg-logo {
-    width: 230px;
+    display: none;
   }
 
   .hero-ring-1 {
@@ -356,5 +328,9 @@ h4 {
   .hero-ring-3 {
     width: 370px;
     height: 370px;
+  }
+
+  .hero-orbit-2 {
+    display: none;
   }
 }

@@ -14,7 +14,7 @@ export function HubiaLogo({ variant = 'hero' }: HubiaLogoProps) {
         className="inline-flex items-center gap-3 rounded-xl px-2 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/60"
       >
         <span className="relative h-10 w-10">
-          <img src="/brand/hubia-logo-master.png" alt="" width={40} height={40} className="h-full w-full object-contain drop-shadow-[0_8px_18px_rgba(0,23,48,0.38)]" />
+          <img src="/brand/hubia-mark.png" alt="" width={40} height={40} className="h-full w-full object-contain drop-shadow-[0_8px_18px_rgba(0,23,48,0.38)]" />
         </span>
         <span className="text-[15px] font-semibold tracking-[0.2em] text-[var(--primary)]">HUBIA</span>
       </Link>
@@ -25,7 +25,7 @@ export function HubiaLogo({ variant = 'hero' }: HubiaLogoProps) {
     <div className="mb-7 flex items-center justify-center gap-4 md:justify-start">
       <span className="animate-logo-float relative h-14 w-14 sm:h-16 sm:w-16">
         <img
-          src="/brand/hubia-logo-master.png"
+          src="/brand/hubia-mark.png"
           alt="Logo HUBIA"
           width={64}
           height={64}

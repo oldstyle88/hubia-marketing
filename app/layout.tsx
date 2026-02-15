@@ -1,43 +1,44 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 
-const displayFont = Inter({
+const displayFont = Playfair_Display({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['600', '700'],
   variable: '--font-display',
   display: 'swap',
 })
 
 const bodyFont = Inter({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-body',
   display: 'swap',
 })
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://hubia.com'
-
-// Cache-bust per favicon: dopo deploy il browser carica il mark (H) invece del vecchio
-const faviconVersion = 'v=8'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.hubiasystem.com'
+const faviconVersion = 'v=9'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: 'HŪBIA — The premium PWA platform for local businesses',
+  title: 'HŪBIA — Operating System for Local Excellence',
   description:
-    'Booking, ordering, staff & analytics — deployed per shop, zero template branding leaks. PWA-only, installable on iOS and Android.',
+    'HŪBIA trasforma operazioni, agenda, staff e customer experience in un sistema unico, premium e scalabile per attività locali.',
   keywords: [
     'PWA',
     'prenotazioni',
     'barbiere',
-    'pizzeria',
-    'palestra',
-    'food',
+    'parrucchiere',
+    'beauty center',
+    'ristorazione',
     'booking',
     'local business',
-    'staff dashboard',
+    'gestione staff',
   ],
   authors: [{ name: 'HŪBIA' }],
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: [
       { url: `/favicon.ico?${faviconVersion}`, sizes: 'any' },
@@ -47,17 +48,17 @@ export const metadata: Metadata = {
     apple: [{ url: `/brand/apple-touch-icon.png?${faviconVersion}`, sizes: '180x180', type: 'image/png' }],
   },
   openGraph: {
-    title: 'HŪBIA — The premium PWA platform for local businesses',
+    title: 'HŪBIA — Operating System for Local Excellence',
     description:
-      'Booking, ordering, staff & analytics. PWA-only, deploy per shop.',
+      'Una piattaforma premium per gestire prenotazioni, staff, clienti e performance con standard enterprise.',
     type: 'website',
-    locale: 'en_US',
-    images: [{ url: '/brand/og-image.png', width: 1200, height: 630, alt: 'HŪBIA' }],
+    locale: 'it_IT',
+    images: [{ url: '/brand/icon-512.png', width: 512, height: 512, alt: 'HŪBIA' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'HŪBIA — The premium PWA platform for local businesses',
-    description: 'Booking, ordering, staff & analytics. PWA-only.',
+    title: 'HŪBIA — Operating System for Local Excellence',
+    description: 'Sistema premium per attività locali ad alta crescita.',
     images: ['/brand/icon-512.png'],
   },
   robots: { index: true, follow: true },

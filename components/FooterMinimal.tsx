@@ -5,24 +5,22 @@ export async function FooterMinimal() {
   const t = await getTranslations('footer')
 
   return (
-    <footer className="py-10 px-4 sm:px-6 border-t border-[var(--gray)]/20 bg-[var(--bg)]">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-[var(--gray)]">
-          {t('tagline')}
-        </p>
-        <nav className="flex flex-wrap items-center justify-center gap-6" aria-label="Footer">
-          <Link href="/privacy" className="text-sm text-[var(--text)] hover:text-[var(--primary)] transition-colors">
+    <footer className="border-t border-[var(--line)] bg-[var(--bg)] px-4 py-10 sm:px-6">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
+        <p className="text-sm text-[var(--gray)]">{t('tagline')}</p>
+        <nav className="flex flex-wrap items-center justify-center gap-2" aria-label="Footer">
+          <Link href="/privacy" className="inline-flex min-h-10 items-center rounded-lg px-3 text-sm text-[var(--text)] transition-colors hover:text-[var(--primary)]">
             {t('privacy')}
           </Link>
-          <Link href="/terms" className="text-sm text-[var(--text)] hover:text-[var(--primary)] transition-colors">
+          <Link href="/terms" className="inline-flex min-h-10 items-center rounded-lg px-3 text-sm text-[var(--text)] transition-colors hover:text-[var(--primary)]">
             {t('terms')}
           </Link>
-          <Link href="/contact" className="text-sm text-[var(--text)] hover:text-[var(--primary)] transition-colors">
+          <Link href="/contact" className="inline-flex min-h-10 items-center rounded-lg px-3 text-sm text-[var(--text)] transition-colors hover:text-[var(--primary)]">
             {t('contactLink')}
           </Link>
         </nav>
       </div>
-      <p className="text-center text-xs text-[var(--gray)] mt-6">
+      <p className="mt-6 text-center text-xs text-[var(--gray)]">
         © {new Date().getFullYear()} HŪBIA. {t('copyright')}
       </p>
     </footer>

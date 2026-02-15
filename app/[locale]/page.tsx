@@ -23,14 +23,13 @@ export async function generateMetadata() {
   }
 }
 
-// A/B: set to 'B' for variant B (CTA "Inizia gratis trial" + green). Deploy & A/B test variant su Vercel.
 const CTA_VARIANT = (process.env.NEXT_PUBLIC_CTA_VARIANT as 'A' | 'B') || 'A'
 
 export default async function HomePage() {
   await getTranslations('home')
 
   return (
-    <div className="min-h-screen flex flex-col bg-[var(--bg)]">
+    <div className="site-shell min-h-screen flex flex-col bg-[var(--bg)]">
       <Header />
       <main className="flex-1">
         <Hero variant={CTA_VARIANT} />
@@ -45,5 +44,3 @@ export default async function HomePage() {
     </div>
   )
 }
-
-// 10/10: Logo prominent, UX addictive. Deploy & A/B test variant su Vercel.

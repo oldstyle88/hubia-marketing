@@ -16,11 +16,11 @@
   },
   "home": {
     "hero": {
-      "title": "Il sistema che semplifica il tuo locale. E cresce con te.",
-      "subtitle": "Gestione appuntamenti, staff, clienti e incassi in un'unica PWA elegante, veloce e senza compromessi.",
+      "title": "Il sistema operativo che fa crescere il tuo locale.",
+      "subtitle": "Operazioni, agenda, staff e clienti in una piattaforma premium progettata per performance, controllo e crescita.",
       "badges": ["GDPR Ready", "PWA", "White-label", "Supporto umano"],
-      "ctaPrimary": "Parliamone insieme",
-      "ctaSecondary": "Vedi come funziona"
+      "ctaPrimary": "Richiedi una consulenza",
+      "ctaSecondary": "Guarda il metodo"
     },
     "forWho": {
       "title": "Pensato per chi lavora con le persone, non con il caos.",
@@ -109,8 +109,8 @@
       ]
     },
     "ctaFinal": {
-      "title": "Parliamone insieme",
-      "subtitle": "Senza impegno, senza call commerciali aggressive.",
+      "title": "Costruiamo insieme la prossima versione del tuo business",
+      "subtitle": "Sessione strategica dedicata: roadmap, setup e piano di crescita su misura per il tuo locale.",
       "cta": "Richiedi una consulenza"
     }
   },

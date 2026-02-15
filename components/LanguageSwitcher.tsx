@@ -62,12 +62,11 @@ export function LanguageSwitcher() {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-haspopup="true"
-        aria-label={t('chooseLanguage')}
-        className="flex items-center gap-2 px-3 py-2 rounded-xl border border-white/15 bg-surface/80 hover:bg-white/5 text-secondary hover:text-primary transition-all focus:outline-none focus:ring-2 focus:ring-accent-blue/40"
+        className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-[var(--line)] bg-white px-3 text-[var(--text)] shadow-sm transition hover:border-[var(--secondary)]/60 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/50"
       >
-        <GlobeIcon className="w-5 h-5 shrink-0" />
-        <span className="text-sm font-medium hidden sm:inline">{current.code.toUpperCase()}</span>
-        <svg className={`w-4 h-4 shrink-0 transition-transform ${open ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+        <GlobeIcon className="h-5 w-5 shrink-0" />
+        <span className="text-sm font-semibold">{current.code.toUpperCase()}</span>
+        <svg className={`h-4 w-4 shrink-0 transition-transform ${open ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
           <path d="M6 9l6 6 6-6" />
         </svg>
       </button>
@@ -76,7 +75,7 @@ export function LanguageSwitcher() {
         <nav
           ref={dropdownRef}
           aria-label={t('chooseLanguage')}
-          className="absolute right-0 top-full mt-2 min-w-[140px] py-1.5 rounded-xl border border-white/15 bg-surface-elevated shadow-xl z-50"
+          className="absolute right-0 top-full z-50 mt-2 min-w-[150px] rounded-xl border border-[var(--line)] bg-white p-1.5 shadow-2xl"
         >
           <ul className="space-y-0.5" role="list">
             {locales.map((loc) => {
@@ -87,10 +86,10 @@ export function LanguageSwitcher() {
                     href={pathname || '/'}
                     locale={loc.code}
                     onClick={() => setOpen(false)}
-                    className={`flex items-center gap-2 w-full px-3 py-2 text-left text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-accent-blue/40 focus:ring-inset rounded-lg mx-1 ${
+                    className={`mx-1 flex min-h-10 w-full items-center gap-2 rounded-lg px-3 text-left text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/50 focus:ring-inset ${
                       isActive
-                        ? 'text-accent-blue bg-white/5'
-                        : 'text-secondary hover:text-primary hover:bg-white/5'
+                        ? 'bg-[var(--bg-alt)] font-semibold text-[var(--primary)]'
+                        : 'text-[var(--text)] hover:bg-[var(--bg-alt)]/70'
                     }`}
                   >
                     <span className="text-base leading-none" aria-hidden>{loc.flag}</span>

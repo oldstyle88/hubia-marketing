@@ -4,11 +4,12 @@ import { useState } from 'react'
 import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
-import { LeadForm } from '@/components/LeadForm'
+import { HubiaLogo } from '@/components/HubiaLogo'
+import { DeferredLeadForm } from '@/components/DeferredLeadForm'
 
 function MenuIcon({ open }: { open: boolean }) {
   return (
-    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+    <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
       {open ? (
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
       ) : (
@@ -23,27 +24,18 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
 
+  const navLinkClass =
+    'inline-flex min-h-11 items-center rounded-lg px-3 text-[13px] font-semibold uppercase tracking-[0.14em] text-[var(--text)] transition-colors hover:text-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/50'
+
   const navLinks = (
     <>
-      <Link
-        href="/#pricing"
-        className="text-[var(--text)] hover:text-[var(--primary)] transition-colors font-medium uppercase tracking-wider text-sm max-[480px]:text-[13px]"
-        onClick={() => setMobileOpen(false)}
-      >
+      <Link href="/#pricing" className={navLinkClass} onClick={() => setMobileOpen(false)}>
         {t('plans')}
       </Link>
-      <Link
-        href="/#pricing"
-        className="text-[var(--text)] hover:text-[var(--primary)] transition-colors font-medium uppercase tracking-wider text-sm max-[480px]:text-[13px]"
-        onClick={() => setMobileOpen(false)}
-      >
+      <Link href="/#pricing" className={navLinkClass} onClick={() => setMobileOpen(false)}>
         {t('custom')}
       </Link>
-      <Link
-        href="/#cta"
-        className="text-[var(--text)] hover:text-[var(--primary)] transition-colors font-medium uppercase tracking-wider text-sm max-[480px]:text-[13px]"
-        onClick={() => setMobileOpen(false)}
-      >
+      <Link href="/#cta" className={navLinkClass} onClick={() => setMobileOpen(false)}>
         {t('consulting')}
       </Link>
     </>
@@ -51,86 +43,88 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-[var(--gray)]/20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between h-auto md:h-20 py-3 md:py-0">
-            <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-4 md:gap-8">
-              <nav className="flex flex-wrap items-center justify-center gap-6 md:gap-8" aria-label="Main">
-                {navLinks}
-              </nav>
-            </div>
-            <div className="flex items-center justify-center md:justify-end gap-3 sm:gap-4">
-              <LanguageSwitcher />
-              <button
-                type="button"
-                onClick={() => setModalOpen(true)}
-                className="px-5 py-2.5 rounded-xl font-medium text-[var(--primary)] bg-[var(--secondary)] hover:opacity-95 transition-opacity shadow-md text-sm max-[480px]:text-[13px]"
-              >
-                {t('requestDemo')}
-              </button>
-              <button
-                type="button"
-                onClick={() => setMobileOpen((v) => !v)}
-                className="absolute right-4 top-3 md:hidden p-2 rounded-lg text-[var(--text)] hover:bg-[var(--bg-alt)] transition-colors"
-                aria-expanded={mobileOpen}
-                aria-label={mobileOpen ? t('closeMenu') : t('openMenu')}
-              >
-                <MenuIcon open={mobileOpen} />
-              </button>
-            </div>
+      <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[rgba(248,245,239,0.86)] backdrop-blur-xl">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+          <HubiaLogo variant="header" />
+
+          <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
+            {navLinks}
+          </nav>
+
+          <div className="flex items-center gap-2 sm:gap-3">
+            <LanguageSwitcher />
+            <button
+              type="button"
+              onClick={() => setModalOpen(true)}
+              className="inline-flex min-h-11 items-center rounded-xl bg-[var(--secondary)] px-4 text-sm font-semibold text-[var(--primary)] shadow-md transition hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/60"
+            >
+              {t('requestDemo')}
+            </button>
+            <button
+              type="button"
+              onClick={() => setMobileOpen((v) => !v)}
+              className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-[var(--text)] transition-colors hover:bg-[var(--bg-alt)] focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/50 md:hidden"
+              aria-expanded={mobileOpen}
+              aria-label={mobileOpen ? t('closeMenu') : t('openMenu')}
+            >
+              <MenuIcon open={mobileOpen} />
+            </button>
           </div>
-          {mobileOpen && (
-            <nav className="md:hidden py-4 border-t border-[var(--gray)]/20 flex flex-col items-center gap-4">
+        </div>
+
+        {mobileOpen && (
+          <nav className="border-t border-[var(--line)] px-4 py-4 md:hidden" aria-label="Main mobile">
+            <div className="flex flex-col gap-2">
               {navLinks}
               <button
                 type="button"
-                onClick={() => { setModalOpen(true); setMobileOpen(false); }}
-                className="w-full max-w-xs py-3 rounded-xl font-medium text-[var(--primary)] bg-[var(--secondary)]"
+                onClick={() => {
+                  setModalOpen(true)
+                  setMobileOpen(false)
+                }}
+                className="mt-2 inline-flex min-h-11 items-center justify-center rounded-xl bg-[var(--secondary)] px-4 text-sm font-semibold text-[var(--primary)]"
               >
                 {t('requestDemo')}
               </button>
-            </nav>
-          )}
-        </div>
+            </div>
+          </nav>
+        )}
       </header>
 
-      {/* Modal: backdrop blur + centered */}
       {modalOpen && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/50 backdrop-blur-md"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 p-4 backdrop-blur-md"
           role="dialog"
           aria-modal="true"
           aria-labelledby="modal-title"
         >
-          <div
-            className="bg-[var(--bg)] rounded-xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="p-6 flex justify-between items-center border-b border-[var(--gray)]/20">
+          <button
+            type="button"
+            className="absolute inset-0"
+            aria-label="Chiudi"
+            onClick={() => setModalOpen(false)}
+          />
+
+          <div className="relative z-10 max-h-[90vh] w-full max-w-md overflow-y-auto rounded-xl bg-[var(--bg)] shadow-2xl">
+            <div className="flex items-center justify-between border-b border-[var(--line)] p-6">
               <h2 id="modal-title" className="text-xl font-semibold text-[var(--primary)]" style={{ fontFamily: 'var(--font-title)' }}>
                 {t('requestDemo')}
               </h2>
               <button
                 type="button"
                 onClick={() => setModalOpen(false)}
-                className="p-2 rounded-lg text-[var(--gray)] hover:text-[var(--text)] hover:bg-[var(--bg-alt)] transition-colors"
+                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-[var(--gray)] transition-colors hover:bg-[var(--bg-alt)] hover:text-[var(--text)]"
                 aria-label={t('closeMenu')}
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
             <div className="p-6">
-              <LeadForm onSuccess={() => setModalOpen(false)} />
+              <DeferredLeadForm onSuccess={() => setModalOpen(false)} />
             </div>
           </div>
-          <button
-            type="button"
-            className="absolute inset-0 -z-10"
-            aria-label="Chiudi"
-            onClick={() => setModalOpen(false)}
-          />
         </div>
       )}
     </>

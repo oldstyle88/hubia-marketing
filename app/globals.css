@@ -1,196 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --hubia-blue-1: #8BB8F5;
-  --hubia-blue-mid: #4A7FD9;
-  --hubia-blue-2: #1E4A9E;
-  /* Luxury landing (indigo / rose gold) */
-  --primary: #2C1B5A;
-  --secondary: #D4A574;
-  --bg: #FFFFFF;
-  --bg-alt: #F9FAFB;
-  --text: #1F2937;
-  --gray: #9CA3AF;
-  --font-title: 'Playfair Display', serif;
+  --primary: #101828;
+  --secondary: #b88543;
+  --bg: #f8f5ef;
+  --bg-alt: #efe9df;
+  --text: #1f2937;
+  --gray: #475467;
+  --line: rgba(16, 24, 40, 0.1);
+  --font-title: var(--font-display);
 }
 
-html { scroll-behavior: smooth; }
-
-/* Luxury card: deep shadow */
-.card {
-  box-shadow: 0 10px 30px rgba(44, 27, 90, 0.1);
-}
-.card-deep {
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
-.card-deep:hover {
-  box-shadow: 0 20px 50px rgba(44, 27, 90, 0.12);
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
 }
 
-.backdrop-blur { backdrop-filter: blur(12px); }
-.glow-gold { filter: drop-shadow(0 0 20px #D4A574); }
-.glow-gold-hover:hover { filter: drop-shadow(0 0 20px #D4A574); transition: filter 0.4s ease; }
-
-.hero-word { opacity: 0; transform: translateY(50px); }
-.hero-word.revealed { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease; }
-
-@layer base {
-  * { @apply border-border; }
-  html {
-    background-color: #0F172A;
-  }
-  body {
-    @apply bg-background text-primary antialiased font-sans;
-    min-height: 100vh;
-    background-color: #0F172A;
-  }
-  h1, h2, h3, h4 {
-    @apply font-display font-semibold;
-  }
-}
-
-/* Sfondo navy con gradiente teal sottile */
 body {
-  background-image:
-    linear-gradient(180deg, rgba(0,212,255,0.04) 0%, transparent 40%),
-    linear-gradient(180deg, #0F172A 0%, #1E293B 100%);
+  @apply bg-background text-primary antialiased font-sans;
+  min-height: 100vh;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 8% 14%, rgba(184, 133, 67, 0.15) 0%, transparent 42%),
+    radial-gradient(circle at 92% 10%, rgba(16, 24, 40, 0.1) 0%, transparent 40%),
+    linear-gradient(180deg, #f8f5ef 0%, #f3eee4 35%, #f8f5ef 100%);
 }
 
-/* Card: ombra leggera, hover scale */
-.card-modern {
-  @apply rounded-2xl border border-white/10 bg-surface/80 backdrop-blur-sm;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.card-modern:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+.site-shell {
+  position: relative;
+  overflow: hidden;
 }
 
-/* Fade-in on scroll (usa con data-animate) */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
+.site-shell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(16, 24, 40, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 24, 40, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at center, black 48%, transparent 100%);
+  opacity: 0.22;
 }
 
-/* Check verde per feature list */
-.check-teal {
-  color: #22C55E;
+h1,
+h2,
+h3,
+h4 {
+  @apply font-display font-semibold;
 }
-.check-teal svg {
-  flex-shrink: 0;
+
+.card {
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 60px rgba(16, 24, 40, 0.08);
+}
+
+.card-deep {
+  border: 1px solid rgba(184, 133, 67, 0.2);
+  box-shadow: 0 24px 70px rgba(16, 24, 40, 0.1);
+}
+
+.card-deep:hover {
+  box-shadow: 0 28px 78px rgba(16, 24, 40, 0.14);
+}
+
+.glow-gold-hover:hover {
+  filter: drop-shadow(0 0 14px rgba(184, 133, 67, 0.4));
+  transition: filter 0.35s ease;
+}
+
+.hero-word {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.hero-brand-watermark {
+  mix-blend-mode: multiply;
+  opacity: 0.18;
+  filter: blur(0.1px) saturate(120%);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .card-modern:hover {
-    transform: none;
+  html {
+    scroll-behavior: auto;
   }
-  .animate-fade-in-up {
-    animation: none;
+
+  .hero-word {
     opacity: 1;
     transform: none;
   }
 }
 
-/* --- Logo animato HUBIA (hero) --- */
-.hubia-logo-animated {
-  animation: hubiaLogoFadeIn 1s ease-out forwards;
-}
-
-.hubia-logo-animated__icon {
-  opacity: 0;
-  animation: hubiaLogoFadeIn 0.8s ease-out 0.1s forwards, hubiaLogoGlow 4s ease-in-out 1.5s infinite;
-}
-
-.hubia-logo-animated__wordmark {
-  opacity: 0;
-  animation: hubiaLogoFadeIn 0.6s ease-out 0.5s forwards;
-}
-@keyframes hubiaLogoFadeIn {
+@keyframes fadeInWord {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(18px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes hubiaLogoGlow {
-  0%,
-  100% {
-    filter: drop-shadow(0 0 2px rgba(0, 212, 255, 0.4));
-  }
-  50% {
-    filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.6)) drop-shadow(0 0 16px rgba(234, 179, 8, 0.2));
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hubia-logo-animated,
-  .hubia-logo-animated__icon,
-  .hubia-logo-animated__wordmark {
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-}
-
-/* Logo hero: fade-in + scale + glow pulse */
-.animate-logo-hero {
-  animation: logoHeroIn 1s ease-out forwards, logoHeroGlow 4s ease-in-out 2s infinite;
-}
-@keyframes logoHeroIn {
-  from {
-    opacity: 0;
-    transform: scale(0.92) translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-@keyframes logoHeroGlow {
-  0%, 100% { filter: drop-shadow(0 0 4px rgba(0, 212, 255, 0.25)); }
-  50% { filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.4)) drop-shadow(0 0 24px rgba(0, 212, 255, 0.15)); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .animate-logo-hero {
-    animation: none;
-    opacity: 1;
-    transform: none;
-    filter: none;
-  }
-}
-
-/* Logo header: fade-in + sottile glow al hover */
-.animate-logo-header {
-  animation: logoHeaderIn 0.6s ease-out forwards;
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-.animate-logo-header:hover {
-  filter: drop-shadow(0 0 6px rgba(0, 212, 255, 0.35));
-  transform: scale(1.05);
-}
-@keyframes logoHeaderIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .animate-logo-header {
-    animation: none;
-    transition: none;
-  }
-  .animate-logo-header:hover {
-    filter: none;
-    transform: none;
   }
 }

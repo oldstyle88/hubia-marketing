@@ -12,10 +12,27 @@ const BUSINESS_OPTIONS = [
   { value: 'other', labelKey: 'businessOther' },
 ] as const
 
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
 interface LeadFormProps {
   onSuccess?: () => void
   className?: string
   compact?: boolean
+}
+
+function validate(
+  name: string,
+  email: string,
+  business: string,
+  message: string,
+  compact: boolean
+): string | null {
+  if (!name.trim()) return 'Nome obbligatorio.'
+  if (!email.trim()) return 'Email obbligatoria.'
+  if (!EMAIL_REGEX.test(email)) return 'Indirizzo email non valido.'
+  if (!compact && !business.trim()) return 'Tipo attività obbligatorio.'
+  if (!compact && !message.trim()) return 'Messaggio obbligatorio.'
+  return null
 }
 
 export function LeadForm({ onSuccess, className = '', compact = false }: LeadFormProps) {
@@ -33,6 +50,7 @@ export function LeadForm({ onSuccess, className = '', compact = false }: LeadFor
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
+  const [fieldError, setFieldError] = useState<string | null>(null)
 
   const getUtm = () => {
     if (typeof window === 'undefined') return {}
@@ -47,6 +65,14 @@ export function LeadForm({ onSuccess, className = '', compact = false }: LeadFor
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (formData.website) return
+    const validationError = validate(formData.name, formData.email, formData.business, formData.message, compact)
+    if (validationError) {
+      setFieldError(validationError)
+      setStatus('error')
+      setErrorMessage(validationError)
+      return
+    }
+    setFieldError(null)
     setIsSubmitting(true)
     setStatus('idle')
     setErrorMessage('')
@@ -78,7 +104,7 @@ export function LeadForm({ onSuccess, className = '', compact = false }: LeadFor
       }
     } catch {
       setStatus('error')
-      setErrorMessage('Errore di connessione.')
+      setErrorMessage('Errore di connessione. Riprova.')
     } finally {
       setIsSubmitting(false)
     }
@@ -184,7 +210,7 @@ export function LeadForm({ onSuccess, className = '', compact = false }: LeadFor
         </p>
       )}
       {status === 'error' && (
-        <p className="text-sm text-red-600" role="alert">
+        <p className="text-sm text-red-600 font-medium py-2 px-3 rounded-lg bg-red-50 border border-red-200" role="alert">
           {errorMessage}
         </p>
       )}

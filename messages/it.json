@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "desc": "Gestione appuntamenti, staff, clienti e incassi in un'unica PWA elegante. Studio €900+€89/mese, Signature €1.400+€120/mese. GDPR Ready, PWA, supporto umano."
+  },
   "nav": {
     "product": "Prodotto",
     "pricing": "Prezzi",

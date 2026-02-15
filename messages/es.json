@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "desc": "Citas, equipo, clientes e ingresos en una PWA elegante. Studio €900+€89/mes, Signature €1.400+€120/mes. GDPR Ready, PWA, soporte humano."
+  },
   "nav": {
     "product": "Producto",
     "pricing": "Precios",

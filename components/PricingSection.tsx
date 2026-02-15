@@ -1,7 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { Link } from '@/i18n/navigation'
 
 const plans = [
@@ -14,6 +14,8 @@ const plans = [
     canoneKey: 'studioCanone',
     includesKey: 'studioIncludes',
     featured: false,
+    setupNum: 900,
+    monthlyNum: 89,
   },
   {
     key: 'signature',
@@ -24,6 +26,8 @@ const plans = [
     canoneKey: 'signatureCanone',
     includesKey: 'signatureIncludes',
     featured: true,
+    setupNum: 1400,
+    monthlyNum: 120,
   },
   {
     key: 'custom',
@@ -35,14 +39,24 @@ const plans = [
     includesKey: 'customIncludes',
     featured: false,
     cta: true,
+    setupNum: 0,
+    monthlyNum: 0,
   },
 ]
+
+const ANNUAL_DISCOUNT = 0.1
 
 export function PricingSection() {
   const t = useTranslations('home.plansHome')
   const tNav = useTranslations('nav')
   const tPricing = useTranslations('pricing')
   const [annual, setAnnual] = useState(false)
+  const [rateizzaMonths, setRateizzaMonths] = useState<6 | 12>(6)
+
+  const rateizzaOptions = useMemo(() => [
+    { value: 6, label: '6 mesi' },
+    { value: 12, label: '12 mesi' },
+  ], [])
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8" id="pricing">
@@ -56,26 +70,47 @@ export function PricingSection() {
         <p className="text-[var(--gray)] text-center mb-6 max-w-2xl mx-auto">
           {t('subtitle')}
         </p>
-        <div className="flex justify-center gap-2 mb-14">
-          <button
-            type="button"
-            onClick={() => setAnnual(false)}
-            className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${!annual ? 'bg-[var(--primary)] text-white' : 'bg-[var(--bg-alt)] text-[var(--gray)]'}`}
-          >
-            €/mese
-          </button>
-          <button
-            type="button"
-            onClick={() => setAnnual(true)}
-            className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${annual ? 'bg-[var(--primary)] text-white' : 'bg-[var(--bg-alt)] text-[var(--gray)]'}`}
-          >
-            Annuo
-          </button>
+        <div className="flex flex-wrap justify-center gap-4 mb-6">
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => setAnnual(false)}
+              className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${!annual ? 'bg-[var(--primary)] text-white' : 'bg-[var(--bg-alt)] text-[var(--gray)]'}`}
+            >
+              €/mese
+            </button>
+            <button
+              type="button"
+              onClick={() => setAnnual(true)}
+              className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${annual ? 'bg-[var(--primary)] text-white' : 'bg-[var(--bg-alt)] text-[var(--gray)]'}`}
+            >
+              Annuo (−10%)
+            </button>
+          </div>
+          <label className="flex items-center gap-2 text-sm text-[var(--text)]">
+            <span>Rateizza in:</span>
+            <select
+              value={rateizzaMonths}
+              onChange={(e) => setRateizzaMonths(Number(e.target.value) as 6 | 12)}
+              className="px-2 py-1 rounded-lg border border-[var(--gray)]/40 bg-[var(--bg)] text-[var(--text)]"
+            >
+              {rateizzaOptions.map((opt) => (
+                <option key={opt.value} value={opt.value}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+          </label>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {plans.map((plan) => {
             const includes = plan.includesKey ? (t.raw(plan.includesKey) as string[]) : []
             const isCustom = plan.cta === true
+            const setupNum = plan.setupNum ?? 0
+            const monthlyNum = plan.monthlyNum ?? 0
+            const rateizzaMonthly = rateizzaMonths > 0 && setupNum > 0 ? Math.round(setupNum / rateizzaMonths) : 0
+            const annualMonthly = annual && monthlyNum > 0 ? Math.round(monthlyNum * (1 - ANNUAL_DISCOUNT)) : monthlyNum
+
             return (
               <div
                 key={plan.key}
@@ -92,17 +127,42 @@ export function PricingSection() {
                 <p className="text-sm text-[var(--gray)] mb-6">
                   {t(plan.forWhoKey)}
                 </p>
-                <p className="text-[var(--secondary)] font-semibold mb-1">
-                  {t(plan.setupKey)}
-                </p>
-                {plan.setupNoteKey && (
-                  <p className="text-xs text-[var(--gray)] mb-4">
-                    {t(plan.setupNoteKey)}
+                {!isCustom && setupNum > 0 && (
+                  <>
+                    <p className="text-[var(--secondary)] font-semibold mb-1">
+                      {t(plan.setupKey)}
+                    </p>
+                    {rateizzaMonths > 0 && (
+                      <p className="text-[var(--primary)] font-bold mb-1">
+                        <span className="text-[var(--secondary)]">€{rateizzaMonthly}/mese</span> per {rateizzaMonths} mesi
+                      </p>
+                    )}
+                    {plan.setupNoteKey && (
+                      <p className="text-xs text-[var(--gray)] mb-4">
+                        {t(plan.setupNoteKey)}
+                      </p>
+                    )}
+                  </>
+                )}
+                {isCustom && (
+                  <>
+                    <p className="text-[var(--secondary)] font-semibold mb-1">
+                      {t(plan.setupKey)}
+                    </p>
+                    <p className="text-xs text-[var(--gray)] mb-4">
+                      {t(plan.canoneKey)}
+                    </p>
+                  </>
+                )}
+                {!isCustom && monthlyNum > 0 && (
+                  <p className="text-lg font-bold text-[var(--primary)] mb-6">
+                    {annual ? (
+                      <>€{annualMonthly} / mese <span className="text-sm font-normal text-[var(--gray)]">(annuo −10%)</span></>
+                    ) : (
+                      <>€{monthlyNum} / mese</>
+                    )}
                   </p>
                 )}
-                <p className="text-lg font-bold text-[var(--primary)] mb-6">
-                  {t(plan.canoneKey)}
-                </p>
                 {!isCustom && (
                   <ul className="space-y-2 mb-8">
                     {includes.map((item) => (

@@ -179,6 +179,35 @@ h4 {
   animation: orbitRingB 6.8s linear infinite reverse;
 }
 
+.hero-logo-core {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+}
+
+.hero-logo-orbit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 25% 25%, #e7f7ff, #86cff9 55%, #4d95c9 100%);
+  box-shadow: 0 0 14px rgba(134, 207, 249, 0.7);
+}
+
+.hero-logo-orbit-a {
+  animation: orbitLogoA 6.2s linear infinite;
+}
+
+.hero-logo-orbit-b {
+  width: 7px;
+  height: 7px;
+  animation: orbitLogoB 4.8s linear infinite reverse;
+}
+
 .animate-logo-float {
   animation: floatPulse 4.2s ease-in-out infinite;
 }
@@ -215,7 +244,8 @@ h4 {
   .reveal-up,
   .hero-bg-logo,
   .hero-ring,
-  .hero-orbit {
+  .hero-orbit,
+  .hero-logo-orbit {
     animation: none;
   }
 
@@ -280,6 +310,24 @@ h4 {
   }
 }
 
+@keyframes orbitLogoA {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(78px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(78px) rotate(-360deg);
+  }
+}
+
+@keyframes orbitLogoB {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(58px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(58px) rotate(-360deg);
+  }
+}
+
 @keyframes floatPulse {
   0%,
   100% {
@@ -331,6 +379,10 @@ h4 {
   }
 
   .hero-orbit-2 {
+    display: none;
+  }
+
+  .hero-logo-orbit {
     display: none;
   }
 }

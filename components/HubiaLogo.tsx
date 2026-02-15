@@ -25,14 +25,18 @@ export function HubiaLogo({ variant = 'hero' }: HubiaLogoProps) {
   }
 
   return (
-    <div className="mb-7 flex justify-center md:justify-start">
-      <img
-        src="/brand/hubia-logo-clean.png"
-        alt="Logo HUBIA"
-        width={210}
-        height={160}
-        className="animate-logo-float h-24 w-auto object-contain drop-shadow-[0_14px_26px_rgba(0,23,48,0.24)] sm:h-28"
-      />
+    <div className="mb-7 flex justify-center md:justify-center">
+      <div className="hero-logo-core">
+        <div className="hero-logo-orbit hero-logo-orbit-a" />
+        <div className="hero-logo-orbit hero-logo-orbit-b" />
+        <img
+          src="/brand/hubia-logo-clean.png"
+          alt="Logo HUBIA"
+          width={210}
+          height={160}
+          className="animate-logo-float h-24 w-auto object-contain drop-shadow-[0_14px_26px_rgba(0,23,48,0.24)] sm:h-28"
+        />
+      </div>
     </div>
   )
 }

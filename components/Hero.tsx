@@ -22,6 +22,15 @@ export async function Hero({ variant = 'A' }: HeroProps) {
 
   return (
     <section className="relative overflow-hidden px-4 py-24 sm:px-6 lg:px-8">
+      <div className="hero-brand-bg" aria-hidden="true">
+        <div className="hero-ring hero-ring-1" />
+        <div className="hero-ring hero-ring-2" />
+        <div className="hero-ring hero-ring-3" />
+        <div className="hero-orbit hero-orbit-1" />
+        <div className="hero-orbit hero-orbit-2" />
+        <img src="/brand/hubia-logo-master.png" alt="" className="hero-bg-logo" />
+      </div>
+
       <div
         className="pointer-events-none absolute -top-36 left-1/2 h-[560px] w-[560px] -translate-x-1/2 rounded-full"
         style={{ background: 'radial-gradient(circle, rgba(123,201,246,0.22) 0%, rgba(123,201,246,0) 66%)' }}
@@ -32,7 +41,7 @@ export async function Hero({ variant = 'A' }: HeroProps) {
           <HubiaLogo variant="hero" />
 
           <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--gray)] sm:text-xs">
-            Ecosistema operativo premium per business locali
+            HUBIA unisce operazioni, team e clienti in un unico sistema vivo
           </p>
 
           <h1

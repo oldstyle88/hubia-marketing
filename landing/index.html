@@ -58,7 +58,9 @@
       max-width: 1200px; margin: 0 auto; padding: 14px 24px;
       display: flex; align-items: center; justify-content: space-between; gap: 16px;
     }
-    .logo-link { display: block; text-decoration: none; background: none !important; }
+    .logo-link { display: block; text-decoration: none; background: none !important; position: relative; }
+    .logo-fallback { font-family: var(--font-title); font-size: 24px; font-weight: 700; letter-spacing: 0.05em; color: var(--indigo); }
+    @media (min-width: 768px) { .logo-fallback { font-size: 28px; } }
     .logo {
       width: 122px; height: 122px; display: block; object-fit: contain;
       background: none !important; background-color: transparent !important;
@@ -99,6 +101,15 @@
     }
     @media (min-width: 1024px) { .nav-list a { display: inline; padding: 0; } }
     .nav-list a:hover { color: var(--gold); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 6px; }
+    .lang-switcher { display: flex; align-items: center; gap: 6px; }
+    .lang-link {
+      font-size: 13px; font-weight: 500; color: var(--gray); text-decoration: none; padding: 4px 8px; border-radius: 4px; transition: var(--ease);
+    }
+    .lang-link:hover { color: var(--gold); }
+    .lang-link.active { color: var(--indigo); font-weight: 600; }
+    @media (max-width: 1023px) {
+      .lang-switcher { margin-bottom: 12px; }
+    }
 
     .btn {
       display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px;
@@ -311,7 +322,10 @@
   <!-- FIXED SECTION: Header (logo img: carica logo.png reale in public/) -->
   <header class="header" role="banner">
     <div class="header-inner">
-      <a href="#" class="logo-link" aria-label="HŪBIA home"><img src="/logo.png?v=2" alt="HŪBIA Logo" class="logo"></a>
+      <a href="#" class="logo-link" aria-label="HŪBIA home">
+        <img src="/logo.png?v=3" alt="HŪBIA Logo" class="logo" onerror="this.style.display='none';document.getElementById('logo-fallback').style.display='block'">
+        <span id="logo-fallback" class="logo-fallback" style="display:none">HŪBIA</span>
+      </a>
       <button type="button" class="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav-menu">
         <span class="hamburger"></span>
       </button>
@@ -321,6 +335,13 @@
           <li><a href="#pricing">Su Misura</a></li>
           <li><a href="#consulenza">Consulenza</a></li>
         </ul>
+        <div class="lang-switcher" aria-label="Lingua">
+          <a href="/it" class="lang-link active" aria-current="page">IT</a>
+          <a href="/en" class="lang-link">EN</a>
+          <a href="/de" class="lang-link">DE</a>
+          <a href="/es" class="lang-link">ES</a>
+          <a href="/fr" class="lang-link">FR</a>
+        </div>
         <a href="#footer-cta" class="btn btn-gold btn-cta-header">Richiedi</a>
       </nav>
     </div>

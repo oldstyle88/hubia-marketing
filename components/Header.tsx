@@ -7,10 +7,10 @@ export async function Header() {
   const locale = (await getLocale()).toUpperCase()
 
   const navLinkClass =
-    'inline-flex min-h-11 items-center rounded-lg px-3 text-[13px] font-semibold uppercase tracking-[0.14em] text-[var(--text)] transition-colors hover:text-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/50'
+    'inline-flex min-h-11 items-center rounded-lg px-3 text-[13px] font-semibold uppercase tracking-[0.14em] text-[var(--text)] transition-colors hover:text-[var(--primary)] hover:bg-white/55 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/50'
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[rgba(248,245,239,0.92)] backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[rgba(232,242,251,0.84)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         <HubiaLogo variant="header" />
 
@@ -32,7 +32,7 @@ export async function Header() {
           </span>
           <Link
             href="/contact"
-            className="inline-flex min-h-11 items-center rounded-xl bg-[var(--secondary)] px-4 text-sm font-semibold text-[var(--primary)] shadow-md transition hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/60"
+            className="inline-flex min-h-11 items-center rounded-xl bg-[var(--primary)] px-4 text-sm font-semibold text-white shadow-md transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/60"
           >
             {t('requestDemo')}
           </Link>

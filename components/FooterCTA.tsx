@@ -10,7 +10,7 @@ export async function FooterCTA() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(circle at 20% 20%, rgba(184,133,67,0.22) 0%, transparent 45%), radial-gradient(circle at 80% 80%, rgba(16,24,40,0.16) 0%, transparent 42%), linear-gradient(135deg, #151d2d 0%, #1d2433 100%)',
+            'radial-gradient(circle at 20% 20%, rgba(116,196,244,0.26) 0%, transparent 45%), radial-gradient(circle at 80% 80%, rgba(3,41,81,0.35) 0%, transparent 42%), linear-gradient(135deg, #04182f 0%, #0b315e 100%)',
         }}
       />
 
@@ -21,9 +21,9 @@ export async function FooterCTA() {
         <p className="mx-auto mb-8 max-w-2xl text-white/90">{t('subtitle')}</p>
 
         <div className="mx-auto mb-8 grid max-w-2xl gap-3 text-left text-sm text-white/90 sm:grid-cols-3">
-          <p className="rounded-xl border border-white/20 bg-white/10 px-4 py-3">Analisi operativa del tuo locale</p>
-          <p className="rounded-xl border border-white/20 bg-white/10 px-4 py-3">Piano implementazione in 30 giorni</p>
-          <p className="rounded-xl border border-white/20 bg-white/10 px-4 py-3">Roadmap di crescita e controllo KPI</p>
+          <p className="reveal-up rounded-xl border border-white/20 bg-white/10 px-4 py-3">Analisi operativa del tuo locale</p>
+          <p className="reveal-up delay-1 rounded-xl border border-white/20 bg-white/10 px-4 py-3">Piano implementazione in 30 giorni</p>
+          <p className="reveal-up delay-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3">Roadmap di crescita e controllo KPI</p>
         </div>
 
         <Link

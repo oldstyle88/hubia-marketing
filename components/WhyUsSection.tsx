@@ -44,7 +44,7 @@ export async function WhyUsSection() {
         <p className="mb-14 text-center font-medium text-[var(--secondary)]">{t('subtitle')}</p>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {pillars.map(({ icon, pointKey, closingKey }) => (
-            <div key={icon} className="card rounded-[20px] bg-white/80 p-8 transition duration-300 hover:-translate-y-1">
+            <div key={icon} className="card reveal-up rounded-[20px] bg-white/72 p-8 transition duration-300 hover:-translate-y-1">
               <div className="mb-4 text-[var(--secondary)] [&_svg]:stroke-[var(--secondary)]">{iconSvg[icon as keyof typeof iconSvg]}</div>
               <p className="leading-relaxed text-[var(--text)]">{pointKey ? t(pointKey) : closingKey ? t(closingKey) : null}</p>
             </div>

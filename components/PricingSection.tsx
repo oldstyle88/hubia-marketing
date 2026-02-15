@@ -57,10 +57,10 @@ export async function PricingSection() {
             return (
               <div
                 key={plan.key}
-                className={`card-deep relative rounded-[20px] bg-white/85 p-8 transition-all duration-300 hover:-translate-y-1 ${plan.featured ? 'ring-2 ring-[var(--secondary)]/60' : ''}`}
+                className={`card-deep reveal-up relative rounded-[20px] bg-white/78 p-8 transition-all duration-300 hover:-translate-y-1 ${plan.featured ? 'ring-2 ring-[var(--secondary)]/60' : ''}`}
               >
                 {plan.featured && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--secondary)] px-4 py-1 text-xs font-semibold text-[var(--primary)]">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--primary)] px-4 py-1 text-xs font-semibold text-white">
                     {tPricing('mostChosen')}
                   </div>
                 )}
@@ -89,8 +89,8 @@ export async function PricingSection() {
                   href="/contact"
                   className={`block w-full rounded-xl py-3 text-center font-medium transition-colors ${
                     isCustom
-                      ? 'bg-[var(--secondary)] text-[var(--primary)] hover:opacity-95'
-                      : 'border-2 border-[var(--secondary)] text-[var(--secondary)] hover:bg-[var(--secondary)]/10'
+                      ? 'bg-[var(--primary)] text-white hover:brightness-110'
+                      : 'border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)]/8'
                   }`}
                 >
                   {isCustom ? 'Su Misura' : tNav('requestDemo')}

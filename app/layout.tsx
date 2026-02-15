@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Sora, Manrope } from 'next/font/google'
 import './globals.css'
 
-const displayFont = Playfair_Display({
+const displayFont = Sora({
   subsets: ['latin'],
-  weight: ['600', '700'],
+  weight: ['500', '600', '700', '800'],
   variable: '--font-display',
   display: 'swap',
 })
 
-const bodyFont = Inter({
+const bodyFont = Manrope({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-body',

@@ -18,10 +18,10 @@ export async function SetupSection() {
         <p className="mb-14 text-center text-[var(--gray)]">{t('subtitle')}</p>
         <div className="flex flex-col gap-8 md:flex-row md:items-stretch md:gap-4">
           {steps.map(({ titleKey, descKey }, i) => (
-            <div key={titleKey} className="flex flex-col items-center md:flex-1 md:items-start">
+            <div key={titleKey} className="reveal-up flex flex-col items-center md:flex-1 md:items-start">
               <div className="flex items-center gap-4 md:flex-col md:gap-2">
                 <div
-                  className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-[var(--secondary)] bg-[var(--secondary)]/30 text-lg font-bold text-[var(--primary)]"
+                  className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-[var(--secondary)] bg-[var(--secondary)]/42 text-lg font-bold text-[var(--primary)]"
                   style={{ fontFamily: 'var(--font-title)' }}
                 >
                   {i + 1}

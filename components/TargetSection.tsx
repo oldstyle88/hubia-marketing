@@ -37,7 +37,7 @@ export async function TargetSection() {
         <p className="mx-auto mb-14 max-w-2xl text-center text-[var(--gray)]">{t('subtitle')}</p>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {cards.map(({ key, icon }) => (
-            <div key={key} className="card card-deep rounded-[20px] bg-white/80 p-8 transition duration-300 hover:-translate-y-1">
+            <div key={key} className="card card-deep reveal-up rounded-[20px] bg-white/72 p-8 transition duration-300 hover:-translate-y-1">
               <div className="mb-4 text-[var(--secondary)] [&_svg]:stroke-[var(--secondary)]">{icons[icon]}</div>
               <h3 className="mb-2 text-xl font-semibold text-[var(--primary)]" style={{ fontFamily: 'var(--font-title)' }}>
                 {t(`${key}Title`)}

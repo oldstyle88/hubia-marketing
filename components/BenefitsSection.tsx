@@ -27,7 +27,7 @@ export async function BenefitsSection() {
         <p className="mb-14 text-center font-medium text-[var(--secondary)]">{t('subtitle')}</p>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {benefits.map(({ titleKey, descKey }) => (
-            <div key={titleKey} className="card rounded-[20px] bg-white/80 p-8 transition duration-300 hover:-translate-y-1">
+            <div key={titleKey} className="card reveal-up rounded-[20px] bg-white/72 p-8 transition duration-300 hover:-translate-y-1">
               <div className="mb-3 flex gap-3">
                 <CheckIcon />
                 <h3 className="text-lg font-semibold text-[var(--secondary)]" style={{ fontFamily: 'var(--font-title)' }}>

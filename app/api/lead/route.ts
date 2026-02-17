@@ -15,6 +15,26 @@ function escapeHtml(s: string): string {
     .replace(/"/g, '&quot;')
 }
 
+/** Resend accetta solo `email@domain.com` o `Name <email@domain.com>`. Normalizza il valore da env. */
+function normalizeResendFrom(raw: string | undefined): string {
+  const defaultFrom = 'HUBIA Sito <onboarding@resend.dev>'
+  const s = (raw || '').trim().replace(/^["']|["']$/g, '')
+  if (!s) return defaultFrom
+  const match = s.match(/^(.+?)\s*<([^>]+)>$/)
+  if (match) {
+    const name = match[1].trim()
+    const email = match[2].trim()
+    if (EMAIL_REGEX.test(email)) return `${name} <${email}>`
+  }
+  if (EMAIL_REGEX.test(s)) return s
+  if (s.includes('@')) {
+    const email = s.split(/\s+/).find((p) => EMAIL_REGEX.test(p)) || s
+    const name = s.replace(email, '').trim() || 'HUBIA Sito'
+    return `${name} <${email.trim()}>`
+  }
+  return defaultFrom
+}
+
 
 const RATE_LIMIT_WINDOW_MS = 60 * 1000 // 1 minute
 const RATE_LIMIT_MAX_REQUESTS = 5
@@ -175,7 +195,7 @@ export async function POST(request: NextRequest) {
     const resendKey = process.env.RESEND_API_KEY
     const toEmail = process.env.LEAD_NOTIFICATION_EMAIL
     if (resendKey && toEmail) {
-      const fromEmail = process.env.RESEND_FROM_EMAIL || 'HUBIA Sito <onboarding@resend.dev>'
+      const fromEmail = normalizeResendFrom(process.env.RESEND_FROM_EMAIL)
       const resend = new Resend(resendKey)
       const businessLabel: Record<string, string> = {
         barber: 'Barbiere / Parrucchiere',

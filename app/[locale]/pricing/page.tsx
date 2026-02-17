@@ -102,8 +102,11 @@ export default async function PricingPage() {
             <p className="mb-2 text-[var(--text)]">
               {t('footer')}
             </p>
-            <p className="mb-10 text-sm text-[var(--gray)]">
+            <p className="mb-2 text-sm text-[var(--gray)]">
               {t('setupIncludes')}
+            </p>
+            <p className="mb-10 text-sm font-medium text-[var(--primary)]">
+              {t('multiSiteNote')}
             </p>
           </div>
 

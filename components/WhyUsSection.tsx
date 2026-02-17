@@ -1,10 +1,9 @@
 import { getTranslations } from 'next-intl/server'
 
 const pillars = [
-  { icon: 'no-market', pointKey: 'point1' },
-  { icon: 'custom', pointKey: 'point2' },
-  { icon: 'experience', pointKey: 'point3' },
-  { icon: 'selettivo', closingKey: 'closing' },
+  { icon: 'no-market' },
+  { icon: 'custom' },
+  { icon: 'experience' },
 ]
 
 const iconSvg = {
@@ -41,12 +40,12 @@ export async function WhyUsSection() {
         <h2 className="mb-4 text-center text-3xl font-bold text-[var(--primary)] sm:text-4xl" style={{ fontFamily: 'var(--font-title)' }}>
           {t('title')}
         </h2>
-        <p className="mb-14 text-center font-medium text-[var(--secondary)]">{t('subtitle')}</p>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {pillars.map(({ icon, pointKey, closingKey }) => (
-            <div key={icon} className="card reveal-up rounded-[20px] bg-white/72 p-8 transition duration-300 hover:-translate-y-1">
-              <div className="mb-4 text-[var(--secondary)] [&_svg]:stroke-[var(--secondary)]">{iconSvg[icon as keyof typeof iconSvg]}</div>
-              <p className="leading-relaxed text-[var(--text)]">{pointKey ? t(pointKey) : closingKey ? t(closingKey) : null}</p>
+        <p className="mb-14 text-center text-xl font-semibold text-[var(--secondary)]">{t('subtitle')}</p>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+          {((t.raw('positioning') as string[]) || []).map((point, i) => (
+            <div key={i} className="card reveal-up rounded-[20px] bg-white/72 p-8 transition duration-300 hover:-translate-y-1">
+              <div className="mb-4 text-[var(--secondary)] [&_svg]:stroke-[var(--secondary)]">{iconSvg[pillars[i]?.icon as keyof typeof iconSvg]}</div>
+              <p className="leading-relaxed text-[var(--text)]">{point}</p>
             </div>
           ))}
         </div>

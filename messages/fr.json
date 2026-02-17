@@ -154,16 +154,12 @@
       "text": "Projets sur mesure pour structures multi-sites ou flux operationnels avances. Devis apres consultation."
     },
     "notAnyApp": {
-      "title": "Pourquoi ce n'est pas une app quelconque",
-      "subtitle": "Aucun compromis sur l'expérience.",
-      "point1": "Pas de marketplace : les clients et les données sont à vous.",
-      "point2": "Pas d'app générique : conçue pour ceux qui gèrent rendez-vous et personnes, pas pour ceux qui vendent \"un peu de tout\".",
-      "point3": "Aucun compromis sur l'expérience : une PWA élégante, rapide, avec votre marque.",
-      "closing": "HUBIA n'est pas pour tout le monde. C'est pour ceux qui prennent leur établissement au sérieux.",
+      "title": "Ce n'est pas une app quelconque",
+      "subtitle": "Nous ne vous vendons pas de clients. Nous vous donnons l'outil pour ne jamais les perdre.",
       "positioning": [
-        "HUBIA n'est pas pensée pour tout le monde.",
-        "Elle est pensée pour ceux qui veulent un système stable et sur mesure, pas une simple app à installer et oublier.",
-        "Si vous cherchez uniquement l'option la moins chère, il existe probablement de meilleures solutions. HUBIA est pour ceux qui prennent leur établissement au sérieux."
+        "HUBIA n'est pas un marketplace. Les clients et les données sont à vous.",
+        "Ce n'est pas une app générique. Conçue pour ceux qui gèrent rendez-vous et personnes, pas pour ceux qui vendent \"un peu de tout\".",
+        "Ce n'est pas pour tout le monde. C'est pour ceux qui prennent leur établissement au sérieux."
       ]
     },
     "ctaFinal": {
@@ -221,7 +217,7 @@
   },
   "pricing": {
     "title": "Tarifs",
-    "subtitle": "HŪBIA est le système de gestion pensé pour les établissements locaux qui veulent organiser réservations, clients et équipe de façon professionnelle. Une expérience moderne pour clients et équipe, accessible par web et app, pensée pour grandir avec votre activité. Deux plans clairs : Studio et Signature.",
+    "subtitle": "Nous ne vous vendons pas de clients. Nous vous donnons l'outil pour ne jamais les perdre. HŪBIA est le système de gestion pensé pour les établissements locaux qui veulent organiser réservations, clients et équipe de façon professionnelle. Une expérience moderne pour clients et équipe, accessible par web et app, pensée pour grandir avec votre activité. Deux plans clairs : Studio et Signature.",
     "pwaBlock": {
       "title": "PWA uniquement, pas d'apps store",
       "body": "L'app s'installe sur smartphone (iOS et Android) avec votre logo et couleurs. Sans store : clients et équipe l'ajoutent depuis la page web. Un seul logiciel, mises à jour incluses."
@@ -281,32 +277,33 @@
           "max": "Devis"
         }
       ]
-    }
+    },
+    "multiSiteNote": "Multi-sites (2-5 établissements) : 89 € ou 120 €/mois par site. Setup 900 € premier site, 400 € sites suivants. Plus de 5 sites : devis personnalisé."
   },
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "L'essentiel pour gérer réservations, calendrier, équipe et clients. Les fonctions avancées sont disponibles sur le plan Signature.",
+      "description": "Pour les équipes de 1 à 3 personnes. Tout l'essentiel : réservations, calendrier partagé, clients, notifications automatiques.",
       "features": [
-        "Réservations en ligne",
-        "Calendrier des rendez-vous",
-        "Gestion équipe et prestations",
-        "Notifications automatiques aux clients",
-        "Gestion clients",
-        "Historique des rendez-vous",
-        "Branding de base de la PWA",
-        "Support standard"
+        "Réservations en ligne 24/7 pour les clients",
+        "Calendrier partagé de l'équipe",
+        "Gestion du personnel et des services",
+        "Notifications automatiques (confirmation, rappels)",
+        "Base de données clients + historique",
+        "Rapports de base (réservations, chiffre d'affaires)",
+        "PWA installable avec votre logo",
+        "Support par email (réponse sous 24h)"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Tout Studio plus les analytics pour suivre l'activité, les récurrences automatiques pour les rendez-vous répétés, le branding avancé et le support prioritaire.",
+      "description": "Pour les équipes de 4 à 10+ personnes ou pour ceux qui veulent un contrôle complet des métriques business.",
       "features": [
-        "Tout ce qui est inclus dans Studio",
-        "Analytics opérationnelles (évolution des réservations, utilisation des prestations)",
-        "Récurrences automatiques avancées",
-        "Branding PWA avancé",
-        "Support prioritaire"
+        "Tout le plan Studio",
+        "Tableau de bord analytics : tendances des réservations, services top, performance du personnel, taux d'occupation",
+        "Rendez-vous récurrents automatiques (ex : client régulier toutes les 2 semaines)",
+        "Branding avancé (couleurs personnalisées, mise en page personnalisée)",
+        "Support prioritaire (réponse sous 4h)"
       ]
     }
   },

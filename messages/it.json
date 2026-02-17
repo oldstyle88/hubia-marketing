@@ -108,16 +108,12 @@
       "text": "Progetti su misura per realta multi-sede o con logiche operative avanzate. Preventivo su richiesta dopo consulenza."
     },
     "notAnyApp": {
-      "title": "Perché non è un'app qualsiasi",
-      "subtitle": "Nessun compromesso sull'esperienza.",
-      "point1": "Nessun marketplace: i clienti sono tuoi, i dati sono tuoi.",
-      "point2": "Nessuna app standard: costruita per chi gestisce appuntamenti e persone, non per chi vende \"un po' di tutto\".",
-      "point3": "Nessun compromesso sull'esperienza: un'unica PWA elegante, veloce, con il tuo brand.",
-      "closing": "HUBIA non è per tutti. È per chi prende sul serio il proprio locale.",
+      "title": "Non è un'app qualsiasi",
+      "subtitle": "Non ti vendiamo clienti. Ti diamo lo strumento per non perderli mai.",
       "positioning": [
-        "HUBIA non è pensata per tutti.",
-        "È pensata per chi vuole un sistema stabile e su misura, non una semplice app da installare e dimenticare.",
-        "Se stai cercando solo l'opzione più economica, probabilmente esistono soluzioni più adatte. HUBIA è per chi prende sul serio il proprio locale."
+        "HUBIA non è un marketplace. I clienti sono tuoi, i dati sono tuoi.",
+        "Non è un'app standard. È costruita per chi gestisce appuntamenti e persone, non per chi vende \"un po' di tutto\".",
+        "Non è per tutti. È per chi prende sul serio il proprio locale."
       ]
     },
     "ctaFinal": {
@@ -128,7 +124,7 @@
   },
   "pricing": {
     "title": "Prezzi",
-    "subtitle": "HŪBIA è il sistema di gestione pensato per attività locali che vogliono organizzare prenotazioni, clienti e staff in modo professionale. Un’esperienza moderna per clienti e team, accessibile da web e da app, pensata per crescere con il tuo business. Due piani chiari: Studio e Signature.",
+    "subtitle": "Non ti vendiamo clienti. Ti diamo lo strumento per non perderli mai. HŪBIA è il sistema di gestione pensato per attività locali che vogliono organizzare prenotazioni, clienti e staff in modo professionale. Un'esperienza moderna per clienti e team, accessibile da web e da app, pensata per crescere con il tuo business. Due piani chiari: Studio e Signature.",
     "pwaBlock": {
       "title": "Solo PWA, zero app da store",
       "body": "L’app si installa su smartphone (iOS e Android) con il logo e i colori della tua attività. Nessun passaggio dagli store: i clienti e lo staff la aggiungono dalla pagina web. Un solo software, aggiornamenti inclusi."
@@ -138,6 +134,7 @@
     "setupSectionBody": "Il setup è una tantum e include: configurazione iniziale del sistema, personalizzazione grafica (logo e colori della tua attività), impostazione di servizi e staff, test e messa online. Puoi rateizzarlo in 6 o 12 mesi senza costi aggiuntivi. Non ci sono costi nascosti.",
     "setupIncludes": "Configurazione iniziale, personalizzazione grafica, impostazione servizi e staff, test e messa online. Una tantum, rateizzabile in 6 o 12 mesi.",
     "setupMaxNote": "Supporto dedicato in fase di avvio e configurazione guidata al go-live.",
+    "multiSiteNote": "Multi-sede (2-5 sedi): €89 o €120/mese per sede. Setup €900 prima sede, €400 sedi successive. Oltre 5 sedi: preventivo personalizzato.",
     "contactCta": "Parla con noi →",
     "perMonth": "/mese",
     "setupOneTime": "setup (una tantum)",
@@ -193,27 +190,27 @@
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Tutto l’essenziale per gestire prenotazioni, calendario, staff e clienti. Alcune funzionalità avanzate sono disponibili nel piano Signature.",
+      "description": "Per team 1-3 persone. Tutto l'essenziale: prenotazioni, calendario condiviso, clienti, notifiche automatiche.",
       "features": [
-        "Prenotazioni online",
-        "Calendario appuntamenti",
+        "Prenotazioni online clienti 24/7",
+        "Calendario condiviso team",
         "Gestione staff e servizi",
-        "Notifiche automatiche ai clienti",
-        "Gestione clienti",
-        "Storico appuntamenti",
-        "Branding base della PWA",
-        "Supporto standard"
+        "Notifiche automatiche (conferma, promemoria)",
+        "Anagrafica clienti + storico",
+        "Report base (prenotazioni, revenue)",
+        "PWA installabile con tuo logo",
+        "Supporto email (risposta 24h lavorative)"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Tutto Studio più analytics per capire come va il business, ricorrenze automatiche per gli appuntamenti ripetuti, branding avanzato per un’app più personalizzata e supporto prioritario.",
+      "description": "Per team 4-10+ persone o per chi vuole il controllo completo delle metriche business.",
       "features": [
-        "Tutto ciò che include Studio",
-        "Analytics operative (andamento prenotazioni, utilizzo servizi)",
-        "Ricorrenze automatiche avanzate",
-        "Branding PWA avanzato",
-        "Supporto prioritario"
+        "Tutto il piano Studio",
+        "Dashboard analytics: trend prenotazioni, servizi top, performance staff, tasso occupazione",
+        "Appuntamenti ricorrenti automatici (es: cliente fisso ogni 2 settimane)",
+        "Branding avanzato (colori custom, layout personalizzato)",
+        "Supporto prioritario (risposta 4h lavorative)"
       ]
     }
   },

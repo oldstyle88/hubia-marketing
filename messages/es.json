@@ -150,16 +150,12 @@
       "text": "Proyectos a medida para negocios multi-sede o con flujos operativos avanzados. Presupuesto tras consultoría."
     },
     "notAnyApp": {
-      "title": "Por qué no es una app cualquiera",
-      "subtitle": "Sin compromisos con la experiencia.",
-      "point1": "Sin marketplace: los clientes y los datos son tuyos.",
-      "point2": "Sin app genérica: hecha para quien gestiona citas y personas, no para quien vende \"un poco de todo\".",
-      "point3": "Sin compromisos con la experiencia: una PWA elegante, rápida, con tu marca.",
-      "closing": "HUBIA no es para todos. Es para quien se toma su local en serio.",
+      "title": "No es una app cualquiera",
+      "subtitle": "No te vendemos clientes. Te damos la herramienta para no perderlos nunca.",
       "positioning": [
-        "HUBIA no está pensada para todos.",
-        "Está pensada para quien quiere un sistema estable y a medida, no una simple app para instalar y olvidar.",
-        "Si solo buscas la opción más barata, probablemente hay soluciones más adecuadas. HUBIA es para quien se toma su local en serio."
+        "HUBIA no es un marketplace. Los clientes y los datos son tuyos.",
+        "No es una app genérica. Está hecha para quien gestiona citas y personas, no para quien vende \"un poco de todo\".",
+        "No es para todos. Es para quien se toma su local en serio."
       ]
     },
     "ctaFinal": {
@@ -217,7 +213,7 @@
   },
   "pricing": {
     "title": "Precios",
-    "subtitle": "HŪBIA es el sistema de gestión pensado para negocios locales que quieren organizar reservas, clientes y equipo de forma profesional. Una experiencia moderna para clientes y equipo, accesible por web y app, pensada para crecer con tu negocio. Dos planes claros: Studio y Signature.",
+    "subtitle": "No te vendemos clientes. Te damos la herramienta para no perderlos nunca. HŪBIA es el sistema de gestión pensado para negocios locales que quieren organizar reservas, clientes y equipo de forma profesional. Una experiencia moderna para clientes y equipo, accesible por web y app, pensada para crecer con tu negocio. Dos planes claros: Studio y Signature.",
     "pwaBlock": {
       "title": "Solo PWA, sin apps de tienda",
       "body": "La app se instala en el móvil (iOS y Android) con tu logo y colores. Sin tiendas: clientes y equipo la añaden desde la web. Un solo software, actualizaciones incluidas."
@@ -277,32 +273,33 @@
           "max": "Presupuesto"
         }
       ]
-    }
+    },
+    "multiSiteNote": "Multi-sede (2-5 ubicaciones): €89 o €120/mes por sede. Setup €900 primera sede, €400 sedes adicionales. Más de 5 sedes: presupuesto personalizado."
   },
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Todo lo esencial para reservas, calendario, equipo y clientes. Las funciones avanzadas están en el plan Signature.",
+      "description": "Para equipos de 1-3 personas. Todo lo esencial: reservas, calendario compartido, clientes, notificaciones automáticas.",
       "features": [
-        "Reservas online",
-        "Calendario de citas",
-        "Gestión de equipo y servicios",
-        "Notificaciones automáticas a clientes",
-        "Gestión de clientes",
-        "Historial de citas",
-        "Branding base de la PWA",
-        "Soporte estándar"
+        "Reservas online 24/7 para clientes",
+        "Calendario compartido del equipo",
+        "Gestión de personal y servicios",
+        "Notificaciones automáticas (confirmación, recordatorios)",
+        "Base de datos de clientes + historial",
+        "Informes básicos (reservas, ingresos)",
+        "PWA instalable con tu logo",
+        "Soporte por email (respuesta en 24h)"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Todo Studio más analytics para ver cómo va el negocio, recurrencias automáticas para citas repetidas, branding avanzado y soporte prioritario.",
+      "description": "Para equipos de 4-10+ personas o para quienes quieren control completo de las métricas del negocio.",
       "features": [
-        "Todo lo incluido en Studio",
-        "Analytics operativos (evolución reservas, uso de servicios)",
-        "Recurrencias automáticas avanzadas",
-        "Branding PWA avanzado",
-        "Soporte prioritario"
+        "Todo lo de Studio",
+        "Panel de analytics: tendencias de reservas, servicios top, rendimiento del personal, tasa de ocupación",
+        "Citas recurrentes automáticas (ej: cliente fijo cada 2 semanas)",
+        "Branding avanzado (colores personalizados, diseño personalizado)",
+        "Soporte prioritario (respuesta en 4h)"
       ]
     }
   },

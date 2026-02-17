@@ -108,16 +108,12 @@
       "text": "Individuelle Projekte fur Multi-Standorte oder komplexe Betriebslogik. Angebot nach Beratung."
     },
     "notAnyApp": {
-      "title": "Warum es keine x-beliebige App ist",
-      "subtitle": "Kein Kompromiss beim Erlebnis.",
-      "point1": "Kein Marketplace: Kunden und Daten gehören dir.",
-      "point2": "Keine Standard-App: gebaut für alle, die Termine und Menschen verwalten, nicht für alle, die \"ein bisschen von allem\" verkaufen.",
-      "point3": "Kein Kompromiss beim Erlebnis: eine elegante, schnelle PWA mit deinem Brand.",
-      "closing": "HUBIA ist nicht für alle. Es ist für alle, die ihren Betrieb ernst nehmen.",
+      "title": "Es ist keine x-beliebige App",
+      "subtitle": "Wir verkaufen Ihnen keine Kunden. Wir geben Ihnen das Tool, um sie nie zu verlieren.",
       "positioning": [
-        "HUBIA ist nicht für alle gedacht.",
-        "Es ist gedacht für alle, die ein stabiles, maßgeschneidertes System wollen, nicht nur eine App zum Installieren und Vergessen.",
-        "Wenn du nur die günstigste Option suchst, gibt es wahrscheinlich bessere Lösungen. HUBIA ist für alle, die ihren Betrieb ernst nehmen."
+        "HUBIA ist kein Marketplace. Kunden und Daten gehören dir.",
+        "Es ist keine Standard-App. Gebaut für alle, die Termine und Menschen verwalten, nicht für alle, die \"ein bisschen von allem\" verkaufen.",
+        "Es ist nicht für alle. Es ist für alle, die ihren Betrieb ernst nehmen."
       ]
     },
     "ctaFinal": {
@@ -128,7 +124,7 @@
   },
   "pricing": {
     "title": "Preise",
-    "subtitle": "HŪBIA ist das Verwaltungssystem für lokale Betriebe, die Buchungen, Kunden und Team professionell organisieren wollen. Eine moderne Erfahrung für Kunden und Team, per Web und App, gedacht zum Mitwachsen. Zwei klare Pläne: Studio und Signature.",
+    "subtitle": "Wir verkaufen Ihnen keine Kunden. Wir geben Ihnen das Tool, um sie nie zu verlieren. HŪBIA ist das Verwaltungssystem für lokale Betriebe, die Buchungen, Kunden und Team professionell organisieren wollen. Eine moderne Erfahrung für Kunden und Team, per Web und App, gedacht zum Mitwachsen. Zwei klare Pläne: Studio und Signature.",
     "pwaBlock": {
       "title": "Nur PWA, keine Store-Apps",
       "body": "Die App wird auf dem Smartphone (iOS und Android) mit deinem Logo und deinen Farben installiert. Ohne Store: Kunden und Team fügen sie von der Webseite hinzu. Eine Software, Updates inklusive."
@@ -188,32 +184,33 @@
           "max": "Angebot"
         }
       ]
-    }
+    },
+    "multiSiteNote": "Multi-Standort (2-5 Locations): €89 oder €120/Monat pro Standort. Setup €900 erste Location, €400 weitere. Über 5 Standorte: individuelles Angebot."
   },
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Alles Wesentliche für Buchungen, Kalender, Team und Kunden. Erweiterte Funktionen sind im Plan Signature verfügbar.",
+      "description": "Für Teams mit 1-3 Personen. Alle Grundlagen: Buchungen, gemeinsamer Kalender, Kunden, automatische Benachrichtigungen.",
       "features": [
-        "Online-Buchungen",
-        "Terminkalender",
-        "Team- und Leistungsverwaltung",
-        "Automatische Kundenbenachrichtigungen",
-        "Kundenverwaltung",
-        "Terminhistorie",
-        "Basis-Branding der PWA",
-        "Standard-Support"
+        "Online-Buchungen 24/7 für Kunden",
+        "Gemeinsamer Team-Kalender",
+        "Mitarbeiter- und Dienstverwaltung",
+        "Automatische Benachrichtigungen (Bestätigung, Erinnerungen)",
+        "Kundendatenbank + Historie",
+        "Basis-Reports (Buchungen, Umsatz)",
+        "Installierbare PWA mit Ihrem Logo",
+        "E-Mail-Support (24h Reaktionszeit)"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Alles aus Studio plus Analytics für den Überblick, automatische Wiederholungen für wiederkehrende Termine, erweitertes PWA-Branding und Prioritäts-Support.",
+      "description": "Für Teams mit 4-10+ Personen oder für alle, die vollständige Kontrolle über Geschäftskennzahlen wollen.",
       "features": [
         "Alles aus Studio",
-        "Operative Analytics (Buchungsverlauf, Nutzung der Leistungen)",
-        "Erweiterte automatische Wiederholungen",
-        "Erweitertes PWA-Branding",
-        "Prioritäts-Support"
+        "Analytics-Dashboard: Buchungstrends, Top-Services, Mitarbeiter-Performance, Auslastung",
+        "Automatische Wiederholungstermine (z.B. Stammkunde alle 2 Wochen)",
+        "Erweitertes Branding (individuelle Farben, personalisiertes Layout)",
+        "Prioritäts-Support (4h Reaktionszeit)"
       ]
     }
   },

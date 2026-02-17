@@ -108,16 +108,12 @@
       "text": "Custom projects for multi-site businesses or advanced operational workflows. Quote after consultation."
     },
     "notAnyApp": {
-      "title": "Why it's not just any app",
-      "subtitle": "No compromise on experience.",
-      "point1": "No marketplace: clients are yours, data is yours.",
-      "point2": "No generic app: built for those who manage appointments and people, not for those who sell \"a bit of everything\".",
-      "point3": "No compromise on experience: one elegant, fast PWA with your brand.",
-      "closing": "HUBIA is not for everyone. It's for those who take their venue seriously.",
+      "title": "It's not just any app",
+      "subtitle": "We don't sell you customers. We give you the tool to never lose them.",
       "positioning": [
-        "HUBIA is not for everyone.",
-        "It's for those who want a stable, tailored system, not just an app to install and forget.",
-        "If you're only looking for the cheapest option, there are probably better fits. HUBIA is for those who take their venue seriously."
+        "HUBIA is not a marketplace. Clients are yours, data is yours.",
+        "It's not a generic app. It's built for those who manage appointments and people, not for those who sell \"a bit of everything\".",
+        "It's not for everyone. It's for those who take their venue seriously."
       ]
     },
     "ctaFinal": {
@@ -128,7 +124,7 @@
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "HŪBIA is the management system for local businesses that want to organise bookings, clients and staff professionally. A modern experience for clients and team, accessible from web and app, designed to grow with your business. Two clear plans: Studio and Signature.",
+    "subtitle": "We don't sell you customers. We give you the tool to never lose them. HŪBIA is the management system for local businesses that want to organise bookings, clients and staff professionally. A modern experience for clients and team, accessible from web and app, designed to grow with your business. Two clear plans: Studio and Signature.",
     "pwaBlock": {
       "title": "PWA only, no store apps",
       "body": "The app installs on smartphone (iOS and Android) with your logo and colours. No store required: clients and staff add it from the web page. One piece of software, updates included."
@@ -188,32 +184,33 @@
           "max": "Quote"
         }
       ]
-    }
+    },
+    "multiSiteNote": "Multi-site (2-5 locations): €89 or €120/month per site. Setup €900 first site, €400 for additional sites. Over 5 sites: custom quote."
   },
   "plans": {
     "pro": {
       "name": "Studio",
-      "description": "Everything you need to manage bookings, calendar, staff and clients. Some advanced features are available on the Signature plan.",
+      "description": "For 1-3 person teams. All the essentials: bookings, shared calendar, clients, automatic notifications.",
       "features": [
-        "Online bookings",
-        "Appointment calendar",
+        "24/7 online bookings for clients",
+        "Shared team calendar",
         "Staff and services management",
-        "Automatic client notifications",
-        "Client management",
-        "Appointment history",
-        "Base PWA branding",
-        "Standard support"
+        "Automatic notifications (confirmation, reminders)",
+        "Client database + history",
+        "Basic reports (bookings, revenue)",
+        "Installable PWA with your logo",
+        "Email support (24h response time)"
       ]
     },
     "max": {
       "name": "Signature",
-      "description": "Everything in Studio plus analytics to see how the business is doing, automatic recurrences for repeat appointments, advanced branding for a more custom app, and priority support.",
+      "description": "For 4-10+ person teams or those who want complete control of business metrics.",
       "features": [
         "Everything in Studio",
-        "Operational analytics (bookings trend, service usage)",
-        "Advanced automatic recurrences",
-        "Advanced PWA branding",
-        "Priority support"
+        "Analytics dashboard: booking trends, top services, staff performance, occupancy rate",
+        "Automatic recurring appointments (e.g., regular client every 2 weeks)",
+        "Advanced branding (custom colors, personalized layout)",
+        "Priority support (4h response time)"
       ]
     }
   },

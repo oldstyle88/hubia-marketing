@@ -1,15 +1,11 @@
 #!/usr/bin/env node
 /**
- * Genera PNG dal simbolo H (hubia-mark.svg) e aggiorna favicon/icone PWA.
- * Sorgente: public/brand/hubia-mark.svg (sfondo trasparente).
+ * Genera favicon e icone PWA dal logo home (hubia-logo-clean.png) e mark da SVG.
+ * - Favicon + icon-192/512/apple-touch: da hubia-logo-clean.png (stesso logo della home/tab).
+ * - hubia-mark-*: da hubia-mark.svg (per altri usi).
  *
  * Uso: node scripts/generate-brand-assets.mjs
  * Oppure: npm run generate-brand-assets
- *
- * Output:
- *   - public/brand/hubia-mark-1024.png, 512, 192, 180, 32, 16
- *   - public/brand/icon-192.png, icon-512.png, apple-touch-icon.png (per layout)
- *   - public/favicon.ico
  */
 
 import path from 'path'
@@ -25,6 +21,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const projectRoot = path.resolve(__dirname, '..')
 const brandDir = path.join(projectRoot, 'public', 'brand')
 const sourceSvg = path.join(brandDir, 'hubia-mark.svg')
+const sourceLogoPng = path.join(brandDir, 'hubia-logo-clean.png')
 
 const hubiaMarkSizes = [
   { name: 'hubia-mark-1024.png', size: 1024 },
@@ -53,26 +50,44 @@ async function main() {
     fs.mkdirSync(brandDir, { recursive: true })
   }
 
-  console.log('Sorgente:', sourceSvg)
+  console.log('Sorgente mark:', sourceSvg)
+  console.log('Sorgente logo (favicon/tab):', sourceLogoPng)
 
-  const toPng = (size) =>
+  const toPngFromSvg = (size) =>
     sharp(sourceSvg)
       .resize(size, size)
       .png()
       .toBuffer()
 
-  // hubia-mark-*.png
+  // hubia-mark-*.png (da SVG)
   for (const { name, size } of hubiaMarkSizes) {
     const outPath = path.join(brandDir, name)
     await sharp(sourceSvg).resize(size, size).png().toFile(outPath)
     console.log('Scritto:', outPath)
   }
 
-  // icon-192, icon-512, apple-touch-icon (per layout esistente)
+  // Favicon e icone tab/PWA: da hubia-logo-clean.png (stesso logo della home)
+  let logoCenterCrop
+  if (fs.existsSync(sourceLogoPng)) {
+    const logoMeta = await sharp(sourceLogoPng).metadata()
+    const logoW = logoMeta.width || 675
+    const logoH = logoMeta.height || 512
+    const logoSquareSize = Math.min(logoW, logoH, 512)
+    const left = Math.round((logoW - logoSquareSize) / 2)
+    const top = Math.round((logoH - logoSquareSize) / 2)
+    logoCenterCrop = await sharp(sourceLogoPng)
+      .extract({ left, top, width: logoSquareSize, height: logoSquareSize })
+      .png()
+      .toBuffer()
+  } else {
+    console.warn('hubia-logo-clean.png non trovato, uso hubia-mark.svg per favicon/icone')
+    logoCenterCrop = await sharp(sourceSvg).resize(512, 512).png().toBuffer()
+  }
+
   for (const { name, size } of layoutIcons) {
     const outPath = path.join(brandDir, name)
-    await sharp(sourceSvg).resize(size, size).png().toFile(outPath)
-    console.log('Scritto:', outPath)
+    await sharp(logoCenterCrop).resize(size, size).png().toFile(outPath)
+    console.log('Scritto (logo home):', outPath)
   }
 
   // og-image.png 1200x630: dark placeholder con logo centrato (per Open Graph / Twitter)
@@ -97,8 +112,10 @@ async function main() {
     .toFile(path.join(brandDir, 'og-image.png'))
   console.log('Scritto: public/brand/og-image.png (1200x630)')
 
-  // favicon.ico (16 + 32)
-  const faviconBuffers = await Promise.all(faviconSizes.map((s) => toPng(s)))
+  // favicon.ico (16 + 32) — stesso logo della home
+  const faviconBuffers = await Promise.all(
+    faviconSizes.map((s) => sharp(logoCenterCrop).resize(s, s).png().toBuffer())
+  )
   const icoBuffer = await pngToIco(faviconBuffers)
   const faviconPath = path.join(projectRoot, 'public', 'favicon.ico')
   fs.writeFileSync(faviconPath, icoBuffer)

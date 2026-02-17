@@ -217,7 +217,7 @@
   },
   "pricing": {
     "title": "Tarifs",
-    "subtitle": "Nous ne vous vendons pas de clients. Nous vous donnons l'outil pour ne jamais les perdre. HŪBIA est le système de gestion pensé pour les établissements locaux qui veulent organiser réservations, clients et équipe de façon professionnelle. Une expérience moderne pour clients et équipe, accessible par web et app, pensée pour grandir avec votre activité. Deux plans clairs : Studio et Signature.",
+    "subtitle": "Nous ne vous vendons pas de clients. Nous vous donnons l'outil pour ne jamais les perdre. HŪBIA est le système de gestion pour les entreprises locales qui veulent organiser les réservations, les clients et le personnel de manière professionnelle. Deux plans clairs : Studio et Signature.",
     "pwaBlock": {
       "title": "PWA uniquement, pas d'apps store",
       "body": "L'app s'installe sur smartphone (iOS et Android) avec votre logo et couleurs. Sans store : clients et équipe l'ajoutent depuis la page web. Un seul logiciel, mises à jour incluses."
@@ -278,7 +278,7 @@
         }
       ]
     },
-    "multiSiteNote": "Multi-sites (2-5 établissements) : 89 € ou 120 €/mois par site. Setup 900 € premier site, 400 € sites suivants. Plus de 5 sites : devis personnalisé."
+    "multiSiteNote": "Multi-sites (2-5 emplacements) : même prix par site. Setup 900 € premier site, 400 € sites supplémentaires. Plus de 5 sites : devis personnalisé."
   },
   "plans": {
     "pro": {
@@ -289,10 +289,10 @@
         "Calendrier partagé de l'équipe",
         "Gestion du personnel et des services",
         "Notifications automatiques (confirmation, rappels)",
-        "Base de données clients + historique",
-        "Rapports de base (réservations, chiffre d'affaires)",
-        "PWA installable avec votre logo",
-        "Support par email (réponse sous 24h)"
+        "Base de données clients + historique des rendez-vous",
+        "Rapports de base (réservations, chiffre d'affaires quotidien)",
+        "PWA installable avec votre logo et couleurs",
+        "Support par email (réponse sous 24h ouvrées)"
       ]
     },
     "max": {
@@ -300,10 +300,10 @@
       "description": "Pour les équipes de 4 à 10+ personnes ou pour ceux qui veulent un contrôle complet des métriques business.",
       "features": [
         "Tout le plan Studio",
-        "Tableau de bord analytics : tendances des réservations, services top, performance du personnel, taux d'occupation",
-        "Rendez-vous récurrents automatiques (ex : client régulier toutes les 2 semaines)",
-        "Branding avancé (couleurs personnalisées, mise en page personnalisée)",
-        "Support prioritaire (réponse sous 4h)"
+        "Tableau de bord analytics : tendances des réservations hebdomadaires/mensuelles, services les plus demandés, performance du personnel, taux d'occupation",
+        "Rendez-vous récurrents automatiques (ex : client régulier toutes les 2 semaines se réserve automatiquement)",
+        "Branding avancé (personnalisation complète des couleurs, polices, mise en page de l'interface)",
+        "Support prioritaire (réponse sous 4h ouvrées)"
       ]
     }
   },

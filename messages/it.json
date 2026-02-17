@@ -124,7 +124,7 @@
   },
   "pricing": {
     "title": "Prezzi",
-    "subtitle": "Non ti vendiamo clienti. Ti diamo lo strumento per non perderli mai. HŪBIA è il sistema di gestione pensato per attività locali che vogliono organizzare prenotazioni, clienti e staff in modo professionale. Un'esperienza moderna per clienti e team, accessibile da web e da app, pensata per crescere con il tuo business. Due piani chiari: Studio e Signature.",
+    "subtitle": "Non ti vendiamo clienti. Ti diamo lo strumento per non perderli mai. HŪBIA è il sistema di gestione pensato per attività locali che vogliono organizzare prenotazioni, clienti e staff in modo professionale. Due piani chiari: Studio e Signature.",
     "pwaBlock": {
       "title": "Solo PWA, zero app da store",
       "body": "L’app si installa su smartphone (iOS e Android) con il logo e i colori della tua attività. Nessun passaggio dagli store: i clienti e lo staff la aggiungono dalla pagina web. Un solo software, aggiornamenti inclusi."
@@ -134,7 +134,7 @@
     "setupSectionBody": "Il setup è una tantum e include: configurazione iniziale del sistema, personalizzazione grafica (logo e colori della tua attività), impostazione di servizi e staff, test e messa online. Puoi rateizzarlo in 6 o 12 mesi senza costi aggiuntivi. Non ci sono costi nascosti.",
     "setupIncludes": "Configurazione iniziale, personalizzazione grafica, impostazione servizi e staff, test e messa online. Una tantum, rateizzabile in 6 o 12 mesi.",
     "setupMaxNote": "Supporto dedicato in fase di avvio e configurazione guidata al go-live.",
-    "multiSiteNote": "Multi-sede (2-5 sedi): €89 o €120/mese per sede. Setup €900 prima sede, €400 sedi successive. Oltre 5 sedi: preventivo personalizzato.",
+    "multiSiteNote": "Multi-sede (2-5 location): stesso prezzo per sede. Setup €900 prima sede, €400 sedi successive. Oltre 5 sedi: preventivo personalizzato.",
     "contactCta": "Parla con noi →",
     "perMonth": "/mese",
     "setupOneTime": "setup (una tantum)",
@@ -196,10 +196,10 @@
         "Calendario condiviso team",
         "Gestione staff e servizi",
         "Notifiche automatiche (conferma, promemoria)",
-        "Anagrafica clienti + storico",
-        "Report base (prenotazioni, revenue)",
-        "PWA installabile con tuo logo",
-        "Supporto email (risposta 24h lavorative)"
+        "Anagrafica clienti + storico appuntamenti",
+        "Report base (prenotazioni, revenue giornaliera)",
+        "PWA installabile con tuo logo e colori",
+        "Supporto email (risposta entro 24h lavorative)"
       ]
     },
     "max": {
@@ -207,10 +207,10 @@
       "description": "Per team 4-10+ persone o per chi vuole il controllo completo delle metriche business.",
       "features": [
         "Tutto il piano Studio",
-        "Dashboard analytics: trend prenotazioni, servizi top, performance staff, tasso occupazione",
-        "Appuntamenti ricorrenti automatici (es: cliente fisso ogni 2 settimane)",
-        "Branding avanzato (colori custom, layout personalizzato)",
-        "Supporto prioritario (risposta 4h lavorative)"
+        "Dashboard analytics: trend prenotazioni settimanali/mensili, servizi più richiesti, performance per staff, tasso di occupazione",
+        "Appuntamenti ricorrenti automatici (es: cliente fisso ogni 2 settimane si autoprenota)",
+        "Branding avanzato (personalizzazione completa colori, font, layout interfaccia)",
+        "Supporto prioritario (risposta entro 4h lavorative)"
       ]
     }
   },

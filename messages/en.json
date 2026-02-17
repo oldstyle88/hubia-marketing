@@ -124,7 +124,7 @@
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "We don't sell you customers. We give you the tool to never lose them. HŪBIA is the management system for local businesses that want to organise bookings, clients and staff professionally. A modern experience for clients and team, accessible from web and app, designed to grow with your business. Two clear plans: Studio and Signature.",
+    "subtitle": "We don't sell you customers. We give you the tool to never lose them. HŪBIA is the management system for local businesses that want to organise bookings, clients and staff professionally. Two clear plans: Studio and Signature.",
     "pwaBlock": {
       "title": "PWA only, no store apps",
       "body": "The app installs on smartphone (iOS and Android) with your logo and colours. No store required: clients and staff add it from the web page. One piece of software, updates included."
@@ -185,7 +185,7 @@
         }
       ]
     },
-    "multiSiteNote": "Multi-site (2-5 locations): €89 or €120/month per site. Setup €900 first site, €400 for additional sites. Over 5 sites: custom quote."
+    "multiSiteNote": "Multi-site (2-5 locations): same price per site. Setup €900 first site, €400 additional sites. Over 5 sites: custom quote."
   },
   "plans": {
     "pro": {
@@ -196,10 +196,10 @@
         "Shared team calendar",
         "Staff and services management",
         "Automatic notifications (confirmation, reminders)",
-        "Client database + history",
-        "Basic reports (bookings, revenue)",
-        "Installable PWA with your logo",
-        "Email support (24h response time)"
+        "Client database + appointment history",
+        "Basic reports (bookings, daily revenue)",
+        "Installable PWA with your logo and colors",
+        "Email support (response within 24h business hours)"
       ]
     },
     "max": {
@@ -207,10 +207,10 @@
       "description": "For 4-10+ person teams or those who want complete control of business metrics.",
       "features": [
         "Everything in Studio",
-        "Analytics dashboard: booking trends, top services, staff performance, occupancy rate",
-        "Automatic recurring appointments (e.g., regular client every 2 weeks)",
-        "Advanced branding (custom colors, personalized layout)",
-        "Priority support (4h response time)"
+        "Analytics dashboard: weekly/monthly booking trends, top services, staff performance, occupancy rate",
+        "Automatic recurring appointments (e.g., regular client every 2 weeks auto-books)",
+        "Advanced branding (full customization of colors, fonts, interface layout)",
+        "Priority support (response within 4h business hours)"
       ]
     }
   },

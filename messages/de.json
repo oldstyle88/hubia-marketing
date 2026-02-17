@@ -124,7 +124,7 @@
   },
   "pricing": {
     "title": "Preise",
-    "subtitle": "Wir verkaufen Ihnen keine Kunden. Wir geben Ihnen das Tool, um sie nie zu verlieren. HŪBIA ist das Verwaltungssystem für lokale Betriebe, die Buchungen, Kunden und Team professionell organisieren wollen. Eine moderne Erfahrung für Kunden und Team, per Web und App, gedacht zum Mitwachsen. Zwei klare Pläne: Studio und Signature.",
+    "subtitle": "Wir verkaufen Ihnen keine Kunden. Wir geben Ihnen das Tool, um sie nie zu verlieren. HŪBIA ist das Verwaltungssystem für lokale Unternehmen, die Buchungen, Kunden und Personal professionell organisieren möchten. Zwei klare Pläne: Studio und Signature.",
     "pwaBlock": {
       "title": "Nur PWA, keine Store-Apps",
       "body": "Die App wird auf dem Smartphone (iOS und Android) mit deinem Logo und deinen Farben installiert. Ohne Store: Kunden und Team fügen sie von der Webseite hinzu. Eine Software, Updates inklusive."
@@ -185,7 +185,7 @@
         }
       ]
     },
-    "multiSiteNote": "Multi-Standort (2-5 Locations): €89 oder €120/Monat pro Standort. Setup €900 erste Location, €400 weitere. Über 5 Standorte: individuelles Angebot."
+    "multiSiteNote": "Multi-Standort (2-5 Standorte): gleicher Preis pro Standort. Setup €900 erster Standort, €400 weitere Standorte. Über 5 Standorte: individuelles Angebot."
   },
   "plans": {
     "pro": {
@@ -196,10 +196,10 @@
         "Gemeinsamer Team-Kalender",
         "Mitarbeiter- und Dienstverwaltung",
         "Automatische Benachrichtigungen (Bestätigung, Erinnerungen)",
-        "Kundendatenbank + Historie",
-        "Basis-Reports (Buchungen, Umsatz)",
-        "Installierbare PWA mit Ihrem Logo",
-        "E-Mail-Support (24h Reaktionszeit)"
+        "Kundendatenbank + Terminhistorie",
+        "Basis-Reports (Buchungen, Tagesumsatz)",
+        "Installierbare PWA mit Ihrem Logo und Farben",
+        "E-Mail-Support (Antwort innerhalb 24h Werktags)"
       ]
     },
     "max": {
@@ -207,10 +207,10 @@
       "description": "Für Teams mit 4-10+ Personen oder für alle, die vollständige Kontrolle über Geschäftskennzahlen wollen.",
       "features": [
         "Alles aus Studio",
-        "Analytics-Dashboard: Buchungstrends, Top-Services, Mitarbeiter-Performance, Auslastung",
-        "Automatische Wiederholungstermine (z.B. Stammkunde alle 2 Wochen)",
-        "Erweitertes Branding (individuelle Farben, personalisiertes Layout)",
-        "Prioritäts-Support (4h Reaktionszeit)"
+        "Analytics-Dashboard: wöchentliche/monatliche Buchungstrends, Top-Services, Mitarbeiter-Performance, Auslastungsrate",
+        "Automatische Wiederholungstermine (z.B. Stammkunde alle 2 Wochen bucht automatisch)",
+        "Erweitertes Branding (vollständige Anpassung von Farben, Schriften, Interface-Layout)",
+        "Prioritäts-Support (Antwort innerhalb 4h Werktags)"
       ]
     }
   },

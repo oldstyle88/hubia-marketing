@@ -17,7 +17,7 @@ const bodyFont = Manrope({
 })
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.hubiasystem.com'
-const faviconVersion = 'v=9'
+const faviconVersion = 'v=10'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),

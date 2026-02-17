@@ -51,13 +51,20 @@ export const metadata: Metadata = {
       'Una piattaforma premium per gestire prenotazioni, staff, clienti e performance con standard enterprise.',
     type: 'website',
     locale: 'it_IT',
-    images: [{ url: '/brand/icon-512.png', width: 512, height: 512, alt: 'HŪBIA' }],
+    images: [
+      {
+        url: '/brand/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'HŪBIA — Sistema operativo per attività locali',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'HŪBIA — Operating System for Local Excellence',
     description: 'Sistema premium per attività locali ad alta crescita.',
-    images: ['/brand/icon-512.png'],
+    images: ['/brand/og-image.png'],
   },
   robots: { index: true, follow: true },
 }

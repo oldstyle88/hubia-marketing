@@ -75,6 +75,28 @@ async function main() {
     console.log('Scritto:', outPath)
   }
 
+  // og-image.png 1200x630: dark placeholder con logo centrato (per Open Graph / Twitter)
+  const ogWidth = 1200
+  const ogHeight = 630
+  const logoSize = 280
+  const logoSvg = fs.readFileSync(sourceSvg)
+  const logoPng = await sharp(logoSvg)
+    .resize(logoSize, logoSize)
+    .png()
+    .toBuffer()
+  await sharp({
+    create: {
+      width: ogWidth,
+      height: ogHeight,
+      channels: 3,
+      background: { r: 18, g: 20, b: 24 },
+    },
+  })
+    .png()
+    .composite([{ input: logoPng, top: Math.round((ogHeight - logoSize) / 2), left: Math.round((ogWidth - logoSize) / 2) }])
+    .toFile(path.join(brandDir, 'og-image.png'))
+  console.log('Scritto: public/brand/og-image.png (1200x630)')
+
   // favicon.ico (16 + 32)
   const faviconBuffers = await Promise.all(faviconSizes.map((s) => toPng(s)))
   const icoBuffer = await pngToIco(faviconBuffers)

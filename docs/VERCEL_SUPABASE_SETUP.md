@@ -93,9 +93,9 @@ Non usare la chiave `anon` per i lead: l’API scrive solo con **service_role** 
 
 In **Project** → **Settings** → **Environment Variables** aggiungi:
 
-| Nome                        | Valore                            | Note                                    |
-| --------------------------- | --------------------------------- | --------------------------------------- |
-| `SUPABASE_URL`              | `https://xxxxx.supabase.co`       | Project URL del progetto Supabase HŪBIA |
+| Nome | Valore | Note |
+|------|--------|------|
+| `SUPABASE_URL` | `https://xxxxx.supabase.co` | Project URL del progetto Supabase HŪBIA |
 | `SUPABASE_SERVICE_ROLE_KEY` | `eyJhbG...` (chiave service_role) | Solo server-side, non esporre al client |
 
 Opzionali:

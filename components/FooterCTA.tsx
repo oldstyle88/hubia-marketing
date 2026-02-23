@@ -15,23 +15,28 @@ export async function FooterCTA() {
       />
 
       <div className="relative z-10 mx-auto max-w-3xl rounded-[28px] border border-white/20 bg-white/10 p-8 text-center shadow-2xl backdrop-blur-xl sm:p-10">
-        <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl" style={{ fontFamily: 'var(--font-title)' }}>
+        <h2
+          className="mb-4 text-3xl font-bold text-white sm:text-4xl"
+          style={{ fontFamily: 'var(--font-title)' }}
+        >
           {t('title')}
         </h2>
-        <p className="mx-auto mb-8 max-w-2xl text-white/90">{t('subtitle')}</p>
-
-        <div className="mx-auto mb-8 grid max-w-2xl gap-3 text-left text-sm text-white/90 sm:grid-cols-3">
-          <p className="reveal-up rounded-xl border border-white/20 bg-white/10 px-4 py-3">Analisi operativa del tuo locale</p>
-          <p className="reveal-up delay-1 rounded-xl border border-white/20 bg-white/10 px-4 py-3">Piano implementazione in 30 giorni</p>
-          <p className="reveal-up delay-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3">Roadmap di crescita e controllo KPI</p>
-        </div>
+        <p className="mx-auto mb-10 max-w-2xl text-white/90">{t('subtitle')}</p>
 
         <Link
           href="/contact"
-          className="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-8 font-semibold text-[var(--primary)] shadow-lg transition hover:bg-white/90"
+          className="inline-flex min-h-14 items-center justify-center rounded-xl bg-[#d4af37] px-10 font-semibold text-[#0a0a0a] shadow-lg transition hover:brightness-110"
         >
           {t('cta')}
         </Link>
+
+        <p className="mt-6 flex flex-wrap items-center justify-center gap-2 text-sm text-white/80">
+          <span>{t('reassurance1')}</span>
+          <span aria-hidden>·</span>
+          <span>{t('reassurance2')}</span>
+          <span aria-hidden>·</span>
+          <span>{t('reassurance3')}</span>
+        </p>
       </div>
     </section>
   )

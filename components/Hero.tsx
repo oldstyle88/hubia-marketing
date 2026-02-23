@@ -2,23 +2,10 @@ import { Link } from '@/i18n/navigation'
 import { getTranslations } from 'next-intl/server'
 import { HubiaLogo } from '@/components/HubiaLogo'
 
-interface HeroProps {
-  variant?: 'A' | 'B'
-}
-
-const valuePills = ['Beauty e Barber Studio', 'Cliniche e Studi professionali', 'Food, delivery e attivita locali']
-
-export async function Hero({ variant = 'A' }: HeroProps) {
+export async function Hero() {
   const t = await getTranslations('home.hero')
-
-  const ctaText = variant === 'B' ? 'Inizia gratis trial' : t('ctaPrimary')
-  const ctaClass =
-    variant === 'B'
-      ? 'inline-flex min-h-12 items-center justify-center rounded-xl bg-[#0c3f77] px-8 font-semibold text-white shadow-lg transition-colors hover:bg-[#0a3564] focus:outline-none focus:ring-2 focus:ring-[#7bc9f6]/50'
-      : 'inline-flex min-h-12 items-center justify-center rounded-xl bg-[var(--primary)] px-8 font-semibold text-white shadow-lg transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/60'
-
   const badges = t.raw('badges') as string[] | undefined
-  const badgeList = Array.isArray(badges) ? badges : ['GDPR Ready', 'PWA', 'White-label', 'Supporto umano']
+  const badgeList = Array.isArray(badges) ? badges : []
 
   return (
     <section className="relative overflow-hidden px-4 py-24 sm:px-6 lg:px-8">
@@ -40,22 +27,22 @@ export async function Hero({ variant = 'A' }: HeroProps) {
         <div className="text-center md:text-left">
           <HubiaLogo variant="hero" />
 
-          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--gray)] sm:text-xs">
-            HUBIA unisce operazioni, team e clienti in un unico sistema vivo
-          </p>
-
           <h1
-            className="mb-6 text-4xl font-bold leading-tight tracking-[0.01em] text-[var(--primary)] sm:text-5xl md:text-[58px]"
+            className="mb-6 mt-4 text-4xl font-bold leading-tight tracking-[0.01em] text-[var(--primary)] sm:text-5xl md:text-[58px]"
             style={{ fontFamily: 'var(--font-title)' }}
           >
-            {t('title')}
+            {t('titleLine1')}
+            <br />
+            {t('titleLine2')}
+            <br />
+            {t('titleLine3')}
           </h1>
 
           <p className="mx-auto mb-8 max-w-xl text-base leading-relaxed text-[var(--gray)] sm:text-lg md:mx-0">
             {t('subtitle')}
           </p>
 
-          <div className="mb-10 flex flex-wrap justify-center gap-2 md:justify-start">
+          <div className="mb-8 flex flex-wrap justify-center gap-2 md:justify-start">
             {badgeList.map((label) => (
               <span
                 key={label}
@@ -66,48 +53,26 @@ export async function Hero({ variant = 'A' }: HeroProps) {
             ))}
           </div>
 
-          <div className="mb-10 flex flex-wrap items-center justify-center gap-3 md:justify-start">
-            <Link href="/contact" className={ctaClass}>
-              {ctaText}
+          <div className="mb-8 flex flex-wrap items-center justify-center gap-3 md:justify-start">
+            <Link
+              href="/contact"
+              className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[var(--primary)] px-8 font-semibold text-white shadow-lg transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/60"
+            >
+              {t('ctaPrimary')}
             </Link>
             <Link
-              href="/#setup"
+              href="/#come-funziona"
               className="inline-flex min-h-12 items-center justify-center rounded-xl border border-[var(--line)] bg-white/70 px-6 font-semibold text-[var(--primary)] transition hover:border-[var(--secondary)]/60"
             >
               {t('ctaSecondary')}
             </Link>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-3">
-            {valuePills.map((item) => (
-              <div key={item} className="card reveal-up rounded-xl bg-white/75 px-4 py-3 text-sm font-semibold text-[var(--primary)] backdrop-blur-sm">
-                {item}
-              </div>
-            ))}
-          </div>
+          <p className="text-sm text-[var(--gray)]">{t('statRow')}</p>
         </div>
 
-        <div className="hero-panel mx-auto w-full max-w-[390px] rounded-[28px] p-6">
-          <div className="relative space-y-4">
-            <div className="reveal-up rounded-2xl border border-white/20 bg-white/10 p-4 text-white backdrop-blur-sm">
-              <p className="text-xs uppercase tracking-[0.18em] text-[#cae7ff]">Agenda live</p>
-              <p className="mt-2 text-sm font-semibold">96 prenotazioni confermate questa settimana</p>
-            </div>
-            <div className="reveal-up delay-1 rounded-2xl border border-white/20 bg-white/10 p-4 text-white backdrop-blur-sm">
-              <p className="text-xs uppercase tracking-[0.18em] text-[#cae7ff]">Team sync</p>
-              <p className="mt-2 text-sm font-semibold">Staff allineato su turni, servizi e disponibilita in tempo reale</p>
-            </div>
-            <div className="reveal-up delay-2 rounded-2xl border border-white/20 bg-white/10 p-4 text-white backdrop-blur-sm">
-              <p className="text-xs uppercase tracking-[0.18em] text-[#cae7ff]">Performance</p>
-              <p className="mt-2 text-sm font-semibold">+23% ritorno clienti in 90 giorni con flusso operativo stabile</p>
-            </div>
-            <div className="reveal-up delay-3 rounded-2xl border border-[#8acdf8]/55 bg-[#8acdf8]/15 p-4">
-              <p className="text-xs uppercase tracking-[0.18em] text-[#d8efff]">Contesto che costruisci</p>
-              <p className="mt-2 text-sm font-semibold text-white">
-                Esperienza cliente, operativita del team e crescita economica in un unico sistema.
-              </p>
-            </div>
-          </div>
+        <div className="mockup-placeholder hero-panel mx-auto flex aspect-[4/3] w-full max-w-[390px] flex-col items-center justify-center p-8 text-center">
+          <span className="text-sm">HŪBIA Dashboard — live preview</span>
         </div>
       </div>
     </section>

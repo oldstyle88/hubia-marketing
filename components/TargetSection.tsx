@@ -1,3 +1,4 @@
+import { Link } from '@/i18n/navigation'
 import { getTranslations } from 'next-intl/server'
 
 const icons = {
@@ -57,7 +58,15 @@ export async function TargetSection() {
             </div>
           ))}
         </div>
-        <p className="mt-8 text-center text-sm text-[var(--gray)]">{t('microText')}</p>
+        <div className="mt-10 rounded-xl border border-[var(--line)] bg-white/60 px-6 py-4 text-center">
+          <p className="mb-2 text-sm text-[var(--gray)]">{t('customBoxText')}</p>
+          <Link
+            href="/#soluzioni-dedicate"
+            className="text-sm font-semibold text-[var(--primary)] hover:underline"
+          >
+            → {t('customBoxLink')}
+          </Link>
+        </div>
       </div>
     </section>
   )

@@ -3,25 +3,8 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Section } from '@/components/Section'
 import { PricingTable } from '@/components/PricingTable'
-import { PwaOnlyBlock } from '@/components/PwaOnlyBlock'
 import { FAQAccordion } from '@/components/FAQAccordion'
 import { Button } from '@/components/Button'
-
-/** Evita di mostrare chiavi i18n in UI: se il valore sembra una chiave non risolta (es. home.pwaBlock.title), usa il fallback (sempre, anche in prod). */
-function safeTranslation(value: string, key: string, fallback: string): string {
-  const v = value.trim()
-  const looksLikeKey =
-    v === key ||
-    v.toLowerCase().includes('pwablock') ||
-    v.toLowerCase().includes('home.pwa')
-  if (looksLikeKey) {
-    if (process.env.NODE_ENV === 'development') {
-      console.warn(`[i18n] Chiave non risolta su pricing: "${key}" (valore: "${value}") → mostrato fallback. Verificare messages/*.json.`)
-    }
-    return fallback
-  }
-  return value
-}
 
 export async function generateMetadata() {
   const t = await getTranslations('pricing')
@@ -39,11 +22,20 @@ export default async function PricingPage() {
     {
       name: tPlans('pro.name'),
       description: tPlans('pro.description'),
+      setupFee: t('prices.studio.setup'),
+      monthly: t('prices.studio.monthly'),
+      features: tPlans.raw('pro.features') as string[],
+      highlight: false,
+      badge: null,
+    },
+    {
+      name: tPlans('pro2.name'),
+      description: tPlans('pro2.description'),
       setupFee: t('prices.pro.setup'),
       monthly: t('prices.pro.monthly'),
-      features: tPlans.raw('pro.features') as string[],
+      features: tPlans.raw('pro2.features') as string[],
       highlight: true,
-      badge: null,
+      badge: t('mostChosen'),
     },
     {
       name: tPlans('max.name'),
@@ -52,7 +44,7 @@ export default async function PricingPage() {
       monthly: t('prices.max.monthly'),
       features: tPlans.raw('max.features') as string[],
       highlight: false,
-      badge: null,
+      badge: 'Coach AI',
     },
   ]
 
@@ -64,6 +56,8 @@ export default async function PricingPage() {
     { question: t('faq.q5'), answer: t('faq.a5') },
     { question: t('faq.q6'), answer: t('faq.a6') },
   ]
+
+  const verticalRows = t.raw('verticalPricing.rows') as Array<{ label: string; studio: string; pro: string; signature: string }>
 
   return (
     <div className="min-h-screen flex flex-col bg-[var(--bg)]">
@@ -84,11 +78,6 @@ export default async function PricingPage() {
             <p className="mb-6 text-lg leading-relaxed text-[var(--text)] sm:text-xl">
               {t('subtitle')}
             </p>
-            <PwaOnlyBlock
-              className="text-left"
-              title={safeTranslation(t('pwaBlock.title'), 'pwaBlock.title', 'Solo PWA, zero app da store')}
-              body={safeTranslation(t('pwaBlock.body'), 'pwaBlock.body', 'App installabile su smartphone (iOS e Android) con logo e colori della tua attività. Un solo software, aggiornamenti inclusi.')}
-            />
           </div>
 
           <PricingTable
@@ -98,29 +87,18 @@ export default async function PricingPage() {
             requestDemoLabel={t('requestDemo')}
           />
 
-          <div className="mt-16 text-center max-w-2xl mx-auto">
-            <p className="mb-2 text-[var(--text)]">
+          {/* Nota setup — una riga sola */}
+          <div className="mt-10 text-center max-w-2xl mx-auto">
+            <p className="text-sm text-[var(--gray)]">
               {t('footer')}
             </p>
-            <p className="mb-2 text-sm text-[var(--gray)]">
-              {t('setupIncludes')}
-            </p>
-            <p className="mb-10 text-sm font-medium text-[var(--primary)]">
+            <p className="mt-1 text-xs text-[var(--gray)]/70">
               {t('multiSiteNote')}
             </p>
           </div>
 
-          <div className="mt-16 max-w-2xl mx-auto">
-            <h2 className="mb-4 text-center text-2xl font-semibold text-[var(--primary)]">
-              {t('setupSectionTitle')}
-            </h2>
-            <p className="text-center leading-relaxed text-[var(--text)]">
-              {t('setupSectionBody')}
-            </p>
-          </div>
-
-
-          <div className="mt-16 max-w-4xl mx-auto">
+          {/* Comparison table — 3 colonne */}
+          <div className="mt-16 max-w-4xl mx-auto" id="confronto">
             <h2 className="mb-4 text-center text-2xl font-semibold text-[var(--primary)]">
               {t('verticalPricing.title')}
             </h2>
@@ -128,21 +106,31 @@ export default async function PricingPage() {
               {t('verticalPricing.note')}
             </p>
             <div className="overflow-hidden rounded-2xl border border-[var(--line)]/75 bg-white/88 shadow-[0_18px_52px_rgba(16,24,40,0.08)]">
-              <div className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 border-b border-[var(--line)]/70 px-6 py-4 text-xs uppercase tracking-[0.18em] text-[var(--gray)]">
+              <div className="grid grid-cols-[1.6fr_1fr_1fr_1fr] gap-2 border-b border-[var(--line)]/70 px-6 py-4 text-xs uppercase tracking-[0.18em] text-[var(--gray)]">
                 <span>{t('verticalPricing.columns.vertical')}</span>
-                <span>{t('verticalPricing.columns.pro')}</span>
-                <span>{t('verticalPricing.columns.max')}</span>
+                <span className="text-center">{t('verticalPricing.columns.studio')}</span>
+                <span className="text-center">{t('verticalPricing.columns.pro')}</span>
+                <span className="text-center">{t('verticalPricing.columns.signature')}</span>
               </div>
-              {(t.raw('verticalPricing.rows') as Array<any>).map((row, index) => (
-                <div key={index} className="grid grid-cols-[1.4fr_1fr_1fr] gap-4 border-b border-[var(--line)]/50 px-6 py-4 text-sm text-[var(--text)] last:border-b-0">
-                  <span className="font-medium text-[var(--primary)]">{row.label}</span>
-                  <span>{row.pro}</span>
-                  <span>{row.max}</span>
+              {verticalRows.map((row, index) => (
+                <div
+                  key={index}
+                  className={`grid grid-cols-[1.6fr_1fr_1fr_1fr] gap-2 border-b border-[var(--line)]/50 px-6 py-3 text-sm last:border-b-0 ${
+                    index >= verticalRows.length - 2
+                      ? 'font-semibold text-[var(--primary)]'
+                      : 'text-[var(--text)]'
+                  }`}
+                >
+                  <span className="font-medium">{row.label}</span>
+                  <span className="text-center">{row.studio}</span>
+                  <span className="text-center">{row.pro}</span>
+                  <span className="text-center">{row.signature}</span>
                 </div>
               ))}
             </div>
           </div>
 
+          {/* FAQ */}
           <div id="faq" className="mt-20 max-w-2xl mx-auto scroll-mt-28">
             <h2 className="mb-8 text-center text-2xl font-semibold text-[var(--primary)]">
               {t('faqTitle')}
@@ -150,6 +138,7 @@ export default async function PricingPage() {
             <FAQAccordion items={faqItems} />
           </div>
 
+          {/* CTA finale */}
           <div className="mt-16 text-center">
             <Button href="/contact" variant="primary" className="text-lg px-10 py-5">
               {t('requestDemo')}

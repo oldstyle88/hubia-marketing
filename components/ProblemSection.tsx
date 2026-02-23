@@ -4,13 +4,15 @@ export async function ProblemSection() {
   const t = await getTranslations('home.problem')
 
   return (
-    <section className="bg-[var(--bg-alt)] px-4 py-20 sm:px-6 lg:px-8">
+    <section className="bg-[var(--bg-alt)] px-4 py-20 sm:px-6 lg:px-8" id="problema">
       <div className="mx-auto max-w-3xl">
         <h2
           className="mb-8 text-center text-3xl font-bold text-[var(--primary)] sm:text-4xl"
           style={{ fontFamily: 'var(--font-title)' }}
         >
-          {t('title')}
+          {t('titleLine1')}
+          <br />
+          {t('titleLine2')}
         </h2>
         <div className="space-y-6 text-[var(--gray)]">
           <p className="text-base leading-relaxed">{t('p1')}</p>

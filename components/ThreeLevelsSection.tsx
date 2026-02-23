@@ -46,9 +46,11 @@ export async function ThreeLevelsSection() {
           ))}
         </div>
 
-        <p className="mt-6 text-center text-xs font-medium text-[var(--secondary)]">
-          {t('coachBadge')}
-        </p>
+        <div className="mt-6 flex justify-center">
+          <span className="inline-block rounded-md bg-[#d4af37] px-4 py-2 text-center text-xs font-medium text-[#0a0a0a]">
+            {t('coachBadge')}
+          </span>
+        </div>
       </div>
     </section>
   )

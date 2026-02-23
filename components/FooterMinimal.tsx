@@ -20,7 +20,7 @@ export async function FooterMinimal() {
             href="/#soluzioni-dedicate"
             className="inline-flex min-h-10 items-center rounded-lg px-3 text-sm text-[var(--text)] transition-colors hover:text-[var(--primary)]"
           >
-            {t('soluzioniDedicate')}
+            {t('soluzioni')}
           </Link>
           <Link
             href="/contact"

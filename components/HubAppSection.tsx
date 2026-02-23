@@ -46,10 +46,23 @@ export async function HubAppSection() {
         </div>
         <div className="flex justify-center">
           <div
-            className="mockup-placeholder flex aspect-[9/19] w-full max-w-[280px] flex-col items-center justify-center rounded-[24px] p-6"
-            style={{ background: '#111', border: '1px solid #d4af37' }}
+            className="flex items-center justify-center rounded-[32px] px-6 py-6 text-center"
+            style={{
+              width: 260,
+              aspectRatio: '9/19',
+              background: '#111',
+              border: '1px solid #d4af37',
+              color: '#d4af37',
+              fontSize: 13,
+              letterSpacing: '0.08em',
+              padding: 24,
+            }}
           >
-            <span className="text-center text-sm text-[#d4af37]">Hubia App · iOS & Android</span>
+            <span>
+              Hubia App
+              <br />
+              iOS & Android
+            </span>
           </div>
         </div>
       </div>

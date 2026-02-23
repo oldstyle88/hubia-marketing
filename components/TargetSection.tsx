@@ -58,7 +58,7 @@ export async function TargetSection() {
             </div>
           ))}
         </div>
-        <div className="mt-10 rounded-xl border border-[var(--line)] bg-white/60 px-6 py-4 text-center">
+        <div className="mt-8 rounded-lg border border-[#d4af37] px-6 py-4 text-center">
           <p className="mb-2 text-sm text-[var(--gray)]">{t('customBoxText')}</p>
           <Link
             href="/#soluzioni-dedicate"

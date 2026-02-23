@@ -21,11 +21,11 @@ export async function Header() {
           <Link href="/#pricing" className={navLinkClass}>
             {t('plans')}
           </Link>
-          <Link href="/#soluzioni-dedicate" className={navLinkClass}>
-            {t('soluzioni')}
-          </Link>
           <Link href="/#coach-ai" className={navLinkClass}>
             {t('coachAi')}
+          </Link>
+          <Link href="/#soluzioni-dedicate" className={navLinkClass}>
+            {t('soluzioni')}
           </Link>
           <Link href="/contact" className={navLinkClass}>
             {t('contact')}
@@ -38,7 +38,7 @@ export async function Header() {
           </span>
           <Link
             href="/contact"
-            className="inline-flex min-h-11 items-center rounded-xl bg-[var(--primary)] px-4 text-sm font-semibold text-white shadow-md transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]/60"
+            className="inline-flex min-h-11 items-center rounded-md bg-[#d4af37] px-4 text-sm font-semibold text-[#0a0a0a] shadow-md transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#d4af37]/60"
           >
             {t('startNow')}
           </Link>

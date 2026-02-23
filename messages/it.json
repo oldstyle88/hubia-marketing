@@ -32,6 +32,8 @@
     },
     "problem": {
       "title": "Gestire un locale nel 2026 non dovrebbe essere questo caos.",
+      "titleLine1": "Gestire un locale nel 2026",
+      "titleLine2": "non dovrebbe essere questo caos.",
       "p1": "Prenotazioni su WhatsApp, agenda su carta, staff che non sa cosa fa domani. Clienti che non tornano perché nessuno li ha richiamati. Incassi che non si capisce da dove vengono e dove vanno.",
       "p2": "Non è colpa tua. È colpa degli strumenti che hai usato finora. Strumenti generici, costruiti per qualsiasi attività — e quindi perfetti per nessuna.",
       "p3": "HŪBIA è costruito per una cosa sola: locali come il tuo.",
@@ -41,12 +43,12 @@
       "title": "Un sistema. Tre livelli.",
       "subtitle": "Ogni parte fa la sua cosa. Insieme fanno tutto.",
       "card1Title": "Un'app con il tuo nome",
-      "card1Body": "I tuoi clienti scaricano Hubia App una volta sola. Aggiungono il tuo locale scansionando un QR. Prenotano, vedono i loro punti fedeltà, ricevono notifiche push native. Tutto con il tuo logo. Il tuo nome. I tuoi colori. Zero commissioni. I clienti sono tuoi per sempre.",
+      "card1Body": "I tuoi clienti scaricano Hubia App una volta sola. Aggiungono il tuo locale scansionando un QR. Prenotano, vedono i loro punti fedeltà, ricevono notifiche push native iOS e Android. Tutto con il tuo logo. Il tuo nome. I tuoi colori. Zero commissioni. I clienti sono tuoi.",
       "card2Title": "Controllo totale per chi gestisce",
-      "card2Body": "Il tuo team lavora su una dashboard professionale, desktop e mobile, in tempo reale. Prenotazioni live, clienti, assenze, servizi. Analytics su revenue, occupazione e performance. Ogni dato che ti serve, sempre aggiornato.",
+      "card2Body": "Il tuo team lavora su una dashboard professionale, desktop e mobile, in tempo reale. Prenotazioni live, clienti, assenze, servizi. Analytics su revenue, occupazione e performance staff. Ogni dato che ti serve, sempre aggiornato.",
       "card3Title": "L'AI che impara dal tuo locale",
       "card3Body": "Dopo 60 giorni di utilizzo, Coach AI si attiva. Prevede gli incassi dei prossimi 14 giorni. Ti dice quali clienti stanno per smettere di venire. Crea promo automatiche per riempire gli slot vuoti. Gira sui tuoi dati. Solo sui tuoi. Nessuna API esterna. Nessun dato condiviso.",
-      "coachBadge": "★ Disponibile con piano Signature · Si attiva automaticamente dopo 60 giorni"
+      "coachBadge": "★ Piano Signature · Si attiva dopo 60 giorni di dati reali"
     },
     "hubApp": {
       "label": "HUBIA APP",
@@ -69,10 +71,10 @@
       "card2Title": "Beauty & Estetica",
       "card2Desc": "Più servizi, più staff. Un sistema che non si inceppa mai.",
       "card3Title": "Studi Medici",
-      "card3Desc": "Agenda visite, disponibilità team, promemoria ai pazienti.",
+      "card3Desc": "Agenda visite, disponibilità team, promemoria automatici ai pazienti.",
       "card4Title": "Pet Grooming",
       "card4Desc": "Prenotazioni veloci, clienti fedeli, zero telefonate perse.",
-      "customBoxText": "Hai un'attività diversa o flussi più complessi?",
+      "customBoxText": "Hai un'attività con flussi diversi o più complessi?",
       "customBoxLink": "Leggi la sezione Soluzioni Dedicate"
     },
     "howItWorks": {
@@ -80,9 +82,9 @@
       "step1Title": "Setup guidato (1-2 giorni)",
       "step1Desc": "Configuriamo insieme servizi, orari, staff e branding. Il tuo logo nell'app. I tuoi colori. Il tuo nome. Niente da installare. Niente da imparare da zero.",
       "step2Title": "Vai live",
-      "step2Desc": "I tuoi clienti iniziano a prenotare. Il QR per Hubia App è pronto. Lo staff ha la dashboard. Tutto funziona dal primo giorno.",
+      "step2Desc": "I tuoi clienti iniziano a prenotare. Il QR per Hubia App è pronto. Lo staff accede alla dashboard. Tutto funziona dal primo giorno.",
       "step3Title": "Coach AI impara (60 giorni)",
-      "step3Desc": "Dopo 60 giorni di dati reali, Coach AI si attiva automaticamente. Forecast incassi, clienti a rischio, slot da riempire. Il sistema inizia a lavorare per te — anche quando non ci sei.",
+      "step3Desc": "Dopo 60 giorni di dati reali, Coach AI si attiva automaticamente. Forecast incassi, clienti a rischio, slot vuoti da riempire. Il sistema inizia a lavorare per te — anche quando non ci sei.",
       "step4Title": "Cresci",
       "step4Desc": "Più staff, più servizi, più sedi. Il sistema si adatta. I tuoi dati restano tuoi. Sempre."
     },
@@ -90,11 +92,11 @@
       "title": "Prezzi chiari. Zero commissioni. Zero sorprese.",
       "subtitle": "Setup rateizzabile in 6 o 12 mesi. Canone fisso mensile.",
       "studioName": "Studio",
-      "studioForWho": "Per chi inizia. 1-3 staff.",
+      "studioForWho": "Per team 1-3 persone",
       "studioSetup": "€800",
       "studioSetupNote": "rateizzabile",
       "studioCanone": "€89 / mese",
-      "studioCta": "Inizia con Studio",
+      "studioCta": "Richiedi Studio",
       "studioFeatures": [
         "App cliente PWA white-label (logo, colori e nome tuoi)",
         "Prenotazioni online 24/7",
@@ -111,7 +113,7 @@
       "proSetup": "€1.400",
       "proSetupNote": "rateizzabile",
       "proCanone": "€149 / mese",
-      "proCta": "Inizia con Pro",
+      "proCta": "Richiedi Pro",
       "proTag": "Più scelto",
       "proFeatures": [
         "Tutto il piano Studio",
@@ -128,7 +130,7 @@
       "signatureSetup": "€1.900",
       "signatureSetupNote": "rateizzabile",
       "signatureCanone": "€209 / mese",
-      "signatureCta": "Inizia con Signature",
+      "signatureCta": "Richiedi Signature",
       "signatureTag": "Coach AI incluso",
       "signatureFeatures": [
         "Tutto il piano Pro",
@@ -137,11 +139,11 @@
         "Rilevamento clienti a rischio churn",
         "Promo automatiche per slot vuoti",
         "Coach Auto — campagne ai dormienti senza intervento manuale",
-        "CLV Dashboard (Customer Lifetime Value per cliente)",
+        "CLV Dashboard (Customer Lifetime Value)",
         "Branding avanzato (font, layout, hero personalizzati)",
         "Supporto dedicato"
       ],
-      "coachNote": "* Coach AI si attiva automaticamente dopo 60 giorni di dati reali. Impara esclusivamente dal tuo locale. I tuoi dati non lasciano mai il sistema.",
+      "coachNote": "* Coach AI si attiva automaticamente dopo 60 giorni di dati reali. I tuoi dati non lasciano mai il sistema.",
       "compareAppWhiteLabel": "App cliente white-label",
       "compareLoyalty": "Loyalty card",
       "comparePush": "Push notification",
@@ -173,7 +175,7 @@
     "differenziatori": {
       "title": "Tre cose che non trovi altrove.",
       "block1Title": "\"I clienti sono tuoi.\"",
-      "block1Body": "Prenotano da un'app con il tuo nome. Non da un marketplace condiviso. Nessuna commissione. Nessun intermediario. I dati dei tuoi clienti appartengono a te — e solo a te.",
+      "block1Body": "Prenotano da un'app con il tuo nome. Non da un marketplace condiviso. Nessun intermediario. Nessuna commissione. I dati dei tuoi clienti appartengono a te — e solo a te.",
       "block2Title": "\"L'AI gira sui tuoi dati.\"",
       "block2Body": "Coach AI non usa API esterne. Non manda i tuoi dati a nessun servizio di terze parti. Impara dal tuo locale, solo dal tuo locale. Più lo usi, più diventa preciso.",
       "block3Title": "\"Il brand è tuo.\"",
@@ -305,6 +307,7 @@
     "terms": "Termini di Servizio",
     "copyright": "Tutti i diritti riservati.",
     "plans": "Piani",
+    "soluzioni": "Soluzioni",
     "soluzioniDedicate": "Soluzioni dedicate"
   },
   "privacy": {

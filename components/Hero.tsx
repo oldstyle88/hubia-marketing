@@ -71,8 +71,19 @@ export async function Hero() {
           <p className="text-sm text-[var(--gray)]">{t('statRow')}</p>
         </div>
 
-        <div className="mockup-placeholder hero-panel mx-auto flex aspect-[4/3] w-full max-w-[390px] flex-col items-center justify-center p-8 text-center">
-          <span className="text-sm">HŪBIA Dashboard — live preview</span>
+        <div
+          className="mockup-placeholder hero-panel mx-auto flex w-full max-w-[480px] flex-col items-center justify-center rounded-2xl border border-[#d4af37]/40 bg-gradient-to-br from-[#0a0a0a] to-[#1a1a2e] p-10 text-center shadow-xl"
+          style={{ aspectRatio: '16/10' }}
+        >
+          <span className="text-xs uppercase tracking-widest text-[#d4af37]/60">
+            Preview
+          </span>
+          <span className="mt-2 text-sm font-semibold text-[#d4af37]">
+            HŪBIA Dashboard
+          </span>
+          <span className="mt-1 text-xs text-white/30">
+            Staff · Analytics · Coach AI
+          </span>
         </div>
       </div>
     </section>

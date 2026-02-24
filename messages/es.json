@@ -1,7 +1,7 @@
 {
   "meta": {
     "desc": "Citas, equipo, clientes e ingresos en una PWA elegante. Studio €900+€89/mes, Signature €1.400+€120/mes. GDPR Ready, PWA, soporte humano.",
-    "title": "HŪBIA — App e AI per barberie, saloni e studi professionali"
+    "title": "HŪBIA — App e IA para barberías, salones y estudios profesionales"
   },
   "nav": {
     "product": "Producto",
@@ -15,9 +15,9 @@
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
     "app": "App",
-    "soluzioni": "Soluzioni",
+    "soluzioni": "Soluciones",
     "coachAi": "Coach AI",
-    "startNow": "Inizia ora"
+    "startNow": "Empezar ahora"
   },
   "home": {
     "hero": {
@@ -471,14 +471,14 @@
     "businessMedical": "Clínicas / estudios médicos",
     "businessPet": "Pet grooming",
     "errors": {
-      "generic": "Si è verificato un errore. Riprova più tardi.",
-      "network": "Errore di connessione. Riprova più tardi."
+      "generic": "Ha ocurrido un error. Inténtalo de nuevo más tarde.",
+      "network": "Error de conexión. Inténtalo de nuevo más tarde."
     },
     "process": {
-      "title": "Processo",
-      "step1": "Call di allineamento operativo",
-      "step2": "Setup e configurazione guidata",
-      "step3": "Go-live con supporto dedicato"
+      "title": "Proceso",
+      "step1": "Llamada de alineación operativa",
+      "step2": "Setup y configuración guiada",
+      "step3": "Go-live con soporte dedicado"
     },
     "standardLabel": "Standard"
   },
@@ -491,19 +491,19 @@
     "privacy": "Política de privacidad",
     "terms": "Términos de servicio",
     "copyright": "Todos los derechos reservados.",
-    "plans": "Piani",
-    "soluzioni": "Soluzioni",
-    "soluzioniDedicate": "Soluzioni dedicate"
+    "plans": "Planes",
+    "soluzioni": "Soluciones",
+    "soluzioniDedicate": "Soluciones dedicadas"
   },
   "privacy": {
     "title": "Política de privacidad",
     "lastUpdate": "Última actualización",
-    "metaDescription": "Informativa sulla privacy di HŪBIA. Come raccogliamo, utilizziamo e proteggiamo i tuoi dati."
+    "metaDescription": "Política de privacidad de HŪBIA. Cómo recogemos, usamos y protegemos tus datos."
   },
   "terms": {
     "title": "Términos de servicio",
     "lastUpdate": "Última actualización",
-    "metaDescription": "Termini e condizioni di utilizzo del servizio HŪBIA."
+    "metaDescription": "Términos y condiciones de uso del servicio HŪBIA."
   },
   "common": {
     "required": "*",

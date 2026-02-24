@@ -1,6 +1,13 @@
 import type { Metadata } from 'next'
+import { headers } from 'next/headers'
 import { Sora, Manrope } from 'next/font/google'
 import './globals.css'
+
+const LOCALES = ['it', 'en', 'de', 'es', 'fr'] as const
+function getLocaleFromHeaders(headersList: Headers): (typeof LOCALES)[number] {
+  const h = headersList.get('x-next-intl-locale')
+  return h && LOCALES.includes(h as (typeof LOCALES)[number]) ? (h as (typeof LOCALES)[number]) : 'it'
+}
 
 const displayFont = Sora({
   subsets: ['latin'],
@@ -69,13 +76,15 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const headersList = await headers()
+  const locale = getLocaleFromHeaders(headersList)
   return (
-    <html lang="it" className={`${displayFont.variable} ${bodyFont.variable}`}>
+    <html lang={locale} className={`${displayFont.variable} ${bodyFont.variable}`}>
       <head>
         <link rel="icon" href={`/favicon.ico?${faviconVersion}`} sizes="any" />
         <link rel="apple-touch-icon" href={`/brand/apple-touch-icon.png?${faviconVersion}`} />

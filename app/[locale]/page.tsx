@@ -31,6 +31,7 @@ export async function generateMetadata({
 
   const title = tMeta('title')
   const description = tMeta('desc')
+  const ogLocale = locale === 'it' ? 'it_IT' : locale === 'en' ? 'en_US' : locale === 'de' ? 'de_DE' : locale === 'es' ? 'es_ES' : 'fr_FR'
 
   return {
     title: title || 'HŪBIA',
@@ -44,6 +45,15 @@ export async function generateMetadata({
     },
     openGraph: {
       url: `${baseUrl}/${locale}`,
+      title: title || 'HŪBIA',
+      description: description || undefined,
+      locale: ogLocale,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: title || 'HŪBIA',
+      description: description || undefined,
     },
   }
 }

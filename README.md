@@ -47,9 +47,11 @@ Apri [http://localhost:3000](http://localhost:3000); rotte con locale (es. `/it`
 ## i18n (traduzioni)
 
 - **Schema di riferimento:** `messages/it.json` è la fonte di verità; gli altri locale (`en`, `de`, `es`, `fr`) devono avere le stesse chiavi.
-- **Validazione:** `npm run i18n:check` — confronta le chiavi di tutti i locale con `it.json` ed esce con errore se mancano chiavi.
+- **Validazione chiavi:** `npm run i18n:check` — confronta le chiavi di tutti i locale con `it.json`; **esce con errore** se mancano chiavi.
+- **Controlli qualità (solo warning):** lo stesso script segnala valori vuoti e chiavi “critiche” (`nav.*`, `home.hero.*`, `meta.*`) con valore identico all’italiano — utili per individuare copy non localizzate.
+- **Dove intervenire:** i testi per ogni lingua sono in `messages/<locale>.json`. Per aggiungere una nuova chiave, inserirla in `it.json` e lanciare `node scripts/sync-i18n-from-baseline.mjs` per copiarla negli altri file (poi tradurre a mano).
 - **Script in `scripts/`:**
-  - `validate-i18n.mjs` — legge `it.json` e verifica che en/de/es/fr abbiano tutte le chiavi (leaf); segnala anche chiavi extra.
+  - `validate-i18n.mjs` — verifica chiavi, valori vuoti e copy sospette (identiche a IT).
   - `sync-i18n-from-baseline.mjs` — copia in en/de/es/fr le chiavi mancanti da `it.json` (solo aggiunte, nessuna sovrascrittura).
 
 ## Deploy

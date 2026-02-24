@@ -104,7 +104,7 @@
       "studioCanone": "€89 / mese",
       "studioCta": "Richiedi Studio",
       "studioFeatures": [
-        "App cliente con il tuo logo e i tuoi colori",
+        "App cliente con il tuo logo, i tuoi colori e il tuo nome",
         "Prenotazioni online 24/7",
         "Calendario condiviso staff",
         "Notifiche automatiche (conferma + promemoria)",
@@ -180,11 +180,11 @@
     },
     "differenziatori": {
       "title": "Tre cose che non trovi altrove.",
-      "block1Title": "\"I clienti sono tuoi.\"",
+      "block1Title": "I clienti sono tuoi.",
       "block1Body": "Prenotano da un'app con il tuo nome. Non da un marketplace condiviso. Nessun intermediario. Nessuna commissione. I dati dei tuoi clienti appartengono a te — e solo a te.",
-      "block2Title": "\"L'AI gira sui tuoi dati.\"",
+      "block2Title": "L'AI gira sui tuoi dati.",
       "block2Body": "Coach AI non usa API esterne. Non manda i tuoi dati a nessun servizio di terze parti. Impara dal tuo locale, solo dal tuo locale. Più lo usi, più diventa preciso.",
-      "block3Title": "\"Il brand è tuo.\"",
+      "block3Title": "Il brand è tuo.",
       "block3Body": "Dall'icona dell'app al colore dei bottoni. I tuoi clienti non sanno che usi HŪBIA. Sanno solo che hai un'app professionale che funziona meglio di tutto quello che hanno visto."
     },
     "ctaFinal": {

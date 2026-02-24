@@ -158,18 +158,18 @@
         "Dedicated support"
       ],
       "coachNote": "* Coach AI activates automatically after 60 days of real data. Your data never leaves the system.",
-      "compareAppWhiteLabel": "App cliente con il tuo logo e il tuo nome",
-      "compareLoyalty": "Tessera fedeltà digitale",
+      "compareAppWhiteLabel": "Client app with your logo and name",
+      "compareLoyalty": "Digital loyalty card",
       "comparePush": "Push notification",
       "compareHubiaApp": "Hubia App Hub",
-      "compareAnalytics": "Analytics completa",
-      "compareBroadcast": "Messaggi push a tutti i clienti",
-      "compareRecurring": "Ricorrenti automatici",
+      "compareAnalytics": "Full analytics",
+      "compareBroadcast": "Push messages to all clients",
+      "compareRecurring": "Automatic recurring appointments",
       "compareCoachAi": "Coach AI",
-      "compareForecast": "Previsione incassi",
-      "comparePromo": "Promo automatiche",
+      "compareForecast": "Revenue forecast",
+      "comparePromo": "Automatic promos",
       "compareSetup": "Setup",
-      "compareCanone": "Canone"
+      "compareCanone": "Monthly fee"
     },
     "projectsCustom": {
       "title": "Custom projects",

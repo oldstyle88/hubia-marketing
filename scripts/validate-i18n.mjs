@@ -15,8 +15,8 @@ const messagesDir = path.join(__dirname, '..', 'messages')
 const baselineLocale = 'it'
 const otherLocales = ['en', 'de', 'es', 'fr']
 
-/** Key prefixes that should be localized (warn if same as IT). */
-const CRITICAL_PREFIXES = ['nav.', 'home.hero.', 'meta.']
+/** Key prefixes that should be localized (warn if same as IT). For full Italian-in-non-IT check, run: npm run i18n:audit-non-it */
+const CRITICAL_PREFIXES = ['nav.', 'home.hero.', 'meta.', 'home.', 'pricing.', 'plans.', 'contact.', 'footer.', 'privacy.', 'terms.']
 
 function loadJson(filePath) {
   try {

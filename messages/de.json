@@ -31,10 +31,10 @@
       ],
       "ctaPrimary": "Beratung anfragen",
       "ctaSecondary": "So funktioniert es",
-      "titleLine1": "I tuoi clienti hanno un'app.",
-      "titleLine2": "Il tuo staff ha una dashboard.",
-      "titleLine3": "Tu hai il controllo.",
-      "statRow": "96 prenotazioni questa settimana  ·  +23% ritorno clienti  ·  0 commissioni"
+      "titleLine1": "Deine Kunden haben eine App.",
+      "titleLine2": "Dein Team hat ein Dashboard.",
+      "titleLine3": "Du hast die Kontrolle.",
+      "statRow": "96 Buchungen diese Woche  ·  +23% Stammkunden  ·  0 Kommission"
     },
     "forWho": {
       "title": "Für alle, die mit Menschen arbeiten, nicht mit Chaos.",
@@ -48,8 +48,8 @@
       "card4Title": "Pet Grooming",
       "card4Desc": "Fellpflege und Tierpflege. Einfache Termine für dich und deine vierbeinigen Kunden.",
       "microText": "Für Betriebe mit komplexeren Abläufen bauen wir maßgeschneiderte Lösungen.",
-      "customBoxText": "Hai un'attività con flussi diversi o più complessi?",
-      "customBoxLink": "Leggi la sezione Soluzioni Dedicate"
+      "customBoxText": "Hast du einen Betrieb mit anderen oder komplexeren Abläufen?",
+      "customBoxLink": "Lies den Abschnitt Individuelle Lösungen"
     },
     "benefits": {
       "title": "Was wir dir abnehmen",
@@ -73,8 +73,8 @@
       "step3Title": "Wächst mit deinem Business",
       "step3Desc": "Mehr Staff, mehr Services, mehr Kunden: das System passt sich an. Ohne Werkzeuge zu wechseln.",
       "setupNote": "Die Setup-Kosten können auf 6 oder 12 Monate verteilt werden.",
-      "step4Title": "Cresci",
-      "step4Desc": "Più staff, più servizi, più sedi. Il sistema si adatta. I tuoi dati restano tuoi. Sempre."
+      "step4Title": "Skalieren",
+      "step4Desc": "Mehr Team, mehr Services, mehr Standorte. Das System passt sich an. Deine Daten bleiben deine. Immer."
     },
     "plansHome": {
       "title": "Die Pläne",
@@ -115,61 +115,61 @@
       ],
       "customSetup": "Angebot",
       "customMonthly": "Auf Anfrage",
-      "studioCta": "Richiedi Studio",
+      "studioCta": "Studio anfragen",
       "studioFeatures": [
-        "App cliente con il tuo logo, i tuoi colori e il tuo nome",
-        "Prenotazioni online 24/7",
-        "Calendario condiviso staff",
-        "Notifiche automatiche (conferma + promemoria)",
-        "Rubrica clienti con storico appuntamenti",
-        "Tessera fedeltà digitale configurabile",
-        "Push notification clienti",
-        "Report base (prenotazioni, incassi)",
-        "Supporto email — risposta entro 24h"
+        "Kunden-App mit deinem Logo, deinen Farben und deinem Namen",
+        "Online-Buchungen 24/7",
+        "Gemeinsamer Team-Kalender",
+        "Automatische Benachrichtigungen (Bestätigung + Erinnerung)",
+        "Kundendatenbank mit Terminhistorie",
+        "Konfigurierbare digitale Treuekarte",
+        "Push-Benachrichtigungen für Kunden",
+        "Basis-Reports (Buchungen, Umsatz)",
+        "E-Mail-Support — Antwort innerhalb 24h"
       ],
       "proName": "Pro",
-      "proForWho": "Per team 4-10 persone.",
+      "proForWho": "Für Teams mit 4–10 Personen.",
       "proSetup": "€1.400",
-      "proSetupNote": "rateizzabile",
-      "proCanone": "€149 / mese",
-      "proCta": "Richiedi Pro",
-      "proTag": "Più scelto",
+      "proSetupNote": "auf 6 oder 12 Monate verteilbar",
+      "proCanone": "€149 / Monat",
+      "proCta": "Pro anfragen",
+      "proTag": "Am häufigsten gewählt",
       "proFeatures": [
-        "Tutto il piano Studio",
-        "Integrazione Hubia App (il tuo locale nell'app nativa iOS/Android)",
-        "Analytics completa (incassi, occupazione, performance staff)",
-        "Broadcast push marketing ai clienti",
-        "Segmentazione clienti (dormienti, VIP, a rischio)",
-        "Appuntamenti ricorrenti automatici",
-        "Export dati PDF e CSV",
-        "Supporto prioritario — risposta entro 4h"
+        "Alles aus Studio",
+        "Hubia-App-Integration (dein Betrieb in der nativen iOS/Android-App)",
+        "Vollständige Analytics (Umsatz, Auslastung, Team-Performance)",
+        "Push-Marketing an alle Kunden",
+        "Kundensegmentierung (inaktiv, VIP, gefährdet)",
+        "Automatische Wiederholungstermine",
+        "PDF- und CSV-Datenexport",
+        "Prioritäts-Support — Antwort innerhalb 4h"
       ],
-      "signatureCta": "Richiedi Signature",
-      "signatureTag": "Coach AI incluso",
+      "signatureCta": "Signature anfragen",
+      "signatureTag": "Coach AI inklusive",
       "signatureFeatures": [
-        "Tutto il piano Pro",
-        "Coach AI — attivo dopo 60 giorni di utilizzo reale",
-        "Previsione incassi 14 giorni (AI locale, zero API esterne)",
-        "Avvisi sui clienti che potrebbero smettere di venire",
-        "Promo automatiche per appuntamenti vuoti",
-        "Coach Auto — campagne ai dormienti senza intervento manuale",
-        "Dashboard valore cliente (quanto spende ogni cliente nel tempo)",
-        "Branding avanzato (font, layout, hero personalizzati)",
-        "Supporto dedicato"
+        "Alles aus Pro",
+        "Coach AI — aktiv nach 60 Tagen Nutzung",
+        "14-Tage-Umsatzprognose (lokale KI, keine externen APIs)",
+        "Hinweise auf Kunden, die möglicherweise wegbleiben",
+        "Automatische Aktionen für freie Slots",
+        "Coach Auto — Kampagnen für inaktive Kunden ohne manuelles Eingreifen",
+        "Dashboard Kundenwert (was jeder Kunde über Zeit ausgibt)",
+        "Erweitertes Branding (Schriften, Layout, Hero anpassbar)",
+        "Dedizierter Support"
       ],
-      "coachNote": "* Coach AI si attiva automaticamente dopo 60 giorni di dati reali. I tuoi dati non lasciano mai il sistema.",
-      "compareAppWhiteLabel": "App cliente con il tuo logo e il tuo nome",
-      "compareLoyalty": "Tessera fedeltà digitale",
-      "comparePush": "Push notification",
+      "coachNote": "* Coach AI aktiviert sich automatisch nach 60 Tagen realer Nutzung. Deine Daten verlassen nie das System.",
+      "compareAppWhiteLabel": "Kunden-App mit deinem Logo und Namen",
+      "compareLoyalty": "Digitale Treuekarte",
+      "comparePush": "Push-Benachrichtigung",
       "compareHubiaApp": "Hubia App Hub",
-      "compareAnalytics": "Analytics completa",
-      "compareBroadcast": "Messaggi push a tutti i clienti",
-      "compareRecurring": "Ricorrenti automatici",
+      "compareAnalytics": "Vollständige Analytics",
+      "compareBroadcast": "Push an alle Kunden",
+      "compareRecurring": "Automatische Wiederholungen",
       "compareCoachAi": "Coach AI",
-      "compareForecast": "Previsione incassi",
-      "comparePromo": "Promo automatiche",
+      "compareForecast": "Umsatzprognose",
+      "comparePromo": "Automatische Aktionen",
       "compareSetup": "Setup",
-      "compareCanone": "Canone"
+      "compareCanone": "Monatsbeitrag"
     },
     "projectsCustom": {
       "title": "Maßgeschneiderte Projekte",
@@ -188,66 +188,66 @@
       "title": "Lass uns reden",
       "subtitle": "Unverbindlich, ohne aggressive Verkaufsgespräche.",
       "cta": "Beratung anfragen",
-      "reassurance1": "Nessun vincolo contrattuale lungo",
-      "reassurance2": "Setup rateizzabile",
-      "reassurance3": "Supporto umano sempre"
+      "reassurance1": "Keine langfristige Vertragsbindung",
+      "reassurance2": "Setup auf 6 oder 12 Monate verteilbar",
+      "reassurance3": "Menschlicher Support immer"
     },
     "problem": {
-      "title": "Gestire un locale nel 2026 non dovrebbe essere questo caos.",
-      "titleLine1": "Gestire un locale nel 2026",
-      "titleLine2": "non dovrebbe essere questo caos.",
-      "p1": "Prenotazioni su WhatsApp, agenda su carta, staff che non sa cosa fa domani. Clienti che non tornano perché nessuno li ha richiamati. Incassi che non si capisce da dove vengono e dove vanno.",
-      "p2": "Non è colpa tua. È colpa degli strumenti che hai usato finora. Strumenti generici, costruiti per qualsiasi attività — e quindi perfetti per nessuna.",
-      "p3": "HŪBIA è costruito per una cosa sola: locali come il tuo.",
-      "transition": "Ecco come funziona."
+      "title": "Einen Betrieb 2026 zu führen sollte kein Chaos sein.",
+      "titleLine1": "Einen Betrieb 2026 führen",
+      "titleLine2": "sollte kein Chaos sein.",
+      "p1": "Buchungen über WhatsApp, Agenda auf Papier, Team weiß nicht, was morgen ansteht. Kunden kommen nicht wieder, weil niemand nachfragt. Umsätze, die sich nicht nachverfolgen lassen.",
+      "p2": "Es liegt nicht an dir. Es liegt an den Tools, die du bisher genutzt hast. Generische Tools für jeden Betrieb — und damit für keinen wirklich passend.",
+      "p3": "HŪBIA ist für eine Sache gebaut: Betriebe wie deinen.",
+      "transition": "So funktioniert es."
     },
     "threeLevels": {
-      "title": "Un sistema. Tre livelli.",
-      "subtitle": "Ogni parte fa la sua cosa. Insieme fanno tutto.",
-      "card1Title": "Un'app con il tuo nome",
-      "card1Body": "I tuoi clienti scaricano Hubia App una volta sola. Aggiungono il tuo locale scansionando un QR. Prenotano, vedono i loro punti fedeltà, ricevono notifiche push native iOS e Android. Tutto con il tuo logo. Il tuo nome. I tuoi colori. Zero commissioni. I clienti sono tuoi.",
-      "card2Title": "Controllo totale per chi gestisce",
-      "card2Body": "Il tuo team lavora su una dashboard professionale, desktop e mobile, in tempo reale. Prenotazioni live, clienti, assenze, servizi. Analytics su incassi, occupazione e performance staff. Ogni dato che ti serve, sempre aggiornato.",
-      "card3Title": "L'AI che impara dal tuo locale",
-      "card3Body": "Dopo 60 giorni di utilizzo, Coach AI si attiva. Prevede gli incassi dei prossimi 14 giorni. Ti dice quali clienti stanno per smettere di venire. Crea promo automatiche per riempire gli appuntamenti vuoti. Gira sui tuoi dati. Solo sui tuoi. Nessuna API esterna. Nessun dato condiviso.",
-      "coachBadge": "★ Piano Signature · Si attiva dopo 60 giorni di dati reali"
+      "title": "Ein System. Drei Ebenen.",
+      "subtitle": "Jeder Teil erledigt seine Aufgabe. Zusammen ergeben sie alles.",
+      "card1Title": "Eine App mit deinem Namen",
+      "card1Body": "Deine Kunden laden die Hubia App einmal herunter. Sie fügen deinen Betrieb per QR-Scan hinzu. Sie buchen, sehen Treuepunkte, erhalten native Push-Benachrichtigungen für iOS und Android. Alles mit deinem Logo, deinem Namen, deinen Farben. Keine Kommission. Die Kunden gehören dir.",
+      "card2Title": "Volle Kontrolle für Verantwortliche",
+      "card2Body": "Dein Team arbeitet mit einem professionellen Dashboard, Desktop und mobil, in Echtzeit. Live-Buchungen, Kunden, Abwesenheiten, Services. Analytics zu Umsatz, Auslastung und Team-Performance. Alle Kennzahlen, immer aktuell.",
+      "card3Title": "KI, die von deinem Betrieb lernt",
+      "card3Body": "Nach 60 Tagen Nutzung aktiviert sich Coach AI. Sie prognostiziert die Umsätze der nächsten 14 Tage. Zeigt, welche Kunden möglicherweise wegbleiben. Erstellt automatische Aktionen für freie Slots. Läuft nur auf deinen Daten. Keine externen APIs. Kein Datenaustausch.",
+      "coachBadge": "★ Signature-Plan · Aktivierung nach 60 Tagen realer Nutzung"
     },
     "hubApp": {
       "label": "HUBIA APP",
-      "titleLine1": "Una sola app.",
-      "titleLine2": "Tutti i tuoi locali preferiti.",
-      "body": "I clienti non vogliono scaricare un'app diversa per ogni posto che frequentano. Hubia App è l'app nativa iOS e Android che fa da hub personale. Scansioni un QR, aggiungi il locale, e sei dentro — con il tuo account, le tue prenotazioni, i tuoi punti fedeltà. Un solo login. Tutti i locali. Agenda aggregata. Push notification native per ogni appuntamento.",
+      "titleLine1": "Eine App.",
+      "titleLine2": "Alle deine Lieblingsbetriebe.",
+      "body": "Kunden wollen nicht für jeden Ort eine andere App. Die Hubia App ist die native iOS- und Android-App als persönlicher Hub. QR scannen, Betrieb hinzufügen — mit einem Konto, deinen Buchungen, deinen Treuepunkten. Ein Login. Alle Betriebe. Eine zusammengeführte Agenda. Native Push-Benachrichtigungen für jeden Termin.",
       "features": [
-        "Aggiungi un locale scansionando il QR all'ingresso",
-        "Login unico — nessun account separato per ogni posto",
-        "Prossimi appuntamenti da tutti i locali in una schermata",
-        "Notifiche push native iOS e Android, zero configurazione"
+        "Betrieb per QR am Eingang hinzufügen",
+        "Ein Login — kein separates Konto pro Betrieb",
+        "Nächste Termine aller Betriebe auf einen Blick",
+        "Native iOS- und Android-Push-Benachrichtigungen, null Konfiguration"
       ],
-      "note": "Ogni locale mantiene la sua app branded. Hubia App la integra senza che il cliente se ne accorga. Lui vede solo il tuo brand."
+      "note": "Jeder Betrieb behält seine Branded-App. Die Hubia App integriert sie, sodass der Kunde nur deine Marke sieht."
     },
     "soluzioniDedicate": {
-      "label": "SOLUZIONI DEDICATE",
-      "titleLine1": "Hai bisogno di qualcosa",
-      "titleLine2": "che non esiste ancora?",
-      "body": "Alcune attività hanno flussi operativi unici. Multi-sede con logiche diverse. Verticali non standard. Integrazioni con sistemi esistenti. App con architettura e design completamente su misura. Non adattiamo il prodotto al tuo business. Costruiamo il prodotto per il tuo business.",
-      "card1Title": "Gestionale custom",
-      "card1Desc": "Un sistema operativo pensato esattamente per il tuo modello. Flussi, ruoli, logiche — costruiti da zero sul tuo caso d'uso.",
-      "card2Title": "App dedicata",
-      "card2Desc": "Un'app nativa iOS e Android con il tuo brand, architettura e UX progettate per la tua attività specifica.",
-      "card3Title": "Integrazione e migrazione",
-      "card3Desc": "Hai già un sistema? Lo integriamo o migriamo i tuoi dati senza interruzioni operative.",
-      "closingBox": "Ogni soluzione dedicata è un progetto a sé. I costi variano in base alla complessità e alla portata. Il primo passo è capire cosa ti serve davvero.",
-      "cta": "Parliamo del tuo progetto",
-      "ctaNote": "Risposta entro 24h. Nessun impegno."
+      "label": "INDIVIDUELLE LÖSUNGEN",
+      "titleLine1": "Brauchst du etwas,",
+      "titleLine2": "das es noch nicht gibt?",
+      "body": "Manche Betriebe haben einzigartige Abläufe. Multi-Standort mit anderer Logik. Nicht-standardisierte Branchen. Integration in bestehende Systeme. Apps mit komplett maßgeschneiderter Architektur und Design. Wir passen das Produkt nicht nur an — wir bauen es für dein Business.",
+      "card1Title": "Maßgeschneidertes Verwaltungssystem",
+      "card1Desc": "Ein Betriebssystem, das exakt zu deinem Modell passt. Abläufe, Rollen, Logik — von Grund auf für deinen Use Case gebaut.",
+      "card2Title": "Eigene App",
+      "card2Desc": "Eine native iOS- und Android-App mit deiner Marke, Architektur und UX für deinen spezifischen Betrieb.",
+      "card3Title": "Integration und Migration",
+      "card3Desc": "Bereits ein System im Einsatz? Wir integrieren oder migrieren deine Daten ohne Unterbrechung.",
+      "closingBox": "Jede individuelle Lösung ist ein eigenes Projekt. Die Kosten hängen von Umfang und Komplexität ab. Der erste Schritt ist zu verstehen, was du wirklich brauchst.",
+      "cta": "Sprich mit uns über dein Projekt",
+      "ctaNote": "Antwort innerhalb 24h. Unverbindlich."
     },
     "differenziatori": {
-      "title": "Tre cose che non trovi altrove.",
-      "block1Title": "I clienti sono tuoi.",
-      "block1Body": "Prenotano da un'app con il tuo nome. Non da un marketplace condiviso. Nessun intermediario. Nessuna commissione. I dati dei tuoi clienti appartengono a te — e solo a te.",
-      "block2Title": "L'AI gira sui tuoi dati.",
-      "block2Body": "Coach AI non usa API esterne. Non manda i tuoi dati a nessun servizio di terze parti. Impara dal tuo locale, solo dal tuo locale. Più lo usi, più diventa preciso.",
-      "block3Title": "Il brand è tuo.",
-      "block3Body": "Dall'icona dell'app al colore dei bottoni. I tuoi clienti non sanno che usi HŪBIA. Sanno solo che hai un'app professionale che funziona meglio di tutto quello che hanno visto."
+      "title": "Drei Dinge, die du woanders nicht findest.",
+      "block1Title": "Die Kunden gehören dir.",
+      "block1Body": "Sie buchen über eine App mit deinem Namen. Nicht über einen gemeinsamen Marketplace. Kein Mittelsmann. Keine Kommission. Die Daten deiner Kunden gehören dir — und nur dir.",
+      "block2Title": "Die KI läuft auf deinen Daten.",
+      "block2Body": "Coach AI nutzt keine externen APIs. Sie schickt deine Daten nirgendwo hin. Sie lernt von deinem Betrieb, nur von deinem. Je mehr du nutzt, desto genauer wird sie.",
+      "block3Title": "Die Marke ist deine.",
+      "block3Body": "Vom App-Icon bis zu den Button-Farben. Deine Kunden wissen nicht, dass du HŪBIA nutzt. Sie wissen nur, dass du eine professionelle App hast, die besser funktioniert als alles, was sie kennen."
     }
   },
   "pricing": {
@@ -320,7 +320,7 @@
       ]
     },
     "multiSiteNote": "Multi-Standort (2-5 Standorte): gleicher Preis pro Standort. Setup €900 erster Standort, €400 weitere Standorte. Über 5 Standorte: individuelles Angebot.",
-    "metaDescription": "Tre piani: Studio (€800 setup + €89/mese), Pro (€1.400 setup + €149/mese) e Signature (€1.900 setup + €209/mese). Setup rateizzabile. Coach AI incluso con Signature."
+    "metaDescription": "Drei Pläne: Studio (€900 Setup + €89/Monat), Pro (€1.400 Setup + €149/Monat), Signature (€1.400 Setup + €120/Monat). Setup auf 6 oder 12 Monate verteilbar. Coach AI im Signature-Plan inklusive."
   },
   "plans": {
     "pro": {
@@ -350,16 +350,16 @@
     },
     "pro2": {
       "name": "Pro",
-      "description": "Per team da 4 a 10 persone. Con l'app Hubia e strumenti di marketing.",
+      "description": "Für Teams mit 4–10 Personen. Mit Hubia App und Marketing-Tools.",
       "features": [
-        "Tutto il piano Studio",
-        "Il tuo locale nell'app Hubia (iOS e Android)",
-        "Analytics completa: incassi, occupazione, performance staff",
-        "Messaggi push a tutti i clienti (marketing)",
-        "Segmentazione clienti: dormienti, VIP, a rischio",
-        "Prenotazioni ricorrenti automatiche",
-        "Export dati in PDF e CSV",
-        "Supporto prioritario entro 4 ore"
+        "Alles aus Studio",
+        "Dein Betrieb in der Hubia App (iOS und Android)",
+        "Vollständige Analytics: Umsatz, Auslastung, Team-Performance",
+        "Push-Marketing an alle Kunden",
+        "Kundensegmentierung: inaktiv, VIP, gefährdet",
+        "Automatische Wiederholungstermine",
+        "PDF- und CSV-Datenexport",
+        "Prioritäts-Support innerhalb 4h"
       ]
     }
   },

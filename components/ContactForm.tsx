@@ -70,11 +70,11 @@ export function ContactForm() {
         setFormData({ name: '', email: '', phone: '', business: '', message: '', website: '' })
       } else {
         setSubmitStatus('error')
-        setErrorMessage(typeof data.error === 'string' ? data.error : 'Si è verificato un errore. Riprova più tardi.')
+        setErrorMessage(typeof data.error === 'string' ? data.error : t('errors.generic'))
       }
     } catch {
       setSubmitStatus('error')
-      setErrorMessage('Errore di connessione. Riprova più tardi.')
+      setErrorMessage(t('errors.network'))
     } finally {
       setIsSubmitting(false)
     }
@@ -146,17 +146,17 @@ export function ContactForm() {
 
         <div className="space-y-6">
           <div className="card-deep rounded-[24px] border border-[var(--line)] bg-[var(--bg-alt)] p-7">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--secondary)]">Processo</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--secondary)]">{t('process.title')}</p>
             <div className="mt-4 space-y-3 text-[var(--text)]">
-              <p className="rounded-xl border border-[var(--line)] bg-white/70 px-4 py-3 text-sm">1. Call di allineamento operativo</p>
-              <p className="rounded-xl border border-[var(--line)] bg-white/70 px-4 py-3 text-sm">2. Setup e configurazione guidata</p>
-              <p className="rounded-xl border border-[var(--line)] bg-white/70 px-4 py-3 text-sm">3. Go-live con supporto dedicato</p>
+              <p className="rounded-xl border border-[var(--line)] bg-white/70 px-4 py-3 text-sm">1. {t('process.step1')}</p>
+              <p className="rounded-xl border border-[var(--line)] bg-white/70 px-4 py-3 text-sm">2. {t('process.step2')}</p>
+              <p className="rounded-xl border border-[var(--line)] bg-white/70 px-4 py-3 text-sm">3. {t('process.step3')}</p>
             </div>
           </div>
 
           {badgeList.length > 0 && (
             <div className="card rounded-[24px] border border-[var(--line)] bg-white/82 p-6">
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--secondary)]">Standard</p>
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--secondary)]">{t('standardLabel')}</p>
               <div className="flex flex-wrap gap-2">
                 {badgeList.map((badge) => (
                   <span

@@ -1,18 +1,30 @@
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getLocale } from 'next-intl/server'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Section } from '@/components/Section'
+
+const localeToDateLocale: Record<string, string> = {
+  it: 'it-IT',
+  en: 'en-US',
+  de: 'de-DE',
+  es: 'es-ES',
+  fr: 'fr-FR',
+}
+
+const LEGAL_ADDRESS = process.env.NEXT_PUBLIC_LEGAL_ADDRESS || '—'
 
 export async function generateMetadata() {
   const t = await getTranslations('privacy')
   return {
     title: `${t('title')} — HŪBIA`,
-    description: 'Informativa sulla privacy di HŪBIA. Come raccogliamo, utilizziamo e proteggiamo i tuoi dati.',
+    description: t('metaDescription'),
   }
 }
 
 export default async function PrivacyPage() {
   const t = await getTranslations('privacy')
+  const locale = await getLocale()
+  const dateLocale = localeToDateLocale[locale] || 'it-IT'
 
   return (
     <div className="min-h-screen flex flex-col bg-[var(--bg)]">
@@ -27,7 +39,7 @@ export default async function PrivacyPage() {
 
             <p className="mb-6 text-[var(--text)]">
               <strong>{t('lastUpdate')}:</strong>{' '}
-              {new Date().toLocaleDateString('it-IT', { year: 'numeric', month: 'long', day: 'numeric' })}
+              {new Date().toLocaleDateString(dateLocale, { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
 
             <div className="space-y-8 text-[var(--text)] leading-relaxed">
@@ -135,7 +147,7 @@ export default async function PrivacyPage() {
                 <p>Per esercitare i tuoi diritti o per domande sulla privacy, contattaci a:</p>
                 <p className="mt-3">
                   <strong>Email:</strong> privacy@hubia.com<br />
-                  <strong>Indirizzo:</strong> [Indirizzo legale da inserire]
+                  <strong>Indirizzo:</strong> {LEGAL_ADDRESS}
                 </p>
               </section>
             </div>

@@ -44,6 +44,14 @@ npm run dev
 
 Apri [http://localhost:3000](http://localhost:3000); rotte con locale (es. `/it`, `/en`).
 
+## i18n (traduzioni)
+
+- **Schema di riferimento:** `messages/it.json` è la fonte di verità; gli altri locale (`en`, `de`, `es`, `fr`) devono avere le stesse chiavi.
+- **Validazione:** `npm run i18n:check` — confronta le chiavi di tutti i locale con `it.json` ed esce con errore se mancano chiavi.
+- **Script in `scripts/`:**
+  - `validate-i18n.mjs` — legge `it.json` e verifica che en/de/es/fr abbiano tutte le chiavi (leaf); segnala anche chiavi extra.
+  - `sync-i18n-from-baseline.mjs` — copia in en/de/es/fr le chiavi mancanti da `it.json` (solo aggiunte, nessuna sovrascrittura).
+
 ## Deploy
 
 **Vercel:** importa questo repo, root directory vuota, env `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY`. Vedi `docs/VERCEL_SUPABASE_SETUP.md`.

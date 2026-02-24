@@ -197,6 +197,7 @@
     }
   },
   "pricing": {
+    "metaDescription": "Tre piani: Studio (€800 setup + €89/mese), Pro (€1.400 setup + €149/mese) e Signature (€1.900 setup + €209/mese). Setup rateizzabile. Coach AI incluso con Signature.",
     "title": "Prezzi",
     "subtitle": "Tre piani per ogni fase della tua crescita. Setup una tantum, canone fisso mensile. Nessuna commissione.",
     "pwaBlock": {
@@ -389,7 +390,18 @@
     "businessFood": "Ristorazione (pizzeria, street food)",
     "businessGym": "Altre attivita locali (su richiesta)",
     "businessMedical": "Studi medici",
-    "businessPet": "Pet grooming"
+    "businessPet": "Pet grooming",
+    "errors": {
+      "generic": "Si è verificato un errore. Riprova più tardi.",
+      "network": "Errore di connessione. Riprova più tardi."
+    },
+    "process": {
+      "title": "Processo",
+      "step1": "Call di allineamento operativo",
+      "step2": "Setup e configurazione guidata",
+      "step3": "Go-live con supporto dedicato"
+    },
+    "standardLabel": "Standard"
   },
   "footer": {
     "tagline": "HŪBIA — Infrastruttura operativa per barberie, saloni e studi professionali.",
@@ -406,10 +418,12 @@
   },
   "privacy": {
     "title": "Privacy Policy",
+    "metaDescription": "Informativa sulla privacy di HŪBIA. Come raccogliamo, utilizziamo e proteggiamo i tuoi dati.",
     "lastUpdate": "Ultimo aggiornamento"
   },
   "terms": {
     "title": "Termini di Servizio",
+    "metaDescription": "Termini e condizioni di utilizzo del servizio HŪBIA.",
     "lastUpdate": "Ultimo aggiornamento"
   },
   "common": {

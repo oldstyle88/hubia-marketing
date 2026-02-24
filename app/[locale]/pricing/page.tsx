@@ -10,7 +10,7 @@ export async function generateMetadata() {
   const t = await getTranslations('pricing')
   return {
     title: `${t('title')} — HŪBIA`,
-    description: 'Tre piani: Studio (€800 setup + €89/mese), Pro (€1.400 setup + €149/mese) e Signature (€1.900 setup + €209/mese). Setup rateizzabile. Coach AI incluso con Signature.',
+    description: t('metaDescription'),
   }
 }
 

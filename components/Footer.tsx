@@ -18,7 +18,7 @@ export async function Footer() {
         <div>
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gray)]">{t('product')}</p>
           <div className="flex flex-col">
-            <Link href="/#benefits" className={linkClass}>{tNav('product')}</Link>
+            <Link href="/#coach-ai" className={linkClass}>{tNav('product')}</Link>
             <Link href="/pricing" className={linkClass}>{tNav('pricing')}</Link>
             <Link href="/pricing#faq" className={linkClass}>{tNav('faq')}</Link>
           </div>

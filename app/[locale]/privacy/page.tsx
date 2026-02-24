@@ -44,110 +44,94 @@ export default async function PrivacyPage() {
 
             <div className="space-y-8 text-[var(--text)] leading-relaxed">
               <section>
-                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">1. Introduzione</h2>
-                <p>
-                  HŪBIA (&quot;noi&quot;, &quot;nostro&quot;, &quot;nostra&quot;) rispetta la tua privacy e si impegna a proteggere i tuoi dati personali.
-                  Questa informativa sulla privacy spiega come raccogliamo, utilizziamo, conserviamo e proteggiamo le tue informazioni
-                  quando utilizzi il nostro servizio.
-                </p>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">{t('p1Title')}</h2>
+                <p>{t('p1Body')}</p>
               </section>
 
               <section>
-                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">2. Dati che raccogliamo</h2>
-                <p className="mb-3">Raccogliamo i seguenti tipi di dati personali:</p>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">{t('p2Title')}</h2>
+                <p className="mb-3">{t('p2Intro')}</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>Dati di contatto:</strong> nome, indirizzo email, numero di telefono</li>
-                  <li><strong>Dati aziendali:</strong> nome dell&apos;attività, tipo di attività, informazioni di fatturazione</li>
-                  <li><strong>Dati di utilizzo:</strong> informazioni su come utilizzi il nostro servizio, log di accesso, preferenze</li>
-                  <li><strong>Dati tecnici:</strong> indirizzo IP, tipo di browser, sistema operativo, informazioni sul dispositivo</li>
+                  <li>{t('p2Li1')}</li>
+                  <li>{t('p2Li2')}</li>
+                  <li>{t('p2Li3')}</li>
+                  <li>{t('p2Li4')}</li>
                 </ul>
               </section>
 
               <section>
-                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">3. Come utilizziamo i tuoi dati</h2>
-                <p className="mb-3">Utilizziamo i tuoi dati personali per:</p>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">{t('p3Title')}</h2>
+                <p className="mb-3">{t('p3Intro')}</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Fornire e migliorare il nostro servizio</li>
-                  <li>Processare le tue richieste e gestire il tuo account</li>
-                  <li>Comunicare con te riguardo al servizio, aggiornamenti e supporto</li>
-                  <li>Rispettare obblighi legali e regolamentari</li>
-                  <li>Prevenire frodi e garantire la sicurezza</li>
+                  <li>{t('p3Li1')}</li>
+                  <li>{t('p3Li2')}</li>
+                  <li>{t('p3Li3')}</li>
+                  <li>{t('p3Li4')}</li>
+                  <li>{t('p3Li5')}</li>
                 </ul>
               </section>
 
               <section>
-                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">4. Base giuridica del trattamento</h2>
-                <p>Trattiamo i tuoi dati personali sulla base di:</p>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">{t('p4Title')}</h2>
+                <p>{t('p4Intro')}</p>
                 <ul className="list-disc pl-6 space-y-2 mt-3">
-                  <li><strong>Esecuzione del contratto:</strong> per fornire il servizio richiesto</li>
-                  <li><strong>Consenso:</strong> quando hai fornito il consenso esplicito</li>
-                  <li><strong>Interesse legittimo:</strong> per migliorare il servizio e garantire la sicurezza</li>
-                  <li><strong>Obbligo legale:</strong> per rispettare obblighi di legge</li>
+                  <li>{t('p4Li1')}</li>
+                  <li>{t('p4Li2')}</li>
+                  <li>{t('p4Li3')}</li>
+                  <li>{t('p4Li4')}</li>
                 </ul>
               </section>
 
               <section>
-                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">5. Condivisione dei dati</h2>
-                <p>Non vendiamo i tuoi dati personali. Possiamo condividere i tuoi dati solo con:</p>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">{t('p5Title')}</h2>
+                <p>{t('p5Intro')}</p>
                 <ul className="list-disc pl-6 space-y-2 mt-3">
-                  <li><strong>Fornitori di servizi:</strong> provider di hosting, servizi di pagamento, servizi di email (solo per fornire il servizio)</li>
-                  <li><strong>Autorità legali:</strong> quando richiesto dalla legge o per proteggere i nostri diritti</li>
-                  <li><strong>Partner di business:</strong> solo con il tuo consenso esplicito</li>
+                  <li>{t('p5Li1')}</li>
+                  <li>{t('p5Li2')}</li>
+                  <li>{t('p5Li3')}</li>
                 </ul>
               </section>
 
               <section>
-                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">6. Conservazione dei dati</h2>
-                <p>
-                  Conserviamo i tuoi dati personali solo per il tempo necessario a fornire il servizio e rispettare obblighi legali.
-                  Quando elimini il tuo account, i dati vengono cancellati entro 30 giorni, salvo obblighi di conservazione legale.
-                </p>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">{t('p6Title')}</h2>
+                <p>{t('p6Body')}</p>
               </section>
 
               <section>
-                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">7. I tuoi diritti</h2>
-                <p className="mb-3">Hai il diritto di:</p>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">{t('p7Title')}</h2>
+                <p className="mb-3">{t('p7Intro')}</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Accedere ai tuoi dati personali</li>
-                  <li>Correggere dati inesatti o incompleti</li>
-                  <li>Richiedere la cancellazione dei tuoi dati</li>
-                  <li>Opporti al trattamento dei tuoi dati</li>
-                  <li>Richiedere la portabilità dei dati</li>
-                  <li>Revocare il consenso in qualsiasi momento</li>
-                  <li>Presentare un reclamo all&apos;autorità di controllo (Garante Privacy)</li>
+                  <li>{t('p7Li1')}</li>
+                  <li>{t('p7Li2')}</li>
+                  <li>{t('p7Li3')}</li>
+                  <li>{t('p7Li4')}</li>
+                  <li>{t('p7Li5')}</li>
+                  <li>{t('p7Li6')}</li>
+                  <li>{t('p7Li7')}</li>
                 </ul>
               </section>
 
               <section>
-                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">8. Sicurezza</h2>
-                <p>
-                  Implementiamo misure di sicurezza tecniche e organizzative appropriate per proteggere i tuoi dati personali,
-                  inclusi crittografia, accesso limitato, backup regolari e monitoraggio continuo.
-                </p>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">{t('p8Title')}</h2>
+                <p>{t('p8Body')}</p>
               </section>
 
               <section>
-                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">9. Trasferimenti internazionali</h2>
-                <p>
-                  I tuoi dati sono principalmente ospitati nell&apos;Unione Europea. Qualsiasi trasferimento al di fuori dell&apos;UE
-                  avviene solo con garanzie appropriate ai sensi del GDPR.
-                </p>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">{t('p9Title')}</h2>
+                <p>{t('p9Body')}</p>
               </section>
 
               <section>
-                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">10. Modifiche a questa policy</h2>
-                <p>
-                  Possiamo aggiornare questa informativa sulla privacy periodicamente. Ti notificheremo eventuali modifiche
-                  significative via email o tramite notifica nel servizio.
-                </p>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">{t('p10Title')}</h2>
+                <p>{t('p10Body')}</p>
               </section>
 
               <section>
-                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">11. Contatti</h2>
-                <p>Per esercitare i tuoi diritti o per domande sulla privacy, contattaci a:</p>
+                <h2 className="mb-4 text-2xl font-semibold text-[var(--primary)]">{t('p11Title')}</h2>
+                <p>{t('p11Body')}</p>
                 <p className="mt-3">
-                  <strong>Email:</strong> privacy@hubia.com<br />
-                  <strong>Indirizzo:</strong> {LEGAL_ADDRESS}
+                  <strong>{t('p11EmailLabel')}</strong> privacy@hubia.com<br />
+                  <strong>{t('p11AddressLabel')}</strong> {LEGAL_ADDRESS}
                 </p>
               </section>
             </div>

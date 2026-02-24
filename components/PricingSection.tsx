@@ -56,7 +56,7 @@ export async function PricingSection() {
     { labelKey: 'compareForecast' as const, studio: false, pro: false, signature: true },
     { labelKey: 'comparePromo' as const, studio: false, pro: false, signature: true },
     { labelKey: 'compareSetup' as const, studio: '€800', pro: '€1.400', signature: '€1.900' },
-    { labelKey: 'compareCanone' as const, studio: '€89/mese', pro: '€149/mese', signature: '€209/mese' },
+    { labelKey: 'compareCanone' as const, studio: t('studioCanone'), pro: t('proCanone'), signature: t('signatureCanone') },
   ]
 
   return (

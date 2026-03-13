@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "HŪBIA — App e AI per barberie, saloni e studi professionali",
-    "desc": "Sistema operativo per locali: app branded per i clienti, dashboard AI per lo staff. Zero commissioni. Coach AI incluso con piano Signature."
+    "desc": "Sistema operativo per locali: app branded per i clienti, dashboard AI per lo staff. Tre piani: Studio, Signature, Coach. Coach AI solo con piano Coach."
   },
   "nav": {
     "app": "App",
@@ -54,7 +54,7 @@
       "card2Body": "Il tuo team lavora su una dashboard professionale, desktop e mobile, in tempo reale. Prenotazioni live, clienti, assenze, servizi. Analytics su incassi, occupazione e performance staff. Ogni dato che ti serve, sempre aggiornato.",
       "card3Title": "L'AI che impara dal tuo locale",
       "card3Body": "Dopo 60 giorni di utilizzo, Coach AI si attiva. Prevede gli incassi dei prossimi 14 giorni. Ti dice quali clienti stanno per smettere di venire. Crea promo automatiche per riempire gli appuntamenti vuoti. Gira sui tuoi dati. Solo sui tuoi. Nessuna API esterna. Nessun dato condiviso.",
-      "coachBadge": "★ Piano Signature · Si attiva dopo 60 giorni di dati reali"
+      "coachBadge": "★ Piano Coach · Coach AI si attiva dopo 60 giorni di dati reali"
     },
     "hubApp": {
       "label": "HUBIA APP",
@@ -197,12 +197,12 @@
     }
   },
   "pricing": {
-    "metaDescription": "Tre piani: Studio (€800 setup + €89/mese), Pro (€1.400 setup + €149/mese) e Signature (€1.900 setup + €209/mese). Setup rateizzabile. Coach AI incluso con Signature.",
+    "metaDescription": "Tre piani: Studio, Signature, Coach. Setup rateizzabile in 6 o 12 mesi. Coach AI incluso solo con piano Coach.",
     "title": "Prezzi",
     "subtitle": "Tre piani per ogni fase della tua crescita. Setup una tantum, canone fisso mensile. Nessuna commissione.",
     "pwaBlock": {
       "title": "App per i tuoi clienti — senza app store",
-      "body": "I tuoi clienti aggiungono la tua app direttamente dal browser del telefono, come un'icona sulla schermata home. Nessun passaggio da App Store o Google Play. Con il piano Pro e Signature, la tua attività è disponibile anche nell'app Hubia — scaricabile da store."
+      "body": "I tuoi clienti aggiungono la tua app direttamente dal browser del telefono, come un'icona sulla schermata home. Nessun passaggio da App Store o Google Play. Con Signature e Coach, la tua attività è disponibile anche nell'app Hubia — scaricabile da store."
     },
     "footer": "Setup una tantum + canone mensile fisso. Nessuna commissione sulle prenotazioni.",
     "setupSectionTitle": "Cosa include il setup",
@@ -219,11 +219,11 @@
       "q1": "Posso cambiare piano in futuro?",
       "a1": "Sì. Puoi passare a un piano superiore in qualsiasi momento. Il nuovo piano parte dal mese successivo.",
       "q2": "Qual è la differenza tra i tre piani?",
-      "a2": "Studio è per chi inizia: prenotazioni, clienti, calendario e notifiche. Pro aggiunge l'app Hubia per i tuoi clienti, analytics e marketing. Signature aggiunge il Coach AI, che dopo 60 giorni inizia a prevedere gli incassi e a suggerire azioni concrete.",
+      "a2": "Studio è per chi inizia: prenotazioni, clienti, calendario e notifiche. Signature aggiunge ricorrenti e branding avanzato. Coach aggiunge analytics e Coach AI (previsione incassi, azioni suggerite).",
       "q3": "Le funzioni dei piani superiori sono bloccate se sono in un piano base?",
       "a3": "Sì, sono attive solo nel piano che le include. Se passi a un piano superiore le trovi subito, senza cambiare sistema o reimpostare nulla.",
       "q4": "I miei clienti devono scaricare un'app?",
-      "a4": "Con Studio: no. L'app si aggiunge dal browser del telefono come un'icona, senza passare da App Store o Google Play. Con Pro e Signature: i tuoi clienti possono anche usare l'app Hubia (scaricabile da store), che raccoglie tutti i loro locali preferiti in un unico posto.",
+      "a4": "Con Studio: no. L'app si aggiunge dal browser del telefono come un'icona. Con Signature e Coach i tuoi clienti possono anche usare l'app Hubia (scaricabile da store), che raccoglie tutti i loro locali preferiti in un unico posto.",
       "q5": "Cosa include il setup?",
       "a5": "Tutto quello che serve per partire: configurazione del sistema, personalizzazione con il tuo logo e i tuoi colori, impostazione dei servizi e dello staff, test e messa online. Puoi pagarlo in 6 o 12 rate mensili.",
       "q6": "Come funziona il pagamento?",
@@ -231,16 +231,16 @@
     },
     "prices": {
       "studio": {
-        "setup": "€800",
+        "setup": "€900",
         "monthly": "€89"
       },
-      "pro": {
+      "signature": {
+        "setup": "€1.400",
+        "monthly": "€120"
+      },
+      "coach": {
         "setup": "€1.400",
         "monthly": "€149"
-      },
-      "max": {
-        "setup": "€1.900",
-        "monthly": "€209"
       }
     },
     "verticalPricing": {
@@ -249,126 +249,93 @@
       "columns": {
         "vertical": "Funzione",
         "studio": "Studio",
-        "pro": "Pro",
-        "signature": "Signature"
+        "signature": "Signature",
+        "coach": "Coach"
       },
       "rows": [
         {
-          "label": "App cliente con il tuo logo e il tuo nome",
+          "label": "App cliente con il tuo logo",
           "studio": "✓",
-          "pro": "✓",
-          "signature": "✓"
-        },
-        {
-          "label": "Tessera fedeltà digitale",
-          "studio": "✓",
-          "pro": "✓",
-          "signature": "✓"
-        },
-        {
-          "label": "Notifiche push ai clienti",
-          "studio": "✓",
-          "pro": "✓",
-          "signature": "✓"
-        },
-        {
-          "label": "App Hubia (iOS/Android)",
-          "studio": "—",
-          "pro": "✓",
-          "signature": "✓"
-        },
-        {
-          "label": "Analytics completa",
-          "studio": "—",
-          "pro": "✓",
-          "signature": "✓"
-        },
-        {
-          "label": "Marketing push ai clienti",
-          "studio": "—",
-          "pro": "✓",
-          "signature": "✓"
+          "signature": "✓",
+          "coach": "✓"
         },
         {
           "label": "Prenotazioni ricorrenti",
           "studio": "—",
-          "pro": "✓",
-          "signature": "✓"
+          "signature": "✓",
+          "coach": "✓"
+        },
+        {
+          "label": "Branding avanzato",
+          "studio": "—",
+          "signature": "✓",
+          "coach": "✓"
+        },
+        {
+          "label": "Analytics operativa",
+          "studio": "—",
+          "signature": "—",
+          "coach": "✓"
         },
         {
           "label": "Coach AI",
           "studio": "—",
-          "pro": "—",
-          "signature": "✓"
-        },
-        {
-          "label": "Previsione incassi",
-          "studio": "—",
-          "pro": "—",
-          "signature": "✓"
-        },
-        {
-          "label": "Promozioni automatiche",
-          "studio": "—",
-          "pro": "—",
-          "signature": "✓"
+          "signature": "—",
+          "coach": "✓"
         },
         {
           "label": "Setup",
-          "studio": "€800",
-          "pro": "€1.400",
-          "signature": "€1.900"
+          "studio": "€900",
+          "signature": "€1.400",
+          "coach": "€1.400"
         },
         {
           "label": "Canone mensile",
           "studio": "€89",
-          "pro": "€149",
-          "signature": "€209"
+          "signature": "€120",
+          "coach": "€149"
         }
       ]
     }
   },
   "plans": {
-    "pro": {
+    "studio": {
       "name": "Studio",
-      "description": "Per team fino a 3 persone. Tutto quello che serve per partire.",
+      "description": "Sistema operativo di base. Per professionisti e piccoli team. Prenotazioni, calendario, clienti, notifiche.",
       "features": [
-        "App cliente con il tuo logo e i tuoi colori",
         "Prenotazioni online 24/7",
-        "Calendario condiviso per lo staff",
-        "Notifiche automatiche ai clienti (conferma e promemoria)",
-        "Rubrica clienti con storico appuntamenti",
-        "Tessera fedeltà digitale configurabile",
+        "Calendario condiviso (fino a 2 staff, 5 servizi)",
+        "Gestione staff e servizi",
+        "Notifiche automatiche (conferma e promemoria)",
+        "Rubrica clienti e storico appuntamenti",
         "Report base (prenotazioni e incassi)",
-        "Supporto via email entro 24 ore"
+        "PWA installabile con il tuo logo",
+        "Supporto email entro 24 ore"
       ]
     },
-    "pro2": {
-      "name": "Pro",
-      "description": "Per team da 4 a 10 persone. Con l'app Hubia e strumenti di marketing.",
+    "signature": {
+      "name": "Signature",
+      "description": "Sistema operativo premium. Più capacità, ricorrenti, branding avanzato.",
       "features": [
         "Tutto il piano Studio",
-        "Il tuo locale nell'app Hubia (iOS e Android)",
-        "Analytics completa: incassi, occupazione, performance staff",
-        "Messaggi push a tutti i clienti (marketing)",
-        "Segmentazione clienti: dormienti, VIP, a rischio",
+        "Fino a 5 staff, 15 servizi",
         "Prenotazioni ricorrenti automatiche",
-        "Export dati in PDF e CSV",
+        "Branding avanzato (colori, font, layout)",
+        "Programma fedeltà e broadcast clienti",
+        "Il tuo locale in Hubia App (iOS e Android)",
         "Supporto prioritario entro 4 ore"
       ]
     },
-    "max": {
-      "name": "Signature",
-      "description": "Staff illimitato. Con il Coach AI che impara dal tuo locale.",
+    "coach": {
+      "name": "Coach",
+      "description": "Signature più analytics e Coach AI. Per chi vuole l'intelligenza operativa oltre al controllo.",
       "features": [
-        "Tutto il piano Pro",
-        "Coach AI — si attiva dopo 60 giorni di utilizzo",
-        "Previsione incassi per i prossimi 14 giorni",
-        "Avvisi sui clienti che potrebbero smettere di venire",
-        "Promozioni automatiche per riempire gli appuntamenti vuoti",
-        "Campagne automatiche ai clienti dormienti",
-        "Dashboard valore cliente (quanto spende ogni cliente nel tempo)",
-        "Branding avanzato: font, layout e hero personalizzati",
+        "Tutto il piano Signature",
+        "Analytics operativa (incassi, occupazione, performance)",
+        "Coach AI — attivo dopo 60 giorni di utilizzo reale",
+        "Previsione incassi 14 giorni (locale, nessuna API esterna)",
+        "Avvisi su clienti che potrebbero smettere di venire",
+        "Azioni suggerite per riempire i buchi (preparate o assistite)",
         "Supporto dedicato"
       ]
     }

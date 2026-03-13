@@ -139,14 +139,27 @@
       "signatureName": "Signature",
       "signatureForWho": "Para estudios estructurados: más servicios, más equipo, más control.",
       "signatureIncludes": [
-        "Todo lo de Studio incluido",
-        "Recurrencias automáticas avanzadas",
-        "Analytics operativos",
+        "Todo lo de Studio",
+        "Citas recurrentes automáticas",
+        "Branding avanzado",
         "Soporte prioritario"
       ],
       "signatureSetup": "1.400 € una vez",
       "signatureSetupNote": "fraccionable en 6 o 12 meses",
       "signatureCanone": "120 € / mes",
+      "coachName": "Coach",
+      "coachForWho": "Signature más analytics y Coach AI. Para locales que quieren inteligencia además de control.",
+      "coachIncludes": [
+        "Todo lo de Signature",
+        "Analytics operativos",
+        "Coach AI (tras 60 días de datos reales)",
+        "Soporte dedicado"
+      ],
+      "coachSetup": "1.400 € una vez",
+      "coachSetupNote": "fraccionable en 6 o 12 meses",
+      "coachCanone": "149 € / mes",
+      "coachCta": "Solicitar Coach",
+      "coachTag": "Coach AI incluido",
       "customName": "A medida",
       "customForWho": "Food, multisede, lógicas complejas. Presupuesto personalizado.",
       "customIncludes": [
@@ -169,37 +182,25 @@
         "Informes básicos (reservas, ingresos)",
         "Soporte por email — respuesta en 24h"
       ],
-      "proName": "Pro",
-      "proForWho": "Para equipos de 4–10 personas.",
-      "proSetup": "€1.400",
-      "proSetupNote": "fraccionable en 6 o 12 meses",
-      "proCanone": "€149 / mes",
-      "proCta": "Solicitar Pro",
-      "proTag": "Más elegido",
-      "proFeatures": [
-        "Todo lo de Studio",
-        "Integración Hubia App (tu local en la app nativa iOS/Android)",
-        "Analítica completa (ingresos, ocupación, rendimiento del equipo)",
-        "Push marketing a todos los clientes",
-        "Segmentación de clientes (inactivos, VIP, en riesgo)",
-        "Citas recurrentes automáticas",
-        "Exportación de datos PDF y CSV",
-        "Soporte prioritario — respuesta en 4h"
-      ],
       "signatureCta": "Solicitar Signature",
-      "signatureTag": "Coach AI incluido",
       "signatureFeatures": [
-        "Todo lo de Pro",
+        "Todo lo de Studio",
+        "Hasta 5 empleados, 15 servicios",
+        "Citas recurrentes automáticas",
+        "Branding avanzado",
+        "Fidelidad y broadcast",
+        "Soporte prioritario"
+      ],
+      "coachFeatures": [
+        "Todo lo de Signature",
+        "Analytics operativos",
         "Coach AI — activo tras 60 días de uso real",
-        "Previsión de ingresos 14 días (IA local, sin APIs externas)",
+        "Previsión de ingresos 14 días (local, sin APIs externas)",
         "Avisos de clientes que podrían dejar de venir",
-        "Promos automáticas para huecos vacíos",
-        "Coach Auto — campañas a clientes inactivos sin intervención manual",
-        "Panel de valor del cliente (qué gasta cada cliente en el tiempo)",
-        "Branding avanzado (tipografías, layout, hero personalizables)",
+        "Acciones sugeridas (preparadas o asistidas)",
         "Soporte dedicado"
       ],
-      "coachNote": "* Coach AI se activa automáticamente tras 60 días de datos reales. Tus datos no salen nunca del sistema.",
+      "coachNote": "* Coach AI está incluido solo en el plan Coach. Se activa tras 60 días de datos reales. Tus datos no salen nunca del sistema.",
       "compareAppWhiteLabel": "App cliente con tu logo y nombre",
       "compareLoyalty": "Tarjeta de fidelidad digital",
       "comparePush": "Notificación push",
@@ -298,8 +299,8 @@
       "card2Title": "Control total para quien gestiona",
       "card2Body": "Tu equipo trabaja en un panel profesional, escritorio y móvil, en tiempo real. Reservas en vivo, clientes, ausencias, servicios. Analítica de ingresos, ocupación y rendimiento del equipo. Todos los datos que necesitas, siempre actualizados.",
       "card3Title": "La IA que aprende de tu local",
-      "card3Body": "Tras 60 días de uso, Coach AI se activa. Predice los ingresos de los próximos 14 días. Te indica qué clientes podrían dejar de venir. Crea promos automáticas para llenar huecos. Funciona con tus datos. Solo con los tuyos. Sin APIs externas. Sin compartir datos.",
-      "coachBadge": "★ Plan Signature · Se activa tras 60 días de datos reales"
+      "card3Body": "En el plan Coach, tras 60 días de uso, Coach AI se activa. Predice los ingresos de los próximos 14 días, indica qué clientes podrían dejar de venir y sugiere acciones para llenar huecos. Funciona solo con tus datos. Sin APIs externas. Sin compartir datos.",
+      "coachBadge": "★ Plan Coach · Coach AI se activa tras 60 días de datos reales"
     },
     "hubApp": {
       "label": "HUBIA APP",
@@ -341,7 +342,7 @@
   },
   "pricing": {
     "title": "Precios",
-    "subtitle": "No te vendemos clientes. Te damos la herramienta para no perderlos nunca. HŪBIA es el sistema de gestión para negocios locales que quieren organizar reservas, clientes y personal de forma profesional. Dos planes claros: Studio y Signature.",
+    "subtitle": "No te vendemos clientes. Te damos la herramienta para no perderlos nunca. HŪBIA es el sistema de gestión para negocios locales que quieren organizar reservas, clientes y personal de forma profesional. Tres planes: Studio, Signature, Coach.",
     "pwaBlock": {
       "title": "Solo PWA, sin apps de tienda",
       "body": "La app se instala en el móvil (iOS y Android) con tu logo y colores. Sin tiendas: clientes y equipo la añaden desde la web. Un solo software, actualizaciones incluidas."
@@ -372,52 +373,34 @@
       "a6": "Setup único al activar (fraccionable en 6 o 12 meses) y cuota mensual. Sin permanencia."
     },
     "prices": {
-      "pro": {
-        "setup": "€900",
-        "monthly": "€89"
-      },
-      "max": {
-        "setup": "€1.400",
-        "monthly": "€120"
-      },
-      "studio": {
-        "setup": "€800",
-        "monthly": "€89"
-      }
+      "studio": { "setup": "€900", "monthly": "€89" },
+      "signature": { "setup": "€1.400", "monthly": "€120" },
+      "coach": { "setup": "€1.400", "monthly": "€149" }
     },
     "verticalPricing": {
       "title": "Precios por plan",
       "note": "Beauty, clínicas/estudios médicos y pet grooming. Setup fraccionable en 6 o 12 meses.",
       "columns": {
         "vertical": "Plan",
-        "pro": "Studio",
-        "max": "Signature",
         "studio": "Studio",
-        "signature": "Signature"
+        "signature": "Signature",
+        "coach": "Coach"
       },
       "rows": [
-        {
-          "label": "Beauty, clínicas/estudios médicos, pet grooming",
-          "pro": "€900 setup + €89/mes",
-          "max": "€1.400 setup + €120/mes"
-        },
-        {
-          "label": "A medida (multi-sede, flujos avanzados, otro)",
-          "pro": "Presupuesto",
-          "max": "Presupuesto"
-        }
+        { "label": "Beauty, clínicas, pet grooming", "studio": "€900 setup + €89/mes", "signature": "€1.400 setup + €120/mes", "coach": "€1.400 setup + €149/mes" },
+        { "label": "A medida (multi-sede, otro)", "studio": "Presupuesto", "signature": "Presupuesto", "coach": "Presupuesto" }
       ]
     },
     "multiSiteNote": "Multi-sede (2-5 ubicaciones): mismo precio por sede. Setup €900 primera sede, €400 sedes adicionales. Más de 5 sedes: presupuesto personalizado.",
-    "metaDescription": "Tres planes: Studio (€900 setup + €89/mes), Pro (€1.400 setup + €149/mes), Signature (€1.400 setup + €120/mes). Setup fraccionable en 6 o 12 meses. Coach AI incluido con Signature."
+    "metaDescription": "Tres planes: Studio, Signature, Coach. Setup fraccionable en 6 o 12 meses. Coach AI incluido solo con el plan Coach."
   },
   "plans": {
-    "pro": {
+    "studio": {
       "name": "Studio",
-      "description": "Para equipos de 1-3 personas. Todo lo esencial: reservas, calendario compartido, clientes, notificaciones automáticas.",
+      "description": "Sistema operativo de inicio. Para profesionales en solitario y equipos pequeños. Reservas, calendario, clientes, notificaciones.",
       "features": [
-        "Reservas online 24/7 para clientes",
-        "Calendario compartido del equipo",
+        "Reservas online 24/7",
+        "Calendario compartido (hasta 2 empleados, 5 servicios)",
         "Gestión de personal y servicios",
         "Notificaciones automáticas (confirmación, recordatorios)",
         "Base de datos de clientes + historial de citas",
@@ -426,29 +409,30 @@
         "Soporte por email (respuesta en 24h laborables)"
       ]
     },
-    "max": {
+    "signature": {
       "name": "Signature",
-      "description": "Para equipos de 4-10+ personas o para quienes quieren control completo de las métricas del negocio.",
+      "description": "Sistema operativo premium con branding. Más capacidad, citas recurrentes, branding avanzado.",
       "features": [
         "Todo lo de Studio",
-        "Panel de analytics: tendencias de reservas semanales/mensuales, servicios más solicitados, rendimiento del personal, tasa de ocupación",
-        "Citas recurrentes automáticas (ej: cliente fijo cada 2 semanas se autoprograma)",
-        "Branding avanzado (personalización completa de colores, fuentes, diseño de interfaz)",
-        "Soporte prioritario (respuesta en 4h laborables)"
+        "Hasta 5 empleados, 15 servicios",
+        "Citas recurrentes automáticas",
+        "Branding avanzado (colores, fuentes, layout)",
+        "Programa de fidelidad, broadcast a clientes",
+        "Tu local en la app Hubia (iOS y Android)",
+        "Soporte prioritario (respuesta en 4h)"
       ]
     },
-    "pro2": {
-      "name": "Pro",
-      "description": "Para equipos de 4–10 personas. Con la app Hubia y herramientas de marketing.",
+    "coach": {
+      "name": "Coach",
+      "description": "Signature más analytics operativos y Coach AI. Para locales que quieren inteligencia además de control.",
       "features": [
-        "Todo lo de Studio",
-        "Tu local en la app Hubia (iOS y Android)",
-        "Analítica completa: ingresos, ocupación, rendimiento del equipo",
-        "Push a todos los clientes (marketing)",
-        "Segmentación de clientes: inactivos, VIP, en riesgo",
-        "Citas recurrentes automáticas",
-        "Exportación de datos PDF y CSV",
-        "Soporte prioritario en 4h"
+        "Todo lo de Signature",
+        "Analytics operativos (ingresos, ocupación, rendimiento del equipo)",
+        "Coach AI — activo tras 60 días de uso real",
+        "Previsión de ingresos 14 días (local, sin APIs externas)",
+        "Alertas sobre clientes que podrían dejar de venir",
+        "Acciones sugeridas para llenar huecos (preparadas o asistidas)",
+        "Soporte dedicado"
       ]
     }
   },

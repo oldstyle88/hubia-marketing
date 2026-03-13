@@ -20,29 +20,29 @@ export default async function PricingPage() {
 
   const plans = [
     {
-      name: tPlans('pro.name'),
-      description: tPlans('pro.description'),
+      name: tPlans('studio.name'),
+      description: tPlans('studio.description'),
       setupFee: t('prices.studio.setup'),
       monthly: t('prices.studio.monthly'),
-      features: tPlans.raw('pro.features') as string[],
+      features: tPlans.raw('studio.features') as string[],
       highlight: false,
       badge: null,
     },
     {
-      name: tPlans('pro2.name'),
-      description: tPlans('pro2.description'),
-      setupFee: t('prices.pro.setup'),
-      monthly: t('prices.pro.monthly'),
-      features: tPlans.raw('pro2.features') as string[],
+      name: tPlans('signature.name'),
+      description: tPlans('signature.description'),
+      setupFee: t('prices.signature.setup'),
+      monthly: t('prices.signature.monthly'),
+      features: tPlans.raw('signature.features') as string[],
       highlight: true,
       badge: t('mostChosen'),
     },
     {
-      name: tPlans('max.name'),
-      description: tPlans('max.description'),
-      setupFee: t('prices.max.setup'),
-      monthly: t('prices.max.monthly'),
-      features: tPlans.raw('max.features') as string[],
+      name: tPlans('coach.name'),
+      description: tPlans('coach.description'),
+      setupFee: t('prices.coach.setup'),
+      monthly: t('prices.coach.monthly'),
+      features: tPlans.raw('coach.features') as string[],
       highlight: false,
       badge: 'Coach AI',
     },
@@ -57,7 +57,7 @@ export default async function PricingPage() {
     { question: t('faq.q6'), answer: t('faq.a6') },
   ]
 
-  const verticalRows = t.raw('verticalPricing.rows') as Array<{ label: string; studio: string; pro: string; signature: string }>
+  const verticalRows = t.raw('verticalPricing.rows') as Array<{ label: string; studio: string; signature: string; coach: string }>
 
   return (
     <div className="min-h-screen flex flex-col bg-[var(--bg)]">
@@ -109,8 +109,8 @@ export default async function PricingPage() {
               <div className="grid grid-cols-[1.6fr_1fr_1fr_1fr] gap-2 border-b border-[var(--line)]/70 px-6 py-4 text-xs uppercase tracking-[0.18em] text-[var(--gray)]">
                 <span>{t('verticalPricing.columns.vertical')}</span>
                 <span className="text-center">{t('verticalPricing.columns.studio')}</span>
-                <span className="text-center">{t('verticalPricing.columns.pro')}</span>
                 <span className="text-center">{t('verticalPricing.columns.signature')}</span>
+                <span className="text-center">{t('verticalPricing.columns.coach')}</span>
               </div>
               {verticalRows.map((row, index) => (
                 <div
@@ -123,8 +123,8 @@ export default async function PricingPage() {
                 >
                   <span className="font-medium">{row.label}</span>
                   <span className="text-center">{row.studio}</span>
-                  <span className="text-center">{row.pro}</span>
                   <span className="text-center">{row.signature}</span>
+                  <span className="text-center">{row.coach}</span>
                 </div>
               ))}
             </div>

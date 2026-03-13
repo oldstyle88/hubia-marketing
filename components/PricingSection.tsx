@@ -5,8 +5,8 @@ export async function PricingSection() {
   const t = await getTranslations('home.plansHome')
 
   const studioFeatures = t.raw('studioFeatures') as string[]
-  const proFeatures = t.raw('proFeatures') as string[]
   const signatureFeatures = t.raw('signatureFeatures') as string[]
+  const coachFeatures = t.raw('coachFeatures') as string[]
 
   const cards = [
     {
@@ -21,17 +21,6 @@ export async function PricingSection() {
       tag: null as string | null,
     },
     {
-      key: 'pro',
-      name: t('proName'),
-      forWho: t('proForWho'),
-      setup: t('proSetup'),
-      setupNote: t('proSetupNote'),
-      canone: t('proCanone'),
-      cta: t('proCta'),
-      features: proFeatures,
-      tag: t('proTag'),
-    },
-    {
       key: 'signature',
       name: t('signatureName'),
       forWho: t('signatureForWho'),
@@ -40,23 +29,34 @@ export async function PricingSection() {
       canone: t('signatureCanone'),
       cta: t('signatureCta'),
       features: signatureFeatures,
-      tag: t('signatureTag'),
+      tag: null as string | null,
+    },
+    {
+      key: 'coach',
+      name: t('coachName'),
+      forWho: t('coachForWho'),
+      setup: t('coachSetup'),
+      setupNote: t('coachSetupNote'),
+      canone: t('coachCanone'),
+      cta: t('coachCta'),
+      features: coachFeatures,
+      tag: t('coachTag'),
     },
   ]
 
   const comparisonRows = [
-    { labelKey: 'compareAppWhiteLabel' as const, studio: true, pro: true, signature: true },
-    { labelKey: 'compareLoyalty' as const, studio: true, pro: true, signature: true },
-    { labelKey: 'comparePush' as const, studio: true, pro: true, signature: true },
-    { labelKey: 'compareHubiaApp' as const, studio: false, pro: true, signature: true },
-    { labelKey: 'compareAnalytics' as const, studio: false, pro: true, signature: true },
-    { labelKey: 'compareBroadcast' as const, studio: false, pro: true, signature: true },
-    { labelKey: 'compareRecurring' as const, studio: false, pro: true, signature: true },
-    { labelKey: 'compareCoachAi' as const, studio: false, pro: false, signature: true },
-    { labelKey: 'compareForecast' as const, studio: false, pro: false, signature: true },
-    { labelKey: 'comparePromo' as const, studio: false, pro: false, signature: true },
-    { labelKey: 'compareSetup' as const, studio: '€800', pro: '€1.400', signature: '€1.900' },
-    { labelKey: 'compareCanone' as const, studio: t('studioCanone'), pro: t('proCanone'), signature: t('signatureCanone') },
+    { labelKey: 'compareAppWhiteLabel' as const, studio: true, signature: true, coach: true },
+    { labelKey: 'compareLoyalty' as const, studio: true, signature: true, coach: true },
+    { labelKey: 'comparePush' as const, studio: true, signature: true, coach: true },
+    { labelKey: 'compareHubiaApp' as const, studio: false, signature: true, coach: true },
+    { labelKey: 'compareAnalytics' as const, studio: false, signature: false, coach: true },
+    { labelKey: 'compareBroadcast' as const, studio: false, signature: true, coach: true },
+    { labelKey: 'compareRecurring' as const, studio: false, signature: true, coach: true },
+    { labelKey: 'compareCoachAi' as const, studio: false, signature: false, coach: true },
+    { labelKey: 'compareForecast' as const, studio: false, signature: false, coach: true },
+    { labelKey: 'comparePromo' as const, studio: false, signature: false, coach: true },
+    { labelKey: 'compareSetup' as const, studio: '€900', signature: '€1.400', coach: '€1.400' },
+    { labelKey: 'compareCanone' as const, studio: t('studioCanone'), signature: t('signatureCanone'), coach: t('coachCanone') },
   ]
 
   return (
@@ -122,8 +122,8 @@ export async function PricingSection() {
               <tr className="border-b border-[var(--line)]">
                 <th className="p-4 font-semibold text-[var(--primary)]"></th>
                 <th className="p-4 font-semibold text-[var(--primary)]">{t('studioName')}</th>
-                <th className="p-4 font-semibold text-[var(--primary)]">{t('proName')}</th>
                 <th className="p-4 font-semibold text-[var(--primary)]">{t('signatureName')}</th>
+                <th className="p-4 font-semibold text-[var(--primary)]">{t('coachName')}</th>
               </tr>
             </thead>
             <tbody>
@@ -138,14 +138,14 @@ export async function PricingSection() {
                       : row.studio}
                   </td>
                   <td className="p-4">
-                    {typeof row.pro === 'boolean' ? (row.pro ? '✓' : '—') : row.pro}
+                    {typeof row.signature === 'boolean' ? (row.signature ? '✓' : '—') : row.signature}
                   </td>
                   <td className="p-4">
-                    {typeof row.signature === 'boolean'
-                      ? row.signature
+                    {typeof row.coach === 'boolean'
+                      ? row.coach
                         ? '✓'
                         : '—'
-                      : row.signature}
+                      : row.coach}
                   </td>
                 </tr>
               ))}
